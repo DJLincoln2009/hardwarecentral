@@ -275,7 +275,7 @@ function Header() {
       {/* Positionné par rapport au <header> (relative, pleine largeur) et non plus
           par rapport à un élément interne de la nav : le panneau s'étend sur toute
           la largeur du header, sous la barre de nav, comme sur le wireframe #screen-1. */}
-      <div onMouseEnter={openMegaMenu} onMouseLeave={closeMegaMenu}>
+      <div role="presentation" onMouseEnter={openMegaMenu} onMouseLeave={closeMegaMenu}>
         <MegaMenu open={megaMenuOpen} onClose={() => {
           setMegaMenuOpen(false);
           requestAnimationFrame(() => megaMenuTriggerRef.current?.focus());

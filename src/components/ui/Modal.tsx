@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, type ReactNode, useCallback, useId } from 'react';
+import { useEffect, useRef, type ReactNode, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
