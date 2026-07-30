@@ -115,7 +115,7 @@ function Header() {
               <button
                 type="submit"
                 aria-label="Rechercher"
-                className="rounded-md bg-teal-600 min-h-11 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+                className="rounded-md bg-teal-600 min-h-9 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
               >
                 <Search className="h-4 w-4" aria-hidden="true" />
               </button>
@@ -152,7 +152,7 @@ function Header() {
             <button
               type="button"
               onClick={() => setQuoteModalOpen(true)}
-              className="hidden md:inline-flex rounded-md bg-teal-600 min-h-11 px-4 py-2 text-sm font-medium text-white hover:bg-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none"
+              className="hidden md:inline-flex rounded-md bg-teal-600 min-h-11 px-4 py-3 text-sm font-medium text-white hover:bg-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none"
             >
               Demandez un devis
             </button>
