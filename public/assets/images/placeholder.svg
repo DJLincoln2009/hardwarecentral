@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <rect width="600" height="600" fill="#F1EFE8"/>
+  <g transform="translate(300,260)" text-anchor="middle">
+    <rect x="-40" y="-30" width="80" height="60" rx="6" fill="#B4B2A9"/>
+    <circle cx="0" cy="0" r="20" fill="#F1EFE8"/>
+    <circle cx="0" cy="0" r="8" fill="#B4B2A9"/>
+  </g>
+  <text x="300" y="340" text-anchor="middle" font-family="IBM Plex Sans, sans-serif" font-size="16" fill="#888780">Photo à venir</text>
+</svg>

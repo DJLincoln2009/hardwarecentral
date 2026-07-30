@@ -1,0 +1,5315 @@
+[
+  {
+    "productId": "hpe-proliant-dl320-gen12",
+    "sku": "HPE-DL320-G12",
+    "name": "HPE ProLiant Compute DL320 Gen12",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl320-gen12.svg",
+      "alt": "HPE ProLiant Compute DL320 Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.598Z",
+        "checksum": "fdb8d9b75cf8a3ead244105288e39f8fdf55050650371976b0932dc9df37d7d6"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl340-gen12",
+    "sku": "HPE-DL340-G12",
+    "name": "HPE ProLiant Compute DL340 Gen12",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl340-gen12.svg",
+      "alt": "HPE ProLiant Compute DL340 Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.600Z",
+        "checksum": "075960356cfded90dd463491a487b457ac1640ec93fbe0e226bd897f9ab95ebe"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl360-gen12",
+    "sku": "HPE-DL360-G12",
+    "name": "HPE ProLiant Compute DL360 Gen12",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl360-gen12.svg",
+      "alt": "HPE ProLiant Compute DL360 Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.600Z",
+        "checksum": "12c81a944ff13593e344aceed600d5b5fc30442127e2c3c975d649406d1cbcd1"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl380-gen12",
+    "sku": "HPE-DL380-G12",
+    "name": "HPE ProLiant Compute DL380 Gen12",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl380-gen12.svg",
+      "alt": "HPE ProLiant Compute DL380 Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.601Z",
+        "checksum": "90b46310a659835a3f5b58e8d922a6596df4555a3f7a6db97ea9eaff42bb2ed6"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl380a-gen12",
+    "sku": "HPE-DL380A-G12",
+    "name": "HPE ProLiant Compute DL380a Gen12",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl380a-gen12.svg",
+      "alt": "HPE ProLiant Compute DL380a Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.601Z",
+        "checksum": "967b2ef2a704d9158a2d2eb9816cf24538ea3f0e39f74e03103aaf7b389608ef"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl580-gen12",
+    "sku": "HPE-DL580-G12",
+    "name": "HPE ProLiant Compute DL580 Gen12",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl580-gen12.svg",
+      "alt": "HPE ProLiant Compute DL580 Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.602Z",
+        "checksum": "ae956d50c0bc1f089d749e307184b61f6cbc2a252b975da915007761108c8e93"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-ml350-gen12",
+    "sku": "HPE-ML350-G12",
+    "name": "HPE ProLiant ML350 Gen12",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-ml350-gen12.svg",
+      "alt": "HPE ProLiant ML350 Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.602Z",
+        "checksum": "f61482849e2a88cca5ca589df7acecfbb801b9ead135b36853fc1ff867dc5de2"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl325-gen11",
+    "sku": "HPE-DL325-G11",
+    "name": "HPE ProLiant DL325 Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl325-gen11.svg",
+      "alt": "HPE ProLiant DL325 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.603Z",
+        "checksum": "304fc1f6426945ef0ef7171cca8c6994356aea96bc50a1c492e9113c79145758"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl345-gen11",
+    "sku": "HPE-DL345-G11",
+    "name": "HPE ProLiant DL345 Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl345-gen11.svg",
+      "alt": "HPE ProLiant DL345 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.603Z",
+        "checksum": "bc04775f5cd4148c2e549404ca1a518cab780454243918dce109d6607195e7b6"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl365-gen11",
+    "sku": "HPE-DL365-G11",
+    "name": "HPE ProLiant DL365 Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl365-gen11.svg",
+      "alt": "HPE ProLiant DL365 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.603Z",
+        "checksum": "3403a18b8a0f6ee40e348172e1e77fdaf037dfce06627925a4bac3d7fbd3998d"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl385-gen11",
+    "sku": "HPE-DL385-G11",
+    "name": "HPE ProLiant DL385 Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl385-gen11.svg",
+      "alt": "HPE ProLiant DL385 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.604Z",
+        "checksum": "dce619834975f782dcee4e57ab7107b8850df2bf2cdf5a30cb684bdad45c4191"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-dl145-gen11",
+    "sku": "HPE-DL145-G11",
+    "name": "HPE ProLiant DL145 Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-dl145-gen11.svg",
+      "alt": "HPE ProLiant DL145 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.604Z",
+        "checksum": "0dfc27e6078354d901770159308603a5b0bbb1c87fed7f52da91c21ada64137b"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-microserver-gen11",
+    "sku": "HPE-MS-G11",
+    "name": "HPE ProLiant MicroServer Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-microserver-gen11.svg",
+      "alt": "HPE ProLiant MicroServer Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.605Z",
+        "checksum": "f5586fd906cd6bae59ad7642aac2ec3c155f477699bf2911c5d85f2ace75b312"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-ml110-gen11",
+    "sku": "HPE-ML110-G11",
+    "name": "HPE ProLiant ML110 Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-ml110-gen11.svg",
+      "alt": "HPE ProLiant ML110 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.605Z",
+        "checksum": "ec81fb8cfe83f396a2bf750de4da42d41c34cb8cb09131e4c6addcb10f925154"
+      }
+    }
+  },
+  {
+    "productId": "hpe-proliant-ml30-gen11",
+    "sku": "HPE-ML30-G11",
+    "name": "HPE ProLiant ML30 Gen11",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-proliant-ml30-gen11.svg",
+      "alt": "HPE ProLiant ML30 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.605Z",
+        "checksum": "f8d3897170abcb56c050894ad0d988f07065c9c1bd760d0b2d7584344cbf5a7f"
+      }
+    }
+  },
+  {
+    "productId": "hpe-alletra-mp-x10000",
+    "sku": "HPE-ALLETRA-X10000",
+    "name": "HPE Alletra MP X10000",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-alletra-mp-x10000.svg",
+      "alt": "HPE Alletra MP X10000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.606Z",
+        "checksum": "81fc67d6ecbc0e9021fe593631f4b9c5c907b7d744de2ab7930629fd7c3f85b8"
+      }
+    }
+  },
+  {
+    "productId": "hpe-alletra-4110",
+    "sku": "HPE-ALLETRA-4110",
+    "name": "HPE Alletra 4110",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-alletra-4110.svg",
+      "alt": "HPE Alletra 4110",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.606Z",
+        "checksum": "fd430d1183d48af128981d58544a26c1491526194038cb6a61b2df3a61dbfe32"
+      }
+    }
+  },
+  {
+    "productId": "hpe-alletra-4120",
+    "sku": "HPE-ALLETRA-4120",
+    "name": "HPE Alletra 4120",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-alletra-4120.svg",
+      "alt": "HPE Alletra 4120",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.607Z",
+        "checksum": "d00633fedaa522a8c2760890c77f0dee0b1ead1e429b1f741e77dbf475e18fb2"
+      }
+    }
+  },
+  {
+    "productId": "hpe-alletra-5010",
+    "sku": "HPE-ALLETRA-5010",
+    "name": "HPE Alletra 5010",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-alletra-5010.svg",
+      "alt": "HPE Alletra 5010",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.607Z",
+        "checksum": "8ab71fd629354b6c63315ed53e104cee57467a853c726d6b609f164813095136"
+      }
+    }
+  },
+  {
+    "productId": "hpe-alletra-5030",
+    "sku": "HPE-ALLETRA-5030",
+    "name": "HPE Alletra 5030",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-alletra-5030.svg",
+      "alt": "HPE Alletra 5030",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.608Z",
+        "checksum": "4a6f2bc9c61b9ed89ac557e80d33fc04429a26f35136c45290fa7447227ab53d"
+      }
+    }
+  },
+  {
+    "productId": "hpe-msa-2072",
+    "sku": "HPE-MSA-2072",
+    "name": "HPE MSA 2072",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-msa-2072.svg",
+      "alt": "HPE MSA 2072",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.608Z",
+        "checksum": "015b32f36d9709081792a02c3a6795a52d23704b6580fb12a5fea22a0ea56223"
+      }
+    }
+  },
+  {
+    "productId": "hpe-storeonce-3760",
+    "sku": "HPE-STOREONCE-3760",
+    "name": "HPE StoreOnce 3760",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-storeonce-3760.svg",
+      "alt": "HPE StoreOnce 3760",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.609Z",
+        "checksum": "34d97f1e1dcde8be1c24040ae21f78e6f8957a16eee2d561725b5aaae97c13a4"
+      }
+    }
+  },
+  {
+    "productId": "hpe-storeonce-5260",
+    "sku": "HPE-STOREONCE-5260",
+    "name": "HPE StoreOnce 5260",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-storeonce-5260.svg",
+      "alt": "HPE StoreOnce 5260",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.609Z",
+        "checksum": "2df2d3f62b22ff5112e72df5ea77b42e76db9022de477cdec18931238aaaf31f"
+      }
+    }
+  },
+  {
+    "productId": "hpe-primera-a670",
+    "sku": "HPE-PRIMERA-A670",
+    "name": "HPE Primera A670",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-primera-a670.svg",
+      "alt": "HPE Primera A670",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.610Z",
+        "checksum": "2cdb7d016955bf65a5378add9066d2530c4311328d07f02393aa48733d19ed13"
+      }
+    }
+  },
+  {
+    "productId": "hpe-nimble-hf40",
+    "sku": "HPE-NIMBLE-HF40",
+    "name": "HPE Nimble HF40",
+    "brand": "HPE",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-nimble-hf40.svg",
+      "alt": "HPE Nimble HF40",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.610Z",
+        "checksum": "5470714fc47656bae268d25bbddc0089c2472cf0131b1c069891bfb7bb7dd8ff"
+      }
+    }
+  },
+  {
+    "productId": "aruba-cx-6200f",
+    "sku": "ARUBA-CX6200F",
+    "name": "Aruba CX 6200F",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-cx-6200f.svg",
+      "alt": "Aruba CX 6200F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.611Z",
+        "checksum": "ddb3de71b50cb6903d219f3192fc16ed4806007861743cecc437a60df721d37e"
+      }
+    }
+  },
+  {
+    "productId": "aruba-cx-6300m",
+    "sku": "ARUBA-CX6300M",
+    "name": "Aruba CX 6300M",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-cx-6300m.svg",
+      "alt": "Aruba CX 6300M",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.611Z",
+        "checksum": "f88793610f6280e770e11580b8b290d85fa90d556cc7228807f19bd9a250da07"
+      }
+    }
+  },
+  {
+    "productId": "aruba-cx-6400",
+    "sku": "ARUBA-CX6400",
+    "name": "Aruba CX 6400",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-cx-6400.svg",
+      "alt": "Aruba CX 6400",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.612Z",
+        "checksum": "f9dab907692dcc27309774ac5b3a0ab5c78254b05569a342127724d24dcdf6eb"
+      }
+    }
+  },
+  {
+    "productId": "aruba-cx-8100",
+    "sku": "ARUBA-CX8100",
+    "name": "Aruba CX 8100",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-cx-8100.svg",
+      "alt": "Aruba CX 8100",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.612Z",
+        "checksum": "08ef218e435551cae65af9b93068e2a2a544d9145aba5be0849107eb0682fb9a"
+      }
+    }
+  },
+  {
+    "productId": "aruba-cx-8325",
+    "sku": "ARUBA-CX8325",
+    "name": "Aruba CX 8325",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-cx-8325.svg",
+      "alt": "Aruba CX 8325",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.613Z",
+        "checksum": "9c7364755439100a6872b5c19349ed96223493e29ae260aadd10c5bae21d2d5c"
+      }
+    }
+  },
+  {
+    "productId": "aruba-cx-8360",
+    "sku": "ARUBA-CX8360",
+    "name": "Aruba CX 8360",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-cx-8360.svg",
+      "alt": "Aruba CX 8360",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.613Z",
+        "checksum": "b6232aa1c476a7726d56dd53a035136466507ea4fb0c74570629d5a538c1460c"
+      }
+    }
+  },
+  {
+    "productId": "aruba-cx-9300",
+    "sku": "ARUBA-CX9300",
+    "name": "Aruba CX 9300",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-cx-9300.svg",
+      "alt": "Aruba CX 9300",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.613Z",
+        "checksum": "673634f93d18c1506e97a2a58c357c84c9f3b907e9a8adf52bd21e809994e127"
+      }
+    }
+  },
+  {
+    "productId": "aruba-ap-610",
+    "sku": "ARUBA-AP610",
+    "name": "Aruba 610 Access Point",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-ap-610.svg",
+      "alt": "Aruba 610 Access Point",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.614Z",
+        "checksum": "2cade55aa2636d835fbf38263257adfaa05510b4c0e94c570b19105296066b69"
+      }
+    }
+  },
+  {
+    "productId": "aruba-ap-630",
+    "sku": "ARUBA-AP630",
+    "name": "Aruba 630 Access Point",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-ap-630.svg",
+      "alt": "Aruba 630 Access Point",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.614Z",
+        "checksum": "48db34a527e99ec2e54f59f9f1381c6f09759bf47241d739da3f990804fa655f"
+      }
+    }
+  },
+  {
+    "productId": "aruba-ap-730",
+    "sku": "ARUBA-AP730",
+    "name": "Aruba 730 Access Point",
+    "brand": "HPE",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/aruba-ap-730.svg",
+      "alt": "Aruba 730 Access Point",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.615Z",
+        "checksum": "6ddb349d36d29fd562883f040201e51d618300f79deebabef1c31e74832f137f"
+      }
+    }
+  },
+  {
+    "productId": "hpe-synergy-480-gen12",
+    "sku": "HPE-SYNERGY-480-G12",
+    "name": "HPE Synergy 480 Gen12",
+    "brand": "HPE",
+    "category": "datacenter",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-synergy-480-gen12.svg",
+      "alt": "HPE Synergy 480 Gen12",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.615Z",
+        "checksum": "adb1dc50bb4ea635b48ef596789db6064158f8b6576422b713042831778b3e9a"
+      }
+    }
+  },
+  {
+    "productId": "hpe-apollo-4200-gen11",
+    "sku": "HPE-APOLLO-4200-G11",
+    "name": "HPE Apollo 4200 Gen11",
+    "brand": "HPE",
+    "category": "datacenter",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-apollo-4200-gen11.svg",
+      "alt": "HPE Apollo 4200 Gen11",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.616Z",
+        "checksum": "941aa5dad55c30d27489be90f77e1cb30cab0ea05d8e3393e69348f10121b256"
+      }
+    }
+  },
+  {
+    "productId": "hpe-apollo-6500-gen10-plus",
+    "sku": "HPE-APOLLO-6500-G10P",
+    "name": "HPE Apollo 6500 Gen10+",
+    "brand": "HPE",
+    "category": "datacenter",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-apollo-6500-gen10-plus.svg",
+      "alt": "HPE Apollo 6500 Gen10+",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.616Z",
+        "checksum": "ad5fa0421dbc73364feda3fa624da2349567be518e8d3b9ccb7f9042ec8e0363"
+      }
+    }
+  },
+  {
+    "productId": "hpe-compute-xd685",
+    "sku": "HPE-XD685",
+    "name": "HPE Compute XD685",
+    "brand": "HPE",
+    "category": "datacenter",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-compute-xd685.svg",
+      "alt": "HPE Compute XD685",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.616Z",
+        "checksum": "ab72bcff1fb6b8ca76490c35332c3b8612963e3cac4b6bf1c06c6c5420b72f6c"
+      }
+    }
+  },
+  {
+    "productId": "hpe-simplivity-380",
+    "sku": "HPE-SIMPLIVITY-380",
+    "name": "HPE SimpliVity 380",
+    "brand": "HPE",
+    "category": "datacenter",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hpe-simplivity-380.svg",
+      "alt": "HPE SimpliVity 380",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.617Z",
+        "checksum": "a5ff80dc7905660f4a59f7bc562199dfa74148d81e5537b8d582222054c16a31"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r260",
+    "sku": "DELL-R260",
+    "name": "Dell PowerEdge R260",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r260.svg",
+      "alt": "Dell PowerEdge R260",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.617Z",
+        "checksum": "0c3c6675d5149ebe8ce87f89a3878ffc2c72b18b47487d06e6df72f0643376de"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r360",
+    "sku": "DELL-R360",
+    "name": "Dell PowerEdge R360",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r360.svg",
+      "alt": "Dell PowerEdge R360",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.618Z",
+        "checksum": "c67a6eef3c4d14846329a3d4cd678d924debeb95e493bb299817629766c56326"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r470",
+    "sku": "DELL-R470",
+    "name": "Dell PowerEdge R470",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r470.svg",
+      "alt": "Dell PowerEdge R470",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.618Z",
+        "checksum": "523ee2a5dd2c5840d2d215cf795f2e072bd388620e92b5b6c2d3d3bec84d997c"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r570",
+    "sku": "DELL-R570",
+    "name": "Dell PowerEdge R570",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r570.svg",
+      "alt": "Dell PowerEdge R570",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.619Z",
+        "checksum": "aa6a7feb3699c809bcd04aa76355b08fa0c0ecb64f753f173508eed02ac1ca13"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r670",
+    "sku": "DELL-R670",
+    "name": "Dell PowerEdge R670",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r670.svg",
+      "alt": "Dell PowerEdge R670",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.619Z",
+        "checksum": "864b145531f027373e6de7da4c8aab696e1f379b81101de4873c7c4e241016e1"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r770",
+    "sku": "DELL-R770",
+    "name": "Dell PowerEdge R770",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r770.svg",
+      "alt": "Dell PowerEdge R770",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.619Z",
+        "checksum": "e3f5b29273129514ca868d73a60a6237e830fc768e587bacfdacde148fd68a82"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r760",
+    "sku": "DELL-R760",
+    "name": "Dell PowerEdge R760",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r760.svg",
+      "alt": "Dell PowerEdge R760",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.620Z",
+        "checksum": "3b3e0e8b26306fd6f7b56523b14afc4d5368e4411efd744c4b4d5395f1abc0a9"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r760xs",
+    "sku": "DELL-R760XS",
+    "name": "Dell PowerEdge R760xs",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r760xs.svg",
+      "alt": "Dell PowerEdge R760xs",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.620Z",
+        "checksum": "25ee513b78bbe78231fc5a1ca4e17c97c638338d1446c70605e95d655fcbc8f0"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r660",
+    "sku": "DELL-R660",
+    "name": "Dell PowerEdge R660",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r660.svg",
+      "alt": "Dell PowerEdge R660",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.621Z",
+        "checksum": "116855016ebd5df9debe35f473bd4df4e13ebf77a47e001801e946629ad9b150"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r6615",
+    "sku": "DELL-R6615",
+    "name": "Dell PowerEdge R6615",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r6615.svg",
+      "alt": "Dell PowerEdge R6615",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.621Z",
+        "checksum": "dea7073ac9506b1933e2b72ef206f3af9c6d0dacaa7fe8306b5364ceda7556e6"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r7615",
+    "sku": "DELL-R7615",
+    "name": "Dell PowerEdge R7615",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r7615.svg",
+      "alt": "Dell PowerEdge R7615",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.622Z",
+        "checksum": "872a157e0d24b55a83093b5e59ac4113524c375ec7a831adb927ce7dd5b9f018"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r860",
+    "sku": "DELL-R860",
+    "name": "Dell PowerEdge R860",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r860.svg",
+      "alt": "Dell PowerEdge R860",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.622Z",
+        "checksum": "70b0ffc987dcf9df1d6cc4cdaa06114c3e361ba183d30119bf2706fd0baede1a"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-r960",
+    "sku": "DELL-R960",
+    "name": "Dell PowerEdge R960",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-r960.svg",
+      "alt": "Dell PowerEdge R960",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.622Z",
+        "checksum": "26e8ed96f77d6361eeb9d8dd4d2206c194a52f5630ae4ce716f63e8a6d00d1bf"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-t160",
+    "sku": "DELL-T160",
+    "name": "Dell PowerEdge T160",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-t160.svg",
+      "alt": "Dell PowerEdge T160",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.623Z",
+        "checksum": "1c375ce0d437ffbcb215899c1e2a5e2eef0bdc8194ceee715d5d3eec63daa3eb"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-t360",
+    "sku": "DELL-T360",
+    "name": "Dell PowerEdge T360",
+    "brand": "DELL",
+    "category": "server-storage",
+    "asin": "B0DF5R6ZYM",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-t360.svg",
+      "alt": "Dell PowerEdge T360",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.623Z",
+        "checksum": "67fdde630eeae27e986089e6b3c0d9b744232c7ab3939885f7dfe93e06d8a483"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-xe7745",
+    "sku": "DELL-XE7745",
+    "name": "Dell PowerEdge XE7745",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-xe7745.svg",
+      "alt": "Dell PowerEdge XE7745",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.624Z",
+        "checksum": "3fce3cc18d3b4a2ff567a129fd1041856e1263423d68764f5d9f4fe999882dec"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-xe8640",
+    "sku": "DELL-XE8640",
+    "name": "Dell PowerEdge XE8640",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-xe8640.svg",
+      "alt": "Dell PowerEdge XE8640",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.624Z",
+        "checksum": "96cf690c58d5cc0add414637f7034709cc59b354e403fbc34a7436d224df6981"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-xe9680",
+    "sku": "DELL-XE9680",
+    "name": "Dell PowerEdge XE9680",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-xe9680.svg",
+      "alt": "Dell PowerEdge XE9680",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.624Z",
+        "checksum": "e393f7f9adf995a70b5090771a4c82e04e3b640f7ee6453a20a3524deb7bacd6"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-xe9685l",
+    "sku": "DELL-XE9685L",
+    "name": "Dell PowerEdge XE9685L",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-xe9685l.svg",
+      "alt": "Dell PowerEdge XE9685L",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.625Z",
+        "checksum": "53fccba68825879556bce0bbe6690812b95075a7ed713a607174d49a63dd235e"
+      }
+    }
+  },
+  {
+    "productId": "dell-poweredge-xe9712",
+    "sku": "DELL-XE9712",
+    "name": "Dell PowerEdge XE9712",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-poweredge-xe9712.svg",
+      "alt": "Dell PowerEdge XE9712",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.625Z",
+        "checksum": "2508a0768afe1180e816ac2fdc6fd3f649a06dca16d003675be569db23ea73b2"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerstore-3200",
+    "sku": "DELL-PSTORE-3200",
+    "name": "Dell PowerStore 3200",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerstore-3200.svg",
+      "alt": "Dell PowerStore 3200",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.626Z",
+        "checksum": "29399264311d1aa861372e9cdf64fe42a7833317baf4786975605bdb98ba9cda"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerstore-5200",
+    "sku": "DELL-PSTORE-5200",
+    "name": "Dell PowerStore 5200",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerstore-5200.svg",
+      "alt": "Dell PowerStore 5200",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.626Z",
+        "checksum": "9770019633a1b3ffb871a8884ceafd36e8df6ff686ece40eaecb70a77db64773"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerstore-9200",
+    "sku": "DELL-PSTORE-9200",
+    "name": "Dell PowerStore 9200",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerstore-9200.svg",
+      "alt": "Dell PowerStore 9200",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.627Z",
+        "checksum": "85342d86fbca1f532e8a0f6fd8aaecade05c890ee849a80a0342f8f1e084734e"
+      }
+    }
+  },
+  {
+    "productId": "dell-powermax-2500",
+    "sku": "DELL-PMAX-2500",
+    "name": "Dell PowerMax 2500",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powermax-2500.svg",
+      "alt": "Dell PowerMax 2500",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.628Z",
+        "checksum": "7f53909f381e6c7846c7ed73f71f1ffb088c68e081463083789e5fc45cb0cbb8"
+      }
+    }
+  },
+  {
+    "productId": "dell-powermax-8500",
+    "sku": "DELL-PMAX-8500",
+    "name": "Dell PowerMax 8500",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powermax-8500.svg",
+      "alt": "Dell PowerMax 8500",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.628Z",
+        "checksum": "fdc9bdc9a63153aa7800b49be1f09f153aae211b0ecf687200fb1ee1119081ee"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerscale-f710",
+    "sku": "DELL-PSCALE-F710",
+    "name": "Dell PowerScale F710",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerscale-f710.svg",
+      "alt": "Dell PowerScale F710",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.628Z",
+        "checksum": "fa9fd0e31bee8d7269b0140148f42840b9862420d17975a342f94df8b2f8f886"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerscale-f910",
+    "sku": "DELL-PSCALE-F910",
+    "name": "Dell PowerScale F910",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerscale-f910.svg",
+      "alt": "Dell PowerScale F910",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.629Z",
+        "checksum": "8ae2fda30d6eed656c34816346f83124044caa8814ad317a998a9613918e8c5e"
+      }
+    }
+  },
+  {
+    "productId": "dell-powervault-me5024",
+    "sku": "DELL-ME5024",
+    "name": "Dell PowerVault ME5024",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powervault-me5024.svg",
+      "alt": "Dell PowerVault ME5024",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.629Z",
+        "checksum": "2b1cb4a31b1ab92a58a4472c54236baba47891f69f902f7e351785ff5d920ac7"
+      }
+    }
+  },
+  {
+    "productId": "dell-powervault-me5084",
+    "sku": "DELL-ME5084",
+    "name": "Dell PowerVault ME5084",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powervault-me5084.svg",
+      "alt": "Dell PowerVault ME5084",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.630Z",
+        "checksum": "a1b94c7a7b9ab4971ee7172b8a2716eee88d39efcfaec77bd6b8c3bbdb4b4227"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerprotect-dd6410",
+    "sku": "DELL-DD6410",
+    "name": "Dell PowerProtect DD6410",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerprotect-dd6410.svg",
+      "alt": "Dell PowerProtect DD6410",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.630Z",
+        "checksum": "8fe7d8364d8987fb79be88e625eecffc689dbb6d6ee8ef63a3e3ba96a7fadcce"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerswitch-s5248f",
+    "sku": "DELL-S5248F",
+    "name": "Dell PowerSwitch S5248F",
+    "brand": "DELL",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerswitch-s5248f.svg",
+      "alt": "Dell PowerSwitch S5248F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.630Z",
+        "checksum": "5125b46d9e3deb93da4b217ac4170ccde4629419bdef4747cc79540897b4c599"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerswitch-z9664f",
+    "sku": "DELL-Z9664F",
+    "name": "Dell PowerSwitch Z9664F",
+    "brand": "DELL",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerswitch-z9664f.svg",
+      "alt": "Dell PowerSwitch Z9664F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.631Z",
+        "checksum": "3cc9008b36ea628af9a76030940e0445828e758794879d7c8572c990b8c24b2f"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerswitch-n3248te",
+    "sku": "DELL-N3248TE",
+    "name": "Dell PowerSwitch N3248TE",
+    "brand": "DELL",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerswitch-n3248te.svg",
+      "alt": "Dell PowerSwitch N3248TE",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.631Z",
+        "checksum": "9b4e308acfdf5883dd80a6f9476904d1621c67c7c06bd1670bbb7b3900942cfb"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerswitch-s4148f",
+    "sku": "DELL-S4148F",
+    "name": "Dell PowerSwitch S4148F",
+    "brand": "DELL",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerswitch-s4148f.svg",
+      "alt": "Dell PowerSwitch S4148F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.632Z",
+        "checksum": "7d7a9387278cf7cabd19968f7a4b6fe57f35e191434b43f32bff9fb56f559630"
+      }
+    }
+  },
+  {
+    "productId": "dell-powerswitch-s5232f",
+    "sku": "DELL-S5232F",
+    "name": "Dell PowerSwitch S5232F",
+    "brand": "DELL",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-powerswitch-s5232f.svg",
+      "alt": "Dell PowerSwitch S5232F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.632Z",
+        "checksum": "50c9d6a38dffe83b6714d73201bb6a8bfc8a8b435da4c0fef9f0dfed051270e0"
+      }
+    }
+  },
+  {
+    "productId": "dell-vxrail-e660",
+    "sku": "DELL-VXRAIL-E660",
+    "name": "Dell VxRail E660",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-vxrail-e660.svg",
+      "alt": "Dell VxRail E660",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.633Z",
+        "checksum": "21aeb83b891f9932e6deb555746f612cf86dc4204b02be7c55c81f453f05cabb"
+      }
+    }
+  },
+  {
+    "productId": "dell-vxrail-p670",
+    "sku": "DELL-VXRAIL-P670",
+    "name": "Dell VxRail P670",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-vxrail-p670.svg",
+      "alt": "Dell VxRail P670",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.633Z",
+        "checksum": "7e1abcbededdf894bfe94f6f1db6dd5efad8c460036865f1aba4d412b740b647"
+      }
+    }
+  },
+  {
+    "productId": "dell-vxrail-v670",
+    "sku": "DELL-VXRAIL-V670",
+    "name": "Dell VxRail V670",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-vxrail-v670.svg",
+      "alt": "Dell VxRail V670",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.634Z",
+        "checksum": "a65268933e38942592e014307fbd4ed84237f433a3fd55e79309b37aac378b72"
+      }
+    }
+  },
+  {
+    "productId": "dell-vxrail-vd4000",
+    "sku": "DELL-VXRAIL-VD4000",
+    "name": "Dell VxRail VD4000",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-vxrail-vd4000.svg",
+      "alt": "Dell VxRail VD4000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.634Z",
+        "checksum": "9209213f2a1ebcaff775e7779b1f73e709258a50eac5446802630ec157fd0b53"
+      }
+    }
+  },
+  {
+    "productId": "dell-integrated-system-azure-stack-hci",
+    "sku": "DELL-AZSTACK-HCI",
+    "name": "Dell Integrated System for Microsoft Azure Stack HCI",
+    "brand": "DELL",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/dell-integrated-system-azure-stack-hci.svg",
+      "alt": "Dell Integrated System for Microsoft Azure Stack HCI",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.635Z",
+        "checksum": "7638fd46f99203fa58964ca5c31c751ef5974ff9743ec33a54bc93b7e3467da7"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-30g",
+    "sku": "FORT-FG-30G",
+    "name": "FortiGate 30G",
+    "brand": "FORTINET",
+    "category": "security",
+    "asin": "B0D8Y1X5K9",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-30g.svg",
+      "alt": "FortiGate 30G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.635Z",
+        "checksum": "ffb79a1535c0ad467fd63c2cf4f4a93450f198428965d16cb1c1a724b9959842"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-50g",
+    "sku": "FORT-FG-50G",
+    "name": "FortiGate 50G",
+    "brand": "FORTINET",
+    "category": "security",
+    "asin": "B0F3K3YTJ5",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-50g.svg",
+      "alt": "FortiGate 50G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.636Z",
+        "checksum": "82c9f5661987fc595a7ad1bdbcfd6565e03d64e562506daf4b16d3591cbb43c0"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-70g",
+    "sku": "FORT-FG-70G",
+    "name": "FortiGate 70G",
+    "brand": "FORTINET",
+    "category": "security",
+    "asin": "B0D8XY5L7M",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-70g.svg",
+      "alt": "FortiGate 70G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.636Z",
+        "checksum": "8d2d72e7670c2ccbe3f4b405af78aa33234a0034820a4cef445ab4b712505f9d"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-90g",
+    "sku": "FORT-FG-90G",
+    "name": "FortiGate 90G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-90g.svg",
+      "alt": "FortiGate 90G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.637Z",
+        "checksum": "0c78c802dc0251b2fb219c91ca78133c2e3ea6f4e4f7a75669b53b7ed6a35a9c"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-120g",
+    "sku": "FORT-FG-120G",
+    "name": "FortiGate 120G",
+    "brand": "FORTINET",
+    "category": "security",
+    "asin": "B0CSTC3J26",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-120g.svg",
+      "alt": "FortiGate 120G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.637Z",
+        "checksum": "e58549d3f498ea5f716ec327d9383760263a0790e5b47437ffe0519c135022f2"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-200g",
+    "sku": "FORT-FG-200G",
+    "name": "FortiGate 200G",
+    "brand": "FORTINET",
+    "category": "security",
+    "asin": "B0FM4D3L3W",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-200g.svg",
+      "alt": "FortiGate 200G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.638Z",
+        "checksum": "61d498766aa81666f6bbed73593271a4a6eb96f8544c4a507e736b77f4d4ffcc"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-400g",
+    "sku": "FORT-FG-400G",
+    "name": "FortiGate 400G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-400g.svg",
+      "alt": "FortiGate 400G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.638Z",
+        "checksum": "a819a93137fe966988a1fc74e4c98024a4f2322a7d11e8e0c005ccebdd90d1d2"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-600f",
+    "sku": "FORT-FG-600F",
+    "name": "FortiGate 600F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-600f.svg",
+      "alt": "FortiGate 600F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.638Z",
+        "checksum": "5233e8223f5f5f81a8d00b04a48eb4c8d11432f0aedd491615c37468f0ac9c53"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-900g",
+    "sku": "FORT-FG-900G",
+    "name": "FortiGate 900G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-900g.svg",
+      "alt": "FortiGate 900G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.639Z",
+        "checksum": "d866e6417271c56019f268c497a1874a1d67e5241325a02c373cc74cbe88c186"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortigate-1000f",
+    "sku": "FORT-FG-1000F",
+    "name": "FortiGate 1000F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortigate-1000f.svg",
+      "alt": "FortiGate 1000F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.639Z",
+        "checksum": "5e313730e63eff0c73990b2a9ebb0903d7cb9cf620ea6e594397b3da1d6ed997"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiwifi-50g",
+    "sku": "FORT-FWF-50G",
+    "name": "FortiWiFi 50G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiwifi-50g.svg",
+      "alt": "FortiWiFi 50G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.640Z",
+        "checksum": "e1407a16c3109010def12fce2d7a8513cbdc4d8f6d34a4cf619dccf24bbaa1e8"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiwifi-70g",
+    "sku": "FORT-FWF-70G",
+    "name": "FortiWiFi 70G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiwifi-70g.svg",
+      "alt": "FortiWiFi 70G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.640Z",
+        "checksum": "28eed419597a8df3b059343bd738f0dffe9faadfc54ef0b35242b4d97b82c8b9"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-108f",
+    "sku": "FORT-FS108F",
+    "name": "FortiSwitch FS-108F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-108f.svg",
+      "alt": "FortiSwitch FS-108F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.641Z",
+        "checksum": "2d1f764befce0703d1d9c4b6c3021e47e2b1b2275a7b2d105583d72aa68f18c1"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-124f",
+    "sku": "FORT-FS124F",
+    "name": "FortiSwitch FS-124F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-124f.svg",
+      "alt": "FortiSwitch FS-124F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.642Z",
+        "checksum": "bc6048eb53075db1bfb0f7c12d3333235d05f8af811bde2f1af56d7d35deae56"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-148f",
+    "sku": "FORT-FS148F",
+    "name": "FortiSwitch FS-148F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-148f.svg",
+      "alt": "FortiSwitch FS-148F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.642Z",
+        "checksum": "2f8795e0f4becd5c52094f97f3a3208270689f218d07beb73c8c0e4f91ecaa54"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-224f",
+    "sku": "FORT-FS224F",
+    "name": "FortiSwitch FS-224F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-224f.svg",
+      "alt": "FortiSwitch FS-224F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.642Z",
+        "checksum": "bb1b431379c3ef92ef8c51b8af3c57aa70f65445b9f5ba886cad640e5dd1c7a3"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-248f",
+    "sku": "FORT-FS248F",
+    "name": "FortiSwitch FS-248F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-248f.svg",
+      "alt": "FortiSwitch FS-248F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.643Z",
+        "checksum": "4bc95e29097b424b4cc42d4032f6a1ec66f438322b18460b3f9ab8e92c79008c"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-424f",
+    "sku": "FORT-FS424F",
+    "name": "FortiSwitch FS-424F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-424f.svg",
+      "alt": "FortiSwitch FS-424F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.643Z",
+        "checksum": "2b8745432d5d391d072c2ba833bd1d7d1cd19c7e3e8a06109ce0ff0010825001"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-448f",
+    "sku": "FORT-FS448F",
+    "name": "FortiSwitch FS-448F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-448f.svg",
+      "alt": "FortiSwitch FS-448F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.644Z",
+        "checksum": "a396a0a81be119a8ef0347c60ee02de6272d3a0a2231aaa2635ecbabbcc27d9a"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiswitch-1048e",
+    "sku": "FORT-FS1048E",
+    "name": "FortiSwitch FS-1048E",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiswitch-1048e.svg",
+      "alt": "FortiSwitch FS-1048E",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.644Z",
+        "checksum": "914486acbe388aa0fc5e909bde934f904023cf65b9c4757dbe50a0c31dd962e4"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiap-231k",
+    "sku": "FORT-FAP231K",
+    "name": "FortiAP 231K",
+    "brand": "FORTINET",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiap-231k.svg",
+      "alt": "FortiAP 231K",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.644Z",
+        "checksum": "7dd6e565c621b3f7bba305a8a241584196f6ea82ea59932f2b497f1693b17f12"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiap-241k",
+    "sku": "FORT-FAP241K",
+    "name": "FortiAP 241K",
+    "brand": "FORTINET",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiap-241k.svg",
+      "alt": "FortiAP 241K",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.645Z",
+        "checksum": "bb6b90bfbde877d817ddc05b3c9f29fe5f8e01f4d5168d55977ab965e5f7c16d"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiap-431k",
+    "sku": "FORT-FAP431K",
+    "name": "FortiAP 431K",
+    "brand": "FORTINET",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiap-431k.svg",
+      "alt": "FortiAP 431K",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.645Z",
+        "checksum": "51c5df58aca560c14dcc594e9781912b03c2e00874dac12d3ccb8396a7d6d85e"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiap-441k",
+    "sku": "FORT-FAP441K",
+    "name": "FortiAP 441K",
+    "brand": "FORTINET",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiap-441k.svg",
+      "alt": "FortiAP 441K",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.645Z",
+        "checksum": "78ec24ded7a330429503bf437d6a6b3a5018e7825375aca38645a9b369690ecb"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiap-831f",
+    "sku": "FORT-FAP831F",
+    "name": "FortiAP 831F",
+    "brand": "FORTINET",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiap-831f.svg",
+      "alt": "FortiAP 831F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.646Z",
+        "checksum": "92f73ac43945fc1b45e219b60395d3c22b88a6772361bd6afde0f5476aaac740"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiextender-511g",
+    "sku": "FORT-FEX511G",
+    "name": "FortiExtender 511G",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiextender-511g.svg",
+      "alt": "FortiExtender 511G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.646Z",
+        "checksum": "368b32ecfd0bcec0f5fcd5add46f0b9cd6a943db9e4a4be2516a47ed7c41ceda"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiextender-211f",
+    "sku": "FORT-FEX211F",
+    "name": "FortiExtender 211F",
+    "brand": "FORTINET",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiextender-211f.svg",
+      "alt": "FortiExtender 211F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.647Z",
+        "checksum": "d77d9ef46b5855a7a08e08224637779c98dc925e1c7abc1a3dc44cf44eb1d401"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortianalyzer-400g",
+    "sku": "FORT-FAZ400G",
+    "name": "FortiAnalyzer 400G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortianalyzer-400g.svg",
+      "alt": "FortiAnalyzer 400G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.647Z",
+        "checksum": "252ae02a27aa24e9166710ecd3433e487311cf5d7e8aad84b4d8d86fba1b4080"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortianalyzer-1000g",
+    "sku": "FORT-FAZ1000G",
+    "name": "FortiAnalyzer 1000G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortianalyzer-1000g.svg",
+      "alt": "FortiAnalyzer 1000G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.647Z",
+        "checksum": "242f6afa4347828a651758e20b220d37a06869a9df51d51674a74ab97bbe85c4"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortimanager-200g",
+    "sku": "FORT-FMG200G",
+    "name": "FortiManager 200G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortimanager-200g.svg",
+      "alt": "FortiManager 200G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.648Z",
+        "checksum": "ee12a649775dfd5fab1ade4922c8c7709221dcf85f932e3f1ccda0e4d655b19b"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortimanager-1000g",
+    "sku": "FORT-FMG1000G",
+    "name": "FortiManager 1000G",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortimanager-1000g.svg",
+      "alt": "FortiManager 1000G",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.648Z",
+        "checksum": "bf4fe53d72a7d65ad0ab220a241f2e6f07523ea52f04c53591cbb0811d77c8f0"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortimail-200f",
+    "sku": "FORT-FML200F",
+    "name": "FortiMail 200F",
+    "brand": "FORTINET",
+    "category": "security",
+    "asin": "B07VVMHGX9",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortimail-200f.svg",
+      "alt": "FortiMail 200F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.649Z",
+        "checksum": "2cdab21528f252cf4d1f7e74e3b9620e7d1f48ac59ec5c22f9132837ad3f8813"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortimail-1000f",
+    "sku": "FORT-FML1000F",
+    "name": "FortiMail 1000F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortimail-1000f.svg",
+      "alt": "FortiMail 1000F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.649Z",
+        "checksum": "0ce4194edbb9d10cb5ff24977a2b9222ba2c8c023cb767eeb82907b7fbe85428"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiweb-400f",
+    "sku": "FORT-FWB400F",
+    "name": "FortiWeb 400F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiweb-400f.svg",
+      "alt": "FortiWeb 400F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.650Z",
+        "checksum": "92c94c49002bc555bacda45fbc6a0c9881f359d26cff123d397f96ad073639ba"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiweb-1000f",
+    "sku": "FORT-FWB1000F",
+    "name": "FortiWeb 1000F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiweb-1000f.svg",
+      "alt": "FortiWeb 1000F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.650Z",
+        "checksum": "75ee5764a63b8b4531a7cadbd97ed7b98dd0328414a5fbd82b849fda34a4905c"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiadc-2000f",
+    "sku": "FORT-FADC2000F",
+    "name": "FortiADC 2000F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiadc-2000f.svg",
+      "alt": "FortiADC 2000F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.651Z",
+        "checksum": "4ff597fc550bff2d260d9154f2119aed7c3f0ac2bbceded883a99566e1beccab"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiauthenticator-200f",
+    "sku": "FORT-FAC200F",
+    "name": "FortiAuthenticator 200F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiauthenticator-200f.svg",
+      "alt": "FortiAuthenticator 200F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.651Z",
+        "checksum": "310dc1c7626555d474702a93d4ee33b191cc9c2ab28f980917fb49710125f89a"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortisandbox-3000f",
+    "sku": "FORT-FSB3000F",
+    "name": "FortiSandbox 3000F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortisandbox-3000f.svg",
+      "alt": "FortiSandbox 3000F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.651Z",
+        "checksum": "14597dd3e57ee5c63777aa14c4392d839c9528405352d640b73b5b54ed48117a"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortiproxy-400f",
+    "sku": "FORT-FP400F",
+    "name": "FortiProxy 400F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortiproxy-400f.svg",
+      "alt": "FortiProxy 400F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.652Z",
+        "checksum": "535a70c04f2b078f8b96be5d7efa13c5d7277c33b62ba033f2336976b0740473"
+      }
+    }
+  },
+  {
+    "productId": "fortinet-fortirecorder-400f",
+    "sku": "FORT-FR400F",
+    "name": "FortiRecorder 400F",
+    "brand": "FORTINET",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/fortinet-fortirecorder-400f.svg",
+      "alt": "FortiRecorder 400F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.652Z",
+        "checksum": "a4a397de6b47856bbbe34a806a8ad54409d900acf7d6d70d2fdda14ce0556b3d"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-c1200-24t",
+    "sku": "CISCO-C1200-24T",
+    "name": "Cisco Catalyst C1200-24T",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-c1200-24t.svg",
+      "alt": "Cisco Catalyst C1200-24T",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.653Z",
+        "checksum": "4aa6fd9e5511f19cc34f9611fe9a7ede507d6d328badf10a759d03593d82c7d6"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-c1300-24p",
+    "sku": "CISCO-C1300-24P",
+    "name": "Cisco Catalyst C1300-24P",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-c1300-24p.svg",
+      "alt": "Cisco Catalyst C1300-24P",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.653Z",
+        "checksum": "01d720a30a15f8d9e3c4b4e227d34ec86e32ab6b213000bae0cb32a56bec973e"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9200l",
+    "sku": "CISCO-C9200L",
+    "name": "Cisco Catalyst 9200L",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9200l.svg",
+      "alt": "Cisco Catalyst 9200L",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.653Z",
+        "checksum": "c51906a11ecd960dd634545c12a384cbd9aac8a04a91509cee0b5654c6caf96c"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9300",
+    "sku": "CISCO-C9300",
+    "name": "Cisco Catalyst 9300",
+    "brand": "CISCO",
+    "category": "networking",
+    "asin": "B09YDNZY1B",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9300.svg",
+      "alt": "Cisco Catalyst 9300",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.654Z",
+        "checksum": "42cf9857fa27e20c2d3cae6bd53b559300599b950e62155d1098c479ee9184e4"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9300x",
+    "sku": "CISCO-C9300X",
+    "name": "Cisco Catalyst 9300X",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9300x.svg",
+      "alt": "Cisco Catalyst 9300X",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.654Z",
+        "checksum": "35f0098308985460c998a9df9f437e1a7a909cc89ec29304b39e469a94cc76c2"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9400",
+    "sku": "CISCO-C9400",
+    "name": "Cisco Catalyst 9400",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9400.svg",
+      "alt": "Cisco Catalyst 9400",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.655Z",
+        "checksum": "ce0931319f5849e99148a25d0c0a31501f0d4b2bbc7485b04703ff4cf281b5a6"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9500x",
+    "sku": "CISCO-C9500X",
+    "name": "Cisco Catalyst 9500X",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9500x.svg",
+      "alt": "Cisco Catalyst 9500X",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.655Z",
+        "checksum": "48532344e4ba41828b4718e82ccdea019115af464436b7e36ceca8ae11ab3107"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9600",
+    "sku": "CISCO-C9600",
+    "name": "Cisco Catalyst 9600",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9600.svg",
+      "alt": "Cisco Catalyst 9600",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.655Z",
+        "checksum": "365c0692a335dc56c50a2dd0b8fd41fd500da49ae5cfacc5596f613ac7a33ad9"
+      }
+    }
+  },
+  {
+    "productId": "cisco-nexus-93180yc",
+    "sku": "CISCO-N93180YC",
+    "name": "Cisco Nexus 93180YC",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-nexus-93180yc.svg",
+      "alt": "Cisco Nexus 93180YC",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.656Z",
+        "checksum": "8124f39e5d56d3f595139a10b1ac14e19084f85eb0e34625c1d13158cf2bae9e"
+      }
+    }
+  },
+  {
+    "productId": "cisco-nexus-9336c",
+    "sku": "CISCO-N9336C",
+    "name": "Cisco Nexus 9336C",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-nexus-9336c.svg",
+      "alt": "Cisco Nexus 9336C",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.656Z",
+        "checksum": "9104334ede60e59a40524b85b3a69abbee03d16df3f95da5cd4604fa30bd91ff"
+      }
+    }
+  },
+  {
+    "productId": "cisco-nexus-9364c",
+    "sku": "CISCO-N9364C",
+    "name": "Cisco Nexus 9364C",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-nexus-9364c.svg",
+      "alt": "Cisco Nexus 9364C",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.657Z",
+        "checksum": "fcb5871915cc9568fa025c7da353278c00dfae2cb7cf802e40a6b1e702dca266"
+      }
+    }
+  },
+  {
+    "productId": "cisco-nexus-9504",
+    "sku": "CISCO-N9504",
+    "name": "Cisco Nexus 9504",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-nexus-9504.svg",
+      "alt": "Cisco Nexus 9504",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.657Z",
+        "checksum": "8d9b44698e94eaf1933462f428de6c22d858b1b31d171da5b3f1ad9f6417b027"
+      }
+    }
+  },
+  {
+    "productId": "cisco-nexus-9508",
+    "sku": "CISCO-N9508",
+    "name": "Cisco Nexus 9508",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-nexus-9508.svg",
+      "alt": "Cisco Nexus 9508",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.657Z",
+        "checksum": "92946582cf72279a42a328c7f09f8edcf515f9050335f7fd46be36ae82e563dc"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-ms130",
+    "sku": "CISCO-MS130",
+    "name": "Cisco Meraki MS130",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-ms130.svg",
+      "alt": "Cisco Meraki MS130",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.658Z",
+        "checksum": "57af8e6f455f267c214dbff0d28bcc17c39bfdbe1714afdc6c90acf27c494b5a"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-ms150",
+    "sku": "CISCO-MS150",
+    "name": "Cisco Meraki MS150",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-ms150.svg",
+      "alt": "Cisco Meraki MS150",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.658Z",
+        "checksum": "65d67e8d47bd4510a098492383eca6eb392c0b1e6702a7435081154ba20b3ac9"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-ms225",
+    "sku": "CISCO-MS225",
+    "name": "Cisco Meraki MS225",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-ms225.svg",
+      "alt": "Cisco Meraki MS225",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.658Z",
+        "checksum": "fd009b8a401d2c2461e40fc421518afb5777e6d7436afe08671211f2ca62b93a"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-ms250",
+    "sku": "CISCO-MS250",
+    "name": "Cisco Meraki MS250",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-ms250.svg",
+      "alt": "Cisco Meraki MS250",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.659Z",
+        "checksum": "79079583002d25026765ba1379c7fb19103ab1ef7534639207d502df83fde2f9"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-ms355",
+    "sku": "CISCO-MS355",
+    "name": "Cisco Meraki MS355",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-ms355.svg",
+      "alt": "Cisco Meraki MS355",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.659Z",
+        "checksum": "deb5e6c9d98f4cce8b3e92f6f99913a4b9d88972f2401345b12717ae3e696a4f"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-ms390",
+    "sku": "CISCO-MS390",
+    "name": "Cisco Meraki MS390",
+    "brand": "CISCO",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-ms390.svg",
+      "alt": "Cisco Meraki MS390",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.660Z",
+        "checksum": "e689eb2d3a8696d89ecc43c51a122127cd3f64af6d6662b63af471ccfb0a27d0"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-mr36",
+    "sku": "CISCO-MR36",
+    "name": "Cisco Meraki MR36",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-mr36.svg",
+      "alt": "Cisco Meraki MR36",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.660Z",
+        "checksum": "f8af9626e8c2bc231f154ade8bb5c3789d74e537f3e26402f95c0fe49b8fa0c2"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-mr44",
+    "sku": "CISCO-MR44",
+    "name": "Cisco Meraki MR44",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-mr44.svg",
+      "alt": "Cisco Meraki MR44",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.660Z",
+        "checksum": "629d26149cfd5e3d4895047d45712681b16cd745d3050b3ec308b4a52129a7c5"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-mr46",
+    "sku": "CISCO-MR46",
+    "name": "Cisco Meraki MR46",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-mr46.svg",
+      "alt": "Cisco Meraki MR46",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.661Z",
+        "checksum": "f2681d286ed5fe8dfead481593674e7f9cf69f0c26605205fe967685467b265d"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-mr57",
+    "sku": "CISCO-MR57",
+    "name": "Cisco Meraki MR57",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-mr57.svg",
+      "alt": "Cisco Meraki MR57",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.661Z",
+        "checksum": "62fd1f3a4c9aa2371cbffa008d338c751d32849602d93cb80f580ac226d74316"
+      }
+    }
+  },
+  {
+    "productId": "cisco-meraki-cw9166",
+    "sku": "CISCO-CW9166",
+    "name": "Cisco Meraki CW9166",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-meraki-cw9166.svg",
+      "alt": "Cisco Meraki CW9166",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.661Z",
+        "checksum": "ed083c37ffaa0988ed52a516e75c6ed8bb529aca67f0eb75af05721d39373dae"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9162i",
+    "sku": "CISCO-9162I",
+    "name": "Cisco Catalyst 9162I",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9162i.svg",
+      "alt": "Cisco Catalyst 9162I",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.662Z",
+        "checksum": "21920df3c9408b37ec5626ff7731ecfb84901df6f02b736015f06682b871e576"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9164i",
+    "sku": "CISCO-9164I",
+    "name": "Cisco Catalyst 9164I",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9164i.svg",
+      "alt": "Cisco Catalyst 9164I",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.662Z",
+        "checksum": "16fbd85f92d76a3e5c9496b80db0a330ca8c9610253a2d96fd3d653aec244e66"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9166i",
+    "sku": "CISCO-9166I",
+    "name": "Cisco Catalyst 9166I",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9166i.svg",
+      "alt": "Cisco Catalyst 9166I",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.663Z",
+        "checksum": "f8f09fd45df2ab49389859011f6b1a0cf97b83d859f72825efd8b00b93c0e42c"
+      }
+    }
+  },
+  {
+    "productId": "cisco-catalyst-9163e",
+    "sku": "CISCO-9163E",
+    "name": "Cisco Catalyst 9163E",
+    "brand": "CISCO",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-catalyst-9163e.svg",
+      "alt": "Cisco Catalyst 9163E",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.663Z",
+        "checksum": "8bbf7201601cd0ae5529f91e6ccd44e6e3e275f7d982fcc720ded00a4dcaa75b"
+      }
+    }
+  },
+  {
+    "productId": "cisco-firepower-1010",
+    "sku": "CISCO-FPR1010",
+    "name": "Cisco Firepower 1010",
+    "brand": "CISCO",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-firepower-1010.svg",
+      "alt": "Cisco Firepower 1010",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.663Z",
+        "checksum": "9824a28431dbc6df070dbefbe7f54e51f65701ea972f7fa8715d91ea02cd6aad"
+      }
+    }
+  },
+  {
+    "productId": "cisco-firepower-1120",
+    "sku": "CISCO-FPR1120",
+    "name": "Cisco Firepower 1120",
+    "brand": "CISCO",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-firepower-1120.svg",
+      "alt": "Cisco Firepower 1120",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.664Z",
+        "checksum": "ba71c4cb94d6154d8f5557e6cf6e0e2d80450cd6d7064428bcafece76e4d631e"
+      }
+    }
+  },
+  {
+    "productId": "cisco-firepower-1140",
+    "sku": "CISCO-FPR1140",
+    "name": "Cisco Firepower 1140",
+    "brand": "CISCO",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-firepower-1140.svg",
+      "alt": "Cisco Firepower 1140",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.664Z",
+        "checksum": "1d133ec1b328750ec9706787f096c18a8ef3018f3d3a90630bf9cff649f17a5d"
+      }
+    }
+  },
+  {
+    "productId": "cisco-firepower-2110",
+    "sku": "CISCO-FPR2110",
+    "name": "Cisco Firepower 2110",
+    "brand": "CISCO",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-firepower-2110.svg",
+      "alt": "Cisco Firepower 2110",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.664Z",
+        "checksum": "b6f9aa0831ddc5dcd01cf90a49eea1e9d3d41a7413bac0e6bff91f1cebce469a"
+      }
+    }
+  },
+  {
+    "productId": "cisco-secure-firewall-3105",
+    "sku": "CISCO-SF3105",
+    "name": "Cisco Secure Firewall 3105",
+    "brand": "CISCO",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-secure-firewall-3105.svg",
+      "alt": "Cisco Secure Firewall 3105",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.665Z",
+        "checksum": "cb302a42125fe2fc313b33f47ad1ec19b81192166c9eb4fa6fbd465948f9fcd1"
+      }
+    }
+  },
+  {
+    "productId": "cisco-secure-firewall-3110",
+    "sku": "CISCO-SF3110",
+    "name": "Cisco Secure Firewall 3110",
+    "brand": "CISCO",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-secure-firewall-3110.svg",
+      "alt": "Cisco Secure Firewall 3110",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.665Z",
+        "checksum": "ac8fc7a040e524859774338c71625131a599b0a7dfc0c2f5973608aebf24f054"
+      }
+    }
+  },
+  {
+    "productId": "cisco-secure-firewall-4200",
+    "sku": "CISCO-SF4200",
+    "name": "Cisco Secure Firewall 4200",
+    "brand": "CISCO",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-secure-firewall-4200.svg",
+      "alt": "Cisco Secure Firewall 4200",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.666Z",
+        "checksum": "5804fb0ee8c2f8fe0f771790838ef6a5f8a353898bf89feda175776e560df7a2"
+      }
+    }
+  },
+  {
+    "productId": "cisco-ucs-c220-m8",
+    "sku": "CISCO-UCS-C220-M8",
+    "name": "Cisco UCS C220 M8",
+    "brand": "CISCO",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-ucs-c220-m8.svg",
+      "alt": "Cisco UCS C220 M8",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.666Z",
+        "checksum": "f60c7a39176be598e22364753b052df19f16101cdc967f874c561e844ed3739a"
+      }
+    }
+  },
+  {
+    "productId": "cisco-ucs-c240-m8",
+    "sku": "CISCO-UCS-C240-M8",
+    "name": "Cisco UCS C240 M8",
+    "brand": "CISCO",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-ucs-c240-m8.svg",
+      "alt": "Cisco UCS C240 M8",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.667Z",
+        "checksum": "31954c779b7ef7b8ba731b661ade0c83ef72ad4101bdecc3b8319f9deba5033e"
+      }
+    }
+  },
+  {
+    "productId": "cisco-ucs-x210c-m8",
+    "sku": "CISCO-UCS-X210-M8",
+    "name": "Cisco UCS X210c M8",
+    "brand": "CISCO",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-ucs-x210c-m8.svg",
+      "alt": "Cisco UCS X210c M8",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.667Z",
+        "checksum": "eda873c21d9f33fbf533cbb4d7bac30ba2f40f009abbce8a3d603781b8b8c4dc"
+      }
+    }
+  },
+  {
+    "productId": "cisco-ucs-x410c-m8",
+    "sku": "CISCO-UCS-X410-M8",
+    "name": "Cisco UCS X410c M8",
+    "brand": "CISCO",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-ucs-x410c-m8.svg",
+      "alt": "Cisco UCS X410c M8",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.668Z",
+        "checksum": "36423b16b6f26a1d2be8678076c9b71ee006604ff84bf26b00a95c4b4b5333f0"
+      }
+    }
+  },
+  {
+    "productId": "cisco-ucs-x9508",
+    "sku": "CISCO-UCS-X9508",
+    "name": "Cisco UCS X9508",
+    "brand": "CISCO",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/cisco-ucs-x9508.svg",
+      "alt": "Cisco UCS X9508",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.668Z",
+        "checksum": "ed4b91eed6d992b17f9fec6cb901caacf23ebc9ca2820337a20f36a0f1e7ac0b"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceanstor-dorado-2100",
+    "sku": "HUA-DORADO-2100",
+    "name": "OceanStor Dorado 2100",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceanstor-dorado-2100.svg",
+      "alt": "OceanStor Dorado 2100",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.668Z",
+        "checksum": "e3a621d3b6dee8ea8b1aae12c6cc338d78717f93bdd56788ab45d4b5385c5011"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceanstor-dorado-5000",
+    "sku": "HUA-DORADO-5000",
+    "name": "OceanStor Dorado 5000",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceanstor-dorado-5000.svg",
+      "alt": "OceanStor Dorado 5000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.669Z",
+        "checksum": "2eccb8cf633a832fcf9694217006fb533633b1545025ffc046acef7c4cb23adf"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceanstor-dorado-6000",
+    "sku": "HUA-DORADO-6000",
+    "name": "OceanStor Dorado 6000",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceanstor-dorado-6000.svg",
+      "alt": "OceanStor Dorado 6000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.669Z",
+        "checksum": "4ecd1b51248a3d8e7403be1b87c82c1eb83a842590f8561291026fc66a0c131e"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceanstor-dorado-8000",
+    "sku": "HUA-DORADO-8000",
+    "name": "OceanStor Dorado 8000",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceanstor-dorado-8000.svg",
+      "alt": "OceanStor Dorado 8000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.670Z",
+        "checksum": "509673d00414ce9195afab90944162f4563c40f487b41a370b846cbfb131f576"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceanstor-pacific-9920",
+    "sku": "HUA-PACIFIC-9920",
+    "name": "OceanStor Pacific 9920",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceanstor-pacific-9920.svg",
+      "alt": "OceanStor Pacific 9920",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.670Z",
+        "checksum": "5e9d7781fa8dce073dcc26e7b1fa625da74421ee69d4753439e4522d644c6701"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceanprotect-x3000",
+    "sku": "HUA-OPROTECT-X3000",
+    "name": "OceanProtect X3000",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceanprotect-x3000.svg",
+      "alt": "OceanProtect X3000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.670Z",
+        "checksum": "4d1f092b4a35bddbb1a2b769f4c5b921903d767fb58b2663780c1acf238dfa1c"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceanprotect-x6000",
+    "sku": "HUA-OPROTECT-X6000",
+    "name": "OceanProtect X6000",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceanprotect-x6000.svg",
+      "alt": "OceanProtect X6000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.671Z",
+        "checksum": "5dd6a7c6dad53b59e556841b7d05b4348d125a86b0705d055d706a56ef32491d"
+      }
+    }
+  },
+  {
+    "productId": "huawei-fusionserver-pro-2288h-v7",
+    "sku": "HUA-FUSION-2288H-V7",
+    "name": "FusionServer Pro 2288H V7",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-fusionserver-pro-2288h-v7.svg",
+      "alt": "FusionServer Pro 2288H V7",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.671Z",
+        "checksum": "3343c19d21400fbdca74224ad82d5831d2d6a99e7e9e806940dd57e51a150b52"
+      }
+    }
+  },
+  {
+    "productId": "huawei-fusionserver-pro-2488h-v7",
+    "sku": "HUA-FUSION-2488H-V7",
+    "name": "FusionServer Pro 2488H V7",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-fusionserver-pro-2488h-v7.svg",
+      "alt": "FusionServer Pro 2488H V7",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.672Z",
+        "checksum": "25f2994d9fff5a8218e5a52261315b8d3c12fe2edcb957f81bef972536502121"
+      }
+    }
+  },
+  {
+    "productId": "huawei-fusionserver-pro-5298-v7",
+    "sku": "HUA-FUSION-5298-V7",
+    "name": "FusionServer Pro 5298 V7",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-fusionserver-pro-5298-v7.svg",
+      "alt": "FusionServer Pro 5298 V7",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.672Z",
+        "checksum": "b6d7a3a69e0a8d3c02fbe4fd3c9e12b30c5b6e0443aa1cd16779a4c135bfd694"
+      }
+    }
+  },
+  {
+    "productId": "huawei-fusioncube-1000",
+    "sku": "HUA-FCUBE-1000",
+    "name": "FusionCube 1000",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-fusioncube-1000.svg",
+      "alt": "FusionCube 1000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.672Z",
+        "checksum": "cd507d84d8a1ced031cfe5d51489d8eda344ba4fe5d691c7a2b54af5a077a887"
+      }
+    }
+  },
+  {
+    "productId": "huawei-fusioncube-a3000",
+    "sku": "HUA-FCUBE-A3000",
+    "name": "FusionCube A3000",
+    "brand": "HUAWEI",
+    "category": "server-storage",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-fusioncube-a3000.svg",
+      "alt": "FusionCube A3000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.673Z",
+        "checksum": "be481f45b400aa040b029a1a05c978a7984ca07ea5a7032b9dd4112516b59fb0"
+      }
+    }
+  },
+  {
+    "productId": "huawei-clouengine-s5735",
+    "sku": "HUA-CE-S5735",
+    "name": "CloudEngine S5735",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-clouengine-s5735.svg",
+      "alt": "CloudEngine S5735",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.673Z",
+        "checksum": "673652e7d28185f1b94d2834ea8b32339101cc8d474544b1c0f75fb34fdc1442"
+      }
+    }
+  },
+  {
+    "productId": "huawei-clouengine-s6730",
+    "sku": "HUA-CE-S6730",
+    "name": "CloudEngine S6730",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-clouengine-s6730.svg",
+      "alt": "CloudEngine S6730",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.674Z",
+        "checksum": "b8334bb1701f1ee381464291c05e5a6e63168e4581ceca8b559dbc3b3b1d3d80"
+      }
+    }
+  },
+  {
+    "productId": "huawei-clouengine-s6730h",
+    "sku": "HUA-CE-S6730H",
+    "name": "CloudEngine S6730-H",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-clouengine-s6730h.svg",
+      "alt": "CloudEngine S6730-H",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.674Z",
+        "checksum": "d4df71d5069a1a91273e16345d1697a0a143864b94f13a9f6b05b778edb08e62"
+      }
+    }
+  },
+  {
+    "productId": "huawei-clouengine-s8700",
+    "sku": "HUA-CE-S8700",
+    "name": "CloudEngine S8700",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-clouengine-s8700.svg",
+      "alt": "CloudEngine S8700",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.675Z",
+        "checksum": "388085cae4e282352b55706ce19972bbf32954fef317cc955190786a59e480f8"
+      }
+    }
+  },
+  {
+    "productId": "huawei-clouengine-s12700e",
+    "sku": "HUA-CE-S12700E",
+    "name": "CloudEngine S12700E",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-clouengine-s12700e.svg",
+      "alt": "CloudEngine S12700E",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.675Z",
+        "checksum": "d8a74d83b98f1ee9204d562c39cf198cb0554d7d73a72a5b16d1abe28dbb8e42"
+      }
+    }
+  },
+  {
+    "productId": "huawei-clouengine-16800",
+    "sku": "HUA-CE-16800",
+    "name": "CloudEngine 16800",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-clouengine-16800.svg",
+      "alt": "CloudEngine 16800",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.675Z",
+        "checksum": "c3c01de3ea100e192cab8667ae7105214d179e528c8787e4c43ef8c9c99ac5ba"
+      }
+    }
+  },
+  {
+    "productId": "huawei-airengine-5761",
+    "sku": "HUA-AE5761",
+    "name": "AirEngine 5761",
+    "brand": "HUAWEI",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-airengine-5761.svg",
+      "alt": "AirEngine 5761",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.676Z",
+        "checksum": "b7919ff49d804867871bc4996e468a7fc1fbe981df21e72117295ad1d52ee837"
+      }
+    }
+  },
+  {
+    "productId": "huawei-airengine-5773",
+    "sku": "HUA-AE5773",
+    "name": "AirEngine 5773",
+    "brand": "HUAWEI",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-airengine-5773.svg",
+      "alt": "AirEngine 5773",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.676Z",
+        "checksum": "30a0992862d5bceda2aa963b8c006ef05b40761e2871362b0b4804bbf0c89d45"
+      }
+    }
+  },
+  {
+    "productId": "huawei-airengine-6776",
+    "sku": "HUA-AE6776",
+    "name": "AirEngine 6776",
+    "brand": "HUAWEI",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-airengine-6776.svg",
+      "alt": "AirEngine 6776",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.676Z",
+        "checksum": "cbbed0634df0069b55fdc77a113c8843ab2124fb318f47b7630324bd08204a82"
+      }
+    }
+  },
+  {
+    "productId": "huawei-airengine-8771",
+    "sku": "HUA-AE8771",
+    "name": "AirEngine 8771",
+    "brand": "HUAWEI",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-airengine-8771.svg",
+      "alt": "AirEngine 8771",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.677Z",
+        "checksum": "6c10d26210aaca16632e2b8c4300da50e6c8c25c7a56cdbd717f455482958579"
+      }
+    }
+  },
+  {
+    "productId": "huawei-ekit-ap362",
+    "sku": "HUA-EKIT-AP362",
+    "name": "eKit AP362",
+    "brand": "HUAWEI",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-ekit-ap362.svg",
+      "alt": "eKit AP362",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.677Z",
+        "checksum": "88a23ec0ba0675125da37454df4384cb7287cb22d5e902b19b2208008e9f88c8"
+      }
+    }
+  },
+  {
+    "productId": "huawei-ekit-ap673",
+    "sku": "HUA-EKIT-AP673",
+    "name": "eKit AP673",
+    "brand": "HUAWEI",
+    "category": "wireless",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-ekit-ap673.svg",
+      "alt": "eKit AP673",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.678Z",
+        "checksum": "487d885354906abc9fae9780b597c4d65f4fe7803217c7522058319bcb6a826e"
+      }
+    }
+  },
+  {
+    "productId": "huawei-ekitengine-s310",
+    "sku": "HUA-EKIT-S310",
+    "name": "eKitEngine S310",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-ekitengine-s310.svg",
+      "alt": "eKitEngine S310",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.678Z",
+        "checksum": "2fa17b46b25e5516a7c9221f622c9db3e38eff5a50dcaa8de4f888688c7b20e9"
+      }
+    }
+  },
+  {
+    "productId": "huawei-ekitengine-s530",
+    "sku": "HUA-EKIT-S530",
+    "name": "eKitEngine S530",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-ekitengine-s530.svg",
+      "alt": "eKitEngine S530",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.678Z",
+        "checksum": "0967eb4dfa9232cac6bd44c4dd480b2797caa3a8f0c99858c943fc86da617317"
+      }
+    }
+  },
+  {
+    "productId": "huawei-ekitengine-s5735",
+    "sku": "HUA-EKIT-S5735",
+    "name": "eKitEngine S5735",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-ekitengine-s5735.svg",
+      "alt": "eKitEngine S5735",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.679Z",
+        "checksum": "244c32432f001821c34b89018af4edcc4d45d4f3a2df36653e36e5c356b91faf"
+      }
+    }
+  },
+  {
+    "productId": "huawei-netengine-ar610",
+    "sku": "HUA-NE-AR610",
+    "name": "NetEngine AR610",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-netengine-ar610.svg",
+      "alt": "NetEngine AR610",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.679Z",
+        "checksum": "f8b0f1713c6d4bf3a4d75232d3807e4eae1101f087e0a92d6954d079099d1c56"
+      }
+    }
+  },
+  {
+    "productId": "huawei-netengine-ar630",
+    "sku": "HUA-NE-AR630",
+    "name": "NetEngine AR630",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-netengine-ar630.svg",
+      "alt": "NetEngine AR630",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.679Z",
+        "checksum": "45f4dd1582f8c0e70c987d627347ae70729b8ac34be7a6d457ec094acef6e443"
+      }
+    }
+  },
+  {
+    "productId": "huawei-netengine-ar6700",
+    "sku": "HUA-NE-AR6700",
+    "name": "NetEngine AR6700",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-netengine-ar6700.svg",
+      "alt": "NetEngine AR6700",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.680Z",
+        "checksum": "3c8f5b9e824674c2b04fbde01ccb0b13390aa444effc73693b4088af04163d38"
+      }
+    }
+  },
+  {
+    "productId": "huawei-netengine-8000-m1a",
+    "sku": "HUA-NE8000-M1A",
+    "name": "NetEngine 8000 M1A",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-netengine-8000-m1a.svg",
+      "alt": "NetEngine 8000 M1A",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.680Z",
+        "checksum": "8b7c81a2beec85a8884cb725d4507e9e6b826bf074ec5ff47b4fa52973d50210"
+      }
+    }
+  },
+  {
+    "productId": "huawei-optixstar-f100d",
+    "sku": "HUA-OXSTAR-F100D",
+    "name": "OptiXstar F100D",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-optixstar-f100d.svg",
+      "alt": "OptiXstar F100D",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.681Z",
+        "checksum": "a21e4b9c559523d66f393d07bfeaa918618ec76c3f922f8bd39ef3ccb5777ac3"
+      }
+    }
+  },
+  {
+    "productId": "huawei-optixstar-p813e",
+    "sku": "HUA-OXSTAR-P813E",
+    "name": "OptiXstar P813E",
+    "brand": "HUAWEI",
+    "category": "networking",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-optixstar-p813e.svg",
+      "alt": "OptiXstar P813E",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.681Z",
+        "checksum": "c7cd8ec450b6f9870c2878cc1a6c725f3f3055424e9783f827066ea3d48e7471"
+      }
+    }
+  },
+  {
+    "productId": "huawei-ideahub-board-2",
+    "sku": "HUA-IDEAHUB-B2",
+    "name": "IdeaHub Board 2",
+    "brand": "HUAWEI",
+    "category": "monitor",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-ideahub-board-2.svg",
+      "alt": "IdeaHub Board 2",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.682Z",
+        "checksum": "90383c32dc64525cfdc01ea297d765dba9063b3ed559e4541f08293f77c37d7b"
+      }
+    }
+  },
+  {
+    "productId": "huawei-ideahub-s2",
+    "sku": "HUA-IDEAHUB-S2",
+    "name": "IdeaHub S2",
+    "brand": "HUAWEI",
+    "category": "monitor",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-ideahub-s2.svg",
+      "alt": "IdeaHub S2",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.682Z",
+        "checksum": "cf1a55c42153f4e653e1027da01580654953b3714b23d15bf391dad1a084eec2"
+      }
+    }
+  },
+  {
+    "productId": "huawei-hisecengine-usg6500f",
+    "sku": "HUA-USG6500F",
+    "name": "HiSecEngine USG6500F",
+    "brand": "HUAWEI",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-hisecengine-usg6500f.svg",
+      "alt": "HiSecEngine USG6500F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.683Z",
+        "checksum": "3a2abaa1f85e5880cc1a8942d8b18a0a31f638803199cbe08035c67fd466ef80"
+      }
+    }
+  },
+  {
+    "productId": "huawei-hisecengine-usg6600f",
+    "sku": "HUA-USG6600F",
+    "name": "HiSecEngine USG6600F",
+    "brand": "HUAWEI",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-hisecengine-usg6600f.svg",
+      "alt": "HiSecEngine USG6600F",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.684Z",
+        "checksum": "fcc5f6ffabf99f42533f05dc44c4b811c428dca7ccd8524c13bebc7e2f889e7f"
+      }
+    }
+  },
+  {
+    "productId": "huawei-hisecengine-antiddos-12000",
+    "sku": "HUA-ANTIDDOS-12000",
+    "name": "HiSecEngine AntiDDoS12000",
+    "brand": "HUAWEI",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-hisecengine-antiddos-12000.svg",
+      "alt": "HiSecEngine AntiDDoS12000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.684Z",
+        "checksum": "c3dd7bb4c24baa77dac2db9c1d9041f3d8165cb7f768bc71ef6ba6793c837a8b"
+      }
+    }
+  },
+  {
+    "productId": "huawei-oceandisk-300p",
+    "sku": "HUA-OCEANDISK-300P",
+    "name": "OceanDisk 300P",
+    "brand": "HUAWEI",
+    "category": "datacenter",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-oceandisk-300p.svg",
+      "alt": "OceanDisk 300P",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.685Z",
+        "checksum": "d2b86d17ad3ccecebd729c9cd548a24e0e5720f66055226ecd88e85b35adecff"
+      }
+    }
+  },
+  {
+    "productId": "huawei-fusionmodule-2000",
+    "sku": "HUA-FMODULE2000",
+    "name": "FusionModule2000",
+    "brand": "HUAWEI",
+    "category": "datacenter",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/huawei-fusionmodule-2000.svg",
+      "alt": "FusionModule2000",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.685Z",
+        "checksum": "703c4b4f44888dfab2a39ffce2c7a8b8dcb16791cc35a780a39ce8fdd172a8bf"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2387g2h-liu",
+    "sku": "HIK-2CD2387G2HLIU",
+    "name": "DS-2CD2387G2H-LIU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0CCP7V1BG",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2387g2h-liu.svg",
+      "alt": "DS-2CD2387G2H-LIU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.685Z",
+        "checksum": "f136c9f409a6093c3b492ac6856de15ad19ddcac66346c35688bba82a50287a3"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2047g2h-liu",
+    "sku": "HIK-2CD2047G2HLIU",
+    "name": "DS-2CD2047G2H-LIU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0CCP5NPQT",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2047g2h-liu.svg",
+      "alt": "DS-2CD2047G2H-LIU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.686Z",
+        "checksum": "aba1b4fe324e64cb64ffb808e2c8634d6cc6d114bb54f43473ce14e1190d33bd"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2687g2t-lzs",
+    "sku": "HIK-2CD2687G2TLZS",
+    "name": "DS-2CD2687G2T-LZS",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2687g2t-lzs.svg",
+      "alt": "DS-2CD2687G2T-LZS",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.686Z",
+        "checksum": "fb160bbdc6b766222ab51640f2ad8dbe049e02a67101f995a6aced57be344e8e"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2147g2h-lisu",
+    "sku": "HIK-2CD2147G2HLISU",
+    "name": "DS-2CD2147G2H-LISU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2147g2h-lisu.svg",
+      "alt": "DS-2CD2147G2H-LISU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.687Z",
+        "checksum": "90c4e109fbddebf8d41610b2ab0c00e784fe065fdc02c9c5c93d7c3f5783c314"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2187g2h-lisu",
+    "sku": "HIK-2CD2187G2HLISU",
+    "name": "DS-2CD2187G2H-LISU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0CV5RHC7D",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2187g2h-lisu.svg",
+      "alt": "DS-2CD2187G2H-LISU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.687Z",
+        "checksum": "fede4f89baa78bde30ace2d1535bdeb464fce3bd5a42a45496dcf7f756603d0d"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2t87g2h-liu",
+    "sku": "HIK-2CD2T87G2HLIU",
+    "name": "DS-2CD2T87G2H-LIU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0CFFYT3C9",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2t87g2h-liu.svg",
+      "alt": "DS-2CD2T87G2H-LIU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.687Z",
+        "checksum": "f99e89278eee0c70bb1b946652d559f44bd7d5bfc3a3f4cd40ce8ee77f1db533"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd3d47g2-lsu",
+    "sku": "HIK-2CD3D47G2LSU",
+    "name": "DS-2CD3D47G2-LSU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd3d47g2-lsu.svg",
+      "alt": "DS-2CD3D47G2-LSU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.688Z",
+        "checksum": "7eb4e491ab8decd8367bd6a1bd75cc9ced2404dcaa54ea97fc033a2f52ad45f7"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd6825g0",
+    "sku": "HIK-2CD6825G0",
+    "name": "DS-2CD6825G0",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B08DVZDR61",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd6825g0.svg",
+      "alt": "DS-2CD6825G0",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.688Z",
+        "checksum": "e5698e1b737a68507738ed357027fe77bb74337d1eb7b48aeef43f790fa8bfd1"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2df8c442ixs",
+    "sku": "HIK-2DF8C442IXS",
+    "name": "DS-2DF8C442IXS-AELW",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2df8c442ixs.svg",
+      "alt": "DS-2DF8C442IXS-AELW",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.689Z",
+        "checksum": "276716dc070e717f9a12ab7e7f89d54f49aec63b79a033f6cf262385da04dc39"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2df8c825ixg",
+    "sku": "HIK-2DF8C825IXG",
+    "name": "DS-2DF8C825IXG-ELW",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2df8c825ixg.svg",
+      "alt": "DS-2DF8C825IXG-ELW",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.689Z",
+        "checksum": "f6e9fe0b89dca87e96486065c2ce0ebd09fc97947c471c59832efc41595e18e1"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2se7c425mwg",
+    "sku": "HIK-2SE7C425MWG",
+    "name": "DS-2SE7C425MWG-E",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2se7c425mwg.svg",
+      "alt": "DS-2SE7C425MWG-E",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.690Z",
+        "checksum": "169b389d1711461bab1707f7379bd8eedf5777a434aec90c6b14b3bd16f93473"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-9664ni-m16",
+    "sku": "HIK-9664NIM16",
+    "name": "DS-9664NI-M16",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0DHSJX1FT",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-9664ni-m16.svg",
+      "alt": "DS-9664NI-M16",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.690Z",
+        "checksum": "84947f881756e59c3048bd8255ab225c0997009a158f8b6b0cfe0085992c3d93"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-9632ni-m16",
+    "sku": "HIK-9632NIM16",
+    "name": "DS-9632NI-M16",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-9632ni-m16.svg",
+      "alt": "DS-9632NI-M16",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.690Z",
+        "checksum": "3fd405fd967fec6baa806857fb6a7789b7a06f237f71e6e9f0ec14905a145bb2"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-7732nxi-i4",
+    "sku": "HIK-7732NXII4",
+    "name": "DS-7732NXI-I4",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0CVSDKZHJ",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-7732nxi-i4.svg",
+      "alt": "DS-7732NXI-I4",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.691Z",
+        "checksum": "52ed5427f16d9fcd5a6130fbcce118ed38083e388bc7667214af5b64e9b65bcc"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-7616nxi-k2",
+    "sku": "HIK-7616NXIK2",
+    "name": "DS-7616NXI-K2",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0B77S6HR1",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-7616nxi-k2.svg",
+      "alt": "DS-7616NXI-K2",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.691Z",
+        "checksum": "8a1a5f61731bfbdeac2575e191b88d5f09d139ade0c76bdc5b6d80770ada355b"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ids-7208huhi-m1",
+    "sku": "HIK-7208HUHIM1",
+    "name": "iDS-7208HUHI-M1",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ids-7208huhi-m1.svg",
+      "alt": "iDS-7208HUHI-M1",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.692Z",
+        "checksum": "eb43989d52e0be4393a21fbf38ad26e03eb77e528454281c8c6b099640abdda0"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ids-7216huhi-m2",
+    "sku": "HIK-7216HUHIM2",
+    "name": "iDS-7216HUHI-M2",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0BJ7CLBV3",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ids-7216huhi-m2.svg",
+      "alt": "iDS-7216HUHI-M2",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.692Z",
+        "checksum": "d993c806bc10354cf8d7cba9a9dc82ec3c06c9f97289088f569262014bf420a3"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ids-7232hqhi-m2",
+    "sku": "HIK-7232HQHIM2",
+    "name": "iDS-7232HQHI-M2",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0FS82CKG8",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ids-7232hqhi-m2.svg",
+      "alt": "iDS-7232HQHI-M2",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.693Z",
+        "checksum": "e3af502fca790f43868b371750316e9f9cb0c0f448b15fa762599e14d0a33fa1"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2347g2-lu",
+    "sku": "HIK-2CD2347G2LU",
+    "name": "DS-2CD2347G2-LU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B09HMY9X69",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2347g2-lu.svg",
+      "alt": "DS-2CD2347G2-LU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.693Z",
+        "checksum": "b8df00f8634c3ae4d8c9f10b8b7c93891864452f926f9d7d8cba4fae276ca934"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2047g2-lu",
+    "sku": "HIK-2CD2047G2LU",
+    "name": "DS-2CD2047G2-LU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0996CRCL6",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2047g2-lu.svg",
+      "alt": "DS-2CD2047G2-LU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.693Z",
+        "checksum": "115b4396f02329d96a0b4019eac4008120642a2fa165509087011557cfd68308"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2t47g2-l",
+    "sku": "HIK-DS2CD2T47G2L",
+    "name": "DS-2CD2T47G2-L",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B08SNWG3LC",
+    "imageSource": "real",
+    "primaryImage": {
+      "url": "https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd2t47g2-l/images/products_hikvision-ds-2cd2t47g2-l_images_primary.webp",
+      "alt": "DS-2CD2T47G2-L",
+      "width": 600,
+      "height": 600,
+      "imageSource": "real",
+      "provenance": {
+        "sourceProvider": "amazon-scraper",
+        "sourceUrl": "https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd2t47g2-l/images/products_hikvision-ds-2cd2t47g2-l_images_primary.webp",
+        "sourceIdentifier": "B08SNWG3LC",
+        "fetchedAt": "2026-07-30T04:10:34.694Z",
+        "checksum": "00ef3768e160473de4b945dff7316acff3a3f1aeeecb957766d4cd9f14f06043"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2366g2-iu",
+    "sku": "HIK-2CD2366G2IU",
+    "name": "DS-2CD2366G2-IU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B09HMVTSKY",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2366g2-iu.svg",
+      "alt": "DS-2CD2366G2-IU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.694Z",
+        "checksum": "767d84cc821e2d4e6ea2e121e663f8def925669149e7b781a5e2e3199e13b7d8"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2386g2-iu",
+    "sku": "HIK-2CD2386G2IU",
+    "name": "DS-2CD2386G2-IU",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0996BQ95Q",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2386g2-iu.svg",
+      "alt": "DS-2CD2386G2-IU",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.694Z",
+        "checksum": "09eb8c2ddf8b5c282c48a706813b2f6fe3f9360c42e2a6aecbc690be8212f535"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-2cd2t86g2-4i",
+    "sku": "HIK-2CD2T86G24I",
+    "name": "DS-2CD2T86G2-4I",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0996BFJ2B",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-2cd2t86g2-4i.svg",
+      "alt": "DS-2CD2T86G2-4I",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.695Z",
+        "checksum": "450d61fee17984aa428ca12d93f0563a59cf815d11164a63704849a63411e63f"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-k1t673dx",
+    "sku": "HIK-K1T673DX",
+    "name": "DS-K1T673DX",
+    "brand": "HIKVISION",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-k1t673dx.svg",
+      "alt": "DS-K1T673DX",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.695Z",
+        "checksum": "9367f934d38a5e91ca8b36209b6d87814cab9e273d403c29f4969957a429c46d"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-k1t342mfwx",
+    "sku": "HIK-K1T342MFWX",
+    "name": "DS-K1T342MFWX",
+    "brand": "HIKVISION",
+    "category": "security",
+    "asin": "B0BDLPC4QQ",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-k1t342mfwx.svg",
+      "alt": "DS-K1T342MFWX",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.695Z",
+        "checksum": "2492f00264079fab472307e5a276fd0ae0c475cdddba58bcd6a5c661472662f3"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-k2604t",
+    "sku": "HIK-K2604T",
+    "name": "DS-K2604T",
+    "brand": "HIKVISION",
+    "category": "security",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-k2604t.svg",
+      "alt": "DS-K2604T",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.696Z",
+        "checksum": "51bdba97bbc908a7b082c4b884b83709929c5b7d4c63d072aa3719469786d245"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-kh9510-wte1",
+    "sku": "HIK-KH9510WTE1",
+    "name": "DS-KH9510-WTE1",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B0D9DZBF84",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-kh9510-wte1.svg",
+      "alt": "DS-KH9510-WTE1",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.696Z",
+        "checksum": "bfd938b8ea5a4e0ea4a49bfd374d5e34057f17ff715bd5fb0710a7e33f68528a"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-kv8113-wme1",
+    "sku": "HIK-KV8113WME1",
+    "name": "DS-KV8113-WME1",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B08JZCJFKF",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-kv8113-wme1.svg",
+      "alt": "DS-KV8113-WME1",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.697Z",
+        "checksum": "a17da5ad1d09eb08e96a4f7744115816d270a6def5afd219999d97c29ca0419a"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-kd8003",
+    "sku": "HIK-KD8003",
+    "name": "DS-KD8003",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "asin": "B07TX6KGGX",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-kd8003.svg",
+      "alt": "DS-KD8003",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.697Z",
+        "checksum": "1c239440e4e8a4c23298922c0970a88813880d4898b99a2595ae364f937bfe3f"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ax-pro-ds-pwa96",
+    "sku": "HIK-AXPRO-PWA96",
+    "name": "AX PRO DS-PWA96",
+    "brand": "HIKVISION",
+    "category": "security",
+    "asin": "B08L8GM7CL",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ax-pro-ds-pwa96.svg",
+      "alt": "AX PRO DS-PWA96",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.698Z",
+        "checksum": "36dec5419ef704055e0a901755ca63d266902b78729961b2ccca823db88cf477"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ax-pro-ds-pdc15",
+    "sku": "HIK-AXPRO-PDC15",
+    "name": "AX PRO DS-PDC15",
+    "brand": "HIKVISION",
+    "category": "security",
+    "asin": "B0BKRVP3LN",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ax-pro-ds-pdc15.svg",
+      "alt": "AX PRO DS-PDC15",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.698Z",
+        "checksum": "1c1c3832617c6a22773c75e73fcf2edca336152eae7de0d55a39303f2c271a40"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ax-pro-ds-pdp15",
+    "sku": "HIK-AXPRO-PDP15",
+    "name": "AX PRO DS-PDP15",
+    "brand": "HIKVISION",
+    "category": "security",
+    "asin": "B0987DLYRS",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ax-pro-ds-pdp15.svg",
+      "alt": "AX PRO DS-PDP15",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.699Z",
+        "checksum": "992e2ea442fd5759a3609ce683d9eb2b70bcc123f891350406773e0752cca485"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-hikcentral-professional",
+    "sku": "HIK-CENTRAL-PRO",
+    "name": "HikCentral Professional",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-hikcentral-professional.svg",
+      "alt": "HikCentral Professional",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.699Z",
+        "checksum": "418a362dd22324d573022b14695ddfab43ef9eba26ba01cce65c4e3dfeddbbb9"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-hikcentral-enterprise",
+    "sku": "HIK-CENTRAL-ENT",
+    "name": "HikCentral Enterprise",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-hikcentral-enterprise.svg",
+      "alt": "HikCentral Enterprise",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.700Z",
+        "checksum": "97e392c8d7e998c12a4061481164f237ec0ab23e65aedd38a4b032f3c25ad2db"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-d5022qe",
+    "sku": "HIK-D5022QE",
+    "name": "DS-D5022QE",
+    "brand": "HIKVISION",
+    "category": "monitor",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-d5022qe.svg",
+      "alt": "DS-D5022QE",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.700Z",
+        "checksum": "92a0acc7602773bd2dbe1f432b5bf0ebe49a773df28e5c94ed6b624219929b2d"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-d5043uc",
+    "sku": "HIK-D5043UC",
+    "name": "DS-D5043UC",
+    "brand": "HIKVISION",
+    "category": "monitor",
+    "asin": "B08BKRHFVG",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-d5043uc.svg",
+      "alt": "DS-D5043UC",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.701Z",
+        "checksum": "3f18ef01ec9777264cdad6f33dbdb99146eb2a671be812dd6d1a010ba72b33a1"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-d5b65rb",
+    "sku": "HIK-D5B65RB",
+    "name": "DS-D5B65RB",
+    "brand": "HIKVISION",
+    "category": "monitor",
+    "asin": "B09X6ZB7YF",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-d5b65rb.svg",
+      "alt": "DS-D5B65RB",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.701Z",
+        "checksum": "fcca6bcf439c35b7e5c537ad2fbe619b6813e90785173df63c902356413b3933"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-6908udi",
+    "sku": "HIK-6908UDI",
+    "name": "DS-6908UDI",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-6908udi.svg",
+      "alt": "DS-6908UDI",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.702Z",
+        "checksum": "63d15daccee21ec73a8db2b547179d3199285c9c09265a4a1b357913db16455d"
+      }
+    }
+  },
+  {
+    "productId": "hikvision-ds-a81024s",
+    "sku": "HIK-A81024S",
+    "name": "DS-A81024S",
+    "brand": "HIKVISION",
+    "category": "cctv",
+    "imageSource": "placeholder",
+    "primaryImage": {
+      "url": "/assets/images/branded/hikvision-ds-a81024s.svg",
+      "alt": "DS-A81024S",
+      "width": 600,
+      "height": 600,
+      "imageSource": "placeholder",
+      "provenance": {
+        "sourceProvider": "branded-placeholder",
+        "sourceUrl": null,
+        "sourceIdentifier": null,
+        "fetchedAt": "2026-07-30T04:10:34.702Z",
+        "checksum": "1405d13d9ef5e4b1b1bceb741ecf4db67850b656b1af9c881b477f1feeb7c256"
+      }
+    }
+  }
+]

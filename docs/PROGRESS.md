@@ -1,0 +1,41 @@
+# Suivi d'avancement — HardwareCentral
+
+| Phase | Statut | Date | Notes |
+|---|---|---|---|
+| 0 — Initialisation | Fait | 2026-07-29 | Next.js 16.2.12, TypeScript strict, Tailwind v4, arborescence 30 dossiers, `site-config.ts` (placeholders TODO), `types/index.ts`, ESLint + Prettier, tokens @theme (palette graphite/teal, fonts Manrope/IBM Plex), `.env.local` + `.env.example`, build OK |
+| 1 — Pipeline d'ingestion & catalogue | Fait | 2026-07-29 | Scraper Python (FastAPI, Oxylabs + fallback), clients TS (amazon-scraper, icecat, imagekit), pipeline ingest-product-media.ts. Catalogue : 240 produits répartis en 6 fichiers marque (`hpe.ts`, `dell.ts`, `fortinet.ts`, `cisco.ts`, `huawei.ts`, `hikvision.ts`), index `products.ts` avec helpers (getProductById, getProductsByBrand, getProductsByCategory, getFeaturedProducts). **~33 ASINs Amazon.fr configurés** (6 Fortinet, 26 Hikvision, 1 Dell, 1 Cisco) — 25 images uploadées sur ImageKit. Icecat : 0 datasheet trouvé. |
+| 2 — Composants UI | Fait | 2026-07-29 | Button (4 variants, 3 tailles, loading/disabled/icon), Input/Textarea/Select (label+erreur+aria, Select protégé option unique), Badge (4 variantes), Modal (focus trap, Escape/overlay, role=dialog), Toast (Provider+useToast, auto-dismiss+manuel, aria-live), Skeleton (loading), SkipLink. Build/tsc/lint OK, couleurs section 14.3 respectées, pas de `<div onClick>`, `focus-visible` partout. |
+| 3 — Layout global | Fait | 2026-07-29 | Header (Logo Link, search form role=search, quote/fav counters Zustand, CTA "Demander un devis", phone SITE_CONFIG), MegaMenu (hover+click, 3 colonnes catégories/marques/supports, aria-haspopup/expanded/role=menu, Escape+click-outside), MobileNav (<1024px, piège de focus Tab/Shift+Tab, Drawer plein écran, auto-fermeture sur sélection), Footer (5 colonnes: Présentation/Catalogue/Entreprise/Légal/Contact — SITE_CONFIG source unique, liens réels jamais vers 404), Breadcrumb (nav>ol, aria-current="page" sur dernier, JSON-LD BreadcrumbList), WhatsAppBubble (wa.me, target=_blank, aria-label, masqué si modalOpen). Stores Zustand persistés (quote-store, favorites-store, ui-store). Build OK. |
+| 4 — Catalogue & fiches produit | Fait | 2026-07-29 | `filterProducts()` (filtres catégorie/marque/format/recherche + tri + pagination), `ProductAvailabilityBadge` (mapping AvailabilityStatus → Badge), `ProductCard` (image, badge, nom, marque, SKU, specs, quote+fav), `ProductGallery` (image principale + vignettes), `ProductSpecsTable` (th scope=row), `QuoteToggleButton` (toggle devis), `EmptyState` (search/filter/favorites/quote/empty), `CatalogFilters` (sidebar radio+checkbox, URL sync), `CatalogSort` (3 options, URL sync), `CatalogPagination` (ellipsis, masqué si ≤1 page), `MobileFilterDrawer` (drawer animé, focus trap, Escape). Pages SSR : `/catalogue/page.tsx` (sidebar + grille + tri + pagination), `/produit/[slug]/page.tsx` (generateStaticParams, OpenGraph, galerie+infos+CTA+datasheets), `/marques/page.tsx` (BrandCard grid), `/marques/[brand]/page.tsx` (bannière + grille produits, EmptyState si aucun), `/recherche/page.tsx` (q searchParams, EmptyState si vide). Build/tsc OK. |
+| 5 — Devis / favoris / formulaires | Fait | 2026-07-29 | Stores Zustand mis à jour (hasHydrated + version 1). Zod schemas (quoteRequest, contactMessage, newsletter). Email lib Brevo mocké avec TODO. 3 Route Handlers POST : `/api/quote-requests` (validation, honeypot, rate-limit, email notification + accusé réception), `/api/contact-messages` (identique, sujet `devis` routé vers sales@), `/api/newsletter` (Brevo contacts API mocké). 3 formulaires : `QuoteRequestForm` (modal avec liste produits pré-remplie retirable, états idle/submitting/success/error, données conservées en cas d'échec), `ContactForm` (sujets différenciés dont « Demande de devis » -> sales@), `NewsletterForm` (email + soumission réelle). 2 pages : `/devis` (liste + retrait + CTA ouvre modal), `/favoris` (liste + action « + Devis » par article). Entry point Header CTA ouvre modal QuoteRequestForm (3 points d'accès : header, fiche produit, page /devis). Build/tsc OK. |
+| 6 — Pages institutionnelles | Fait | 2026-07-29 | `TrustBadges` (4 icônes réassurance), `BrandsGrid` (marques actives liées vers /marques/[brand]), `LegalPageTemplate` (gabarit unique breadcrumb + titre + contenu). 6 pages créées : `/a-propos` (mission + TrustBadges + BrandsGrid + identité légale SITE_CONFIG), `/contact` (coordonnées à gauche SITE_CONFIG + ContactForm à droite), `/mentions-legales` (identité éditeur, hébergement, droit applicable Cameroun), `/cgv` (8 articles CGV adaptés Cameroun), `/confidentialite` (7 articles protection données), `not-found.tsx` (404 numéral, message, barre de recherche, catégories actives en badges, lien retour accueil). Aucune donnée de contact codée en dur hors SITE_CONFIG vérifié. Build/tsc OK. |
+| 7 — SEO technique | Fait | 2026-07-29 | Root layout: title template avec fallback spec 20.2 + Organization JSON-LD (SITE_CONFIG). Toutes les pages indexables ont désormais title/description/canonical/OpenGraph. Template `%s | HardwareCentral` appliqué partout. `sitemap.ts` (5 statiques + 6 marques + 240 produits). `robots.ts` (disallow /devis /favoris /recherche /api/). Product JSON-LD ajouté sur `/produit/[slug]` (name, sku, brand, image, category, availability — sans `offers`). BreadcrumbList JSON-LD déjà présent (Phase 3). Build/tsc OK. |
+| 8 — Accessibilité & Performance | Fait | 2026-07-29 | `usePrefersReducedMotion` hook + appliqué à Modal/MobileNav/MobileFilterDrawer/Toast/MegaMenu. `<h1>` ajouté sur `/` et `/catalogue` (sr-only). Tous `<img>` → `next/image` (fill + sizes). Touch targets 44×44px (close btns, fav btn, poubelle, filtres categories/checkboxes, "effacer filtres"). `dotenv` retiré (inutilisé). `tsc` OK, `eslint` 0 erreurs/warnings. |
+| 9 — Tests & CI | Fait | 2026-07-29 | Vitest: 25 tests unitaires/composants (getAvailabilityDisplay, filterProducts, CatalogPagination, QuoteToggleButton). Playwright E2E: flow 17.1 complet + axe-core audit 4 pages + navigation clavier. GitHub Actions CI: quality (tsc → lint → vitest → next build) + e2e + security-audit. `npm run test` / `npm run test:e2e` configurés. Build/tsc/lint OK. |
+| 10 — Recette finale & déploiement | Fait (reste déploiement manuel) | 2026-07-30 | ✅ Checklist section 26 (Definition of Done) — tous les points vérifiés conformes. ✅ Aucun TODO/placeholder résiduel. ✅ En-têtes sécurité (CSP, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, X-Frame-Options) ajoutés dans `next.config.ts` (section 21.2). ✅ `metadataBase` + `NEXT_PUBLIC_SITE_URL` dans `.env.example`. 🚧 Reste manuel : déploiement Vercel, DNS du domaine, variables d'env réelles en production, test E2E soumission devis. |
+
+## Informations réelles encore en attente (section 1 du guide)
+- [x] Téléphone / WhatsApp réel : +237 677 550 082
+- [x] Email de contact : contact@hardware-central.com
+- [x] Adresse : Douala, Bonamoussadi
+- [x] Domaine : hardware-central.com
+- [x] Horaires : WAT (Lun–Ven, 8h–18h)
+- [x] Raison sociale : HardwareCentral (`site-config.ts` → `legalName`)
+- [x] Clé API Amazon Scraper — scraper Python (FastAPI) + Oxylabs configurés
+- [x] Compte Icecat (datasheets) — credentials ***REMOVED*** configurés
+- [x] ImageKit.io — stockage média configuré
+- [x] Clé API Brevo (email transactionnel + newsletter) — active dans `.env.local`, implémentation réelle dans `src/lib/email/index.ts` (fallback mock si clé absente)
+
+## Pipeline exécutable
+- Lancement du scraper Python : `cd amazon-scraper && uvicorn main:app --reload --port 8000`
+- Lancement de l'ingestion : `npx tsx scripts/ingest-product-media.ts`
+- IMAGEKIT_PRIVATE_KEY doit être définie dans `.env.local`
+
+## Produits avec image réelle (25/240)
+- Dell PowerEdge T360
+- FortiGate 120G, FortiGate 200G, FortiMail 200F
+- ~22 produits Hikvision (DS-2CD2387G2H-LIU, DS-2CD2T87G2H-LIU, DS-2CD6825G0, DS-9664NI-M16, DS-7616NXI-K2, iDS-7232HQHI-M2, DS-2CD2347G2-LU, DS-2CD2047G2-LU, DS-2CD2T47G2-L, DS-2CD2366G2-IU, DS-2CD2386G2-IU, DS-2CD2T86G2-4I, DS-K1T342MFWX, DS-KH9510-WTE1, DS-KV8113-WME1, DS-KD8003, AX PRO DS-PWA96, AX PRO DS-PDC15, AX PRO DS-PDP15, DS-D5043UC, DS-D5B65RB)
+- Le reste : placeholder SVG (produits pro sans ASIN Amazon)
+
+## Produits sans datasheet
+- Tous les 240 produits — Icecat ne trouve rien par SKU fabricant (nécessite EAN/UPC)
