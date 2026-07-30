@@ -1,5 +1,5 @@
-import { writeFileSync, existsSync, mkdirSync } from 'fs';
-import { join, dirname } from 'path';
+import { writeFileSync, existsSync } from 'fs';
+import { join } from 'path';
 import { products } from '../src/lib/data/products';
 
 const BRAND_COLORS: Record<string, { primary: string; secondary: string; name: string }> = {
