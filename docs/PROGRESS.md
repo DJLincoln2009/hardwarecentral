@@ -25,6 +25,7 @@
 | 5 — P2 (5.1, 5.4-5.6) | Fait | 2026-07-31 | Footer bas simplifié, mention BTS sur `/a-propos` (TODO raison sociale), CSP prod sans `unsafe-eval`, consentement newsletter |
 | 6 — Pipeline 3D (code) | Fait | 2026-07-31 | Types `ai-render`/`ai-3d-render`, micro-mention, `3d-pipeline/` (products.yaml 27 featured, scripts Python, `scripts/upload-3d-renders.ts`), `.gitignore`, rapport de couverture mis à jour (356 produits) |
 | 6 — Pipeline 3D (exécution) | **Action humaine** | 2026-07-31 | Blender 4.x non installé → exécution documentée : renseigner `reference_images` officielles puis `python 3d-pipeline/scripts/orchestrate.py <slug>` (cas-test `dell-poweredge-r760`) |
+| 7 — Audit npm (12 high → 0) | Fait | 2026-07-31 | `package.json` → bloc `overrides` (verrouillé, à ne pas retirer) : `minimatch@10.2.6`, `postcss@^8.5.25`, `sharp@^0.35.0`. Résout les 3 chaînes : brace-expansion 1.1.18 (via minimatch 3), postcss 8.4.31 et libvips CVE-2026-33327/33328/35590/35591 (via sharp 0.34.5) embarqués dans `next@16.2.12`. `npm audit` → **0 vulnérabilité**. `npm audit fix --force` (next@9.3.3 / jsx-a11y 6.4.1) ignoré : downgrades cassants. Validé : tsc, lint 0 warning, vitest 25/25, build 382 pages, Playwright 12/12 |
 
 ### Correctifs e2e / UI découverts en recette finale (2026-07-31)
 - `e2e/flow-17.1.spec.ts` : slug `hpe-proliant-dl380-gen12`, SKU `HPE-DL380-G12`, sélecteurs mis à jour (checkbox HPE, « Catégories », modal « Demandez un devis », succès « Demande envoyée avec succès ! », scoping dialog).
