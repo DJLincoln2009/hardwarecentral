@@ -2,7 +2,7 @@ import { SITE_CONFIG } from '@/lib/site-config';
 
 const BREVO_API_KEY = process.env.BREVO_API_KEY;
 const BREVO_API_URL = 'https://api.brevo.com/v3';
-const SENDER_EMAIL = 'contact@hardware-central.com';
+const SENDER_EMAIL = SITE_CONFIG.email.contact;
 const SENDER_NAME = SITE_CONFIG.companyName;
 
 interface SendEmailParams {

@@ -23,6 +23,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
+## Configuration (obligatoire pour Oxylabs)
+
+Les identifiants Oxylabs sont lus depuis les variables d'environnement
+(`OXYLABS_USERNAME`, `OXYLABS_PASSWORD`). Le scraper charge automatiquement le
+fichier `.env.local` à la racine du dépôt s'il existe (jamais de mot de passe
+en dur dans le code). Sans ces variables, les appels Oxylabs échouent avec un
+message explicite.
+
 ## Lancer l'API
 
 ```bash

@@ -121,19 +121,8 @@ function Footer() {
       </div>
 
       <div className="border-t border-graphite-800">
-        <div className="mx-auto max-w-7xl px-4 py-4 flex flex-col gap-2 sm:flex-row items-center justify-between text-xs text-graphite-400">
+        <div className="mx-auto max-w-7xl px-4 py-4 text-center text-xs text-graphite-200 sm:text-left">
           <p>&copy; {new Date().getFullYear()} {SITE_CONFIG.companyName} — BTS</p>
-          <div className="flex gap-4">
-            <Link href="/mentions-legales" className="hover:text-graphite-200 transition-colors">
-              Mentions légales
-            </Link>
-            <Link href="/cgv" className="hover:text-graphite-200 transition-colors">
-              CGV
-            </Link>
-            <Link href="/confidentialite" className="hover:text-graphite-200 transition-colors">
-              Confidentialité
-            </Link>
-          </div>
         </div>
       </div>
     </footer>

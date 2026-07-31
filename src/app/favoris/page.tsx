@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import FavorisContent from './FavorisContent';
 
 export const metadata: Metadata = {
-  title: 'Favoris | HardwareCentral',
+  title: 'Favoris',
   robots: { index: false, follow: false },
 };
 

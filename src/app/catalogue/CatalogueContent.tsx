@@ -1,29 +1,33 @@
-'use client';
-
-import { useState } from 'react';
-import { useSearchParams } from 'next/navigation';
-import { SlidersHorizontal } from 'lucide-react';
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import CatalogFilters from '@/components/catalog/CatalogFilters';
 import CatalogSort from '@/components/catalog/CatalogSort';
 import CatalogPagination from '@/components/catalog/CatalogPagination';
-import MobileFilterDrawer from '@/components/catalog/MobileFilterDrawer';
+import CatalogMobileBar from '@/components/catalog/CatalogMobileBar';
 import ProductCard from '@/components/product/ProductCard';
 import EmptyState from '@/components/ui/EmptyState';
 import { filterProducts, type SortOption } from '@/lib/data/filter-products';
 
 const PAGE_SIZE = 12;
 
-function CatalogueContent() {
-  const searchParams = useSearchParams();
-  const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+interface CatalogueContentProps {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}
 
-  const categorie = searchParams.get('categorie') || undefined;
-  const marque = searchParams.get('marque') || undefined;
-  const format = searchParams.get('format') || undefined;
-  const q = searchParams.get('q') || undefined;
-  const tri = (searchParams.get('tri') as SortOption) || undefined;
-  const page = parseInt(searchParams.get('page') || '1', 10) || 1;
+async function CatalogueContent({ searchParams }: CatalogueContentProps) {
+  const params = await searchParams;
+
+  const get = (key: string): string | undefined => {
+    const value = params[key];
+    if (Array.isArray(value)) return value[0];
+    return value;
+  };
+
+  const categorie = get('categorie');
+  const marque = get('marque');
+  const format = get('format');
+  const q = get('q');
+  const tri = (get('tri') as SortOption) || undefined;
+  const page = parseInt(get('page') || '1', 10) || 1;
 
   const { results, total, page: currentPage, totalPages } = filterProducts({
     categorie,
@@ -56,14 +60,7 @@ function CatalogueContent() {
               {total} produit{total !== 1 ? 's' : ''} trouvé{total !== 1 ? 's' : ''}
             </p>
             <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={() => setMobileFiltersOpen(true)}
-                className="inline-flex items-center gap-1.5 rounded-md border border-graphite-200 px-3 py-1.5 text-sm text-graphite-600 hover:bg-graphite-50 transition-colors lg:hidden focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
-              >
-                <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
-                Filtrer
-              </button>
+              <CatalogMobileBar resultCount={total} />
               <CatalogSort />
             </div>
           </div>
@@ -89,12 +86,6 @@ function CatalogueContent() {
           )}
         </div>
       </div>
-
-      <MobileFilterDrawer
-        open={mobileFiltersOpen}
-        onClose={() => setMobileFiltersOpen(false)}
-        resultCount={total}
-      />
     </div>
   );
 }

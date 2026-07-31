@@ -14,15 +14,23 @@ export interface IcecatDatasheet {
 const ICECAT_API_BASE = 'https://live.icecat.biz/api';
 
 export function createIcecatClient(config?: IcecatConfig) {
-  const username = config?.username ?? '***REMOVED***';
-  const password = config?.password ?? '***REMOVED***';
+  const username = config?.username ?? process.env.ICECAT_USERNAME;
+  const password = config?.password ?? process.env.ICECAT_PASSWORD;
+
+  if (!username || !password) {
+    throw new Error(
+      'Icecat credentials required (ICECAT_USERNAME / ICECAT_PASSWORD). Configure them in .env.local',
+    );
+  }
+
+  const credentials: { username: string; password: string } = { username, password };
 
   async function fetchDatasheets(
     brand: string,
     mpn: string,
   ): Promise<IcecatDatasheet[]> {
     try {
-      const url = `${ICECAT_API_BASE}?UserName=${encodeURIComponent(username)}&Password=${encodeURIComponent(password)}&Language=fr&BrandName=${encodeURIComponent(brand)}&ProductCode=${encodeURIComponent(mpn)}&Content=datasheet`;
+      const url = `${ICECAT_API_BASE}?UserName=${encodeURIComponent(credentials.username)}&Password=${encodeURIComponent(credentials.password)}&Language=fr&BrandName=${encodeURIComponent(brand)}&ProductCode=${encodeURIComponent(mpn)}&Content=datasheet`;
       const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
       if (!res.ok) return [];
 

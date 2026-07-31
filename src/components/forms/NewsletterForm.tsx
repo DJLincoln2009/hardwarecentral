@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
+import Link from 'next/link';
 import { Send } from 'lucide-react';
 import Button from '@/components/ui/Button';
 import HoneypotField from '@/components/forms/HoneypotField';
@@ -56,23 +57,41 @@ function NewsletterForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex gap-2">
+    <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
       <HoneypotField />
-      <label htmlFor="newsletter-email" className="sr-only">Adresse e-mail</label>
-      <input
-        id="newsletter-email"
-        type="email"
-        required
-        aria-required="true"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="Votre adresse e-mail"
-        disabled={status === 'submitting'}
-        className="flex-1 rounded-md border border-graphite-200 bg-white px-3 py-2 text-sm text-graphite-900 placeholder:text-graphite-400 focus:border-teal-600 focus:ring-2 focus:ring-teal-600 focus:outline-none disabled:opacity-50"
-      />
-      <Button type="submit" loading={status === 'submitting'} size="md" icon={<Send className="h-4 w-4" />}>
-        S&rsquo;inscrire
-      </Button>
+      <div className="flex gap-2">
+        <label htmlFor="newsletter-email" className="sr-only">Adresse e-mail</label>
+        <input
+          id="newsletter-email"
+          type="email"
+          required
+          aria-required="true"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="Votre adresse e-mail"
+          disabled={status === 'submitting'}
+          className="flex-1 rounded-md border border-graphite-200 bg-white px-3 py-2 text-sm text-graphite-900 placeholder:text-graphite-400 focus:border-teal-600 focus:ring-2 focus:ring-teal-600 focus:outline-none disabled:opacity-50"
+        />
+        <Button type="submit" loading={status === 'submitting'} size="md" icon={<Send className="h-4 w-4" />}>
+          S&rsquo;inscrire
+        </Button>
+      </div>
+      <div className="flex items-start gap-2">
+        <input
+          id="newsletter-consent"
+          type="checkbox"
+          required
+          disabled={status === 'submitting'}
+          className="mt-0.5 h-4 w-4 shrink-0 rounded-sm border-graphite-300 text-teal-600 focus:ring-2 focus:ring-teal-600"
+        />
+        <label htmlFor="newsletter-consent" className="text-xs leading-relaxed text-graphite-600">
+          J&apos;accepte de recevoir les actualités et offres de HardwareCentral par e-mail. Consultez notre{' '}
+          <Link href="/confidentialite" className="text-teal-600 underline underline-offset-2 hover:text-teal-800 transition-colors">
+            politique de confidentialité
+          </Link>
+          .
+        </label>
+      </div>
       {status === 'error' && (
         <p role="alert" className="text-xs text-danger-text mt-1">{errorMessage}</p>
       )}

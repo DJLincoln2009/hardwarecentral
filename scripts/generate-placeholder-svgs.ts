@@ -4,6 +4,7 @@ import { products } from '../src/lib/data/products';
 
 const BRAND_COLORS: Record<string, { primary: string; secondary: string; name: string }> = {
   HPE:       { primary: '#01A982', secondary: '#017E61', name: 'HPE' },
+  HP:        { primary: '#0096D6', secondary: '#005FA3', name: 'HP' },
   DELL:      { primary: '#0076CE', secondary: '#005AA3', name: 'Dell Technologies' },
   FORTINET:  { primary: '#EE3124', secondary: '#C4281E', name: 'Fortinet' },
   CISCO:     { primary: '#049FD9', secondary: '#037DAE', name: 'Cisco' },

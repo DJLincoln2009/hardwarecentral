@@ -1,5 +1,8 @@
+const SITE_DOMAIN = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hardware-central.com';
+
 export const SITE_CONFIG = {
   companyName: 'HardwareCentral',
+  domain: SITE_DOMAIN,
   address: {
     line1: 'Douala, Bonamoussadi',
     city: 'Douala',
@@ -15,8 +18,7 @@ export const SITE_CONFIG = {
       "Bonjour HardwareCentral, je souhaite avoir plus d'informations sur vos équipements et solutions d'infrastructure.",
   },
   email: {
-    contact: 'contact@hardwarecentral.com',
-    general: 'contact@hardwarecentral.com',
+    contact: 'contact@hardware-central.com',
   },
   businessHours: {
     display: 'Lun–Ven, 8h–18h',

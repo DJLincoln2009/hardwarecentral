@@ -1,0 +1,203 @@
+# Configuration du pipeline 3D — voir docs/OPENCODE_PIPELINE_3D.md v1.1
+# Les reference_images doivent provenir du domaine officiel du constructeur
+# uniquement (contraint par download_refs.py via brand_domains).
+# TODO: renseigner les URLs officielles (hpe.com, dell.com, fortinet.com,
+# cisco.com, huawei.com, hikvision.com, hp.com) avant toute exécution.
+brand_domains:
+  dell: dell.com
+  hpe: hpe.com
+  hp: hp.com
+  fortinet: fortinet.com
+  cisco: cisco.com
+  huawei: huawei.com
+  hikvision: hikvision.com
+
+products:
+  - slug: hpe-proliant-dl380-gen12
+    name: "HPE ProLiant Compute DL380 Gen12"
+    brand: hpe
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: hpe-alletra-mp-x10000
+    name: "HPE Alletra MP X10000"
+    brand: hpe
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: aruba-cx-6400
+    name: "Aruba CX 6400"
+    brand: hpe
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: dell-poweredge-r760
+    name: "Dell PowerEdge R760"
+    brand: dell
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: dell-poweredge-r960
+    name: "Dell PowerEdge R960"
+    brand: dell
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: dell-poweredge-xe9680
+    name: "Dell PowerEdge XE9680"
+    brand: dell
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: dell-powerstore-9200
+    name: "Dell PowerStore 9200"
+    brand: dell
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: dell-powermax-8500
+    name: "Dell PowerMax 8500"
+    brand: dell
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: fortinet-fortigate-120g
+    name: "FortiGate 120G"
+    brand: fortinet
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: fortinet-fortigate-600f
+    name: "FortiGate 600F"
+    brand: fortinet
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: fortinet-fortiswitch-448f
+    name: "FortiSwitch FS-448F"
+    brand: fortinet
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: cisco-catalyst-9300
+    name: "Cisco Catalyst 9300"
+    brand: cisco
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: cisco-catalyst-9500x
+    name: "Cisco Catalyst 9500X"
+    brand: cisco
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: cisco-nexus-9364c
+    name: "Cisco Nexus 9364C"
+    brand: cisco
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: cisco-secure-firewall-4200
+    name: "Cisco Secure Firewall 4200"
+    brand: cisco
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: cisco-ucs-c240-m8
+    name: "Cisco UCS C240 M8"
+    brand: cisco
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: cisco-room-panorama
+    name: "Cisco Room Panorama"
+    brand: cisco
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: huawei-oceanstor-dorado-8000
+    name: "OceanStor Dorado 8000"
+    brand: huawei
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: huawei-fusionserver-pro-2288h-v7
+    name: "FusionServer Pro 2288H V7"
+    brand: huawei
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: huawei-clouengine-s12700e
+    name: "CloudEngine S12700E"
+    brand: huawei
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: huawei-matebook-x-pro-2024
+    name: "Huawei MateBook X Pro (2024)"
+    brand: huawei
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: huawei-matebook-gt-14
+    name: "Huawei MateBook GT 14"
+    brand: huawei
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: hikvision-ds-2cd2387g2h-liu
+    name: "DS-2CD2387G2H-LIU"
+    brand: hikvision
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: hikvision-ds-9664ni-m16
+    name: "DS-9664NI-M16"
+    brand: hikvision
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: hikvision-hikcentral-professional
+    name: "HikCentral Professional"
+    brand: hikvision
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: hpe-zbook-studio-g11
+    name: "HP ZBook Studio G11"
+    brand: hp
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"
+
+  - slug: hpe-z8-fury-g5
+    name: "HP Z8 Fury G5 Workstation"
+    brand: hp
+    reference_images: []
+    render:
+      style: "studio produit, fond neutre, angle 3/4"

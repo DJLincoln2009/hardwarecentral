@@ -82,7 +82,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
   };
 
   return (
-    <Modal open={open} onClose={handleClose} title="Demandez un devis">
+    <Modal open={open} onClose={handleClose} title="Demander un devis">
       {status === 'success' ? (
         <div className="space-y-3 text-center py-4">
           <p className="text-success-text font-semibold">Demande envoyée avec succès !</p>
@@ -144,7 +144,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
                   <li key={item.productId} className="flex items-center gap-2 text-sm text-graphite-600">
                     <span className="flex-1 truncate">
                       {item.name}
-                      <span className="ml-1 font-mono text-xs text-graphite-400">({item.sku})</span>
+                      <span className="ml-1 font-mono text-xs text-graphite-600">({item.sku})</span>
                     </span>
                     <button
                       type="button"

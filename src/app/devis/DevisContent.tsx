@@ -100,8 +100,6 @@ function DevisContent() {
           >
             Demander un devis pour ces {products.length} articles
           </Button>
-
-          <QuoteRequestForm open={quoteModalOpen} onClose={() => setQuoteModalOpen(false)} />
         </>
       ) : (
         <EmptyState
@@ -111,6 +109,8 @@ function DevisContent() {
           action={{ label: 'Parcourir le catalogue', href: '/catalogue' }}
         />
       )}
+
+      <QuoteRequestForm open={quoteModalOpen} onClose={() => setQuoteModalOpen(false)} />
     </div>
   );
 }

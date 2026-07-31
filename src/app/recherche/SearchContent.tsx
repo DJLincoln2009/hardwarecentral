@@ -1,6 +1,3 @@
-'use client';
-
-import { useSearchParams } from 'next/navigation';
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import ProductCard from '@/components/product/ProductCard';
 import EmptyState from '@/components/ui/EmptyState';
@@ -8,11 +5,22 @@ import { filterProducts, type SortOption } from '@/lib/data/filter-products';
 
 const PAGE_SIZE = 12;
 
-function SearchContent() {
-  const searchParams = useSearchParams();
-  const q = searchParams.get('q') || '';
-  const tri = (searchParams.get('tri') as SortOption) || undefined;
-  const page = parseInt(searchParams.get('page') || '1', 10) || 1;
+interface SearchContentProps {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}
+
+async function SearchContent({ searchParams }: SearchContentProps) {
+  const params = await searchParams;
+
+  const get = (key: string): string | undefined => {
+    const value = params[key];
+    if (Array.isArray(value)) return value[0];
+    return value;
+  };
+
+  const q = get('q') || '';
+  const tri = (get('tri') as SortOption) || undefined;
+  const page = parseInt(get('page') || '1', 10) || 1;
 
   const { results, total } = filterProducts({
     q: q || undefined,

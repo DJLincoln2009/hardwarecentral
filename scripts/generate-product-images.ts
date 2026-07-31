@@ -13,6 +13,7 @@ const __dirname = dirname(__filename);
 /* ------------------------------------------------------------------ */
 const BRAND_STYLES: Record<string, { colour: string; label: string }> = {
   HPE: { colour: '#01A982', label: 'HPE' },
+  HP: { colour: '#0096D6', label: 'HP' },
   DELL: { colour: '#007DB8', label: 'Dell' },
   FORTINET: { colour: '#EE3124', label: 'Fortinet' },
   CISCO: { colour: '#1BA0D7', label: 'Cisco' },
@@ -70,12 +71,7 @@ function generatePlaceholderSVG(product: Product): string {
 /* ------------------------------------------------------------------ */
 /*  Real images already on ImageKit                                    */
 /* ------------------------------------------------------------------ */
-const REAL_IMAGES: Record<string, string> = {
-  'fortinet-fortigate-100f':
-    'https://ik.imagekit.io/3sihhe4l4/products/fortinet-fortigate-100f/images/products_fortinet-fortigate-100f_images_primary.webp',
-  'hikvision-ds-2cd2t47g2-l':
-    'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd2t47g2-l/images/products_hikvision-ds-2cd2t47g2-l_images_primary.webp',
-};
+const REAL_IMAGES: Record<string, string> = {};
 
 /* ------------------------------------------------------------------ */
 /*  Main                                                               */

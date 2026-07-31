@@ -26,18 +26,25 @@ async function run() {
   const config = {
     amazonScraperUrl: process.env.AMAZON_SCRAPER_URL ?? 'http://127.0.0.1:8000',
     imageKit: {
-      publicKey: process.env.IMAGEKIT_PUBLIC_KEY ?? '***REMOVED***',
+      publicKey: process.env.IMAGEKIT_PUBLIC_KEY ?? '',
       privateKey: process.env.IMAGEKIT_PRIVATE_KEY,
       urlEndpoint: process.env.IMAGEKIT_URL_ENDPOINT ?? 'https://ik.imagekit.io/3sihhe4l4',
     },
     icecat: {
-      username: process.env.ICECAT_USERNAME ?? '***REMOVED***',
-      password: process.env.ICECAT_PASSWORD ?? '***REMOVED***',
+      username: process.env.ICECAT_USERNAME,
+      password: process.env.ICECAT_PASSWORD,
     },
   };
 
   if (!config.imageKit.privateKey) {
     console.error('ERREUR: IMAGEKIT_PRIVATE_KEY non définie dans .env.local');
+    process.exit(1);
+  }
+
+  if (!config.icecat.username || !config.icecat.password) {
+    console.error(
+      'ERREUR: ICECAT_USERNAME / ICECAT_PASSWORD non définies dans .env.local',
+    );
     process.exit(1);
   }
 

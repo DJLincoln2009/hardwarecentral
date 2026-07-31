@@ -54,14 +54,7 @@ export default function ContactPage() {
                   href={`mailto:${SITE_CONFIG.email.contact}`}
                   className="text-sm text-graphite-600 hover:text-teal-600 transition-colors"
                 >
-                  {SITE_CONFIG.email.contact} (devis)
-                </a>
-                <br />
-                <a
-                  href={`mailto:${SITE_CONFIG.email.general}`}
-                  className="text-sm text-graphite-600 hover:text-teal-600 transition-colors"
-                >
-                  {SITE_CONFIG.email.general} (général)
+                  {SITE_CONFIG.email.contact}
                 </a>
               </div>
             </div>
@@ -84,7 +77,7 @@ export default function ContactPage() {
                 <p className="text-sm text-graphite-600">
                   {SITE_CONFIG.businessHours.display}
                 </p>
-                <p className="text-xs text-graphite-400">{SITE_CONFIG.businessHours.timezone}</p>
+                <p className="text-xs text-graphite-600">{SITE_CONFIG.businessHours.timezone}</p>
               </div>
             </div>
           </div>

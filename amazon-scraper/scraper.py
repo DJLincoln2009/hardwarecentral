@@ -1,10 +1,17 @@
+import os
 import re
 import json
 import base64
 import random
 import urllib.parse
+from pathlib import Path
 from typing import Optional
 from dataclasses import dataclass, field, asdict
+
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    load_dotenv = None
 
 import httpx
 from bs4 import BeautifulSoup
@@ -27,8 +34,27 @@ AMAZON_DOMAINS = {
 
 # Oxylabs Real-Time Crawler configuration
 OXYLABS_URL = "https://realtime.oxylabs.io/v1/queries"
-OXYLABS_USERNAME = "***REMOVED***"
-OXYLABS_PASSWORD = "***REMOVED***"
+
+if load_dotenv is not None:
+    _REPO_ROOT_ENV = Path(__file__).resolve().parents[1] / ".env.local"
+    if _REPO_ROOT_ENV.exists():
+        load_dotenv(_REPO_ROOT_ENV)
+
+
+def _required_env(name: str) -> str:
+    """Reads a secret from the environment, failing explicitly when absent."""
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(
+            f"Variable d'environnement {name} manquante. "
+            "Configure-la dans .env.local (racine du dépôt) ou dans l'environnement "
+            "de déploiement avant de lancer le scraper."
+        )
+    return value
+
+
+def _oxylabs_credentials() -> tuple[str, str]:
+    return (_required_env("OXYLABS_USERNAME"), _required_env("OXYLABS_PASSWORD"))
 
 
 @dataclass
@@ -88,7 +114,8 @@ def upscale_image_url(url: str) -> str:
 
 async def fetch_via_oxylabs(asin: str, domain: str = "fr") -> Optional[Product]:
     url = build_product_url(asin, domain)
-    auth = base64.b64encode(f"{OXYLABS_USERNAME}:{OXYLABS_PASSWORD}".encode()).decode()
+    username, password = _oxylabs_credentials()
+    auth = base64.b64encode(f"{username}:{password}".encode()).decode()
 
     payload = {
         "source": "amazon",
@@ -324,7 +351,8 @@ async def search_amazon_async(query: str, domain: str = "fr") -> Optional[list[d
     """Search Amazon for a query and return product results."""
     tld = AMAZON_DOMAINS.get(domain, domain)
 
-    auth = base64.b64encode(f"{OXYLABS_USERNAME}:{OXYLABS_PASSWORD}".encode()).decode()
+    username, password = _oxylabs_credentials()
+    auth = base64.b64encode(f"{username}:{password}".encode()).decode()
     payload = {
         "source": "amazon_search",
         "domain": domain,
@@ -399,5 +427,9 @@ if __name__ == "__main__":
     import sys
     target = sys.argv[1] if len(sys.argv) > 1 else "B0CX23V2ZK"
     use_oxylabs = sys.argv[2].lower() != "no-oxylabs" if len(sys.argv) > 2 else True
-    p = fetch_product(target, use_oxylabs=use_oxylabs)
+    try:
+        p = fetch_product(target, use_oxylabs=use_oxylabs)
+    except RuntimeError as e:
+        print(f"Erreur: {e}", file=sys.stderr)
+        sys.exit(1)
     print(json.dumps(p.to_dict(), indent=2, ensure_ascii=False))

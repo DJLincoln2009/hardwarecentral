@@ -6,10 +6,12 @@ import { useUIStore } from '@/lib/stores/ui-store';
 
 function WhatsAppBubble() {
   const modalOpen = useUIStore((s) => s.modalOpen);
+  const contextualMessage = useUIStore((s) => s.whatsappMessage);
 
   if (modalOpen) return null;
 
-  const url = `https://wa.me/${SITE_CONFIG.whatsapp.numberE164}?text=${encodeURIComponent(SITE_CONFIG.whatsapp.defaultMessage)}`;
+  const message = contextualMessage ?? SITE_CONFIG.whatsapp.defaultMessage;
+  const url = `https://wa.me/${SITE_CONFIG.whatsapp.numberE164}?text=${encodeURIComponent(message)}`;
 
   return (
     <a

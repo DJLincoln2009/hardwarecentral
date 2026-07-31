@@ -42,6 +42,12 @@ export default function AboutPage() {
           solutions de stockage, équipements réseau, sécurité informatique, vidéosurveillance et stations de travail
           — auprès des plus grandes marques du marché.
         </p>
+        {/* TODO: Confirmer la raison sociale exacte et le rôle de BTS vis-à-vis de
+            HardwareCentral avant publication définitive (cf. mentions légales). */}
+        <p className="mt-4 text-graphite-700 leading-relaxed">
+          Le site est exploité par la société BTS, qui opère sous le nom commercial
+          {` `}HardwareCentral.
+        </p>
       </section>
 
       <section className="mb-12">

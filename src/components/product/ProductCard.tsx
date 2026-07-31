@@ -41,7 +41,7 @@ function ProductCard({ product }: ProductCardProps) {
         <p className="mt-0.5 text-sm font-semibold text-graphite-900 line-clamp-2">
           {product.name}
         </p>
-        <p className="mt-0.5 text-xs font-mono text-graphite-400">SKU: {product.sku}</p>
+        <p className="mt-0.5 text-xs font-mono text-graphite-600">SKU: {product.sku}</p>
         <div className="mt-1.5 space-y-0.5">
           {product.specs.slice(0, 4).map((s) => (
             <p key={s.label} className="text-xs text-graphite-600">

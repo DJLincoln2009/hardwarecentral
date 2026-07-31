@@ -14,6 +14,24 @@
 | 9 — Tests & CI | Fait | 2026-07-29 | Vitest: 25 tests unitaires/composants (getAvailabilityDisplay, filterProducts, CatalogPagination, QuoteToggleButton). Playwright E2E: flow 17.1 complet + axe-core audit 4 pages + navigation clavier. GitHub Actions CI: quality (tsc → lint → vitest → next build) + e2e + security-audit. `npm run test` / `npm run test:e2e` configurés. Build/tsc/lint OK. |
 | 10 — Recette finale & déploiement | Fait (reste déploiement manuel) | 2026-07-30 | ✅ Checklist section 26 (Definition of Done) — tous les points vérifiés conformes. ✅ Aucun TODO/placeholder résiduel. ✅ En-têtes sécurité (CSP, X-Content-Type-Options, Referrer-Policy, Permissions-Policy, X-Frame-Options) ajoutés dans `next.config.ts` (section 21.2). ✅ `metadataBase` + `NEXT_PUBLIC_SITE_URL` dans `.env.example`. 🚧 Reste manuel : déploiement Vercel, DNS du domaine, variables d'env réelles en production, test E2E soumission devis. |
 
+## Audit & correctifs (plan `docs/OPENCODE_AUDIT_FIXES.md`)
+
+| Lot | Statut | Date | Notes |
+|---|---|---|---|
+| 1.1 Sécurité | Fait | 2026-07-31 | Secrets supprimés du code, rotation documentée (`docs/SECURITY_SECRET_ROTATION.md`) |
+| 2 — Décisions D1-D5 | Fait | 2026-07-31 | Domaine `hardware-central.com`, mentions légales honnêtes, email unique `contact@`, devis 48-72h ouvrées, pipeline 3D par lots (featured d'abord) |
+| 3 — P0 (3.1-3.5, 3.7) | Fait | 2026-07-31 | Domaine canonique, SSR catalogue/recherche, split HPE/HP (`hp.ts` → `hpProducts`), 5 concaténations JSX corrigées, mentions légales, titres racine/not-found |
+| 4 — P1 (4.1, 4.3-4.8) | Fait | 2026-07-31 | TrustBadges 48-72h, email unique partout, og:image PNG dynamique produit (fonts WOFF locales), message WhatsApp contextuel, rate-limit Upstash + repli mémoire, `text-graphite-600` (footer corrigé en `-200` pour AA), meta descriptions uniques |
+| 5 — P2 (5.1, 5.4-5.6) | Fait | 2026-07-31 | Footer bas simplifié, mention BTS sur `/a-propos` (TODO raison sociale), CSP prod sans `unsafe-eval`, consentement newsletter |
+| 6 — Pipeline 3D (code) | Fait | 2026-07-31 | Types `ai-render`/`ai-3d-render`, micro-mention, `3d-pipeline/` (products.yaml 27 featured, scripts Python, `scripts/upload-3d-renders.ts`), `.gitignore`, rapport de couverture mis à jour (356 produits) |
+| 6 — Pipeline 3D (exécution) | **Action humaine** | 2026-07-31 | Blender 4.x non installé → exécution documentée : renseigner `reference_images` officielles puis `python 3d-pipeline/scripts/orchestrate.py <slug>` (cas-test `dell-poweredge-r760`) |
+
+### Correctifs e2e / UI découverts en recette finale (2026-07-31)
+- `e2e/flow-17.1.spec.ts` : slug `hpe-proliant-dl380-gen12`, SKU `HPE-DL380-G12`, sélecteurs mis à jour (checkbox HPE, « Catégories », modal « Demandez un devis », succès « Demande envoyée avec succès ! », scoping dialog).
+- `Footer.tsx` : copyright `text-graphite-200` (contraste AA 6.58:1 sur `graphite-900`).
+- `DevisContent.tsx` : `QuoteRequestForm` monté hors du conditionnel — après `clearAll()`, l'écran de succès ne disparaissait plus instantanément.
+- Vérifié : tsc, lint (0 warning), vitest 25/25, `next build` (382 pages), **Playwright 12/12**.
+
 ## Informations réelles encore en attente (section 1 du guide)
 - [x] Téléphone / WhatsApp réel : +237 677 550 082
 - [x] Email de contact : contact@hardware-central.com
@@ -22,7 +40,7 @@
 - [x] Horaires : WAT (Lun–Ven, 8h–18h)
 - [x] Raison sociale : HardwareCentral (`site-config.ts` → `legalName`)
 - [x] Clé API Amazon Scraper — scraper Python (FastAPI) + Oxylabs configurés
-- [x] Compte Icecat (datasheets) — credentials ***REMOVED*** configurés
+- [x] Compte Icecat (datasheets) — credentials configurés dans `.env.local`
 - [x] ImageKit.io — stockage média configuré
 - [x] Clé API Brevo (email transactionnel + newsletter) — active dans `.env.local`, implémentation réelle dans `src/lib/email/index.ts` (fallback mock si clé absente)
 
@@ -31,11 +49,7 @@
 - Lancement de l'ingestion : `npx tsx scripts/ingest-product-media.ts`
 - IMAGEKIT_PRIVATE_KEY doit être définie dans `.env.local`
 
-## Produits avec image réelle (25/240)
-- Dell PowerEdge T360
-- FortiGate 120G, FortiGate 200G, FortiMail 200F
-- ~22 produits Hikvision (DS-2CD2387G2H-LIU, DS-2CD2T87G2H-LIU, DS-2CD6825G0, DS-9664NI-M16, DS-7616NXI-K2, iDS-7232HQHI-M2, DS-2CD2347G2-LU, DS-2CD2047G2-LU, DS-2CD2T47G2-L, DS-2CD2366G2-IU, DS-2CD2386G2-IU, DS-2CD2T86G2-4I, DS-K1T342MFWX, DS-KH9510-WTE1, DS-KV8113-WME1, DS-KD8003, AX PRO DS-PWA96, AX PRO DS-PDC15, AX PRO DS-PDP15, DS-D5043UC, DS-D5B65RB)
-- Le reste : placeholder SVG (produits pro sans ASIN Amazon)
-
-## Produits sans datasheet
-- Tous les 240 produits — Icecat ne trouve rien par SKU fabricant (nécessite EAN/UPC)
+## Produits avec image réelle (0/356)
+- Aucune : dernière image réelle (hikvision-ds-2cd2t47g2-l) retirée le 2026-07-31 → placeholder SVG.
+- Les 20 produits HP Inc. utilisent le branding HP (bleu `#0096D6`), plus aucun « HPE » sur leurs SVG.
+- Chiffres détaillés et état du pipeline 3D dans `image-coverage-report.md`.

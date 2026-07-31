@@ -4,11 +4,14 @@ import { SITE_CONFIG } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Mentions légales',
+  description:
+    'Mentions légales du site HardwareCentral : identité de l\'éditeur basé à Douala (Cameroun), coordonnées de contact, direction de la publication et hébergement.',
   robots: { index: true, follow: true },
   alternates: { canonical: '/mentions-legales' },
   openGraph: {
     title: 'Mentions légales | HardwareCentral',
-    description: 'Informations légales et identité de l\'éditeur du site HardwareCentral.',
+    description:
+      'Identité de l\'éditeur, coordonnées et direction de la publication du site HardwareCentral à Douala (Cameroun).',
   },
 };
 
@@ -28,9 +31,12 @@ export default function MentionsLegalesPage() {
             {SITE_CONFIG.address.city}, {SITE_CONFIG.address.country}
           </p>
           <p className="mt-2">
-            {/* TODO: Remplacer par les valeurs réelles d'immatriculation */}
             Téléphone : {SITE_CONFIG.phone.display}<br />
-            E-mail : {SITE_CONFIG.email.general}
+            E-mail : {SITE_CONFIG.email.contact}
+          </p>
+          <p className="mt-2">
+            {/* TODO: Remplacer par les valeurs réelles (forme juridique, RCCM, NIU) */}
+            Forme juridique, RCCM et NIU : informations en cours de finalisation.
           </p>
         </div>
 
@@ -38,7 +44,7 @@ export default function MentionsLegalesPage() {
           <h2 className="text-lg font-semibold text-graphite-900">Directeur de la publication</h2>
           <p>
             {/* TODO: Nom du dirigeant */}
-            Le directeur de la publication est la personne physique ou morale qui publie le site.
+            Informations en cours de finalisation.
           </p>
         </div>
 
@@ -46,7 +52,7 @@ export default function MentionsLegalesPage() {
           <h2 className="text-lg font-semibold text-graphite-900">Hébergement</h2>
           <p>
             {/* TODO: Remplacer par l'hébergeur réel au moment du déploiement */}
-            Ce site est hébergé par Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis.
+            Informations en cours de finalisation.
           </p>
         </div>
 
@@ -62,7 +68,7 @@ export default function MentionsLegalesPage() {
         <div>
           <h2 className="text-lg font-semibold text-graphite-900">Responsabilité</h2>
           <p>
-            {SITE_CONFIG.companyName} s&apos;efforce d&apos;assurer l&apos;exactitude des informations
+            {SITE_CONFIG.companyName}{' '}s&apos;efforce d&apos;assurer l&apos;exactitude des informations
             présentées sur ce site. Les photos et descriptions des produits sont fournies à titre indicatif
             et peuvent varier selon les lots et les évolutions constructeur.
           </p>

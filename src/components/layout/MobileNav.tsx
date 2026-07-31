@@ -247,7 +247,7 @@ function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
                   onClick={handleOpenQuote}
                   className="w-full min-h-11 rounded-md bg-teal-600 px-4 py-2.5 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none"
                 >
-                  Demandez un devis
+                  Demander un devis
                 </button>
               </div>
             </div>

@@ -1,10 +1,11 @@
-export type ImageSource = 'real' | 'placeholder';
+export type ImageSource = 'real' | 'ai-render' | 'placeholder';
 export type ImageProvider =
   | 'amazon-scraper'
   | 'icecat'
   | 'manufacturer-portal'
   | 'manual-capture'
-  | 'branded-placeholder';
+  | 'branded-placeholder'
+  | 'ai-3d-render';
 
 export interface MediaAsset {
   url: string;
@@ -34,6 +35,7 @@ export type CategoryId =
 
 export type BrandCode =
   | 'HPE'
+  | 'HP'
   | 'DELL'
   | 'LENOVO'
   | 'CISCO'

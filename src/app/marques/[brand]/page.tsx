@@ -17,7 +17,7 @@ export async function generateStaticParams(): Promise<{ brand: string }[]> {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { brand: code } = await params;
   const brand = getBrandByCode(code.toUpperCase());
-  if (!brand) return { title: 'Marque introuvable | HardwareCentral' };
+  if (!brand) return { title: 'Marque introuvable' };
   return {
     title: brand.name,
     description: brand.shortDescription.slice(0, 160),

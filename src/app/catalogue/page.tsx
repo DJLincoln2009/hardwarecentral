@@ -1,4 +1,3 @@
-import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import CatalogueContent from './CatalogueContent';
 
@@ -14,10 +13,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function CataloguePage() {
-  return (
-    <Suspense fallback={<div className="mx-auto max-w-7xl px-4 py-8"><p className="text-graphite-600">Chargement du catalogue…</p></div>}>
-      <CatalogueContent />
-    </Suspense>
-  );
+export default async function CataloguePage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  return <CatalogueContent searchParams={searchParams} />;
 }

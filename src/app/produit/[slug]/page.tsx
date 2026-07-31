@@ -9,6 +9,7 @@ import ProductGallery from '@/components/product/ProductGallery';
 import ProductSpecsTable from '@/components/product/ProductSpecsTable';
 import ProductAvailabilityBadge from '@/components/product/ProductAvailabilityBadge';
 import QuoteToggleButton from '@/components/product/QuoteToggleButton';
+import ProductWhatsAppMessage from '@/components/product/ProductWhatsAppMessage';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -21,14 +22,15 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const product = getProductById(slug);
-  if (!product) return { title: 'Produit introuvable | HardwareCentral' };
+  if (!product) return { title: 'Produit introuvable' };
+  const brand = getBrandByCode(product.brand);
+  const brandName = brand?.name ?? product.brand;
   return {
-    title: `${product.name} – ${product.brand} | HardwareCentral`,
+    title: `${product.name} – ${brandName}`,
     description: product.shortDescription.slice(0, 160),
     openGraph: {
-      title: `${product.name} – ${product.brand}`,
+      title: `${product.name} – ${brandName}`,
       description: product.shortDescription.slice(0, 160),
-      images: product.primaryImage.url ? [{ url: product.primaryImage.url }] : [],
     },
     alternates: { canonical: `/produit/${slug}` },
   };
@@ -72,6 +74,7 @@ export default async function ProductPage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6">
+      <ProductWhatsAppMessage productName={product.name} sku={product.sku} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
@@ -83,6 +86,11 @@ export default async function ProductPage({ params }: Props) {
       <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
         <div className="w-full lg:w-[400px] lg:flex-shrink-0">
           <ProductGallery images={[product.primaryImage, ...product.gallery]} productName={product.name} />
+          {product.primaryImage.imageSource === 'ai-render' && (
+            <p className="mt-2 text-xs italic text-graphite-600">
+              Visuel généré, produit réel non contractuel sur cette image.
+            </p>
+          )}
         </div>
 
         <div className="flex-1 space-y-4">
@@ -93,7 +101,7 @@ export default async function ProductPage({ params }: Props) {
             <h1 className="mt-1 text-2xl font-bold text-graphite-900 font-display lg:text-3xl">
               {product.name}
             </h1>
-            <p className="mt-0.5 font-mono text-xs text-graphite-400">SKU: {product.sku}</p>
+            <p className="mt-0.5 font-mono text-xs text-graphite-600">SKU: {product.sku}</p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">

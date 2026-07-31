@@ -1,8 +1,9 @@
 import type { MetadataRoute } from 'next';
 import { products } from '@/lib/data/products';
 import { getActiveBrands } from '@/lib/data/brands';
+import { SITE_CONFIG } from '@/lib/site-config';
 
-const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hardwarecentral.com';
+const BASE_URL = SITE_CONFIG.domain;
 
 const staticRoutes: { path: string; priority: string }[] = [
   { path: '/', priority: '1.0' },

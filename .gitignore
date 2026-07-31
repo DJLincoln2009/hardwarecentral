@@ -13,6 +13,9 @@
 # testing
 /coverage
 
+# playwright
+/e2e-results
+
 # next.js
 /.next/
 /out/
@@ -32,6 +35,14 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+
+# python
+__pycache__/
+*.pyc
+
+# 3d-pipeline (artefacts lourds générés — jamais commités)
+/3d-pipeline/work/
+/3d-pipeline/outputs/
 
 # vercel
 .vercel

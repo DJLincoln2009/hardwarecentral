@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import DevisContent from './DevisContent';
 
 export const metadata: Metadata = {
-  title: 'Liste de devis | HardwareCentral',
+  title: 'Liste de devis',
   robots: { index: false, follow: false },
 };
 

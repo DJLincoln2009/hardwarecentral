@@ -5,7 +5,14 @@ export const brands: Brand[] = [
     code: 'HPE',
     name: 'HPE',
     shortDescription:
-      'Leader mondial des infrastructures IT, HPE propose des serveurs, solutions de stockage, réseaux (Aruba), PC portables EliteBook/ProBook et stations de travail Z professionnelles.',
+      "Hewlett Packard Enterprise (HPE) conçoit des infrastructures IT d'entreprise : serveurs ProLiant, stockage Alletra/Nimble/Primera/StoreOnce, appliances SimpliVity et réseaux Aruba.",
+    isActive: true,
+  },
+  {
+    code: 'HP',
+    name: 'HP Inc.',
+    shortDescription:
+      "HP Inc. est le spécialiste des PC professionnels et des stations de travail : portables EliteBook/ProBook, workstations Z et ZBook pour les usages exigeants.",
     isActive: true,
   },
   {

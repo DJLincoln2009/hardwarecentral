@@ -3,27 +3,15 @@ import { quoteRequestSchema } from '@/lib/validations/forms';
 import { sendTransactionalEmail } from '@/lib/email';
 import { getProductById } from '@/lib/data/products';
 import { SITE_CONFIG } from '@/lib/site-config';
+import { checkRateLimit } from '@/lib/rate-limit';
 
-const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
 const RATE_LIMIT_MAX = 5;
 const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
-
-function checkRateLimit(ip: string): boolean {
-  const now = Date.now();
-  const entry = rateLimitMap.get(ip);
-  if (!entry || now > entry.resetAt) {
-    rateLimitMap.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
-    return true;
-  }
-  if (entry.count >= RATE_LIMIT_MAX) return false;
-  entry.count += 1;
-  return true;
-}
 
 export async function POST(request: NextRequest) {
   const ip = request.headers.get('x-forwarded-for') ?? request.headers.get('x-real-ip') ?? 'unknown';
 
-  if (!checkRateLimit(ip)) {
+  if (!(await checkRateLimit(`ratelimit:quote:${ip}`, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS))) {
     return NextResponse.json({ error: 'Trop de demandes. Veuillez réessayer plus tard.' }, { status: 429 });
   }
 
@@ -48,7 +36,7 @@ export async function POST(request: NextRequest) {
 
   try {
     const productListHtml = validProducts
-      .map((p) => `- ${p.name} (SKU: ${p.sku}) — <a href="${process.env.NEXT_PUBLIC_SITE_URL ?? ''}/produit/${p.id}">${p.id}</a>`)
+      .map((p) => `- ${p.name} (SKU: ${p.sku}) — <a href="${SITE_CONFIG.domain}/produit/${p.id}">${p.id}</a>`)
       .join('<br>');
 
     await sendTransactionalEmail({

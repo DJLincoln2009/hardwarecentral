@@ -1,5 +1,6 @@
 import type { Product } from '@/types';
 import { hpeProducts } from './products/hpe';
+import { hpProducts } from './products/hp';
 import { dellProducts } from './products/dell';
 import { fortinetProducts } from './products/fortinet';
 import { ciscoProducts } from './products/cisco';
@@ -8,6 +9,7 @@ import { hikvisionProducts } from './products/hikvision';
 
 export const products: Product[] = [
   ...hpeProducts,
+  ...hpProducts,
   ...dellProducts,
   ...fortinetProducts,
   ...ciscoProducts,

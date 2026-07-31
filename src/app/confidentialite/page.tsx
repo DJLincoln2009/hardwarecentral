@@ -4,11 +4,14 @@ import { SITE_CONFIG } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Politique de confidentialité',
+  description:
+    'Politique de confidentialité de HardwareCentral : données collectées via les formulaires de devis, de contact et de newsletter, finalités, conservation et droits des utilisateurs.',
   robots: { index: true, follow: true },
   alternates: { canonical: '/confidentialite' },
   openGraph: {
     title: 'Politique de confidentialité | HardwareCentral',
-    description: 'Politique de protection des données personnelles de HardwareCentral.',
+    description:
+      'Quelles données personnelles HardwareCentral collecte (devis, contact, newsletter) et quels sont vos droits sur ces données.',
   },
 };
 
@@ -62,7 +65,7 @@ export default function ConfidentialitePage() {
         <div>
           <h2 className="text-lg font-semibold text-graphite-900">5. Destinataires des données</h2>
           <p>
-            Les données sont destinées aux services internes de {SITE_CONFIG.companyName} et ne sont
+            Les données sont destinées aux services internes de {SITE_CONFIG.companyName}{' '}et ne sont
             jamais cédées à des tiers à des fins commerciales. Elles peuvent être communiquées aux
             autorités compétentes dans le cadre d&apos;une obligation légale.
           </p>
@@ -77,7 +80,7 @@ export default function ConfidentialitePage() {
           </p>
           <p className="mt-2">
             {SITE_CONFIG.companyName}<br />
-            E-mail : {SITE_CONFIG.email.general}
+            E-mail : {SITE_CONFIG.email.contact}
           </p>
         </div>
 

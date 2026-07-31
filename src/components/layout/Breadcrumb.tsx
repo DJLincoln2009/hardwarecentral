@@ -1,5 +1,6 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
+import { SITE_CONFIG } from '@/lib/site-config';
 
 interface BreadcrumbItem {
   label: string;
@@ -18,7 +19,7 @@ function Breadcrumb({ items }: BreadcrumbProps) {
       '@type': 'ListItem',
       position: i + 1,
       name: item.label,
-      item: item.href ? `https://hardwarecentral.com${item.href}` : undefined,
+      item: item.href ? `${SITE_CONFIG.domain}${item.href}` : undefined,
     })),
   };
 

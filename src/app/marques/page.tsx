@@ -6,12 +6,12 @@ import BrandCard from './BrandCard';
 export const metadata: Metadata = {
   title: 'Marques partenaires',
   description:
-    'Découvrez les marques leaders du marché que nous distribuons : HPE, Dell, Fortinet, Cisco, Huawei, Hikvision.',
+    'Découvrez les marques leaders du marché que nous distribuons : HPE, HP Inc., Dell, Fortinet, Cisco, Huawei, Hikvision.',
   alternates: { canonical: '/marques' },
   openGraph: {
     title: 'Marques partenaires | HardwareCentral',
     description:
-      'Découvrez les marques leaders du marché que nous distribuons : HPE, Dell, Fortinet, Cisco, Huawei, Hikvision.',
+      'Découvrez les marques leaders du marché que nous distribuons : HPE, HP Inc., Dell, Fortinet, Cisco, Huawei, Hikvision.',
   },
 };
 

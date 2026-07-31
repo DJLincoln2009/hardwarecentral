@@ -3,7 +3,7 @@ import { Shield, Truck, Clock, Headphones } from 'lucide-react';
 const badges = [
   { icon: Shield, title: 'Équipements authentiques', description: 'Matériel neuf, sous garantie constructeur' },
   { icon: Truck, title: 'Livraison en CEMAC', description: 'Transport sécurisé, suivi de colis inclus' },
-  { icon: Clock, title: 'Devis sous 24h ouvrées', description: 'Engagement de réponse rapide' },
+  { icon: Clock, title: 'Devis sous 48-72h ouvrées', description: 'Engagement de réponse rapide' },
   { icon: Headphones, title: 'Support technique dédié', description: 'Assistance pour nos clients sous contrat' },
 ];
 

@@ -154,7 +154,7 @@ function Header() {
               onClick={() => setQuoteModalOpen(true)}
               className="hidden md:inline-flex rounded-md bg-teal-600 min-h-11 px-4 py-3 text-sm font-medium text-white hover:bg-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none"
             >
-              Demandez un devis
+              Demander un devis
             </button>
 
             <button

@@ -27,7 +27,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hardwarecentral.com'),
+  metadataBase: new URL(SITE_CONFIG.domain),
   title: {
     default: `${SITE_CONFIG.companyName} — Équipements IT professionnels pour l'Afrique Centrale`,
     template: `%s | ${SITE_CONFIG.companyName}`,
@@ -45,8 +45,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: SITE_CONFIG.companyName,
-    url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hardwarecentral.com',
-    logo: `${process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hardwarecentral.com'}/logo.png`,
+    url: SITE_CONFIG.domain,
+    logo: `${SITE_CONFIG.domain}/logo.png`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: SITE_CONFIG.address.line1,
