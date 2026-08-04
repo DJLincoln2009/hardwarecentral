@@ -39,7 +39,7 @@
 - [x] Adresse : Douala, Bonamoussadi
 - [x] Domaine : hardware-central.com
 - [x] Horaires : WAT (Lun–Ven, 8h–18h)
-- [x] Raison sociale : HardwareCentral (`site-config.ts` → `legalName`)
+- [ ] Raison sociale : **non résolue** — `site-config.ts` ne contient que `companyName: 'HardwareCentral'` (nom commercial, pas une raison sociale). Aucun champ `legalName` n'existe. En attente de l'extrait RCCM/NIU (cohérent avec `/mentions-legales`).
 - [x] Clé API Amazon Scraper — scraper Python (FastAPI) + Oxylabs configurés
 - [x] Compte Icecat (datasheets) — credentials configurés dans `.env.local`
 - [x] ImageKit.io — stockage média configuré
