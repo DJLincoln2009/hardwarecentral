@@ -33,6 +33,9 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
+# server de dev — logs bruts de lancement (jamais commités)
+.next-start*.log
+
 # env files (can opt-in for committing if needed)
 .env*
 
