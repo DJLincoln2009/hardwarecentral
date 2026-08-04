@@ -34,9 +34,8 @@ scene.render.samples = 32
 scene.render.image_settings.file_format = "PNG"
 scene.render.image_settings.color_mode = "RGBA"
 scene.render.film_transparent = True
-scene.render.resolution_x = 512
-scene.render.resolution_y = 512
-scene.render.film_transparent = True
+scene.render.resolution_x = 1600
+scene.render.resolution_y = 1600
 
 bpy.ops.import_scene.gltf(filepath=str(glb))
 bpy.ops.object.select_all(action="DESELECT")
