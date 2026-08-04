@@ -1,22 +1,42 @@
 import type { ReactNode } from 'react';
+import { cn } from '@/lib/utils';
+
+type BadgeVariant = 'success' | 'warning' | 'danger' | 'neutral';
+type BadgeSize = 'sm' | 'md';
 
 interface BadgeProps {
-  variant?: 'success' | 'warning' | 'danger' | 'neutral';
+  variant?: BadgeVariant;
+  size?: BadgeSize;
   children: ReactNode;
   className?: string;
 }
 
-const variantStyles: Record<string, string> = {
+const variantStyles: Record<BadgeVariant, string> = {
   success: 'bg-success-bg text-success-text border-success-border',
   warning: 'bg-warning-bg text-warning-text border-warning-border',
   danger: 'bg-danger-bg text-danger-text border-danger-border',
-  neutral: 'bg-graphite-50 text-graphite-800 border-graphite-200',
+  neutral: 'bg-surface-muted text-muted border-border',
 };
 
-function Badge({ variant = 'neutral', children, className = '' }: BadgeProps) {
+const sizeStyles: Record<BadgeSize, string> = {
+  sm: 'px-1.5 py-px text-[11px]',
+  md: 'px-2 py-0.5 text-xs',
+};
+
+function Badge({
+  variant = 'neutral',
+  size = 'md',
+  children,
+  className,
+}: BadgeProps) {
   return (
     <span
-      className={`inline-flex items-center gap-1 rounded-sm px-2 py-0.5 text-xs font-medium font-mono border ${variantStyles[variant]} ${className}`}
+      className={cn(
+        'inline-flex items-center gap-1 rounded-sm border font-medium',
+        variantStyles[variant],
+        sizeStyles[size],
+        className,
+      )}
     >
       {children}
     </span>

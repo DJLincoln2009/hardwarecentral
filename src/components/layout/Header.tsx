@@ -7,6 +7,7 @@ import { Heart, FileText, Menu, Search, ChevronDown, Phone, X } from 'lucide-rea
 import MegaMenu from './MegaMenu';
 import MobileNav from './MobileNav';
 import QuoteRequestForm from '@/components/forms/QuoteRequestForm';
+import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
 import { getActiveCategories } from '@/lib/data/categories';
@@ -82,14 +83,14 @@ function Header() {
   }, [megaMenuOpen]);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-graphite-200 bg-white relative">
+    <header className="sticky top-0 z-40 border-b border-border bg-surface relative">
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex items-center gap-4 py-3">
           <Link
             href="/"
-            className="font-display text-xl font-bold text-graphite-900 shrink-0"
+            className="font-display text-xl font-bold text-foreground shrink-0"
           >
-            Hardware<span className="text-teal-600">Central</span>
+            Hardware<span className="text-accent">Central</span>
           </Link>
 
           <div className="hidden md:flex flex-1 justify-center">
@@ -108,14 +109,14 @@ function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Rechercher un produit, une marque, un SKU…"
-                  className="w-full rounded-md border border-graphite-200 bg-white px-3 py-2 pl-9 text-sm text-graphite-900 placeholder:text-graphite-400 focus:border-teal-600 focus:ring-2 focus:ring-teal-600 focus:ring-offset-1 focus:outline-none"
+                  className="w-full rounded-md border border-border bg-surface px-3 py-2 pl-9 text-sm text-foreground placeholder:text-faint focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:outline-none"
                 />
-                <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-graphite-400" aria-hidden="true" />
+                <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-faint" aria-hidden="true" />
               </div>
               <button
                 type="submit"
                 aria-label="Rechercher"
-                className="rounded-md bg-teal-600 min-h-9 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+                className="rounded-md bg-teal-600 min-h-9 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
               >
                 <Search className="h-4 w-4" aria-hidden="true" />
               </button>
@@ -126,7 +127,7 @@ function Header() {
             <Link
               href="/favoris"
               aria-label={`Favoris${favCount > 0 ? ` (${favCount})` : ''}`}
-              className="relative flex min-h-11 min-w-11 items-center justify-center p-3 text-graphite-600 hover:text-graphite-900 active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+              className="relative flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
             >
               <Heart className="h-5 w-5" aria-hidden="true" />
               {favCount > 0 && (
@@ -139,7 +140,7 @@ function Header() {
             <Link
               href="/devis"
               aria-label={`Liste de devis${quoteCount > 0 ? ` (${quoteCount})` : ''}`}
-              className="relative flex min-h-11 min-w-11 items-center justify-center p-3 text-graphite-600 hover:text-graphite-900 active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+              className="relative flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
             >
               <FileText className="h-5 w-5" aria-hidden="true" />
               {quoteCount > 0 && (
@@ -149,10 +150,12 @@ function Header() {
               )}
             </Link>
 
+            <ThemeToggle />
+
             <button
               type="button"
               onClick={() => setQuoteModalOpen(true)}
-              className="hidden md:inline-flex rounded-md bg-teal-600 min-h-11 px-4 py-3 text-sm font-medium text-white hover:bg-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none"
+              className="hidden md:inline-flex rounded-md bg-teal-600 min-h-11 px-4 py-3 text-sm font-medium text-white hover:bg-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:outline-none"
             >
               Demander un devis
             </button>
@@ -163,7 +166,7 @@ function Header() {
               onClick={() => setMobileSearchOpen((prev) => !prev)}
               aria-expanded={mobileSearchOpen}
               aria-label={mobileSearchOpen ? 'Fermer la recherche' : 'Rechercher'}
-              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-graphite-600 hover:text-graphite-900 active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none lg:hidden"
+              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none lg:hidden"
             >
               <Search className="h-5 w-5" aria-hidden="true" />
             </button>
@@ -172,7 +175,7 @@ function Header() {
               ref={hamburgerRef}
               type="button"
               aria-label="Ouvrir le menu"
-              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-graphite-600 hover:text-graphite-900 active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none lg:hidden"
+              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none lg:hidden"
               onClick={() => {
                 setMobileSearchOpen(false);
                 setMobileNavOpen(true);
@@ -203,14 +206,14 @@ function Header() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Rechercher un produit, une marque, un SKU…"
-                className="w-full rounded-md border border-graphite-200 bg-white px-3 py-2 pl-9 text-sm text-graphite-900 placeholder:text-graphite-400 focus:border-teal-600 focus:ring-2 focus:ring-teal-600 focus:ring-offset-1 focus:outline-none"
+                className="w-full rounded-md border border-border bg-surface px-3 py-2 pl-9 text-sm text-foreground placeholder:text-faint focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:outline-none"
               />
-              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-graphite-400" aria-hidden="true" />
+              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-faint" aria-hidden="true" />
             </div>
             <button
               type="submit"
               aria-label="Lancer la recherche"
-              className="rounded-md bg-teal-600 min-h-11 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+              className="rounded-md bg-teal-600 min-h-11 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
             >
               <Search className="h-4 w-4" aria-hidden="true" />
             </button>
@@ -218,7 +221,7 @@ function Header() {
               type="button"
               onClick={closeMobileSearch}
               aria-label="Fermer la recherche"
-              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-graphite-600 hover:text-graphite-900 active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
             >
               <X className="h-5 w-5" aria-hidden="true" />
             </button>
@@ -234,7 +237,7 @@ function Header() {
             onClick={() => setMegaMenuOpen((prev) => !prev)}
             aria-haspopup="true"
             aria-expanded={megaMenuOpen}
-            className="flex items-center gap-1.5 text-sm font-medium text-graphite-900 hover:text-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none rounded-sm"
+            className="flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-accent-hover transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
           >
             <Menu className="h-4 w-4" aria-hidden="true" />
             <span>Catégories</span>
@@ -248,7 +251,7 @@ function Header() {
             <Link
               key={cat.id}
               href={categoryRouteMap[cat.id] ?? `/catalogue?categorie=${cat.id}`}
-              className="text-sm text-graphite-600 hover:text-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none rounded-sm"
+              className="text-sm text-muted hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
             >
               {cat.name}
             </Link>
@@ -256,7 +259,7 @@ function Header() {
 
           <Link
             href="/marques"
-            className="text-sm text-graphite-600 hover:text-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none rounded-sm"
+            className="text-sm text-muted hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
           >
             Marques
           </Link>
@@ -264,7 +267,7 @@ function Header() {
           <a
             href={`tel:${SITE_CONFIG.phone.e164}`}
             aria-label={`Téléphone : ${SITE_CONFIG.phone.display}`}
-            className="ml-auto flex items-center gap-1.5 text-sm text-graphite-600 hover:text-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none rounded-sm"
+            className="ml-auto flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
           >
             <Phone className="h-4 w-4" aria-hidden="true" />
             <span>{SITE_CONFIG.phone.display}</span>

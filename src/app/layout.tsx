@@ -2,10 +2,12 @@ import type { Metadata } from 'next';
 import { IBM_Plex_Sans, IBM_Plex_Mono, Manrope } from 'next/font/google';
 import SkipLink from '@/components/ui/SkipLink';
 import ToastProvider from '@/components/ui/Toast';
+import { ThemeProvider } from '@/components/ui/ThemeProvider';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import WhatsAppBubble from '@/components/layout/WhatsAppBubble';
 import { SITE_CONFIG } from '@/lib/site-config';
+import { THEME_STORAGE_KEY } from '@/lib/stores/ui-store';
 import './globals.css';
 
 const ibmPlexSans = IBM_Plex_Sans({
@@ -69,6 +71,14 @@ export default function RootLayout({
       className={`${ibmPlexSans.variable} ${manrope.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <head>
+        {/* Anti-FOUC : applique la classe .dark avant la peinture pour éviter
+            tout flash clair quand l'utilisateur est en mode sombre. La clé et le
+            format correspondent au persist zustand (ui-store). */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var s=localStorage.getItem(${JSON.stringify(THEME_STORAGE_KEY)});var t='system';if(s){var p=JSON.parse(s);if(p&&p.state&&(p.state.themePreference==='light'||p.state.themePreference==='dark'||p.state.themePreference==='system'))t=p.state.themePreference;}var dark=t==='dark'||(t==='system'&&window.matchMedia('(prefers-color-scheme: dark)').matches);document.documentElement.classList.toggle('dark',dark);}catch(e){}})();`,
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
@@ -76,14 +86,16 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col font-sans">
         <SkipLink />
-        <ToastProvider>
-          <Header />
-          <main id="main-content" className="flex-1">
-            {children}
-          </main>
-          <Footer />
-          <WhatsAppBubble />
-        </ToastProvider>
+        <ThemeProvider>
+          <ToastProvider>
+            <Header />
+            <main id="main-content" className="flex-1">
+              {children}
+            </main>
+            <Footer />
+            <WhatsAppBubble />
+          </ToastProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -1,39 +1,392 @@
 @import "tailwindcss";
 
+/* === MODE SOMBRE PAR CLASSE ===
+   La bascule light/dark se fait en posant la classe `.dark` sur <html>.
+   Tous les tokens sémantiques flippables vivent dans des variables
+   `--hc-*` (redéfinies sous `.dark`) et sont mappés vers les utilitaires
+   Tailwind via `@theme inline` — voir DESIGN.md §4. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ============================================================
+   PRIMITIFS — valeurs brutes de marque (spec §14.2, invariables)
+   ============================================================ */
 @theme {
   --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Manrope", sans-serif;
-  --font-mono: "IBM Plex Mono", monospace;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
-  --color-graphite-50: #F1EFE8;
-  --color-graphite-100: #D3D1C7;
-  --color-graphite-200: #B4B2A9;
+  --color-graphite-50: #f1efe8;
+  --color-graphite-100: #d3d1c7;
+  --color-graphite-200: #b4b2a9;
   --color-graphite-400: #888780;
-  --color-graphite-600: #5F5E5A;
+  --color-graphite-600: #5f5e5a;
   --color-graphite-800: #444441;
-  --color-graphite-900: #2C2C2A;
+  --color-graphite-900: #2c2c2a;
 
-  --color-teal-50: #E1F5EE;
-  --color-teal-100: #9FE1CB;
-  --color-teal-200: #5DCAA5;
-  --color-teal-400: #1D9E75;
-  --color-teal-600: #0F6E56;
+  --color-teal-50: #e1f5ee;
+  --color-teal-100: #9fe1cb;
+  --color-teal-200: #5dcaa5;
+  --color-teal-400: #1d9e75;
+  --color-teal-600: #0f6e56;
   --color-teal-800: #085041;
-  --color-teal-900: #04342C;
-
-  --color-success-bg: #EAF3DE;
-  --color-success-border: #C0DD97;
-  --color-success-text: #27500A;
-
-  --color-warning-bg: #FAEEDA;
-  --color-warning-border: #FAC775;
-  --color-warning-text: #633806;
-
-  --color-danger-bg: #FCEBEB;
-  --color-danger-border: #F7C1C1;
-  --color-danger-text: #791F1F;
+  --color-teal-900: #04342c;
 
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 20px;
+
+  /* Rythme d'interaction premium (expo-out, cf. ui-ux-pro-max) */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* ============================================================
+   SÉMANTIQUES FLIPPABLES — valeurs d'usage selon le thème
+   ============================================================ */
+:root {
+  /* Surfaces */
+  --hc-background: #faf9f6;
+  --hc-surface: #ffffff;
+  --hc-surface-muted: #f4f2ec;
+  --hc-surface-strong: #eceae3;
+
+  /* Texte */
+  --hc-foreground: #2c2c2a;
+  --hc-muted: #5f5e5a;
+  --hc-faint: #888780;
+  --hc-on-accent: #ffffff;
+
+  /* Bordures & séparateurs */
+  --hc-border: #e7e5de;
+  --hc-border-strong: #d6d4ca;
+
+  /* Accent (liens sur fond clair) */
+  --hc-accent: #0f6e56;
+  --hc-accent-hover: #085041;
+
+  /* Statuts — valeurs claires (spec §14.2) */
+  --hc-success-bg: #eaf3de;
+  --hc-success-border: #c0dd97;
+  --hc-success-text: #27500a;
+  --hc-warning-bg: #faeeda;
+  --hc-warning-border: #fac775;
+  --hc-warning-text: #633806;
+  --hc-danger-bg: #fcebeb;
+  --hc-danger-border: #f7c1c1;
+  --hc-danger-text: #791f1f;
+
+  /* Ombres */
+  --hc-shadow-xs: 0 1px 2px rgba(28, 28, 26, 0.04);
+  --hc-shadow-sm: 0 1px 2px rgba(28, 28, 26, 0.05), 0 1px 3px rgba(28, 28, 26, 0.05);
+  --hc-shadow-md: 0 2px 4px rgba(28, 28, 26, 0.05), 0 8px 20px -8px rgba(28, 28, 26, 0.12);
+  --hc-shadow-lg: 0 4px 8px rgba(28, 28, 26, 0.06), 0 16px 40px -12px rgba(28, 28, 26, 0.18);
+  --hc-shadow-xl: 0 8px 16px rgba(28, 28, 26, 0.08), 0 32px 64px -16px rgba(28, 28, 26, 0.24);
+
+  /* Brillance accent (CTA, focus premium) */
+  --hc-glow-accent: 0 0 0 1px rgba(29, 158, 117, 0.14), 0 8px 32px -8px rgba(29, 158, 117, 0.45);
+
+  /* Divers */
+  --hc-grid-line: rgba(44, 44, 42, 0.045);
+  --hc-dot: rgba(44, 44, 42, 0.08);
+  --hc-glass-bg: rgba(255, 255, 255, 0.72);
+  --hc-glass-border: rgba(44, 44, 42, 0.08);
+  --hc-backdrop: rgba(25, 25, 24, 0.55);
+  --hc-selection-bg: #9fe1cb;
+  --hc-selection-fg: #04342c;
+}
+
+.dark {
+  color-scheme: dark;
+
+  /* Surfaces — graphite chaud, jamais noir pur (anti-smear OLED) */
+  --hc-background: #191918;
+  --hc-surface: #1f1f1e;
+  --hc-surface-muted: #252524;
+  --hc-surface-strong: #2b2b29;
+
+  /* Texte */
+  --hc-foreground: #ecebe5;
+  --hc-muted: #a9a79e;
+  --hc-faint: #82817a;
+  --hc-on-accent: #04342c;
+
+  /* Bordures */
+  --hc-border: rgba(255, 255, 255, 0.09);
+  --hc-border-strong: rgba(255, 255, 255, 0.16);
+
+  /* Accent — teal clair lisible sur fond sombre (spec §14.3) */
+  --hc-accent: #5dcaa5;
+  --hc-accent-hover: #9fe1cb;
+
+  /* Statuts — variantes sombres à fort contraste */
+  --hc-success-bg: #1c2a12;
+  --hc-success-border: #3e5a1e;
+  --hc-success-text: #b9d99d;
+  --hc-warning-bg: #2a1f0e;
+  --hc-warning-border: #6b4a16;
+  --hc-warning-text: #f0c67c;
+  --hc-danger-bg: #2b1414;
+  --hc-danger-border: #6b2424;
+  --hc-danger-text: #f0aaaa;
+
+  /* Ombres — plus profondes, moins visibles que les bordures */
+  --hc-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --hc-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
+  --hc-shadow-md: 0 2px 6px rgba(0, 0, 0, 0.4), 0 12px 28px -12px rgba(0, 0, 0, 0.5);
+  --hc-shadow-lg: 0 4px 10px rgba(0, 0, 0, 0.45), 0 24px 48px -16px rgba(0, 0, 0, 0.6);
+  --hc-shadow-xl: 0 8px 18px rgba(0, 0, 0, 0.5), 0 40px 80px -24px rgba(0, 0, 0, 0.7);
+
+  --hc-glow-accent: 0 0 0 1px rgba(93, 202, 165, 0.22), 0 8px 36px -8px rgba(93, 202, 165, 0.4);
+
+  --hc-grid-line: rgba(255, 255, 255, 0.045);
+  --hc-dot: rgba(255, 255, 255, 0.09);
+  --hc-glass-bg: rgba(25, 25, 24, 0.72);
+  --hc-glass-border: rgba(255, 255, 255, 0.1);
+  --hc-backdrop: rgba(0, 0, 0, 0.68);
+  --hc-selection-bg: #5dcaa5;
+  --hc-selection-fg: #04342c;
+}
+
+/* ============================================================
+   MAPPING VERS LES UTILITAIRES TAILWIND
+   `inline` : l'utilitaire référence `var(--hc-*)` → bascule au runtime
+   ============================================================ */
+@theme inline {
+  --color-background: var(--hc-background);
+  --color-surface: var(--hc-surface);
+  --color-surface-muted: var(--hc-surface-muted);
+  --color-surface-strong: var(--hc-surface-strong);
+
+  --color-foreground: var(--hc-foreground);
+  --color-muted: var(--hc-muted);
+  --color-faint: var(--hc-faint);
+  --color-on-accent: var(--hc-on-accent);
+
+  --color-border: var(--hc-border);
+  --color-border-strong: var(--hc-border-strong);
+
+  --color-accent: var(--hc-accent);
+  --color-accent-hover: var(--hc-accent-hover);
+
+  --color-success-bg: var(--hc-success-bg);
+  --color-success-border: var(--hc-success-border);
+  --color-success-text: var(--hc-success-text);
+  --color-warning-bg: var(--hc-warning-bg);
+  --color-warning-border: var(--hc-warning-border);
+  --color-warning-text: var(--hc-warning-text);
+  --color-danger-bg: var(--hc-danger-bg);
+  --color-danger-border: var(--hc-danger-border);
+  --color-danger-text: var(--hc-danger-text);
+
+  --color-backdrop: var(--hc-backdrop);
+
+  --shadow-xs: var(--hc-shadow-xs);
+  --shadow-sm: var(--hc-shadow-sm);
+  --shadow-md: var(--hc-shadow-md);
+  --shadow-lg: var(--hc-shadow-lg);
+  --shadow-xl: var(--hc-shadow-xl);
+
+  /* Animations (désactivées sous prefers-reduced-motion, voir plus bas) */
+  --animate-fade-in: fade-in 0.5s var(--ease-in-out-smooth) both;
+  --animate-fade-in-up: fade-in-up 0.7s var(--ease-out-expo) both;
+  --animate-fade-in-down: fade-in-down 0.7s var(--ease-out-expo) both;
+  --animate-scale-in: scale-in 0.45s var(--ease-out-expo) both;
+  --animate-shimmer: shimmer 1.8s linear infinite;
+  --animate-marquee: marquee 42s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-pulse-soft: pulse-soft 3.2s ease-in-out infinite;
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in-down {
+    from {
+      opacity: 0;
+      transform: translateY(-16px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes scale-in {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  @keyframes shimmer {
+    from {
+      background-position: -200% 0;
+    }
+    to {
+      background-position: 200% 0;
+    }
+  }
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.55;
+    }
+  }
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    font-feature-settings: "ss01" on;
+  }
+
+  ::selection {
+    background-color: var(--hc-selection-bg);
+    color: var(--hc-selection-fg);
+  }
+
+  /* Barre de défilement discrète et cohérente avec le thème */
+  @media (pointer: fine) {
+    * {
+      scrollbar-width: thin;
+      scrollbar-color: var(--hc-border-strong) transparent;
+    }
+    *::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    *::-webkit-scrollbar-thumb {
+      border-radius: 9999px;
+      background-color: var(--hc-border-strong);
+    }
+    *::-webkit-scrollbar-track {
+      background: transparent;
+    }
+  }
+
+  /* Accessibilité : neutraliser toute animation décorative si l'utilisateur
+     préfère réduire le mouvement (WCAG 2.2 — critère 2.3.3). Les transitions
+     indispensables (opacité) restent. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* ============================================================
+   UTILITAIRES CUSTOM PREMIUM
+   ============================================================ */
+
+/* Fond quadrillé discret (hero, sections d'emphase) */
+@utility bg-grid {
+  background-image: linear-gradient(to right, var(--hc-grid-line) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--hc-grid-line) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Fond pointillé discret */
+@utility bg-dots {
+  background-image: radial-gradient(var(--hc-dot) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Verre dépoli (header au scroll, modales sur fond sombre) */
+@utility glass {
+  background-color: var(--hc-glass-bg);
+  backdrop-filter: blur(14px) saturate(1.4);
+  -webkit-backdrop-filter: blur(14px) saturate(1.4);
+  border: 1px solid var(--hc-glass-border);
+}
+
+/* Texte en dégradé (réservé aux surfaces sombres) */
+@utility text-gradient {
+  background: linear-gradient(115deg, #a7e8d3 0%, #5dcaa5 45%, #1d9e75 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Halo lumineux autour d'un CTA primaire sur fond sombre */
+@utility shadow-glow {
+  box-shadow: var(--hc-glow-accent);
+}
+
+/* Masque vertical pour fondre un contenu vers le bas */
+@utility mask-fade-b {
+  -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+}
+
+/* Masque latéral pour les marquees */
+@utility mask-fade-x {
+  -webkit-mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+  mask-image: linear-gradient(to right, transparent, black 12%, black 88%, transparent);
+}
+
+/* Supprime la barre de défilement sans casser le scroll */
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }

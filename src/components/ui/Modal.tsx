@@ -89,7 +89,7 @@ function Modal({ open, onClose, title, children, className = '' }: ModalProps) {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
-            className="absolute inset-0 bg-graphite-900/60"
+            className="absolute inset-0 bg-backdrop"
             onClick={onClose}
             aria-hidden="true"
           />
@@ -99,16 +99,16 @@ function Modal({ open, onClose, title, children, className = '' }: ModalProps) {
             animate={{ opacity: 1, ...(prefersReducedMotion ? {} : { scale: 1, y: 0 }) }}
             exit={{ opacity: 0, ...(prefersReducedMotion ? {} : { scale: 0.95, y: 10 }) }}
             transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
-            className={`relative z-10 w-full max-w-md flex flex-col rounded-lg bg-white shadow-lg max-h-[85vh] ${className}`}
+            className={`relative z-10 w-full max-w-md flex flex-col rounded-lg border border-border bg-surface shadow-xl max-h-[85vh] ${className}`}
           >
             <div className="flex items-start justify-between px-5 pt-5">
-              <h2 id="modal-title" className="text-lg font-display font-bold text-graphite-900">
+              <h2 id="modal-title" className="text-lg font-display font-bold text-foreground">
                 {title}
               </h2>
               <button
                 type="button"
                 onClick={onClose}
-                className="p-2.5 -mr-1 -mt-1 text-graphite-400 hover:text-graphite-900 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none"
+                className="p-2.5 -mr-1 -mt-1 text-faint hover:text-foreground transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background focus-visible:outline-none"
                 aria-label="Fermer"
               >
                 <X className="h-5 w-5" aria-hidden="true" />

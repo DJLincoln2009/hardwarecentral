@@ -19,6 +19,10 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    "**/node_modules/**",
+    ".opencode/**",
+    "3d-pipeline/**",
+    "docs/**",
   ]),
 ]);
 
