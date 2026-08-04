@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
+import { ChevronDown } from 'lucide-react';
 import type { SortOption } from '@/lib/data/filter-products';
 
 const sortOptions: { value: SortOption; label: string }[] = [
@@ -16,24 +17,30 @@ function CatalogSort() {
   const current = (searchParams.get('tri') as SortOption) || 'newest';
 
   return (
-    <select
-      value={current}
-      onChange={(e) => {
-        const params = new URLSearchParams(searchParams.toString());
-        const value = e.target.value;
-        if (value && value !== 'newest') params.set('tri', value);
-        else params.delete('tri');
-        router.push(`${pathname}?${params.toString()}`);
-      }}
-      aria-label="Trier par"
-      className="rounded-md border border-graphite-200 bg-white px-3 py-1.5 text-sm text-graphite-900 focus:border-teal-600 focus:ring-2 focus:ring-teal-600 focus:outline-none"
-    >
-      {sortOptions.map((opt) => (
-        <option key={opt.value} value={opt.value}>
-          Trier : {opt.label}
-        </option>
-      ))}
-    </select>
+    <div className="relative">
+      <select
+        value={current}
+        onChange={(e) => {
+          const params = new URLSearchParams(searchParams.toString());
+          const value = e.target.value;
+          if (value && value !== 'newest') params.set('tri', value);
+          else params.delete('tri');
+          router.push(`${pathname}?${params.toString()}`);
+        }}
+        aria-label="Trier par"
+        className="appearance-none rounded-full border border-border bg-surface py-2.5 pl-4 pr-9 text-sm font-medium text-foreground shadow-xs transition-all duration-200 hover:border-border-strong focus:border-accent focus:shadow-focus focus:outline-none"
+      >
+        {sortOptions.map((opt) => (
+          <option key={opt.value} value={opt.value}>
+            Trier : {opt.label}
+          </option>
+        ))}
+      </select>
+      <ChevronDown
+        className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-faint"
+        aria-hidden="true"
+      />
+    </div>
   );
 }
 

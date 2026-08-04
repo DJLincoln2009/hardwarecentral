@@ -16,7 +16,7 @@ function CatalogMobileBar({ resultCount }: CatalogMobileBarProps) {
       <button
         type="button"
         onClick={() => setMobileFiltersOpen(true)}
-        className="inline-flex items-center gap-1.5 rounded-md border border-graphite-200 px-3 py-1.5 text-sm text-graphite-600 hover:bg-graphite-50 transition-colors lg:hidden focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+        className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-4 py-2.5 text-sm font-medium text-foreground shadow-xs transition-all duration-200 hover:border-border-strong active:scale-95 lg:hidden focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
       >
         <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
         Filtrer

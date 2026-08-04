@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useCallback } from 'react';
-import { X } from 'lucide-react';
+import { X, SlidersHorizontal } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
 import CatalogFilters from './CatalogFilters';
@@ -59,7 +59,7 @@ function MobileFilterDrawer({ open, onClose, resultCount }: MobileFilterDrawerPr
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
-            className="absolute inset-0 bg-graphite-900/60"
+            className="absolute inset-0 bg-backdrop"
             onClick={onClose}
             aria-hidden="true"
           />
@@ -68,33 +68,38 @@ function MobileFilterDrawer({ open, onClose, resultCount }: MobileFilterDrawerPr
             initial={{ x: prefersReducedMotion ? 0 : '100%' }}
             animate={{ x: 0 }}
             exit={{ x: prefersReducedMotion ? 0 : '100%' }}
-            transition={{ duration: prefersReducedMotion ? 0 : 0.25, ease: 'easeInOut' }}
-            className="absolute right-0 top-0 h-full w-full max-w-sm bg-white shadow-xl overflow-y-auto"
+            transition={{ duration: prefersReducedMotion ? 0 : 0.28, ease: 'easeOut' }}
+            className="absolute right-0 top-0 flex h-full w-full max-w-sm flex-col bg-surface shadow-2xl"
             role="dialog"
             aria-modal="true"
             aria-label="Filtrer le catalogue"
           >
-            <div className="flex items-center justify-between border-b border-graphite-200 px-4 py-3">
-              <span className="font-medium text-graphite-900">Filtres</span>
+            <div className="flex items-center justify-between border-b border-border px-5 py-4">
+              <span className="flex items-center gap-2.5 font-display text-base font-extrabold tracking-tight text-foreground">
+                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal-50 text-teal-700">
+                  <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
+                </span>
+                Filtres
+              </span>
               <button
                 type="button"
                 onClick={onClose}
                 aria-label="Fermer les filtres"
-                className="p-3 text-graphite-400 hover:text-graphite-900 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+                className="rounded-lg p-2.5 text-faint transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
                 <X className="h-5 w-5" aria-hidden="true" />
               </button>
             </div>
-            <div className="px-4 py-6">
+            <div className="flex-1 overflow-y-auto px-5 py-6">
               <CatalogFilters />
             </div>
-            <div className="border-t border-graphite-200 px-4 py-3">
+            <div className="border-t border-border px-5 py-4">
               <button
                 type="button"
                 onClick={onClose}
-                className="w-full rounded-md bg-teal-600 min-h-11 px-4 py-2.5 text-sm font-medium text-white hover:bg-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none"
+                className="w-full rounded-full bg-teal-600 min-h-11 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-teal-700 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
               >
-                Voir {resultCount} résultats
+                Voir {resultCount} résultat{resultCount !== 1 ? 's' : ''}
               </button>
             </div>
           </motion.div>

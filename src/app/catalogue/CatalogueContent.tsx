@@ -45,19 +45,37 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
-      <div className="mb-4">
-        <Breadcrumb items={breadcrumbItems} />
+    <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
+      <div className="mb-8">
+        <div className="mb-4">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="eyebrow mb-1.5">B2B · IT professionnel</p>
+            <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
+              Catalogue complet
+            </h1>
+          </div>
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-semibold text-muted shadow-xs">
+            <span className="h-1.5 w-1.5 rounded-full bg-teal-600" aria-hidden="true" />
+            {total} produit{total !== 1 ? 's' : ''}
+          </span>
+        </div>
       </div>
 
-      <div className="flex gap-6">
+      <div className="flex flex-col gap-8 lg:flex-row lg:gap-10">
         <CatalogFilters className="hidden lg:block" />
 
         <div className="flex-1 min-w-0">
-          <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <h1 className="sr-only text-2xl font-bold text-graphite-900 font-display">Catalogue complet</h1>
-            <p className="text-sm text-graphite-600">
-              {total} produit{total !== 1 ? 's' : ''} trouvé{total !== 1 ? 's' : ''}
+          <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+            <p className="text-sm text-muted">
+              {q && (
+                <>
+                  Résultats pour &laquo;&nbsp;{q}&nbsp;&raquo; ·{' '}
+                </>
+              )}
+              {tri && tri !== 'newest' ? 'Tris personnalisés appliqués' : 'Dernières références ajoutées'}
             </p>
             <div className="flex items-center gap-2">
               <CatalogMobileBar resultCount={total} />
@@ -72,7 +90,7 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
                   <ProductCard key={product.id} product={product} />
                 ))}
               </div>
-              <div className="mt-8">
+              <div className="mt-10 flex justify-center border-t border-border pt-8">
                 <CatalogPagination currentPage={currentPage} totalPages={totalPages} />
               </div>
             </>

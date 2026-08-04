@@ -6,6 +6,7 @@ import { useCallback } from 'react';
 import { getActiveCategories } from '@/lib/data/categories';
 import { getActiveBrands } from '@/lib/data/brands';
 import { getUniqueAttributeValues } from '@/lib/data/filter-products';
+import { cn } from '@/lib/utils';
 
 interface CatalogFiltersProps {
   className?: string;
@@ -56,12 +57,13 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
   const hasFilters = activeCategorie || activeMarque || activeFormat;
 
   return (
-    <aside className={`w-full lg:w-[220px] flex-shrink-0 ${className}`}>
-      <div className="space-y-5">
+    <aside
+      className={cn('w-full flex-shrink-0 lg:sticky lg:top-24 lg:w-[240px]', className)}
+      aria-label="Filtres du catalogue"
+    >
+      <div className="space-y-6 rounded-2xl border border-border bg-surface p-5 shadow-xs">
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-graphite-600">
-            Catégorie
-          </p>
+          <p className="eyebrow mb-3">Catégorie</p>
           <div className="space-y-1">
             {categories.map((cat) => {
               const isActive = activeCategorie === cat.id;
@@ -70,11 +72,18 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
                   key={cat.id}
                   type="button"
                   onClick={() => updateParam('categorie', isActive ? '' : cat.id)}
-                  className={`block w-full text-left min-h-11 px-2 py-2.5 text-sm rounded-md transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none ${
-                    isActive ? 'bg-teal-50 text-teal-600 font-medium' : 'text-graphite-600 hover:bg-graphite-50'
-                  }`}
+                  aria-pressed={isActive}
+                  className={cn(
+                    'flex w-full items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-left text-sm transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+                    isActive
+                      ? 'bg-teal-50 font-medium text-teal-700'
+                      : 'text-muted hover:bg-surface-muted hover:text-foreground',
+                  )}
                 >
-                  {cat.name}
+                  <span>{cat.name}</span>
+                  {isActive && (
+                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" aria-hidden="true" />
+                  )}
                 </button>
               );
             })}
@@ -82,23 +91,21 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
         </div>
 
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-graphite-600">
-            Marque
-          </p>
-          <div className="space-y-1 max-h-48 overflow-y-auto">
+          <p className="eyebrow mb-3">Marque</p>
+          <div className="max-h-48 space-y-0.5 overflow-y-auto no-scrollbar pr-1">
             {brands.map((b) => {
               const activeBrands = activeMarque ? activeMarque.split(',') : [];
               const isChecked = activeBrands.includes(b.code);
               return (
                 <label
                   key={b.code}
-                  className="flex items-center gap-2 px-2 py-3 text-sm text-graphite-600 hover:bg-graphite-50 rounded-md cursor-pointer transition-colors"
+                  className="flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm text-muted transition-colors duration-150 hover:bg-surface-muted hover:text-foreground"
                 >
                   <input
                     type="checkbox"
                     checked={isChecked}
                     onChange={() => toggleArrayParam('marque', b.code)}
-                    className="h-4 w-4 rounded border-graphite-300 text-teal-600 focus:ring-teal-600"
+                    className="h-4 w-4 rounded border-border-strong accent-teal-600 focus:ring-2 focus:ring-accent"
                   />
                   {b.name}
                 </label>
@@ -108,23 +115,21 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
         </div>
 
         <div>
-          <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-graphite-600">
-            Format châssis
-          </p>
-          <div className="space-y-1">
+          <p className="eyebrow mb-3">Format châssis</p>
+          <div className="space-y-0.5">
             {chassisFormats.map((fmt) => {
               const activeFormats = activeFormat ? activeFormat.split(',') : [];
               const isChecked = activeFormats.includes(fmt);
               return (
                 <label
                   key={fmt}
-                  className="flex items-center gap-2 px-2 py-3 text-sm text-graphite-600 hover:bg-graphite-50 rounded-md cursor-pointer transition-colors"
+                  className="flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm text-muted transition-colors duration-150 hover:bg-surface-muted hover:text-foreground"
                 >
                   <input
                     type="checkbox"
                     checked={isChecked}
                     onChange={() => toggleArrayParam('format', fmt)}
-                    className="h-4 w-4 rounded border-graphite-300 text-teal-600 focus:ring-teal-600"
+                    className="h-4 w-4 rounded border-border-strong accent-teal-600 focus:ring-2 focus:ring-accent"
                   />
                   {fmt}
                 </label>
@@ -134,14 +139,16 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
         </div>
 
         {hasFilters && (
-          <button
-            type="button"
-            onClick={clearAll}
-            className="inline-flex items-center gap-1 px-2 py-2.5 text-sm text-graphite-600 hover:text-graphite-900 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none rounded-sm"
-          >
-            <X className="h-3.5 w-3.5" aria-hidden="true" />
-            Effacer les filtres
-          </button>
+          <div className="border-t border-border pt-4">
+            <button
+              type="button"
+              onClick={clearAll}
+              className="inline-flex items-center gap-1.5 rounded-lg px-1 py-1.5 text-sm font-medium text-muted transition-colors duration-150 hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            >
+              <X className="h-3.5 w-3.5" aria-hidden="true" />
+              Effacer les filtres
+            </button>
+          </div>
         )}
       </div>
     </aside>

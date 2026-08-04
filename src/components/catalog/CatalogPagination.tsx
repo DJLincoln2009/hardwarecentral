@@ -2,6 +2,7 @@
 
 import { useRouter, useSearchParams, usePathname } from 'next/navigation';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { cn } from '@/lib/utils';
 
 interface CatalogPaginationProps {
   currentPage: number;
@@ -31,21 +32,31 @@ function CatalogPagination({ currentPage, totalPages }: CatalogPaginationProps) 
     }
   }
 
+  const navButtonClass = cn(
+    'flex h-10 w-10 items-center justify-center rounded-full border transition-all duration-150',
+    'text-muted hover:bg-surface-muted hover:text-foreground active:scale-95',
+    'disabled:cursor-not-allowed disabled:opacity-35 disabled:hover:bg-transparent',
+    'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+  );
+
   return (
-    <nav aria-label="Pagination" className="flex items-center justify-center gap-1">
+    <nav aria-label="Pagination" className="flex items-center justify-center gap-1.5">
       <button
         type="button"
         onClick={() => goToPage(currentPage - 1)}
         disabled={currentPage <= 1}
         aria-label="Page précédente"
-        className="flex h-11 w-11 items-center justify-center rounded-md border border-graphite-200 text-graphite-600 hover:bg-graphite-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+        className={cn(navButtonClass, 'border-border bg-surface')}
       >
         <ChevronLeft className="h-4 w-4" aria-hidden="true" />
       </button>
 
       {pages.map((p, i) =>
         p === '...' ? (
-          <span key={`ellipsis-${i}`} className="flex h-11 w-11 items-center justify-center text-sm text-graphite-600">
+          <span
+            key={`ellipsis-${i}`}
+            className="flex h-10 w-10 items-center justify-center text-sm text-faint"
+          >
             …
           </span>
         ) : (
@@ -54,11 +65,12 @@ function CatalogPagination({ currentPage, totalPages }: CatalogPaginationProps) 
             type="button"
             onClick={() => goToPage(p)}
             aria-current={p === currentPage ? 'page' : undefined}
-            className={`flex h-11 w-11 items-center justify-center rounded-md text-sm font-medium transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none ${
+            className={cn(
+              'flex h-10 w-10 items-center justify-center rounded-full text-sm font-semibold transition-all duration-150 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
               p === currentPage
-                ? 'bg-teal-600 text-white'
-                : 'border border-graphite-200 text-graphite-600 hover:bg-graphite-50'
-            }`}
+                ? 'bg-teal-600 text-white shadow-md shadow-teal-600/25'
+                : 'border border-border bg-surface text-muted hover:bg-surface-muted hover:text-foreground',
+            )}
           >
             {p}
           </button>
@@ -70,7 +82,7 @@ function CatalogPagination({ currentPage, totalPages }: CatalogPaginationProps) 
         onClick={() => goToPage(currentPage + 1)}
         disabled={currentPage >= totalPages}
         aria-label="Page suivante"
-        className="flex h-11 w-11 items-center justify-center rounded-md border border-graphite-200 text-graphite-600 hover:bg-graphite-50 disabled:opacity-40 disabled:cursor-not-allowed transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+        className={cn(navButtonClass, 'border-border bg-surface')}
       >
         <ChevronRight className="h-4 w-4" aria-hidden="true" />
       </button>
