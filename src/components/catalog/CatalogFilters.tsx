@@ -76,7 +76,7 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
                   className={cn(
                     'flex w-full items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-left text-sm transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
                     isActive
-                      ? 'bg-teal-50 font-medium text-teal-700'
+                      ? 'bg-teal-50 font-medium text-teal-700 dark:bg-teal-500/15 dark:text-teal-300'
                       : 'text-muted hover:bg-surface-muted hover:text-foreground',
                   )}
                 >

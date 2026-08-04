@@ -134,7 +134,7 @@ export default async function ProductPage({ params }: Props) {
 
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
             <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Shield className="mt-0.5 h-4 w-4 shrink-0 text-teal-600" aria-hidden="true" />
+              <Shield className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
               <span className="text-xs leading-relaxed text-muted">
                 <span className="font-semibold text-foreground">Garantie</span>
                 <br />
@@ -142,7 +142,7 @@ export default async function ProductPage({ params }: Props) {
               </span>
             </div>
             <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Truck className="mt-0.5 h-4 w-4 shrink-0 text-teal-600" aria-hidden="true" />
+              <Truck className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
               <span className="text-xs leading-relaxed text-muted">
                 <span className="font-semibold text-foreground">Livraison</span>
                 <br />
@@ -150,7 +150,7 @@ export default async function ProductPage({ params }: Props) {
               </span>
             </div>
             <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-teal-600" aria-hidden="true" />
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
               <span className="text-xs leading-relaxed text-muted">
                 <span className="font-semibold text-foreground">Devis</span>
                 <br />

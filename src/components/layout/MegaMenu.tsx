@@ -87,7 +87,7 @@ function MegaMenu({ open, onClose }: MegaMenuProps) {
                         className="group flex items-center gap-3 rounded-lg px-2.5 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                         onClick={onClose}
                       >
-                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-teal-50 text-teal-700 transition-colors duration-150 group-hover:bg-teal-600 group-hover:text-white">
+                        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-teal-50 text-teal-700 transition-colors duration-150 group-hover:bg-teal-600 group-hover:text-white dark:bg-teal-500/15 dark:text-teal-300 dark:group-hover:bg-teal-500">
                           {Icon && <Icon className="h-4 w-4" aria-hidden="true" />}
                         </span>
                         <span className="flex-1">{cat.name}</span>

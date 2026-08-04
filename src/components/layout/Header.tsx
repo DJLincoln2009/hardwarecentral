@@ -295,7 +295,7 @@ function Header() {
             aria-label={`Téléphone : ${SITE_CONFIG.phone.display}`}
             className="ml-auto flex items-center gap-2 font-mono text-sm text-muted transition-colors duration-150 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
           >
-            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-teal-50 text-teal-700">
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-teal-50 text-teal-700 dark:bg-teal-500/15 dark:text-teal-300">
               <Phone className="h-3.5 w-3.5" aria-hidden="true" />
             </span>
             {SITE_CONFIG.phone.display}

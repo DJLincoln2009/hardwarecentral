@@ -30,8 +30,8 @@ const iconMap: Record<ToastVariant, { node: ReactNode; tile: string }> = {
     tile: 'bg-danger-bg',
   },
   info: {
-    node: <Info className="h-4 w-4 text-teal-600" aria-hidden="true" />,
-    tile: 'bg-teal-50',
+    node: <Info className="h-4 w-4 text-teal-600 dark:text-teal-300" aria-hidden="true" />,
+    tile: 'bg-teal-50 dark:bg-teal-500/15',
   },
 };
 

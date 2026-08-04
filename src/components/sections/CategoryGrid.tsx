@@ -31,7 +31,7 @@ function CategoryGrid() {
                 href={`/catalogue?categorie=${cat.id}`}
                 className="group flex flex-col items-center gap-3 rounded-2xl border border-border bg-surface p-6 text-center shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-teal-600/50 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
-                <span className="flex h-13 w-13 items-center justify-center rounded-2xl bg-teal-50 text-teal-700 transition-all duration-200 group-hover:bg-teal-600 group-hover:text-white group-hover:shadow-glow">
+                <span className="flex h-13 w-13 items-center justify-center rounded-2xl bg-teal-50 text-teal-700 transition-all duration-200 group-hover:bg-teal-600 group-hover:text-white group-hover:shadow-glow dark:bg-teal-500/15 dark:text-teal-300 dark:group-hover:bg-teal-500">
                   {Icon && <Icon className="h-6 w-6" aria-hidden="true" />}
                 </span>
                 <span className="text-sm font-semibold text-foreground">{cat.name}</span>

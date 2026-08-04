@@ -18,7 +18,7 @@ const variantStyles: Record<BadgeVariant, string> = {
   warning: 'bg-warning-bg text-warning-text border-warning-border',
   danger: 'bg-danger-bg text-danger-text border-danger-border',
   neutral: 'bg-surface-muted text-muted border-border',
-  accent: 'bg-teal-50 text-teal-800 border-teal-100',
+  accent: 'bg-teal-50 text-teal-800 border-teal-100 dark:bg-teal-500/15 dark:text-teal-300 dark:border-teal-500/30',
 };
 
 const dotColor: Record<BadgeVariant, string> = {

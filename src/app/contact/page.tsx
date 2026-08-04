@@ -93,7 +93,7 @@ export default function ContactPage() {
                 key={item.label}
                 className="flex items-start gap-3.5 rounded-2xl border border-border bg-surface p-5 shadow-xs"
               >
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-700">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-700 dark:bg-teal-500/15 dark:text-teal-300">
                   <item.icon className="h-4.5 w-4.5" aria-hidden="true" />
                 </span>
                 <div>

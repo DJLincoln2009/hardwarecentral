@@ -21,7 +21,7 @@ function TrustBadges() {
           key={badge.title}
           className="group flex items-start gap-3.5 rounded-2xl border border-border bg-surface p-5 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-border-strong hover:shadow-md"
         >
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-700 transition-colors duration-200 group-hover:bg-teal-600 group-hover:text-white">
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-700 transition-colors duration-200 group-hover:bg-teal-600 group-hover:text-white dark:bg-teal-500/15 dark:text-teal-300 dark:group-hover:bg-teal-500">
             <badge.icon className="h-5 w-5" aria-hidden="true" />
           </span>
           <span>
