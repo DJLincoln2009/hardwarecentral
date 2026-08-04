@@ -50,7 +50,7 @@ export default function Error({ error, reset }: ErrorProps) {
         <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <button
             onClick={reset}
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-500 px-7 py-3.5 text-sm font-semibold text-graphite-950 shadow-lg shadow-teal-500/25 transition-all duration-200 hover:bg-teal-400 hover:shadow-glow active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 sm:w-auto"
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-300 px-7 py-3.5 text-sm font-semibold text-graphite-950 shadow-lg shadow-teal-300/25 transition-all duration-200 hover:bg-teal-200 hover:shadow-glow active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 sm:w-auto"
           >
             <RefreshCw className="h-4 w-4 transition-transform duration-300 group-hover:rotate-180" aria-hidden="true" />
             Réessayer

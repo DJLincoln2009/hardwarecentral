@@ -45,7 +45,7 @@ function Hero() {
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <Link
               href="/catalogue"
-              className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-500 px-7 py-3.5 text-sm font-semibold text-graphite-950 shadow-lg shadow-teal-500/25 transition-all duration-200 hover:bg-teal-400 hover:shadow-glow active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 sm:w-auto"
+              className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-300 px-7 py-3.5 text-sm font-semibold text-graphite-950 shadow-lg shadow-teal-300/25 transition-all duration-200 hover:bg-teal-200 hover:shadow-glow active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300 sm:w-auto"
             >
               Découvrir le catalogue
               <ArrowRight
@@ -68,7 +68,7 @@ function Hero() {
                 <dd className="font-display text-2xl font-extrabold tracking-tight text-white md:text-3xl">
                   {stat.value}
                 </dd>
-                <dt className="mt-1 text-[11px] leading-tight text-graphite-400 md:text-xs">
+                <dt className="mt-1 text-[11px] leading-tight text-graphite-300 md:text-xs">
                   {stat.label}
                 </dt>
               </div>
