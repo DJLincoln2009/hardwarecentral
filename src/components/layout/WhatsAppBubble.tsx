@@ -19,9 +19,14 @@ function WhatsAppBubble() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contacter par WhatsApp"
-      className="fixed bottom-6 right-6 z-50 flex h-12 w-12 items-center justify-center rounded-full bg-teal-600 text-white shadow-lg transition-all duration-150 hover:bg-teal-800 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2"
+      className="group fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-teal-500 to-teal-700 text-white shadow-lg transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
     >
-      <MessageCircle className="h-6 w-6" aria-hidden="true" />
+      <span
+        className="absolute inset-0 rounded-full bg-teal-500/40 animate-ping"
+        aria-hidden="true"
+        style={{ animationDuration: '3s' }}
+      />
+      <MessageCircle className="relative h-6 w-6" aria-hidden="true" />
     </a>
   );
 }

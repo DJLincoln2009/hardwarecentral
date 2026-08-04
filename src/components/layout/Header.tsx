@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Heart, FileText, Menu, Search, ChevronDown, Phone, X } from 'lucide-react';
+import { Heart, FileText, Menu, Search, ChevronDown, Phone, X, Server } from 'lucide-react';
 import MegaMenu from './MegaMenu';
 import MobileNav from './MobileNav';
 import QuoteRequestForm from '@/components/forms/QuoteRequestForm';
@@ -12,6 +12,7 @@ import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
 import { getActiveCategories } from '@/lib/data/categories';
 import { SITE_CONFIG } from '@/lib/site-config';
+import { cn } from '@/lib/utils';
 
 const categoryRouteMap: Record<string, string> = {
   'server-storage': '/catalogue?categorie=server-storage',
@@ -82,23 +83,42 @@ function Header() {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, [megaMenuOpen]);
 
+  const iconButtonClass = cn(
+    'relative flex h-10 w-10 items-center justify-center rounded-lg text-muted',
+    'transition-colors duration-150 hover:bg-surface-muted hover:text-foreground',
+    'active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+  );
+
+  const counterBadge = (count: number) =>
+    count > 0 && (
+      <span
+        className={cn(
+          'absolute -right-0.5 -top-0.5 flex h-[18px] min-w-[18px] items-center justify-center',
+          'rounded-full bg-teal-600 px-1 text-[10px] font-semibold text-white ring-2 ring-surface',
+        )}
+      >
+        {count > 9 ? '9+' : count}
+      </span>
+    );
+
   return (
-    <header className="sticky top-0 z-40 border-b border-border bg-surface relative">
-      <div className="mx-auto max-w-7xl px-4">
-        <div className="flex items-center gap-4 py-3">
+    <header className="sticky top-0 z-40 border-b border-border bg-surface/85 backdrop-blur-xl">
+      <div className="mx-auto max-w-7xl px-4 lg:px-6">
+        <div className="flex items-center gap-3 py-3">
           <Link
             href="/"
-            className="font-display text-xl font-bold text-foreground shrink-0"
+            className="group flex shrink-0 items-center gap-2.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg"
           >
-            Hardware<span className="text-accent">Central</span>
+            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-teal-800 shadow-sm transition-shadow duration-200 group-hover:shadow-glow">
+              <Server className="h-4.5 w-4.5 text-white" aria-hidden="true" />
+            </span>
+            <span className="font-display text-lg font-extrabold tracking-tight text-foreground">
+              Hardware<span className="text-accent">Central</span>
+            </span>
           </Link>
 
-          <div className="hidden md:flex flex-1 justify-center">
-            <form
-              role="search"
-              onSubmit={handleSearch}
-              className="flex w-full max-w-md items-center gap-2"
-            >
+          <div className="hidden flex-1 justify-center md:flex">
+            <form role="search" onSubmit={handleSearch} className="flex w-full max-w-md items-center gap-2">
               <label htmlFor="header-search" className="sr-only">
                 Rechercher un produit, une marque, un SKU…
               </label>
@@ -109,45 +129,40 @@ function Header() {
                   value={searchQuery}
                   onChange={(e) => setSearchQuery(e.target.value)}
                   placeholder="Rechercher un produit, une marque, un SKU…"
-                  className="w-full rounded-md border border-border bg-surface px-3 py-2 pl-9 text-sm text-foreground placeholder:text-faint focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:outline-none"
+                  className="w-full rounded-full border border-border bg-surface-muted/60 py-2.5 pl-10 pr-4 text-sm text-foreground shadow-xs placeholder:text-faint transition-all duration-200 hover:border-border-strong focus:border-accent focus:bg-surface focus:shadow-focus focus:outline-none"
                 />
-                <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-faint" aria-hidden="true" />
+                <Search
+                  className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-faint"
+                  aria-hidden="true"
+                />
               </div>
               <button
                 type="submit"
                 aria-label="Rechercher"
-                className="rounded-md bg-teal-600 min-h-9 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
+                className="flex h-10 w-11 shrink-0 items-center justify-center rounded-full bg-teal-600 text-white transition-all duration-200 hover:bg-teal-700 hover:shadow-md active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
               >
                 <Search className="h-4 w-4" aria-hidden="true" />
               </button>
             </form>
           </div>
 
-          <div className="flex items-center gap-2 ml-auto">
+          <div className="ml-auto flex items-center gap-1.5">
             <Link
               href="/favoris"
               aria-label={`Favoris${favCount > 0 ? ` (${favCount})` : ''}`}
-              className="relative flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
+              className={iconButtonClass}
             >
               <Heart className="h-5 w-5" aria-hidden="true" />
-              {favCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-teal-600 text-xs font-medium text-white">
-                  {favCount > 9 ? '9+' : favCount}
-                </span>
-              )}
+              {counterBadge(favCount)}
             </Link>
 
             <Link
               href="/devis"
               aria-label={`Liste de devis${quoteCount > 0 ? ` (${quoteCount})` : ''}`}
-              className="relative flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
+              className={iconButtonClass}
             >
               <FileText className="h-5 w-5" aria-hidden="true" />
-              {quoteCount > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-teal-600 text-xs font-medium text-white">
-                  {quoteCount > 9 ? '9+' : quoteCount}
-                </span>
-              )}
+              {counterBadge(quoteCount)}
             </Link>
 
             <ThemeToggle />
@@ -155,7 +170,7 @@ function Header() {
             <button
               type="button"
               onClick={() => setQuoteModalOpen(true)}
-              className="hidden md:inline-flex rounded-md bg-teal-600 min-h-11 px-4 py-3 text-sm font-medium text-white hover:bg-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:outline-none"
+              className="hidden rounded-full bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow-sm transition-all duration-200 hover:bg-teal-700 hover:shadow-md active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-surface md:inline-flex"
             >
               Demander un devis
             </button>
@@ -166,7 +181,7 @@ function Header() {
               onClick={() => setMobileSearchOpen((prev) => !prev)}
               aria-expanded={mobileSearchOpen}
               aria-label={mobileSearchOpen ? 'Fermer la recherche' : 'Rechercher'}
-              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none lg:hidden"
+              className={cn(iconButtonClass, 'lg:hidden')}
             >
               <Search className="h-5 w-5" aria-hidden="true" />
             </button>
@@ -175,7 +190,7 @@ function Header() {
               ref={hamburgerRef}
               type="button"
               aria-label="Ouvrir le menu"
-              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none lg:hidden"
+              className={cn(iconButtonClass, 'lg:hidden')}
               onClick={() => {
                 setMobileSearchOpen(false);
                 setMobileNavOpen(true);
@@ -206,14 +221,17 @@ function Header() {
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 placeholder="Rechercher un produit, une marque, un SKU…"
-                className="w-full rounded-md border border-border bg-surface px-3 py-2 pl-9 text-sm text-foreground placeholder:text-faint focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:outline-none"
+                className="w-full rounded-full border border-border bg-surface-muted/60 py-2.5 pl-10 pr-4 text-sm text-foreground placeholder:text-faint transition-all duration-200 focus:border-accent focus:bg-surface focus:shadow-focus focus:outline-none"
               />
-              <Search className="pointer-events-none absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-faint" aria-hidden="true" />
+              <Search
+                className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-faint"
+                aria-hidden="true"
+              />
             </div>
             <button
               type="submit"
               aria-label="Lancer la recherche"
-              className="rounded-md bg-teal-600 min-h-11 min-w-11 px-3 py-2 text-sm font-medium text-white hover:bg-teal-800 active:scale-95 transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
+              className="flex h-10 w-11 shrink-0 items-center justify-center rounded-full bg-teal-600 text-white transition-all duration-200 hover:bg-teal-700 active:scale-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <Search className="h-4 w-4" aria-hidden="true" />
             </button>
@@ -221,14 +239,17 @@ function Header() {
               type="button"
               onClick={closeMobileSearch}
               aria-label="Fermer la recherche"
-              className="flex min-h-11 min-w-11 items-center justify-center p-3 text-muted hover:text-foreground active:scale-95 transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
             >
               <X className="h-5 w-5" aria-hidden="true" />
             </button>
           </form>
         )}
 
-        <nav className="hidden lg:flex items-center gap-6 pb-3" aria-label="Catégories principales">
+        <nav
+          className="hidden items-center gap-5 pb-3.5 lg:flex"
+          aria-label="Catégories principales"
+        >
           <button
             ref={megaMenuTriggerRef}
             type="button"
@@ -237,12 +258,17 @@ function Header() {
             onClick={() => setMegaMenuOpen((prev) => !prev)}
             aria-haspopup="true"
             aria-expanded={megaMenuOpen}
-            className="flex items-center gap-1.5 text-sm font-medium text-foreground hover:text-accent-hover transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
+            className={cn(
+              'flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+              megaMenuOpen
+                ? 'bg-surface-muted text-foreground'
+                : 'text-foreground hover:bg-surface-muted/60',
+            )}
           >
             <Menu className="h-4 w-4" aria-hidden="true" />
             <span>Catégories</span>
             <ChevronDown
-              className={`h-3.5 w-3.5 transition-transform duration-150 ${megaMenuOpen ? 'rotate-180' : ''}`}
+              className={`h-3.5 w-3.5 text-faint transition-transform duration-200 ${megaMenuOpen ? 'rotate-180' : ''}`}
               aria-hidden="true"
             />
           </button>
@@ -251,7 +277,7 @@ function Header() {
             <Link
               key={cat.id}
               href={categoryRouteMap[cat.id] ?? `/catalogue?categorie=${cat.id}`}
-              className="text-sm text-muted hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
+              className="text-sm font-medium text-muted transition-colors duration-150 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
             >
               {cat.name}
             </Link>
@@ -259,7 +285,7 @@ function Header() {
 
           <Link
             href="/marques"
-            className="text-sm text-muted hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
+            className="text-sm font-medium text-muted transition-colors duration-150 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
           >
             Marques
           </Link>
@@ -267,22 +293,24 @@ function Header() {
           <a
             href={`tel:${SITE_CONFIG.phone.e164}`}
             aria-label={`Téléphone : ${SITE_CONFIG.phone.display}`}
-            className="ml-auto flex items-center gap-1.5 text-sm text-muted hover:text-accent transition-colors focus-visible:ring-2 focus-visible:ring-accent focus-visible:outline-none rounded-sm"
+            className="ml-auto flex items-center gap-2 font-mono text-sm text-muted transition-colors duration-150 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
           >
-            <Phone className="h-4 w-4" aria-hidden="true" />
-            <span>{SITE_CONFIG.phone.display}</span>
+            <span className="flex h-7 w-7 items-center justify-center rounded-full bg-teal-50 text-teal-700">
+              <Phone className="h-3.5 w-3.5" aria-hidden="true" />
+            </span>
+            {SITE_CONFIG.phone.display}
           </a>
         </nav>
       </div>
 
-      {/* Positionné par rapport au <header> (relative, pleine largeur) et non plus
-          par rapport à un élément interne de la nav : le panneau s'étend sur toute
-          la largeur du header, sous la barre de nav, comme sur le wireframe #screen-1. */}
       <div role="presentation" onMouseEnter={openMegaMenu} onMouseLeave={closeMegaMenu}>
-        <MegaMenu open={megaMenuOpen} onClose={() => {
-          setMegaMenuOpen(false);
-          requestAnimationFrame(() => megaMenuTriggerRef.current?.focus());
-        }} />
+        <MegaMenu
+          open={megaMenuOpen}
+          onClose={() => {
+            setMegaMenuOpen(false);
+            requestAnimationFrame(() => megaMenuTriggerRef.current?.focus());
+          }}
+        />
       </div>
 
       <MobileNav
