@@ -44,40 +44,54 @@ export default async function BrandPage({ params }: Props) {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
+    <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
       <div className="mb-6">
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <div className="mb-8 flex items-center gap-4 rounded-lg border border-graphite-200 bg-graphite-50 p-6">
-        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-white">
-          <span className="text-xl font-bold font-display text-graphite-600">
-            {brandName.charAt(0)}
+      <section className="relative isolate overflow-hidden rounded-3xl bg-graphite-950 px-6 py-10 md:px-10 md:py-12">
+        <div className="absolute inset-0 -z-10 bg-grid opacity-50" aria-hidden="true" />
+        <div
+          className="pointer-events-none absolute -right-16 -top-24 h-64 w-64 rounded-full bg-hero-glow blur-3xl"
+          aria-hidden="true"
+        />
+        <div className="relative flex flex-col items-start gap-5 sm:flex-row sm:items-center">
+          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-400 to-teal-700 shadow-lg">
+            <span className="font-display text-2xl font-extrabold text-white">
+              {brandName.charAt(0)}
+            </span>
           </span>
+          <div>
+            <p className="eyebrow mb-1.5 text-graphite-400">Marque partenaire</p>
+            <h1 className="font-display text-title font-extrabold tracking-tight text-white">
+              {brandName}
+            </h1>
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-graphite-300">
+              {brand.shortDescription}
+            </p>
+            <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-semibold text-graphite-200 backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-teal-300" aria-hidden="true" />
+              {brandProducts.length} produit{brandProducts.length !== 1 ? 's' : ''}
+            </p>
+          </div>
         </div>
-        <div>
-          <h1 className="text-2xl font-bold text-graphite-900 font-display">{brandName}</h1>
-          <p className="mt-1 text-sm text-graphite-600">{brand.shortDescription}</p>
-        </div>
-      </div>
-
-      <p className="mb-4 text-sm text-graphite-600">
-        {brandProducts.length} produit{brandProducts.length !== 1 ? 's' : ''} {brandName}
-      </p>
+      </section>
 
       {brandProducts.length > 0 ? (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {brandProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
       ) : (
-        <EmptyState
-          variant="empty"
-          title="Aucun produit disponible"
-          description={`Les produits ${brandName} arrivent bientôt.`}
-          action={{ label: 'Voir toutes les marques', href: '/marques' }}
-        />
+        <div className="mt-8">
+          <EmptyState
+            variant="empty"
+            title="Aucun produit disponible"
+            description={`Les produits ${brandName} arrivent bientôt.`}
+            action={{ label: 'Voir toutes les marques', href: '/marques' }}
+          />
+        </div>
       )}
     </div>
   );

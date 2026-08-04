@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { Shield } from 'lucide-react';
+import Link from 'next/link';
+import { Shield, Truck, Clock, FileText, BadgeCheck } from 'lucide-react';
 import { products, getProductById } from '@/lib/data/products';
 import { getBrandByCode } from '@/lib/data/brands';
 import { getCategoryById } from '@/lib/data/categories';
@@ -73,7 +74,7 @@ export default async function ProductPage({ params }: Props) {
   };
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
+    <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
       <ProductWhatsAppMessage productName={product.name} sku={product.sku} />
       <script
         type="application/ld+json"
@@ -83,60 +84,98 @@ export default async function ProductPage({ params }: Props) {
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <div className="flex flex-col gap-8 lg:flex-row lg:gap-12">
+      <div className="flex flex-col gap-10 lg:flex-row lg:gap-14">
         <div className="w-full lg:w-[400px] lg:flex-shrink-0">
           <ProductGallery images={[product.primaryImage, ...product.gallery]} productName={product.name} />
           {product.primaryImage.imageSource === 'ai-render' && (
-            <p className="mt-2 text-xs italic text-graphite-600">
+            <p className="mt-3 text-xs italic text-muted">
               Visuel généré, produit réel non contractuel sur cette image.
             </p>
           )}
         </div>
 
-        <div className="flex-1 space-y-4">
+        <div className="flex-1 space-y-6">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-wider text-graphite-600">
-              {brand?.name ?? product.brand}
-            </p>
-            <h1 className="mt-1 text-2xl font-bold text-graphite-900 font-display lg:text-3xl">
+            <div className="flex flex-wrap items-center gap-2">
+              {brand && (
+                <Link
+                  href={`/marques/${brand.code.toLowerCase()}`}
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-muted shadow-xs transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                >
+                  <BadgeCheck className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
+                  {brand.name}
+                </Link>
+              )}
+              <span className="rounded-full bg-surface-muted px-3 py-1 font-mono text-[11px] text-muted">
+                SKU: {product.sku}
+              </span>
+            </div>
+            <h1 className="mt-4 font-display text-title font-extrabold leading-tight tracking-tight text-foreground">
               {product.name}
             </h1>
-            <p className="mt-0.5 font-mono text-xs text-graphite-600">SKU: {product.sku}</p>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <ProductAvailabilityBadge status={product.availability.status} />
             {product.availability.status !== 'available' && (
-              <span className="text-sm text-graphite-500">
+              <span className="text-sm text-muted">
                 Délai : {product.availability.leadTimeDays} jours
               </span>
             )}
           </div>
 
-          <div className="flex items-center gap-2 text-sm text-graphite-600">
-            <Shield className="h-4 w-4 text-teal-600" aria-hidden="true" />
-            <span>{product.warranty.durationLabel}</span>
-          </div>
+          <p className="max-w-2xl text-sm leading-relaxed text-muted">
+            {product.shortDescription}
+          </p>
 
-          <p className="text-sm text-graphite-700 leading-relaxed">{product.shortDescription}</p>
-
-          <div className="flex gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <QuoteToggleButton product={product} size="lg" className="flex-1 justify-center" />
           </div>
 
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+            <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
+              <Shield className="mt-0.5 h-4 w-4 shrink-0 text-teal-600" aria-hidden="true" />
+              <span className="text-xs leading-relaxed text-muted">
+                <span className="font-semibold text-foreground">Garantie</span>
+                <br />
+                {product.warranty.durationLabel}
+              </span>
+            </div>
+            <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
+              <Truck className="mt-0.5 h-4 w-4 shrink-0 text-teal-600" aria-hidden="true" />
+              <span className="text-xs leading-relaxed text-muted">
+                <span className="font-semibold text-foreground">Livraison</span>
+                <br />
+                Transport sécurisé en CEMAC
+              </span>
+            </div>
+            <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
+              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-teal-600" aria-hidden="true" />
+              <span className="text-xs leading-relaxed text-muted">
+                <span className="font-semibold text-foreground">Devis</span>
+                <br />
+                Réponse sous 48-72h ouvrées
+              </span>
+            </div>
+          </div>
+
           {product.datasheets.length > 0 && (
-            <div className="rounded-lg border border-graphite-200 p-4">
-              <p className="mb-2 text-sm font-semibold text-graphite-900">Fiches techniques</p>
-              <ul className="space-y-1">
-                {product.datasheets.map((ds, i) => (
-                  <li key={i}>
+            <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs">
+              <p className="flex items-center gap-2 text-sm font-semibold text-foreground">
+                <FileText className="h-4 w-4 text-accent" aria-hidden="true" />
+                Fiches techniques
+              </p>
+              <ul className="mt-3 space-y-1">
+                {product.datasheets.map((ds) => (
+                  <li key={ds.url}>
                     <a
                       href={ds.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm text-teal-600 hover:text-teal-800 underline underline-offset-2 transition-colors"
+                      className="group inline-flex items-center gap-1.5 text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
                     >
-                      {ds.name} ({ds.fileSizeLabel})
+                      <span className="underline underline-offset-2">{ds.name}</span>
+                      <span className="text-xs text-faint">({ds.fileSizeLabel})</span>
                     </a>
                   </li>
                 ))}
@@ -146,20 +185,28 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </div>
 
-      <div className="mt-12 space-y-8">
+      <div className="mt-14 space-y-10">
         <section>
-          <h2 className="mb-4 text-xl font-bold text-graphite-900 font-display">Caractéristiques techniques</h2>
+          <div className="mb-5 flex items-center gap-3">
+            <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground">
+              Caractéristiques techniques
+            </h2>
+            <span className="h-px flex-1 bg-border" aria-hidden="true" />
+          </div>
           <ProductSpecsTable specs={product.specs} />
         </section>
 
         {(product.certifications.length > 0 || product.compatibility.length > 0) && (
-          <div className="grid gap-6 sm:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2">
             {product.certifications.length > 0 && (
-              <div className="rounded-lg border border-graphite-200 p-4">
-                <h3 className="mb-2 text-sm font-semibold text-graphite-900">Certifications</h3>
-                <ul className="space-y-1">
+              <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs">
+                <h3 className="text-sm font-semibold text-foreground">Certifications</h3>
+                <ul className="mt-2.5 flex flex-wrap gap-2">
                   {product.certifications.map((cert) => (
-                    <li key={cert} className="text-sm text-graphite-600">
+                    <li
+                      key={cert}
+                      className="rounded-full bg-surface-muted px-3 py-1.5 text-xs font-medium text-muted"
+                    >
                       {cert}
                     </li>
                   ))}
@@ -167,11 +214,14 @@ export default async function ProductPage({ params }: Props) {
               </div>
             )}
             {product.compatibility.length > 0 && (
-              <div className="rounded-lg border border-graphite-200 p-4">
-                <h3 className="mb-2 text-sm font-semibold text-graphite-900">Compatibilité</h3>
-                <ul className="space-y-1">
+              <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs">
+                <h3 className="text-sm font-semibold text-foreground">Compatibilité</h3>
+                <ul className="mt-2.5 flex flex-wrap gap-2">
                   {product.compatibility.map((comp) => (
-                    <li key={comp} className="text-sm text-graphite-600">
+                    <li
+                      key={comp}
+                      className="rounded-full bg-surface-muted px-3 py-1.5 text-xs font-medium text-muted"
+                    >
                       {comp}
                     </li>
                   ))}
@@ -183,8 +233,13 @@ export default async function ProductPage({ params }: Props) {
 
         {product.fullDescription && (
           <section>
-            <h2 className="mb-3 text-xl font-bold text-graphite-900 font-display">Description</h2>
-            <p className="text-sm text-graphite-700 leading-relaxed whitespace-pre-line">
+            <div className="mb-5 flex items-center gap-3">
+              <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground">
+                Description
+              </h2>
+              <span className="h-px flex-1 bg-border" aria-hidden="true" />
+            </div>
+            <p className="max-w-3xl whitespace-pre-line text-sm leading-relaxed text-muted">
               {product.fullDescription}
             </p>
           </section>

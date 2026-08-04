@@ -3,6 +3,7 @@
 import { Check, Plus } from 'lucide-react';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useToast } from '@/components/ui/Toast';
+import { cn } from '@/lib/utils';
 import type { Product } from '@/types';
 
 interface QuoteToggleButtonProps {
@@ -30,11 +31,15 @@ function QuoteToggleButton({ product, size = 'md', className = '' }: QuoteToggle
         toggleItem({ productId: product.id, sku: product.sku, name: product.name, brand: product.brand });
         addToast(inQuote ? 'Retiré de la liste de devis' : 'Ajouté à la liste de devis');
       }}
-      className={`inline-flex items-center justify-center rounded-md font-medium transition-all duration-150 focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:outline-none ${
+      className={cn(
+        'inline-flex items-center justify-center rounded-lg font-semibold transition-all duration-200 active:scale-[0.97]',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background',
         inQuote
-          ? 'border border-graphite-200 text-graphite-900 hover:bg-graphite-50'
-          : 'bg-teal-600 text-white hover:bg-teal-800'
-      } ${sizeStyles[size]} ${className}`}
+          ? 'border border-border-strong bg-surface text-foreground hover:bg-surface-muted'
+          : 'bg-teal-600 text-white shadow-sm hover:bg-teal-700 hover:shadow-md',
+        sizeStyles[size],
+        className,
+      )}
     >
       {inQuote ? (
         <>

@@ -24,16 +24,27 @@ export default function BrandsPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-6">
-      <div className="mb-6">
-        <Breadcrumb items={breadcrumbItems} />
-      </div>
-
+    <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-graphite-900 font-display">Nos marques partenaires</h1>
-        <p className="mt-2 text-sm text-graphite-600">
-          Nous distribuons les plus grandes marques d&apos;infrastructure IT.
-        </p>
+        <div className="mb-4">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="eyebrow mb-1.5">Constructeurs</p>
+            <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
+              Nos marques partenaires
+            </h1>
+            <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
+              Nous distribuons les plus grandes marques d&apos;infrastructure IT — serveurs,
+              réseau, sécurité et vidéosurveillance.
+            </p>
+          </div>
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-semibold text-muted shadow-xs">
+            <span className="h-1.5 w-1.5 rounded-full bg-teal-600" aria-hidden="true" />
+            {brands.length} marques
+          </span>
+        </div>
       </div>
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">

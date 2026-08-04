@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import type { MediaAsset } from '@/types';
+import { cn } from '@/lib/utils';
 
 interface ProductGalleryProps {
   images: MediaAsset[];
@@ -17,19 +18,23 @@ function ProductGallery({ images, productName }: ProductGalleryProps) {
   const current = images[selected];
 
   return (
-    <div className="flex flex-col gap-2">
-      <div className="relative flex items-center justify-center overflow-hidden rounded-lg border border-graphite-200 bg-graphite-50 aspect-[4/3]">
+    <div className="flex flex-col gap-3">
+      <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl border border-border bg-surface-muted shadow-xs">
         <Image
           src={current.url}
           alt={current.alt || productName}
           fill
           sizes="(max-width: 1024px) 100vw, 50vw"
-          className="object-contain p-4"
+          className="object-contain p-6"
           priority
         />
       </div>
       {images.length > 1 && (
-        <div className="flex gap-2 overflow-x-auto" role="tablist" aria-label="Sélectionner une image">
+        <div
+          className="flex gap-2.5 overflow-x-auto no-scrollbar"
+          role="tablist"
+          aria-label="Sélectionner une image"
+        >
           {images.map((img, i) => (
             <button
               key={i}
@@ -38,16 +43,20 @@ function ProductGallery({ images, productName }: ProductGalleryProps) {
               aria-selected={i === selected}
               aria-label={`Voir l'image ${i + 1} de ${productName}`}
               onClick={() => setSelected(i)}
-              className={`flex-shrink-0 relative w-16 h-16 rounded-md border-2 overflow-hidden transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none ${
-                i === selected ? 'border-teal-600' : 'border-graphite-200 hover:border-graphite-400'
-              }`}
+              className={cn(
+                'relative h-18 w-18 flex-shrink-0 overflow-hidden rounded-xl border-2 bg-surface-muted transition-all duration-150',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+                i === selected
+                  ? 'border-teal-600 shadow-sm'
+                  : 'border-border opacity-70 hover:opacity-100',
+              )}
             >
               <Image
                 src={img.url}
                 alt=""
                 fill
-                sizes="64px"
-                className="object-contain p-1"
+                sizes="72px"
+                className="object-contain p-1.5"
               />
             </button>
           ))}
