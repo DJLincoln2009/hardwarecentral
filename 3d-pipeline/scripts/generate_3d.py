@@ -1,5 +1,5 @@
+import argparse
 import json
-import sys
 import time
 import gradio_client as gc
 from pathlib import Path
@@ -12,11 +12,17 @@ API_NAME = "/generate_3d"
 # Si l'appel échoue, inspecter la doc du Space (gradio_client Client.view_api()).
 
 
-def generate_3d(ref_images: list[Path], out_dir: Path, runs: int = 25) -> Path:
+def generate_3d(ref_images: list[Path], out_dir: Path, runs: int = 2) -> Path:
     client = gc.Client(HF_SPACE)
     first = True
     last_path = None
     fov = None
+
+    if runs > 5:
+        print(
+            f"⚠ {runs} runs demandés — chaque run consomme le quota gratuit du "
+            "Space. Confirmer avant de continuer sur plusieurs produits."
+        )
 
     for i, img in enumerate(ref_images):
         img_dir = out_dir / img.stem
@@ -68,11 +74,20 @@ def generate_3d(ref_images: list[Path], out_dir: Path, runs: int = 25) -> Path:
 
 
 if __name__ == "__main__":
-    slug = sys.argv[1]
+    parser = argparse.ArgumentParser(description="Génération TRELLIS pour un produit")
+    parser.add_argument("slug")
+    parser.add_argument(
+        "--runs",
+        type=int,
+        default=2,
+        help="Nombre de runs TRELLIS par image de référence (défaut: 2)",
+    )
+    args = parser.parse_args()
+    slug = args.slug
     refs_dir = Path("work") / slug / "refs"
     out_dir = Path("work") / slug / "generated"
     refs = sorted(refs_dir.glob("ref_*"))
     if not refs:
         raise SystemExit(f"Aucune référence dans {refs_dir}")
     print(f"Génération TRELLIS pour {slug} ({len(refs)} référence(s))")
-    generate_3d(refs, out_dir)
+    generate_3d(refs, out_dir, runs=args.runs)
