@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, type ReactNode, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { motion, AnimatePresence } from 'motion/react';
 import { X } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -84,7 +85,7 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
     };
   }, [open, handleKeyDown]);
 
-  return (
+  const modal = (
     <AnimatePresence>
       {open && (
         <div
@@ -149,6 +150,10 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
       )}
     </AnimatePresence>
   );
+
+  if (typeof window === 'undefined') return null;
+
+  return createPortal(modal, document.body);
 }
 
 export default Modal;
