@@ -15,18 +15,22 @@ function LegalPageTemplate({ title, lastUpdated, breadcrumbLabel, children }: Le
   ];
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-6">
-      <div className="mb-6">
+    <div className="mx-auto max-w-3xl px-4 py-8 lg:px-6">
+      <div className="mb-4">
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <article className="prose prose-graphite max-w-none">
-        <header className="mb-8">
-          <h1 className="text-3xl font-bold text-graphite-900 font-display">{title}</h1>
-          <p className="mt-1 text-sm text-graphite-500">Dernière mise à jour : {lastUpdated}</p>
-        </header>
-        {children}
-      </article>
+      <header className="mb-10">
+        <p className="eyebrow mb-2">Informations légales</p>
+        <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
+          {title}
+        </h1>
+        <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-medium text-muted shadow-xs">
+          Dernière mise à jour : {lastUpdated}
+        </p>
+      </header>
+
+      <article className="prose prose-graphite max-w-none">{children}</article>
     </div>
   );
 }
