@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { X } from 'lucide-react';
+import { X, AlertCircle, FileText } from 'lucide-react';
 import Modal from '@/components/ui/Modal';
 import Input from '@/components/ui/Input';
 import Textarea from '@/components/ui/Textarea';
@@ -86,7 +86,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
       {status === 'success' ? (
         <div className="space-y-3 text-center py-4">
           <p className="text-success-text font-semibold">Demande envoyée avec succès !</p>
-          <p className="text-sm text-graphite-600">
+          <p className="text-sm text-muted">
             Notre équipe vous recontactera sous 48 à 72 heures ouvrées à l&apos;adresse{' '}
             <strong>{professionalEmail}</strong>.
           </p>
@@ -134,23 +134,24 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
             disabled={status === 'submitting'}
           />
 
-          <div className="rounded-md border border-graphite-200 bg-graphite-50 p-3">
-            <p className="mb-2 text-sm font-medium text-graphite-900">
+          <div className="rounded-xl border border-border bg-surface-muted/60 p-4">
+            <p className="mb-3 flex items-center gap-2 text-sm font-semibold text-foreground">
+              <FileText className="h-4 w-4 text-accent" aria-hidden="true" />
               Produits dans la demande ({items.length})
             </p>
             {items.length > 0 ? (
               <ul className="space-y-1.5">
                 {items.map((item) => (
-                  <li key={item.productId} className="flex items-center gap-2 text-sm text-graphite-600">
+                  <li key={item.productId} className="flex items-center gap-2 text-sm text-muted">
                     <span className="flex-1 truncate">
                       {item.name}
-                      <span className="ml-1 font-mono text-xs text-graphite-600">({item.sku})</span>
+                      <span className="ml-1 font-mono text-xs text-faint">({item.sku})</span>
                     </span>
                     <button
                       type="button"
                       onClick={() => removeItem(item.productId)}
                       disabled={status === 'submitting'}
-                      className="p-2.5 text-graphite-400 hover:text-danger-text transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+                      className="rounded-md p-2 text-faint transition-colors hover:bg-surface-strong hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       aria-label={`Retirer ${item.name}`}
                     >
                       <X className="h-3.5 w-3.5" aria-hidden="true" />
@@ -159,15 +160,15 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
                 ))}
               </ul>
             ) : (
-              <p className="text-sm text-graphite-500">
+              <p className="text-sm text-muted">
                 Aucun produit sélectionné. Ajoutez des produits depuis le catalogue.
               </p>
             )}
           </div>
 
           {status === 'error' && (
-            <p role="alert" className="text-sm text-danger-text flex items-center gap-1">
-              <span aria-hidden="true">⚠</span>
+            <p role="alert" className="flex items-center gap-1.5 text-sm text-danger-text">
+              <AlertCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
               {errorMessage}
             </p>
           )}

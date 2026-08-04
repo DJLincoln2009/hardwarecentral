@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Trash2, FileText } from 'lucide-react';
+import { Trash2, FileText, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumb from '@/components/layout/Breadcrumb';
@@ -30,53 +30,66 @@ function DevisContent() {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-6">
-      <div className="mb-6">
-        <Breadcrumb items={breadcrumbItems} />
+    <div className="mx-auto max-w-3xl px-4 py-8 lg:px-6">
+      <div className="mb-8">
+        <div className="mb-4">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+        {products.length > 0 ? (
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="eyebrow mb-1.5">Devis</p>
+              <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
+                Ma liste de devis
+              </h1>
+            </div>
+            <div className="flex items-center gap-3">
+              <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-semibold text-muted shadow-xs">
+                <span className="h-1.5 w-1.5 rounded-full bg-teal-600" aria-hidden="true" />
+                {products.length} article{products.length !== 1 ? 's' : ''}
+              </span>
+              <button
+                type="button"
+                onClick={clearAll}
+                className="inline-flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm font-medium text-muted transition-colors hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+              >
+                <Trash2 className="h-3.5 w-3.5" aria-hidden="true" />
+                Tout vider
+              </button>
+            </div>
+          </div>
+        ) : null}
       </div>
 
       {products.length > 0 ? (
         <>
-          <div className="mb-4 flex items-center justify-between">
-            <h1 className="text-2xl font-bold text-graphite-900 font-display">
-              Ma liste de devis ({products.length})
-            </h1>
-            <button
-              type="button"
-              onClick={clearAll}
-              className="text-sm text-danger-text hover:underline focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none rounded-sm"
-            >
-              Tout vider
-            </button>
-          </div>
-
           <ul className="space-y-3">
             {products.map(({ productId, name, sku, brand, product }) => (
               <li
                 key={productId}
-                className="flex items-center gap-4 rounded-lg border border-graphite-200 bg-white p-4"
+                className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-4 shadow-xs transition-all duration-200 hover:border-border-strong hover:shadow-md"
               >
-                <div className="relative h-14 w-14 flex-shrink-0 rounded-md border border-graphite-100 bg-graphite-50 flex items-center justify-center overflow-hidden">
+                <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-muted">
                   {product.primaryImage.url ? (
                     <Image
                       src={product.primaryImage.url}
                       alt={product.primaryImage.alt}
                       fill
-                      sizes="56px"
-                      className="object-contain"
+                      sizes="64px"
+                      className="object-contain p-1.5"
                     />
                   ) : (
-                    <FileText className="h-6 w-6 text-graphite-400" aria-hidden="true" />
+                    <FileText className="h-6 w-6 text-faint" aria-hidden="true" />
                   )}
                 </div>
-                <div className="flex-1 min-w-0">
+                <div className="min-w-0 flex-1">
                   <Link
                     href={`/produit/${productId}`}
-                    className="text-sm font-medium text-graphite-900 hover:text-teal-600 transition-colors line-clamp-1"
+                    className="text-sm font-semibold text-foreground transition-colors hover:text-accent line-clamp-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
                   >
                     {name}
                   </Link>
-                  <p className="text-xs text-graphite-500">
+                  <p className="mt-0.5 font-mono text-xs text-faint">
                     {brand} &middot; SKU: {sku}
                   </p>
                 </div>
@@ -84,7 +97,7 @@ function DevisContent() {
                   type="button"
                   onClick={() => removeItem(productId)}
                   aria-label={`Retirer ${name}`}
-                  className="p-2.5 text-graphite-400 hover:text-danger-text transition-colors rounded-sm focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+                  className="rounded-lg p-2.5 text-faint transition-colors hover:bg-surface-muted hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <Trash2 className="h-4 w-4" aria-hidden="true" />
                 </button>
@@ -95,8 +108,10 @@ function DevisContent() {
           <Button
             type="button"
             size="lg"
+            glow
+            icon={<ArrowRight className="h-4 w-4" />}
             onClick={() => setQuoteModalOpen(true)}
-            className="mt-6 w-full justify-center"
+            className="mt-8 w-full justify-center"
           >
             Demander un devis pour ces {products.length} articles
           </Button>

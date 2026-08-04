@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
+import { AlertCircle } from 'lucide-react';
 import Input from '@/components/ui/Input';
 import Textarea from '@/components/ui/Textarea';
 import Select from '@/components/ui/Select';
@@ -71,7 +72,7 @@ function ContactForm() {
     return (
       <div className="text-center py-8 space-y-3">
         <p className="text-success-text font-semibold">Message envoyé avec succès !</p>
-        <p className="text-sm text-graphite-600">
+        <p className="text-sm text-muted">
           Notre équipe vous répondra dans les plus brefs délais.
         </p>
         <Button
@@ -152,8 +153,8 @@ function ContactForm() {
       />
 
       {status === 'error' && (
-        <p role="alert" className="text-sm text-danger-text flex items-center gap-1">
-          <span aria-hidden="true">⚠</span>
+        <p role="alert" className="flex items-center gap-1.5 text-sm text-danger-text">
+          <AlertCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
           {errorMessage}
         </p>
       )}

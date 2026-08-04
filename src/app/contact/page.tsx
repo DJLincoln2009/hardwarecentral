@@ -16,6 +16,55 @@ export const metadata: Metadata = {
   },
 };
 
+const contactItems = [
+  {
+    icon: Phone,
+    label: 'Téléphone',
+    content: (
+      <a
+        href={`tel:${SITE_CONFIG.phone.e164}`}
+        className="text-sm text-muted transition-colors hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+      >
+        {SITE_CONFIG.phone.display}
+      </a>
+    ),
+  },
+  {
+    icon: Mail,
+    label: 'E-mail',
+    content: (
+      <a
+        href={`mailto:${SITE_CONFIG.email.contact}`}
+        className="text-sm text-muted transition-colors hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+      >
+        {SITE_CONFIG.email.contact}
+      </a>
+    ),
+  },
+  {
+    icon: MapPin,
+    label: 'Adresse',
+    content: (
+      <address className="not-italic text-sm text-muted">
+        {SITE_CONFIG.address.line1}
+        <br />
+        {SITE_CONFIG.address.city}, {SITE_CONFIG.address.country}
+      </address>
+    ),
+  },
+  {
+    icon: Clock,
+    label: "Horaires d'ouverture",
+    content: (
+      <p className="text-sm text-muted">
+        {SITE_CONFIG.businessHours.display}
+        <br />
+        <span className="text-xs text-faint">{SITE_CONFIG.businessHours.timezone}</span>
+      </p>
+    ),
+  },
+];
+
 export default function ContactPage() {
   const breadcrumbItems = [
     { label: 'Accueil', href: '/' },
@@ -23,69 +72,51 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-6">
-      <div className="mb-6">
-        <Breadcrumb items={breadcrumbItems} />
+    <div className="mx-auto max-w-6xl px-4 py-8 lg:px-6">
+      <div className="mb-8">
+        <div className="mb-4">
+          <Breadcrumb items={breadcrumbItems} />
+        </div>
+        <div>
+          <p className="eyebrow mb-1.5">Support &amp; commercial</p>
+          <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
+            Nous contacter
+          </h1>
+        </div>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2">
-        <section>
-          <h1 className="mb-6 text-2xl font-bold text-graphite-900 font-display">Nous contacter</h1>
-
-          <div className="space-y-5">
-            <div className="flex items-start gap-3">
-              <Phone className="mt-0.5 h-5 w-5 text-teal-600 shrink-0" aria-hidden="true" />
-              <div>
-                <p className="text-sm font-medium text-graphite-900">Téléphone</p>
-                <a
-                  href={`tel:${SITE_CONFIG.phone.e164}`}
-                  className="text-sm text-graphite-600 hover:text-teal-600 transition-colors"
-                >
-                  {SITE_CONFIG.phone.display}
-                </a>
+      <div className="grid gap-8 lg:grid-cols-5">
+        <section className="lg:col-span-2" aria-label="Coordonnées">
+          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+            {contactItems.map((item) => (
+              <div
+                key={item.label}
+                className="flex items-start gap-3.5 rounded-2xl border border-border bg-surface p-5 shadow-xs"
+              >
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-700">
+                  <item.icon className="h-4.5 w-4.5" aria-hidden="true" />
+                </span>
+                <div>
+                  <p className="text-sm font-semibold text-foreground">{item.label}</p>
+                  <div className="mt-1">{item.content}</div>
+                </div>
               </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <Mail className="mt-0.5 h-5 w-5 text-teal-600 shrink-0" aria-hidden="true" />
-              <div>
-                <p className="text-sm font-medium text-graphite-900">E-mail</p>
-                <a
-                  href={`mailto:${SITE_CONFIG.email.contact}`}
-                  className="text-sm text-graphite-600 hover:text-teal-600 transition-colors"
-                >
-                  {SITE_CONFIG.email.contact}
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <MapPin className="mt-0.5 h-5 w-5 text-teal-600 shrink-0" aria-hidden="true" />
-              <div>
-                <p className="text-sm font-medium text-graphite-900">Adresse</p>
-                <address className="not-italic text-sm text-graphite-600">
-                  {SITE_CONFIG.address.line1}<br />
-                  {SITE_CONFIG.address.city}, {SITE_CONFIG.address.country}
-                </address>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <Clock className="mt-0.5 h-5 w-5 text-teal-600 shrink-0" aria-hidden="true" />
-              <div>
-                <p className="text-sm font-medium text-graphite-900">Horaires d&apos;ouverture</p>
-                <p className="text-sm text-graphite-600">
-                  {SITE_CONFIG.businessHours.display}
-                </p>
-                <p className="text-xs text-graphite-600">{SITE_CONFIG.businessHours.timezone}</p>
-              </div>
-            </div>
+            ))}
           </div>
         </section>
 
-        <section>
-          <h2 className="mb-6 text-xl font-bold text-graphite-900 font-display">Envoyez-nous un message</h2>
-          <ContactForm />
+        <section className="lg:col-span-3" aria-label="Formulaire de contact">
+          <div className="rounded-2xl border border-border bg-surface p-6 shadow-xs md:p-8">
+            <h2 className="font-display text-title font-extrabold tracking-tight text-foreground">
+              Envoyez-nous un message
+            </h2>
+            <p className="mt-2 text-sm text-muted">
+              Un commercial vous répondra dans les plus brefs délais.
+            </p>
+            <div className="mt-6">
+              <ContactForm />
+            </div>
+          </div>
         </section>
       </div>
     </div>
