@@ -8,7 +8,11 @@ interface ProductAvailabilityBadgeProps {
 
 function ProductAvailabilityBadge({ status }: ProductAvailabilityBadgeProps) {
   const { label, variant } = getAvailabilityDisplay(status);
-  return <Badge variant={variant}>{label}</Badge>;
+  return (
+    <Badge variant={variant} dot>
+      {label}
+    </Badge>
+  );
 }
 
 export default ProductAvailabilityBadge;

@@ -17,7 +17,11 @@ function Skeleton({ className, height = 'h-4', width = 'w-full', lines }: Skelet
         {Array.from({ length: lines }).map((_, i) => (
           <div
             key={i}
-            className={cn('animate-pulse rounded-sm bg-surface-strong', height, i === lines - 1 ? 'w-3/4' : width)}
+            className={cn(
+              'skeleton-shimmer rounded-md',
+              height,
+              i === lines - 1 ? 'w-3/4' : width,
+            )}
           />
         ))}
       </div>
@@ -25,10 +29,7 @@ function Skeleton({ className, height = 'h-4', width = 'w-full', lines }: Skelet
   }
 
   return (
-    <div
-      aria-hidden="true"
-      className={cn('animate-pulse rounded-sm bg-surface-strong', height, width, className)}
-    />
+    <div aria-hidden="true" className={cn('skeleton-shimmer rounded-md', height, width, className)} />
   );
 }
 

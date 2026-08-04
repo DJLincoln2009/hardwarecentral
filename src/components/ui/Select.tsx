@@ -3,6 +3,7 @@
 import { forwardRef, type SelectHTMLAttributes } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import FieldError from './FieldError';
 
 interface SelectOption {
   value: string;
@@ -17,8 +18,9 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 }
 
 const selectBase = cn(
-  'w-full appearance-none rounded-md border border-border bg-surface px-3 py-2 pr-9 text-base text-foreground',
-  'transition-colors duration-150 focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-background focus:outline-none',
+  'w-full appearance-none rounded-md border border-border bg-surface px-3.5 py-2.5 pr-9 text-base text-foreground shadow-xs',
+  'transition-all duration-200 hover:border-border-strong',
+  'focus:border-accent focus:shadow-focus focus:outline-none',
   'disabled:cursor-not-allowed disabled:opacity-50 disabled:bg-surface-muted',
 );
 
@@ -30,9 +32,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
       return (
         <div className="flex flex-col gap-1.5">
           <span className="text-sm font-medium text-foreground">{label}</span>
-          <span className="px-3 py-2 text-base text-muted">
-            {options[0]?.label}
-          </span>
+          <span className="px-3.5 py-2.5 text-base text-muted">{options[0]?.label}</span>
         </div>
       );
     }
@@ -50,7 +50,8 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
             aria-describedby={error ? `${selectId}-error` : undefined}
             className={cn(
               selectBase,
-              error && 'border-danger-border focus:border-danger-text focus:ring-danger-text',
+              error &&
+                'border-danger-border hover:border-danger-border focus:border-danger-text focus:shadow-focus-danger',
               className,
             )}
             {...props}
@@ -71,16 +72,7 @@ const Select = forwardRef<HTMLSelectElement, SelectProps>(
             aria-hidden="true"
           />
         </div>
-        {error && (
-          <p
-            id={`${selectId}-error`}
-            role="alert"
-            className="flex items-center gap-1 text-xs text-danger-text"
-          >
-            <span aria-hidden="true">⚠</span>
-            {error}
-          </p>
-        )}
+        <FieldError id={`${selectId}-error`} message={error} />
       </div>
     );
   },

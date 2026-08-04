@@ -2,6 +2,7 @@
 
 import { forwardRef, type InputHTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
+import FieldError from './FieldError';
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label: string;
@@ -9,11 +10,11 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const inputBase = cn(
-  'w-full rounded-md border bg-surface px-3 py-2 text-base text-foreground',
-  'placeholder:text-faint transition-colors duration-150',
-  'focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-background focus:outline-none',
+  'w-full rounded-md border bg-surface px-3.5 py-2.5 text-base text-foreground shadow-xs',
+  'placeholder:text-faint transition-all duration-200',
+  'border-border hover:border-border-strong',
+  'focus:border-accent focus:shadow-focus focus:outline-none',
   'disabled:cursor-not-allowed disabled:opacity-50 disabled:bg-surface-muted',
-  'border-border',
 );
 
 const Input = forwardRef<HTMLInputElement, InputProps>(
@@ -33,21 +34,12 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
           className={cn(
             inputBase,
             error &&
-              'border-danger-border focus:border-danger-text focus:ring-danger-text',
+              'border-danger-border hover:border-danger-border focus:border-danger-text focus:shadow-focus-danger',
             className,
           )}
           {...props}
         />
-        {error && (
-          <p
-            id={`${inputId}-error`}
-            role="alert"
-            className="flex items-center gap-1 text-xs text-danger-text"
-          >
-            <span aria-hidden="true">⚠</span>
-            {error}
-          </p>
-        )}
+        <FieldError id={`${inputId}-error`} message={error} />
       </div>
     );
   },

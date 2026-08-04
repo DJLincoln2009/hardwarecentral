@@ -12,18 +12,28 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: ButtonSize;
   loading?: boolean;
   icon?: ReactNode;
+  /** Halo accent sous le bouton — réservé aux surfaces sombres */
+  glow?: boolean;
 }
+
+const baseStyles = cn(
+  'inline-flex items-center justify-center rounded-lg font-medium whitespace-nowrap',
+  'transition-[transform,background-color,border-color,box-shadow,color] duration-200',
+  'ease-[var(--ease-out-expo)] active:scale-[0.97]',
+  'disabled:pointer-events-none disabled:opacity-50',
+  'focus-visible:outline-none focus-visible:shadow-focus focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+);
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    'bg-teal-600 text-white shadow-sm hover:bg-teal-800 focus-visible:ring-accent',
+    'bg-teal-600 text-white shadow-sm hover:bg-teal-700 hover:shadow-md active:bg-teal-800',
   secondary:
-    'bg-surface-muted text-foreground hover:bg-surface-strong focus-visible:ring-accent',
+    'bg-surface-muted text-foreground hover:bg-surface-strong active:bg-surface-strong',
   outline:
-    'border border-border-strong bg-transparent text-foreground hover:bg-surface-muted focus-visible:ring-accent',
-  ghost: 'bg-transparent text-foreground hover:bg-surface-muted focus-visible:ring-accent',
+    'border border-border-strong bg-transparent text-foreground hover:border-accent hover:text-accent active:bg-surface-muted',
+  ghost: 'bg-transparent text-foreground hover:bg-surface-muted active:bg-surface-strong',
   destructive:
-    'bg-danger-text text-white hover:opacity-90 focus-visible:ring-danger-text',
+    'bg-danger-text text-white hover:opacity-90 shadow-sm hover:shadow-md',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
@@ -40,6 +50,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       size = 'md',
       loading = false,
       disabled,
+      glow = false,
       icon,
       children,
       className,
@@ -54,9 +65,10 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={isDisabled}
         className={cn(
-          'inline-flex items-center justify-center rounded-lg font-medium transition-all duration-150 active:scale-[0.97] disabled:pointer-events-none disabled:opacity-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-background',
+          baseStyles,
           variantStyles[variant],
           sizeStyles[size],
+          glow && 'shadow-glow hover:shadow-glow',
           className,
         )}
         {...props}

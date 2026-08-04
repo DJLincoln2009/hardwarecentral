@@ -2,6 +2,7 @@
 
 import { forwardRef, type TextareaHTMLAttributes } from 'react';
 import { cn } from '@/lib/utils';
+import FieldError from './FieldError';
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label: string;
@@ -9,9 +10,10 @@ interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 }
 
 const textareaBase = cn(
-  'w-full min-h-24 resize-y rounded-md border border-border bg-surface px-3 py-2 text-base text-foreground',
-  'placeholder:text-faint transition-colors duration-150',
-  'focus:border-accent focus:ring-2 focus:ring-accent focus:ring-offset-1 focus:ring-offset-background focus:outline-none',
+  'w-full min-h-24 resize-y rounded-md border bg-surface px-3.5 py-2.5 text-base text-foreground shadow-xs',
+  'placeholder:text-faint transition-all duration-200',
+  'border-border hover:border-border-strong',
+  'focus:border-accent focus:shadow-focus focus:outline-none',
   'disabled:cursor-not-allowed disabled:opacity-50 disabled:bg-surface-muted',
 );
 
@@ -32,21 +34,12 @@ const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
           className={cn(
             textareaBase,
             error &&
-              'border-danger-border focus:border-danger-text focus:ring-danger-text',
+              'border-danger-border hover:border-danger-border focus:border-danger-text focus:shadow-focus-danger',
             className,
           )}
           {...props}
         />
-        {error && (
-          <p
-            id={`${textareaId}-error`}
-            role="alert"
-            className="flex items-center gap-1 text-xs text-danger-text"
-          >
-            <span aria-hidden="true">⚠</span>
-            {error}
-          </p>
-        )}
+        <FieldError id={`${textareaId}-error`} message={error} />
       </div>
     );
   },

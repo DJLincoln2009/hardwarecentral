@@ -15,37 +15,60 @@
   --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
 
+  /* Graphite — neutres chauds, échelle complète 50 → 950 */
   --color-graphite-50: #f1efe8;
   --color-graphite-100: #d3d1c7;
   --color-graphite-200: #b4b2a9;
+  --color-graphite-300: #a3a198;
   --color-graphite-400: #888780;
+  --color-graphite-500: #6f6e69;
   --color-graphite-600: #5f5e5a;
+  --color-graphite-700: #4d4c49;
   --color-graphite-800: #444441;
   --color-graphite-900: #2c2c2a;
+  --color-graphite-950: #1c1c1b;
 
+  /* Teal — accent de marque, échelle complète 50 → 950 */
   --color-teal-50: #e1f5ee;
   --color-teal-100: #9fe1cb;
   --color-teal-200: #5dcaa5;
+  --color-teal-300: #38b58c;
   --color-teal-400: #1d9e75;
+  --color-teal-500: #128260;
   --color-teal-600: #0f6e56;
+  --color-teal-700: #0b5a46;
   --color-teal-800: #085041;
   --color-teal-900: #04342c;
+  --color-teal-950: #02231d;
 
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-xl: 16px;
   --radius-2xl: 20px;
+  --radius-3xl: 24px;
 
   /* Rythme d'interaction premium (expo-out, cf. ui-ux-pro-max) */
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-in-out-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Échelle typographique d'emphase (clamp → fluide mobile↔desktop) */
+  --text-hero: clamp(2.75rem, 5vw + 1rem, 5rem);
+  --text-hero--line-height: 1.05;
+  --text-display: clamp(2rem, 3vw + 0.5rem, 2.875rem);
+  --text-display--line-height: 1.1;
+  --text-title: clamp(1.5rem, 2vw + 0.5rem, 2rem);
+  --text-title--line-height: 1.2;
+
+  --tracking-eyebrow: 0.14em;
 }
 
 /* ============================================================
    SÉMANTIQUES FLIPPABLES — valeurs d'usage selon le thème
    ============================================================ */
 :root {
+  color-scheme: light;
+
   /* Surfaces */
   --hc-background: #faf9f6;
   --hc-surface: #ffffff;
@@ -57,6 +80,7 @@
   --hc-muted: #5f5e5a;
   --hc-faint: #888780;
   --hc-on-accent: #ffffff;
+  --hc-on-accent-strong: #04342c;
 
   /* Bordures & séparateurs */
   --hc-border: #e7e5de;
@@ -86,12 +110,20 @@
 
   /* Brillance accent (CTA, focus premium) */
   --hc-glow-accent: 0 0 0 1px rgba(29, 158, 117, 0.14), 0 8px 32px -8px rgba(29, 158, 117, 0.45);
+  --hc-focus-ring: 0 0 0 3px rgba(29, 158, 117, 0.28);
+  --hc-focus-ring-danger: 0 0 0 3px rgba(121, 31, 31, 0.18);
+
+  /* Halo ambiant pour les sections sombres (hero, footer) */
+  --hc-hero-glow: rgba(29, 158, 117, 0.16);
+  --hc-hero-glow-2: rgba(15, 110, 86, 0.12);
+  --hc-radial-accent: rgba(29, 158, 117, 0.1);
 
   /* Divers */
   --hc-grid-line: rgba(44, 44, 42, 0.045);
   --hc-dot: rgba(44, 44, 42, 0.08);
   --hc-glass-bg: rgba(255, 255, 255, 0.72);
   --hc-glass-border: rgba(44, 44, 42, 0.08);
+  --hc-glass-strong-bg: rgba(255, 255, 255, 0.9);
   --hc-backdrop: rgba(25, 25, 24, 0.55);
   --hc-selection-bg: #9fe1cb;
   --hc-selection-fg: #04342c;
@@ -101,16 +133,17 @@
   color-scheme: dark;
 
   /* Surfaces — graphite chaud, jamais noir pur (anti-smear OLED) */
-  --hc-background: #191918;
-  --hc-surface: #1f1f1e;
-  --hc-surface-muted: #252524;
-  --hc-surface-strong: #2b2b29;
+  --hc-background: #161615;
+  --hc-surface: #1c1c1b;
+  --hc-surface-muted: #222220;
+  --hc-surface-strong: #292927;
 
   /* Texte */
   --hc-foreground: #ecebe5;
-  --hc-muted: #a9a79e;
-  --hc-faint: #82817a;
+  --hc-muted: #a3a198;
+  --hc-faint: #807f78;
   --hc-on-accent: #04342c;
+  --hc-on-accent-strong: #f4f2ec;
 
   /* Bordures */
   --hc-border: rgba(255, 255, 255, 0.09);
@@ -139,11 +172,18 @@
   --hc-shadow-xl: 0 8px 18px rgba(0, 0, 0, 0.5), 0 40px 80px -24px rgba(0, 0, 0, 0.7);
 
   --hc-glow-accent: 0 0 0 1px rgba(93, 202, 165, 0.22), 0 8px 36px -8px rgba(93, 202, 165, 0.4);
+  --hc-focus-ring: 0 0 0 3px rgba(93, 202, 165, 0.3);
+  --hc-focus-ring-danger: 0 0 0 3px rgba(240, 170, 170, 0.22);
+
+  --hc-hero-glow: rgba(93, 202, 165, 0.14);
+  --hc-hero-glow-2: rgba(15, 110, 86, 0.18);
+  --hc-radial-accent: rgba(93, 202, 165, 0.09);
 
   --hc-grid-line: rgba(255, 255, 255, 0.045);
   --hc-dot: rgba(255, 255, 255, 0.09);
-  --hc-glass-bg: rgba(25, 25, 24, 0.72);
+  --hc-glass-bg: rgba(22, 22, 21, 0.72);
   --hc-glass-border: rgba(255, 255, 255, 0.1);
+  --hc-glass-strong-bg: rgba(22, 22, 21, 0.92);
   --hc-backdrop: rgba(0, 0, 0, 0.68);
   --hc-selection-bg: #5dcaa5;
   --hc-selection-fg: #04342c;
@@ -163,6 +203,7 @@
   --color-muted: var(--hc-muted);
   --color-faint: var(--hc-faint);
   --color-on-accent: var(--hc-on-accent);
+  --color-on-accent-strong: var(--hc-on-accent-strong);
 
   --color-border: var(--hc-border);
   --color-border-strong: var(--hc-border-strong);
@@ -187,6 +228,9 @@
   --shadow-md: var(--hc-shadow-md);
   --shadow-lg: var(--hc-shadow-lg);
   --shadow-xl: var(--hc-shadow-xl);
+  --shadow-glow: var(--hc-glow-accent);
+  --shadow-focus: var(--hc-focus-ring);
+  --shadow-focus-danger: var(--hc-focus-ring-danger);
 
   /* Animations (désactivées sous prefers-reduced-motion, voir plus bas) */
   --animate-fade-in: fade-in 0.5s var(--ease-in-out-smooth) both;
@@ -197,6 +241,7 @@
   --animate-marquee: marquee 42s linear infinite;
   --animate-float: float 7s ease-in-out infinite;
   --animate-pulse-soft: pulse-soft 3.2s ease-in-out infinite;
+  --animate-spin-slow: spin 2.4s linear infinite;
 
   @keyframes fade-in {
     from {
@@ -280,6 +325,7 @@
     color-scheme: light;
     scroll-behavior: smooth;
     -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
   }
 
   html.dark {
@@ -292,6 +338,14 @@
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-feature-settings: "ss01" on;
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
   }
 
   ::selection {
@@ -357,6 +411,14 @@
   border: 1px solid var(--hc-glass-border);
 }
 
+/* Verre dépoli renforcé (modales, tiroirs sur fond chargé) */
+@utility glass-strong {
+  background-color: var(--hc-glass-strong-bg);
+  backdrop-filter: blur(24px) saturate(1.5);
+  -webkit-backdrop-filter: blur(24px) saturate(1.5);
+  border: 1px solid var(--hc-glass-border);
+}
+
 /* Texte en dégradé (réservé aux surfaces sombres) */
 @utility text-gradient {
   background: linear-gradient(115deg, #a7e8d3 0%, #5dcaa5 45%, #1d9e75 100%);
@@ -365,9 +427,23 @@
   color: transparent;
 }
 
-/* Halo lumineux autour d'un CTA primaire sur fond sombre */
-@utility shadow-glow {
-  box-shadow: var(--hc-glow-accent);
+/* Halo lumineux autour d'un CTA primaire sur fond sombre
+   → généré par le mapping `--shadow-glow` de @theme inline */
+
+/* Halo radial accent — fonds d'ambiance discrets (hero, marque) */
+@utility bg-radial-accent {
+  background-image: radial-gradient(ellipse 80% 55% at 50% -12%, var(--hc-radial-accent), transparent 65%);
+}
+
+/* Halo bicolore pour les grands fonds sombres (hero, footer) */
+@utility bg-hero-glow {
+  background-image: radial-gradient(ellipse 120% 75% at 50% -12%, var(--hc-hero-glow), transparent 62%),
+    radial-gradient(ellipse 55% 45% at 88% 108%, var(--hc-hero-glow-2), transparent 62%);
+}
+
+/* Texture bruit très discrète (anti-bandage des dégradés) */
+@utility bg-noise {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
 }
 
 /* Masque vertical pour fondre un contenu vers le bas */
@@ -388,5 +464,63 @@
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+/* Étiquette de section (eyebrow) — mono + tracking premium */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-eyebrow);
+  text-transform: uppercase;
+}
+
+/* Élévation au survol d'une carte (lift + ombre + bordure) */
+@utility card-lift {
+  transition:
+    transform 0.25s var(--ease-out-expo),
+    box-shadow 0.25s var(--ease-out-expo),
+    border-color 0.25s var(--ease-out-expo);
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--hc-shadow-lg);
+    border-color: var(--hc-border-strong);
+  }
+}
+
+/* Squelette de chargement avec effet shimmer */
+@utility skeleton-shimmer {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--hc-surface-strong);
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(
+      90deg,
+      transparent,
+      var(--hc-surface) 45%,
+      transparent
+    );
+    animation: shimmer 1.6s ease-in-out infinite;
+  }
+}
+
+/* Point de statut pulsant (disponibilité, live) */
+@utility status-dot {
+  position: relative;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: -4px;
+    border-radius: 9999px;
+    animation: pulse-soft 2.4s var(--ease-in-out-smooth) infinite;
   }
 }
