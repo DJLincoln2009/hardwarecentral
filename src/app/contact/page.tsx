@@ -59,7 +59,7 @@ const contactItems = [
       <p className="text-sm text-muted">
         {SITE_CONFIG.businessHours.display}
         <br />
-        <span className="text-xs text-faint">{SITE_CONFIG.businessHours.timezone}</span>
+        <span className="text-xs text-muted">{SITE_CONFIG.businessHours.timezone}</span>
       </p>
     ),
   },

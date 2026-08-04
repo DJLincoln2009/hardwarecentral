@@ -13,7 +13,7 @@ function ProductSpecsTable({ specs }: ProductSpecsTableProps) {
             <tr key={spec.label} className={i % 2 === 1 ? 'bg-surface-muted/50' : ''}>
               <th
                 scope="row"
-                className="w-[38%] whitespace-nowrap py-3.5 pr-4 pl-5 text-left font-mono text-xs font-medium text-faint"
+                className="w-[38%] whitespace-nowrap py-3.5 pr-4 pl-5 text-left font-mono text-xs font-medium text-muted"
               >
                 {spec.label}
               </th>

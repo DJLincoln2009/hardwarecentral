@@ -55,7 +55,7 @@ function CatalogPagination({ currentPage, totalPages }: CatalogPaginationProps) 
         p === '...' ? (
           <span
             key={`ellipsis-${i}`}
-            className="flex h-10 w-10 items-center justify-center text-sm text-faint"
+            className="flex h-10 w-10 items-center justify-center text-sm text-muted"
           >
             …
           </span>

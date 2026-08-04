@@ -89,7 +89,7 @@ function DevisContent() {
                   >
                     {name}
                   </Link>
-                  <p className="mt-0.5 font-mono text-xs text-faint">
+                  <p className="mt-0.5 font-mono text-xs text-muted">
                     {brand} &middot; SKU: {sku}
                   </p>
                 </div>

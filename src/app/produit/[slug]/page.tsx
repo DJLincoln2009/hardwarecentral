@@ -175,7 +175,7 @@ export default async function ProductPage({ params }: Props) {
                       className="group inline-flex items-center gap-1.5 text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
                     >
                       <span className="underline underline-offset-2">{ds.name}</span>
-                      <span className="text-xs text-faint">({ds.fileSizeLabel})</span>
+                      <span className="text-xs text-muted">({ds.fileSizeLabel})</span>
                     </a>
                   </li>
                 ))}

@@ -40,13 +40,13 @@ function ProductCard({ product }: ProductCardProps) {
         </div>
 
         <div className="flex flex-1 flex-col px-4 pb-1">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-faint">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted">
             {product.brand}
           </p>
           <p className="mt-1 text-sm font-semibold leading-snug text-foreground line-clamp-2">
             {product.name}
           </p>
-          <p className="mt-1 font-mono text-[11px] text-faint">SKU: {product.sku}</p>
+          <p className="mt-1 font-mono text-[11px] text-muted">SKU: {product.sku}</p>
           <div className="mt-2.5 space-y-1 border-t border-border pt-2.5">
             {product.specs.slice(0, 3).map((s) => (
               <p key={s.label} className="text-xs text-muted">

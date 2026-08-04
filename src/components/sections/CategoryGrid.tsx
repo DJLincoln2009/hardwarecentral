@@ -35,7 +35,7 @@ function CategoryGrid() {
                   {Icon && <Icon className="h-6 w-6" aria-hidden="true" />}
                 </span>
                 <span className="text-sm font-semibold text-foreground">{cat.name}</span>
-                <span className="inline-flex items-center gap-0.5 text-xs font-medium text-faint transition-colors duration-200 group-hover:text-accent">
+                <span className="inline-flex items-center gap-0.5 text-xs font-medium text-muted transition-colors duration-200 group-hover:text-accent">
                   Explorer
                   <ArrowUpRight className="h-3 w-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
                 </span>

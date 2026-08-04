@@ -74,7 +74,7 @@ function FavorisContent() {
                 >
                   {product.name}
                 </Link>
-                <p className="mt-0.5 font-mono text-xs text-faint">
+                <p className="mt-0.5 font-mono text-xs text-muted">
                   {product.brand} &middot; SKU: {product.sku}
                 </p>
               </div>

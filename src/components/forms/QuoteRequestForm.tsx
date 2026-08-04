@@ -145,7 +145,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
                   <li key={item.productId} className="flex items-center gap-2 text-sm text-muted">
                     <span className="flex-1 truncate">
                       {item.name}
-                      <span className="ml-1 font-mono text-xs text-faint">({item.sku})</span>
+                      <span className="ml-1 font-mono text-xs text-muted">({item.sku})</span>
                     </span>
                     <button
                       type="button"
