@@ -1,5 +1,13 @@
 # Rotation des secrets & purge de l'historique Git — Actions humaines requises
 
+> **Statut de rotation — 2026-08-04 :** les trois identifiants exposés ci-dessous ont été
+> **régénérés/rotés côté fournisseurs** (Oxylabs, Icecat, ImageKit) et les nouvelles valeurs
+> ont été reportées dans `.env.local` (jamais commité). L'historique Git a été purgé via
+> `git filter-repo --replace-text` (valeurs remplacées par `***REMOVED***` partout) et le
+> `push --force` a été effectué. Vérification locale : `grep` de contrôle → **0 occurrence**
+> sur l'intégralité des objets Git. Toute personne ayant cloné avant cette date doit
+> **re-cloner** plutôt que `git pull`.
+
 Action humaine à réaliser **en parallèle** du plan `OPENCODE_AUDIT_FIXES.md` (item 1.1).
 Ce document est écrit pour être exécuté par le propriétaire du dépôt (`***REMOVED***`),
 pas par l'agent de code — il réécrit l'historique partagé et touche des comptes tiers.
