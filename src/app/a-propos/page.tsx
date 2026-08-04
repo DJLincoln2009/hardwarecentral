@@ -83,12 +83,17 @@ export default function AboutPage() {
 
       <section className="mb-14">
         <h2 className="mb-3 font-display text-title font-extrabold tracking-tight text-foreground">
-          Nos marques partenaires
+          Nos marques
         </h2>
         <p className="mb-6 text-sm text-muted">
           Nous distribuons les leaders mondiaux de l&apos;infrastructure IT.
         </p>
         <BrandsGrid />
+        <p className="mx-auto mt-6 max-w-2xl text-center text-xs leading-relaxed text-muted">
+          Les logos et marques cités restent la propriété de leurs titulaires respectifs. Leur
+          présence n&apos;implique aucun parrainage, aucune affiliation ni aucun partenariat officiel
+          avec {SITE_CONFIG.companyName}.
+        </p>
       </section>
 
       <section className="rounded-2xl border border-border bg-surface p-6 shadow-xs md:p-8">

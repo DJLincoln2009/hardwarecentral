@@ -6,6 +6,7 @@ import CategoryGrid from '@/components/sections/CategoryGrid';
 import FeaturedProducts from '@/components/sections/FeaturedProducts';
 import BrandsGrid from '@/components/sections/BrandsGrid';
 import NewsletterForm from '@/components/forms/NewsletterForm';
+import { SITE_CONFIG } from '@/lib/site-config';
 
 export const metadata: Metadata = {
   title: 'Accueil',
@@ -39,6 +40,11 @@ export default function Home() {
             </h2>
           </div>
           <BrandsGrid />
+          <p className="mx-auto mt-6 max-w-2xl text-center text-xs leading-relaxed text-muted">
+            Les logos et marques cités restent la propriété de leurs titulaires respectifs. Leur
+            présence n&apos;implique aucun parrainage, aucune affiliation ni aucun partenariat officiel
+            avec {SITE_CONFIG.companyName}.
+          </p>
         </div>
       </section>
       <section className="relative isolate overflow-hidden bg-graphite-950 px-4 py-16 md:py-20">

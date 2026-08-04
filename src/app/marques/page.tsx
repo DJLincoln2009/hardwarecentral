@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import { getActiveBrands } from '@/lib/data/brands';
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import BrandCard from './BrandCard';
+import { SITE_CONFIG } from '@/lib/site-config';
 
 export const metadata: Metadata = {
-  title: 'Marques partenaires',
+  title: 'Marques',
   description:
     'Découvrez les marques leaders du marché que nous distribuons : HPE, HP Inc., Dell, Fortinet, Cisco, Huawei, Hikvision.',
   alternates: { canonical: '/marques' },
   openGraph: {
-    title: 'Marques partenaires | HardwareCentral',
+    title: 'Marques | HardwareCentral',
     description:
       'Découvrez les marques leaders du marché que nous distribuons : HPE, HP Inc., Dell, Fortinet, Cisco, Huawei, Hikvision.',
   },
@@ -33,7 +34,7 @@ export default function BrandsPage() {
           <div>
             <p className="eyebrow mb-1.5">Constructeurs</p>
             <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
-              Nos marques partenaires
+              Nos marques
             </h1>
             <p className="mt-3 max-w-xl text-sm leading-relaxed text-muted">
               Nous distribuons les plus grandes marques d&apos;infrastructure IT — serveurs,
@@ -52,6 +53,12 @@ export default function BrandsPage() {
           <BrandCard key={brand.code} brand={brand} />
         ))}
       </div>
+
+      <p className="mx-auto mt-8 max-w-2xl text-center text-xs leading-relaxed text-muted">
+        Les logos et marques cités sur ce site restent la propriété de leurs titulaires respectifs.
+        Leur présence n&apos;implique aucun parrainage, aucune affiliation ni aucun partenariat
+        officiel avec {SITE_CONFIG.companyName}.
+      </p>
     </div>
   );
 }

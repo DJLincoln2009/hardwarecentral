@@ -5,6 +5,7 @@ import { getProductsByBrand } from '@/lib/data/products';
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import ProductCard from '@/components/product/ProductCard';
 import EmptyState from '@/components/ui/EmptyState';
+import BrandLogo from '@/components/brands/BrandLogo';
 
 interface Props {
   params: Promise<{ brand: string }>;
@@ -56,13 +57,17 @@ export default async function BrandPage({ params }: Props) {
           aria-hidden="true"
         />
         <div className="relative flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-400 to-teal-700 shadow-lg">
-            <span className="font-display text-2xl font-extrabold text-white">
-              {brandName.charAt(0)}
-            </span>
+          <span className="flex h-20 w-48 shrink-0 items-center justify-center rounded-2xl bg-white p-3 shadow-lg">
+            {brand.logoUrl ? (
+              <BrandLogo src={brand.logoUrl} alt={`Logo ${brand.name}`} />
+            ) : (
+              <span className="font-display text-2xl font-extrabold text-graphite-900">
+                {brandName.charAt(0)}
+              </span>
+            )}
           </span>
           <div>
-            <p className="eyebrow mb-1.5 text-graphite-400">Marque partenaire</p>
+            <p className="eyebrow mb-1.5 text-graphite-400">Marque</p>
             <h1 className="font-display text-title font-extrabold tracking-tight text-white">
               {brandName}
             </h1>

@@ -66,6 +66,18 @@ export default function MentionsLegalesPage() {
         </div>
 
         <div>
+          <h2 className="text-lg font-semibold text-graphite-900">Marques et logos</h2>
+          <p>
+            Les marques et logos cités sur le site (HPE, HP, Dell Technologies, Cisco, Fortinet,
+            Huawei, Hikvision, etc.) restent la propriété exclusive de leurs titulaires respectifs.
+            Ils sont reproduits à titre informatif, sans modification, pour identifier les
+            équipements distribués. Cette reproduction n&apos;implique aucun parrainage, aucune
+            affiliation ni aucun partenariat officiel entre {SITE_CONFIG.companyName} et les
+            titulaires de ces marques.
+          </p>
+        </div>
+
+        <div>
           <h2 className="text-lg font-semibold text-graphite-900">Responsabilité</h2>
           <p>
             {SITE_CONFIG.companyName}{' '}s&apos;efforce d&apos;assurer l&apos;exactitude des informations

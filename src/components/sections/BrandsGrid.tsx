@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getActiveBrands } from '@/lib/data/brands';
+import BrandLogo from '@/components/brands/BrandLogo';
 
 function BrandsGrid() {
   const brands = getActiveBrands();
@@ -10,9 +11,15 @@ function BrandsGrid() {
         <Link
           key={brand.code}
           href={`/marques/${brand.code.toLowerCase()}`}
-          className="group flex items-center justify-center rounded-xl border border-border bg-surface px-4 py-4 text-sm font-semibold text-muted shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-accent/50 hover:text-accent hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="group flex items-center justify-center rounded-xl border border-border bg-surface px-3 py-4 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-border-strong hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
         >
-          {brand.name}
+          {brand.logoUrl ? (
+            <span className="flex h-9 w-full items-center justify-center">
+              <BrandLogo src={brand.logoUrl} alt={`Logo ${brand.name}`} />
+            </span>
+          ) : (
+            <span className="text-sm font-semibold text-muted">{brand.name}</span>
+          )}
         </Link>
       ))}
     </div>

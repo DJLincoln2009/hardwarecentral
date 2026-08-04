@@ -2,6 +2,7 @@ import Link from 'next/link';
 import type { Brand } from '@/types';
 import { ArrowRight } from 'lucide-react';
 import { products } from '@/lib/data/products';
+import BrandLogo from '@/components/brands/BrandLogo';
 
 interface BrandCardProps {
   brand: Brand;
@@ -13,12 +14,16 @@ function BrandCard({ brand }: BrandCardProps) {
   return (
     <Link
       href={`/marques/${brand.code.toLowerCase()}`}
-      className="group flex flex-col gap-3 rounded-2xl border border-border bg-surface p-6 text-center shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-border-strong hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+      className="group flex flex-col gap-4 rounded-2xl border border-border bg-surface p-6 text-center shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-border-strong hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
     >
-      <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-gradient-to-br from-teal-500 to-teal-800 shadow-sm transition-shadow duration-200 group-hover:shadow-glow">
-        <span className="font-display text-xl font-extrabold text-white">
-          {brand.name.charAt(0)}
-        </span>
+      <div className="flex h-16 w-full items-center justify-center rounded-xl border border-border bg-surface-muted px-4">
+        {brand.logoUrl ? (
+          <BrandLogo src={brand.logoUrl} alt={`Logo ${brand.name}`} />
+        ) : (
+          <span className="font-display text-xl font-extrabold text-foreground">
+            {brand.name.charAt(0)}
+          </span>
+        )}
       </div>
       <div>
         <p className="font-display text-base font-bold text-foreground">{brand.name}</p>
