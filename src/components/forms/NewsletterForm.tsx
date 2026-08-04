@@ -50,7 +50,7 @@ function NewsletterForm() {
 
   if (status === 'success') {
     return (
-      <p className="text-sm text-success-text font-medium">
+      <p className="rounded-2xl border border-teal-400/30 bg-teal-400/10 px-5 py-4 text-sm font-medium text-teal-200">
         Merci de votre inscription !
       </p>
     );
@@ -59,7 +59,7 @@ function NewsletterForm() {
   return (
     <form onSubmit={handleSubmit} className="flex flex-col gap-3 text-left">
       <HoneypotField />
-      <div className="flex gap-2">
+      <div className="flex flex-col gap-2 sm:flex-row">
         <label htmlFor="newsletter-email" className="sr-only">Adresse e-mail</label>
         <input
           id="newsletter-email"
@@ -70,7 +70,7 @@ function NewsletterForm() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Votre adresse e-mail"
           disabled={status === 'submitting'}
-          className="flex-1 rounded-md border border-graphite-200 bg-white px-3 py-2 text-sm text-graphite-900 placeholder:text-graphite-400 focus:border-teal-600 focus:ring-2 focus:ring-teal-600 focus:outline-none disabled:opacity-50"
+          className="flex-1 rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white backdrop-blur placeholder:text-graphite-400 transition-all duration-200 focus:border-teal-300 focus:bg-white/10 focus:outline-none focus:ring-2 focus:ring-teal-400/40 disabled:opacity-50"
         />
         <Button type="submit" loading={status === 'submitting'} size="md" icon={<Send className="h-4 w-4" />}>
           S&rsquo;inscrire
@@ -82,18 +82,20 @@ function NewsletterForm() {
           type="checkbox"
           required
           disabled={status === 'submitting'}
-          className="mt-0.5 h-4 w-4 shrink-0 rounded-sm border-graphite-300 text-teal-600 focus:ring-2 focus:ring-teal-600"
+          className="mt-0.5 h-4 w-4 shrink-0 rounded-sm border-graphite-500 text-teal-500 focus:ring-2 focus:ring-teal-400"
         />
-        <label htmlFor="newsletter-consent" className="text-xs leading-relaxed text-graphite-600">
+        <label htmlFor="newsletter-consent" className="text-xs leading-relaxed text-graphite-300">
           J&apos;accepte de recevoir les actualités et offres de HardwareCentral par e-mail. Consultez notre{' '}
-          <Link href="/confidentialite" className="text-teal-600 underline underline-offset-2 hover:text-teal-800 transition-colors">
+          <Link href="/confidentialite" className="text-teal-300 underline underline-offset-2 transition-colors hover:text-teal-200">
             politique de confidentialité
           </Link>
           .
         </label>
       </div>
       {status === 'error' && (
-        <p role="alert" className="text-xs text-danger-text mt-1">{errorMessage}</p>
+        <p role="alert" className="mt-1 text-xs text-danger-text">
+          {errorMessage}
+        </p>
       )}
     </form>
   );

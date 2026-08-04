@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ArrowRight } from 'lucide-react';
 import { getFeaturedProducts } from '@/lib/data/products';
 import ProductCard from '@/components/product/ProductCard';
 
@@ -8,17 +9,24 @@ function FeaturedProducts() {
   if (products.length === 0) return null;
 
   return (
-    <section className="bg-graphite-50 px-4 py-12 md:py-16">
+    <section className="border-y border-border bg-surface-muted px-4 py-14 md:py-20">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-8 flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-graphite-900 font-display md:text-3xl">
-            Produits récents
-          </h2>
+        <div className="mb-9 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
+          <div>
+            <p className="eyebrow mb-2">Sélection</p>
+            <h2 className="font-display text-title font-extrabold tracking-tight text-foreground">
+              Nouveautés &amp; incontournables
+            </h2>
+          </div>
           <Link
             href="/catalogue"
-            className="text-sm font-medium text-teal-600 hover:text-teal-800 transition-colors focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none rounded-sm"
+            className="group inline-flex items-center gap-1.5 rounded-full border border-border-strong bg-surface px-4 py-2 text-sm font-semibold text-foreground shadow-xs transition-all duration-200 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
-            Voir tout →
+            Tout le catalogue
+            <ArrowRight
+              className="h-4 w-4 transition-transform duration-200 group-hover:translate-x-0.5"
+              aria-hidden="true"
+            />
           </Link>
         </div>
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">

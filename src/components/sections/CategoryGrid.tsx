@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Server, Network, Shield, Camera, Monitor, type LucideIcon } from 'lucide-react';
+import { Server, Network, Shield, Camera, Monitor, ArrowUpRight, type LucideIcon } from 'lucide-react';
 import { getActiveCategories } from '@/lib/data/categories';
 
 const iconMap: Record<string, LucideIcon> = {
@@ -14,8 +14,14 @@ function CategoryGrid() {
   const categories = getActiveCategories();
 
   return (
-    <section className="px-4 py-12 md:py-16">
+    <section className="px-4 py-14 md:py-20">
       <div className="mx-auto max-w-7xl">
+        <div className="mb-9 text-center">
+          <p className="eyebrow mb-2">Catalogue</p>
+          <h2 className="font-display text-title font-extrabold tracking-tight text-foreground">
+            Explorer par catégorie
+          </h2>
+        </div>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-5">
           {categories.map((cat) => {
             const Icon = iconMap[cat.icon];
@@ -23,12 +29,16 @@ function CategoryGrid() {
               <Link
                 key={cat.id}
                 href={`/catalogue?categorie=${cat.id}`}
-                className="flex flex-col items-center gap-3 rounded-lg border border-graphite-200 p-6 text-center hover:border-teal-600 hover:shadow-md transition-all focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:outline-none"
+                className="group flex flex-col items-center gap-3 rounded-2xl border border-border bg-surface p-6 text-center shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-teal-600/50 hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
               >
-                <div className="flex h-12 w-12 items-center justify-center rounded-full bg-teal-50">
-                  {Icon && <Icon className="h-6 w-6 text-teal-600" aria-hidden="true" />}
-                </div>
-                <span className="text-sm font-semibold text-graphite-900">{cat.name}</span>
+                <span className="flex h-13 w-13 items-center justify-center rounded-2xl bg-teal-50 text-teal-700 transition-all duration-200 group-hover:bg-teal-600 group-hover:text-white group-hover:shadow-glow">
+                  {Icon && <Icon className="h-6 w-6" aria-hidden="true" />}
+                </span>
+                <span className="text-sm font-semibold text-foreground">{cat.name}</span>
+                <span className="inline-flex items-center gap-0.5 text-xs font-medium text-faint transition-colors duration-200 group-hover:text-accent">
+                  Explorer
+                  <ArrowUpRight className="h-3 w-3 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" aria-hidden="true" />
+                </span>
               </Link>
             );
           })}
