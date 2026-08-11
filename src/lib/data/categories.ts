@@ -35,25 +35,25 @@ export const categories: Category[] = [
     id: 'datacenter',
     name: 'Datacenter',
     icon: 'Building2',
-    isActive: false,
+    isActive: true,
   },
   {
     id: 'wireless',
     name: 'Wi-Fi & Sans-fil',
     icon: 'Wifi',
-    isActive: false,
+    isActive: true,
   },
   {
     id: 'monitor',
     name: 'Écrans',
     icon: 'Monitor',
-    isActive: false,
+    isActive: true,
   },
   {
     id: 'printers',
     name: 'Imprimantes',
     icon: 'Printer',
-    isActive: false,
+    isActive: true,
   },
 ];
 

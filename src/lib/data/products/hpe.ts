@@ -1,2238 +1,5243 @@
 import type { Product } from '@/types';
 
-
 export const hpeProducts: Product[] = [
   {
-    id: 'hpe-proliant-dl320-gen12',
-    sku: 'HPE-DL320-G12',
-    name: 'HPE ProLiant Compute DL320 Gen12',
+    id: 'hpe-j9f42a',
+    sku: 'J9F42A',
+    name: 'HPE J9F42A MSA 600GB 12G SAS 15K 2.5in ENT HDD',
     brand: 'HPE',
     category: 'server-storage',
     primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl320-gen12.svg",
-      alt: "HPE ProLiant Compute DL320 Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/J9F42A__0.jpg',
+      alt: 'HPE J9F42A MSA 600GB 12G SAS 15K 2.5in ENT HDD',
+      width: 750,
+      height: 563,
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.598Z",
-        checksum: "fdb8d9b75cf8a3ead244105288e39f8fdf55050650371976b0932dc9df37d7d6",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/2/q2r41a_2.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/2/q2r41a_2.jpg',
+        fetchedAt: '2026-08-11T10:45:37.869369Z',
+        checksum: 'dbad4f6d3013ddcc5ce2c04099f4236846c99a3ca11ced36d78fba26b831d156',
       },
     },
     gallery: [],
     shortDescription:
-      'Serveur rack 1U mono-processeur Intel Xeon 6, jusqu\'à 4 baies LFF, idéal pour les charges de travail d\'entrée de gamme et la périphérie réseau.',
+      'Le HPE J9F42A MSA 600GB 12G SAS 15K 2.5in ENT HDD de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
     fullDescription:
-      'Le HPE ProLiant Compute DL320 Gen12 est un serveur rack 1U économique conçu pour les déploiements en périphérie et les charges de travail légères. Il prend en charge un processeur Intel Xeon 6 de la série 4500, jusqu\'à 256 Go de mémoire DDR5-4800, et quatre baies LFF hot-plug pour une flexibilité de stockage adaptée aux besoins des PME et des filiales.',
+      'Le HPE J9F42A MSA 600GB 12G SAS 15K 2.5in ENT HDD de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : J9F42A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Facteur de forme : Small Form Factor ; Interface : SAS. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Format', value: '1U Rackmount' },
-      { label: 'Processeur', value: 'Intel Xeon 6 4510T (2.0 GHz, 12 cœurs)' },
-      { label: 'Mémoire', value: '32 Go DDR5-4800 (ext. 256 Go)' },
-      { label: 'Stockage', value: '4x 3.5" LFF SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 500W' },
-      { label: 'Réseau', value: '2x 1GbE, 1x iLO 6' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 8,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: ['Energy Star'],
-    compatibility: ['VMware vSphere 8', 'Microsoft Hyper-V 2025'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 10.2,
-    dimensionsCm: { height: 4.3, width: 44.5, depth: 65.0 },
-    isFeatured: false,
-    publishedAt: '2026-01-15T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl340-gen12',
-    sku: 'HPE-DL340-G12',
-    name: 'HPE ProLiant Compute DL340 Gen12',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl340-gen12.svg",
-      alt: "HPE ProLiant Compute DL340 Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.600Z",
-        checksum: "075960356cfded90dd463491a487b457ac1640ec93fbe0e226bd897f9ab95ebe",
+      {
+        label: 'Référence',
+        value: 'J9F42A',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 1U mono-processeur Intel Xeon 6, jusqu\'à 4 baies SFF, optimisé pour les workloads de virtualisation légère.',
-    fullDescription:
-      'Le HPE ProLiant Compute DL340 Gen12 est un serveur 1U compact et puissant pour les environnements virtualisés de petite taille. Avec son processeur Intel Xeon 6 de la série 5500, jusqu\'à 512 Go de mémoire DDR5 en 8 slots, et quatre baies SFF hot-plug, il offre un excellent rapport performance/encombrement.',
-    specs: [
-      { label: 'Format', value: '1U Rackmount' },
-      { label: 'Processeur', value: 'Intel Xeon 6 5515+ (2.8 GHz, 8 cœurs)' },
-      { label: 'Mémoire', value: '64 Go DDR5-5200 (ext. 512 Go)' },
-      { label: 'Stockage', value: '4x 2.5" SFF SAS/SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 800W' },
-      { label: 'RAID', value: 'HPE MR408i-o' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 12,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: ['Energy Star', '80 PLUS Gold'],
-    compatibility: ['VMware vSphere 8', 'Microsoft Hyper-V 2025', 'Red Hat Enterprise Linux 9'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 11.0,
-    dimensionsCm: { height: 4.3, width: 44.5, depth: 65.0 },
-    isFeatured: false,
-    publishedAt: '2026-01-22T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl360-gen12',
-    sku: 'HPE-DL360-G12',
-    name: 'HPE ProLiant Compute DL360 Gen12',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl360-gen12.svg",
-      alt: "HPE ProLiant Compute DL360 Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.600Z",
-        checksum: "12c81a944ff13593e344aceed600d5b5fc30442127e2c3c975d649406d1cbcd1",
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 1U bi-processeur Intel Xeon 6, jusqu\'à 10 baies SFF, conçu pour les datacenters d\'entreprise.',
-    fullDescription:
-      'Le HPE ProLiant Compute DL360 Gen12 est le serveur 1U bi-processeur le plus polyvalent de HPE pour les datacenters modernes. Il supporte deux processeurs Intel Xeon 6 de la série 6500, jusqu\'à 1 To de mémoire DDR5-6400, et dix baies SFF hot-plug. Sa conception optimisée pour le flux d\'air permet de supporter les charges de travail les plus exigeantes dans un facteur de forme 1U.',
-    specs: [
-      { label: 'Format', value: '1U Rackmount' },
-      { label: 'Processeur', value: '2x Intel Xeon 6 6526+ (2.4 GHz, 16 cœurs)' },
-      { label: 'Mémoire', value: '128 Go DDR5-6400 (ext. 1 To)' },
-      { label: 'Stockage', value: '10x 2.5" SFF SAS/NVMe hot-plug' },
-      { label: 'Alimentation', value: '2x 1000W redondante' },
-      { label: 'RAID', value: 'HPE MR416i-p' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 6,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['Energy Star', '80 PLUS Platinum'],
-    compatibility: ['VMware vSphere 8', 'Microsoft Hyper-V 2025', 'Nutanix AHV'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 14.5,
-    dimensionsCm: { height: 4.3, width: 44.5, depth: 68.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-01T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl380-gen12',
-    sku: 'HPE-DL380-G12',
-    name: 'HPE ProLiant Compute DL380 Gen12',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl380-gen12.svg",
-      alt: "HPE ProLiant Compute DL380 Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.601Z",
-        checksum: "90b46310a659835a3f5b58e8d922a6596df4555a3f7a6db97ea9eaff42bb2ed6",
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 2U bi-processeur Intel Xeon 6, jusqu\'à 24 baies SFF, la référence pour les charges de travail virtualisées et critiques.',
-    fullDescription:
-      'Le HPE ProLiant Compute DL380 Gen12 est le serveur phare de HPE, offrant des performances inégalées pour les applications d\'entreprise les plus exigeantes. Avec deux processeurs Intel Xeon 6 de la série 6700, jusqu\'à 2 To de mémoire DDR5-6400, et vingt-quatre baies SFF NVMe hot-plug, il excelle dans les environnements virtualisés, les bases de données et l\'analyse de données. Sa conception évolutive et sa fiabilité légendaire en font le choix privilégié des datacenters du monde entier.',
-    specs: [
-      { label: 'Format', value: '2U Rackmount' },
-      { label: 'Processeur', value: '2x Intel Xeon 6 6726+ (2.7 GHz, 24 cœurs)' },
-      { label: 'Mémoire', value: '256 Go DDR5-6400 (ext. 2 To)' },
-      { label: 'Stockage', value: '24x 2.5" SFF NVMe hot-plug' },
-      { label: 'Alimentation', value: '2x 1600W redondante' },
-      { label: 'RAID', value: 'HPE MR416i-p + NVMe SW RAID' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 10,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'mission-critical',
-    },
-    certifications: ['Energy Star', '80 PLUS Titanium', 'NEBS Level 3'],
-    compatibility: ['VMware vSphere 8', 'Microsoft Hyper-V 2025', 'Nutanix AHV', 'Red Hat OpenShift'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 26.8,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 73.0 },
-    isFeatured: true,
-    publishedAt: '2026-02-10T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl380a-gen12',
-    sku: 'HPE-DL380A-G12',
-    name: 'HPE ProLiant Compute DL380a Gen12',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl380a-gen12.svg",
-      alt: "HPE ProLiant Compute DL380a Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.601Z",
-        checksum: "967b2ef2a704d9158a2d2eb9816cf24538ea3f0e39f74e03103aaf7b389608ef",
+      {
+        label: 'Facteur de forme',
+        value: 'Small Form Factor',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 2U optimisé pour l\'IA et le calcul GPU, jusqu\'à 4 accélérateurs double largeur pour les workloads d\'apprentissage automatique.',
-    fullDescription:
-      'Le HPE ProLiant Compute DL380a Gen12 est spécialement conçu pour les charges de travail d\'intelligence artificielle et de calcul haute performance. Il supporte jusqu\'à quatre GPU NVIDIA double largeur, deux processeurs Intel Xeon 6 de la série 6500, et jusqu\'à 2 To de mémoire DDR5-6400. Son architecture thermique avancée et ses alimentations redondantes 2400W assurent un fonctionnement stable même sous charge maximale.',
-    specs: [
-      { label: 'Format', value: '2U Rackmount' },
-      { label: 'Processeur', value: '2x Intel Xeon 6 6534+ (2.9 GHz, 12 cœurs)' },
-      { label: 'Mémoire', value: '256 Go DDR5-6400 (ext. 2 To)' },
-      { label: 'Stockage', value: '8x 2.5" SFF NVMe hot-plug' },
-      { label: 'GPU', value: 'Jusqu\'à 4x NVIDIA H200 double largeur' },
-      { label: 'Alimentation', value: '4x 2400W redondante' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['NVIDIA NGC Ready'],
-    compatibility: ['NVIDIA AI Enterprise', 'PyTorch', 'TensorFlow', 'CUDA 12'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 34.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 80.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl580-gen12',
-    sku: 'HPE-DL580-G12',
-    name: 'HPE ProLiant Compute DL580 Gen12',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl580-gen12.svg",
-      alt: "HPE ProLiant Compute DL580 Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.602Z",
-        checksum: "ae956d50c0bc1f089d749e307184b61f6cbc2a252b975da915007761108c8e93",
+      {
+        label: 'Interface',
+        value: 'SAS',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 4U quadri-processeur Intel Xeon 6, capacité mémoire massive pour les bases de données critiques et l\'ERP.',
-    fullDescription:
-      'Le HPE ProLiant Compute DL580 Gen12 est le serveur le plus puissant de la gamme ProLiant, conçu pour les applications stratégiques exigeant une capacité mémoire et une fiabilité maximales. Il accueille quatre processeurs Intel Xeon 6 de la série 6700, jusqu\'à 6 To de mémoire DDR5-6400, et quarante-huit baies SFF pour un stockage interne extensif. Idéal pour SAP HANA, les grandes bases de données Oracle et les charges de travail critiques virtualisées.',
-    specs: [
-      { label: 'Format', value: '4U Rackmount' },
-      { label: 'Processeur', value: '4x Intel Xeon 6 6758+ (2.5 GHz, 32 cœurs)' },
-      { label: 'Mémoire', value: '512 Go DDR5-6400 (ext. 6 To)' },
-      { label: 'Stockage', value: '48x 2.5" SFF SAS/NVMe hot-plug' },
-      { label: 'Alimentation', value: '4x 2400W redondante' },
-      { label: 'RAID', value: 'HPE MR416i-p x2' },
+      {
+        label: 'Capacité de stockage',
+        value: '600 GB',
+      },
+      {
+        label: 'Charge de travail',
+        value: '15K',
+      },
     ],
     attributes: {
-      chassisFormat: '4U',
-      rackUnits: 4,
       formFactor: 'rack',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 2,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'mission-critical',
+      durationLabel: 'Sans garantie',
     },
-    certifications: ['SAP HANA Certified', 'Energy Star', '80 PLUS Titanium'],
-    compatibility: ['SAP HANA', 'Oracle Database 23c', 'Microsoft SQL Server 2025'],
+    certifications: [],
+    compatibility: [],
     datasheets: [],
-    releaseYear: 2026,
-    weightKg: 55.0,
-    dimensionsCm: { height: 17.6, width: 44.5, depth: 82.0 },
     isFeatured: false,
-    publishedAt: '2026-03-01T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.311Z',
   },
   {
-    id: 'hpe-proliant-ml350-gen12',
-    sku: 'HPE-ML350-G12',
-    name: 'HPE ProLiant ML350 Gen12',
+    id: 'hpe-q2r41a',
+    sku: 'Q2R41A',
+    name: 'HPE Q2R41A MSA 2.4TB 12G SAS 10K SFF 2.5in ENT HDD',
     brand: 'HPE',
     category: 'server-storage',
     primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-ml350-gen12.svg",
-      alt: "HPE ProLiant ML350 Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q2R41A__0.jpg',
+      alt: 'HPE Q2R41A MSA 2.4TB 12G SAS 10K SFF 2.5in ENT HDD',
+      width: 750,
+      height: 563,
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.602Z",
-        checksum: "f61482849e2a88cca5ca589df7acecfbb801b9ead135b36853fc1ff867dc5de2",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/2/q2r41a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/2/q2r41a.jpg',
+        fetchedAt: '2026-08-11T10:45:37.733678Z',
+        checksum: 'dbad4f6d3013ddcc5ce2c04099f4236846c99a3ca11ced36d78fba26b831d156',
       },
     },
     gallery: [],
     shortDescription:
-      'Serveur tour bi-processeur Intel Xeon 6, jusqu\'à 8 baies LFF, idéal pour les PME et les bureaux distants.',
+      'Le HPE Q2R41A MSA 2.4TB 12G SAS 10K SFF 2.5in ENT HDD de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
     fullDescription:
-      'Le HPE ProLiant ML350 Gen12 est un serveur tour puissant et silencieux conçu pour les entreprises qui préfèrent un format tour pour leur salle serveur ou leur bureau. Il supporte deux processeurs Intel Xeon 6 de la série 6500, jusqu\'à 1 To de mémoire DDR5-6400, et huit baies LFF hot-plug. Sa conception flexible permet une évolution aisée et son fonctionnement silencieux le rend adapté aux environnements de bureau.',
+      'Le HPE Q2R41A MSA 2.4TB 12G SAS 10K SFF 2.5in ENT HDD de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q2R41A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Facteur de forme : Small Form Factor ; Interface : SAS. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Format', value: 'Tour (4U)' },
-      { label: 'Processeur', value: '2x Intel Xeon 6 6518P (2.6 GHz, 20 cœurs)' },
-      { label: 'Mémoire', value: '128 Go DDR5-6400 (ext. 1 To)' },
-      { label: 'Stockage', value: '8x 3.5" LFF SAS/SATA hot-plug' },
-      { label: 'Alimentation', value: '2x 800W redondante' },
-      { label: 'RAID', value: 'HPE MR408i-o' },
+      {
+        label: 'Référence',
+        value: 'Q2R41A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Facteur de forme',
+        value: 'Small Form Factor',
+      },
+      {
+        label: 'Interface',
+        value: 'SAS',
+      },
+      {
+        label: 'Capacité de stockage',
+        value: '2.4 TB',
+      },
+      {
+        label: 'Charge de travail',
+        value: '10K',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-c8r23b',
+    sku: 'C8R23B',
+    name: 'Aruba C8R23B MSA 8Gb Short Wave Fibre Channel SFP+ 4-pack Transceiver',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/C8R23B__0.jpg',
+      alt: 'Aruba C8R23B MSA 8Gb Short Wave Fibre Channel SFP+ 4-pack Transceiver',
+      width: 750,
+      height: 563,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/c/8/c8r23b.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/c/8/c8r23b.jpg',
+        fetchedAt: '2026-08-11T10:45:38.829468Z',
+        checksum: '54eb8d6ff0ac1211185d5a11cc6807ea19b0900d7ff2455f96a85aa3352a94ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le Aruba C8R23B MSA 8Gb Short Wave Fibre Channel SFP+ 4-pack Transceiver de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Aruba C8R23B MSA 8Gb Short Wave Fibre Channel SFP+ 4-pack Transceiver de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : C8R23B ; Pays de fabrication : China ; Marque : Aruba Networks. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'C8R23B',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Networks',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-c8s75b',
+    sku: 'C8S75B',
+    name: 'Aruba C8S75B MSA 1Gb RJ-45 iSCSI SFP+ 4-pack Transceiver',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/C8S75B__0.jpg',
+      alt: 'Aruba C8S75B MSA 1Gb RJ-45 iSCSI SFP+ 4-pack Transceiver',
+      width: 576,
+      height: 390,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/c/8/c8s75b.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/c/8/c8s75b.jpg',
+        fetchedAt: '2026-08-11T10:45:38.700378Z',
+        checksum: '308d54a381b8a522c625550667b92ba66bf86e16cd4412fa885c47709ed920c5',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le Aruba C8S75B MSA 1Gb RJ-45 iSCSI SFP+ 4-pack Transceiver de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Aruba C8S75B MSA 1Gb RJ-45 iSCSI SFP+ 4-pack Transceiver de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : C8S75B ; Pays de fabrication : China ; Marque : Aruba Networks. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'C8S75B',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Networks',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-q1j01a',
+    sku: 'Q1J01A',
+    name: 'HPE Q1J01A MSA 2050 SAN Dual Controller SFF Storage',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q1J01A__0.jpg',
+      alt: 'HPE Q1J01A MSA 2050 SAN Dual Controller SFF Storage',
+      width: 750,
+      height: 563,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/1/q1j01a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/1/q1j01a.jpg',
+        fetchedAt: '2026-08-11T10:45:37.734471Z',
+        checksum: '228aab05a1f75981b0cf5b2052104a55c63ec3558fac8c1fb19505c2f8c56080',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Q1J01A MSA 2050 SAN Dual Controller SFF Storage de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Q1J01A MSA 2050 SAN Dual Controller SFF Storage de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q1J01A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Facteur de forme : 2U ; Capacité de stockage : 614 TB SFF maximum raw capacity. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'Q1J01A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Facteur de forme',
+        value: '2U',
+      },
+      {
+        label: 'Capacité de stockage',
+        value: '614 TB SFF maximum raw capacity',
+      },
+      {
+        label: 'Extension de stockage',
+        value: 'HPE MSA 2050 LFF Disk Enclosure, HPE MSA 2050 SFF Disk Enclosure',
+      },
+      {
+        label: 'Contrôleur de stockage',
+        value: 'Two HPE MSA 2050 SAN controllers included',
+      },
+      {
+        label: 'Support sauvegarde SAN',
+        value: 'Yes',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-q1j00a',
+    sku: 'Q1J00A',
+    name: 'HPE Q1J00A MSA 2050 SAN Dual Controller LFF Storage',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q1J00A__0.jpg',
+      alt: 'HPE Q1J00A MSA 2050 SAN Dual Controller LFF Storage',
+      width: 750,
+      height: 563,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/1/q1j00a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/q/1/q1j00a.jpg',
+        fetchedAt: '2026-08-11T10:45:38.969392Z',
+        checksum: '9d7cb2284bcf89b132209ce7b7ac7ccbeb629e0a0207112f7386bb23cf8ee0d2',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Q1J00A MSA 2050 SAN Dual Controller LFF Storage de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Q1J00A MSA 2050 SAN Dual Controller LFF Storage de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q1J00A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Facteur de forme : 2U ; Capacité de stockage : 960 TB LFF maximum raw capacity. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'Q1J00A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Facteur de forme',
+        value: '2U',
+      },
+      {
+        label: 'Capacité de stockage',
+        value: '960 TB LFF maximum raw capacity',
+      },
+      {
+        label: 'Extension de stockage',
+        value: 'HPE MSA 2050 LFF Disk Enclosure, HPE MSA 2050 SFF Disk Enclosure',
+      },
+      {
+        label: 'Contrôleur de stockage',
+        value: 'Two HPE MSA 2050 SAN controllers included',
+      },
+      {
+        label: 'Support sauvegarde SAN',
+        value: 'Yes',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-p9m82a',
+    sku: 'P9M82A',
+    name: 'HPE P9M82A MSA 10TB 12G SAS 7.2K rpm LFF (3.5in) Midline 512e 1yr Wty Hard Drive',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P9M82A__0.jpg',
+      alt: 'HPE P9M82A MSA 10TB 12G SAS 7.2K rpm LFF (3.5in) Midline 512e 1yr Wty Hard Drive',
+      width: 750,
+      height: 563,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/9/p9m82a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/9/p9m82a.jpg',
+        fetchedAt: '2026-08-11T10:45:39.781747Z',
+        checksum: 'd129529e21f97c33fe91c9df57ff36a1dfb4f410af93279af4583ef3f783370c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE P9M82A MSA 10TB 12G SAS 7.2K rpm LFF (3.5in) Midline 512e 1yr Wty Hard Drive de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE P9M82A MSA 10TB 12G SAS 7.2K rpm LFF (3.5in) Midline 512e 1yr Wty Hard Drive de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P9M82A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Facteur de forme : Large Form Factor ; Interface : SAS. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P9M82A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Facteur de forme',
+        value: 'Large Form Factor',
+      },
+      {
+        label: 'Interface',
+        value: 'SAS',
+      },
+      {
+        label: 'Capacité de stockage',
+        value: '10 TB',
+      },
+      {
+        label: 'Charge de travail',
+        value: '7.2K',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-p24841-b21',
+    sku: 'P24841-B21',
+    name: 'HPE P24841-B21 ProLiant DL380 Gen10 4210R 1P 32GB-R P408i-a NC 8SFF 800W PS Server',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P24841-B21__0.jpg',
+      alt: 'HPE P24841-B21 ProLiant DL380 Gen10 4210R 1P 32GB-R P408i-a NC 8SFF 800W PS Server',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/2/p24841-b21.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/2/p24841-b21.jpg',
+        fetchedAt: '2026-08-11T10:45:56.354821Z',
+        checksum: 'b484952890d0c8e1c801cecd07f580ee5238f9dda4d7ace3e9ab41bc772e9fad',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P24841-B21__1.jpg',
+        alt: 'HPE P24841-B21 ProLiant DL380 Gen10 4210R 1P 32GB-R P408i-a NC 8SFF 800W PS Server',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/p/2/p24841-b21_-_4210r-1.jpg',
+          sourceIdentifier:
+            'https://www.sysllc.ae/media/catalog/product/p/2/p24841-b21_-_4210r-1.jpg',
+          fetchedAt: '2026-08-11T10:45:57.687914Z',
+          checksum: '35aa1474c99888370244c5324b5c3465f8589a5cdd26f01a62d860215c5bca24',
+        },
+      },
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P24841-B21__2.jpg',
+        alt: 'HPE P24841-B21 ProLiant DL380 Gen10 4210R 1P 32GB-R P408i-a NC 8SFF 800W PS Server',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/p/2/p24841-b21_-_4210r.jpg',
+          sourceIdentifier:
+            'https://www.sysllc.ae/media/catalog/product/p/2/p24841-b21_-_4210r.jpg',
+          fetchedAt: '2026-08-11T10:45:58.880915Z',
+          checksum: '6f5b2cfa6ecdda0a9c4ac84f59fb4de0f4cbaaea101c969b68d8cb4dc36d0250',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HPE P24841-B21 ProLiant DL380 Gen10 4210R 1P 32GB-R P408i-a NC 8SFF 800W PS Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE P24841-B21 ProLiant DL380 Gen10 4210R 1P 32GB-R P408i-a NC 8SFF 800W PS Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P24841-B21 ; Longueur (pouces) : 17.54 ; Largeur (pouces) : 28.75 ; Hauteur (pouces) : 3.44 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P24841-B21',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.54',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '28.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '3.44',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-p23465-b21',
+    sku: 'P23465-B21',
+    name: 'HPE P23465 B21 ProLiant DL380 Gen10 4208 1P 32GB R P408i a NC 8SFF 500W PS Server',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P23465-B21__0.jpg',
+      alt: 'HPE P23465 B21 ProLiant DL380 Gen10 4208 1P 32GB R P408i a NC 8SFF 500W PS Server',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/2/p23465-b21.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/2/p23465-b21.jpg',
+        fetchedAt: '2026-08-11T10:45:57.039337Z',
+        checksum: '94b1386dafd121e1e687083423ac3ed44c619312c36be04c2a6b3c36acf47f58',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P23465-B21__1.jpg',
+        alt: 'HPE P23465 B21 ProLiant DL380 Gen10 4208 1P 32GB R P408i a NC 8SFF 500W PS Server',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/p/2/p23465-b21-3.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/p/2/p23465-b21-3.jpg',
+          fetchedAt: '2026-08-11T10:45:58.365824Z',
+          checksum: 'bacede123e1801064b9d7c9726fd5628b943eb0150d784f6277c47a0dba3686f',
+        },
+      },
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P23465-B21__2.jpg',
+        alt: 'HPE P23465 B21 ProLiant DL380 Gen10 4208 1P 32GB R P408i a NC 8SFF 500W PS Server',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/p/2/p23465-b21_-1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/p/2/p23465-b21_-1.jpg',
+          fetchedAt: '2026-08-11T10:45:59.684339Z',
+          checksum: '919a588e439e57e80f34fd9d041a66a10b03fb12f23433f1a1d055d5636e8f57',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HPE P23465 B21 ProLiant DL380 Gen10 4208 1P 32GB R P408i a NC 8SFF 500W PS Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE P23465 B21 ProLiant DL380 Gen10 4208 1P 32GB R P408i a NC 8SFF 500W PS Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P23465-B21 ; GTIN/EAN : 0190017446332 ; UPC : 190017446332 ; Longueur (pouces) : 17.54 ; Largeur (pouces) : 28.75. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P23465-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017446332',
+      },
+      {
+        label: 'UPC',
+        value: '190017446332',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.54',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '28.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '3.44',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.313Z',
+  },
+  {
+    id: 'hpe-p19779-b21',
+    sku: 'P19779-B21',
+    name: 'HPE ProLiant DL360 Gen10 server',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P19779-B21__0.jpg',
+      alt: 'HPE ProLiant DL360 Gen10 server',
+      width: 750,
+      height: 750,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-proliant-dl360-gen10-server-p19779-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-proliant-dl360-gen10-server-p19779-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:45:40.649345Z',
+        checksum: 'd254936060d938f5969170e872ad03737601c97d1cd0338488f233601b13259c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE ProLiant DL360 Gen10 server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE ProLiant DL360 Gen10 server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P19779-B21 ; GTIN/EAN : 0190017391700 ; UPC : 190017391700 ; ASIN : B07ZHQV3XP ; Longueur (pouces) : 1.69. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P19779-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017391700',
+      },
+      {
+        label: 'UPC',
+        value: '190017391700',
+      },
+      {
+        label: 'ASIN',
+        value: 'B07ZHQV3XP',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '1.69',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '17.11',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '27.83',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: true,
+    publishedAt: '2026-08-11T11:30:21.314Z',
+  },
+  {
+    id: 'hpe-p20174-b21',
+    sku: 'P20174-B21',
+    name: 'HPE ProLiant DL380 Gen10 8SFF',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P20174-B21__0.jpg',
+      alt: 'HPE ProLiant DL380 Gen10 8SFF',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-proliant-dl380-gen10-p20174-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-proliant-dl380-gen10-p20174-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:45:40.774105Z',
+        checksum: '14163e35427aca7d7d435485f541210f10cb3965e1d559dd41916a6d6626885c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE ProLiant DL380 Gen10 8SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE ProLiant DL380 Gen10 8SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P20174-B21 ; GTIN/EAN : 0190017389912 ; UPC : 190017389912 ; ASIN : B085HBK66D ; Longueur (pouces) : 17.54. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P20174-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017389912',
+      },
+      {
+        label: 'UPC',
+        value: '190017389912',
+      },
+      {
+        label: 'ASIN',
+        value: 'B085HBK66D',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.54',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '28.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '3.44',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.314Z',
+  },
+  {
+    id: 'hpe-p24842-b21',
+    sku: 'P24842-B21',
+    name: 'HPE ProLiant DL380 Gen10 server',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P24842-B21__0.jpg',
+      alt: 'HPE ProLiant DL380 Gen10 server',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe_proliant_dl380-gen10-p24842-b21.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe_proliant_dl380-gen10-p24842-b21.jpg',
+        fetchedAt: '2026-08-11T10:45:41.618120Z',
+        checksum: '14163e35427aca7d7d435485f541210f10cb3965e1d559dd41916a6d6626885c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE ProLiant DL380 Gen10 server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE ProLiant DL380 Gen10 server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P24842-B21 ; GTIN/EAN : 0190017446394 ; UPC : 190017446394 ; Longueur (pouces) : 17.54 ; Largeur (pouces) : 28.75. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P24842-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017446394',
+      },
+      {
+        label: 'UPC',
+        value: '190017446394',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.54',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '28.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '3.44',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Processeurs',
+        value: '2',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.314Z',
+  },
+  {
+    id: 'hpe-p20249-b21',
+    sku: 'P20249-B21',
+    name: 'HPE ProLiant DL380 Gen10 Server',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P20249-B21__0.jpg',
+      alt: 'HPE ProLiant DL380 Gen10 Server',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/r/proliant-dl380-gen10-server-p20249-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/r/proliant-dl380-gen10-server-p20249-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:45:41.812801Z',
+        checksum: 'b2a61387a58b5aaea81eb7c5684f9c9397746d63efff05589055dc7c4a875605',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE ProLiant DL380 Gen10 Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE ProLiant DL380 Gen10 Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P20249-B21 ; GTIN/EAN : 0190017390000 ; UPC : 190017390000 ; ASIN : B081JLV8MR ; Longueur (pouces) : 17.54. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P20249-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017390000',
+      },
+      {
+        label: 'UPC',
+        value: '190017390000',
+      },
+      {
+        label: 'ASIN',
+        value: 'B081JLV8MR',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.54',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '28.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '3.44',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.314Z',
+  },
+  {
+    id: 'hpe-p24849-b21',
+    sku: 'P24849-B21',
+    name: 'HPE ProLiant DL380 Gen10 Server',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P24849-B21__0.jpg',
+      alt: 'HPE ProLiant DL380 Gen10 Server',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-proliant-dl380-gen10-p24849-b21-in-dubai-uae_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-proliant-dl380-gen10-p24849-b21-in-dubai-uae_1.jpg',
+        fetchedAt: '2026-08-11T10:45:42.586491Z',
+        checksum: 'f67b2639cf05fa83ecfe4e1e86770f83f61c16b40d730adb978c695550d6e66a',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE ProLiant DL380 Gen10 Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE ProLiant DL380 Gen10 Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P24849-B21 ; GTIN/EAN : 0190017446615 ; UPC : 190017446615 ; Longueur (pouces) : 17.54 ; Largeur (pouces) : 28.75. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P24849-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017446615',
+      },
+      {
+        label: 'UPC',
+        value: '190017446615',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.54',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '28.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '3.44',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Processeurs',
+        value: '1',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.314Z',
+  },
+  {
+    id: 'hpe-872475-b21',
+    sku: '872475-B21',
+    name: 'HPE 300GB SAS 12G Enterprise 10K SFF',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/872475-B21__0.jpg',
+      alt: 'HPE 300GB SAS 12G Enterprise 10K SFF',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-300gb-sas-12g-enterprise-10k-sff-872475-b21-in-dubai-uae_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-300gb-sas-12g-enterprise-10k-sff-872475-b21-in-dubai-uae_1.jpg',
+        fetchedAt: '2026-08-11T10:45:42.787043Z',
+        checksum: '4a4a85c651ee16dc3c42738218d0bb1f48228c3b9cb8d0610c8b5e1b7762a1c3',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE 300GB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE 300GB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 872475-B21 ; GTIN/EAN : 0190017140742 ; UPC : 190017140742 ; ASIN : B06XHK4Y1Y ; Hauteur (pouces) : 0.62. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: '872475-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017140742',
+      },
+      {
+        label: 'UPC',
+        value: '190017140742',
+      },
+      {
+        label: 'ASIN',
+        value: 'B06XHK4Y1Y',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '0.62',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.314Z',
+  },
+  {
+    id: 'hpe-870753-b21',
+    sku: '870753-B21',
+    name: 'HPE 300GB SAS 12G Enterprise 15K SFF',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/870753-B21__0.jpg',
+      alt: 'HPE 300GB SAS 12G Enterprise 15K SFF',
+      width: 500,
+      height: 225,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-300gb-sas-12g-enterprise-15k-sff_870753-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-300gb-sas-12g-enterprise-15k-sff_870753-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:45:43.489894Z',
+        checksum: '3c3c816636a787b2c40b65269a4058c8d453217da38a7eca60c21e9ddf839071',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE 300GB SAS 12G Enterprise 15K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE 300GB SAS 12G Enterprise 15K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 870753-B21 ; GTIN/EAN : 0190017116853 ; UPC : 190017116853 ; Hauteur (pouces) : 0.62 ; Marque : Hewlett Packard Enterprise. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: '870753-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017116853',
+      },
+      {
+        label: 'UPC',
+        value: '190017116853',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '0.62',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-870757-b21',
+    sku: '870757-B21',
+    name: 'HPE 600GB SAS 12G Enterprise 15K SFF',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/870757-B21__0.jpg',
+      alt: 'HPE 600GB SAS 12G Enterprise 15K SFF',
+      width: 307,
+      height: 129,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-600gb-sas-12g-enterprise_15k-sff-870757-b21.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-600gb-sas-12g-enterprise_15k-sff-870757-b21.jpg',
+        fetchedAt: '2026-08-11T10:45:43.703435Z',
+        checksum: '2824e7d3e4d43b3c3cd5acd4d01ade2123c34c3a3aff296c762e0d7381afa81d',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE 600GB SAS 12G Enterprise 15K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE 600GB SAS 12G Enterprise 15K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 870757-B21 ; GTIN/EAN : 0190017116891 ; UPC : 190017116891 ; Hauteur (pouces) : 0.62 ; Marque : Hewlett Packard Enterprise. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: '870757-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017116891',
+      },
+      {
+        label: 'UPC',
+        value: '190017116891',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '0.62',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-872477-b21',
+    sku: '872477-B21',
+    name: 'HPE 600GB SAS 12G Enterprise 10K SFF',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/872477-B21__0.jpg',
+      alt: 'HPE 600GB SAS 12G Enterprise 10K SFF',
+      width: 307,
+      height: 129,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-600gb_sas-12g-enterprise-_10k-sff-872477-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-600gb_sas-12g-enterprise-_10k-sff-872477-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:45:43.743077Z',
+        checksum: '2824e7d3e4d43b3c3cd5acd4d01ade2123c34c3a3aff296c762e0d7381afa81d',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE 600GB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE 600GB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 872477-B21 ; GTIN/EAN : 0190017140766 ; UPC : 190017140766 ; Hauteur (pouces) : 0.62 ; Marque : Hewlett Packard Enterprise. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: '872477-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017140766',
+      },
+      {
+        label: 'UPC',
+        value: '190017140766',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '0.62',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-872479-b21',
+    sku: '872479-B21',
+    name: 'HPE 1 2TB SAS 12G Enterprise 10K SFF',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/872479-B21__0.jpg',
+      alt: 'HPE 1 2TB SAS 12G Enterprise 10K SFF',
+      width: 307,
+      height: 129,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1.2_tb-sas-12g-enterprise-_10k-sff-872479-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1.2_tb-sas-12g-enterprise-_10k-sff-872479-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:45:44.537116Z',
+        checksum: '2824e7d3e4d43b3c3cd5acd4d01ade2123c34c3a3aff296c762e0d7381afa81d',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE 1 2TB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE 1 2TB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 872479-B21 ; GTIN/EAN : 0818239003699 ; UPC : 818239003699 ; Hauteur (pouces) : 0.62 ; Marque : Hewlett Packard Enterprise. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: '872479-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0818239003699',
+      },
+      {
+        label: 'UPC',
+        value: '818239003699',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '0.62',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-872481-b21',
+    sku: '872481-B21',
+    name: 'HPE 1 8TB SAS 12G Enterprise 10K SFF',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/872481-B21__0.jpg',
+      alt: 'HPE 1 8TB SAS 12G Enterprise 10K SFF',
+      width: 307,
+      height: 129,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1.8_tb-sas-12g-enterprise-_10k-sff-872481-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1.8_tb-sas-12g-enterprise-_10k-sff-872481-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:45:44.686433Z',
+        checksum: '2824e7d3e4d43b3c3cd5acd4d01ade2123c34c3a3aff296c762e0d7381afa81d',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE 1 8TB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE 1 8TB SAS 12G Enterprise 10K SFF de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 872481-B21 ; GTIN/EAN : 0190017140803 ; UPC : 190017140803 ; Hauteur (pouces) : 0.62 ; Marque : Hewlett Packard Enterprise. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: '872481-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017140803',
+      },
+      {
+        label: 'UPC',
+        value: '190017140803',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '0.62',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-j9663a',
+    sku: 'J9663A',
+    name: 'HPE J9663A OfficeConnect 1410 24 Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/J9663A__0.jpg',
+      alt: 'HPE J9663A OfficeConnect 1410 24 Switch',
+      width: 750,
+      height: 221,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9663a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9663a.jpg',
+        fetchedAt: '2026-08-11T10:45:45.689017Z',
+        checksum: 'f1c7e4fefce079bc11d75eb86dde4bf3fdacc7fe6d1f27fbe6609fe00c1afc15',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE J9663A OfficeConnect 1410 24 Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE J9663A OfficeConnect 1410 24 Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : J9663A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Nombre de ports : 19 to 28. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'J9663A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Nombre de ports',
+        value: '19 to 28',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-j9980a',
+    sku: 'J9980A',
+    name: 'HPE J9980A OfficeConnect 1820 24G Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/J9980A__0.jpg',
+      alt: 'HPE J9980A OfficeConnect 1820 24G Switch',
+      width: 750,
+      height: 353,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9980a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9980a.jpg',
+        fetchedAt: '2026-08-11T10:45:45.689351Z',
+        checksum: '0813f024f9b7003ec68b1378846f138d64245c52d5c473d5cda5609481e15323',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE J9980A OfficeConnect 1820 24G Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE J9980A OfficeConnect 1820 24G Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : J9980A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Nombre de ports : 19 to 28 ; Débit : up to 38.6 Mpps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'J9980A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Nombre de ports',
+        value: '19 to 28',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 38.6 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '52 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-j9981a',
+    sku: 'J9981A',
+    name: 'HPE J9981A OfficeConnect 1820 48G Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/J9981A__0.jpg',
+      alt: 'HPE J9981A OfficeConnect 1820 48G Switch',
+      width: 750,
+      height: 353,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9981a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9981a.jpg',
+        fetchedAt: '2026-08-11T10:45:46.508812Z',
+        checksum: 'c47d99cf21161f2b33ff3dcf073dba44d0f4c3f212cf3a77902e71d3cb933638',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE J9981A OfficeConnect 1820 48G Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE J9981A OfficeConnect 1820 48G Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : J9981A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Débit : up to 77.3 Mpps ; Capacité de commutation : 104 Gbps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'J9981A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 77.3 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '104 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-j9983a',
+    sku: 'J9983A',
+    name: 'HPE J9983A OfficeConnect 1820 24G PoE+ (185W) Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/J9983A__0.jpg',
+      alt: 'HPE J9983A OfficeConnect 1820 24G PoE+ (185W) Switch',
+      width: 750,
+      height: 362,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9983a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9983a.jpg',
+        fetchedAt: '2026-08-11T10:45:46.714196Z',
+        checksum: '178bda34b92ab130727475e173dd3b21d2ab75a085772b564539636dd4fbc01f',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE J9983A OfficeConnect 1820 24G PoE+ (185W) Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE J9983A OfficeConnect 1820 24G PoE+ (185W) Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : J9983A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Commutateurs : PoE ; Débit : up to 38.6 Mpps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'J9983A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Commutateurs',
+        value: 'PoE',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 38.6 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '52 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-j9984a',
+    sku: 'J9984A',
+    name: 'HPE J9984A OfficeConnect 1820 48G PoE+ (370W) Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/J9984A__0.jpg',
+      alt: 'HPE J9984A OfficeConnect 1820 48G PoE+ (370W) Switch',
+      width: 750,
+      height: 362,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9984a_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/9/j9984a_1.jpg',
+        fetchedAt: '2026-08-11T10:45:46.716772Z',
+        checksum: '0e3d36a38a4fcc30ba136ea30d5a6de10ac323cd0aa8260304e4a5258133ed35',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE J9984A OfficeConnect 1820 48G PoE+ (370W) Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE J9984A OfficeConnect 1820 48G PoE+ (370W) Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : J9984A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Commutateurs : PoE ; Débit : up to 77.3 Mpps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'J9984A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Commutateurs',
+        value: 'PoE',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 77.3 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '104 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-jl381a',
+    sku: 'JL381A',
+    name: 'HPE JL381A OfficeConnect 1920S 24G 2SFP Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL381A__0.jpg',
+      alt: 'HPE JL381A OfficeConnect 1920S 24G 2SFP Switch',
+      width: 750,
+      height: 369,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl381a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl381a.jpg',
+        fetchedAt: '2026-08-11T10:45:47.469769Z',
+        checksum: 'ebb648025040be35563e65aa6a4d9338ece8b3868c8c869e81e9e3344f3c34c2',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JL381A OfficeConnect 1920S 24G 2SFP Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JL381A OfficeConnect 1920S 24G 2SFP Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JL381A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Débit : up to 38.6 Mpps ; Capacité de commutation : 52 Gbps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JL381A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 38.6 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '52 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-jl382a',
+    sku: 'JL382A',
+    name: 'HPE JL382A OfficeConnect 1920S 48G 4SFP Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL382A__0.jpg',
+      alt: 'HPE JL382A OfficeConnect 1920S 48G 4SFP Switch',
+      width: 750,
+      height: 369,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl382a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl382a.jpg',
+        fetchedAt: '2026-08-11T10:45:47.742648Z',
+        checksum: '974a7c7b25cfe8a40e7d0449da1876a97267a75b1b33831fea12d8e1860e6177',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JL382A OfficeConnect 1920S 48G 4SFP Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JL382A OfficeConnect 1920S 48G 4SFP Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JL382A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Débit : up to 77.3 Mpps ; Capacité de commutation : 104 Gbps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JL382A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 77.3 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '104 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-jl383a',
+    sku: 'JL383A',
+    name: 'HPE JL383A OfficeConnect 1920S 8G PPoE+ 65W Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL383A__0.jpg',
+      alt: 'HPE JL383A OfficeConnect 1920S 8G PPoE+ 65W Switch',
+      width: 750,
+      height: 369,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl383a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl383a.jpg',
+        fetchedAt: '2026-08-11T10:45:47.738336Z',
+        checksum: 'bf032238f13c3cc8022203e62ca875c9d09faa16ce293a4f04ee3859babc2ce3',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JL383A OfficeConnect 1920S 8G PPoE+ 65W Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JL383A OfficeConnect 1920S 8G PPoE+ 65W Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JL383A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Alimentation PoE : 0 to 100 ; Débit : up to 11.9 Mpps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JL383A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Alimentation PoE',
+        value: '0 to 100',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 11.9 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '16 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.315Z',
+  },
+  {
+    id: 'hpe-jl384a',
+    sku: 'JL384A',
+    name: 'HPE JL384A OfficeConnect 1920S 24G 2SFP PPoE+ 185W Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL384A__0.jpg',
+      alt: 'HPE JL384A OfficeConnect 1920S 24G 2SFP PPoE+ 185W Switch',
+      width: 750,
+      height: 369,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl384a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl384a.jpg',
+        fetchedAt: '2026-08-11T10:45:48.518092Z',
+        checksum: '62c1c5b1c9fca930189224bc0c83a7916069ae59277bf9c5b7a82ecbd8d96dda',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JL384A OfficeConnect 1920S 24G 2SFP PPoE+ 185W Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JL384A OfficeConnect 1920S 24G 2SFP PPoE+ 185W Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JL384A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Alimentation PoE : 101 to 200 ; Débit : up to 38.6 Mpps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JL384A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Alimentation PoE',
+        value: '101 to 200',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 38.6 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '52 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jl385a',
+    sku: 'JL385A',
+    name: 'HPE JL385A OfficeConnect 1920S 24G 2SFP PoE+ 370W Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL385A__0.jpg',
+      alt: 'HPE JL385A OfficeConnect 1920S 24G 2SFP PoE+ 370W Switch',
+      width: 750,
+      height: 369,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl385a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl385a.jpg',
+        fetchedAt: '2026-08-11T10:45:48.738022Z',
+        checksum: '27cccf296ad07a0f51a8854df2a94f648dcfdc009cb16d045cf12abe6f59e4ae',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JL385A OfficeConnect 1920S 24G 2SFP PoE+ 370W Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JL385A OfficeConnect 1920S 24G 2SFP PoE+ 370W Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JL385A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Alimentation PoE : 101 to 200 ; Débit : up to 77.3 Mpps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JL385A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Alimentation PoE',
+        value: '101 to 200',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 77.3 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '52 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jl386a',
+    sku: 'JL386A',
+    name: 'HPE JL386A OfficeConnect 1920S 48G 4SFP PPoE+ 370W Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL386A__0.jpg',
+      alt: 'HPE JL386A OfficeConnect 1920S 48G 4SFP PPoE+ 370W Switch',
+      width: 750,
+      height: 369,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl386a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl386a.jpg',
+        fetchedAt: '2026-08-11T10:45:48.754269Z',
+        checksum: '43777d8e0c5714764765ed93192a80916e31aaf62c7222cbe2e615678ab53d77',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JL386A OfficeConnect 1920S 48G 4SFP PPoE+ 370W Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JL386A OfficeConnect 1920S 48G 4SFP PPoE+ 370W Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JL386A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Débit : up to 77.3 Mpps ; Capacité de commutation : 104 Gbps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JL386A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 77.3 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '104 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jg961a',
+    sku: 'JG961A',
+    name: 'HPE 1950-48G-2SFP+-2XGT switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JG961A__0.png',
+      alt: 'HPE 1950-48G-2SFP+-2XGT switch',
+      width: 460,
+      height: 344,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1950-48g-2sfp_-2xgt---switch.png',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1950-48g-2sfp_-2xgt---switch.png',
+        fetchedAt: '2026-08-11T10:45:50.366219Z',
+        checksum: '500d7bc99042423543d6ef3e9fe3bbdb5083cceeae213ec7569b1ebb1d0de50d',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE 1950-48G-2SFP+-2XGT switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE 1950-48G-2SFP+-2XGT switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JG961A ; GTIN/EAN : 0888182695005 ; UPC : 888182695005 ; ASIN : B00YRYA2IA ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JG961A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0888182695005',
+      },
+      {
+        label: 'UPC',
+        value: '888182695005',
+      },
+      {
+        label: 'ASIN',
+        value: 'B00YRYA2IA',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Commutateurs',
+        value: 'Non PoE',
+      },
+      {
+        label: 'Nombre de ports',
+        value: '29 to 52',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jh295a',
+    sku: 'JH295A',
+    name: 'HPE JH295A 1950 12XGT 4SFP+ Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH295A__0.jpg',
+      alt: 'HPE JH295A 1950 12XGT 4SFP+ Switch',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh295a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh295a.jpg',
+        fetchedAt: '2026-08-11T10:45:49.744382Z',
+        checksum: '65701c6bc7ce1f23e73f4f7a29961b8af985de3b4b3eefcfb5ce2c856a1a9406',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH295A__1.jpg',
+        alt: 'HPE JH295A 1950 12XGT 4SFP+ Switch',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/1/9/1950_series_5_1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/1/9/1950_series_5_1.jpg',
+          fetchedAt: '2026-08-11T10:45:50.835326Z',
+          checksum: '2f6d7d19c31b2562ce3511ac1ab61a7300bc476588814be7229ec6785d92ebd0',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HPE JH295A 1950 12XGT 4SFP+ Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JH295A 1950 12XGT 4SFP+ Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JH295A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Commutateurs : Non PoE ; Nombre de ports : 11 to 18. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JH295A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Commutateurs',
+        value: 'Non PoE',
+      },
+      {
+        label: 'Nombre de ports',
+        value: '11 to 18',
+      },
+      {
+        label: 'Alimentation PoE',
+        value: 'Data only',
+      },
+      {
+        label: 'Mémoire',
+        value: '512 MB flash',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 238.1Mpps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jl380a',
+    sku: 'JL380A',
+    name: 'HPE JL380A OfficeConnect 1920S 8G Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL380A__0.jpg',
+      alt: 'HPE JL380A OfficeConnect 1920S 8G Switch',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl380a-01.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/l/jl380a-01.jpg',
+        fetchedAt: '2026-08-11T10:45:49.788511Z',
+        checksum: '3cb66c64d681dc82124894577b803e351e4770e1050ac8b6e8dafac287fef446',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JL380A__1.jpg',
+        alt: 'HPE JL380A OfficeConnect 1920S 8G Switch',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/j/l/jl380a-02.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/j/l/jl380a-02.jpg',
+          fetchedAt: '2026-08-11T10:45:50.773504Z',
+          checksum: 'f46491084ae4e06511eb01748352f7a8b771e0b32b9830e3fccdcb851b8d5039',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HPE JL380A OfficeConnect 1920S 8G Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JL380A OfficeConnect 1920S 8G Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JL380A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Commutateurs : Non PoE ; Débit : up to 11.9 Mpps. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JL380A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Commutateurs',
+        value: 'Non PoE',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 11.9 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '16 Gbps',
+      },
+      {
+        label: 'Ports réseau',
+        value: '8 x 1G',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jw743a',
+    sku: 'JW743A',
+    name: 'Aruba JW743A 7210 Controller network management device',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JW743A__0.jpg',
+      alt: 'Aruba JW743A 7210 Controller network management device',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/w/jw743a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/w/jw743a.jpg',
+        fetchedAt: '2026-08-11T10:45:51.298497Z',
+        checksum: 'e7dc9464a5f73c2f67fbf28921853ac7f8faf849dcef3e17f77583a96ced2759',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JW743A__1.jpg',
+        alt: 'Aruba JW743A 7210 Controller network management device',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/j/w/jw743a-1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/j/w/jw743a-1.jpg',
+          fetchedAt: '2026-08-11T10:45:52.431437Z',
+          checksum: '32b186de4f8c14e7ddc92ffe98d3707a27171b315603b36c8892a4594ed31df7',
+        },
+      },
+    ],
+    shortDescription:
+      'Le Aruba JW743A 7210 Controller network management device de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Aruba JW743A 7210 Controller network management device de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JW743A ; Pays de fabrication : China ; Marque : Aruba Networks. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JW743A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Networks',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jh327a',
+    sku: 'JH327A',
+    name: 'HPE JH327A OfficeConnect 1420 5G Switch, 1GbE, Fast Ethernet with unmanaged plug-and-play',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH327A__0.jpg',
+      alt: 'HPE JH327A OfficeConnect 1420 5G Switch, 1GbE, Fast Ethernet with unmanaged plug-and-play',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh327a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh327a.jpg',
+        fetchedAt: '2026-08-11T10:45:51.890291Z',
+        checksum: '61281545498d8fed3f5d6da9cbe7d5bcaee58f4e52876422a909396ae929d9ae',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JH327A OfficeConnect 1420 5G Switch, 1GbE, Fast Ethernet with unmanaged plug-and-play de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JH327A OfficeConnect 1420 5G Switch, 1GbE, Fast Ethernet with unmanaged plug-and-play de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JH327A ; Longueur (pouces) : 4.52 ; Largeur (pouces) : 3.18 ; Hauteur (pouces) : 1.06 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JH327A',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '4.52',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '3.18',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.06',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 7.4 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '10 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jh328a',
+    sku: 'JH328A',
+    name: 'HPE JH328A OfficeConnect 1420 5G PoE+ (32W) Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH328A__0.jpg',
+      alt: 'HPE JH328A OfficeConnect 1420 5G PoE+ (32W) Switch',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh328a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh328a.jpg',
+        fetchedAt: '2026-08-11T10:45:51.897124Z',
+        checksum: 'b8e6df20e5f42e4ca3f4a5bf7a876e403d1571127c03cc3148f536d7324323a6',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JH328A OfficeConnect 1420 5G PoE+ (32W) Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JH328A OfficeConnect 1420 5G PoE+ (32W) Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JH328A ; Longueur (pouces) : 6.21 ; Largeur (pouces) : 4.13 ; Hauteur (pouces) : 1.06 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JH328A',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '6.21',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '4.13',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.06',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Commutateurs',
+        value: 'PoE',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 7.4 Mpps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jh329a',
+    sku: 'JH329A',
+    name: 'HPE Officeconnect 1420 8G Switch, JH329A',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH329A__0.jpg',
+      alt: 'HPE Officeconnect 1420 8G Switch, JH329A',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh329a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh329a.jpg',
+        fetchedAt: '2026-08-11T10:45:52.942246Z',
+        checksum: 'afe9946033ce8ae386191dbeea7f4586efc756ee676ac6127b6742a6ce85fdfe',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Officeconnect 1420 8G Switch, JH329A de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Officeconnect 1420 8G Switch, JH329A de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JH329A ; UPC : 889296966449 ; Longueur (pouces) : 6.21 ; Largeur (pouces) : 4.13 ; Hauteur (pouces) : 1.06. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JH329A',
+      },
+      {
+        label: 'UPC',
+        value: '889296966449',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '6.21',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '4.13',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.06',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 11.8 Mpps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jh330a-2',
+    sku: 'JH330A-2',
+    name: 'HPE JH330A OfficeConnect 1420 8G PoE+ (64W) Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH330A-2__0.jpg',
+      alt: 'HPE JH330A OfficeConnect 1420 8G PoE+ (64W) Switch',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh330a_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh330a_1.jpg',
+        fetchedAt: '2026-08-11T10:45:52.907986Z',
+        checksum: '903a244fcfe9f95c88f8465860e6ab8d63745ff4c6908040ee0b52becf3ffa8a',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JH330A OfficeConnect 1420 8G PoE+ (64W) Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JH330A OfficeConnect 1420 8G PoE+ (64W) Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JH330A-2 ; GTIN/EAN : 0889296966685 ; UPC : 889296966685 ; ASIN : B01G2LDG0G ; Longueur (pouces) : 9.24. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JH330A-2',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0889296966685',
+      },
+      {
+        label: 'UPC',
+        value: '889296966685',
+      },
+      {
+        label: 'ASIN',
+        value: 'B01G2LDG0G',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.24',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '4.13',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.06',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.316Z',
+  },
+  {
+    id: 'hpe-jh016a',
+    sku: 'JH016A',
+    name: 'HPE JH016A OfficeConnect 1420 16G Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH016A__0.jpg',
+      alt: 'HPE JH016A OfficeConnect 1420 16G Switch',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh016a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh016a.jpg',
+        fetchedAt: '2026-08-11T10:45:53.418929Z',
+        checksum: 'c4f05c0e294112967023a62eaab272fc2bc96fd6beae6fe96248d6aada346a4b',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JH016A OfficeConnect 1420 16G Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JH016A OfficeConnect 1420 16G Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JH016A ; Longueur (pouces) : 10.47 ; Largeur (pouces) : 6.38 ; Hauteur (pouces) : 1.73 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JH016A',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '10.47',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.38',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.73',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 23.8 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '32 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-jg708b',
+    sku: 'JG708B',
+    name: 'HPE JG708B OfficeConnect 1420 24G Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JG708B__0.jpg',
+      alt: 'HPE JG708B OfficeConnect 1420 24G Switch',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/g/jg708b.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/g/jg708b.jpg',
+        fetchedAt: '2026-08-11T10:45:53.906776Z',
+        checksum: '664d9f3b35b455c0ff2de9e85753215788a3491eda43cf04031ab5bee4c1e945',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JG708B OfficeConnect 1420 24G Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JG708B OfficeConnect 1420 24G Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JG708B ; Longueur (pouces) : 17.32 ; Largeur (pouces) : 6.81 ; Hauteur (pouces) : 1.73 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JG708B',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.32',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.81',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.73',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 35.7 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '48 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-jh017a',
+    sku: 'JH017A',
+    name: 'HPE JH017A OfficeConnect 1420 24G 2SFP Switch',
+    brand: 'HPE',
+    category: 'networking',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JH017A__0.jpg',
+      alt: 'HPE JH017A OfficeConnect 1420 24G 2SFP Switch',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh017a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/h/jh017a.jpg',
+        fetchedAt: '2026-08-11T10:45:53.946284Z',
+        checksum: '027e2e5e38645e745c0520d462453e3ba9a846070ae8a154d6114126016d4bbf',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE JH017A OfficeConnect 1420 24G 2SFP Switch de Hewlett Packard Enterprise est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE JH017A OfficeConnect 1420 24G 2SFP Switch de Hewlett Packard Enterprise est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JH017A ; Longueur (pouces) : 17.32 ; Largeur (pouces) : 6.81 ; Hauteur (pouces) : 1.73 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JH017A',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '17.32',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.81',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.73',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Débit',
+        value: 'up to 38.7 Mpps',
+      },
+      {
+        label: 'Capacité de commutation',
+        value: '52 Gbps',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-jz031a',
+    sku: 'JZ031A',
+    name: 'Aruba JZ031A AP-345 wireless access point',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JZ031A__0.jpg',
+      alt: 'Aruba JZ031A AP-345 wireless access point',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/z/jz031a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/z/jz031a.jpg',
+        fetchedAt: '2026-08-11T10:45:54.354540Z',
+        checksum: 'f85000c4b65b650ddc4cd576946f9b548125e3b0621f79f9bbc9050eada3530d',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JZ031A__1.jpg',
+        alt: 'Aruba JZ031A AP-345 wireless access point',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/j/z/jz031a_-1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/j/z/jz031a_-1.jpg',
+          fetchedAt: '2026-08-11T10:45:55.350641Z',
+          checksum: '7842033b224c7ac2faf9956c99a71e18bf707b8168484d5e667a50c792de057b',
+        },
+      },
+    ],
+    shortDescription:
+      'Le Aruba JZ031A AP-345 wireless access point de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Aruba JZ031A AP-345 wireless access point de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JZ031A ; Pays de fabrication : China ; Marque : Aruba Networks ; Débit de transfert : 3 Gbps to 3.5 Gbps ; Application : Indoor. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JZ031A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Networks',
+      },
+      {
+        label: 'Débit de transfert',
+        value: '3 Gbps to 3.5 Gbps',
+      },
+      {
+        label: 'Application',
+        value: 'Indoor',
+      },
+      {
+        label: 'Antennes',
+        value: 'Internal',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-jz172a',
+    sku: 'JZ172A',
+    name: 'Aruba JZ172A AP-375 wireless access point',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JZ172A__0.jpg',
+      alt: 'Aruba JZ172A AP-375 wireless access point',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe_aruba_ap-375.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe_aruba_ap-375.jpg',
+        fetchedAt: '2026-08-11T10:45:54.918714Z',
+        checksum: '213e66ff19e477cd1d85548e3115967561a84cf9345389d56b1d9b5a0ada5abf',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JZ172A__1.jpg',
+        alt: 'Aruba JZ172A AP-375 wireless access point',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/p/hpe_aruba_ap-375_-1_1.jpg',
+          sourceIdentifier:
+            'https://www.sysllc.ae/media/catalog/product/h/p/hpe_aruba_ap-375_-1_1.jpg',
+          fetchedAt: '2026-08-11T10:45:55.898498Z',
+          checksum: '5d4e68783e720195c0945e9aedc8dadff570c357ab0b08c199a3fa9a7c216c26',
+        },
+      },
+    ],
+    shortDescription:
+      'Le Aruba JZ172A AP-375 wireless access point de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Aruba JZ172A AP-375 wireless access point de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JZ172A ; GTIN/EAN : 0190017207056 ; UPC : 190017207056 ; Pays de fabrication : China ; Marque : Aruba Networks. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JZ172A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017207056',
+      },
+      {
+        label: 'UPC',
+        value: '190017207056',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Networks',
+      },
+      {
+        label: 'Débit de transfert',
+        value: '1.6 Gbps to 2 Gbps',
+      },
+      {
+        label: 'Application',
+        value: 'Outdoor',
+      },
+      {
+        label: 'Antennes',
+        value: 'Internal',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-jx991a',
+    sku: 'JX991A',
+    name: 'Aruba JX991A AP-AC-48V36C 48V 36W power adapter',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JX991A__0.jpg',
+      alt: 'Aruba JX991A AP-AC-48V36C 48V 36W power adapter',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/x/jx991a_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/x/jx991a_1.jpg',
+        fetchedAt: '2026-08-11T10:45:54.927846Z',
+        checksum: 'edf175ca946ad6a1cfcdc3ec74870f58667bb4bac338857f6e618152ce179aa9',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le Aruba JX991A AP-AC-48V36C 48V 36W power adapter de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Aruba JX991A AP-AC-48V36C 48V 36W power adapter de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JX991A ; Pays de fabrication : China ; Marque : Aruba Networks. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JX991A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Networks',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-r4w02a',
+    sku: 'R4W02A',
+    name: 'HPE Networking Instant On (Aruba) AP 22 (RW) 2x2 Wi-Fi 6 Indoor Access Point',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/R4W02A__0.jpg',
+      alt: 'HPE Networking Instant On (Aruba) AP 22 (RW) 2x2 Wi-Fi 6 Indoor Access Point',
+      width: 500,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/a/r/aruba-instant-on-ap22.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/a/r/aruba-instant-on-ap22.jpg',
+        fetchedAt: '2026-08-11T10:45:55.899097Z',
+        checksum: '5523996454182a73530860ede2a369c1c0658f28f12576418c1260f45970b3be',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/R4W02A__1.jpg',
+        alt: 'HPE Networking Instant On (Aruba) AP 22 (RW) 2x2 Wi-Fi 6 Indoor Access Point',
+        width: 500,
+        height: 400,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/a/r/aruba-instant-on-ap22-03.jpg',
+          sourceIdentifier:
+            'https://www.sysllc.ae/media/catalog/product/a/r/aruba-instant-on-ap22-03.jpg',
+          fetchedAt: '2026-08-11T10:45:56.895010Z',
+          checksum: 'fe41a5ee527f9641c2567d69c8f99db94b40f2a1f93f6e2fbb8cb252712ed3c0',
+        },
+      },
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/R4W02A__2.jpg',
+        alt: 'HPE Networking Instant On (Aruba) AP 22 (RW) 2x2 Wi-Fi 6 Indoor Access Point',
+        width: 500,
+        height: 400,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/a/r/aruba-instant-on-ap22-02.jpg',
+          sourceIdentifier:
+            'https://www.sysllc.ae/media/catalog/product/a/r/aruba-instant-on-ap22-02.jpg',
+          fetchedAt: '2026-08-11T10:45:57.858667Z',
+          checksum: '0e201fd3035dc539e8494e5f1548c3eb24e7baf022048a5b8d365fff3e2d6e6c',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HPE Networking Instant On (Aruba) AP 22 (RW) 2x2 Wi-Fi 6 Indoor Access Point de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Networking Instant On (Aruba) AP 22 (RW) 2x2 Wi-Fi 6 Indoor Access Point de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : R4W02A ; GTIN/EAN : 0190017445397 ; UPC : 190017445397 ; ASIN : B08FBMF85D ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'R4W02A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017445397',
+      },
+      {
+        label: 'UPC',
+        value: '190017445397',
+      },
+      {
+        label: 'ASIN',
+        value: 'B08FBMF85D',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+      {
+        label: 'Débit de transfert',
+        value: '1.6 Gbps to 2 Gbps',
+      },
+      {
+        label: 'Application',
+        value: 'Indoor',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-jx952a',
+    sku: 'JX952A',
+    name: 'Hpe Aruba AP-207 IEEE 802.11ac 1.30 Gbit/s Wireless Access Point',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JX952A__0.jpg',
+      alt: 'Hpe Aruba AP-207 IEEE 802.11ac 1.30 Gbit/s Wireless Access Point',
+      width: 750,
+      height: 725,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/5/1/51mkpzqwwwl._ac_sl1000_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/5/1/51mkpzqwwwl._ac_sl1000_.jpg',
+        fetchedAt: '2026-08-11T10:45:58.910181Z',
+        checksum: 'd0ce3c66e676c75d894c135491b74a17db66871897f3477d343807a86ed6e5c7',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le Hpe Aruba AP-207 IEEE 802.11ac 1.30 Gbit/s Wireless Access Point de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Hpe Aruba AP-207 IEEE 802.11ac 1.30 Gbit/s Wireless Access Point de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JX952A ; Marque : Aruba Instant On. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JX952A',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-s1t37a',
+    sku: 'S1T37A',
+    name: 'HPE Networking Instant On Outdoor Access Points AP27 S1T37A',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/S1T37A__0.jpg',
+      alt: 'HPE Networking Instant On Outdoor Access Points AP27 S1T37A',
+      width: 736,
+      height: 618,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/t/e/technical-specs-ap27_736x618.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/t/e/technical-specs-ap27_736x618.jpg',
+        fetchedAt: '2026-08-11T10:45:59.872324Z',
+        checksum: '5289839519b6dd5a152c05ff0cde832efa9641d8790ca7bc712e315d435aa17f',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Networking Instant On Outdoor Access Points AP27 S1T37A de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Networking Instant On Outdoor Access Points AP27 S1T37A de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : S1T37A ; ASIN : B0CWLWBVHD ; Longueur (pouces) : 13 ; Largeur (pouces) : 13 ; Hauteur (pouces) : 7. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'S1T37A',
+      },
+      {
+        label: 'ASIN',
+        value: 'B0CWLWBVHD',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '13',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '13',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-r2x10a',
+    sku: 'R2X10A',
+    name: 'HPE Networking Instant On Access Point AP17',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/R2X10A__0.png',
+      alt: 'HPE Networking Instant On Access Point AP17',
+      width: 736,
+      height: 618,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/a/p/ap17.png',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/a/p/ap17.png',
+        fetchedAt: '2026-08-11T10:46:00.400932Z',
+        checksum: '3ba2fbc5799ac7171c606d9afdce9af7a02726f0569ae19eac7dc79557033c23',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Networking Instant On Access Point AP17 de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Networking Instant On Access Point AP17 de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : R2X10A ; GTIN/EAN : 0 190017 363264 ; UPC : 1 90017 36326 4 ; ASIN : ‎B07V7T29SS ; Longueur (pouces) : 6.1. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'R2X10A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0 190017 363264',
+      },
+      {
+        label: 'UPC',
+        value: '1 90017 36326 4',
+      },
+      {
+        label: 'ASIN',
+        value: '‎B07V7T29SS',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '6.1',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.4',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.7',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.317Z',
+  },
+  {
+    id: 'hpe-r4w01a',
+    sku: 'R4W01A',
+    name: 'HPE Networking Instant On Access Point AP22',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/R4W01A__0.png',
+      alt: 'HPE Networking Instant On Access Point AP22',
+      width: 736,
+      height: 618,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/a/p/ap22.png',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/a/p/ap22.png',
+        fetchedAt: '2026-08-11T10:46:00.856234Z',
+        checksum: '88c5c795ae5e6e01fbabed5c8e1c6b79af4859b3eb449ef78fddc3611d9c13d7',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Networking Instant On Access Point AP22 de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Networking Instant On Access Point AP22 de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : R4W01A ; GTIN/EAN : 0190017445380 ; UPC : 190017445380 ; ASIN : B08VRQBM2V ; Longueur (pouces) : 14.09. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'R4W01A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017445380',
+      },
+      {
+        label: 'UPC',
+        value: '190017445380',
+      },
+      {
+        label: 'ASIN',
+        value: 'B08VRQBM2V',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '14.09',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '10.55',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '8.98',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-m0s90a',
+    sku: 'M0S90A',
+    name: 'HPE M0S90A MSA 8TB 12G SAS 7.2K 3.5in 512e HDD',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/M0S90A__0.jpg',
+      alt: 'HPE M0S90A MSA 8TB 12G SAS 7.2K 3.5in 512e HDD',
+      width: 750,
+      height: 563,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/m/0/m0s90a_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/m/0/m0s90a_1.jpg',
+        fetchedAt: '2026-08-11T10:45:39.678080Z',
+        checksum: 'd129529e21f97c33fe91c9df57ff36a1dfb4f410af93279af4583ef3f783370c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE M0S90A MSA 8TB 12G SAS 7.2K 3.5in 512e HDD de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE M0S90A MSA 8TB 12G SAS 7.2K 3.5in 512e HDD de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : M0S90A ; Pays de fabrication : China ; Marque : Hewlett Packard Enterprise ; Facteur de forme : Large Form Factor ; Interface : SAS. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'M0S90A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+      {
+        label: 'Facteur de forme',
+        value: 'Large Form Factor',
+      },
+      {
+        label: 'Interface',
+        value: 'SAS',
+      },
+      {
+        label: 'Capacité de stockage',
+        value: '8 TB',
+      },
+      {
+        label: 'Charge de travail',
+        value: '7.2K',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-p16926-421',
+    sku: 'P16926-421',
+    name: 'HPE P16926 421 ProLiant ML30 Gen10 E 2224 1P 8GB U S100i 4LFF NHP 350W PS Server',
+    brand: 'HPE',
+    category: 'server-storage',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P16926-421__0.jpg',
+      alt: 'HPE P16926 421 ProLiant ML30 Gen10 E 2224 1P 8GB U S100i 4LFF NHP 350W PS Server',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/1/p16926-421.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/p/1/p16926-421.jpg',
+        fetchedAt: '2026-08-11T10:45:39.953886Z',
+        checksum: '172feb9eaa505c7c763fd282acce27e8aefac085a7f99bab5d60d55f76f6281a',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P16926-421__1.jpg',
+        alt: 'HPE P16926 421 ProLiant ML30 Gen10 E 2224 1P 8GB U S100i 4LFF NHP 350W PS Server',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/p/1/p16926-421-1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/p/1/p16926-421-1.jpg',
+          fetchedAt: '2026-08-11T10:45:41.086141Z',
+          checksum: '3e2a882a33eafe4306a15e622a83717d87dd2177181baa1269fb0aac13d00a3d',
+        },
+      },
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P16926-421__2.jpg',
+        alt: 'HPE P16926 421 ProLiant ML30 Gen10 E 2224 1P 8GB U S100i 4LFF NHP 350W PS Server',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/p/1/p16926-421_-3.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/p/1/p16926-421_-3.jpg',
+          fetchedAt: '2026-08-11T10:45:42.502033Z',
+          checksum: '91492a26c4f48529af29b10c7b0e34f601f0a983a04da573a6dc75ed9a68c1b2',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HPE P16926 421 ProLiant ML30 Gen10 E 2224 1P 8GB U S100i 4LFF NHP 350W PS Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE P16926 421 ProLiant ML30 Gen10 E 2224 1P 8GB U S100i 4LFF NHP 350W PS Server de Hewlett Packard Enterprise est un serveur ou une solution de stockage de données conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P16926-421 ; GTIN/EAN : 0190017367033 ; UPC : 190017367033 ; Longueur (pouces) : 14.5 ; Largeur (pouces) : 6.89. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P16926-421',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017367033',
+      },
+      {
+        label: 'UPC',
+        value: '190017367033',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '14.5',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.89',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '18.7',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-r6m50a',
+    sku: 'R6M50A',
+    name: 'HPE Networking Instant On (Aruba) AP22 Wi-Fi 6 - R6M50A',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/R6M50A__0.jpg',
+      alt: 'HPE Networking Instant On (Aruba) AP22 Wi-Fi 6 - R6M50A',
+      width: 374,
+      height: 374,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/r/6/r6m50a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/r/6/r6m50a.jpg',
+        fetchedAt: '2026-08-11T11:30:12.580814Z',
+        checksum: '7c0d2c17f19cbd307f6cb307948ee7cc94a37504732658761b05bbb2e070937b',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Networking Instant On (Aruba) AP22 Wi-Fi 6 - R6M50A de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Networking Instant On (Aruba) AP22 Wi-Fi 6 - R6M50A de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : R6M50A ; GTIN/EAN : 0190017480190 ; UPC : 190017480190 ; Marque : Aruba Instant On. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'R6M50A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017480190',
+      },
+      {
+        label: 'UPC',
+        value: '190017480190',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-s1t15a',
+    sku: 'S1T15A',
+    name: 'HPE Aruba Instant On AP21 WiFi 6 Access Point - S1T15A',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/S1T15A__0.jpeg',
+      alt: 'HPE Aruba Instant On AP21 WiFi 6 Access Point - S1T15A',
+      width: 474,
+      height: 355,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/1/s1t15a.jpeg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/1/s1t15a.jpeg',
+        fetchedAt: '2026-08-11T11:30:12.856586Z',
+        checksum: '7942dbf4d6ab1e0f2a081fae841321295de52813d12f3905a8cc90e833a82551',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Aruba Instant On AP21 WiFi 6 Access Point - S1T15A de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Aruba Instant On AP21 WiFi 6 Access Point - S1T15A de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : S1T15A ; GTIN/EAN : 0190017674711 ; UPC : 190017674711 ; Pays de fabrication : China ; Marque : Aruba Instant On. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'S1T15A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017674711',
+      },
+      {
+        label: 'UPC',
+        value: '190017674711',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-jw088a',
+    sku: 'JW088A',
+    name: 'Aruba JW088A SFP mini-GBIC transceiver module GigE',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/JW088A__0.jpg',
+      alt: 'Aruba JW088A SFP mini-GBIC transceiver module GigE',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/w/jw088a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/j/w/jw088a.jpg',
+        fetchedAt: '2026-08-11T10:46:01.801141Z',
+        checksum: '83cbe4e57ab34c81eeba7ad010d48202980ad35a426eecdbf10740b253ce0c34',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le Aruba JW088A SFP mini-GBIC transceiver module GigE de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le Aruba JW088A SFP mini-GBIC transceiver module GigE de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : JW088A ; Pays de fabrication : China ; Marque : Aruba Networks. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: 'JW088A',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Networks',
+      },
+    ],
+    attributes: {
+      chassisFormat: 'Compact',
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-865414-b21',
+    sku: '865414-B21',
+    name: 'HPE 800W Flex Slot Platinum Hot Plug Low Halogen Power Supply Kit',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/865414-B21__0.jpg',
+      alt: 'HPE 800W Flex Slot Platinum Hot Plug Low Halogen Power Supply Kit',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-800w-fs-plat-ht-plg-lh-pwr-sply-kit-865414-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-800w-fs-plat-ht-plg-lh-pwr-sply-kit-865414-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:01.825072Z',
+        checksum: '847b8c2eda0542a24f12783deea49187a5cfd41fd543cde3f2d1a6613a9760ad',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE 800W Flex Slot Platinum Hot Plug Low Halogen Power Supply Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE 800W Flex Slot Platinum Hot Plug Low Halogen Power Supply Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 865414-B21 ; GTIN/EAN : 0190017072685 ; UPC : 190017072685 ; ASIN : B0743Y41F4 ; Longueur (pouces) : 7.5. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: '865414-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017072685',
+      },
+      {
+        label: 'UPC',
+        value: '190017072685',
+      },
+      {
+        label: 'ASIN',
+        value: 'B0743Y41F4',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '12.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '4',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-455883-b21',
+    sku: '455883-B21',
+    name: 'HPE BladeSystem c Class 10Gb SFP SR Transceiver',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/455883-B21__0.jpg',
+      alt: 'HPE BladeSystem c Class 10Gb SFP SR Transceiver',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-bladesystem-c-class-10gb--transceiver-455883-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-bladesystem-c-class-10gb--transceiver-455883-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:02.351241Z',
+        checksum: '5f413fb61eb3eb19f1b235d0282e5e81ba9f2026b29f23be0445690c7b4c884d',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE BladeSystem c Class 10Gb SFP SR Transceiver de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE BladeSystem c Class 10Gb SFP SR Transceiver de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 455883-B21 ; GTIN/EAN : 0883585354641 ; UPC : 883585354641 ; ASIN : B00CMB96TQ ; Longueur (pouces) : 2.19. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: '455883-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0883585354641',
+      },
+      {
+        label: 'UPC',
+        value: '883585354641',
+      },
+      {
+        label: 'ASIN',
+        value: 'B00CMB96TQ',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '2.19',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '0.54',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '0.47',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-p9k37a',
+    sku: 'P9K37A',
+    name: 'HPE 42U 600x1075 Ent G2 Pallet Rack',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P9K37A__0.jpg',
+      alt: 'HPE 42U 600x1075 Ent G2 Pallet Rack',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-42u-600x1075-ent-g2-pallet-rack-p9k37a-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-42u-600x1075-ent-g2-pallet-rack-p9k37a-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:02.753138Z',
+        checksum: '5edaed81374ca7449731e1f58e61de62cb86fe9224155063108300872e8d94ab',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE 42U 600x1075 Ent G2 Pallet Rack de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE 42U 600x1075 Ent G2 Pallet Rack de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P9K37A ; GTIN/EAN : 0190017079240 ; UPC : 190017079240 ; ASIN : ‎B01MRS81I5 ; Longueur (pouces) : 78.98. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P9K37A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017079240',
+      },
+      {
+        label: 'UPC',
+        value: '190017079240',
+      },
+      {
+        label: 'ASIN',
+        value: '‎B01MRS81I5',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '78.98',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '44.30',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '23.54',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-p9l15a',
+    sku: 'P9L15A',
+    name: 'HPE G2 Rack 42U 1075mm Side Panel Kit',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/P9L15A__0.jpg',
+      alt: 'HPE G2 Rack 42U 1075mm Side Panel Kit',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-2-rack-42u-1075mm-side-panel-kit-p9l15a-in-dubai-uae_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-2-rack-42u-1075mm-side-panel-kit-p9l15a-in-dubai-uae_1.jpg',
+        fetchedAt: '2026-08-11T10:46:02.766200Z',
+        checksum: '7fe96c63e508f1a843b3067d16602bae99c13a6578432ff3f868253729f70ee0',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE G2 Rack 42U 1075mm Side Panel Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE G2 Rack 42U 1075mm Side Panel Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : P9L15A ; GTIN/EAN : 0190017086446 ; UPC : 190017086446 ; ASIN : B01NCF8M0D ; Longueur (pouces) : 81. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: 'P9L15A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017086446',
+      },
+      {
+        label: 'UPC',
+        value: '190017086446',
+      },
+      {
+        label: 'ASIN',
+        value: 'B01NCF8M0D',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '81',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '39',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '3',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-257414-b21',
+    sku: '257414-B21',
+    name: 'HPE 10000 Rack Roof Mount Fan 220V Kit',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/257414-B21__0.jpg',
+      alt: 'HPE 10000 Rack Roof Mount Fan 220V Kit',
+      width: 400,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hp_10000_rack_roof_mount_fan_220v_kit-257414-b21-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hp_10000_rack_roof_mount_fan_220v_kit-257414-b21-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:03.331080Z',
+        checksum: 'c1d328dc16d7c0debcdf89cef110b859f6916be38482f06b7aecdfcf065162ce',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE 10000 Rack Roof Mount Fan 220V Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE 10000 Rack Roof Mount Fan 220V Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 257414-B21 ; GTIN/EAN : 0720591188344 ; UPC : 720591188344 ; Marque : Hewlett Packard Enterprise. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: '257414-B21',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0720591188344',
+      },
+      {
+        label: 'UPC',
+        value: '720591188344',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-q1f52a',
+    sku: 'Q1F52A',
+    name: 'HPE T1500 G5 INTL Tower UPS',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q1F52A__0.jpg',
+      alt: 'HPE T1500 G5 INTL Tower UPS',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-t1500-g5-intl-tower-ups-q1f52a-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-t1500-g5-intl-tower-ups-q1f52a-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:03.757827Z',
+        checksum: '51e2ab4acd81463b7393ede6a3f33e53f51ec09f886a8ef830217fa57ce630d1',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE T1500 G5 INTL Tower UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE T1500 G5 INTL Tower UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q1F52A ; GTIN/EAN : 0190017130101 ; UPC : 190017130101 ; ASIN : B07DZ2J1PH ; Longueur (pouces) : 5.9. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: 'Q1F52A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017130101',
+      },
+      {
+        label: 'UPC',
+        value: '190017130101',
+      },
+      {
+        label: 'ASIN',
+        value: 'B07DZ2J1PH',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '5.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '16.1',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '8.3',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
     ],
     attributes: {
       chassisFormat: 'Tower',
       formFactor: 'tower',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 5,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['Energy Star'],
-    compatibility: ['Windows Server 2025', 'VMware vSphere 8', 'Red Hat Enterprise Linux 9'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 22.5,
-    dimensionsCm: { height: 43.0, width: 17.5, depth: 55.0 },
-    isFeatured: false,
-    publishedAt: '2026-03-10T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl325-gen11',
-    sku: 'HPE-DL325-G11',
-    name: 'HPE ProLiant DL325 Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl325-gen11.svg",
-      alt: "HPE ProLiant DL325 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.603Z",
-        checksum: "304fc1f6426945ef0ef7171cca8c6994356aea96bc50a1c492e9113c79145758",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 1U mono-processeur AMD EPYC 4004, idéal pour les workloads virtualisés d\'entrée et moyenne gamme.',
-    fullDescription:
-      'Le HPE ProLiant DL325 Gen11 est un serveur 1U économique basé sur l\'architecture AMD EPYC série 4004, offrant d\'excellentes performances par cœur pour les charges de travail virtualisées et les applications métier. Avec jusqu\'à 256 Go de mémoire DDR5-4800 et quatre baies SFF hot-plug, il constitue une solution équilibrée pour les PME et les filiales.',
-    specs: [
-      { label: 'Format', value: '1U Rackmount' },
-      { label: 'Processeur', value: 'AMD EPYC 4244P (3.8 GHz, 6 cœurs)' },
-      { label: 'Mémoire', value: '32 Go DDR5-4800 (ext. 256 Go)' },
-      { label: 'Stockage', value: '4x 2.5" SFF SAS/SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 500W' },
-      { label: 'Réseau', value: '2x 1GbE, 1x iLO 6' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 15,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: ['Energy Star'],
-    compatibility: ['VMware vSphere 8', 'Microsoft Hyper-V 2025'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 9.5,
-    dimensionsCm: { height: 4.3, width: 44.5, depth: 62.0 },
-    isFeatured: false,
-    publishedAt: '2026-03-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl345-gen11',
-    sku: 'HPE-DL345-G11',
-    name: 'HPE ProLiant DL345 Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl345-gen11.svg",
-      alt: "HPE ProLiant DL345 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.603Z",
-        checksum: "bc04775f5cd4148c2e549404ca1a518cab780454243918dce109d6607195e7b6",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 1U mono-processeur AMD EPYC 4004, jusqu\'à 8 baies SFF, optimisé pour le stockage local dense.',
-    fullDescription:
-      'Le HPE ProLiant DL345 Gen11 est un serveur 1U optimisé pour le stockage, idéal pour les déploiements nécessitant une capacité locale importante dans un format compact. Avec son processeur AMD EPYC série 4004, jusqu\'à 512 Go de mémoire DDR5-4800 et huit baies SFF hot-plug, il convient parfaitement aux serveurs de fichiers, bases de données de petite taille et infrastructures virtualisées.',
-    specs: [
-      { label: 'Format', value: '1U Rackmount' },
-      { label: 'Processeur', value: 'AMD EPYC 4344P (3.8 GHz, 8 cœurs)' },
-      { label: 'Mémoire', value: '64 Go DDR5-4800 (ext. 512 Go)' },
-      { label: 'Stockage', value: '8x 2.5" SFF SAS/SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 800W' },
-      { label: 'RAID', value: 'HPE MR408i-o' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 10,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: ['Energy Star', '80 PLUS Gold'],
-    compatibility: ['VMware vSphere 8', 'Microsoft Windows Server 2025'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 11.5,
-    dimensionsCm: { height: 4.3, width: 44.5, depth: 65.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-01T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl365-gen11',
-    sku: 'HPE-DL365-G11',
-    name: 'HPE ProLiant DL365 Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl365-gen11.svg",
-      alt: "HPE ProLiant DL365 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.603Z",
-        checksum: "3403a18b8a0f6ee40e348172e1e77fdaf037dfce06627925a4bac3d7fbd3998d",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 1U mono-processeur AMD EPYC 9004, performances élevées pour les charges de travail exigeantes.',
-    fullDescription:
-      'Le HPE ProLiant DL365 Gen11 est un serveur 1U haute performance basé sur l\'architecture AMD EPYC série 9004, offrant jusqu\'à 96 cœurs et des performances de calcul exceptionnelles. Avec jusqu\'à 1 To de mémoire DDR5-4800 et dix baies SFF hot-plug, il est idéal pour les bases de données volumineuses, l\'analyse de données et les environnements virtualisés denses.',
-    specs: [
-      { label: 'Format', value: '1U Rackmount' },
-      { label: 'Processeur', value: 'AMD EPYC 9224 (2.5 GHz, 24 cœurs)' },
-      { label: 'Mémoire', value: '128 Go DDR5-4800 (ext. 1 To)' },
-      { label: 'Stockage', value: '10x 2.5" SFF SAS/NVMe hot-plug' },
-      { label: 'Alimentation', value: '2x 1000W redondante' },
-      { label: 'RAID', value: 'HPE MR416i-p' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 7,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['Energy Star', '80 PLUS Platinum'],
-    compatibility: ['VMware vSphere 8', 'Red Hat Enterprise Linux 9', 'SUSE Linux Enterprise Server 15'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 13.8,
-    dimensionsCm: { height: 4.3, width: 44.5, depth: 67.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-10T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl385-gen11',
-    sku: 'HPE-DL385-G11',
-    name: 'HPE ProLiant DL385 Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl385-gen11.svg",
-      alt: "HPE ProLiant DL385 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.604Z",
-        checksum: "dce619834975f782dcee4e57ab7107b8850df2bf2cdf5a30cb684bdad45c4191",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 2U bi-processeur AMD EPYC 9004, performances maximales pour les environnements virtualisés et calcul intensif.',
-    fullDescription:
-      'Le HPE ProLiant DL385 Gen11 est le serveur AMD bi-processeur le plus puissant de HPE, embarquant deux processeurs AMD EPYC série 9004 pour un total allant jusqu\'à 192 cœurs. Il supporte jusqu\'à 3 To de mémoire DDR5-4800 et vingt-quatre baies SFF NVMe, ce qui en fait la plateforme idéale pour les charges de travail virtualisées denses, les bases de données volumineuses et le calcul haute performance.',
-    specs: [
-      { label: 'Format', value: '2U Rackmount' },
-      { label: 'Processeur', value: '2x AMD EPYC 9354 (3.25 GHz, 32 cœurs)' },
-      { label: 'Mémoire', value: '256 Go DDR5-4800 (ext. 3 To)' },
-      { label: 'Stockage', value: '24x 2.5" SFF NVMe hot-plug' },
-      { label: 'Alimentation', value: '2x 1600W redondante' },
-      { label: 'RAID', value: 'HPE MR416i-p + NVMe SW RAID' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['Energy Star', '80 PLUS Platinum', 'AMD EPYC Ready'],
-    compatibility: ['VMware vSphere 8', 'Red Hat Enterprise Linux 9', 'Nutanix AHV'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 25.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 72.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-dl145-gen11',
-    sku: 'HPE-DL145-G11',
-    name: 'HPE ProLiant DL145 Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-dl145-gen11.svg",
-      alt: "HPE ProLiant DL145 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.604Z",
-        checksum: "0dfc27e6078354d901770159308603a5b0bbb1c87fed7f52da91c21ada64137b",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur rack 1U mono-processeur AMD EPYC 4004, ultra-compact et économique pour les déploiements en périphérie.',
-    fullDescription:
-      'Le HPE ProLiant DL145 Gen11 est un serveur d\'entrée de gamme 1U compact et abordable, idéal pour les déploiements en périphérie réseau et les petites infrastructures. Basé sur un processeur AMD EPYC série 4004, il supporte jusqu\'à 128 Go de mémoire DDR5-4800 et deux baies LFF hot-plug, offrant un équilibre parfait entre coût et performance pour les applications légères.',
-    specs: [
-      { label: 'Format', value: '1U Rackmount' },
-      { label: 'Processeur', value: 'AMD EPYC 4124P (3.0 GHz, 4 cœurs)' },
-      { label: 'Mémoire', value: '16 Go DDR5-4800 (ext. 128 Go)' },
-      { label: 'Stockage', value: '2x 3.5" LFF SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 350W' },
-      { label: 'Réseau', value: '2x 1GbE' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 2,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: ['Windows Server 2025', 'Red Hat Enterprise Linux 9'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 7.5,
-    dimensionsCm: { height: 4.3, width: 44.5, depth: 55.0 },
-    isFeatured: false,
-    publishedAt: '2026-05-01T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-microserver-gen11',
-    sku: 'HPE-MS-G11',
-    name: 'HPE ProLiant MicroServer Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-microserver-gen11.svg",
-      alt: "HPE ProLiant MicroServer Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.605Z",
-        checksum: "f5586fd906cd6bae59ad7642aac2ec3c155f477699bf2911c5d85f2ace75b312",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur compact silencieux idéal pour les petites entreprises, le stockage domestique et les applications de télétravail.',
-    fullDescription:
-      'Le HPE ProLiant MicroServer Gen11 est un serveur d\'entrée de gamme ultra-compact et silencieux, parfait pour les petites entreprises et le travail à distance. Il intègre un processeur Intel Xeon E-2434, jusqu\'à 64 Go de mémoire DDR5 ECC, et quatre baies LFF hot-plug pour le stockage. Sa compacité et son faible niveau sonore permettent de l\'installer discrètement dans n\'importe quel environnement de bureau.',
-    specs: [
-      { label: 'Format', value: 'Compact (Mini-Tour)' },
-      { label: 'Processeur', value: 'Intel Xeon E-2434 (3.4 GHz, 4 cœurs)' },
-      { label: 'Mémoire', value: '16 Go DDR5-4800 ECC (ext. 64 Go)' },
-      { label: 'Stockage', value: '4x 3.5" LFF SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 250W externe' },
-      { label: 'Réseau', value: '2x 2.5GbE' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 18,
-      leadTimeDays: 2,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['Energy Star'],
-    compatibility: ['Windows Server 2025', 'Ubuntu Server 24.04 LTS'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 5.2,
-    dimensionsCm: { height: 23.0, width: 23.0, depth: 24.5 },
-    isFeatured: false,
-    publishedAt: '2026-05-10T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-ml110-gen11',
-    sku: 'HPE-ML110-G11',
-    name: 'HPE ProLiant ML110 Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-ml110-gen11.svg",
-      alt: "HPE ProLiant ML110 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.605Z",
-        checksum: "ec81fb8cfe83f396a2bf750de4da42d41c34cb8cb09131e4c6addcb10f925154",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur tour d\'entrée de gamme mono-processeur Intel Xeon E, idéal pour les PME et les applications métier essentielles.',
-    fullDescription:
-      'Le HPE ProLiant ML110 Gen11 est un serveur tour économique conçu pour les petites et moyennes entreprises. Il accueille un processeur Intel Xeon E-2434, jusqu\'à 128 Go de mémoire DDR5 ECC, et quatre baies LFF hot-plug. Son format tour silencieux et son prix compétitif en font une excellente solution pour les serveurs de fichiers, l\'hébergement d\'applications métier et la messagerie.',
-    specs: [
-      { label: 'Format', value: 'Tour (4U)' },
-      { label: 'Processeur', value: 'Intel Xeon E-2456 (3.3 GHz, 6 cœurs)' },
-      { label: 'Mémoire', value: '32 Go DDR5-4800 ECC (ext. 128 Go)' },
-      { label: 'Stockage', value: '4x 3.5" LFF SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 550W' },
-      { label: 'RAID', value: 'HPE MR408i-o' },
-    ],
-    attributes: {
-      chassisFormat: 'Tower',
-      formFactor: 'tower',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 14,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site',
-      supportTier: 'standard',
-    },
-    certifications: ['Energy Star'],
-    compatibility: ['Windows Server 2025', 'Ubuntu Server 24.04 LTS', 'VMware vSphere 8'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 15.0,
-    dimensionsCm: { height: 36.0, width: 17.5, depth: 48.0 },
-    isFeatured: false,
-    publishedAt: '2026-05-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-proliant-ml30-gen11',
-    sku: 'HPE-ML30-G11',
-    name: 'HPE ProLiant ML30 Gen11',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-proliant-ml30-gen11.svg",
-      alt: "HPE ProLiant ML30 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.605Z",
-        checksum: "f8d3897170abcb56c050894ad0d988f07065c9c1bd760d0b2d7584344cbf5a7f",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur tour d\'entrée de gamme compact, idéal pour les très petites entreprises et les premiers déploiements serveur.',
-    fullDescription:
-      'Le HPE ProLiant ML30 Gen11 est le serveur tour le plus abordable de HPE, parfait pour les très petites entreprises qui font leurs premiers pas dans l\'infrastructure serveur. Équipé d\'un processeur Intel Xeon E-2414, de 8 Go de mémoire DDR5 ECC et de quatre baies LFF, il offre des fonctionnalités serveur essentielles à un prix imbattable, avec la fiabilité légendaire de HPE.',
-    specs: [
-      { label: 'Format', value: 'Mini-Tour' },
-      { label: 'Processeur', value: 'Intel Xeon E-2414 (2.6 GHz, 4 cœurs)' },
-      { label: 'Mémoire', value: '8 Go DDR5-4800 ECC (ext. 64 Go)' },
-      { label: 'Stockage', value: '4x 3.5" LFF SATA hot-plug' },
-      { label: 'Alimentation', value: '1x 350W' },
-      { label: 'Réseau', value: '2x 1GbE' },
-    ],
-    attributes: {
-      chassisFormat: 'Tower',
-      formFactor: 'tower',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 2,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: ['Windows Server 2025', 'Ubuntu Server 24.04 LTS'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 10.0,
-    dimensionsCm: { height: 28.5, width: 17.0, depth: 38.5 },
-    isFeatured: false,
-    publishedAt: '2026-06-01T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-alletra-mp-x10000',
-    sku: 'HPE-ALLETRA-X10000',
-    name: 'HPE Alletra MP X10000',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-alletra-mp-x10000.svg",
-      alt: "HPE Alletra MP X10000",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.606Z",
-        checksum: "81fc67d6ecbc0e9021fe593631f4b9c5c907b7d744de2ab7930629fd7c3f85b8",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage scale-out tout flash NVMe, architecture multi-protocoles pour les datacenters cloud-native et la virtualisation.',
-    fullDescription:
-      'Le HPE Alletra MP X10000 est une baie de stockage tout flash NVMe de nouvelle génération, architecturée pour le cloud hybride et les environnements de données modernes. Avec son architecture scale-out, elle peut atteindre une capacité utile de plusieurs pétaoctets tout en maintenant des performances de latence ultra-faible et un débit soutenu. Elle supporte les protocoles NVMe-oF, FC, iSCSI et S3, ce qui la rend polyvalente pour tous les cas d\'usage.',
-    specs: [
-      { label: 'Type', value: 'Stockage tout flash scale-out' },
-      { label: 'Capacité', value: '1.8 Po brut (ext. 15 Po cluster)' },
-      { label: 'Contrôleurs', value: '4-16 (architecture MP)' },
-      { label: 'Cache', value: '512 Go par contrôleur' },
-      { label: 'Protocoles', value: 'NVMe-oF, FC-NVMe, iSCSI, NFS, S3' },
-      { label: 'Disques', value: 'NVMe U.2/U.3 hot-plug' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['VMware vSAN Ready', 'SDS Ready'],
-    compatibility: ['VMware vSphere', 'Red Hat OpenShift', 'Kubernetes CSI', 'Microsoft SQL Server'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 28.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 75.0 },
-    isFeatured: true,
-    publishedAt: '2026-06-10T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-alletra-4110',
-    sku: 'HPE-ALLETRA-4110',
-    name: 'HPE Alletra 4110',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-alletra-4110.svg",
-      alt: "HPE Alletra 4110",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.606Z",
-        checksum: "fd430d1183d48af128981d58544a26c1491526194038cb6a61b2df3a61dbfe32",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage tout flash NVMe d\'entrée de gamme, performances élevées pour les workloads virtualisés et bases de données.',
-    fullDescription:
-      'Le HPE Alletra 4110 est une baie de stockage tout flash compacte conçue pour les organisations qui recherchent des performances NVMe à un prix accessible. Avec ses contrôleurs actif-actif, son cache important et son support des protocoles FC et iSCSI, elle est idéale pour la virtualisation, les bases de données relationnelles et les applications métier critiques.',
-    specs: [
-      { label: 'Type', value: 'Stockage tout flash NVMe' },
-      { label: 'Capacité', value: '700 To brut (ext. 2 Po)' },
-      { label: 'Contrôleurs', value: '2 (actif-actif)' },
-      { label: 'Cache', value: '256 Go par contrôleur' },
-      { label: 'Protocoles', value: 'FC 32Gb, iSCSI 25Gb, NVMe-oF' },
-      { label: 'Disques', value: '12x NVMe U.2' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 5,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['VMware vSAN Ready'],
-    compatibility: ['VMware vSphere', 'Microsoft Hyper-V', 'Oracle Database'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 22.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 65.0 },
-    isFeatured: false,
-    publishedAt: '2026-06-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-alletra-4120',
-    sku: 'HPE-ALLETRA-4120',
-    name: 'HPE Alletra 4120',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-alletra-4120.svg",
-      alt: "HPE Alletra 4120",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.607Z",
-        checksum: "d00633fedaa522a8c2760890c77f0dee0b1ead1e429b1f741e77dbf475e18fb2",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage tout flash NVMe haute capacité, performances constantes pour les environnements virtualisés exigeants.',
-    fullDescription:
-      'Le HPE Alletra 4120 est une baie tout flash NVMe de milieu de gamme offrant un équilibre optimal entre capacité et performance. Avec ses contrôleurs actif-actif et son cache de 512 Go, elle garantit des latences inférieures à la milliseconde même sous charge. Elle est parfaitement adaptée aux bases de données OLTP, à la consolidation de serveurs et aux environnements VDI à grande échelle.',
-    specs: [
-      { label: 'Type', value: 'Stockage tout flash NVMe' },
-      { label: 'Capacité', value: '1.4 Po brut (ext. 4 Po)' },
-      { label: 'Contrôleurs', value: '2 (actif-actif)' },
-      { label: 'Cache', value: '512 Go par contrôleur' },
-      { label: 'Protocoles', value: 'FC 32Gb, iSCSI 25Gb, NVMe-oF' },
-      { label: 'Disques', value: '24x NVMe U.2/U.3' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 12,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['VMware vSAN Ready', 'SAP HANA Certified'],
-    compatibility: ['VMware vSphere', 'SAP HANA', 'Microsoft SQL Server 2025'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 24.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 68.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-01T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-alletra-5010',
-    sku: 'HPE-ALLETRA-5010',
-    name: 'HPE Alletra 5010',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-alletra-5010.svg",
-      alt: "HPE Alletra 5010",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.607Z",
-        checksum: "8ab71fd629354b6c63315ed53e104cee57467a853c726d6b609f164813095136",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage hybride optimisée pour les charges de travail généralistes, alliant performance flash et capacité disque.',
-    fullDescription:
-      'Le HPE Alletra 5010 est une baie de stockage hybride qui combine des disques SSD pour les performances et des disques NL-SAS pour la capacité. Elle est idéale pour les charges de travail mixtes où un équilibre entre coût et performance est recherché. Ses contrôleurs actif-actif et sa gestion intelligente des données via HPE InfoSight garantissent une fiabilité et des performances optimales.',
-    specs: [
-      { label: 'Type', value: 'Stockage hybride' },
-      { label: 'Capacité', value: '1.2 Po brut' },
-      { label: 'Contrôleurs', value: '2 (actif-actif)' },
-      { label: 'Cache', value: '128 Go par contrôleur' },
-      { label: 'Protocoles', value: 'FC 16/32Gb, iSCSI 10/25Gb, NFS' },
-      { label: 'Disques', value: '12x SSD + 12x NL-SAS' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 6,
-      leadTimeDays: 8,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: ['VMware vSAN Ready'],
-    compatibility: ['VMware vSphere', 'Microsoft Hyper-V', 'Citrix XenServer'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 20.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 63.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-10T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-alletra-5030',
-    sku: 'HPE-ALLETRA-5030',
-    name: 'HPE Alletra 5030',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-alletra-5030.svg",
-      alt: "HPE Alletra 5030",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.608Z",
-        checksum: "4a6f2bc9c61b9ed89ac557e80d33fc04429a26f35136c45290fa7447227ab53d",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage hybride haute capacité pour la consolidation et les sauvegardes, avec optimisation automatique des données.',
-    fullDescription:
-      'Le HPE Alletra 5030 est une baie de stockage hybride grande capacité conçue pour la consolidation de données et les charges de travail secondaires. Avec vingt-quatre baies LFF supportant des disques NL-SAS haute capacité couplés à un cache SSD de 128 Go, elle offre un excellent rapport capacité/coût pour les sauvegardes, l\'archivage et les serveurs de fichiers d\'entreprise.',
-    specs: [
-      { label: 'Type', value: 'Stockage hybride grande capacité' },
-      { label: 'Capacité', value: '2.4 Po brut' },
-      { label: 'Contrôleurs', value: '2 (actif-actif)' },
-      { label: 'Cache', value: '128 Go par contrôleur' },
-      { label: 'Protocoles', value: 'FC 16Gb, iSCSI 10Gb, NFS, CIFS' },
-      { label: 'Disques', value: '2x SSD cache + 24x NL-SAS 3.5"' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: ['VMware vSphere', 'Veeam Backup & Replication', 'CommVault'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 26.5,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 72.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-msa-2072',
-    sku: 'HPE-MSA-2072',
-    name: 'HPE MSA 2072',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-msa-2072.svg",
-      alt: "HPE MSA 2072",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.608Z",
-        checksum: "015b32f36d9709081792a02c3a6795a52d23704b6580fb12a5fea22a0ea56223",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage SAN d\'entrée de gamme, solution abordable pour les PME avec protocoles FC et iSCSI.',
-    fullDescription:
-      'Le HPE MSA 2072 est une baie de stockage SAN d\'entrée de gamme conçue pour les petites et moyennes entreprises. Elle offre des fonctionnalités de stockage avancées à un prix accessible, avec des contrôleurs redondants, un cache de 8 Go, et le support des protocoles FC et iSCSI. Sa simplicité de gestion et sa fiabilité en font une excellente première baie SAN pour les PME.',
-    specs: [
-      { label: 'Type', value: 'Stockage SAN d\'entrée de gamme' },
-      { label: 'Capacité', value: '720 To brut' },
-      { label: 'Contrôleurs', value: '2 (actif-actif)' },
-      { label: 'Cache', value: '8 Go par contrôleur' },
-      { label: 'Protocoles', value: 'FC 16Gb, iSCSI 10Gb' },
-      { label: 'Disques', value: '12x 3.5" LFF SAS/NL-SAS' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 8,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: ['Windows Server', 'VMware vSphere', 'Linux'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 18.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 58.0 },
-    isFeatured: false,
-    publishedAt: '2026-08-01T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-storeonce-3760',
-    sku: 'HPE-STOREONCE-3760',
-    name: 'HPE StoreOnce 3760',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-storeonce-3760.svg",
-      alt: "HPE StoreOnce 3760",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.609Z",
-        checksum: "34d97f1e1dcde8be1c24040ae21f78e6f8957a16eee2d561725b5aaae97c13a4",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Appliance de sauvegarde avec déduplication intégrée, solution compacte pour les environnements de sauvegarde des PME.',
-    fullDescription:
-      'Le HPE StoreOnce 3760 est une appliance de sauvegarde compacte avec déduplication à la source intégrée, conçue pour les PME et les filiales. Elle offre un rapport de déduplication allant jusqu\'à 15:1, réduisant considérablement l\'espace de stockage nécessaire pour les sauvegardes. Son intégration avec les principaux éditeurs de logiciels de sauvegarde en fait une solution clé en main pour la protection des données.',
-    specs: [
-      { label: 'Type', value: 'Appliance de sauvegarde dédupliquée' },
-      { label: 'Capacité utile', value: '96 To (720 To avec dédup 15:1)' },
-      { label: 'Débit ingestion', value: '3.6 To/h' },
-      { label: 'Déduplication', value: 'Jusqu\'à 15:1' },
-      { label: 'Protocoles', value: 'NFS, CIFS, OST, D2D' },
-      { label: 'Formats baies', value: '8x 3.5" LFF SAS' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 5,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
-    },
-    certifications: ['Veeam Ready'],
-    compatibility: ['Veeam Backup & Replication', 'Veritas NetBackup', 'CommVault'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 16.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 55.0 },
-    isFeatured: false,
-    publishedAt: '2026-08-10T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-storeonce-5260',
-    sku: 'HPE-STOREONCE-5260',
-    name: 'HPE StoreOnce 5260',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-storeonce-5260.svg",
-      alt: "HPE StoreOnce 5260",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.609Z",
-        checksum: "2df2d3f62b22ff5112e72df5ea77b42e76db9022de477cdec18931238aaaf31f",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Appliance de sauvegarde haute capacité avec déduplication, solution évolutive pour les datacenters d\'entreprise.',
-    fullDescription:
-      'Le HPE StoreOnce 5260 est une appliance de sauvegarde haute performance conçue pour les grands comptes et les datacenters. Avec sa capacité utile de 192 To et un débit d\'ingestion de 7.2 To/h, elle permet de protéger efficacement les données critiques de l\'entreprise. Sa déduplication catalytique brevetée atteint des ratios de 20:1, et son architecture évolutive permet d\'atteindre plusieurs pétaoctets en cluster.',
-    specs: [
-      { label: 'Type', value: 'Appliance de sauvegarde haute capacité' },
-      { label: 'Capacité utile', value: '192 To (3.8 Po avec dédup 20:1)' },
-      { label: 'Débit ingestion', value: '7.2 To/h' },
-      { label: 'Déduplication', value: 'Jusqu\'à 20:1' },
-      { label: 'Protocoles', value: 'NFS, CIFS, OST, D2D, FC' },
-      { label: 'Formats baies', value: '24x 3.5" LFF SAS' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['Veeam Ready', 'Veritas Ready'],
-    compatibility: ['Veeam Backup & Replication', 'Veritas NetBackup', 'CommVault', 'Dell EMC Data Domain'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 24.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 72.0 },
-    isFeatured: false,
-    publishedAt: '2026-08-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-primera-a670',
-    sku: 'HPE-PRIMERA-A670',
-    name: 'HPE Primera A670',
-    brand: 'HPE',
-    category: 'server-storage',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-primera-a670.svg",
-      alt: "HPE Primera A670",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.610Z",
-        checksum: "2cdb7d016955bf65a5378add9066d2530c4311328d07f02393aa48733d19ed13",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage mission-critical tout flash, disponibilité 99.9999% pour les applications les plus exigeantes.',
-    fullDescription:
-      'Le HPE Primera A670 est une baie de stockage tout flash de classe entreprise conçue pour les applications les plus critiques, offrant une disponibilité de 99.9999% grâce à son architecture à tolérance de panne intégrale. Elle supporte jusqu\'à 4.6 Po de capacité flash NVMe, avec des contrôleurs quad actifs et un cache de 1 To. Idéale pour les bases de données SAP HANA, Oracle Exadata et les environnements de virtualisation massive.',
-    specs: [
-      { label: 'Type', value: 'Stockage mission-critical tout flash' },
-      { label: 'Capacité', value: '4.6 Po brut' },
-      { label: 'Contrôleurs', value: '4 (quad actif)' },
-      { label: 'Cache', value: '1 To par contrôleur' },
-      { label: 'Protocoles', value: 'FC 32Gb, NVMe-oF, iSCSI 25Gb, FICON' },
-      { label: 'Disponibilité', value: '99.9999%' },
-    ],
-    attributes: {
-      chassisFormat: '4U',
-      rackUnits: 4,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 2,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'mission-critical',
+      durationLabel: 'Sans garantie',
     },
-    certifications: ['SAP HANA Certified', 'VMware vSAN Ready'],
-    compatibility: ['SAP HANA', 'Oracle Database 23c', 'IBM Mainframe FICON', 'VMware vSphere'],
+    certifications: [],
+    compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 62.0,
-    dimensionsCm: { height: 17.6, width: 44.5, depth: 85.0 },
     isFeatured: false,
-    publishedAt: '2026-09-01T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.318Z',
   },
   {
-    id: 'hpe-nimble-hf40',
-    sku: 'HPE-NIMBLE-HF40',
-    name: 'HPE Nimble HF40',
+    id: 'hpe-q1l87a',
+    sku: 'Q1L87A',
+    name: 'HPE R T3000 G5 HV INTL UPS',
     brand: 'HPE',
-    category: 'server-storage',
+    category: 'datacenter',
     primaryImage: {
-      url: "/assets/images/branded/hpe-nimble-hf40.svg",
-      alt: "HPE Nimble HF40",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q1L87A__0.jpg',
+      alt: 'HPE R T3000 G5 HV INTL UPS',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.610Z",
-        checksum: "5470714fc47656bae268d25bbddc0089c2472cf0131b1c069891bfb7bb7dd8ff",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-rt3000_g5_hv_intl_ups-q1l87a-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-rt3000_g5_hv_intl_ups-q1l87a-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:03.746826Z',
+        checksum: '51e2ab4acd81463b7393ede6a3f33e53f51ec09f886a8ef830217fa57ce630d1',
       },
     },
     gallery: [],
     shortDescription:
-      'Baie de stockage adaptive flash avec cache SSD et disques rotatifs, optimisée par l\'IA prédictive HPE InfoSight.',
+      "Le HPE R T3000 G5 HV INTL UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
     fullDescription:
-      'Le HPE Nimble HF40 est une baie de stockage adaptive flash qui combine intelligemment un cache NVMe haute performance avec des disques SAS pour un excellent rapport performance/capacité. Propulsée par HPE InfoSight, l\'analyse prédictive basée sur l\'IA, elle anticipe et prévient les problèmes avant qu\'ils n\'affectent les applications. Idéale pour les environnements virtualisés VMware, les bases de données et les applications métier.',
+      "Le HPE R T3000 G5 HV INTL UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q1L87A ; GTIN/EAN : 0190017140513 ; UPC : 190017140513 ; ASIN : B07CJZWKP2 ; Longueur (pouces) : 25.47. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
     specs: [
-      { label: 'Type', value: 'Stockage adaptive flash' },
-      { label: 'Capacité', value: '336 To brut (ext. 2 Po)' },
-      { label: 'Contrôleurs', value: '2 (actif-actif)' },
-      { label: 'Cache', value: '192 Go NVMe + 12 To SSD' },
-      { label: 'Protocoles', value: 'FC 32Gb, iSCSI 10/25Gb, NFS' },
-      { label: 'Disques', value: '12x SSD + 12x SAS 10K' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
-    },
-    certifications: ['VMware vSAN Ready'],
-    compatibility: ['VMware vSphere', 'Microsoft SQL Server', 'Oracle Database', 'Veeam Backup'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 21.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 65.0 },
-    isFeatured: false,
-    publishedAt: '2026-09-10T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-cx-6200f',
-    sku: 'ARUBA-CX6200F',
-    name: 'Aruba CX 6200F',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-cx-6200f.svg",
-      alt: "Aruba CX 6200F",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.611Z",
-        checksum: "ddb3de71b50cb6903d219f3192fc16ed4806007861743cecc437a60df721d37e",
+      {
+        label: 'Référence',
+        value: 'Q1L87A',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Switch d\'accès Gigabit 48 ports avec uplinks 10GbE SFP+, gestion AOS-CX pour le réseau d\'entreprise.',
-    fullDescription:
-      'L\'Aruba CX 6200F est un switch d\'accès Gigabit offrant 48 ports RJ45 et 4 ports SFP+ 10GbE pour les uplinks. Il exécute le système d\'exploitation Aruba AOS-CX, fournissant des fonctionnalités avancées de gestion et de dépannage. Sa conception fanless et son faible encombrement le rendent idéal pour les déploiements en armoire de répartition.',
-    specs: [
-      { label: 'Type', value: 'Switch d\'accès L2/L3' },
-      { label: 'Ports', value: '48x Gigabit RJ45' },
-      { label: 'Uplinks', value: '4x 10GbE SFP+' },
-      { label: 'Performances', value: '176 Gbit/s' },
-      { label: 'PoE', value: 'Non' },
-      { label: 'OS', value: 'Aruba AOS-CX' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 10,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée (LLW)',
-      supportTier: 'standard',
-    },
-    certifications: ['UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba NetEdit', 'HPE IMC'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 5.5,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 32.0 },
-    isFeatured: false,
-    publishedAt: '2026-09-20T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-cx-6300m',
-    sku: 'ARUBA-CX6300M',
-    name: 'Aruba CX 6300M',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-cx-6300m.svg",
-      alt: "Aruba CX 6300M",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.611Z",
-        checksum: "f88793610f6280e770e11580b8b290d85fa90d556cc7228807f19bd9a250da07",
+      {
+        label: 'GTIN/EAN',
+        value: '0190017140513',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Switch d\'accès Gigabit PoE+ 48 ports avec empilage physique, idéal pour les réseaux convergents voix, données et vidéo.',
-    fullDescription:
-      'L\'Aruba CX 6300M est un switch d\'accès PoE+ 48 ports avec fonction d\'empilage physique (VSF) permettant de gérer plusieurs switches comme une seule entité. Il délivre jusqu\'à 740W de budget PoE pour alimenter téléphones IP, points d\'accès Wi-Fi et caméras de vidéosurveillance. Idéal pour les réseaux convergents d\'entreprise et les campus.',
-    specs: [
-      { label: 'Type', value: 'Switch d\'accès PoE+' },
-      { label: 'Ports', value: '48x Gigabit PoE+' },
-      { label: 'Budget PoE', value: '740W' },
-      { label: 'Uplinks', value: '4x 10GbE SFP+' },
-      { label: 'Empilage', value: 'VSF (stack physique, jusqu\'à 10)' },
-      { label: 'OS', value: 'Aruba AOS-CX' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 8,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée (LLW)',
-      supportTier: 'standard',
-    },
-    certifications: ['UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba NetEdit', 'ClearPass Policy Manager'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 6.8,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 38.0 },
-    isFeatured: false,
-    publishedAt: '2026-10-01T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-cx-6400',
-    sku: 'ARUBA-CX6400',
-    name: 'Aruba CX 6400',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-cx-6400.svg",
-      alt: "Aruba CX 6400",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.612Z",
-        checksum: "f9dab907692dcc27309774ac5b3a0ab5c78254b05569a342127724d24dcdf6eb",
+      {
+        label: 'UPC',
+        value: '190017140513',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Switch modulaire chassis 10 slots pour le cœur de réseau d\'entreprise et d\' campus, avec modules de ligne 1GbE à 100GbE.',
-    fullDescription:
-      'L\'Aruba CX 6400 est un switch modulaire de milieu de gamme conçu pour les réseaux d\'entreprise et de campus. Son chassis 4U accueille jusqu\'à 10 modules de ligne, supportant des interfaces de 1GbE à 100GbE. Il offre une redondance complète (alimentations, ventilateurs, gestionnaires) et exécute AOS-CX pour des fonctionnalités de routage avancées et une télémétrie intégrée.',
-    specs: [
-      { label: 'Type', value: 'Switch modulaire chassis' },
-      { label: 'Chassis', value: '10 slots de ligne' },
-      { label: 'Ports max', value: '384x 1GbE, 192x 10GbE, 96x 25GbE, 24x 100GbE' },
-      { label: 'Performances', value: '2.56 Tbit/s' },
-      { label: 'Redondance', value: 'Alimentations, ventilateurs, gestionnaires' },
-      { label: 'OS', value: 'Aruba AOS-CX' },
-    ],
-    attributes: {
-      chassisFormat: '4U',
-      rackUnits: 4,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée (LLW)',
-      supportTier: 'premium',
-    },
-    certifications: ['UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba NetEdit', 'ClearPass'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 22.5,
-    dimensionsCm: { height: 17.5, width: 44.5, depth: 45.0 },
-    isFeatured: true,
-    publishedAt: '2026-10-10T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-cx-8100',
-    sku: 'ARUBA-CX8100',
-    name: 'Aruba CX 8100',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-cx-8100.svg",
-      alt: "Aruba CX 8100",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.612Z",
-        checksum: "08ef218e435551cae65af9b93068e2a2a544d9145aba5be0849107eb0682fb9a",
+      {
+        label: 'ASIN',
+        value: 'B07CJZWKP2',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Switch ToR 32 ports 25GbE avec uplinks 100GbE, idéal pour les datacenters et les infrastructures de calcul haute performance.',
-    fullDescription:
-      'L\'Aruba CX 8100 est un switch Top-of-Rack 1U conçu pour les datacenters modernes. Il offre 32 ports 25GbE SFP28 et 4 ports 100GbE QSFP28 pour les uplinks spine, avec une latence ultra-faible et un encombrement réduit. Son système d\'exploitation AOS-CX supporte les protocoles EVPN-VXLAN pour la superposition de réseaux et la virtualisation du plan réseau.',
-    specs: [
-      { label: 'Type', value: 'Switch Top-of-Rack' },
-      { label: 'Ports', value: '32x 25GbE SFP28' },
-      { label: 'Uplinks', value: '4x 100GbE QSFP28' },
-      { label: 'Performances', value: '2.0 Tbit/s' },
-      { label: 'Latence', value: '< 1 µs' },
-      { label: 'OS', value: 'Aruba AOS-CX' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 6,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée (LLW)',
-      supportTier: 'standard',
-    },
-    certifications: ['UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba Fabric Composer', 'VMware NSX'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 7.5,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 40.0 },
-    isFeatured: false,
-    publishedAt: '2026-10-20T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-cx-8325',
-    sku: 'ARUBA-CX8325',
-    name: 'Aruba CX 8325',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-cx-8325.svg",
-      alt: "Aruba CX 8325",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.613Z",
-        checksum: "9c7364755439100a6872b5c19349ed96223493e29ae260aadd10c5bae21d2d5c",
+      {
+        label: 'Longueur (pouces)',
+        value: '25.47',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Switch spine 48 ports 25GbE avec uplinks 100GbE, idéal pour les architectures spine-leaf de datacenter.',
-    fullDescription:
-      'L\'Aruba CX 8325 est un switch spine 1U haute densité conçu pour les architectures spine-leaf de datacenter. Il offre 48 ports 25GbE SFP28 et 8 ports 100GbE QSFP28, permettant une connectivité à haut débit pour les fermes de serveurs. Il supporte EVPN-VXLAN, la télémétrie en continu et une charge de travail avec mise en mémoire tampon profonde pour les pics de trafic.',
-    specs: [
-      { label: 'Type', value: 'Switch spine ToR' },
-      { label: 'Ports', value: '48x 25GbE SFP28' },
-      { label: 'Uplinks', value: '8x 100GbE QSFP28' },
-      { label: 'Performances', value: '3.2 Tbit/s' },
-      { label: 'Mémoire tampon', value: '12 Go' },
-      { label: 'OS', value: 'Aruba AOS-CX' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée (LLW)',
-      supportTier: 'standard',
-    },
-    certifications: ['UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba Fabric Composer', 'VMware NSX'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 8.2,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 42.0 },
-    isFeatured: false,
-    publishedAt: '2026-11-01T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-cx-8360',
-    sku: 'ARUBA-CX8360',
-    name: 'Aruba CX 8360',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-cx-8360.svg",
-      alt: "Aruba CX 8360",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.613Z",
-        checksum: "b6232aa1c476a7726d56dd53a035136466507ea4fb0c74570629d5a538c1460c",
+      {
+        label: 'Largeur (pouces)',
+        value: '17.4',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Switch spine/ToR 2U à haute densité, 48 ports 25GbE et 8 ports 100GbE avec alimentations redondantes et ventilation modulaire.',
-    fullDescription:
-      'L\'Aruba CX 8360 est un switch 2U haute densité conçu pour les rôles de spine et Top-of-Rack dans les datacenters. Il dispose de 48 ports 25GbE SFP28, 8 ports 100GbE QSFP28, et prend en charge des modules de ventilation et d\'alimentation redondants à champ. Ses fonctions avancées incluent EVPN-VXLAN, la télémétrie en continu programmable et la détection automatique de câbles.',
-    specs: [
-      { label: 'Type', value: 'Switch spine/ToR haute densité' },
-      { label: 'Ports', value: '48x 25GbE SFP28' },
-      { label: 'Uplinks', value: '8x 100GbE QSFP28' },
-      { label: 'Performances', value: '3.2 Tbit/s' },
-      { label: 'Alimentation', value: '2x 1500W redondante' },
-      { label: 'OS', value: 'Aruba AOS-CX' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 12,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée (LLW)',
-      supportTier: 'standard',
-    },
-    certifications: ['UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba Fabric Composer', 'Cisco ACI'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 12.5,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 48.0 },
-    isFeatured: false,
-    publishedAt: '2026-11-10T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-cx-9300',
-    sku: 'ARUBA-CX9300',
-    name: 'Aruba CX 9300',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-cx-9300.svg",
-      alt: "Aruba CX 9300",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.613Z",
-        checksum: "673634f93d18c1506e97a2a58c357c84c9f3b907e9a8adf52bd21e809994e127",
+      {
+        label: 'Hauteur (pouces)',
+        value: '3.4',
       },
-    },
-    gallery: [],
-    shortDescription:
-      'Switch 1U 32 ports 100GbE avec uplinks 400GbE, le plus rapide de la gamme CX pour les datacenters à très haut débit.',
-    fullDescription:
-      'L\'Aruba CX 9300 est le switch le plus performant de la gamme Aruba CX, offrant 32 ports 100GbE QSFP28 et 8 ports 400GbE QSFP-DD dans un format 1U. Il est conçu pour les datacenters de nouvelle génération, les réseaux de calcul haute performance et les infrastructures d\'IA. Sa latence ultra-faible, sa mémoire tampon profonde et son support EVPN-VXLAN en font la plateforme idéale pour les plus grandes infrastructures.',
-    specs: [
-      { label: 'Type', value: 'Switch spine haute performance' },
-      { label: 'Ports', value: '32x 100GbE QSFP28' },
-      { label: 'Uplinks', value: '8x 400GbE QSFP-DD' },
-      { label: 'Performances', value: '12.8 Tbit/s' },
-      { label: 'Latence', value: '< 0.5 µs' },
-      { label: 'OS', value: 'Aruba AOS-CX' },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
     ],
     attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
       formFactor: 'rack',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 2,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: 'Garantie à vie limitée (LLW)',
-      supportTier: 'premium',
-    },
-    certifications: ['UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba Fabric Composer', 'VMware NSX', 'Kubernetes CNI'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 9.5,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 44.0 },
-    isFeatured: false,
-    publishedAt: '2026-11-20T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-ap-610',
-    sku: 'ARUBA-AP610',
-    name: 'Aruba 610 Access Point',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-ap-610.svg",
-      alt: "Aruba 610 Access Point",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.614Z",
-        checksum: "2cade55aa2636d835fbf38263257adfaa05510b4c0e94c570b19105296066b69",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Point d\'accès Wi-Fi 6E 2x2 MIMO double bande, idéal pour les environnements d\'entreprise à haute densité d\'utilisateurs.',
-    fullDescription:
-      'L\'Aruba 610 est un point d\'accès Wi-Fi 6E (802.11ax) d\'entrée de gamme offrant un débit agrégé allant jusqu\'à 3 Gbit/s. Avec sa configuration 2x2 MIMO et le support de la bande 6 GHz, il offre des performances accrues et une latence réduite. Il est idéal pour les environnements de bureaux denses, les établissements d\'enseignement et les espaces publics.',
-    specs: [
-      { label: 'Standard', value: 'Wi-Fi 6E (802.11ax)' },
-      { label: 'MIMO', value: '2x2:2SS' },
-      { label: 'Débit max', value: '3 Gbit/s agrégé' },
-      { label: 'Bandes', value: '2.4 GHz, 5 GHz, 6 GHz' },
-      { label: 'Gestion', value: 'Aruba Central, Aruba Controller' },
-      { label: 'Alimentation', value: 'PoE+ (802.3at)' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée',
-      supportTier: 'standard',
-    },
-    certifications: ['Wi-Fi CERTIFIED 6E', 'UL', 'CE'],
-    compatibility: ['Aruba Central', 'Aruba Mobility Controller', 'Aruba Instant'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 0.6,
-    dimensionsCm: { height: 3.5, width: 18.5, depth: 18.5 },
-    isFeatured: false,
-    publishedAt: '2026-12-01T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-ap-630',
-    sku: 'ARUBA-AP630',
-    name: 'Aruba 630 Access Point',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-ap-630.svg",
-      alt: "Aruba 630 Access Point",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.614Z",
-        checksum: "48db34a527e99ec2e54f59f9f1381c6f09759bf47241d739da3f990804fa655f",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Point d\'accès Wi-Fi 6E 4x4 MIMO triple bande, performances supérieures pour les environnements professionnels exigeants.',
-    fullDescription:
-      'L\'Aruba 630 est un point d\'accès Wi-Fi 6E haut de gamme avec configuration 4x4 MIMO sur toutes les bandes, offrant un débit agrégé allant jusqu\'à 6 Gbit/s. Il intègre la technologie Aruba ClientMatch pour optimiser automatiquement la connectivité des clients et réduire les interférences. Idéal pour les bureaux d\'entreprise, les salles de conférence et les environnements à forte densité.',
-    specs: [
-      { label: 'Standard', value: 'Wi-Fi 6E (802.11ax)' },
-      { label: 'MIMO', value: '4x4:4SS' },
-      { label: 'Débit max', value: '6 Gbit/s agrégé' },
-      { label: 'Bandes', value: '2.4 GHz, 5 GHz, 6 GHz' },
-      { label: 'Gestion', value: 'Aruba Central, Aruba Controller' },
-      { label: 'Alimentation', value: 'PoE++ (802.3bt)' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 15,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée',
-      supportTier: 'standard',
-    },
-    certifications: ['Wi-Fi CERTIFIED 6E', 'UL', 'CE'],
-    compatibility: ['Aruba Central', 'Aruba Mobility Controller', 'Aruba Instant'],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 0.8,
-    dimensionsCm: { height: 3.8, width: 20.0, depth: 20.0 },
-    isFeatured: false,
-    publishedAt: '2026-12-10T00:00:00.000Z',
-  },
-  {
-    id: 'aruba-ap-730',
-    sku: 'ARUBA-AP730',
-    name: 'Aruba 730 Access Point',
-    brand: 'HPE',
-    category: 'networking',
-    primaryImage: {
-      url: "/assets/images/branded/aruba-ap-730.svg",
-      alt: "Aruba 730 Access Point",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.615Z",
-        checksum: "6ddb349d36d29fd562883f040201e51d618300f79deebabef1c31e74832f137f",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Point d\'accès Wi-Fi 7 4x4 MIMO triple bande, le plus rapide de la gamme avec débit agrégé jusqu\'à 12 Gbit/s.',
-    fullDescription:
-      'L\'Aruba 730 est un point d\'accès Wi-Fi 7 (802.11be) de pointe, offrant un débit agrégé allant jusqu\'à 12 Gbit/s grâce à sa configuration 4x4 MIMO sur trois bandes et la technologie 320 MHz. Il supporte la technologie Multi-Link Operation (MLO) pour une fiabilité et des performances accrues. Conçu pour les environnements les plus exigeants tels que les stades, les salles de conférence et les campus d\'entreprise.',
-    specs: [
-      { label: 'Standard', value: 'Wi-Fi 7 (802.11be)' },
-      { label: 'MIMO', value: '4x4:4SS triple bande' },
-      { label: 'Débit max', value: '12 Gbit/s agrégé' },
-      { label: 'Bandes', value: '2.4 GHz, 5 GHz, 6 GHz' },
-      { label: 'MLO', value: 'Multi-Link Operation' },
-      { label: 'Alimentation', value: 'PoE++ (802.3bt)' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 8,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: 'Garantie à vie limitée',
-      supportTier: 'premium',
-    },
-    certifications: ['Wi-Fi CERTIFIED 7', 'UL', 'CE', 'FCC'],
-    compatibility: ['Aruba Central', 'Aruba Mobility Controller', 'Aruba Instant'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 1.2,
-    dimensionsCm: { height: 4.0, width: 22.0, depth: 22.0 },
-    isFeatured: false,
-    publishedAt: '2026-12-20T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-synergy-480-gen12',
-    sku: 'HPE-SYNERGY-480-G12',
-    name: 'HPE Synergy 480 Gen12',
-    brand: 'HPE',
-    category: 'datacenter',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-synergy-480-gen12.svg",
-      alt: "HPE Synergy 480 Gen12",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.615Z",
-        checksum: "adb1dc50bb4ea635b48ef596789db6064158f8b6576422b713042831778b3e9a",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Module de calcul HPE Synergy 1 processeur Intel Xeon 6, pour infrastructure composable et les environnements hybrides.',
-    fullDescription:
-      'Le HPE Synergy 480 Gen12 est un module de calcul pour le chassis HPE Synergy, conçu pour les infrastructures composables et les datacenters définis par logiciel. Il embarque un processeur Intel Xeon 6 de la série 6500, jusqu\'à 1 To de mémoire DDR5-6400 et deux baies SFF NVMe. Idéal pour les architectures cloud hybrides, les environnements VDI et la virtualisation massive.',
-    specs: [
-      { label: 'Type', value: 'Module de calcul composable' },
-      { label: 'Processeur', value: 'Intel Xeon 6 6526+ (2.4 GHz, 16 cœurs)' },
-      { label: 'Mémoire', value: '128 Go DDR5-6400 (ext. 1 To)' },
-      { label: 'Stockage', value: '2x 2.5" SFF NVMe' },
-      { label: 'Connecteurs', value: '2x 25GbE FlexFabric' },
-      { label: 'Compatibilité', value: 'Chassis HPE Synergy 12000' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 6,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site',
-      supportTier: 'premium',
-    },
-    certifications: ['VMware vSAN Ready'],
-    compatibility: ['HPE Synergy 12000 Frame', 'HPE OneView', 'VMware vSphere'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 5.5,
-    dimensionsCm: { height: 3.6, width: 25.0, depth: 52.0 },
-    isFeatured: false,
-    publishedAt: '2026-09-15T00:00:00.000Z',
-  },
-  {
-    id: 'hpe-apollo-4200-gen11',
-    sku: 'HPE-APOLLO-4200-G11',
-    name: 'HPE Apollo 4200 Gen11',
-    brand: 'HPE',
-    category: 'datacenter',
-    primaryImage: {
-      url: "/assets/images/branded/hpe-apollo-4200-gen11.svg",
-      alt: "HPE Apollo 4200 Gen11",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.616Z",
-        checksum: "941aa5dad55c30d27489be90f77e1cb30cab0ea05d8e3393e69348f10121b256",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Serveur de stockage dense 2U avec 12 baies LFF, idéal pour les lacs de données, l\'archivage et les sauvegardes.',
-    fullDescription:
-      'Le HPE Apollo 4200 Gen11 est un serveur de stockage haute densité conçu pour les applications de stockage massif, les lacs de données et les sauvegardes. Il supporte jusqu\'à 12 baies LFF hot-plug dans un format 2U, avec un processeur Intel Xeon 5 de 4ème génération et jusqu\'à 256 Go de mémoire DDR5. Sa capacité de stockage linéaire en fait la solution idéale pour les données non structurées et l\'archivage à long terme.',
-    specs: [
-      { label: 'Type', value: 'Serveur de stockage dense' },
-      { label: 'Processeur', value: 'Intel Xeon 5418Y (2.1 GHz, 24 cœurs)' },
-      { label: 'Mémoire', value: '64 Go DDR5-4800 (ext. 256 Go)' },
-      { label: 'Stockage', value: '12x 3.5" LFF SAS/SATA hot-plug' },
-      { label: 'Alimentation', value: '2x 800W redondante' },
-      { label: 'Réseau', value: '2x 10GbE, 1x iLO 6' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 5,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'standard',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
-    compatibility: ['HPE StoreEasy', 'Red Hat Ceph', 'Lustre', 'Qumulo'],
+    compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 24.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 72.0 },
     isFeatured: false,
-    publishedAt: '2026-10-01T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.318Z',
   },
   {
-    id: 'hpe-apollo-6500-gen10-plus',
-    sku: 'HPE-APOLLO-6500-G10P',
-    name: 'HPE Apollo 6500 Gen10+',
+    id: 'hpe-q1l90a',
+    sku: 'Q1L90A',
+    name: 'HPE R1500 G5 INTL UPS',
     brand: 'HPE',
     category: 'datacenter',
     primaryImage: {
-      url: "/assets/images/branded/hpe-apollo-6500-gen10-plus.svg",
-      alt: "HPE Apollo 6500 Gen10+",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q1L90A__0.jpg',
+      alt: 'HPE R1500 G5 INTL UPS',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.616Z",
-        checksum: "ad5fa0421dbc73364feda3fa624da2349567be518e8d3b9ccb7f9042ec8e0363",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-r1500-_g5-intl-ups-q1l90a-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-r1500-_g5-intl-ups-q1l90a-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:04.326343Z',
+        checksum: '51e2ab4acd81463b7393ede6a3f33e53f51ec09f886a8ef830217fa57ce630d1',
       },
     },
     gallery: [],
     shortDescription:
-      'Plateforme de calcul GPU 4U avec support de 8 GPU double largeur, conçue pour l\'IA, le HPC et les simulations.',
+      "Le HPE R1500 G5 INTL UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
     fullDescription:
-      'Le HPE Apollo 6500 Gen10+ est une plateforme de calcul haute densité conçue pour l\'intelligence artificielle, le calcul haute performance et les simulations scientifiques. Il supporte jusqu\'à 8 GPU NVIDIA double largeur (H100/H200), deux processeurs Intel Xeon Scalable de 4ème génération, et jusqu\'à 2 To de mémoire DDR5. Sa conception thermique avancée avec refroidissement direct permet de maintenir des performances optimales sous charge maximale.',
+      "Le HPE R1500 G5 INTL UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q1L90A ; GTIN/EAN : 0190017140957 ; UPC : 190017140957 ; ASIN : B07CKD5HR7 ; Longueur (pouces) : 21.8. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
     specs: [
-      { label: 'Type', value: 'Plateforme de calcul GPU' },
-      { label: 'Processeur', value: '2x Intel Xeon 8468V (2.4 GHz, 48 cœurs)' },
-      { label: 'Mémoire', value: '256 Go DDR5-4800 (ext. 2 To)' },
-      { label: 'GPU', value: 'Jusqu\'à 8x NVIDIA H100 SXM' },
-      { label: 'Stockage', value: '4x 2.5" SFF NVMe hot-plug' },
-      { label: 'Alimentation', value: '6x 3000W redondante' },
+      {
+        label: 'Référence',
+        value: 'Q1L90A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017140957',
+      },
+      {
+        label: 'UPC',
+        value: '190017140957',
+      },
+      {
+        label: 'ASIN',
+        value: 'B07CKD5HR7',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '21.8',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '17.2',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '1.69',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
     ],
     attributes: {
-      chassisFormat: '4U',
-      rackUnits: 4,
       formFactor: 'rack',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 2,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
-    certifications: ['NVIDIA NGC Ready', 'NVIDIA DGX BasePOD Certified'],
-    compatibility: ['NVIDIA AI Enterprise', 'Slurm', 'TensorFlow', 'PyTorch'],
+    certifications: [],
+    compatibility: [],
     datasheets: [],
-    releaseYear: 2024,
-    weightKg: 85.0,
-    dimensionsCm: { height: 17.6, width: 44.5, depth: 85.0 },
     isFeatured: false,
-    publishedAt: '2026-10-15T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.318Z',
   },
   {
-    id: 'hpe-compute-xd685',
-    sku: 'HPE-XD685',
-    name: 'HPE Compute XD685',
+    id: 'hpe-q7g11a',
+    sku: 'Q7G11A',
+    name: 'HPE G2 R6000 3U IEC 230V 9out INTL UPS',
     brand: 'HPE',
     category: 'datacenter',
     primaryImage: {
-      url: "/assets/images/branded/hpe-compute-xd685.svg",
-      alt: "HPE Compute XD685",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q7G11A__0.jpg',
+      alt: 'HPE G2 R6000 3U IEC 230V 9out INTL UPS',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.616Z",
-        checksum: "ab72bcff1fb6b8ca76490c35332c3b8612963e3cac4b6bf1c06c6c5420b72f6c",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-g2-r6000-3u-iec-230v-9out-intl-ups-q7g11a-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-g2-r6000-3u-iec-230v-9out-intl-ups-q7g11a-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:04.831132Z',
+        checksum: '785213e72ae00123196a434216537d4ad29c65e10787920c43ee7a078d0f6173',
       },
     },
     gallery: [],
     shortDescription:
-      'Serveur dense 2U à 4 nœuds AMD EPYC 9004, pour les environnements de cloud computing et la virtualisation à haute densité.',
+      "Le HPE G2 R6000 3U IEC 230V 9out INTL UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
     fullDescription:
-      'Le HPE Compute XD685 est un serveur multi-nœuds haute densité optimisé pour les environnements de cloud et de virtualisation. Dans un format 2U, il intègre jusqu\'à 4 nœuds indépendants, chacun équipé d\'un processeur AMD EPYC série 9004, de 256 Go de mémoire DDR5 et de deux baies NVMe. Idéal pour les fournisseurs de services cloud, l\'hébergement mutualisé et les déploiements de virtualisation à grande échelle.',
+      "Le HPE G2 R6000 3U IEC 230V 9out INTL UPS de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q7G11A ; GTIN/EAN : 0190017207896 ; UPC : 190017207896 ; ASIN : B07R5MHRGW ; Longueur (pouces) : 5.1. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
     specs: [
-      { label: 'Type', value: 'Serveur multi-nœuds dense' },
-      { label: 'Nœuds', value: '4 nœuds indépendants' },
-      { label: 'Processeur', value: '4x AMD EPYC 9224 (24 cœurs chacun)' },
-      { label: 'Mémoire', value: '128 Go DDR5-4800 par nœud' },
-      { label: 'Stockage', value: '2x NVMe par nœud' },
-      { label: 'Réseau', value: '2x 25GbE par nœud' },
+      {
+        label: 'Référence',
+        value: 'Q7G11A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017207896',
+      },
+      {
+        label: 'UPC',
+        value: '190017207896',
+      },
+      {
+        label: 'ASIN',
+        value: 'B07R5MHRGW',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '5.1',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '17.3',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '28.4',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
     ],
     attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
+      chassisFormat: '3U',
       formFactor: 'rack',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 14,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
-    compatibility: ['VMware vSphere 8', 'Red Hat OpenShift', 'Kubernetes'],
+    compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 32.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 76.0 },
     isFeatured: false,
-    publishedAt: '2026-11-01T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.318Z',
   },
   {
-    id: 'hpe-simplivity-380',
-    sku: 'HPE-SIMPLIVITY-380',
-    name: 'HPE SimpliVity 380',
+    id: 'hpe-bb874a',
+    sku: 'BB874A',
+    name: 'HPE LTO 7 Ultrium 15000 Ext Tape Drive',
     brand: 'HPE',
-    category: 'server-storage',
+    category: 'datacenter',
     primaryImage: {
-      url: "/assets/images/branded/hpe-simplivity-380.svg",
-      alt: "HPE SimpliVity 380",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/BB874A__0.png',
+      alt: 'HPE LTO 7 Ultrium 15000 Ext Tape Drive',
+      width: 578,
+      height: 311,
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.598Z",
-        checksum: "db0b1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-lto-7_ultrium-15000-ext-tape-drive-bb874a-in-dubai-uae.png',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-lto-7_ultrium-15000-ext-tape-drive-bb874a-in-dubai-uae.png',
+        fetchedAt: '2026-08-11T10:46:05.244947Z',
+        checksum: 'aaebfcb456a2fb2bdb898744ed3eac7c51fb234fd08f2673fa507a3fdb420604',
       },
     },
     gallery: [],
     shortDescription:
-      'Nœud HCI (Hyperconverged Infrastructure) 2U avec calcul, stockage et déduplication intégrés pour la virtualisation simplifiée.',
+      "Le HPE LTO 7 Ultrium 15000 Ext Tape Drive de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
     fullDescription:
-      'Le HPE SimpliVity 380 est un nœud d\'infrastructure hyperconvergée qui intègre calcul, stockage et déduplication en temps réel dans un format 2U. Il associe deux processeurs Intel Xeon 6, 256 Go de mémoire DDR5 et un stockage NVMe dédupliqué pour une efficacité de capacité allant jusqu\'à 10:1. Propulsé par HPE InfoSight pour une gestion prédictive, il simplifie radicalement l\'infrastructure virtualisée.',
+      "Le HPE LTO 7 Ultrium 15000 Ext Tape Drive de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : BB874A ; GTIN/EAN : 0889894360847 ; UPC : 889894360847 ; ASIN : B01M0ZHU66 ; Longueur (pouces) : 3. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
     specs: [
-      { label: 'Type', value: 'Nœud HCI' },
-      { label: 'Processeur', value: '2x Intel Xeon 6 5515+ (2.8 GHz, 8 cœurs)' },
-      { label: 'Mémoire', value: '256 Go DDR5-5200 (ext. 1 To)' },
-      { label: 'Stockage', value: '3.84 To NVMe (dédup x10)' },
-      { label: 'Déduplication', value: 'Jusqu\'à 10:1 en temps réel' },
-      { label: 'Connectivité', value: '2x 25GbE, 2x 10GbE' },
+      {
+        label: 'Référence',
+        value: 'BB874A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0889894360847',
+      },
+      {
+        label: 'UPC',
+        value: '889894360847',
+      },
+      {
+        label: 'ASIN',
+        value: 'B01M0ZHU66',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '3',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '8.8',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '11.7',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
     ],
     attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
       formFactor: 'rack',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 10,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans sur site J+1',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
-    certifications: ['VMware vSAN Ready'],
-    compatibility: ['VMware vSphere 8', 'HPE SimpliVity Federation', 'HPE InfoSight'],
+    certifications: [],
+    compatibility: [],
     datasheets: [],
-    releaseYear: 2026,
-    weightKg: 23.5,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 68.0 },
     isFeatured: false,
-    publishedAt: '2026-11-15T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.318Z',
   },
-
+  {
+    id: 'hpe-ah166a',
+    sku: 'AH166A',
+    name: 'HPE 1 8 G2 Tape Autoloader Rack Kit',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/AH166A__0.png',
+      alt: 'HPE 1 8 G2 Tape Autoloader Rack Kit',
+      width: 400,
+      height: 365,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1-8-g2-tape-autoloader-rack_kit-ah166a-in-dubai-uae.png',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-1-8-g2-tape-autoloader-rack_kit-ah166a-in-dubai-uae.png',
+        fetchedAt: '2026-08-11T10:46:07.289193Z',
+        checksum: 'cfa62525c465bfa996b3639c00c7dfa74f22bd171bc7f29d7051ed66ac6f3ac3',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE 1 8 G2 Tape Autoloader Rack Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE 1 8 G2 Tape Autoloader Rack Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : AH166A ; GTIN/EAN : 0882780740808 ; UPC : 882780740808 ; ASIN : B00TJHXZBQ ; Longueur (pouces) : 6.1. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: 'AH166A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0882780740808',
+      },
+      {
+        label: 'UPC',
+        value: '882780740808',
+      },
+      {
+        label: 'ASIN',
+        value: 'B00TJHXZBQ',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '6.1',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '33.07',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '2.95',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-n7p36a',
+    sku: 'N7P36A',
+    name: 'HPE StoreEver MSL LTO 7 Ultrium 15000 FC Drive',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/N7P36A__0.jpg',
+      alt: 'HPE StoreEver MSL LTO 7 Ultrium 15000 FC Drive',
+      width: 500,
+      height: 500,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-storeever-msl-lto-7-ultrium-15000-n7p36a-in-dubai-uae.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-storeever-msl-lto-7-ultrium-15000-n7p36a-in-dubai-uae.jpg',
+        fetchedAt: '2026-08-11T10:46:05.793652Z',
+        checksum: 'a5d8bdfd050630fda7c24bc5a7328c2afb80b7f520ffcc2ff17c0a95fe32aa9b',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE StoreEver MSL LTO 7 Ultrium 15000 FC Drive de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE StoreEver MSL LTO 7 Ultrium 15000 FC Drive de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : N7P36A ; GTIN/EAN : 0889894007063 ; UPC : 889894007063 ; ASIN : ‎B0196FPSV0 ; Longueur (pouces) : 13.19. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: 'N7P36A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0889894007063',
+      },
+      {
+        label: 'UPC',
+        value: '889894007063',
+      },
+      {
+        label: 'ASIN',
+        value: '‎B0196FPSV0',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '13.19',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '14.76',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.89',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.318Z',
+  },
+  {
+    id: 'hpe-q6q67a',
+    sku: 'Q6Q67A',
+    name: 'HPE StoreEver MSL LTO 8 Ultrium 30750 FC Drive Upgrade Kit',
+    brand: 'HPE',
+    category: 'datacenter',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/Q6Q67A__0.png',
+      alt: 'HPE StoreEver MSL LTO 8 Ultrium 30750 FC Drive Upgrade Kit',
+      width: 561,
+      height: 380,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-storeever-msl-lto-8_ultrium-30750-fc-drive-upgrade-kit-q6q67a-in-dubai-uae.png',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/p/hpe-storeever-msl-lto-8_ultrium-30750-fc-drive-upgrade-kit-q6q67a-in-dubai-uae.png',
+        fetchedAt: '2026-08-11T10:46:07.377311Z',
+        checksum: '7d50bf08fc342de9aedfa9fb61c892a882ca252a2cb795338fbded8099e0aff9',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      "Le HPE StoreEver MSL LTO 8 Ultrium 30750 FC Drive Upgrade Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
+    fullDescription:
+      "Le HPE StoreEver MSL LTO 8 Ultrium 30750 FC Drive Upgrade Kit de Hewlett Packard Enterprise est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : Q6Q67A ; GTIN/EAN : 0190017203287 ; UPC : 190017203287 ; ASIN : ‎B07C97V26J ; Longueur (pouces) : 13.19. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    specs: [
+      {
+        label: 'Référence',
+        value: 'Q6Q67A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017203287',
+      },
+      {
+        label: 'UPC',
+        value: '190017203287',
+      },
+      {
+        label: 'ASIN',
+        value: '‎B07C97V26J',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '13.19',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '14.76',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.89',
+      },
+      {
+        label: 'Marque',
+        value: 'Hewlett Packard Enterprise',
+      },
+    ],
+    attributes: {
+      formFactor: 'rack',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.319Z',
+  },
+  {
+    id: 'hpe-s1t18a',
+    sku: 'S1T18A',
+    name: 'HPE Aruba Instant On AP21 WiFi 6 Access Point Five Pack',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/S1T18A__0.jpeg',
+      alt: 'HPE Aruba Instant On AP21 WiFi 6 Access Point Five Pack',
+      width: 400,
+      height: 400,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/i/fivepack.jpeg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/i/fivepack.jpeg',
+        fetchedAt: '2026-08-11T11:30:12.904148Z',
+        checksum: '58e1836928cfb29576d910f22b3651cb268b4856856bf266134eced37b8be47e',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Aruba Instant On AP21 WiFi 6 Access Point Five Pack de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Aruba Instant On AP21 WiFi 6 Access Point Five Pack de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : S1T18A ; GTIN/EAN : 0190017674742 ; UPC : 190017674742 ; Marque : Aruba Instant On. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'S1T18A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017674742',
+      },
+      {
+        label: 'UPC',
+        value: '190017674742',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.319Z',
+  },
+  {
+    id: 'hpe-s0j33a',
+    sku: 'S0J33A',
+    name: 'HPE Networking Instant On AP22D Wi-Fi 6 - S0J33A',
+    brand: 'HPE',
+    category: 'wireless',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hpe/S0J33A__0.jpg',
+      alt: 'HPE Networking Instant On AP22D Wi-Fi 6 - S0J33A',
+      width: 750,
+      height: 750,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/0/s0j33a.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/0/s0j33a.jpg',
+        fetchedAt: '2026-08-11T11:30:14.782983Z',
+        checksum: '1f116cbaff5c708264339de1b2b5ac1918cf954b1995a435ebe5455c7b83dd9a',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HPE Networking Instant On AP22D Wi-Fi 6 - S0J33A de Hewlett Packard Enterprise est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HPE Networking Instant On AP22D Wi-Fi 6 - S0J33A de Hewlett Packard Enterprise est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : S0J33A ; GTIN/EAN : 0190017695709 ; UPC : 190017695709 ; Marque : Aruba Instant On. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'S0J33A',
+      },
+      {
+        label: 'GTIN/EAN',
+        value: '0190017695709',
+      },
+      {
+        label: 'UPC',
+        value: '190017695709',
+      },
+      {
+        label: 'Marque',
+        value: 'Aruba Instant On',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.319Z',
+  },
 ];

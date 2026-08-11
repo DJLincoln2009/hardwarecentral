@@ -1,3314 +1,4443 @@
 import type { Product } from '@/types';
 
-
 export const hikvisionProducts: Product[] = [
   {
-    id: 'hikvision-ds-2cd2387g2h-liu',
-    sku: 'HIK-2CD2387G2HLIU',
-    asin: 'B0CCP7V1BG',
-    name: 'DS-2CD2387G2H-LIU',
+    id: 'hikvision-ids-2cd7a26g0-p-izhs-y',
+    sku: 'iDS-2CD7A26G0/P-IZHS(Y)',
+    name: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2387g2h-liu.svg",
-      alt: "DS-2CD2387G2H-LIU",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___0.jpg',
+      alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
       width: 600,
       height: 600,
-      imageSource: "placeholder",
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.685Z",
-        checksum: "f136c9f409a6093c3b492ac6856de15ad19ddcac66346c35688bba82a50287a3",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_1__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_1__1.jpg',
+        fetchedAt: '2026-08-11T10:49:18.646488Z',
+        checksum: '359b10dd1b521628acd4ee1c6cad27b809415903b959eb33b68d407b35c72cfc',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___1.jpg',
+        alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_1.jpg',
+          fetchedAt: '2026-08-11T10:49:19.608241Z',
+          checksum: '69eb3c6027e76b77f5f743db41004d2560d9ab0b3b7a4665fd8d1e398fecbeed',
+        },
+      },
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___2.jpg',
+        alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_2__1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_2__1.jpg',
+          fetchedAt: '2026-08-11T10:49:20.630847Z',
+          checksum: '9c4838141d51ecd3ad141138650d497dbc14e696ef9118148cdccd78eb0deba1',
+        },
+      },
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___3.jpg',
+        alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_3__1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_3__1.jpg',
+          fetchedAt: '2026-08-11T10:49:21.574207Z',
+          checksum: '2920645f4f48f8d1b8366a442a0fc4d5224f5ed7a7b64381bc3032ad359cef59',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A26G0/P-IZHS(Y) ; Longueur (pouces) : 15.9 ; Largeur (pouces) : 7.5 ; Hauteur (pouces) : 7.1 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A26G0/P-IZHS(Y)',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '15.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.1',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7026g0-ap',
+    sku: 'DS-2CD7026G0-(AP)',
+    name: 'HIKVISION 2 MP DeepinView Moto Varifocal Box Camera DS-2CD7026G0-(AP)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7026G0-_AP___0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Moto Varifocal Box Camera DS-2CD7026G0-(AP)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4_.jpg',
+        fetchedAt: '2026-08-11T10:49:19.603010Z',
+        checksum: 'e5c9a84462c56b267d6a41d623aea966a5290ca47bf563a67b7ad432ece8c9f4',
       },
     },
     gallery: [],
     shortDescription:
-      'Caméra IP bullet AcuSense 8MP avec intelligence artificielle, vision nocturne couleur et détection de personnes et véhicules.',
+      'Le HIKVISION 2 MP DeepinView Moto Varifocal Box Camera DS-2CD7026G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision DS-2CD2387G2H-LIU est une caméra IP bullet 8MP (3840x2160) de la série AcuSense intégrant des algorithmes de Deep Learning pour la détection précise des personnes et des véhicules. Grâce à sa technologie ColorVu, elle offre une vision nocturne couleur sans IR jusqu\'à 30 mètres. Son boîtier IP67 résiste aux intempéries, et sa fonction Active Strobe Light and Audio Alarm dissuade les intrusions.',
+      'Le HIKVISION 2 MP DeepinView Moto Varifocal Box Camera DS-2CD7026G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7026G0-(AP) ; Longueur (pouces) : 5.61 ; Largeur (pouces) : 2.75 ; Hauteur (pouces) : 2.68 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Résolution', value: '8 MP (3840 x 2160)' },
-      { label: 'Capteur', value: '1/2.8" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'Couleur jusqu\'à 30 m (ColorVu)' },
-      { label: 'Certification', value: 'IP67, IK10' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
+      {
+        label: 'Référence',
+        value: 'DS-2CD7026G0-(AP)',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '5.61',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '2.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '2.68',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
-      chassisFormat: 'Compact',
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 50,
-      leadTimeDays: 3,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
+      durationLabel: 'Sans garantie',
     },
-    certifications: ['CE', 'FCC', 'UL', 'IP67', 'IK10'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
+    certifications: [],
+    compatibility: [],
     datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.9,
-    dimensionsCm: { height: 8.0, width: 8.0, depth: 18.0 },
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7026g0-p-ap',
+    sku: 'DS-2CD7026G0/P-(AP)',
+    name: 'HIKVISION 2 MP Network Box Camera DS-2CD7026G0/P-(AP)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7026G0_P-_AP___0.jpg',
+      alt: 'HIKVISION 2 MP Network Box Camera DS-2CD7026G0/P-(AP)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4__2.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4__2.jpg',
+        fetchedAt: '2026-08-11T10:49:20.378763Z',
+        checksum: 'e5c9a84462c56b267d6a41d623aea966a5290ca47bf563a67b7ad432ece8c9f4',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP Network Box Camera DS-2CD7026G0/P-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP Network Box Camera DS-2CD7026G0/P-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7026G0/P-(AP) ; Longueur (pouces) : 12.4 ; Largeur (pouces) : 5.51 ; Hauteur (pouces) : 5.51 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7026G0/P-(AP)',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '12.4',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '5.51',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '5.51',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7085g0-ap',
+    sku: 'DS-2CD7085G0-(AP)',
+    name: 'HIKVISION 4K DeepinView Moto Varifocal Box Camera DS-2CD7085G0-(AP)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7085G0-_AP___0.jpg',
+      alt: 'HIKVISION 4K DeepinView Moto Varifocal Box Camera DS-2CD7085G0-(AP)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4__1.jpg',
+        fetchedAt: '2026-08-11T10:49:20.605902Z',
+        checksum: 'e5c9a84462c56b267d6a41d623aea966a5290ca47bf563a67b7ad432ece8c9f4',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Moto Varifocal Box Camera DS-2CD7085G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Moto Varifocal Box Camera DS-2CD7085G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7085G0-(AP) ; Longueur (pouces) : 5.61 ; Largeur (pouces) : 2.75 ; Hauteur (pouces) : 2.68 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7085G0-(AP)',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '5.61',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '2.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '2.68',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7126g0-l-izs',
+    sku: 'DS-2CD7126G0/L-IZS',
+    name: 'HIKVISION 2 MP DeepinView Flow Analysis Indoor Moto Varifocal Dome Camera DS-2CD7126G0/L-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0_L-IZS__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Flow Analysis Indoor Moto Varifocal Dome Camera DS-2CD7126G0/L-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_5_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_5_.jpg',
+        fetchedAt: '2026-08-11T10:49:21.390479Z',
+        checksum: 'c8d76a528566eab3d85956f7bf005ddd16b40a9264a3526163ed4ed5603ca62e',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0_L-IZS__1.jpg',
+        alt: 'HIKVISION 2 MP DeepinView Flow Analysis Indoor Moto Varifocal Dome Camera DS-2CD7126G0/L-IZS',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_6_.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_6_.jpg',
+          fetchedAt: '2026-08-11T10:49:22.342890Z',
+          checksum: '90c33dacf968d6ef1a1767052203abf65692940f9c5797f55741167e8a3331a6',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Flow Analysis Indoor Moto Varifocal Dome Camera DS-2CD7126G0/L-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Flow Analysis Indoor Moto Varifocal Dome Camera DS-2CD7126G0/L-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7126G0/L-IZS ; Longueur (pouces) : 9.6 ; Largeur (pouces) : 6.9 ; Hauteur (pouces) : 6.8 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7126G0/L-IZS',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.6',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.9',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.8',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ids-2cd8146g0-izs',
+    sku: 'iDS-2CD8146G0-IZS',
+    name: 'HIKVISION 4 MP DeepinView Face Recognition Indoor Moto Varifocal Dome Camera iDS-2CD8146G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8146G0-IZS__0.jpg',
+      alt: 'HIKVISION 4 MP DeepinView Face Recognition Indoor Moto Varifocal Dome Camera iDS-2CD8146G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_7_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_7_.jpg',
+        fetchedAt: '2026-08-11T10:49:21.624020Z',
+        checksum: '1bbeac528660bde5befaf2215726f235c964e27a7b2b392345b31ea948d5ba94',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4 MP DeepinView Face Recognition Indoor Moto Varifocal Dome Camera iDS-2CD8146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4 MP DeepinView Face Recognition Indoor Moto Varifocal Dome Camera iDS-2CD8146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD8146G0-IZS ; Longueur (pouces) : 9.6 ; Largeur (pouces) : 6.9 ; Hauteur (pouces) : 6.8 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD8146G0-IZS',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.6',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.9',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.8',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7026g0-ep-i-h',
+    sku: 'DS-2CD7026G0/EP-I(H)',
+    name: 'HIKVISION 2 MP Smart Network Box Camera DS-2CD7026G0/EP-I(H)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7026G0_EP-I_H___0.jpg',
+      alt: 'HIKVISION 2 MP Smart Network Box Camera DS-2CD7026G0/EP-I(H)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_8_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_8_.jpg',
+        fetchedAt: '2026-08-11T10:49:22.581953Z',
+        checksum: '85b6d3b3e67ac5ac37d645ab178146472320ef12c12d4948f6b20041049d4976',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP Smart Network Box Camera DS-2CD7026G0/EP-I(H) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP Smart Network Box Camera DS-2CD7026G0/EP-I(H) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7026G0/EP-I(H) ; Longueur (pouces) : 18.3 ; Largeur (pouces) : 4.3 ; Hauteur (pouces) : 6.7 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7026G0/EP-I(H)',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '18.3',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '4.3',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.7',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7046g0-ap',
+    sku: 'DS-2CD7046G0-(AP)',
+    name: 'HIKVISION 4 MP Box Network Camera DS-2CD7046G0-(AP)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7046G0-_AP___0.jpg',
+      alt: 'HIKVISION 4 MP Box Network Camera DS-2CD7046G0-(AP)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4__3.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4__3.jpg',
+        fetchedAt: '2026-08-11T10:49:22.743615Z',
+        checksum: 'e5c9a84462c56b267d6a41d623aea966a5290ca47bf563a67b7ad432ece8c9f4',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4 MP Box Network Camera DS-2CD7046G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4 MP Box Network Camera DS-2CD7046G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7046G0-(AP) ; Longueur (pouces) : 5.61 ; Largeur (pouces) : 2.75 ; Hauteur (pouces) : 2.68 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7046G0-(AP)',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '5.61',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '2.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '2.68',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7126g0-izs',
+    sku: 'DS-2CD7126G0-IZS',
+    name: 'HIKVISION 2 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7126G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0-IZS__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7126G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9_.jpg',
+        fetchedAt: '2026-08-11T10:49:23.350923Z',
+        checksum: '222730226d104232e3d51b422dcfdba65d35d75ea609e2b0d797f23a2bc42f01',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0-IZS__1.jpg',
+        alt: 'HIKVISION 2 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7126G0-IZS',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10_.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10_.jpg',
+          fetchedAt: '2026-08-11T10:49:24.316040Z',
+          checksum: '7dd9d30808098e7415f5d8d7047ed5986f53dd93a0fd56c84aaa22472405e638',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7126G0-IZS ; Longueur (pouces) : 9.6 ; Largeur (pouces) : 6.9 ; Hauteur (pouces) : 6.8 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7126G0-IZS',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.6',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.9',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.8',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7146g0-izs',
+    sku: 'DS-2CD7146G0-IZS',
+    name: 'HIKVISION 4 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7146G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7146G0-IZS__0.jpg',
+      alt: 'HIKVISION 4 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7146G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9__1.jpg',
+        fetchedAt: '2026-08-11T10:49:23.561985Z',
+        checksum: '222730226d104232e3d51b422dcfdba65d35d75ea609e2b0d797f23a2bc42f01',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7146G0-IZS__1.jpg',
+        alt: 'HIKVISION 4 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7146G0-IZS',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1.jpg',
+          fetchedAt: '2026-08-11T10:49:24.542673Z',
+          checksum: '7dd9d30808098e7415f5d8d7047ed5986f53dd93a0fd56c84aaa22472405e638',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HIKVISION 4 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7146G0-IZS ; Longueur (pouces) : 9.6 ; Largeur (pouces) : 6.9 ; Hauteur (pouces) : 6.8 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7146G0-IZS',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.6',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.9',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.8',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7185g0-izs',
+    sku: 'DS-2CD7185G0-IZS',
+    name: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7185G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7185G0-IZS__0.jpg',
+      alt: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7185G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9__1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9__1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:23.717805Z',
+        checksum: '222730226d104232e3d51b422dcfdba65d35d75ea609e2b0d797f23a2bc42f01',
+      },
+    },
+    gallery: [
+      {
+        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7185G0-IZS__1.jpg',
+        alt: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7185G0-IZS',
+        width: 600,
+        height: 600,
+        imageSource: 'real',
+        provenance: {
+          sourceProvider: 'retailer-scrape',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1_1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1_1.jpg',
+          fetchedAt: '2026-08-11T10:49:24.654216Z',
+          checksum: '7dd9d30808098e7415f5d8d7047ed5986f53dd93a0fd56c84aaa22472405e638',
+        },
+      },
+    ],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7185G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7185G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7185G0-IZS ; Longueur (pouces) : 9.6 ; Largeur (pouces) : 6.9 ; Hauteur (pouces) : 6.8 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7185G0-IZS',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.6',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '6.9',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '6.8',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7526g0-iz-h-sy',
+    sku: 'DS-2CD7526G0-IZ(H)SY',
+    name: 'HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)SY',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7526G0-IZ_H_SY__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)SY',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_11_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_11_.jpg',
+        fetchedAt: '2026-08-11T10:49:25.293940Z',
+        checksum: '905ae2e563c03182a733740e88e744b70308f9feecff70ef3a60a6e02f2a4b0f',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7526G0-IZ(H)SY ; Longueur (pouces) : 9.9 ; Largeur (pouces) : 8.5 ; Hauteur (pouces) : 7.4 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7526G0-IZ(H)SY',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '8.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.4',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7546g0-iz-h-sy',
+    sku: 'DS-2CD7546G0-IZ(H)SY',
+    name: 'HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)SY',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7546G0-IZ_H_SY__0.jpg',
+      alt: 'HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)SY',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_11__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_11__1.jpg',
+        fetchedAt: '2026-08-11T10:49:25.491742Z',
+        checksum: '905ae2e563c03182a733740e88e744b70308f9feecff70ef3a60a6e02f2a4b0f',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7546G0-IZ(H)SY ; Longueur (pouces) : 9.9 ; Largeur (pouces) : 8.5 ; Hauteur (pouces) : 7.4 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7546G0-IZ(H)SY',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '8.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.4',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7a26g0-iz-h-s',
+    sku: 'DS-2CD7A26G0-IZ(H)S',
+    name: 'HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0-IZ_H_S__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new_project_-_2021-04-17t121928.084.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new_project_-_2021-04-17t121928.084.jpg',
+        fetchedAt: '2026-08-11T10:49:25.609931Z',
+        checksum: 'f1800b9def8100c831c095a0fae908d2b903e1245d8f6edd31692cf118cb1638',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7A26G0-IZ(H)S ; Longueur (pouces) : 15.9 ; Largeur (pouces) : 7.5 ; Hauteur (pouces) : 7.1 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7A26G0-IZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '15.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.1',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7a26g0-p-iz-h-s',
+    sku: 'DS-2CD7A26G0/P-IZ(H)S',
+    name: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-IZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0_P-IZ_H_S__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-IZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_13_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_13_.jpg',
+        fetchedAt: '2026-08-11T10:49:26.218396Z',
+        checksum: '9ed4cc75a7adc070f86786a44666caccc07660c3e8720a7bfbb398d38a7fa452',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7A26G0/P-IZ(H)S ; Longueur (pouces) : 15.9 ; Largeur (pouces) : 7.5 ; Hauteur (pouces) : 7.1 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7A26G0/P-IZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '15.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.1',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.340Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7526g0-iz-h-s',
+    sku: 'DS-2CD7526G0-IZ(H)S',
+    name: 'HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7526G0-IZ_H_S__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_14_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_14_.jpg',
+        fetchedAt: '2026-08-11T10:49:26.425652Z',
+        checksum: '6ba43d039cbefb4764d2792fddbbe9f84a6503d80caffc2cc56606d60ce8f4f3',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7526G0-IZ(H)S ; Longueur (pouces) : 9.9 ; Largeur (pouces) : 8.5 ; Hauteur (pouces) : 7.4 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7526G0-IZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '8.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.4',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.341Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7546g0-iz-h-s',
+    sku: 'DS-2CD7546G0-IZ(H)S',
+    name: 'HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7546G0-IZ_H_S__0.jpg',
+      alt: 'HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_14__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_14__1.jpg',
+        fetchedAt: '2026-08-11T10:49:26.550193Z',
+        checksum: '6ba43d039cbefb4764d2792fddbbe9f84a6503d80caffc2cc56606d60ce8f4f3',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7546G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7546G0-IZ(H)S ; Longueur (pouces) : 9.9 ; Largeur (pouces) : 8.5 ; Hauteur (pouces) : 7.4 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7546G0-IZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '8.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.4',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.341Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7585g0-iz-h-s',
+    sku: 'DS-2CD7585G0-IZ(H)S',
+    name: 'HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7585G0-IZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7585G0-IZ_H_S__0.jpg',
+      alt: 'HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7585G0-IZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_15_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_15_.jpg',
+        fetchedAt: '2026-08-11T10:49:27.173793Z',
+        checksum: '84ff45a84cc416fb3f5aa67b9dcedbc3162e880a2865a148ad721c78483ca1ff',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7585G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7585G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7585G0-IZ(H)S ; Longueur (pouces) : 9.9 ; Largeur (pouces) : 8.5 ; Hauteur (pouces) : 7.4 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7585G0-IZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '9.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '8.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.4',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.341Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7a26g0-iz-h-sy',
+    sku: 'DS-2CD7A26G0-IZ(H)SY',
+    name: 'HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)SY',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0-IZ_H_SY__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)SY',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_16_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_16_.jpg',
+        fetchedAt: '2026-08-11T10:49:27.390424Z',
+        checksum: '4b6dbab2954c7ce6d590af9440b0c408aeaeb50a9332aee68ef4d739d471bf00',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7A26G0-IZ(H)SY ; Longueur (pouces) : 15.9 ; Largeur (pouces) : 7.5 ; Hauteur (pouces) : 7.1 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7A26G0-IZ(H)SY',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '15.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.1',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.341Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7a26g0-p-lz-h-s',
+    sku: 'DS-2CD7A26G0/P-LZ(H)S',
+    name: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-LZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0_P-LZ_H_S__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-LZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_17_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_17_.jpg',
+        fetchedAt: '2026-08-11T10:49:27.509609Z',
+        checksum: 'dc36d35bb733e919c280e9d602ee683543560b739c5f22de3f90acea67f181c3',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-LZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-LZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7A26G0/P-LZ(H)S ; Longueur (pouces) : 15.9 ; Largeur (pouces) : 7.5 ; Hauteur (pouces) : 7.1 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7A26G0/P-LZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '15.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.1',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.341Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7a46g0-iz-h-s',
+    sku: 'DS-2CD7A46G0-IZ(H)S',
+    name: 'HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A46G0-IZ_H_S__0.jpg',
+      alt: 'HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_18_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_18_.jpg',
+        fetchedAt: '2026-08-11T10:49:28.234491Z',
+        checksum: '3a515da73423b628d7d4c58cb0e587968fe067cc466bf594c3cf624c159789cd',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7A46G0-IZ(H)S ; Longueur (pouces) : 15.9 ; Largeur (pouces) : 7.5 ; Hauteur (pouces) : 7.1 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7A46G0-IZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '15.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.1',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.341Z',
+  },
+  {
+    id: 'hikvision-ds-2cd7a85g0-iz-h-s',
+    sku: 'DS-2CD7A85G0-IZ(H)S',
+    name: 'HIKVISION 4K DeepinView Moto Varifocal Bullet Camera DS-2CD7A85G0-IZ(H)S',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A85G0-IZ_H_S__0.jpg',
+      alt: 'HIKVISION 4K DeepinView Moto Varifocal Bullet Camera DS-2CD7A85G0-IZ(H)S',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_18__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_18__1.jpg',
+        fetchedAt: '2026-08-11T10:49:28.356661Z',
+        checksum: '3a515da73423b628d7d4c58cb0e587968fe067cc466bf594c3cf624c159789cd',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Moto Varifocal Bullet Camera DS-2CD7A85G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Moto Varifocal Bullet Camera DS-2CD7A85G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7A85G0-IZ(H)S ; Longueur (pouces) : 15.9 ; Largeur (pouces) : 7.5 ; Hauteur (pouces) : 7.1 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD7A85G0-IZ(H)S',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '15.9',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '7.5',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '7.1',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
     isFeatured: true,
-    publishedAt: '2026-01-05T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-ds-2cd2047g2h-liu',
-    sku: 'HIK-2CD2047G2HLIU',
-    asin: 'B0CCP5NPQT',
-    name: 'DS-2CD2047G2H-LIU',
+    id: 'hikvision-ids-2cd7046g0-ap-f11',
+    sku: 'iDS-2CD7046G0(-AP)(/F11)',
+    name: 'HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0(-AP)(/F11)',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2047g2h-liu.svg",
-      alt: "DS-2CD2047G2H-LIU",
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7046G0_-AP___F11___0.jpg',
+      alt: 'HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0(-AP)(/F11)',
       width: 600,
       height: 600,
-      imageSource: "placeholder",
+      imageSource: 'real',
       provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.686Z",
-        checksum: "aba1b4fe324e64cb64ffb808e2c8634d6cc6d114bb54f43473ce14e1190d33bd",
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19_.jpg',
+        fetchedAt: '2026-08-11T10:49:28.475581Z',
+        checksum: '9177e974950c2e5da249e7e08280c312e3e92d06e74c5dfdce51704c7e22e849',
       },
     },
     gallery: [],
     shortDescription:
-      'Caméra IP bullet AcuSense 4MP avec vision nocturne couleur et détection intelligente de personnes et véhicules.',
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0(-AP)(/F11) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision DS-2CD2047G2H-LIU est une caméra IP bullet 4MP de la série AcuSense offrant une détection basée sur le Deep Learning des personnes et véhicules. Sa technologie ColorVu permet une vision nocturne couleur jusqu\'à 30 mètres. Avec son indice de protection IP67, elle est idéale pour la surveillance extérieure des périmètres et des zones sensibles.',
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0(-AP)(/F11) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7046G0(-AP)(/F11) ; Longueur (pouces) : 5.61 ; Largeur (pouces) : 2.75 ; Hauteur (pouces) : 2.68 ; Pays de fabrication : China. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Capteur', value: '1/3" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'Couleur jusqu\'à 30 m (ColorVu)' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7046G0(-AP)(/F11)',
+      },
+      {
+        label: 'Longueur (pouces)',
+        value: '5.61',
+      },
+      {
+        label: 'Largeur (pouces)',
+        value: '2.75',
+      },
+      {
+        label: 'Hauteur (pouces)',
+        value: '2.68',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
-      chassisFormat: 'Compact',
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 45,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.8,
-    dimensionsCm: { height: 7.5, width: 7.5, depth: 17.0 },
-    isFeatured: false,
-    publishedAt: '2026-01-10T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2687g2t-lzs',
-    sku: 'HIK-2CD2687G2TLZS',
-    name: 'DS-2CD2687G2T-LZS',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2687g2t-lzs.svg",
-      alt: "DS-2CD2687G2T-LZS",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.686Z",
-        checksum: "fb160bbdc6b766222ab51640f2ad8dbe049e02a67101f995a6aced57be344e8e",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP bullet motorisée 8MP varifocale avec zoom motorisé 2.8-12 mm et vision nocturne IR longue portée.',
-    fullDescription:
-      'La Hikvision DS-2CD2687G2T-LZS est une caméra IP bullet 8MP motorisée avec lentille varifocale 2.8-12 mm motorisée pour un réglage à distance du champ de vision. Elle offre une vision nocturne IR jusqu\'à 50 mètres grâce à son éclairage IR intelligent. Son boîtier IP67 la rend adaptée aux installations extérieures exigeantes nécessitant une flexibilité de cadrage.',
-    specs: [
-      { label: 'Résolution', value: '8 MP (3840 x 2160)' },
-      { label: 'Capteur', value: '1/2.8" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8-12 mm motorisé varifocal' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 50 m' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 30,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 1.2,
-    dimensionsCm: { height: 8.5, width: 8.5, depth: 22.0 },
-    isFeatured: false,
-    publishedAt: '2026-01-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2147g2h-lisu',
-    sku: 'HIK-2CD2147G2HLISU',
-    name: 'DS-2CD2147G2H-LISU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2147g2h-lisu.svg",
-      alt: "DS-2CD2147G2H-LISU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.687Z",
-        checksum: "90c4e109fbddebf8d41610b2ab0c00e784fe065fdc02c9c5c93d7c3f5783c314",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP dome AcuSense 4MP avec vision nocturne couleur, détection intelligente et design discret.',
-    fullDescription:
-      'La Hikvision DS-2CD2147G2H-LISU est une caméra IP dome 4MP de la série AcuSense avec détection Deep Learning des personnes et véhicules. Son format dome discret et son boîtier IP67/IK10 la rendent idéale pour la surveillance intérieure et extérieure. La technologie ColorVu assure une image couleur nuit complète sans éclairage IR visible.',
-    specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Capteur', value: '1/3" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'Couleur jusqu\'à 30 m (ColorVu)' },
-      { label: 'Certification', value: 'IP67, IK10' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 40,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67', 'IK10'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.6,
-    dimensionsCm: { height: 6.0, width: 12.0, depth: 12.0 },
-    isFeatured: false,
-    publishedAt: '2026-01-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2187g2h-lisu',
-    sku: 'HIK-2CD2187G2HLISU',
-    asin: 'B0CV5RHC7D',
-    name: 'DS-2CD2187G2H-LISU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2187g2h-lisu.svg",
-      alt: "DS-2CD2187G2H-LISU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.687Z",
-        checksum: "fede4f89baa78bde30ace2d1535bdeb464fce3bd5a42a45496dcf7f756603d0d",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP dome AcuSense 8MP avec vision nocturne couleur et détection intelligente hautes performances.',
-    fullDescription:
-      'La Hikvision DS-2CD2187G2H-LISU est une caméra IP dome 8MP de la série AcuSense offrant une détection précise des personnes et véhicules grâce à l\'intelligence artificielle embarquée. Son design dome compact et résistant (IP67/IK10) permet une installation discrète en intérieur comme en extérieur. La technologie ColorVu garantit une image couleur permanente, même en l\'absence totale de lumière.',
-    specs: [
-      { label: 'Résolution', value: '8 MP (3840 x 2160)' },
-      { label: 'Capteur', value: '1/2.8" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'Couleur jusqu\'à 30 m (ColorVu)' },
-      { label: 'Certification', value: 'IP67, IK10' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 35,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67', 'IK10'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.7,
-    dimensionsCm: { height: 6.5, width: 13.0, depth: 13.0 },
-    isFeatured: false,
-    publishedAt: '2026-01-25T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2t87g2h-liu',
-    sku: 'HIK-2CD2T87G2HLIU',
-    asin: 'B0CFFYT3C9',
-    name: 'DS-2CD2T87G2H-LIU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2t87g2h-liu.svg",
-      alt: "DS-2CD2T87G2H-LIU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.687Z",
-        checksum: "f99e89278eee0c70bb1b946652d559f44bd7d5bfc3a3f4cd40ce8ee77f1db533",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP bullet AcuSense 8MP extérieure avec longue portée IR (50 m) et détection Deep Learning.',
-    fullDescription:
-      'La Hikvision DS-2CD2T87G2H-LIU est une caméra IP bullet 8MP AcuSense conçue pour la surveillance extérieure. Elle intègre la détection de personnes et véhicules par Deep Learning, un éclairage IR longue portée de 50 mètres et un boîtier IP67 robuste. Sa résolution 8MP assure une qualité d\'image exceptionnelle pour l\'identification sur de grandes zones.',
-    specs: [
-      { label: 'Résolution', value: '8 MP (3840 x 2160)' },
-      { label: 'Capteur', value: '1/2.8" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 50 m' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 35,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 1.0,
-    dimensionsCm: { height: 8.0, width: 8.0, depth: 20.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd3d47g2-lsu',
-    sku: 'HIK-2CD3D47G2LSU',
-    name: 'DS-2CD3D47G2-LSU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd3d47g2-lsu.svg",
-      alt: "DS-2CD3D47G2-LSU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.688Z",
-        checksum: "7eb4e491ab8decd8367bd6a1bd75cc9ced2404dcaa54ea97fc033a2f52ad45f7",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP dome 4MP avec éclairage blanc et IR, conception compacte pour usage intérieur et extérieur.',
-    fullDescription:
-      'La Hikvision DS-2CD3D47G2-LSU est une caméra IP dome 4MP dotée d\'un double éclairage (IR et lumière blanche) pour une surveillance efficace de jour comme de nuit. Son format dome compact et élégant s\'intègre discrètement dans tout environnement. Elle supporte la compression H.265+ pour une utilisation optimisée de la bande passante et du stockage.',
-    specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Capteur', value: '1/3" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 20 m + lumière blanche' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 40,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.5,
-    dimensionsCm: { height: 5.5, width: 11.0, depth: 11.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd6825g0',
-    sku: 'HIK-2CD6825G0',
-    asin: 'B08DVZDR61',
-    name: 'DS-2CD6825G0',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd6825g0.svg",
-      alt: "DS-2CD6825G0",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.688Z",
-        checksum: "e5698e1b737a68507738ed357027fe77bb74337d1eb7b48aeef43f790fa8bfd1",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP panoramique 360° 5MP avec objectif fisheye pour une surveillance immersive sans angle mort.',
-    fullDescription:
-      'La Hikvision DS-2CD6825G0 est une caméra IP fisheye 5MP offrant une vue panoramique 360° complète sans aucun angle mort. Idéale pour la surveillance de grands espaces ouverts comme les halls d\'accueil, les entrepôts et les open spaces. Elle supporte plusieurs modes de visualisation (panoramique, double panorama, quad) et la correction de distorsion logicielle.',
-    specs: [
-      { label: 'Résolution', value: '5 MP (2560 x 1920)' },
-      { label: 'Capteur', value: '1/2.7" Progressive Scan CMOS' },
-      { label: 'Lentille', value: 'Fisheye 1.16 mm' },
-      { label: 'Champ de vision', value: '360° horizontal, 180° vertical' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 10 m' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.6,
-    dimensionsCm: { height: 4.5, width: 14.0, depth: 14.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-10T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2df8c442ixs',
-    sku: 'HIK-2DF8C442IXS',
-    name: 'DS-2DF8C442IXS-AELW',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2df8c442ixs.svg",
-      alt: "DS-2DF8C442IXS-AELW",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.689Z",
-        checksum: "276716dc070e717f9a12ab7e7f89d54f49aec63b79a033f6cf262385da04dc39",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra PTZ 4MP avec zoom optique 42x, vision nocturne IR longue portée 200 m et tracking automatique.',
-    fullDescription:
-      'La Hikvision DS-2DF8C442IXS-AELW est une caméra PTZ 4MP haut de gamme avec un zoom optique 42x pour une identification à très longue distance. Elle offre un tracking automatique des cibles, une vision nocturne IR jusqu\'à 200 mètres et une rotation continue 360°. Idéale pour la surveillance de grands périmètres extérieurs, sites industriels et infrastructures critiques.',
-    specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Zoom optique', value: '42x (4.8-202 mm)' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 200 m' },
-      { label: 'Rotation', value: '360° continue, -20° à +90° inclination' },
-      { label: 'Certification', value: 'IP66, IK10' },
-      { label: 'Tracking', value: 'Auto-tracking intelligent' },
-      { label: 'Alimentation', value: 'PoE++ (802.3bt), AC 24V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 10,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'premium',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP66', 'IK10'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 5.5,
-    dimensionsCm: { height: 25.0, width: 20.0, depth: 20.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2df8c825ixg',
-    sku: 'HIK-2DF8C825IXG',
-    name: 'DS-2DF8C825IXG-ELW',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2df8c825ixg.svg",
-      alt: "DS-2DF8C825IXG-ELW",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.689Z",
-        checksum: "f6e9fe0b89dca87e96486065c2ce0ebd09fc97947c471c59832efc41595e18e1",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra PTZ 8MP avec zoom optique 25x, vision IR 150 m et tracking Deep Learning pour surveillance étendue.',
-    fullDescription:
-      'La Hikvision DS-2DF8C825IXG-ELW est une caméra PTZ 8MP offrant une résolution ultra-haute définition avec un zoom optique 25x. Ses algorithmes de Deep Learning permettent un tracking automatique des personnes et véhicules. Avec une vision nocturne IR jusqu\'à 150 mètres et une certification IP66, elle est parfaitement adaptée à la surveillance des grandes surfaces extérieures.',
-    specs: [
-      { label: 'Résolution', value: '8 MP (3840 x 2160)' },
-      { label: 'Zoom optique', value: '25x (4.8-120 mm)' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 150 m' },
-      { label: 'Rotation', value: '360° continue, -20° à +90° inclination' },
-      { label: 'Certification', value: 'IP66, IK10' },
-      { label: 'Tracking', value: 'Auto-tracking Deep Learning' },
-      { label: 'Alimentation', value: 'PoE++ (802.3bt), AC 24V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 8,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'premium',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP66', 'IK10'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 5.0,
-    dimensionsCm: { height: 24.0, width: 19.0, depth: 19.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2se7c425mwg',
-    sku: 'HIK-2SE7C425MWG',
-    name: 'DS-2SE7C425MWG-E',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2se7c425mwg.svg",
-      alt: "DS-2SE7C425MWG-E",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.690Z",
-        checksum: "169b389d1711461bab1707f7379bd8eedf5777a434aec90c6b14b3bd16f93473",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra PTZ 4MP compacte avec zoom 25x, vision IR 100 m et installation facile pour la surveillance urbaine.',
-    fullDescription:
-      'La Hikvision DS-2SE7C425MWG-E est une caméra PTZ 4MP compacte offrant un excellent rapport performance-prix pour la surveillance urbaine et périurbaine. Son zoom optique 25x permet une identification à distance, et sa vision nocturne IR atteint 100 mètres. Facile à installer et à configurer, elle convient aux parkings, campus et zones résidentielles.',
-    specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Zoom optique', value: '25x (4.8-120 mm)' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 100 m' },
-      { label: 'Rotation', value: '360° continue, -15° à +90° inclination' },
-      { label: 'Certification', value: 'IP66' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE+ (802.3at), AC 24V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 15,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP66'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 3.2,
-    dimensionsCm: { height: 20.0, width: 16.0, depth: 16.0 },
-    isFeatured: false,
-    publishedAt: '2026-02-25T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-9664ni-m16',
-    sku: 'HIK-9664NIM16',
-    asin: 'B0DHSJX1FT',
-    name: 'DS-9664NI-M16',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-9664ni-m16.svg",
-      alt: "DS-9664NI-M16",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.690Z",
-        checksum: "84947f881756e59c3048bd8255ab225c0997009a158f8b6b0cfe0085992c3d93",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'NVR 64 canaux 16 baies avec bande passante entrante 512 Mbps, RAID 5/6 et gestion H.265+ pour grands projets.',
-    fullDescription:
-      'Le Hikvision DS-9664NI-M16 est un enregistreur réseau NVR 64 canaux haut de gamme avec 16 baies de stockage hot-swap. Il offre une bande passante entrante de 512 Mbps et supporte le RAID 0/1/5/6/10 pour une protection des données optimale. Compatible H.265+, il permet une réduction significative du stockage et de la bande passante. Idéal pour les grands projets de surveillance comportant jusqu\'à 64 caméras.',
-    specs: [
-      { label: 'Canaux IP', value: '64' },
-      { label: 'Bande passante entrante', value: '512 Mbps' },
-      { label: 'Résolution max', value: '12 MP par canal' },
-      { label: 'Stockage', value: '16 baies SATA 3.5" hot-swap (jusqu\'à 192 To)' },
-      { label: 'RAID', value: 'RAID 0/1/5/6/10' },
-      { label: 'Compression', value: 'H.265+, H.265, H.264+, H.264' },
-      { label: 'Format', value: '4U rackable' },
-    ],
-    attributes: {
-      chassisFormat: '4U',
-      rackUnits: 4,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 5,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'premium',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Toutes caméras Hikvision', 'ONVIF Profile S/G/T', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 18.0,
-    dimensionsCm: { height: 17.6, width: 44.5, depth: 51.5 },
-    isFeatured: true,
-    publishedAt: '2026-03-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-9632ni-m16',
-    sku: 'HIK-9632NIM16',
-    name: 'DS-9632NI-M16',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-9632ni-m16.svg",
-      alt: "DS-9632NI-M16",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.690Z",
-        checksum: "3fd405fd967fec6baa806857fb6a7789b7a06f237f71e6e9f0ec14905a145bb2",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'NVR 32 canaux 16 baies avec bande passante entrante 320 Mbps, RAID 5/6 et gestion intelligente.',
-    fullDescription:
-      'Le Hikvision DS-9632NI-M16 est un NVR 32 canaux avec 16 baies de stockage hot-swap et une bande passante entrante de 320 Mbps. Il supporte le RAID pour la redondance des données et la compression H.265+ pour optimiser l\'utilisation du stockage. Parfait pour les projets de moyenne à grande envergure nécessitant une capacité de stockage étendue.',
-    specs: [
-      { label: 'Canaux IP', value: '32' },
-      { label: 'Bande passante entrante', value: '320 Mbps' },
-      { label: 'Résolution max', value: '12 MP par canal' },
-      { label: 'Stockage', value: '16 baies SATA 3.5" hot-swap (jusqu\'à 192 To)' },
-      { label: 'RAID', value: 'RAID 0/1/5/6/10' },
-      { label: 'Compression', value: 'H.265+, H.265, H.264+, H.264' },
-      { label: 'Format', value: '4U rackable' },
-    ],
-    attributes: {
-      chassisFormat: '4U',
-      rackUnits: 4,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 6,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'premium',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Toutes caméras Hikvision', 'ONVIF Profile S/G/T', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 17.5,
-    dimensionsCm: { height: 17.6, width: 44.5, depth: 51.5 },
-    isFeatured: false,
-    publishedAt: '2026-03-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-7732nxi-i4',
-    sku: 'HIK-7732NXII4',
-    asin: 'B0CVSDKZHJ',
-    name: 'DS-7732NXI-I4',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-7732nxi-i4.svg",
-      alt: "DS-7732NXI-I4",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.691Z",
-        checksum: "52ed5427f16d9fcd5a6130fbcce118ed38083e388bc7667214af5b64e9b65bcc",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'NVR AcuSense 32 canaux 4 baies avec analyse Deep Learning intégrée pour une détection intelligente.',
-    fullDescription:
-      'Le Hikvision DS-7732NXI-I4 est un NVR AcuSense 32 canaux avec 4 baies de stockage et un moteur d\'analyse Deep Learning embarqué. Il permet la détection et le filtrage intelligents des personnes et véhicules directement au niveau de l\'enregistreur, réduisant considérablement les fausses alertes. Compatible avec les caméras classiques et les caméras AcuSense pour une surveillance intelligente.',
-    specs: [
-      { label: 'Canaux IP', value: '32' },
-      { label: 'Bande passante entrante', value: '256 Mbps' },
-      { label: 'Résolution max', value: '12 MP par canal' },
-      { label: 'Stockage', value: '4 baies SATA 3.5" (jusqu\'à 48 To)' },
-      { label: 'RAID', value: 'Non' },
-      { label: 'Analyse', value: 'Deep Learning (détection personnes/véhicules)' },
-      { label: 'Format', value: '2U rackable' },
-    ],
-    attributes: {
-      chassisFormat: '2U',
-      rackUnits: 2,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 10,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Caméras Hikvision AcuSense', 'Caméras Hikvision standard', 'ONVIF Profile S/G/T', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 8.5,
-    dimensionsCm: { height: 8.8, width: 44.5, depth: 38.0 },
-    isFeatured: false,
-    publishedAt: '2026-03-10T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-7616nxi-k2',
-    sku: 'HIK-7616NXIK2',
-    asin: 'B0B77S6HR1',
-    name: 'DS-7616NXI-K2',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-7616nxi-k2.svg",
-      alt: "DS-7616NXI-K2",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.691Z",
-        checksum: "8a1a5f61731bfbdeac2575e191b88d5f09d139ade0c76bdc5b6d80770ada355b",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'NVR AcuSense 16 canaux 2 baies avec analyse Deep Learning 4 canaux pour PME et commerces.',
-    fullDescription:
-      'Le Hikvision DS-7616NXI-K2 est un NVR AcuSense 16 canaux avec 2 baies de stockage, conçu pour les petites et moyennes entreprises. Il intègre un moteur d\'analyse Deep Learning capable de traiter jusqu\'à 4 canaux simultanément pour la détection de personnes et véhicules. Compact et silencieux, il est idéal pour les commerces, les bureaux et les petites installations.',
-    specs: [
-      { label: 'Canaux IP', value: '16' },
-      { label: 'Bande passante entrante', value: '160 Mbps' },
-      { label: 'Résolution max', value: '12 MP par canal' },
-      { label: 'Stockage', value: '2 baies SATA 3.5" (jusqu\'à 24 To)' },
-      { label: 'RAID', value: 'Non' },
-      { label: 'Analyse', value: 'Deep Learning 4 canaux' },
-      { label: 'Format', value: '1U rackable' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 15,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Caméras Hikvision AcuSense', 'Caméras Hikvision standard', 'ONVIF Profile S/G/T', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 4.2,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 31.5 },
-    isFeatured: false,
-    publishedAt: '2026-03-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ids-7208huhi-m1',
-    sku: 'HIK-7208HUHIM1',
-    name: 'iDS-7208HUHI-M1',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ids-7208huhi-m1.svg",
-      alt: "iDS-7208HUHI-M1",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.692Z",
-        checksum: "eb43989d52e0be4393a21fbf38ad26e03eb77e528454281c8c6b099640abdda0",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'DVR 8 canaux HD avec analyse Deep Learning intégrée pour la détection intelligente de personnes et véhicules.',
-    fullDescription:
-      'Le Hikvision iDS-7208HUHI-M1 est un DVR 8 canaux HD avec analyse Deep Learning intégrée. Il supporte les caméras analogiques HD (TVI/AHD/CVI/CVBS) jusqu\'en 5MP et offre une détection intelligente de personnes et véhicules. Idéal pour la migration des systèmes analogiques vers une solution de surveillance intelligente.',
-    specs: [
-      { label: 'Canaux', value: '8' },
-      { label: 'Résolution max', value: '5 MP par canal' },
-      { label: 'Compression', value: 'H.265+, H.265, H.264+' },
-      { label: 'Stockage', value: '1 baie SATA (jusqu\'à 10 To)' },
-      { label: 'Sortie vidéo', value: 'HDMI 4K, VGA' },
-      { label: 'Analyse', value: 'Deep Learning (détection personnes/véhicules)' },
-      { label: 'Audio', value: 'Entrée/sortie audio' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 25,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Caméras Hikvision HD-TVI', 'Caméras AHD', 'Caméras CVBS'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 1.8,
-    dimensionsCm: { height: 5.0, width: 30.0, depth: 22.0 },
-    isFeatured: false,
-    publishedAt: '2026-03-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ids-7216huhi-m2',
-    sku: 'HIK-7216HUHIM2',
-    asin: 'B0BJ7CLBV3',
-    name: 'iDS-7216HUHI-M2',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ids-7216huhi-m2.svg",
-      alt: "iDS-7216HUHI-M2",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.692Z",
-        checksum: "d993c806bc10354cf8d7cba9a9dc82ec3c06c9f97289088f569262014bf420a3",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'DVR 16 canaux HD avec analyse Deep Learning 2 canaux pour systèmes analogiques et hybrides.',
-    fullDescription:
-      'Le Hikvision iDS-7216HUHI-M2 est un DVR 16 canaux HD avec analyse Deep Learning sur 2 canaux pour la détection de personnes et véhicules. Il supporte un mix de caméras analogiques HD et IP (jusqu\'à 8 canaux IP). Son boîtier 1U rackable permet une intégration facile en baie, idéal pour les installations de taille moyenne.',
-    specs: [
-      { label: 'Canaux', value: '16 (8 HD + 8 IP)' },
-      { label: 'Résolution max', value: '5 MP par canal' },
-      { label: 'Compression', value: 'H.265+, H.265, H.264+' },
-      { label: 'Stockage', value: '2 baies SATA (jusqu\'à 20 To)' },
-      { label: 'Sortie vidéo', value: 'HDMI 4K, VGA' },
-      { label: 'Analyse', value: 'Deep Learning 2 canaux' },
-      { label: 'Format', value: '1U rackable' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Caméras Hikvision HD-TVI', 'Caméras IP Hikvision', 'ONVIF'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 3.5,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 28.0 },
-    isFeatured: false,
-    publishedAt: '2026-03-25T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ids-7232hqhi-m2',
-    sku: 'HIK-7232HQHIM2',
-    asin: 'B0FS82CKG8',
-    name: 'iDS-7232HQHI-M2',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ids-7232hqhi-m2.svg",
-      alt: "iDS-7232HQHI-M2",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.693Z",
-        checksum: "e3af502fca790f43868b371750316e9f9cb0c0f448b15fa762599e14d0a33fa1",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'DVR 32 canaux HD avec analyse Deep Learning, stockage étendu et sortie HDMI 4K pour grands projets hybrides.',
-    fullDescription:
-      'Le Hikvision iDS-7232HQHI-M2 est un DVR 32 canaux HD haut de gamme avec analyse Deep Learning intégrée pour la détection de personnes et véhicules. Il supporte les caméras analogiques HD et IP, avec un stockage étendu de 2 baies SATA. Sa sortie HDMI 4K permet une visualisation haute définition sur écran grand format.',
-    specs: [
-      { label: 'Canaux', value: '32 (16 HD + 16 IP)' },
-      { label: 'Résolution max', value: '5 MP par canal' },
-      { label: 'Compression', value: 'H.265+, H.265, H.264+' },
-      { label: 'Stockage', value: '2 baies SATA (jusqu\'à 20 To)' },
-      { label: 'Sortie vidéo', value: 'HDMI 4K, VGA' },
-      { label: 'Analyse', value: 'Deep Learning 4 canaux' },
-      { label: 'Format', value: '1U rackable' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 12,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Caméras Hikvision HD-TVI', 'Caméras IP Hikvision', 'ONVIF'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 4.0,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 31.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2347g2-lu',
-    sku: 'HIK-2CD2347G2LU',
-    asin: 'B09HMY9X69',
-    name: 'DS-2CD2347G2-LU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2347g2-lu.svg",
-      alt: "DS-2CD2347G2-LU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.693Z",
-        checksum: "b8df00f8634c3ae4d8c9f10b8b7c93891864452f926f9d7d8cba4fae276ca934",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP dome ColorVu 4MP avec vision nocturne couleur 24/7, idéale pour les zones résidentielles et commerces.',
-    fullDescription:
-      'La Hikvision DS-2CD2347G2-LU est une caméra IP dome 4MP de la série ColorVu offrant une image couleur permanente 24h/24 grâce à son capteur haute sensibilité et son éclairage LED blanc intégré. Son design dome compact et discret est parfait pour les espaces résidentiels, les commerces de proximité et les zones d\'accueil.',
-    specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Capteur', value: '1/3" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'Couleur 24/7 (éclairage LED blanc)' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 45,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.5,
-    dimensionsCm: { height: 5.5, width: 11.5, depth: 11.5 },
-    isFeatured: false,
-    publishedAt: '2026-04-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2047g2-lu',
-    sku: 'HIK-2CD2047G2LU',
-    asin: 'B0996CRCL6',
-    name: 'DS-2CD2047G2-LU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2047g2-lu.svg",
-      alt: "DS-2CD2047G2-LU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.693Z",
-        checksum: "115b4396f02329d96a0b4019eac4008120642a2fa165509087011557cfd68308",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP bullet ColorVu 4MP extérieure avec vision nocturne couleur 24/7 et certification IP67.',
-    fullDescription:
-      'La Hikvision DS-2CD2047G2-LU est une caméra IP bullet 4MP ColorVu conçue pour la surveillance extérieure. Elle offre une image couleur en continu, de jour comme de nuit, grâce à son capteur CMOS à haute sensibilité et son éclairage LED blanc. Son boîtier IP67 résiste aux conditions climatiques les plus exigeantes.',
-    specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Capteur', value: '1/3" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'Couleur 24/7 (éclairage LED blanc)' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 40,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.8,
-    dimensionsCm: { height: 7.5, width: 7.5, depth: 17.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-10T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2t47g2-l',
-    sku: 'HIK-DS2CD2T47G2L',
-    name: 'DS-2CD2T47G2-L',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    asin: 'B08SNWG3LC',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2t47g2-l.svg",
-      alt: "DS-2CD2T47G2-L",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.694Z",
-        checksum: "ebcfa83987a8162a59f3251530445b66e48b47413b5493d55641cbcf26d9af1b",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP bullet ColorVu 4MP avec vision nocturne couleur 24/7, détection de mouvement et design compact.',
-    fullDescription:
-      'La Hikvision DS-2CD2T47G2-L est une caméra IP bullet 4MP ColorVu offrant une image couleur 24h/24 grâce à sa technologie d\'éclairage LED blanc. Elle est idéale pour la surveillance extérieure résidentielle et commerciale avec son boîtier IP67 résistant aux intempéries. Sa fonction de détection de mouvement intégrée déclenche l\'enregistrement et les alertes.',
-    specs: [
-      { label: 'Résolution', value: '4 MP (2688 x 1520)' },
-      { label: 'Capteur', value: '1/3" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'Couleur 24/7 (éclairage LED blanc)' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 50,
-      leadTimeDays: 2,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.7,
-    dimensionsCm: { height: 7.0, width: 7.0, depth: 16.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2366g2-iu',
-    sku: 'HIK-2CD2366G2IU',
-    asin: 'B09HMVTSKY',
-    name: 'DS-2CD2366G2-IU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2366g2-iu.svg",
-      alt: "DS-2CD2366G2-IU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.694Z",
-        checksum: "767d84cc821e2d4e6ea2e121e663f8def925669149e7b781a5e2e3199e13b7d8",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP dome AcuSense 6MP avec détection Deep Learning, vision IR 30 m et design discret.',
-    fullDescription:
-      'La Hikvision DS-2CD2366G2-IU est une caméra IP dome 6MP AcuSense intégrant des algorithmes de Deep Learning pour une détection précise des personnes et véhicules. Son format dome discret et sa certification IP67 la rendent adaptée à la surveillance intérieure et extérieure. La vision nocturne IR offre une portée de 30 mètres.',
-    specs: [
-      { label: 'Résolution', value: '6 MP (3072 x 2048)' },
-      { label: 'Capteur', value: '1/2.7" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 30 m' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 35,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.6,
-    dimensionsCm: { height: 6.0, width: 12.0, depth: 12.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2386g2-iu',
-    sku: 'HIK-2CD2386G2IU',
-    asin: 'B0996BQ95Q',
-    name: 'DS-2CD2386G2-IU',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2386g2-iu.svg",
-      alt: "DS-2CD2386G2-IU",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.694Z",
-        checksum: "09eb8c2ddf8b5c282c48a706813b2f6fe3f9360c42e2a6aecbc690be8212f535",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP dome AcuSense 8MP avec détection Deep Learning haute résolution et vision IR 30 m.',
-    fullDescription:
-      'La Hikvision DS-2CD2386G2-IU est une caméra IP dome 8MP AcuSense offrant une résolution ultra-haute définition couplée à la détection Deep Learning de personnes et véhicules. Son design dome compact et robuste (IP67) est idéal pour les environnements nécessitant une qualité d\'image maximale dans un format discret.',
-    specs: [
-      { label: 'Résolution', value: '8 MP (3840 x 2160)' },
-      { label: 'Capteur', value: '1/2.8" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 30 m' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 30,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.7,
-    dimensionsCm: { height: 6.5, width: 13.0, depth: 13.0 },
-    isFeatured: false,
-    publishedAt: '2026-04-25T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-2cd2t86g2-4i',
-    sku: 'HIK-2CD2T86G24I',
-    asin: 'B0996BFJ2B',
-    name: 'DS-2CD2T86G2-4I',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-2cd2t86g2-4i.svg",
-      alt: "DS-2CD2T86G2-4I",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.695Z",
-        checksum: "450d61fee17984aa428ca12d93f0563a59cf815d11164a63704849a63411e63f",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Caméra IP bullet AcuSense 8MP avec IR longue portée 40 m et détection intelligente de personnes et véhicules.',
-    fullDescription:
-      'La Hikvision DS-2CD2T86G2-4I est une caméra IP bullet 8MP AcuSense avec un éclairage IR de 40 mètres pour une surveillance nocturne étendue. Ses algorithmes Deep Learning permettent de filtrer les alarmes en distinguant les personnes et véhicules des mouvements parasites. Son boîtier IP67 garantit une installation extérieure durable.',
-    specs: [
-      { label: 'Résolution', value: '8 MP (3840 x 2160)' },
-      { label: 'Capteur', value: '1/2.8" Progressive Scan CMOS' },
-      { label: 'Lentille', value: '2.8 mm fixe' },
-      { label: 'Vision nocturne', value: 'IR jusqu\'à 40 m' },
-      { label: 'Certification', value: 'IP67' },
-      { label: 'Compression', value: 'H.265+, H.264+' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 30,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP67'],
-    compatibility: ['Hikvision NVR', 'HikCentral', 'ONVIF Profile S/G/T'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.9,
-    dimensionsCm: { height: 8.0, width: 8.0, depth: 19.0 },
-    isFeatured: false,
-    publishedAt: '2026-05-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-k1t673dx',
-    sku: 'HIK-K1T673DX',
-    name: 'DS-K1T673DX',
-    brand: 'HIKVISION',
-    category: 'security',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-k1t673dx.svg",
-      alt: "DS-K1T673DX",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.695Z",
-        checksum: "9367f934d38a5e91ca8b36209b6d87814cab9e273d403c29f4969957a429c46d",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Terminal de contrôle d\'accès biométrique 4.3" avec lecteur d\'empreintes, RFID et écran tactile couleur.',
-    fullDescription:
-      'Le Hikvision DS-K1T673DX est un terminal de contrôle d\'accès biométrique avec écran tactile couleur 4.3". Il intègre un lecteur d\'empreintes digitales haute précision, un lecteur RFID (Mifare/EM) pour le badge, et supporte les mots de passe. Sa capacité de stockage permet jusqu\'à 3000 utilisateurs et 5000 empreintes. Idéal pour le contrôle d\'accès des bâtiments professionnels.',
-    specs: [
-      { label: 'Écran', value: '4.3" tactile couleur' },
-      { label: 'Lecteur', value: 'Empreintes + RFID (Mifare/EM) + Mot de passe' },
-      { label: 'Capacité utilisateurs', value: '3 000 utilisateurs' },
-      { label: 'Capacité empreintes', value: '5 000 empreintes' },
-      { label: 'Interface', value: 'TCP/IP, Wiegand, RS-485' },
-      { label: 'Alimentation', value: 'DC 12V / PoE' },
-      { label: 'Protection', value: 'IP65' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 25,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP65'],
-    compatibility: ['Hikvision Access Control', 'HikCentral', 'ISAPI'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.6,
-    dimensionsCm: { height: 14.0, width: 8.5, depth: 3.5 },
-    isFeatured: false,
-    publishedAt: '2026-05-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-k1t342mfwx',
-    sku: 'HIK-K1T342MFWX',
-    asin: 'B0BDLPC4QQ',
-    name: 'DS-K1T342MFWX',
-    brand: 'HIKVISION',
-    category: 'security',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-k1t342mfwx.svg",
-      alt: "DS-K1T342MFWX",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.695Z",
-        checksum: "2492f00264079fab472307e5a276fd0ae0c475cdddba58bcd6a5c661472662f3",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Terminal de contrôle d\'accès facial 7" avec reconnaissance faciale Deep Learning et détection de masque.',
-    fullDescription:
-      'Le Hikvision DS-K1T342MFWX est un terminal de contrôle d\'accès facial haut de gamme avec écran tactile 7". Il utilise des algorithmes de Deep Learning pour la reconnaissance faciale rapide et précise, même avec masque. Il supporte jusqu\'à 5000 visages et intègre un lecteur RFID. Son design moderne et élégant convient aux halls d\'accueil et bâtiments d\'entreprise.',
-    specs: [
-      { label: 'Écran', value: '7" tactile couleur' },
-      { label: 'Reconnaissance', value: 'Faciale Deep Learning (jusqu\'à 5000 visages)' },
-      { label: 'Détection masque', value: 'Oui' },
-      { label: 'Lecteur', value: 'RFID (Mifare) + Mot de passe' },
-      { label: 'Interface', value: 'TCP/IP, Wiegand, RS-485' },
-      { label: 'Alimentation', value: 'DC 12V / PoE' },
-      { label: 'Protection', value: 'IP65' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP65'],
-    compatibility: ['Hikvision Access Control', 'HikCentral', 'ISAPI'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.8,
-    dimensionsCm: { height: 20.0, width: 12.0, depth: 4.0 },
-    isFeatured: false,
-    publishedAt: '2026-05-10T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-k2604t',
-    sku: 'HIK-K2604T',
-    name: 'DS-K2604T',
-    brand: 'HIKVISION',
-    category: 'security',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-k2604t.svg",
-      alt: "DS-K2604T",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.696Z",
-        checksum: "51bdba97bbc908a7b082c4b884b83709929c5b7d4c63d072aa3719469786d245",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Contrôleur d\'accès 4 portes avec interface TCP/IP, support de 4 lecteurs Wiegand et gestion centralisée.',
-    fullDescription:
-      'Le Hikvision DS-K2604T est un contrôleur d\'accès 4 portes conçu pour la gestion centralisée des accès dans les bâtiments professionnels. Il supporte jusqu\'à 4 lecteurs Wiegand entrée/sortie et gère jusqu\'à 100 000 utilisateurs. Sa communication TCP/IP permet une gestion à distance via HikCentral ou un logiciel de contrôle d\'accès tiers.',
-    specs: [
-      { label: 'Portes', value: '4' },
-      { label: 'Lecteurs', value: '4 entrées Wiegand, 4 sorties' },
-      { label: 'Capacité utilisateurs', value: '100 000' },
-      { label: 'Capacité événements', value: '300 000' },
-      { label: 'Interface', value: 'TCP/IP, RS-485' },
-      { label: 'Alimentation', value: 'DC 12V' },
-      { label: 'Format', value: 'Compact, montage mural' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 15,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision Access Control', 'HikCentral', 'Contrôleurs DS-K2600'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.5,
-    dimensionsCm: { height: 3.0, width: 18.0, depth: 12.0 },
-    isFeatured: false,
-    publishedAt: '2026-05-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-kh9510-wte1',
-    sku: 'HIK-KH9510WTE1',
-    asin: 'B0D9DZBF84',
-    name: 'DS-KH9510-WTE1',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-kh9510-wte1.svg",
-      alt: "DS-KH9510-WTE1",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.696Z",
-        checksum: "bfd938b8ea5a4e0ea4a49bfd374d5e34057f17ff715bd5fb0710a7e33f68528a",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Moniteur intérieur d\'interphonie 10" tactile PoE avec écran haute résolution et fonction domotique.',
-    fullDescription:
-      'Le Hikvision DS-KH9510-WTE1 est un moniteur intérieur d\'interphonie vidéo avec écran tactile 10" haute résolution. Il permet de visualiser et communiquer avec les visiteurs via la station extérieure, de déverrouiller la porte à distance et de gérer les fonctions domotiques de base. Alimenté en PoE, il s\'installe facilement sur mur ou sur table.',
-    specs: [
-      { label: 'Écran', value: '10" tactile capacitif' },
-      { label: 'Résolution', value: '1280 x 800' },
-      { label: 'Audio', value: 'Full duplex avec suppression d\'écho' },
-      { label: 'Interface', value: 'TCP/IP, PoE' },
-      { label: 'Fonctions', value: 'Visio, déverrouillage, domotique' },
-      { label: 'Alimentation', value: 'PoE (802.3af)' },
-      { label: 'Montage', value: 'Mural ou sur table' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision DS-KV8113', 'Hikvision DS-KD8003', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.9,
-    dimensionsCm: { height: 18.0, width: 26.0, depth: 2.5 },
-    isFeatured: false,
-    publishedAt: '2026-05-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-kv8113-wme1',
-    sku: 'HIK-KV8113WME1',
-    asin: 'B08JZCJFKF',
-    name: 'DS-KV8113-WME1',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-kv8113-wme1.svg",
-      alt: "DS-KV8113-WME1",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.697Z",
-        checksum: "a17da5ad1d09eb08e96a4f7744115816d270a6def5afd219999d97c29ca0419a",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station extérieure d\'interphonie vidéo IP avec caméra grand angle, lecteur RFID et clavier rétroéclairé.',
-    fullDescription:
-      'La Hikvision DS-KV8113-WME1 est une station extérieure d\'interphonie vidéo IP conçue pour les immeubles résidentiels et les bâtiments professionnels. Elle intègre une caméra grand angle, un lecteur RFID, un clavier rétroéclairé et un haut-parleur pour une communication audio/vidéo bidirectionnelle. Son boîtier en aluminium robuste résiste aux intempéries.',
-    specs: [
-      { label: 'Caméra', value: '2 MP grand angle' },
-      { label: 'Audio', value: 'Full duplex haute qualité' },
-      { label: 'Lecteur', value: 'RFID (Mifare/EM)' },
-      { label: 'Éclairage', value: 'LED blanc pour vision nocturne' },
-      { label: 'Interface', value: 'TCP/IP, PoE' },
-      { label: 'Protection', value: 'IP65, IK07' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 18,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL', 'IP65', 'IK07'],
-    compatibility: ['Hikvision DS-KH9510', 'Hikvision DS-KD8003', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.7,
-    dimensionsCm: { height: 14.0, width: 10.0, depth: 3.5 },
-    isFeatured: false,
-    publishedAt: '2026-05-25T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-kd8003',
-    sku: 'HIK-KD8003',
-    asin: 'B07TX6KGGX',
-    name: 'DS-KD8003',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-kd8003.svg",
-      alt: "DS-KD8003",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.697Z",
-        checksum: "1c239440e4e8a4c23298922c0970a88813880d4898b99a2595ae364f937bfe3f",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Contrôleur d\'interphonie IP pour immeubles collectifs, gérant jusqu\'à 4 stations extérieures et 100 moniteurs intérieurs.',
-    fullDescription:
-      'Le Hikvision DS-KD8003 est un contrôleur d\'interphonie IP conçu pour les immeubles collectifs et les bâtiments multi-logements. Il gère jusqu\'à 4 stations extérieures et 100 moniteurs intérieurs, avec une communication audio/vidéo fluide. Il supporte le déverrouillage centralisé et la gestion des appels via le réseau IP.',
-    specs: [
-      { label: 'Stations extérieures', value: 'Jusqu\'à 4' },
-      { label: 'Moniteurs intérieurs', value: 'Jusqu\'à 100' },
-      { label: 'Audio', value: 'Full duplex' },
-      { label: 'Interface', value: 'TCP/IP, PoE' },
-      { label: 'Fonctions', value: 'Gestion des appels, déverrouillage, push notification' },
-      { label: 'Alimentation', value: 'PoE (802.3af), DC 12V' },
-      { label: 'Format', value: 'Compact, montage rail DIN' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 12,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision DS-KH9510', 'Hikvision DS-KV8113', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.4,
-    dimensionsCm: { height: 3.0, width: 14.0, depth: 8.5 },
-    isFeatured: false,
-    publishedAt: '2026-06-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ax-pro-ds-pwa96',
-    sku: 'HIK-AXPRO-PWA96',
-    asin: 'B08L8GM7CL',
-    name: 'AX PRO DS-PWA96',
-    brand: 'HIKVISION',
-    category: 'security',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ax-pro-ds-pwa96.svg",
-      alt: "AX PRO DS-PWA96",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.698Z",
-        checksum: "36dec5419ef704055e0a901755ca63d266902b78729961b2ccca823db88cf477",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Centrale d\'alarme sans fil AX PRO 96 zones avec communication GSM/GPRS et application mobile.',
-    fullDescription:
-      'La Hikvision AX PRO DS-PWA96 est une centrale d\'alarme sans fil professionnelle offrant jusqu\'à 96 zones de protection. Elle communique via GSM/GPRS et IP pour une transmission fiable des alarmes. Compatible avec les détecteurs de la gamme AX PRO, elle se configure facilement via l\'application mobile Hikvision et supporte la télésurveillance.',
-    specs: [
-      { label: 'Zones', value: '96' },
-      { label: 'Communication', value: 'GSM/GPRS, IP, téléphone fixe' },
-      { label: 'Protocole', value: 'Hikvision AX PRO (RF 868 MHz)' },
-      { label: 'Utilisateurs', value: 'Jusqu\'à 50' },
-      { label: 'Application', value: 'Hikvision AX PRO app' },
-      { label: 'Alimentation', value: 'AC 230V / Batterie de secours' },
-      { label: 'Certification', value: 'EN 50131 Grade 3' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 15,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'EN 50131 Grade 3'],
-    compatibility: ['Hikvision AX PRO DS-PDC15', 'Hikvision AX PRO DS-PDP15', 'Hikvision AX PRO app'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.8,
-    dimensionsCm: { height: 5.0, width: 20.0, depth: 15.0 },
-    isFeatured: false,
-    publishedAt: '2026-06-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ax-pro-ds-pdc15',
-    sku: 'HIK-AXPRO-PDC15',
-    asin: 'B0BKRVP3LN',
-    name: 'AX PRO DS-PDC15',
-    brand: 'HIKVISION',
-    category: 'security',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ax-pro-ds-pdc15.svg",
-      alt: "AX PRO DS-PDC15",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.698Z",
-        checksum: "1c1c3832617c6a22773c75e73fcf2edca336152eae7de0d55a39303f2c271a40",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Détecteur d\'ouverture sans fil AX PRO pour portes et fenêtres, communication RF 868 MHz.',
-    fullDescription:
-      'Le Hikvision AX PRO DS-PDC15 est un détecteur d\'ouverture magnétique sans fil conçu pour la gamme d\'alarme AX PRO. Il se fixe facilement sur les portes et fenêtres et communique via le protocole RF 868 MHz avec la centrale. Sa pile au lithium offre une autonomie jusqu\'à 3 ans.',
-    specs: [
-      { label: 'Type', value: 'Détecteur d\'ouverture magnétique' },
-      { label: 'Communication', value: 'RF 868 MHz' },
-      { label: 'Portée RF', value: 'Jusqu\'à 800 m (champ libre)' },
-      { label: 'Autonomie', value: 'Jusqu\'à 3 ans (pile lithium)' },
-      { label: 'Protection', value: 'Anti-sabotage' },
-      { label: 'Dimensions', value: '28 x 70 x 18 mm' },
-      { label: 'Certification', value: 'EN 50131 Grade 2' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 50,
-      leadTimeDays: 2,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'EN 50131 Grade 2'],
-    compatibility: ['Hikvision AX PRO DS-PWA96', 'Hikvision AX PRO DS-PDP15'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.05,
-    dimensionsCm: { height: 2.8, width: 7.0, depth: 1.8 },
-    isFeatured: false,
-    publishedAt: '2026-06-10T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ax-pro-ds-pdp15',
-    sku: 'HIK-AXPRO-PDP15',
-    asin: 'B0987DLYRS',
-    name: 'AX PRO DS-PDP15',
-    brand: 'HIKVISION',
-    category: 'security',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ax-pro-ds-pdp15.svg",
-      alt: "AX PRO DS-PDP15",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.699Z",
-        checksum: "992e2ea442fd5759a3609ce683d9eb2b70bcc123f891350406773e0752cca485",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Détecteur de mouvement sans fil AX PRO avec protection anti-sabotage et détection d\'intrusion fiable.',
-    fullDescription:
-      'Le Hikvision AX PRO DS-PDP15 est un détecteur de mouvement sans fil pour la gamme d\'alarme AX PRO. Il utilise un capteur infrarouge passif haute sensibilité pour détecter les intrusions et communique avec la centrale via RF 868 MHz. Sa protection anti-sabotage et sa pile longue durée en font un élément de confiance pour toute installation d\'alarme.',
-    specs: [
-      { label: 'Type', value: 'Détecteur de mouvement PIR' },
-      { label: 'Communication', value: 'RF 868 MHz' },
-      { label: 'Portée RF', value: 'Jusqu\'à 800 m (champ libre)' },
-      { label: 'Angle de détection', value: '90°' },
-      { label: 'Portée de détection', value: '12 m' },
-      { label: 'Autonomie', value: 'Jusqu\'à 3 ans (pile lithium)' },
-      { label: 'Protection', value: 'Anti-sabotage' },
-    ],
-    attributes: {
-      chassisFormat: 'Compact',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 45,
-      leadTimeDays: 2,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'EN 50131 Grade 2'],
-    compatibility: ['Hikvision AX PRO DS-PWA96', 'Hikvision AX PRO DS-PDC15'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 0.08,
-    dimensionsCm: { height: 10.0, width: 5.5, depth: 4.0 },
-    isFeatured: false,
-    publishedAt: '2026-06-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-hikcentral-professional',
-    sku: 'HIK-CENTRAL-PRO',
-    name: 'HikCentral Professional',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-hikcentral-professional.svg",
-      alt: "HikCentral Professional",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.699Z",
-        checksum: "418a362dd22324d573022b14695ddfab43ef9eba26ba01cce65c4e3dfeddbbb9",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Logiciel VMS professionnel de gestion vidéo centralisée pour jusqu\'à 500 caméras, avec interface web et mobile.',
-    fullDescription:
-      'HikCentral Professional est le logiciel de gestion vidéo (VMS) de Hikvision conçu pour les installations de taille moyenne jusqu\'à 500 caméras. Il offre une interface web et mobile pour la visualisation en direct, la recherche d\'événements, la gestion des alarmes et l\'administration centralisée. Compatible avec les caméras Hikvision et ONVIF, il intègre des fonctionnalités avancées de carte électronique et de analyse vidéo.',
-    specs: [
-      { label: 'Type', value: 'VMS (Video Management Software)' },
-      { label: 'Caméras max', value: '500' },
-      { label: 'Serveurs', value: 'Serveur unique' },
-      { label: 'Interface', value: 'Web, client lourd, mobile (iOS/Android)' },
-      { label: 'OS serveur', value: 'Windows Server, Linux' },
-      { label: 'Fonctionnalités', value: 'Gestion des alarmes, carte, PTZ, exports' },
-      { label: 'Compatibilité', value: 'Caméras Hikvision, ONVIF Profile S/G/T' },
-    ],
-    attributes: {},
-    availability: {
-      status: 'available',
-      stockQuantity: 50,
-      leadTimeDays: 1,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC'],
-    compatibility: ['Caméras Hikvision', 'ONVIF Profile S/G/T', 'Hikvision NVR', 'Hikvision DVR'],
-    datasheets: [],
-    releaseYear: 2026,
-    isFeatured: true,
-    publishedAt: '2026-06-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-hikcentral-enterprise',
-    sku: 'HIK-CENTRAL-ENT',
-    name: 'HikCentral Enterprise',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-hikcentral-enterprise.svg",
-      alt: "HikCentral Enterprise",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.700Z",
-        checksum: "97e392c8d7e998c12a4061481164f237ec0ab23e65aedd38a4b032f3c25ad2db",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Plateforme VMS d\'entreprise pour jusqu\'à 5 000 caméras, architecture multi-serveur et gestion multisite.',
-    fullDescription:
-      'HikCentral Enterprise est la plateforme VMS haut de gamme de Hikvision, conçue pour les grandes organisations avec jusqu\'à 5 000 caméras. Son architecture multi-serveur permet la gestion de sites multiples et de vastes parcs de caméras. Elle offre des fonctionnalités avancées : carte interactive, analyse vidéo centralisée, gestion des droits, rapports personnalisés et intégration avec les systèmes tiers.',
-    specs: [
-      { label: 'Type', value: 'VMS Enterprise (Video Management Software)' },
-      { label: 'Caméras max', value: '5 000' },
-      { label: 'Serveurs', value: 'Architecture multi-serveur' },
-      { label: 'Interface', value: 'Web, client lourd, mobile (iOS/Android)' },
-      { label: 'OS serveur', value: 'Windows Server, Linux' },
-      { label: 'Fonctionnalités', value: 'Multisite, carte, analyse, rapports, API' },
-      { label: 'Compatibilité', value: 'Caméras Hikvision, ONVIF, intégration tiers' },
-    ],
-    attributes: {},
-    availability: {
-      status: 'available',
-      stockQuantity: 20,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'premium',
-    },
-    certifications: ['CE', 'FCC'],
-    compatibility: ['Caméras Hikvision', 'ONVIF Profile S/G/T', 'Hikvision NVR', 'Hikvision DVR', 'Systèmes tiers API'],
-    datasheets: [],
-    releaseYear: 2026,
-    isFeatured: false,
-    publishedAt: '2026-06-25T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-d5022qe',
-    sku: 'HIK-D5022QE',
-    name: 'DS-D5022QE',
-    brand: 'HIKVISION',
-    category: 'monitor',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-d5022qe.svg",
-      alt: "DS-D5022QE",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.700Z",
-        checksum: "92a0acc7602773bd2dbe1f432b5bf0ebe49a773df28e5c94ed6b624219929b2d",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Moniteur 22" Full HD avec entrées HDMI/VGA, design fin et haut-parleurs intégrés pour la vidéosurveillance.',
-    fullDescription:
-      'Le Hikvision DS-D5022QE est un moniteur 22" Full HD (1920x1080) conçu pour les applications de vidéosurveillance. Il offre une qualité d\'image optimale avec un taux de contraste élevé et une luminosité de 250 cd/m². Ses entrées HDMI, VGA et haut-parleurs intégrés en font un affichage polyvalent pour les postes de sécurité et les bureaux.',
-    specs: [
-      { label: 'Taille', value: '21.5"' },
-      { label: 'Résolution', value: 'Full HD (1920 x 1080)' },
-      { label: 'Luminosité', value: '250 cd/m²' },
-      { label: 'Contraste', value: '3000:1' },
-      { label: 'Connectivité', value: 'HDMI, VGA' },
-      { label: 'Audio', value: 'Haut-parleurs intégrés (2x 2W)' },
-      { label: 'Alimentation', value: 'AC 100-240V, 50/60 Hz' },
-    ],
-    attributes: {
-      chassisFormat: 'Desktop',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 30,
-      leadTimeDays: 3,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision NVR', 'Hikvision DVR', 'PC', 'Caméras IP'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 3.5,
-    dimensionsCm: { height: 32.0, width: 50.5, depth: 18.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-d5043uc',
-    sku: 'HIK-D5043UC',
-    asin: 'B08BKRHFVG',
-    name: 'DS-D5043UC',
-    brand: 'HIKVISION',
-    category: 'monitor',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-d5043uc.svg",
-      alt: "DS-D5043UC",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.701Z",
-        checksum: "3f18ef01ec9777264cdad6f33dbdb99146eb2a671be812dd6d1a010ba72b33a1",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Moniteur 43" 4K UHD avec haute luminosité 350 cd/m² pour la vidéosurveillance professionnelle.',
-    fullDescription:
-      'Le Hikvision DS-D5043UC est un moniteur 43" 4K UHD (3840x2160) offrant une résolution exceptionnelle pour la vidéosurveillance haute définition. Avec sa luminosité de 350 cd/m², il assure une visibilité optimale même dans les environnements lumineux. Ses multiples entrées HDMI, DisplayPort et VGA permettent de connecter jusqu\'à 4 sources simultanément.',
-    specs: [
-      { label: 'Taille', value: '43"' },
-      { label: 'Résolution', value: '4K UHD (3840 x 2160)' },
-      { label: 'Luminosité', value: '350 cd/m²' },
-      { label: 'Contraste', value: '4000:1' },
-      { label: 'Connectivité', value: 'HDMI 2.0 x3, DisplayPort, VGA' },
-      { label: 'Audio', value: 'Haut-parleurs intégrés (2x 10W)' },
-      { label: 'Alimentation', value: 'AC 100-240V, 50/60 Hz' },
-    ],
-    attributes: {
-      chassisFormat: 'Desktop',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 12,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision NVR', 'Hikvision DVR', 'PC', 'Caméras IP'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 8.5,
-    dimensionsCm: { height: 58.0, width: 97.0, depth: 20.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-d5b65rb',
-    sku: 'HIK-D5B65RB',
-    asin: 'B09X6ZB7YF',
-    name: 'DS-D5B65RB',
-    brand: 'HIKVISION',
-    category: 'monitor',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-d5b65rb.svg",
-      alt: "DS-D5B65RB",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.701Z",
-        checksum: "fcca6bcf439c35b7e5c537ad2fbe619b6813e90785173df63c902356413b3933",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Écran interactif 65" 4K avec tactile 20 points pour les salles de réunion et les espaces collaboratifs.',
-    fullDescription:
-      'Le Hikvision DS-D5B65RB est un écran interactif 65" 4K UHD avec technologie tactile 20 points, conçu pour les salles de réunion, les espaces collaboratifs et les centres de commandement. Il intègre un système Android pour les applications natives, un tableau blanc numérique, le partage d\'écran sans fil et des haut-parleurs intégrés.',
-    specs: [
-      { label: 'Taille', value: '65"' },
-      { label: 'Résolution', value: '4K UHD (3840 x 2160)' },
-      { label: 'Tactile', value: '20 points, technologie IR' },
-      { label: 'Luminosité', value: '450 cd/m²' },
-      { label: 'OS intégré', value: 'Android' },
-      { label: 'Connectivité', value: 'HDMI 2.0 x3, USB 3.0 x4, RJ45, WiFi' },
-      { label: 'Audio', value: 'Haut-parleurs 2x 15W' },
-    ],
-    attributes: {
-      chassisFormat: 'Desktop',
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 8,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'premium',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision NVR', 'PC', 'Systèmes de visioconférence', 'HikCentral'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 35.0,
-    dimensionsCm: { height: 90.0, width: 150.0, depth: 8.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-10T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-6908udi',
-    sku: 'HIK-6908UDI',
-    name: 'DS-6908UDI',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-6908udi.svg",
-      alt: "DS-6908UDI",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.702Z",
-        checksum: "63d15daccee21ec73a8db2b547179d3199285c9c09265a4a1b357913db16455d",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Décodeur vidéo 8 canaux HDMI avec sortie 4K, décodage H.265 et sortie multi-écrans pour centres de contrôle.',
-    fullDescription:
-      'Le Hikvision DS-6908UDI est un décodeur vidéo 8 canaux professionnel conçu pour les centres de contrôle et les salles de sécurité. Il décode jusqu\'à 8 flux vidéo en simultané avec une sortie HDMI 4K. Compatible H.265/H.264, il supporte différents modes d\'affichage (quad, séquentiel, plein écran) et la gestion des alarmes.',
-    specs: [
-      { label: 'Canaux', value: '8' },
-      { label: 'Sortie vidéo', value: 'HDMI 4K' },
-      { label: 'Décodage', value: 'H.265, H.264, MPEG-4' },
-      { label: 'Résolution max', value: '4K (3840 x 2160)' },
-      { label: 'Entrée audio', value: 'Oui (désérialisation audio)' },
-      { label: 'Format', value: '1U rackable' },
-      { label: 'Alimentation', value: 'AC 100-240V' },
-    ],
-    attributes: {
-      chassisFormat: '1U',
-      rackUnits: 1,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 10,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'standard',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision NVR', 'Hikvision DVR', 'HikCentral', 'Caméras IP'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 3.5,
-    dimensionsCm: { height: 4.4, width: 44.5, depth: 28.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ds-a81024s',
-    sku: 'HIK-A81024S',
-    name: 'DS-A81024S',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: "/assets/images/branded/hikvision-ds-a81024s.svg",
-      alt: "DS-A81024S",
-      width: 600,
-      height: 600,
-      imageSource: "placeholder",
-      provenance: {
-        sourceProvider: "branded-placeholder",
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: "2026-07-30T04:10:34.702Z",
-        checksum: "1405d13d9ef5e4b1b1bceb741ecf4db67850b656b1af9c881b477f1feeb7c256",
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Baie de stockage réseau 24 baies SATA 3.5" avec contrôleur RAID et bande passante 10 GbE pour la vidéosurveillance.',
-    fullDescription:
-      'La Hikvision DS-A81024S est une baie de stockage réseau 4U 24 baies conçue pour les installations de vidéosurveillance de grande envergure. Elle offre une capacité de stockage pouvant atteindre 576 To avec des disques de 24 To, un contrôleur RAID matériel et des interfaces réseau 10 GbE redondantes. Idéale pour les projets nécessitant un stockage centralisé longue durée.',
-    specs: [
-      { label: 'Baies', value: '24 baies SATA 3.5" hot-swap' },
-      { label: 'Capacité max', value: 'Jusqu\'à 576 To (24 To/disque)' },
-      { label: 'RAID', value: 'RAID 0/1/5/6/10, contrôleur matériel' },
-      { label: 'Interface réseau', value: '2x 10GbE SFP+, 2x 1GbE RJ45' },
-      { label: 'Bande passante', value: 'Jusqu\'à 4 000 Mo/s en lecture' },
-      { label: 'Protocoles', value: 'NFS, CIFS/SMB, iSCSI, FTP' },
-      { label: 'Format', value: '4U rackable' },
-    ],
-    attributes: {
-      chassisFormat: '4U',
-      rackUnits: 4,
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 5,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans',
-      supportTier: 'premium',
-    },
-    certifications: ['CE', 'FCC', 'UL'],
-    compatibility: ['Hikvision NVR', 'Hikvision DVR', 'HikCentral', 'Serveurs de stockage'],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 28.0,
-    dimensionsCm: { height: 17.6, width: 44.5, depth: 66.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-hikcentral-workstation',
-    sku: 'HIK-HIKCENTRAL-WS',
-    name: 'Hikvision HikCentral Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-hikcentral-workstation.svg',
-      alt: 'Hikvision HikCentral Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.001Z',
-        checksum: 'a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station de gestion centrale HikCentral pour la supervision de systèmes de sécurité IP.',
-    fullDescription:
-      'La Hikvision HikCentral Workstation est une station de gestion centrale dédiée à la plateforme HikCentral. Équipée d\'un processeur Intel Core i7, de 32 Go de RAM et d\'un SSD de 1 To, elle prend en charge la gestion de jusqu\'à 500 caméras. Idéale pour les centres de sécurité nécessitant une supervision unifiée des systèmes de vidéosurveillance, contrôle d\'accès et alarmes.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '32 Go DDR5' },
-      { label: 'Stockage', value: '1 To SSD NVMe' },
-      { label: 'Type', value: 'Station de gestion centrale' },
-      { label: 'Capacité', value: 'Jusqu\'à 500 caméras' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 8,
-      leadTimeDays: 7,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2024,
-    weightKg: 5.0,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 45.0 },
     isFeatured: false,
-    publishedAt: '2026-07-01T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-hikcentral-control-client',
-    sku: 'HIK-HIKCENTRAL-CLIENT',
-    name: 'Hikvision HikCentral Control Client',
+    id: 'hikvision-ids-2cd7026g0-p-ap',
+    sku: 'iDS-2CD7026G0/P-AP',
+    name: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7026G0/P-AP',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-hikcentral-control-client.svg',
-      alt: 'Hikvision HikCentral Control Client',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7026G0_P-AP__0.jpg',
+      alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7026G0/P-AP',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.002Z',
-        checksum: 'b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__1_1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__1_1_.jpg',
+        fetchedAt: '2026-08-11T10:49:29.199172Z',
+        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
       },
     },
     gallery: [],
     shortDescription:
-      'Client de contrôle HikCentral pour poste d\'opérateur en centre de surveillance.',
+      'Le HIKVISION 2MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7026G0/P-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'Le Hikvision HikCentral Control Client est un poste client optimisé pour les opérateurs de centres de surveillance. Avec son processeur Intel Core i5, 16 Go de RAM et SSD de 512 Go, il offre une interface fluide pour la visualisation en direct, la recherche d\'enregistrements et la gestion des alarmes via la plateforme HikCentral.',
+      'Le HIKVISION 2MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7026G0/P-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7026G0/P-AP ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Core i5 12e génération' },
-      { label: 'Mémoire', value: '16 Go DDR5' },
-      { label: 'Stockage', value: '512 Go SSD NVMe' },
-      { label: 'Type', value: 'Client de contrôle' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7026G0/P-AP',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 12,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2024,
-    weightKg: 3.5,
-    dimensionsCm: { height: 6.5, width: 33.0, depth: 38.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-hikcentral-ai-workstation',
-    sku: 'HIK-HIKCENTRAL-AI-WS',
-    name: 'Hikvision HikCentral AI Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-hikcentral-ai-workstation.svg',
-      alt: 'Hikvision HikCentral AI Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.003Z',
-        checksum: 'c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station IA HikCentral avec GPU NVIDIA RTX pour analyses vidéo avancées.',
-    fullDescription:
-      'La Hikvision HikCentral AI Workstation intègre un processeur Intel Core i9, 64 Go de RAM, un SSD NVMe de 2 To et une carte graphique NVIDIA RTX pour l\'exécution d\'algorithmes d\'intelligence artificielle. Elle permet l\'analyse vidéo en temps réel, la reconnaissance faciale, la détection de comportements suspects et le traitement de flux multiples simultanés.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i9 13e génération' },
-      { label: 'Mémoire', value: '64 Go DDR5' },
-      { label: 'Stockage', value: '2 To SSD NVMe' },
-      { label: 'GPU', value: 'NVIDIA RTX série 40' },
-      { label: 'Type', value: 'Station IA' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 7.0,
-    dimensionsCm: { height: 10.5, width: 44.5, depth: 48.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-industrial-workstation',
-    sku: 'HIK-INDUSTRIAL-WS',
-    name: 'Hikvision Industrial Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-industrial-workstation.svg',
-      alt: 'Hikvision Industrial Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.004Z',
-        checksum: 'd4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station industrielle renforcée IP65 pour environnements sévères.',
-    fullDescription:
-      'La Hikvision Industrial Workstation est une station de calcul renforcée avec un boîtier IP65 résistant à la poussière et aux projections d\'eau. Équipée d\'un processeur Intel Core i5, 16 Go de RAM et 512 Go SSD, elle est conçue pour fonctionner dans des environnements industriels difficiles avec des températures extrêmes et des vibrations.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i5 12e génération' },
-      { label: 'Mémoire', value: '16 Go DDR5' },
-      { label: 'Stockage', value: '512 Go SSD NVMe' },
-      { label: 'Protection', value: 'IP65' },
-      { label: 'Température', value: '-20 °C à 60 °C' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 10.0,
-    dimensionsCm: { height: 12.0, width: 28.0, depth: 38.0 },
     isFeatured: false,
-    publishedAt: '2026-07-10T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-video-management-workstation',
-    sku: 'HIK-VMS-WS',
-    name: 'Hikvision Video Management Workstation',
+    id: 'hikvision-ids-2cd7046g0-p-ap',
+    sku: 'iDS-2CD7046G0/P-AP',
+    name: 'HIKVISION 4MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7046G0/P-AP',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-video-management-workstation.svg',
-      alt: 'Hikvision Video Management Workstation',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7046G0_P-AP__0.jpg',
+      alt: 'HIKVISION 4MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7046G0/P-AP',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.005Z',
-        checksum: 'e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__1_1_1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__1_1_1_.jpg',
+        fetchedAt: '2026-08-11T10:49:29.344112Z',
+        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
       },
     },
     gallery: [],
     shortDescription:
-      'Station VMS pour la gestion et l\'enregistrement de 64 caméras.',
+      'Le HIKVISION 4MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7046G0/P-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision Video Management Workstation est une station de gestion vidéo puissante équipée d\'un processeur Intel Core i7, 32 Go de RAM et d\'un disque dur de 4 To. Elle prend en charge jusqu\'à 64 caméras IP et intègre le logiciel Hikvision VMS pour la visualisation en direct, l\'enregistrement planifié et la recherche intelligente.',
+      'Le HIKVISION 4MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7046G0/P-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7046G0/P-AP ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '32 Go DDR5' },
-      { label: 'Stockage', value: '4 To HDD SATA' },
-      { label: 'Capacité', value: 'Jusqu\'à 64 caméras' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7046G0/P-AP',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 6,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2024,
-    weightKg: 6.0,
-    dimensionsCm: { height: 9.0, width: 44.5, depth: 46.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-02T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-decoder-workstation',
-    sku: 'HIK-DECODER-WS',
-    name: 'Hikvision Decoder Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-decoder-workstation.svg',
-      alt: 'Hikvision Decoder Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.006Z',
-        checksum: 'f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station de décodage vidéo 4K avec 8 sorties HDMI pour affichage multiphoto.',
-    fullDescription:
-      'La Hikvision Decoder Workstation est une station de décodage professionnelle supportant jusqu\'à 8 sorties HDMI en 4K. Équipée d\'un processeur Intel Core i7 et de 16 Go de RAM, elle décode et distribue des flux vidéo haute résolution vers plusieurs écrans simultanément, idéale pour les salles de contrôle et centres d\'opérations.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '16 Go DDR5' },
-      { label: 'Sorties vidéo', value: '8 x HDMI 4K' },
-      { label: 'Type', value: 'Station de décodage' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 5,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2024,
-    weightKg: 4.5,
-    dimensionsCm: { height: 7.5, width: 44.0, depth: 40.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-03T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-display-workstation',
-    sku: 'HIK-DISPLAY-WS',
-    name: 'Hikvision Display Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-display-workstation.svg',
-      alt: 'Hikvision Display Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.007Z',
-        checksum: 'a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station d\'affichage vidéowall avec 8 sorties 4K pour murs d\'images.',
-    fullDescription:
-      'La Hikvision Display Workstation est conçue pour l\'affichage sur vidéowall avec 8 sorties 4K. Son processeur Intel Core i7 et ses 32 Go de RAM assurent une diffusion fluide de contenu vidéo sur de grandes surfaces d\'affichage. Parfaite pour les centres de commandement, les salles de situation et les showrooms.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '32 Go DDR5' },
-      { label: 'Stockage', value: '512 Go SSD NVMe' },
-      { label: 'Sorties vidéo', value: '8 x 4K' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 12,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 5.5,
-    dimensionsCm: { height: 8.7, width: 44.5, depth: 45.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-15T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-monitoring-client-pc',
-    sku: 'HIK-MONITOR-PC',
-    name: 'Hikvision Monitoring Client PC',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-monitoring-client-pc.svg',
-      alt: 'Hikvision Monitoring Client PC',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.008Z',
-        checksum: 'b8c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'PC client monitoring avec écran 23.8" intégré pour poste de surveillance.',
-    fullDescription:
-      'Le Hikvision Monitoring Client PC est un poste de travail tout-en-un avec écran 23.8" intégré. Équipé d\'un processeur Intel Core i5, 16 Go de RAM et 256 Go SSD, il constitue la solution idéale pour les postes d\'opérateur en centre de surveillance avec un encombrement minimal et une installation simplifiée.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i5 12e génération' },
-      { label: 'Mémoire', value: '16 Go DDR5' },
-      { label: 'Stockage', value: '256 Go SSD NVMe' },
-      { label: 'Écran', value: '23.8" Full HD' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 15,
-      leadTimeDays: 5,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2024,
-    weightKg: 8.0,
-    dimensionsCm: { height: 42.0, width: 54.0, depth: 20.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-01T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-embedded-control-workstation',
-    sku: 'HIK-EMBEDDED-WS',
-    name: 'Hikvision Embedded Control Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-embedded-control-workstation.svg',
-      alt: 'Hikvision Embedded Control Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.009Z',
-        checksum: 'c9d0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station de contrôle embarquée compacte pour installations mobiles.',
-    fullDescription:
-      'La Hikvision Embedded Control Workstation est une station de contrôle embarquée ultra-compacte conçue pour les installations mobiles (véhicules, bus, trains). Avec son processeur Intel Core i5, 16 Go de RAM et 256 Go SSD, elle résiste aux chocs et vibrations tout en offrant une consommation électrique réduite.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i5 12e génération' },
-      { label: 'Mémoire', value: '16 Go DDR5' },
-      { label: 'Stockage', value: '256 Go SSD NVMe' },
-      { label: 'Type', value: 'Embarqué' },
-      { label: 'Résistance', value: 'Chocs et vibrations' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 7,
-      leadTimeDays: 10,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 3.2,
-    dimensionsCm: { height: 5.0, width: 28.0, depth: 30.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-12T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-ai-analysis-workstation',
-    sku: 'HIK-AI-ANALYSIS-WS',
-    name: 'Hikvision AI Analysis Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-ai-analysis-workstation.svg',
-      alt: 'Hikvision AI Analysis Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.010Z',
-        checksum: 'd0e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station d\'analyse IA avec GPU RTX 5000 Ada pour Deep Learning vidéo.',
-    fullDescription:
-      'La Hikvision AI Analysis Workstation est équipée d\'un processeur Intel Core i9, 64 Go de RAM, 2 To SSD NVMe et d\'une carte graphique NVIDIA RTX 5000 Ada. Elle excelle dans l\'exécution de modèles de Deep Learning pour l\'analyse vidéo avancée : reconnaissance faciale, analyse de flux, détection d\'objets et comportements anormaux.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i9 13e génération' },
-      { label: 'Mémoire', value: '64 Go DDR5' },
-      { label: 'Stockage', value: '2 To SSD NVMe' },
-      { label: 'GPU', value: 'NVIDIA RTX 5000 Ada' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 8.5,
-    dimensionsCm: { height: 11.0, width: 44.5, depth: 50.0 },
     isFeatured: false,
-    publishedAt: '2026-07-18T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-security-management-pc',
-    sku: 'HIK-SECURITY-MGMT-PC',
-    name: 'Hikvision Security Management PC',
+    id: 'hikvision-ds-2cd7a46g0-iz-h-sy',
+    sku: 'DS-2CD7A46G0-IZ(H)SY',
+    name: 'HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)SY',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-security-management-pc.svg',
-      alt: 'Hikvision Security Management PC',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A46G0-IZ_H_SY__0.jpg',
+      alt: 'HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)SY',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.011Z',
-        checksum: 'e1f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_20__1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_20__1_.jpg',
+        fetchedAt: '2026-08-11T10:49:29.443725Z',
+        checksum: '6af2ee9d671a3b993e6f70b72d84c274960c89e759f94b8d9ad1420f07c245c0',
       },
     },
     gallery: [],
     shortDescription:
-      'PC gestion sécurité double écran pour administration des systèmes.',
+      'Le HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'Le Hikvision Security Management PC est une station d\'administration et de gestion de la sécurité avec support double écran. Équipé d\'un processeur Intel Core i7, 32 Go de RAM et 1 To SSD, il permet de gérer simultanément les systèmes de vidéosurveillance, contrôle d\'accès et détection intrusion depuis une interface centralisée.',
+      'Le HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD7A46G0-IZ(H)SY ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '32 Go DDR5' },
-      { label: 'Stockage', value: '1 To SSD NVMe' },
-      { label: 'Affichage', value: 'Double écran supporté' },
+      {
+        label: 'Référence',
+        value: 'DS-2CD7A46G0-IZ(H)SY',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 6,
-      leadTimeDays: 8,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2024,
-    weightKg: 7.5,
-    dimensionsCm: { height: 10.0, width: 44.5, depth: 46.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-05T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-wall-controller-workstation',
-    sku: 'HIK-WALL-CTRL-WS',
-    name: 'Hikvision Wall Controller Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-wall-controller-workstation.svg',
-      alt: 'Hikvision Wall Controller Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.012Z',
-        checksum: 'f2a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Contrôleur mural d\'images avec 12 sorties HDMI pour vidéowall.',
-    fullDescription:
-      'Le Hikvision Wall Controller Workstation est un contrôleur mural d\'images professionnel supportant jusqu\'à 12 sorties HDMI. Avec son processeur Intel Core i7, 32 Go de RAM et 512 Go SSD, il pilote des configurations vidéowall complexes avec des layouts personnalisables, transitions fluides et gestion de sources multiples.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '32 Go DDR5' },
-      { label: 'Stockage', value: '512 Go SSD NVMe' },
-      { label: 'Sorties vidéo', value: '12 x HDMI' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 6.0,
-    dimensionsCm: { height: 9.0, width: 44.5, depth: 46.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-20T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-command-center-workstation',
-    sku: 'HIK-COMMAND-WS',
-    name: 'Hikvision Command Center Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-command-center-workstation.svg',
-      alt: 'Hikvision Command Center Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.013Z',
-        checksum: 'a3b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station centre de commandement avec support 4 écrans 4K.',
-    fullDescription:
-      'La Hikvision Command Center Workstation est la station ultime pour les centres de commandement. Équipée d\'un processeur Intel Core i9, 64 Go de RAM et 2 To SSD NVMe, elle supporte jusqu\'à 4 écrans 4K simultanément pour une visualisation panoramique des flux vidéo, cartes interactives et dashboards de sécurité en temps réel.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i9 13e génération' },
-      { label: 'Mémoire', value: '64 Go DDR5' },
-      { label: 'Stockage', value: '2 To SSD NVMe' },
-      { label: 'Affichage', value: '4 écrans 4K' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 14,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2025,
-    weightKg: 10.0,
-    dimensionsCm: { height: 12.0, width: 44.5, depth: 50.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-22T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-gpu-analytics-workstation',
-    sku: 'HIK-GPU-ANALYTICS-WS',
-    name: 'Hikvision GPU Analytics Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-gpu-analytics-workstation.svg',
-      alt: 'Hikvision GPU Analytics Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.014Z',
-        checksum: 'b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station d\'analytique GPU dual RTX 6000 Ada avec 128 Go RAM.',
-    fullDescription:
-      'La Hikvision GPU Analytics Workstation est une station de calcul intensif équipée de 2 cartes NVIDIA RTX 6000 Ada, 128 Go de RAM et 4 To SSD NVMe. Elle est conçue pour les charges de travail d\'analytique vidéo les plus exigeantes, permettant le déploiement de multiples modèles d\'IA simultanés pour l\'analyse de centaines de flux vidéo.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Core i9 13e génération' },
-      { label: 'Mémoire', value: '128 Go DDR5' },
-      { label: 'Stockage', value: '4 To SSD NVMe' },
-      { label: 'GPU', value: '2x NVIDIA RTX 6000 Ada' },
-    ],
-    attributes: {
-      formFactor: 'desktop',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 2,
-      leadTimeDays: 30,
-    },
-    warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    releaseYear: 2026,
-    weightKg: 14.0,
-    dimensionsCm: { height: 14.0, width: 44.5, depth: 52.0 },
-    isFeatured: false,
-    publishedAt: '2026-07-25T00:00:00.000Z',
-  },
-  {
-    id: 'hikvision-enterprise-vms-workstation',
-    sku: 'HIK-ENT-VMS-WS',
-    name: 'Hikvision Enterprise VMS Workstation',
-    brand: 'HIKVISION',
-    category: 'cctv',
-    primaryImage: {
-      url: '/assets/images/branded/hikvision-enterprise-vms-workstation.svg',
-      alt: 'Hikvision Enterprise VMS Workstation',
-      width: 600,
-      height: 600,
-      imageSource: 'placeholder',
-      provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.015Z',
-        checksum: 'c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Station VMS entreprise avec Intel Xeon W, 128 Go RAM et 8 To RAID.',
-    fullDescription:
-      'La Hikvision Enterprise VMS Workstation est une station de gestion vidéo niveau entreprise bâtie autour d\'un processeur Intel Xeon W. Avec 128 Go de RAM et 8 To de stockage RAID, elle supporte la gestion de jusqu\'à 1000 caméras. Son format tour permet d\'accueillir des cartes d\'extension et des capacités de stockage supplémentaires adaptées aux déploiements à grande échelle.',
-    specs: [
-      { label: 'Processeur', value: 'Intel Xeon W' },
-      { label: 'Mémoire', value: '128 Go DDR5 ECC' },
-      { label: 'Stockage', value: '8 To RAID 5' },
-      { label: 'Capacité', value: 'Jusqu\'à 1000 caméras' },
-    ],
-    attributes: {
-      formFactor: 'tower',
-      chassisFormat: 'Tower',
-    },
-    availability: {
-      status: 'available',
-      stockQuantity: 2,
+      status: 'on-order',
+      stockQuantity: 0,
       leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 18.0,
-    dimensionsCm: { height: 45.0, width: 20.0, depth: 55.0 },
     isFeatured: false,
-    publishedAt: '2026-07-28T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-control-room-workstation',
-    sku: 'HIK-CONTROL-ROOM-WS',
-    name: 'Hikvision Control Room Workstation',
+    id: 'hikvision-ids-2cd7026g0-ap',
+    sku: 'iDS-2CD7026G0-AP',
+    name: 'HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-control-room-workstation.svg',
-      alt: 'Hikvision Control Room Workstation',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7026G0-AP__0.jpg',
+      alt: 'HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0-AP',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.016Z',
-        checksum: 'd6e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_.jpg',
+        fetchedAt: '2026-08-11T10:49:30.188872Z',
+        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
       },
     },
     gallery: [],
     shortDescription:
-      'Station salle de contrôle avec support 6 écrans haute résolution.',
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision Control Room Workstation est spécialement conçue pour les environnements de salle de contrôle. Avec son processeur Intel Core i9, 64 Go de RAM et 2 To SSD NVMe, elle supporte jusqu\'à 6 écrans pour offrir aux opérateurs une visibilité complète sur l\'ensemble des systèmes de sécurité : vidéo, alarmes, contrôle d\'accès et cartes de situation.',
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7026G0-AP ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Core i9 13e génération' },
-      { label: 'Mémoire', value: '64 Go DDR5' },
-      { label: 'Stockage', value: '2 To SSD NVMe' },
-      { label: 'Affichage', value: '6 écrans' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7026G0-AP',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 3,
-      leadTimeDays: 14,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 11.0,
-    dimensionsCm: { height: 13.0, width: 44.5, depth: 50.0 },
     isFeatured: false,
-    publishedAt: '2026-07-22T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-nvr-client-workstation',
-    sku: 'HIK-NVR-CLIENT-WS',
-    name: 'Hikvision NVR Client Workstation',
+    id: 'hikvision-ids-2cd7026g0-s-ap',
+    sku: 'iDS-2CD7026G0/S-AP',
+    name: 'HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0/S-AP',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-nvr-client-workstation.svg',
-      alt: 'Hikvision NVR Client Workstation',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7026G0_S-AP__0.jpg',
+      alt: 'HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0/S-AP',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.017Z',
-        checksum: 'e7f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_.jpg',
+        fetchedAt: '2026-08-11T10:49:30.291936Z',
+        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
       },
     },
     gallery: [],
     shortDescription:
-      'Station cliente NVR pour visualisation et gestion d\'enregistrements.',
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0/S-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision NVR Client Workstation est un poste client dédié à la gestion des enregistreurs NVR Hikvision. Avec son processeur Intel Core i5, 16 Go de RAM et 512 Go SSD, elle permet la visualisation en direct, la recherche et l\'exportation d\'enregistrements, ainsi que la configuration à distance des NVR sur le réseau.',
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Box Camera iDS-2CD7026G0/S-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7026G0/S-AP ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Core i5 12e génération' },
-      { label: 'Mémoire', value: '16 Go DDR5' },
-      { label: 'Stockage', value: '512 Go SSD NVMe' },
-      { label: 'Type', value: 'Client NVR' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7026G0/S-AP',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 10,
-      leadTimeDays: 5,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2024,
-    weightKg: 4.0,
-    dimensionsCm: { height: 7.0, width: 33.0, depth: 38.0 },
     isFeatured: false,
-    publishedAt: '2026-07-01T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-integrated-security-workstation',
-    sku: 'HIK-INTEGRATED-WS',
-    name: 'Hikvision Integrated Security Workstation',
+    id: 'hikvision-ids-2cd7046g0-ap',
+    sku: 'iDS-2CD7046G0-AP',
+    name: 'HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-integrated-security-workstation.svg',
-      alt: 'Hikvision Integrated Security Workstation',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7046G0-AP__0.jpg',
+      alt: 'HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0-AP',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.018Z',
-        checksum: 'f8a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_1_.jpg',
+        fetchedAt: '2026-08-11T10:49:30.378830Z',
+        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
       },
     },
     gallery: [],
     shortDescription:
-      'Station sécurité intégrée fusionnant CCTV et contrôle d\'accès.',
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision Integrated Security Workstation unifie la gestion de la vidéosurveillance et du contrôle d\'accès dans une seule plateforme. Équipée d\'un processeur Intel Core i7, 32 Go de RAM et 2 To SSD NVMe, elle centralise la supervision des caméras, lecteurs de badges, serrures électriques et alarmes périphériques.',
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7046G0-AP ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '32 Go DDR5' },
-      { label: 'Stockage', value: '2 To SSD NVMe' },
-      { label: 'Type', value: 'Sécurité intégrée' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7046G0-AP',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 4,
-      leadTimeDays: 10,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'standard',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 7.0,
-    dimensionsCm: { height: 10.0, width: 44.5, depth: 46.0 },
     isFeatured: false,
-    publishedAt: '2026-07-15T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-video-wall-workstation',
-    sku: 'HIK-VIDEO-WALL-WS',
-    name: 'Hikvision Video Wall Workstation',
+    id: 'hikvision-ids-2cd7086g0-ap',
+    sku: 'iDS-2CD7086G0-AP',
+    name: 'HIKVISION 4K DeepinView Moto Varifocal Box Camera iDS-2CD7086G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-video-wall-workstation.svg',
-      alt: 'Hikvision Video Wall Workstation',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7086G0-AP__0.jpg',
+      alt: 'HIKVISION 4K DeepinView Moto Varifocal Box Camera iDS-2CD7086G0-AP',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.019Z',
-        checksum: 'a9b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_1_1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_1_1_.jpg',
+        fetchedAt: '2026-08-11T10:49:31.179936Z',
+        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
       },
     },
     gallery: [],
     shortDescription:
-      'Station mur d\'images vidéo avec 16 sorties HDMI 4K.',
+      'Le HIKVISION 4K DeepinView Moto Varifocal Box Camera iDS-2CD7086G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision Video Wall Workstation est une station de pilotage de mur d\'images haut de gamme avec 16 sorties HDMI 4K. Équipée d\'un processeur Intel Core i7, 32 Go de RAM et 1 To SSD NVMe, elle permet de créer des configurations vidéowall grand format avec des contenus dynamiques, zonage personnalisé et transitions programmées.',
+      'Le HIKVISION 4K DeepinView Moto Varifocal Box Camera iDS-2CD7086G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7086G0-AP ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Core i7 12e génération' },
-      { label: 'Mémoire', value: '32 Go DDR5' },
-      { label: 'Stockage', value: '1 To SSD NVMe' },
-      { label: 'Sorties vidéo', value: '16 x HDMI 4K' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7086G0-AP',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
       formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 2,
-      leadTimeDays: 14,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2025,
-    weightKg: 7.5,
-    dimensionsCm: { height: 10.5, width: 44.5, depth: 48.0 },
     isFeatured: false,
-    publishedAt: '2026-07-25T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
   },
   {
-    id: 'hikvision-ai-command-workstation',
-    sku: 'HIK-AI-COMMAND-WS',
-    name: 'Hikvision AI Command Workstation',
+    id: 'hikvision-ids-2cd70c5g0-ap',
+    sku: 'iDS-2CD70C5G0-AP',
+    name: 'HIKVISION 12MP DeepinView Moto Varifocal Box Camera iDS-2CD70C5G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
     primaryImage: {
-      url: '/assets/images/branded/hikvision-ai-command-workstation.svg',
-      alt: 'Hikvision AI Command Workstation',
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD70C5G0-AP__0.jpg',
+      alt: 'HIKVISION 12MP DeepinView Moto Varifocal Box Camera iDS-2CD70C5G0-AP',
       width: 600,
       height: 600,
-      imageSource: 'placeholder',
+      imageSource: 'real',
       provenance: {
-        sourceProvider: 'branded-placeholder',
-        sourceUrl: null,
-        sourceIdentifier: null,
-        fetchedAt: '2026-07-30T04:10:35.020Z',
-        checksum: 'b0c1d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7b8c9d0e1f2a3b4c5d6e7f8a9b0c1',
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_1_1_1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__2_1_1_1_1_1_.jpg',
+        fetchedAt: '2026-08-11T10:49:31.259056Z',
+        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
       },
     },
     gallery: [],
     shortDescription:
-      'Station de commandement IA avec Intel Xeon W et dual GPU RTX 6000 Ada.',
+      'Le HIKVISION 12MP DeepinView Moto Varifocal Box Camera iDS-2CD70C5G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
     fullDescription:
-      'La Hikvision AI Command Workstation est la station de commandement ultime, combinant un processeur Intel Xeon W, 128 Go de RAM, 4 To NVMe et deux GPU NVIDIA RTX 6000 Ada. Elle délivre une puissance de calcul exceptionnelle pour les applications d\'IA les plus exigeantes : analyse prédictive, reconnaissance faciale massive et fusion de données multi-capteurs en temps réel.',
+      'Le HIKVISION 12MP DeepinView Moto Varifocal Box Camera iDS-2CD70C5G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD70C5G0-AP ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
-      { label: 'Processeur', value: 'Intel Xeon W' },
-      { label: 'Mémoire', value: '128 Go DDR5 ECC' },
-      { label: 'Stockage', value: '4 To NVMe SSD' },
-      { label: 'GPU', value: '2x NVIDIA RTX 6000 Ada' },
+      {
+        label: 'Référence',
+        value: 'iDS-2CD70C5G0-AP',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
     ],
     attributes: {
-      formFactor: 'tower',
-      chassisFormat: 'Tower',
+      formFactor: 'desktop',
     },
     availability: {
-      status: 'available',
-      stockQuantity: 1,
-      leadTimeDays: 30,
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
     },
     warranty: {
-      durationLabel: '3 ans garantie standard',
-      supportTier: 'premium',
+      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    releaseYear: 2026,
-    weightKg: 22.0,
-    dimensionsCm: { height: 50.0, width: 22.0, depth: 60.0 },
     isFeatured: false,
-    publishedAt: '2026-07-30T00:00:00.000Z',
+    publishedAt: '2026-08-11T11:30:21.341Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7146g0-izs',
+    sku: 'iDS-2CD7146G0-IZS',
+    name: 'HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7146G0-IZS__0.jpg',
+      alt: 'HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21_.jpg',
+        fetchedAt: '2026-08-11T10:49:31.343698Z',
+        checksum: '0690e656c58313c0605d12a4c4a678a12dae381b50a176fa25564a31da6659dc',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7146G0-IZS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7146G0-IZS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7186g0-izs',
+    sku: 'iDS-2CD7186G0-IZS',
+    name: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7186G0-IZS__0.jpg',
+      alt: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__1.jpg',
+        fetchedAt: '2026-08-11T10:49:32.102189Z',
+        checksum: '0690e656c58313c0605d12a4c4a678a12dae381b50a176fa25564a31da6659dc',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7186G0-IZS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7186G0-IZS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd71c5g0-izs',
+    sku: 'iDS-2CD71C5G0-IZS',
+    name: 'HIKVISION 12MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD71C5G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD71C5G0-IZS__0.jpg',
+      alt: 'HIKVISION 12MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD71C5G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:32.191000Z',
+        checksum: '0690e656c58313c0605d12a4c4a678a12dae381b50a176fa25564a31da6659dc',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 12MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD71C5G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 12MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD71C5G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD71C5G0-IZS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD71C5G0-IZS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7546g0-izhs-y-r',
+    sku: 'iDS-2CD7546G0-IZHS(Y)(R)',
+    name: 'HIKVISION 4MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7546G0-IZHS(Y)(R)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7546G0-IZHS_Y__R___0.jpg',
+      alt: 'HIKVISION 4MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7546G0-IZHS(Y)(R)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22_.jpg',
+        fetchedAt: '2026-08-11T10:49:32.309443Z',
+        checksum: '8f3aa522455a556469460121062c6db0d454bfb4b02e5bd476ac9255879470c0',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7546G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7546G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7546G0-IZHS(Y)(R) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7546G0-IZHS(Y)(R)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7126g0-izs',
+    sku: 'iDS-2CD7126G0-IZS',
+    name: 'HIKVISION 2MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7126G0-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7126G0-IZS__0.jpg',
+      alt: 'HIKVISION 2MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7126G0-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__2.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__2.jpg',
+        fetchedAt: '2026-08-11T10:49:33.092020Z',
+        checksum: '0690e656c58313c0605d12a4c4a678a12dae381b50a176fa25564a31da6659dc',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7126G0-IZS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7126G0-IZS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7146g0-s-izs',
+    sku: 'iDS-2CD7146G0/S-IZS',
+    name: 'HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0/S-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7146G0_S-IZS__0.jpg',
+      alt: 'HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0/S-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__2_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__2_1.jpg',
+        fetchedAt: '2026-08-11T10:49:33.150545Z',
+        checksum: '0690e656c58313c0605d12a4c4a678a12dae381b50a176fa25564a31da6659dc',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0/S-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0/S-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7146G0/S-IZS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7146G0/S-IZS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7186g0-s-izs',
+    sku: 'iDS-2CD7186G0/S-IZS',
+    name: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0/S-IZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7186G0_S-IZS__0.jpg',
+      alt: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0/S-IZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__2_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21__2_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:33.263529Z',
+        checksum: '0690e656c58313c0605d12a4c4a678a12dae381b50a176fa25564a31da6659dc',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0/S-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7186G0/S-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7186G0/S-IZS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7186G0/S-IZS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7526g0-izhs-y-r',
+    sku: 'iDS-2CD7526G0-IZHS(Y)(R)',
+    name: 'HIKVISION 2MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7526G0-IZHS(Y)(R)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7526G0-IZHS_Y__R___0.jpg',
+      alt: 'HIKVISION 2MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7526G0-IZHS(Y)(R)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1.jpg',
+        fetchedAt: '2026-08-11T10:49:34.047724Z',
+        checksum: '8f3aa522455a556469460121062c6db0d454bfb4b02e5bd476ac9255879470c0',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7526G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7526G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7526G0-IZHS(Y)(R) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7526G0-IZHS(Y)(R)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7586g0-izhs-y-r',
+    sku: 'iDS-2CD7586G0-IZHS(Y)(R)',
+    name: 'HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0-IZHS(Y)(R)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7586G0-IZHS_Y__R___0.jpg',
+      alt: 'HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0-IZHS(Y)(R)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:34.097994Z',
+        checksum: '8f3aa522455a556469460121062c6db0d454bfb4b02e5bd476ac9255879470c0',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7586G0-IZHS(Y)(R) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7586G0-IZHS(Y)(R)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7586g0-s-izhsy',
+    sku: 'iDS-2CD7586G0/S-IZHSY',
+    name: 'HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0/S-IZHSY',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7586G0_S-IZHSY__0.jpg',
+      alt: 'HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0/S-IZHSY',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:34.214074Z',
+        checksum: '8f3aa522455a556469460121062c6db0d454bfb4b02e5bd476ac9255879470c0',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0/S-IZHSY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7586G0/S-IZHSY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7586G0/S-IZHSY ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7586G0/S-IZHSY',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd75c5g0-izhs-y-r',
+    sku: 'iDS-2CD75C5G0-IZHS(Y)(R)',
+    name: 'HIKVISION 12MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD75C5G0-IZHS(Y)(R)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD75C5G0-IZHS_Y__R___0.jpg',
+      alt: 'HIKVISION 12MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD75C5G0-IZHS(Y)(R)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1_1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22__1_1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:35.011611Z',
+        checksum: '8f3aa522455a556469460121062c6db0d454bfb4b02e5bd476ac9255879470c0',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 12MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD75C5G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 12MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD75C5G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD75C5G0-IZHS(Y)(R) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD75C5G0-IZHS(Y)(R)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a26g0-izhs',
+    sku: 'iDS-2CD7A26G0-IZHS',
+    name: 'HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0-IZHS__0.jpg',
+      alt: 'HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:35.067782Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A26G0-IZHS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A26G0-IZHS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a46g0-izhsyr',
+    sku: 'iDS-2CD7A46G0-IZHSYR',
+    name: 'HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHSYR',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A46G0-IZHSYR__0.jpg',
+      alt: 'HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHSYR',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:35.153652Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHSYR de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHSYR de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A46G0-IZHSYR ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A46G0-IZHSYR',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a46g0-p-izhs-y',
+    sku: 'iDS-2CD7A46G0/P-IZHS(Y)',
+    name: 'HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS(Y)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A46G0_P-IZHS_Y___0.jpg',
+      alt: 'HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS(Y)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:35.951661Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A46G0/P-IZHS(Y) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A46G0/P-IZHS(Y)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.342Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a26g0-izhs-y-r',
+    sku: 'iDS-2CD7A26G0-IZHS(Y)(R)',
+    name: 'HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS(Y)(R)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0-IZHS_Y__R___0.jpg',
+      alt: 'HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS(Y)(R)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:35.999209Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A26G0-IZHS(Y)(R) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A26G0-IZHS(Y)(R)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a46g0-izhs',
+    sku: 'iDS-2CD7A46G0-IZHS',
+    name: 'HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A46G0-IZHS__0.jpg',
+      alt: 'HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:36.085564Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A46G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A46G0-IZHS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A46G0-IZHS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a46g0-p-izhs',
+    sku: 'iDS-2CD7A46G0/P-IZHS',
+    name: 'HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A46G0_P-IZHS__0.jpg',
+      alt: 'HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:36.891392Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A46G0/P-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A46G0/P-IZHS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A46G0/P-IZHS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a86g0-izhsy',
+    sku: 'iDS-2CD7A86G0-IZHSY',
+    name: 'HIKVISION 4k DeepinView Moto Varifocal Bullet Camera iDS-2CD7A86G0-IZHSY',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A86G0-IZHSY__0.jpg',
+      alt: 'HIKVISION 4k DeepinView Moto Varifocal Bullet Camera iDS-2CD7A86G0-IZHSY',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1_1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_1_1_1_1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:36.959906Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4k DeepinView Moto Varifocal Bullet Camera iDS-2CD7A86G0-IZHSY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4k DeepinView Moto Varifocal Bullet Camera iDS-2CD7A86G0-IZHSY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A86G0-IZHSY ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A86G0-IZHSY',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7a26g0-p-izhs',
+    sku: 'iDS-2CD7A26G0/P-IZHS',
+    name: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS__0.jpg',
+      alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_2.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_2.jpg',
+        fetchedAt: '2026-08-11T10:49:37.019993Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7A26G0/P-IZHS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7A26G0/P-IZHS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd7ac5g0-izhs',
+    sku: 'iDS-2CD7AC5G0-IZHS',
+    name: 'HIKVISION 12MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7AC5G0-IZHS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7AC5G0-IZHS__0.jpg',
+      alt: 'HIKVISION 12MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7AC5G0-IZHS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_2_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_2_1.jpg',
+        fetchedAt: '2026-08-11T10:49:37.840198Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 12MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7AC5G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 12MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7AC5G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD7AC5G0-IZHS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD7AC5G0-IZHS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd8a46g0-izhs',
+    sku: 'iDS-2CD8A46G0-IZHS',
+    name: 'HIKVISION 4 MP IR Varifocal Bullet Network Camera iDS-2CD8A46G0-IZHS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8A46G0-IZHS__0.jpg',
+      alt: 'HIKVISION 4 MP IR Varifocal Bullet Network Camera iDS-2CD8A46G0-IZHS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_2_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1_2_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:37.907708Z',
+        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4 MP IR Varifocal Bullet Network Camera iDS-2CD8A46G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4 MP IR Varifocal Bullet Network Camera iDS-2CD8A46G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD8A46G0-IZHS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD8A46G0-IZHS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd8626g0-p-lzs',
+    sku: 'iDS-2CD8626G0/P-LZS',
+    name: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD8626G0/P-LZS',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8626G0_P-LZS__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD8626G0/P-LZS',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_23_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_23_.jpg',
+        fetchedAt: '2026-08-11T10:49:37.968131Z',
+        checksum: '110c79062551dde3efe1ded1fcc3b8aa980f083e169c2de0be6fd0a590242fc2',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD8626G0/P-LZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD8626G0/P-LZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD8626G0/P-LZS ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD8626G0/P-LZS',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd8426g0-f-i',
+    sku: 'iDS-2CD8426G0/F-I',
+    name: 'HIKVISION 2 MP DeepinView Face Recognition Indoor Camera iDS-2CD8426G0/F-I',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8426G0_F-I__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Face Recognition Indoor Camera iDS-2CD8426G0/F-I',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_24__1_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_24__1_.jpg',
+        fetchedAt: '2026-08-11T10:49:38.776281Z',
+        checksum: '50be806832d0da4a41b694bfd9838cc0e630012da47ec24602e7a0775c911ab4',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Face Recognition Indoor Camera iDS-2CD8426G0/F-I de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Face Recognition Indoor Camera iDS-2CD8426G0/F-I de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD8426G0/F-I ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD8426G0/F-I',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ids-2cd8426g0-b-i',
+    sku: 'iDS-2CD8426G0/B-I',
+    name: 'HIKVISION 2 MP DeepinView Behavior Analysis Indoor Camera iDS-2CD8426G0/B-I',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8426G0_B-I__0.jpg',
+      alt: 'HIKVISION 2 MP DeepinView Behavior Analysis Indoor Camera iDS-2CD8426G0/B-I',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_24__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_24__1.jpg',
+        fetchedAt: '2026-08-11T10:49:38.852407Z',
+        checksum: '50be806832d0da4a41b694bfd9838cc0e630012da47ec24602e7a0775c911ab4',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 2 MP DeepinView Behavior Analysis Indoor Camera iDS-2CD8426G0/B-I de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 2 MP DeepinView Behavior Analysis Indoor Camera iDS-2CD8426G0/B-I de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : iDS-2CD8426G0/B-I ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'iDS-2CD8426G0/B-I',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6365g0-i-v-s',
+    sku: 'DS-2CD6365G0-I(V)(S)',
+    name: 'HIKVISION 6 MP DeepinView Fisheye Network Camera DS-2CD6365G0-I(V)(S)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6365G0-I_V__S___0.jpg',
+      alt: 'HIKVISION 6 MP DeepinView Fisheye Network Camera DS-2CD6365G0-I(V)(S)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_25_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_25_.jpg',
+        fetchedAt: '2026-08-11T10:49:38.943162Z',
+        checksum: 'cc34c2c324e4060fc9924d1d9abfbe178c8827069368a3a0d62615c81af5e3ac',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 6 MP DeepinView Fisheye Network Camera DS-2CD6365G0-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 6 MP DeepinView Fisheye Network Camera DS-2CD6365G0-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6365G0-I(V)(S) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6365G0-I(V)(S)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.343Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6365g0e-i-v-s',
+    sku: 'DS-2CD6365G0E-I(V)(S)',
+    name: 'HIKVISION 6 MP Fisheye Network Camera DS-2CD6365G0E-I(V)(S)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6365G0E-I_V__S___0.jpg',
+      alt: 'HIKVISION 6 MP Fisheye Network Camera DS-2CD6365G0E-I(V)(S)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26_.jpg',
+        fetchedAt: '2026-08-11T10:49:39.725934Z',
+        checksum: '33ff30dcb295cbbbaa3f28c74a8ac65608d31075cc5753ffeab7ac86285d9096',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 6 MP Fisheye Network Camera DS-2CD6365G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 6 MP Fisheye Network Camera DS-2CD6365G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6365G0E-I(V)(S) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6365G0E-I(V)(S)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd63c5g0e-i-v-s',
+    sku: 'DS-2CD63C5G0E-I(V)(S)',
+    name: 'HIKVISION 12 MP Fisheye Network Camera DS-2CD63C5G0E-I(V)(S)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD63C5G0E-I_V__S___0.jpg',
+      alt: 'HIKVISION 12 MP Fisheye Network Camera DS-2CD63C5G0E-I(V)(S)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26__1.jpg',
+        fetchedAt: '2026-08-11T10:49:39.799638Z',
+        checksum: '7071ba3c70ad7e12b48a77711651dd89a8a70def0cba94e7b1686a130579ea7f',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 12 MP Fisheye Network Camera DS-2CD63C5G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 12 MP Fisheye Network Camera DS-2CD63C5G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD63C5G0E-I(V)(S) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD63C5G0E-I(V)(S)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6d24fwd-i-z-h-s-nfc',
+    sku: 'DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC)',
+    name: 'HIKVISION 4-Directional Multisensor Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6D24FWD-_I__Z__H__S___NFC___0.jpg',
+      alt: 'HIKVISION 4-Directional Multisensor Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_27_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_27_.jpg',
+        fetchedAt: '2026-08-11T10:49:39.881076Z',
+        checksum: '8876a94949dac545a034b20180d821207e030a1e0e27ba842bce0f2fad440b2b',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4-Directional Multisensor Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4-Directional Multisensor Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6332fwd-i-v-s',
+    sku: 'DS-2CD6332FWD-I(V)(S)',
+    name: 'HIKVISION 3 MP Fisheye Network Camera DS-2CD6332FWD-I(V)(S)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6332FWD-I_V__S___0.jpg',
+      alt: 'HIKVISION 3 MP Fisheye Network Camera DS-2CD6332FWD-I(V)(S)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28_.jpg',
+        fetchedAt: '2026-08-11T10:49:40.675768Z',
+        checksum: 'a109b5630598cbb81679b5b28d7ee053a335e3d2da14ffca0d93a93c9f6d5e5c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 3 MP Fisheye Network Camera DS-2CD6332FWD-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 3 MP Fisheye Network Camera DS-2CD6332FWD-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6332FWD-I(V)(S) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6332FWD-I(V)(S)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6365g0e-s-rc',
+    sku: 'DS-2CD6365G0E(-S)/RC',
+    name: 'HIKVISION 6 MP In-Ceiling Fisheye Network Camera DS-2CD6365G0E(-S)/RC',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6365G0E_-S__RC__0.jpg',
+      alt: 'HIKVISION 6 MP In-Ceiling Fisheye Network Camera DS-2CD6365G0E(-S)/RC',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_29_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_29_.jpg',
+        fetchedAt: '2026-08-11T10:49:40.728157Z',
+        checksum: 'f3a47aae1e8d16042e911774b0a5bb2d086b33e24581aa6c0f267248ab14cb6a',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 6 MP In-Ceiling Fisheye Network Camera DS-2CD6365G0E(-S)/RC de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 6 MP In-Ceiling Fisheye Network Camera DS-2CD6365G0E(-S)/RC de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6365G0E(-S)/RC ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6365G0E(-S)/RC',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd63c5g0e-s-rc',
+    sku: 'DS-2CD63C5G0E(-S)/RC',
+    name: 'HIKVISION 12 MP In-Ceiling Fisheye Network Camera DS-2CD63C5G0E(-S)/RC',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD63C5G0E_-S__RC__0.jpg',
+      alt: 'HIKVISION 12 MP In-Ceiling Fisheye Network Camera DS-2CD63C5G0E(-S)/RC',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_29__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_29__1.jpg',
+        fetchedAt: '2026-08-11T10:49:40.827794Z',
+        checksum: 'f3a47aae1e8d16042e911774b0a5bb2d086b33e24581aa6c0f267248ab14cb6a',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 12 MP In-Ceiling Fisheye Network Camera DS-2CD63C5G0E(-S)/RC de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 12 MP In-Ceiling Fisheye Network Camera DS-2CD63C5G0E(-S)/RC de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD63C5G0E(-S)/RC ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD63C5G0E(-S)/RC',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6944g0-ihs-nfc',
+    sku: 'DS-2CD6944G0-IHS(/NFC)',
+    name: 'HIKVISION 16 MP 180° PanoVu Network Camera DS-2CD6944G0-IHS(/NFC)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6944G0-IHS__NFC___0.jpg',
+      alt: 'HIKVISION 16 MP 180° PanoVu Network Camera DS-2CD6944G0-IHS(/NFC)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_30_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_30_.jpg',
+        fetchedAt: '2026-08-11T10:49:41.623728Z',
+        checksum: 'ec8fc29053dec8f8dbe2c0e4a46f622330da62e6c3d4b109309f12bcbf006123',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 16 MP 180° PanoVu Network Camera DS-2CD6944G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 16 MP 180° PanoVu Network Camera DS-2CD6944G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6944G0-IHS(/NFC) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6944G0-IHS(/NFC)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6d54g1-i-z-s-rc',
+    sku: 'DS-2CD6D54G1-(I)(Z)(S)(/RC)',
+    name: 'HIKVISION 4-Directional Multisensor Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6D54G1-_I__Z__S___RC___0.jpg',
+      alt: 'HIKVISION 4-Directional Multisensor Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_31_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_31_.jpg',
+        fetchedAt: '2026-08-11T10:49:41.695567Z',
+        checksum: '6ac6956c4afb9540d0e4e713b1a9197d8ab668e4d6f38f9346210844b472b4e3',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 4-Directional Multisensor Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4-Directional Multisensor Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6D54G1-(I)(Z)(S)(/RC) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6D54G1-(I)(Z)(S)(/RC)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6362f-i-v-s',
+    sku: 'DS-2CD6362F-I(V)(S)',
+    name: 'HIKVISION 6 MP Fisheye Network Camera DS-2CD6362F-I(V)(S)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6362F-I_V__S___0.jpg',
+      alt: 'HIKVISION 6 MP Fisheye Network Camera DS-2CD6362F-I(V)(S)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28__1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28__1.jpg',
+        fetchedAt: '2026-08-11T10:49:41.766778Z',
+        checksum: 'a109b5630598cbb81679b5b28d7ee053a335e3d2da14ffca0d93a93c9f6d5e5c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 6 MP Fisheye Network Camera DS-2CD6362F-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 6 MP Fisheye Network Camera DS-2CD6362F-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6362F-I(V)(S) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6362F-I(V)(S)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd63c2f-i-v-s',
+    sku: 'DS-2CD63C2F-I(V)(S)',
+    name: 'HIKVISION 12 MP Fisheye Network Camera DS-2CD63C2F-I(V)(S)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD63C2F-I_V__S___0.jpg',
+      alt: 'HIKVISION 12 MP Fisheye Network Camera DS-2CD63C2F-I(V)(S)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28__1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28__1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:42.585017Z',
+        checksum: 'a109b5630598cbb81679b5b28d7ee053a335e3d2da14ffca0d93a93c9f6d5e5c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 12 MP Fisheye Network Camera DS-2CD63C2F-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 12 MP Fisheye Network Camera DS-2CD63C2F-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD63C2F-I(V)(S) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD63C2F-I(V)(S)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd63c5g0-i-v-s',
+    sku: 'DS-2CD63C5G0-I(V)(S)',
+    name: 'HIKVISION 12 MP DeepinView Immervision Lens Fisheye Network Camera DS-2CD63C5G0-I(V)(S)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD63C5G0-I_V__S___0.jpg',
+      alt: 'HIKVISION 12 MP DeepinView Immervision Lens Fisheye Network Camera DS-2CD63C5G0-I(V)(S)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28__1_1_1.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28__1_1_1.jpg',
+        fetchedAt: '2026-08-11T10:49:42.651211Z',
+        checksum: 'a109b5630598cbb81679b5b28d7ee053a335e3d2da14ffca0d93a93c9f6d5e5c',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 12 MP DeepinView Immervision Lens Fisheye Network Camera DS-2CD63C5G0-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 12 MP DeepinView Immervision Lens Fisheye Network Camera DS-2CD63C5G0-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD63C5G0-I(V)(S) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD63C5G0-I(V)(S)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.344Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6924f-i-s-nfc',
+    sku: 'DS-2CD6924F-I(S)(/NFC)',
+    name: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924F-I(S)(/NFC)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6924F-I_S___NFC___0.jpg',
+      alt: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924F-I(S)(/NFC)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_34_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_34_.jpg',
+        fetchedAt: '2026-08-11T10:49:42.727485Z',
+        checksum: '3a2a8e675110927bb6d3e70409aadd1c4f5dde3fd432f237e14b0708c367b64a',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924F-I(S)(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924F-I(S)(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6924F-I(S)(/NFC) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6924F-I(S)(/NFC)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.345Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6924g0-ihs-nfc',
+    sku: 'DS-2CD6924G0-IHS(/NFC)',
+    name: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924G0-IHS(/NFC)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6924G0-IHS__NFC___0.jpg',
+      alt: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924G0-IHS(/NFC)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_35_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_35_.jpg',
+        fetchedAt: '2026-08-11T10:49:43.536594Z',
+        checksum: '482f109e43b84ef948b03da77f76573384c3b016ec203f49022be3d7f4ea5454',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6924G0-IHS(/NFC) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6924G0-IHS(/NFC)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.345Z',
+  },
+  {
+    id: 'hikvision-ds-2cd6986f-h-24vac',
+    sku: 'DS-2CD6986F-(H)(24VAC)',
+    name: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6986F-(H)(24VAC)',
+    brand: 'HIKVISION',
+    category: 'cctv',
+    primaryImage: {
+      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6986F-_H__24VAC___0.jpg',
+      alt: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6986F-(H)(24VAC)',
+      width: 600,
+      height: 600,
+      imageSource: 'real',
+      provenance: {
+        sourceProvider: 'retailer-scrape',
+        sourceUrl:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_38_.jpg',
+        sourceIdentifier:
+          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_38_.jpg',
+        fetchedAt: '2026-08-11T10:49:43.589662Z',
+        checksum: '7610e940327b033a755654d098c6f3c48e71c73ce4ba3a1e3c49c11ea111e8e9',
+      },
+    },
+    gallery: [],
+    shortDescription:
+      'Le HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6986F-(H)(24VAC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6986F-(H)(24VAC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : DS-2CD6986F-(H)(24VAC) ; Pays de fabrication : China ; Marque : Hikvision. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    specs: [
+      {
+        label: 'Référence',
+        value: 'DS-2CD6986F-(H)(24VAC)',
+      },
+      {
+        label: 'Pays de fabrication',
+        value: 'China',
+      },
+      {
+        label: 'Marque',
+        value: 'Hikvision',
+      },
+    ],
+    attributes: {
+      formFactor: 'desktop',
+    },
+    availability: {
+      status: 'on-order',
+      stockQuantity: 0,
+      leadTimeDays: 21,
+    },
+    warranty: {
+      durationLabel: 'Sans garantie',
+    },
+    certifications: [],
+    compatibility: [],
+    datasheets: [],
+    isFeatured: false,
+    publishedAt: '2026-08-11T11:30:21.345Z',
   },
 ];

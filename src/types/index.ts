@@ -5,7 +5,8 @@ export type ImageProvider =
   | 'manufacturer-portal'
   | 'manual-capture'
   | 'branded-placeholder'
-  | 'ai-3d-render';
+  | 'ai-3d-render'
+  | 'retailer-scrape';
 
 export interface MediaAsset {
   url: string;
