@@ -35,14 +35,7 @@ export type CategoryId =
   | 'printers';
 
 export type BrandCode =
-  | 'HPE'
-  | 'HP'
-  | 'DELL'
-  | 'LENOVO'
-  | 'CISCO'
-  | 'FORTINET'
-  | 'HUAWEI'
-  | 'HIKVISION';
+  'HPE' | 'HP' | 'DELL' | 'LENOVO' | 'CISCO' | 'FORTINET' | 'HUAWEI' | 'HIKVISION';
 
 export type AvailabilityStatus = 'available' | 'limited' | 'on-order' | 'discontinued';
 
@@ -66,12 +59,6 @@ export interface Brand {
 export interface ProductAvailability {
   status: AvailabilityStatus;
   stockQuantity: number;
-  leadTimeDays: number;
-}
-
-export interface ProductWarranty {
-  durationLabel: string;
-  supportTier?: 'standard' | 'premium' | 'mission-critical';
 }
 
 export interface ProductDatasheet extends MediaAsset {
@@ -102,7 +89,6 @@ export interface Product {
   };
 
   availability: ProductAvailability;
-  warranty: ProductWarranty;
   certifications: string[];
   compatibility: string[];
   datasheets: ProductDatasheet[];

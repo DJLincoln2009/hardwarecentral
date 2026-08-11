@@ -68,6 +68,11 @@ export default function RootLayout({
   return (
     <html
       lang="fr"
+      // suppressHydrationWarning : le script anti-FOUC (ci-dessous) bascule la classe
+      // `dark` sur <html> avant l'hydratation, et next/font peut générer des hash de
+      // classes de polices différents entre serveur et client (fetch Google Fonts
+      // transitoire) — mismatch attendu sur cet attribut uniquement, jamais masqué ailleurs.
+      suppressHydrationWarning
       className={`${ibmPlexSans.variable} ${manrope.variable} ${ibmPlexMono.variable} h-full antialiased`}
     >
       <head>

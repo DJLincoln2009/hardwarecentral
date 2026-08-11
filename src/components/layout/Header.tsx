@@ -10,7 +10,7 @@ import QuoteRequestForm from '@/components/forms/QuoteRequestForm';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
-import { getActiveCategories } from '@/lib/data/categories';
+import { getNavbarCategories } from '@/lib/data/categories';
 import { SITE_CONFIG } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
 
@@ -36,7 +36,7 @@ function Header() {
   const megaMenuDelayRef = useRef<ReturnType<typeof setTimeout>>(undefined);
   const quoteCount = useQuoteStore((s) => s.items.length);
   const favCount = useFavoritesStore((s) => s.productIds.length);
-  const categories = getActiveCategories();
+  const categories = getNavbarCategories();
 
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();

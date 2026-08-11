@@ -6,7 +6,7 @@
  *
  * Regles :
  * - name conserve en anglais (source), descriptions/specs generes en francais.
- * - statut "on-order" partout, leadTimeDays 21, aucune garantie.
+ * - statut "on-order" partout, sans garantie ni délai annoncé.
  * - provenance retailer-scrape (images uploadees sur ImageKit).
  */
 
@@ -156,8 +156,35 @@ const FR_LABELS: Record<string, string> = {
   'Modular Chassis Models': 'Modèles de châssis modulaire',
   'Max Storage': 'Stockage maximal',
   'Raid Controller': 'Contrôleur RAID',
-  'RAM': 'Mémoire vive (RAM)',
+  RAM: 'Mémoire vive (RAM)',
   'Max Supported Memory Supported CPU': 'Mémoire maximale prise en charge',
+  Controller: 'Contrôleur',
+  'Duty Cycle': 'Cycle d’utilisation',
+  Size: 'Taille',
+  Voltage: 'Tension',
+  'Screen Size': 'Taille de l’écran',
+  Resolution: 'Résolution',
+  'Refresh Rate': 'Taux de rafraîchissement',
+  'Panel Type': 'Type de dalle',
+  'Aspect Ratio': 'Format d’image',
+  'Response Time': 'Temps de réponse',
+  'Operating System': 'Système d’exploitation',
+  'Paper Format': 'Format papier',
+  'Duplex Printing': 'Impression recto-verso',
+  Function: 'Fonction',
+  'Market Positioning': 'Positionnement marché',
+  'Camera Type': 'Type de caméra',
+  Lens: 'Objectif',
+  Usage: 'Usage',
+  'IR Illumination': 'Éclairage infrarouge',
+  'WiFi Standard': 'Standard Wi-Fi',
+  'Drive Bays': 'Baies de disques',
+  'Rotational Speed': 'Vitesse de rotation',
+  'Module Type': 'Type de module',
+  'Rack Unit': 'Hauteur rack (U)',
+  'UPS Series': 'Série UPS',
+  'Outlet Count': 'Nombre de prises',
+  'LTO Generation': 'Génération LTO',
 };
 
 const JUNK_LABEL_STARTS = [
@@ -172,7 +199,7 @@ const JUNK_LABEL_STARTS = [
 
 // Produits mis en avant sur l'accueil (par SKU source)
 const FEATURED_SKUS = new Set([
-  'FC-10-0040F-950-02-36', // FortiGate 40F UTP
+  'FG-40F', // FortiGate 40F (matériel)
   'Catalyst 3850-48XS-F-E', // Cisco Catalyst 3850
   'P19779-B21', // HPE ProLiant DL360 Gen10
   '7KW64A', // HP Color LaserJet Pro M255dw
@@ -184,6 +211,11 @@ const FEATURED_SKUS = new Set([
 ]);
 
 const PRODUCT_OUT_DIR = resolve(__dirname, '../src/lib/data/products');
+
+// Produits retirés définitivement du catalogue (exclus de toute régénération)
+const EXCLUDED_SKUS = new Set([
+  '210-AHCK', // Dell PowerVault LTO 7 Tape Drive — retiré du catalogue
+]);
 
 interface Spec {
   label: string;
@@ -223,11 +255,7 @@ function slugify(value: string): string {
 }
 
 function q(value: string): string {
-  return (
-    "'" +
-    value.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\r?\n/g, '\\n') +
-    "'"
-  );
+  return "'" + value.replace(/\\/g, '\\\\').replace(/'/g, "\\'").replace(/\r?\n/g, '\\n') + "'";
 }
 
 function cleanSpecs(specs: Spec[]): Spec[] {
@@ -247,6 +275,328 @@ function cleanSpecs(specs: Spec[]): Spec[] {
     if (out.length >= 8) break;
   }
   return out;
+}
+
+const CONTROLLER_PATTERN =
+  /\b(?:Broadcom|Intel|Emulex|QLogic|Mellanox)(?:\s+Ethernet)?\s+[A-Za-z0-9][A-Za-z0-9 .-]{0,40}?(?=\s+(?:\d|DP|Dual|Internal|External|Fiber|10GB|$))/i;
+
+interface NameSpecRule {
+  pattern: RegExp;
+  label: string;
+  toValue?: (raw: string) => string;
+  /** Conserver le token dans le nom (codes modèle type WS-C2960+24LC, FPOE…). */
+  keepInName?: boolean;
+}
+
+const NAME_SPEC_RULES: NameSpecRule[] = [
+  { pattern: /\b\d{1,5}(?:\.\d+)?\s?Mbit\/s\b/i, label: 'Data Transfer Rate' },
+  {
+    pattern: /\b\d{1,2}\s?Gb(?:ps)?\b/i,
+    label: 'Data Transfer Rate',
+    toValue: (raw) => raw.replace(/\s+/g, '').replace(/(\d)([GT]b)(?:it\/s|ps)?/i, '$1 $2/s'),
+  },
+  { pattern: /\b(?:Fiber|Ethernet)\b/i, label: 'Interface' },
+  { pattern: /\b(?:Internal|External)\b/i, label: 'Form Factor' },
+  { pattern: /\b(?:Dual Port|DP)\b/i, label: 'Port Count', toValue: () => '2' },
+  { pattern: /\b\d{2,4}\s?V\b/i, label: 'Voltage', toValue: (raw) => raw.replace(/\s/g, '') },
+  {
+    pattern: /\(\s*\d{1,4}(?:\.\d+)?\s?TB\s*\)/i,
+    label: 'Storage Capacity',
+    toValue: (raw) => raw.replace(/[()]/g, '').replace(/(\d)(TB)/i, '$1 $2'),
+  },
+  {
+    pattern: /\b\d+(?:x\d+)?-?sheets?\b/i,
+    label: 'Paper Tray Capacity',
+    toValue: (raw) =>
+      raw
+        .toLowerCase()
+        .replace(/-/g, ' ')
+        .replace(/\s*sheets?\s*/i, ''),
+  },
+  { pattern: /\b[\d.,]+\s?Pages\b/i, label: 'Duty Cycle' },
+  { pattern: /\b\d+(?:\.\d+)?-?in\b/i, label: 'Size' },
+  { pattern: /\bUSB\s+3\.0\b/i, label: 'USB Port' },
+];
+
+const LAPTOP_RULES: NameSpecRule[] = [
+  {
+    pattern: /\bIntel\s+(?:Core\s+|Celeron\s+|Xeon\s+|Pentium\s+)[A-Za-z0-9][A-Za-z0-9-]*\b/i,
+    label: 'Processor',
+  },
+  {
+    pattern: /\b\d+\s?GB\s+RAM\b/i,
+    label: 'RAM',
+    toValue: (raw) => raw.replace(/\s*RAM\s*$/i, '').replace(/\s+/g, ' '),
+  },
+  { pattern: /\b\d+\s?(?:GB|TB)\s?(?:SSD|HDD)\b/i, label: 'Storage Capacity' },
+  { pattern: /\b\d+(?:\.\d+)?-inch\b/i, label: 'Screen Size' },
+  {
+    pattern:
+      /\bWin(?:dows)?\s+\d+(?:\.\d+)?\s+(?:Pro|Home|Professional)(?:\s+for\s+Workstations)?\b/i,
+    label: 'Operating System',
+    toValue: (raw) => raw.replace(/\bWin\b/i, 'Windows'),
+  },
+];
+
+const MONITOR_RULES: NameSpecRule[] = [
+  { pattern: /\b\d+(?:\.\d+)?-inch\b/i, label: 'Screen Size' },
+  { pattern: /\b\d{3,5}\s*[xX]\s*\d{3,5}\s*px?\b/i, label: 'Resolution' },
+  { pattern: /\b\d+(?:\s*-\s*\d+)?\s*Hz\b/i, label: 'Refresh Rate' },
+  { pattern: /\b(?:IPS|VA|TN)\b/i, label: 'Panel Type' },
+  { pattern: /\b\d+:\d+\b/i, label: 'Aspect Ratio' },
+  { pattern: /\b\d+\s*ms\b/i, label: 'Response Time' },
+];
+
+const PRINTER_RULES: NameSpecRule[] = [
+  { pattern: /\bA[345]\b/i, label: 'Paper Format' },
+  {
+    pattern: /\b(?:Colour|Mono)\b/i,
+    label: 'Print Color',
+    toValue: (raw) => (/mono/i.test(raw) ? 'Monochrome' : 'Couleur'),
+  },
+  { pattern: /\bDuplex\b/i, label: 'Duplex Printing', toValue: () => 'Oui' },
+  { pattern: /\bMultifunction\b/i, label: 'Function', toValue: () => 'Multifonction' },
+  {
+    pattern: /\bHome\s*&\s*Office\b/i,
+    label: 'Market Positioning',
+    toValue: () => 'Home & Office',
+  },
+];
+
+const CCTV_RULES: NameSpecRule[] = [
+  {
+    pattern: /\b\d+(?:\.\d+)?\s*MP\b/i,
+    label: 'Resolution',
+    toValue: (raw) => raw.replace(/(\d)(MP)/i, '$1 MP'),
+  },
+  { pattern: /\b4[Kk]\b/, label: 'Resolution', toValue: () => '4K' },
+  {
+    pattern: /\b(?:Bullet|Dome|Box|Turret|Fisheye|PanoVu|Multisensor)\b/i,
+    label: 'Camera Type',
+    toValue: (raw) => {
+      const map: Record<string, string> = {
+        Bullet: 'Caméra Bullet',
+        Dome: 'Caméra Dôme',
+        Box: 'Caméra Box',
+        Turret: 'Caméra Turret',
+        Fisheye: 'Caméra Fisheye',
+        PanoVu: 'Caméra panoramique (PanoVu)',
+        Multisensor: 'Caméra multisensorielle',
+      };
+      return map[raw] ?? raw;
+    },
+  },
+  { pattern: /\bVarifocal\b/i, label: 'Lens', toValue: () => 'Varifocal' },
+  {
+    pattern: /\b(?:Indoor|Outdoor)\b/i,
+    label: 'Usage',
+    toValue: (raw) => (/indoor/i.test(raw) ? 'Intérieur' : 'Extérieur'),
+  },
+  {
+    pattern: /\bFace\s*Recognition\b/i,
+    label: 'Application',
+    toValue: () => 'Reconnaissance faciale',
+  },
+  {
+    pattern: /\bBehavior\s*Analysis\b/i,
+    label: 'Application',
+    toValue: () => 'Analyse de comportement',
+  },
+  {
+    pattern: /\bFlow\s*Analysis\b/i,
+    label: 'Application',
+    toValue: () => 'Analyse de flux',
+  },
+  {
+    pattern: /\bANPR\s+Moto\b/i,
+    label: 'Application',
+    toValue: () => 'ANPR (reconnaissance de plaques)',
+  },
+  {
+    pattern: /\bANPR\b/i,
+    label: 'Application',
+    toValue: () => 'ANPR (reconnaissance de plaques)',
+  },
+  {
+    pattern: /\bMoto\b/i,
+    label: 'Application',
+    toValue: () => 'Détection de motos (Moto)',
+  },
+  { pattern: /\bIR\b/i, label: 'IR Illumination', toValue: () => 'Oui' },
+];
+
+const WIRELESS_RULES: NameSpecRule[] = [
+  { pattern: /\bWi-?Fi\s*6\b/i, label: 'WiFi Standard', toValue: () => 'Wi-Fi 6' },
+  {
+    pattern: /\b802\.?\s?11(?:ac|ax)\b/i,
+    label: 'WiFi Standard',
+    toValue: (raw) => (/ac/i.test(raw) ? '802.11ac' : '802.11ax'),
+  },
+  { pattern: /\b\d+(?:\.\d+)?\s*Gbit\/s\b/i, label: 'Data Transfer Rate' },
+  { pattern: /\b\d+\s?W\b/i, label: 'Power Supply' },
+  {
+    pattern: /\b(?:Outdoor|Indoor)\b/i,
+    label: 'Usage',
+    toValue: (raw) => (/outdoor/i.test(raw) ? 'Extérieur' : 'Intérieur'),
+  },
+  {
+    pattern: /\b\d\s?GbE\s*Ports?\b/i,
+    label: 'Port Count',
+    toValue: (raw) => String(parseInt(raw.match(/\d/)![0], 10)),
+  },
+  { pattern: /\bF?PoE\+?\b/i, label: 'Power over Ethernet', toValue: () => 'Oui', keepInName: true },
+];
+
+const SERVER_STORAGE_RULES: NameSpecRule[] = [
+  {
+    pattern: /\b(\d+)SFF\b|\b(\d+)LFF\b/,
+    label: 'Drive Bays',
+    toValue: (raw) => {
+      const m = raw.match(/(\d+)\s*(SFF|LFF)/i);
+      return m ? `${m[1]} x ${m[2].toUpperCase()}` : raw;
+    },
+  },
+  {
+    pattern: /\b\d+\s?GB(?:-R)?\b(?!\s+SAS)/,
+    label: 'RAM',
+    toValue: (raw) => raw.toUpperCase().replace('-R', '').replace(/\s+/g, ''),
+  },
+  {
+    pattern: /\b(?:10|15)K\b/i,
+    label: 'Rotational Speed',
+    toValue: (raw) => (/10K/i.test(raw) ? '10 000 tr/min' : '15 000 tr/min'),
+  },
+  { pattern: /\b\d{3,4}W\b/i, label: 'Power Supply' },
+  {
+    pattern: /\b\d{1,3}\s?GB(?=\s+SAS)\b/i,
+    label: 'Storage Capacity',
+    toValue: (raw) => raw.replace(/\s+/g, ''),
+  },
+  {
+    pattern: /\b(\d)\s+(\d+)TB\b/i,
+    label: 'Storage Capacity',
+    toValue: (raw) => raw.replace(/\s+/, '.'),
+  },
+  { pattern: /\bSAS\s*12G\b/i, label: 'Interface', toValue: () => 'SAS 12 Gb/s' },
+  { pattern: /\bSAS\b/i, label: 'Interface', toValue: () => 'SAS' },
+  { pattern: /\b(?:QSFP28|SFP\+|QSFP|SFP|XFP)(?!\w)/i, label: 'Module Type' },
+];
+
+const DATACENTER_RULES: NameSpecRule[] = [
+  { pattern: /\b(?:QSFP28|SFP\+|QSFP|SFP|XFP)(?!\w)/i, label: 'Module Type' },
+  { pattern: /\bGigE\b/i, label: 'Data Transfer Rate', toValue: () => '1 Gb/s' },
+  { pattern: /\b\d{3,4}W\b/i, label: 'Power Supply' },
+  { pattern: /\b\d{1,2}U\b/i, label: 'Rack Unit' },
+  {
+    pattern: /\b(?:R\s+)?[RT]\s?\d{3,4}\b/i,
+    label: 'UPS Series',
+    toValue: (raw) => raw.replace(/\s+/g, ' '),
+  },
+  { pattern: /\bTower\b/i, label: 'Form Factor', toValue: () => 'Tour' },
+  {
+    pattern: /\b\d+out\b/i,
+    label: 'Outlet Count',
+    toValue: (raw) => raw.replace(/out/i, ''),
+  },
+  {
+    pattern: /\bLTO\s+(?:Ultrium\s+)?([1-9])\b/i,
+    label: 'LTO Generation',
+    toValue: (raw) => `LTO ${raw.match(/[1-9]\b/)![0]}`,
+  },
+];
+
+const NETWORKING_RULES: NameSpecRule[] = [
+  {
+    pattern: /\bFS-(\d{3})[A-Z]/i,
+    label: 'Port Count',
+    toValue: (raw) => String(parseInt(raw.match(/FS-(\d{3})/i)![1].slice(1), 10)),
+    keepInName: true,
+  },
+  {
+    pattern: /\b(?:WS-C|Catalyst\s+)?\d{4}[A-Z]*[-+](\d{1,2}[A-Z]*(?:\d{1,2})?[A-Z]*)(?=[A-Z-]|\b)/i,
+    label: 'Port Count',
+    toValue: (raw) => {
+      const m = raw.match(/\b(?:WS-C|Catalyst\s+)?\d{4}[A-Z]*[-+]([A-Z0-9]+)/i);
+      if (!m) return raw;
+      const nums = m[1].match(/\d+/g);
+      return nums ? String(Math.max(...nums.map((d) => parseInt(d, 10)))) : raw;
+    },
+    keepInName: true,
+  },
+  {
+    pattern: /\bCatalyst\s+\d{4}[A-Z]*\s+(\d{1,2})\b/i,
+    label: 'Port Count',
+    toValue: (raw) => String(parseInt(raw.match(/\b(\d{1,2})\b/)![1], 10)),
+    keepInName: true,
+  },
+  {
+    pattern: /\bS\d{4}-L(\d{2})[P]/i,
+    label: 'Port Count',
+    toValue: (raw) => String(parseInt(raw.match(/L(\d{2})P/i)![1], 10)),
+    keepInName: true,
+  },
+  {
+    pattern: /\bMS120-(\d{1,2})(?=[A-Z-]|\b)/i,
+    label: 'Port Count',
+    toValue: (raw) => String(parseInt(raw.match(/MS120-(\d{1,2})/i)![1], 10)),
+    keepInName: true,
+  },
+  {
+    pattern: /\bN3K-C30(\d{2})\b/i,
+    label: 'Port Count',
+    toValue: (raw) => String(parseInt(raw.match(/C30(\d{2})\b/i)![1], 10)),
+    keepInName: true,
+  },
+  { pattern: /\bF?PoE\+?\b/i, label: 'Power over Ethernet', toValue: () => 'Oui', keepInName: true },
+  { pattern: /\b\d{3,4}W\b/i, label: 'Power Supply' },
+  { pattern: /\bController\b/i, label: 'Product Type', toValue: () => 'Contrôleur réseau' },
+];
+
+const NAME_SPEC_RULES_BY_CATEGORY: Record<string, NameSpecRule[]> = {
+  laptop: LAPTOP_RULES,
+  monitor: MONITOR_RULES,
+  printers: [...NAME_SPEC_RULES, ...PRINTER_RULES],
+  cctv: CCTV_RULES,
+  wireless: [...WIRELESS_RULES, ...NAME_SPEC_RULES],
+  'server-storage': [...SERVER_STORAGE_RULES, ...NAME_SPEC_RULES],
+  datacenter: [...DATACENTER_RULES, ...NAME_SPEC_RULES],
+  networking: [...NETWORKING_RULES, ...NAME_SPEC_RULES],
+};
+
+function extractSpecsFromName(
+  name: string,
+  rules: NameSpecRule[],
+  withController = true,
+): { name: string; specs: Spec[] } {
+  const specs: Spec[] = [];
+  let n = name;
+
+  const controller = withController ? CONTROLLER_PATTERN.exec(n) : null;
+  if (controller) {
+    n = n.replace(CONTROLLER_PATTERN, ' ');
+  }
+
+  for (const rule of rules) {
+    const m = rule.pattern.exec(n);
+    if (!m) continue;
+    const raw = m[0].trim();
+    const hasLabel = specs.some((s) => s.label === rule.label);
+    if (!hasLabel) {
+      specs.push({ label: rule.label, value: rule.toValue ? rule.toValue(raw) : raw });
+    }
+    if (!rule.keepInName) {
+      n = n.replace(rule.pattern, ' ');
+    }
+  }
+
+  if (controller) {
+    specs.push({ label: 'Controller', value: controller[0].trim() });
+  }
+
+  n = n.replace(/\s+to\s+/gi, ' ');
+  n = n.replace(/\s*\(\s*\)/g, '');
+  n = n.replace(/\s+/g, ' ').trim();
+  return { name: n, specs };
 }
 
 function inferFormFactor(rec: CatalogRec): string | undefined {
@@ -308,6 +658,19 @@ function buildDescriptions(rec: CatalogRec): { short: string; full: string } {
   return { short, full };
 }
 
+// Métadonnées seules → enrichissement depuis le nom
+const GENERIC_SPEC_LABELS = new Set([
+  'Référence',
+  'Marque',
+  'Pays de fabrication',
+  'UPC',
+  'ASIN',
+  'GTIN/EAN',
+  'Longueur (pouces)',
+  'Largeur (pouces)',
+  'Hauteur (pouces)',
+]);
+
 function toProduct(rec: CatalogRec, id: string): unknown {
   const media = rec.media ?? [];
   const primary = media[0];
@@ -315,27 +678,39 @@ function toProduct(rec: CatalogRec, id: string): unknown {
     throw new Error(`produit sans media: ${rec.name}`);
   }
   const specs = cleanSpecs(rec.specs ?? []);
-  const { short, full } = buildDescriptions({ ...rec, specs });
-  const formFactor = inferFormFactor(rec);
-  const chassis = inferChassis(rec);
+  let name = rec.name;
+  let effectiveSpecs = specs;
+  const onlyGeneric = specs.length > 0 && specs.every((s) => GENERIC_SPEC_LABELS.has(s.label));
+  if (specs.length === 0 || onlyGeneric) {
+    const rules = NAME_SPEC_RULES_BY_CATEGORY[rec.category] ?? NAME_SPEC_RULES;
+    const withController = rec.category !== 'laptop' && rec.category !== 'monitor';
+    const extracted = extractSpecsFromName(name, rules, withController);
+    const extractedClean = cleanSpecs(extracted.specs);
+    if (extractedClean.length > 0) {
+      name = extracted.name;
+      effectiveSpecs = extractedClean;
+    }
+  }
+  const { short, full } = buildDescriptions({ ...rec, name, specs: effectiveSpecs });
+  const formFactor = inferFormFactor({ ...rec, name });
+  const chassis = inferChassis({ ...rec, name });
 
   return {
     id,
     sku: rec.sku,
-    name: rec.name,
+    name,
     brand: rec.brand,
     category: rec.category,
     primaryImage: primary,
     gallery: media.slice(1),
     shortDescription: short,
     fullDescription: full,
-    specs,
+    specs: effectiveSpecs,
     attributes: {
       ...(chassis ? { chassisFormat: chassis } : {}),
       ...(formFactor ? { formFactor } : {}),
     },
-    availability: { status: 'on-order', stockQuantity: 0, leadTimeDays: 21 },
-    warranty: { durationLabel: 'Sans garantie' },
+    availability: { status: 'on-order', stockQuantity: 0 },
     certifications: [],
     compatibility: [],
     datasheets: [],
@@ -376,6 +751,7 @@ function main(): void {
 
   const byBrand = new Map<string, CatalogRec[]>();
   for (const rec of catalog) {
+    if (EXCLUDED_SKUS.has(rec.sku)) continue;
     if (!rec.media || rec.media.length === 0) {
       console.warn(`WARN sans media: ${rec.name}`);
       continue;

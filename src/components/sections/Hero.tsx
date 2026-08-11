@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, FileText, ShieldCheck } from 'lucide-react';
 import { products } from '@/lib/data/products';
 import { getActiveBrands } from '@/lib/data/brands';
 import { getActiveCategories } from '@/lib/data/categories';
 import { getFeaturedProducts } from '@/lib/data/products';
+import ProductImage from '@/components/product/ProductImage';
 import ProductAvailabilityBadge from '@/components/product/ProductAvailabilityBadge';
 
 function Hero() {
@@ -48,8 +48,8 @@ function Hero() {
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted md:text-lg dark:text-graphite-300 lg:mx-0">
-            Serveurs, stockage, réseau, sécurité et vidéosurveillance pour les entreprises.
-            Une plateforme de référence pour bâtir et faire évoluer vos infrastructures.
+            Serveurs, stockage, réseau, sécurité et vidéosurveillance pour les entreprises. Une
+            plateforme de référence pour bâtir et faire évoluer vos infrastructures.
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
@@ -67,10 +67,7 @@ function Hero() {
               href="/devis"
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-border-strong bg-surface/60 px-7 py-3.5 text-sm font-semibold text-foreground backdrop-blur transition-all duration-200 hover:border-accent hover:text-accent active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background dark:border-white/15 dark:bg-white/5 dark:text-white dark:hover:border-teal-300 dark:hover:text-teal-300 sm:w-auto"
             >
-              <FileText
-                className="h-4 w-4 text-teal-600 dark:text-teal-300"
-                aria-hidden="true"
-              />
+              <FileText className="h-4 w-4 text-teal-600 dark:text-teal-300" aria-hidden="true" />
               Constituer ma liste de devis
             </Link>
           </div>
@@ -96,16 +93,16 @@ function Hero() {
               aria-hidden="true"
             />
             <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface/80 p-3 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
-              <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-3xl bg-surface-muted dark:bg-white/5">
-                <Image
-                  src={featured.primaryImage.url}
-                  alt={featured.primaryImage.alt}
-                  fill
-                  sizes="(max-width: 1024px) 90vw, 40vw"
-                  className="object-contain p-8"
-                  priority
-                />
-              </div>
+              <ProductImage
+                src={featured.primaryImage.url}
+                alt={featured.primaryImage.alt}
+                sizes="(max-width: 1024px) 90vw, 40vw"
+                width={1200}
+                height={900}
+                priority
+                className="aspect-[4/3] rounded-3xl bg-surface-muted dark:bg-white/5"
+                imageClassName="p-8"
+              />
               <div className="flex items-center justify-between gap-3 px-4 pt-4">
                 <div className="min-w-0">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted dark:text-graphite-300">
@@ -129,16 +126,6 @@ function Hero() {
                   />
                 </Link>
               </div>
-            </div>
-
-            <div
-              className="absolute -top-5 right-3 flex items-center gap-2 rounded-2xl border border-border bg-surface/90 px-3.5 py-2.5 shadow-lg backdrop-blur animate-float dark:border-white/15 dark:bg-white/10 sm:-right-4"
-              aria-hidden="true"
-            >
-              <ShieldCheck className="h-4 w-4 text-teal-600 dark:text-teal-300" />
-              <span className="text-xs font-semibold text-foreground dark:text-graphite-200">
-                Garantie {featured.warranty.durationLabel}
-              </span>
             </div>
           </div>
         )}

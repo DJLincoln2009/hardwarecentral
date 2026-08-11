@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { Shield, Truck, Clock, FileText, BadgeCheck } from 'lucide-react';
+import { Truck, Clock, FileText, BadgeCheck } from 'lucide-react';
 import { products, getProductById } from '@/lib/data/products';
 import { getBrandByCode } from '@/lib/data/brands';
 import { getCategoryById } from '@/lib/data/categories';
@@ -86,7 +86,10 @@ export default async function ProductPage({ params }: Props) {
 
       <div className="flex flex-col gap-10 lg:flex-row lg:gap-14">
         <div className="w-full lg:w-[400px] lg:flex-shrink-0">
-          <ProductGallery images={[product.primaryImage, ...product.gallery]} productName={product.name} />
+          <ProductGallery
+            images={[product.primaryImage, ...product.gallery]}
+            productName={product.name}
+          />
           {product.primaryImage.imageSource === 'ai-render' && (
             <p className="mt-3 text-xs italic text-muted">
               Visuel généré, produit réel non contractuel sur cette image.
@@ -117,32 +120,20 @@ export default async function ProductPage({ params }: Props) {
 
           <div className="flex flex-wrap items-center gap-3">
             <ProductAvailabilityBadge status={product.availability.status} />
-            {product.availability.status !== 'available' && (
-              <span className="text-sm text-muted">
-                Délai : {product.availability.leadTimeDays} jours
-              </span>
-            )}
           </div>
 
-          <p className="max-w-2xl text-sm leading-relaxed text-muted">
-            {product.shortDescription}
-          </p>
+          <p className="max-w-2xl text-sm leading-relaxed text-muted">{product.shortDescription}</p>
 
           <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
             <QuoteToggleButton product={product} size="lg" className="flex-1 justify-center" />
           </div>
 
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Shield className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
-              <span className="text-xs leading-relaxed text-muted">
-                <span className="font-semibold text-foreground">Garantie</span>
-                <br />
-                {product.warranty.durationLabel}
-              </span>
-            </div>
-            <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Truck className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
+              <Truck
+                className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300"
+                aria-hidden="true"
+              />
               <span className="text-xs leading-relaxed text-muted">
                 <span className="font-semibold text-foreground">Livraison</span>
                 <br />
@@ -150,7 +141,10 @@ export default async function ProductPage({ params }: Props) {
               </span>
             </div>
             <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Clock className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300" aria-hidden="true" />
+              <Clock
+                className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300"
+                aria-hidden="true"
+              />
               <span className="text-xs leading-relaxed text-muted">
                 <span className="font-semibold text-foreground">Devis</span>
                 <br />

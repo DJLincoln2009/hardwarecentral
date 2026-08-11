@@ -1,8 +1,8 @@
 'use client';
 
-import Image from 'next/image';
-import { Heart } from 'lucide-react';
 import Link from 'next/link';
+import { Heart } from 'lucide-react';
+import ProductImage from './ProductImage';
 import ProductAvailabilityBadge from './ProductAvailabilityBadge';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
@@ -26,18 +26,17 @@ function ProductCard({ product }: ProductCardProps) {
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-surface shadow-xs transition-all duration-200 hover:-translate-y-1 hover:border-border-strong hover:shadow-lg focus-within:border-border-strong">
       <Link href={`/produit/${slug}`} className="flex flex-1 flex-col">
-        <div className="relative m-3 mb-2 flex aspect-square items-center justify-center overflow-hidden rounded-xl bg-surface-muted">
-          <Image
-            src={product.primaryImage.url}
-            alt={product.primaryImage.alt}
-            fill
-            sizes="(max-width: 640px) 50vw, (max-width: 1280px) 33vw, 25vw"
-            className="object-contain p-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-105"
-          />
+        <ProductImage
+          src={product.primaryImage.url}
+          alt={product.primaryImage.alt}
+          sizes="(max-width: 640px) 50vw, (max-width: 1280px) 33vw, 25vw"
+          className="m-3 mb-2 aspect-square rounded-xl bg-surface-muted"
+          imageClassName="p-4 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-105"
+        >
           <div className="absolute left-2.5 top-2.5">
             <ProductAvailabilityBadge status={product.availability.status} />
           </div>
-        </div>
+        </ProductImage>
 
         <div className="flex flex-1 flex-col px-4 pb-1">
           <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted">
@@ -54,11 +53,6 @@ function ProductCard({ product }: ProductCardProps) {
               </p>
             ))}
           </div>
-          {product.availability.status !== 'available' && (
-            <p className="mt-2 text-xs font-medium text-muted">
-              Délai : {product.availability.leadTimeDays} jours
-            </p>
-          )}
         </div>
       </Link>
 
@@ -67,7 +61,12 @@ function ProductCard({ product }: ProductCardProps) {
           type="button"
           onClick={(e) => {
             e.preventDefault();
-            toggleQuote({ productId: product.id, sku: product.sku, name: product.name, brand: product.brand });
+            toggleQuote({
+              productId: product.id,
+              sku: product.sku,
+              name: product.name,
+              brand: product.brand,
+            });
             addToast(inQuote ? 'Retiré de la liste de devis' : 'Ajouté à la liste de devis');
           }}
           className={cn(
@@ -97,10 +96,7 @@ function ProductCard({ product }: ProductCardProps) {
               : 'border-border text-faint hover:border-border-strong hover:bg-surface-muted hover:text-foreground',
           )}
         >
-          <Heart
-            className={cn('h-4 w-4', isFav && 'fill-danger-text')}
-            aria-hidden="true"
-          />
+          <Heart className={cn('h-4 w-4', isFav && 'fill-danger-text')} aria-hidden="true" />
         </button>
       </div>
     </div>

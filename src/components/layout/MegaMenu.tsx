@@ -9,13 +9,13 @@ import {
   Network,
   Shield,
   Camera,
-  Monitor,
+  Building2,
   Sparkles,
   ArrowRight,
   type LucideIcon,
 } from 'lucide-react';
 import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
-import { getActiveCategories } from '@/lib/data/categories';
+import { getNavbarCategories } from '@/lib/data/categories';
 import { getActiveBrands } from '@/lib/data/brands';
 
 interface MegaMenuProps {
@@ -36,13 +36,13 @@ const iconMap: Record<string, LucideIcon> = {
   Network,
   Shield,
   Camera,
-  Monitor,
+  Building2,
 };
 
 function MegaMenu({ open, onClose }: MegaMenuProps) {
   const panelRef = useRef<HTMLDivElement>(null);
   const prefersReducedMotion = usePrefersReducedMotion();
-  const categories = getActiveCategories();
+  const categories = getNavbarCategories();
   const brands = getActiveBrands();
 
   const handleKeyDown = useCallback(

@@ -8,6 +8,7 @@ import QuoteToggleButton from '@/components/product/QuoteToggleButton';
 import EmptyState from '@/components/ui/EmptyState';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
 import { getProductById } from '@/lib/data/products';
+import { getProductImageUrl } from '@/lib/product-image';
 
 function FavorisContent() {
   const productIds = useFavoritesStore((s) => s.productIds);
@@ -57,7 +58,7 @@ function FavorisContent() {
               <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-muted">
                 {product.primaryImage.url ? (
                   <Image
-                    src={product.primaryImage.url}
+                    src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
                     alt={product.primaryImage.alt}
                     fill
                     sizes="64px"

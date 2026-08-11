@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import Image from 'next/image';
+import ProductImage from './ProductImage';
 import type { MediaAsset } from '@/types';
 import { cn } from '@/lib/utils';
 
@@ -19,16 +19,16 @@ function ProductGallery({ images, productName }: ProductGalleryProps) {
 
   return (
     <div className="flex flex-col gap-3">
-      <div className="relative flex aspect-[4/3] items-center justify-center overflow-hidden rounded-2xl border border-border bg-surface-muted shadow-xs">
-        <Image
-          src={current.url}
-          alt={current.alt || productName}
-          fill
-          sizes="(max-width: 1024px) 100vw, 50vw"
-          className="object-contain p-6"
-          priority
-        />
-      </div>
+      <ProductImage
+        src={current.url}
+        alt={current.alt || productName}
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        width={1200}
+        height={900}
+        priority
+        className="aspect-[4/3] rounded-2xl border border-border bg-surface-muted shadow-xs"
+        imageClassName="p-6"
+      />
       {images.length > 1 && (
         <div
           className="flex gap-2.5 overflow-x-auto no-scrollbar"
@@ -51,12 +51,14 @@ function ProductGallery({ images, productName }: ProductGalleryProps) {
                   : 'border-border opacity-70 hover:opacity-100',
               )}
             >
-              <Image
+              <ProductImage
                 src={img.url}
                 alt=""
-                fill
                 sizes="72px"
-                className="object-contain p-1.5"
+                width={144}
+                height={144}
+                className="h-full w-full"
+                imageClassName="p-1.5"
               />
             </button>
           ))}

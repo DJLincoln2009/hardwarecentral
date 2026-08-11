@@ -10,6 +10,7 @@ import QuoteRequestForm from '@/components/forms/QuoteRequestForm';
 import EmptyState from '@/components/ui/EmptyState';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { getProductById } from '@/lib/data/products';
+import { getProductImageUrl } from '@/lib/product-image';
 
 function DevisContent() {
   const items = useQuoteStore((s) => s.items);
@@ -71,13 +72,13 @@ function DevisContent() {
               >
                 <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-muted">
                   {product.primaryImage.url ? (
-                    <Image
-                      src={product.primaryImage.url}
-                      alt={product.primaryImage.alt}
-                      fill
-                      sizes="64px"
-                      className="object-contain p-1.5"
-                    />
+                      <Image
+                        src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
+                        alt={product.primaryImage.alt}
+                        fill
+                        sizes="64px"
+                        className="object-contain p-1.5"
+                      />
                   ) : (
                     <FileText className="h-6 w-6 text-faint" aria-hidden="true" />
                   )}

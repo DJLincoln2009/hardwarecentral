@@ -1,4 +1,4 @@
-import type { Category } from '@/types';
+import type { Category, CategoryId } from '@/types';
 
 export const categories: Category[] = [
   {
@@ -63,4 +63,19 @@ export function getCategoryById(id: string): Category | undefined {
 
 export function getActiveCategories(): Category[] {
   return categories.filter((c) => c.isActive);
+}
+
+const NAVBAR_CATEGORY_ORDER: CategoryId[] = [
+  'networking',
+  'security',
+  'datacenter',
+  'server-storage',
+  'cctv',
+];
+
+/** Catégories affichées dans la navbar (Header, MegaMenu, navigation mobile). */
+export function getNavbarCategories(): Category[] {
+  return NAVBAR_CATEGORY_ORDER.map((id) => getCategoryById(id)).filter(
+    (c): c is Category => c !== undefined,
+  );
 }

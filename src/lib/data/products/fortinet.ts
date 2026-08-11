@@ -1,7 +1,9 @@
 import type { Product } from '@/types';
 
+
 export const fortinetProducts: Product[] = [
-  {
+
+{
     id: 'fortinet-fg-40f',
     sku: 'FG-40F',
     name: 'Fortinet 40 FG-40F',
@@ -15,19 +17,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new-fg40f_copy_1.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new-fg40f_copy_1.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new-fg40f_copy_1.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new-fg40f_copy_1.jpg',
         fetchedAt: '2026-08-11T10:48:15.776421Z',
         checksum: 'e99e3a7b33759aa655e49d216fd82bb17df189a0b768e428303bde45935a8cb5',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 40 FG-40F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 40 FG-40F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-40F ; GTIN/EAN : 0842382167847 ; UPC : 842382167847 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 40 FG-40F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 40 FG-40F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-40F ; GTIN/EAN : 0842382167847 ; UPC : 842382167847 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -60,18 +58,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    isFeatured: true,
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-60f',
     sku: 'FG-60F',
     name: 'Fortinet 60 FG-60F',
@@ -85,10 +79,8 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-fg-60f-firewall.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-fg-60f-firewall.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-fg-60f-firewall.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-fg-60f-firewall.jpg',
         fetchedAt: '2026-08-11T10:48:16.283660Z',
         checksum: 'ac35b7945e3a41ba9860f90c2fd00ef9ad5095a0614385b426df859f578fafbc',
       },
@@ -102,19 +94,15 @@ export const fortinetProducts: Product[] = [
         imageSource: 'real',
         provenance: {
           sourceProvider: 'retailer-scrape',
-          sourceUrl:
-            'https://www.sysllc.ae/media/catalog/product/f/o/fortigate-fg-60f-firewall-dubai.jpg',
-          sourceIdentifier:
-            'https://www.sysllc.ae/media/catalog/product/f/o/fortigate-fg-60f-firewall-dubai.jpg',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/f/o/fortigate-fg-60f-firewall-dubai.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/f/o/fortigate-fg-60f-firewall-dubai.jpg',
           fetchedAt: '2026-08-11T10:48:17.259542Z',
           checksum: 'f1c12c96735e5b0ec6209c715d651d4fd28daf69c0778d8460ca4b84870cd48d',
         },
       },
     ],
-    shortDescription:
-      'Le Fortinet 60 FG-60F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 60 FG-60F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-60F ; GTIN/EAN : 0842382176320 ; UPC : 842382176320 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 60 FG-60F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 60 FG-60F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-60F ; GTIN/EAN : 0842382176320 ; UPC : 842382176320 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -147,18 +135,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-61f',
     sku: 'FG-61F',
     name: 'Fortinet 60 FG-61F',
@@ -172,10 +156,8 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortigate_61f_firewall.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortigate_61f_firewall.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortigate_61f_firewall.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortigate_61f_firewall.jpg',
         fetchedAt: '2026-08-11T10:48:16.505554Z',
         checksum: 'd233966991d3eac7e79874385384d32ee39d4ecb1c100e2303f5afaacf73c9ca',
       },
@@ -196,10 +178,8 @@ export const fortinetProducts: Product[] = [
         },
       },
     ],
-    shortDescription:
-      'Le Fortinet 60 FG-61F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 60 FG-61F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-61F ; GTIN/EAN : 0842382166406 ; UPC : 842382166406 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 60 FG-61F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 60 FG-61F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-61F ; GTIN/EAN : 0842382166406 ; UPC : 842382166406 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -232,18 +212,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-80f',
     sku: 'FG-80F',
     name: 'Fortinet 80 FG-80F',
@@ -257,19 +233,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-80f_1.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-80f_1.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-80f_1.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-80f_1.png',
         fetchedAt: '2026-08-11T10:48:17.017687Z',
         checksum: 'a38a3a3bf7221d0b516cd4a3de2f9752eff2b60c4be6f845e16a268b8fd70265',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 80 FG-80F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 80 FG-80F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-80F ; GTIN/EAN : 0842382185797 ; UPC : 842382185803 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 80 FG-80F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 80 FG-80F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-80F ; GTIN/EAN : 0842382185797 ; UPC : 842382185803 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -302,18 +274,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-81f',
     sku: 'FG-81F',
     name: 'Fortinet 80 FG-81F',
@@ -327,10 +295,8 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-81f-hardware-produktbild_1.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-81f-hardware-produktbild_1.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-81f-hardware-produktbild_1.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-81f-hardware-produktbild_1.jpg',
         fetchedAt: '2026-08-11T10:48:17.989400Z',
         checksum: 'b0211a4a0e107a8d60ec97d9af830503ecafaa3ccb859a105da4758e7361e158',
       },
@@ -345,17 +311,14 @@ export const fortinetProducts: Product[] = [
         provenance: {
           sourceProvider: 'retailer-scrape',
           sourceUrl: 'https://www.sysllc.ae/media/catalog/product/f/o/fortigate80f_back_1.jpg',
-          sourceIdentifier:
-            'https://www.sysllc.ae/media/catalog/product/f/o/fortigate80f_back_1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/f/o/fortigate80f_back_1.jpg',
           fetchedAt: '2026-08-11T10:48:19.363999Z',
           checksum: '9d65ad7e3a71db4cdaa76e52caa89d0a070404ad2dbdf3b7e9bfdf90d34957c0',
         },
       },
     ],
-    shortDescription:
-      'Le Fortinet 80 FG-81F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 80 FG-81F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-81F ; GTIN/EAN : 0842382185896 ; UPC : 842382185896 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 80 FG-81F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 80 FG-81F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-81F ; GTIN/EAN : 0842382185896 ; UPC : 842382185896 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -388,18 +351,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-100f',
     sku: 'FG-100F',
     name: 'Fortinet 100 FG-100F',
@@ -413,10 +372,8 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/5/1/51gljsdjgel._ac_sl1500_.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/5/1/51gljsdjgel._ac_sl1500_.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/5/1/51gljsdjgel._ac_sl1500_.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/5/1/51gljsdjgel._ac_sl1500_.jpg',
         fetchedAt: '2026-08-11T10:48:18.270448Z',
         checksum: '9e11802d483f9c5bea7ae15e41fff48416891554225f048506873c324b3820c8',
       },
@@ -431,8 +388,7 @@ export const fortinetProducts: Product[] = [
         provenance: {
           sourceProvider: 'retailer-scrape',
           sourceUrl: 'https://www.sysllc.ae/media/catalog/product/5/1/51x0iwcqwkl._ac_sl1500_.jpg',
-          sourceIdentifier:
-            'https://www.sysllc.ae/media/catalog/product/5/1/51x0iwcqwkl._ac_sl1500_.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/5/1/51x0iwcqwkl._ac_sl1500_.jpg',
           fetchedAt: '2026-08-11T10:48:19.248112Z',
           checksum: '8772f27ed7b36584d32a64d8cd0ae2793a8f71edb40ff5a220d24ba65dd074d2',
         },
@@ -446,8 +402,7 @@ export const fortinetProducts: Product[] = [
         provenance: {
           sourceProvider: 'retailer-scrape',
           sourceUrl: 'https://www.sysllc.ae/media/catalog/product/5/1/51gihohbzpl._ac_sl1500_.jpg',
-          sourceIdentifier:
-            'https://www.sysllc.ae/media/catalog/product/5/1/51gihohbzpl._ac_sl1500_.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/5/1/51gihohbzpl._ac_sl1500_.jpg',
           fetchedAt: '2026-08-11T10:48:20.268862Z',
           checksum: 'f497d34c44321de0d3ecbec9bc2ce5ca787944361e7b417cdfe5b35aaa2a0ba9',
         },
@@ -461,8 +416,7 @@ export const fortinetProducts: Product[] = [
         provenance: {
           sourceProvider: 'retailer-scrape',
           sourceUrl: 'https://www.sysllc.ae/media/catalog/product/5/1/51yfk1uhyil._ac_sl1500_.jpg',
-          sourceIdentifier:
-            'https://www.sysllc.ae/media/catalog/product/5/1/51yfk1uhyil._ac_sl1500_.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/5/1/51yfk1uhyil._ac_sl1500_.jpg',
           fetchedAt: '2026-08-11T10:48:21.273148Z',
           checksum: '5dbb88173db7f26b93fd44a76886b83cbff1c1dfa89709468f661b31ec1ecdc2',
         },
@@ -476,17 +430,14 @@ export const fortinetProducts: Product[] = [
         provenance: {
           sourceProvider: 'retailer-scrape',
           sourceUrl: 'https://www.sysllc.ae/media/catalog/product/5/1/51x2d6oo_2l._ac_sl1500_.jpg',
-          sourceIdentifier:
-            'https://www.sysllc.ae/media/catalog/product/5/1/51x2d6oo_2l._ac_sl1500_.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/5/1/51x2d6oo_2l._ac_sl1500_.jpg',
           fetchedAt: '2026-08-11T10:48:22.227495Z',
           checksum: '2fb989d42a7a4641d267e5b21d943e700506be285e2da99565a299af7f23b13f',
         },
       },
     ],
-    shortDescription:
-      'Le Fortinet 100 FG-100F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 100 FG-100F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-100F ; UPC : 842382170076 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 100 FG-100F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 100 FG-100F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-100F ; UPC : 842382170076 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -511,18 +462,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-101f',
     sku: 'FG-101F',
     name: 'Fortinet 100 FG-101F',
@@ -536,19 +483,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fg-101f_1.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fg-101f_1.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fg-101f_1.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fg-101f_1.png',
         fetchedAt: '2026-08-11T10:48:18.867767Z',
         checksum: '9858e51b87346440133fe4bbd815ea2429166bd4f3a01484d296da185880fc64',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 100 FG-101F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 100 FG-101F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-101F ; GTIN/EAN : 084238214583 ; UPC : 84238214583 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 100 FG-101F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 100 FG-101F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-101F ; GTIN/EAN : 084238214583 ; UPC : 84238214583 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -581,18 +524,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-600e',
     sku: 'FG-600E',
     name: 'Fortinet 600 FG-600E',
@@ -606,10 +545,8 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600e-hw_1.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600e-hw_1.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600e-hw_1.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600e-hw_1.png',
         fetchedAt: '2026-08-11T10:48:20.443387Z',
         checksum: '997e894e486e42267098d013766a1c3167300b96ecae3431e9d5c06c56c4a766',
       },
@@ -630,10 +567,8 @@ export const fortinetProducts: Product[] = [
         },
       },
     ],
-    shortDescription:
-      'Le Fortinet 600 FG-600E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 600 FG-600E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-600E ; GTIN/EAN : 0842382159743 ; UPC : 842382159743 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 600 FG-600E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 600 FG-600E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-600E ; GTIN/EAN : 0842382159743 ; UPC : 842382159743 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -666,18 +601,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.908Z',
   },
-  {
+{
     id: 'fortinet-fg-601e',
     sku: 'FG-601E',
     name: 'Fortinet 600 FG-601E',
@@ -691,10 +622,8 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-600e_1.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-600e_1.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-600e_1.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortigate-600e_1.png',
         fetchedAt: '2026-08-11T10:48:20.979576Z',
         checksum: 'f06047d06255c40760c8aa536d341d7ba21a621a5e54504609cb0015fcc3b9f8',
       },
@@ -722,19 +651,15 @@ export const fortinetProducts: Product[] = [
         imageSource: 'real',
         provenance: {
           sourceProvider: 'retailer-scrape',
-          sourceUrl:
-            'https://www.sysllc.ae/media/catalog/product/h/0/h089917abfe7e4f9d86b0552fd8a07ca2g_1.jpg',
-          sourceIdentifier:
-            'https://www.sysllc.ae/media/catalog/product/h/0/h089917abfe7e4f9d86b0552fd8a07ca2g_1.jpg',
+          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/0/h089917abfe7e4f9d86b0552fd8a07ca2g_1.jpg',
+          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/0/h089917abfe7e4f9d86b0552fd8a07ca2g_1.jpg',
           fetchedAt: '2026-08-11T10:48:25.569351Z',
           checksum: '8680b7d36a0eec4ee58779aec3de7d3b48d058526f9a307fffbdf78e5b29df42',
         },
       },
     ],
-    shortDescription:
-      'Le Fortinet 600 FG-601E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 600 FG-601E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-601E ; GTIN/EAN : 0842382159828 ; UPC : 842382159828 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 600 FG-601E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 600 FG-601E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-601E ; GTIN/EAN : 0842382159828 ; UPC : 842382159828 ; Pays de fabrication : China ; Licence : Device Only. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -767,18 +692,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-200f',
     sku: 'FG-200F',
     name: 'Fortinet 200 FG-200F',
@@ -792,19 +713,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortigate-fg-200f-in-dubai-uae.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortigate-fg-200f-in-dubai-uae.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortigate-fg-200f-in-dubai-uae.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortigate-fg-200f-in-dubai-uae.jpg',
         fetchedAt: '2026-08-11T10:48:23.157891Z',
         checksum: '43e368fe991cceee275f1554fa156ab4e43e5b2d857b5f192da1e904e8f42d7b',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 200 FG-200F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 200 FG-200F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-200F ; UPC : 842382192672 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 200 FG-200F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 200 FG-200F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-200F ; UPC : 842382192672 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -829,18 +746,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.329Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-70f',
     sku: 'FG-70F',
     name: 'Fortinet 70 FG-70F',
@@ -854,19 +767,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70-fortigate.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70-fortigate.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70-fortigate.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70-fortigate.jpg',
         fetchedAt: '2026-08-11T10:48:23.181219Z',
         checksum: '2aa20332f12a5bb02c761ad702316d3d9f3756f01b26211e76d1798f039ec8bb',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 70 FG-70F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 70 FG-70F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-70F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 70 FG-70F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 70 FG-70F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-70F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -887,18 +796,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fortiwifi-60e',
     sku: 'FortiWiFi-60E',
     name: 'Fortinet FortiGate/FortiWiFi-60E Series',
@@ -912,19 +817,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet60e.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet60e.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet60e.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet60e.jpg',
         fetchedAt: '2026-08-11T10:48:24.107885Z',
         checksum: '2e241afc881abbbe16cd9b105eed77acd24619d8f3b2e303acb02e4f73907978',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiGate/FortiWiFi-60E Series de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiGate/FortiWiFi-60E Series de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FortiWiFi-60E ; GTIN/EAN : 0817059021579 ; UPC : 817059021579 ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiGate/FortiWiFi-60E Series de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiGate/FortiWiFi-60E Series de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FortiWiFi-60E ; GTIN/EAN : 0817059021579 ; UPC : 817059021579 ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -949,18 +850,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fve-100e',
     sku: 'FVE-100E',
     name: 'Fortinet FortiVoice Enterprise FVE-100E',
@@ -974,19 +871,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/v/fve-100e.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/v/fve-100e.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/v/fve-100e.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/v/fve-100e.png',
         fetchedAt: '2026-08-11T10:48:24.804384Z',
         checksum: '1268d4e1da519e72428a4716d622d5ffbc03ea1d99604d643a58008777f72582',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiVoice Enterprise FVE-100E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiVoice Enterprise FVE-100E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FVE-100E ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiVoice Enterprise FVE-100E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiVoice Enterprise FVE-100E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FVE-100E ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1003,18 +896,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-600f',
     sku: 'FG-600F',
     name: 'Fortinet 600 FG-600F',
@@ -1028,19 +917,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600f.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600f.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600f.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-600f.jpg',
         fetchedAt: '2026-08-11T10:48:25.052150Z',
         checksum: 'b4575c3b3725e4a3dfc2923fc2c7f3e3ea4cbd24e776537621071628c6359738',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 600 FG-600F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 600 FG-600F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-600F ; UPC : 842382125311 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 600 FG-600F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 600 FG-600F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-600F ; UPC : 842382125311 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1065,18 +950,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-120g',
     sku: 'FG-120G',
     name: 'Fortinet 100 FG-120G',
@@ -1090,19 +971,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-120g.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-120g.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-120g.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-120g.png',
         fetchedAt: '2026-08-11T10:48:25.816196Z',
         checksum: '0d4dbb268eb1c56889b9f87518d1ad60123697d701e0d3bb5bb1d6d78b0bfa76',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 100 FG-120G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 100 FG-120G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-120G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 100 FG-120G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 100 FG-120G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-120G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1115,18 +992,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-121g',
     sku: 'FG-121G',
     name: 'Fortinet 100 FG-121G',
@@ -1140,19 +1013,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-121g.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-121g.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-121g.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-121g.png',
         fetchedAt: '2026-08-11T10:48:26.099018Z',
         checksum: 'dc04118eb8e04932de84aec7dc8b8aeb7a8cee9fa87e009127ed3e6dbffdcf95',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 100 FG-121G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 100 FG-121G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-121G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 100 FG-121G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 100 FG-121G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-121G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1165,116 +1034,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
-    id: 'fortinet-fg-200g',
-    sku: 'FG-200G',
-    name: 'Fortinet 200 FG-200G',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet 200 FG-200G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 200 FG-200G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-200G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FG-200G',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fg-201g',
-    sku: 'FG-201G',
-    name: 'Fortinet 200 FG-201G',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet 200 FG-201G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 200 FG-201G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-201G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FG-201G',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
+{
     id: 'fortinet-fg-30g',
     sku: 'FG-30G',
     name: 'Fortinet 30 FG-30G',
@@ -1288,19 +1055,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-30g.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-30g.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-30g.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-30g.jpg',
         fetchedAt: '2026-08-11T10:48:27.034560Z',
         checksum: '43f1822e65837b96313752a713c96b3e443078e25751593c67ea5dce41a5a472',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 30 FG-30G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 30 FG-30G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-30G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 30 FG-30G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 30 FG-30G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-30G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1313,18 +1076,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-50g',
     sku: 'FG-50G',
     name: 'Fortinet 50 FG-50G',
@@ -1338,19 +1097,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-50g.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-50g.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-50g.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-50g.png',
         fetchedAt: '2026-08-11T10:48:27.507502Z',
         checksum: '91e6fd4ed1203b8936a481375bc45c1dd9f9e5f1ec385787cb615d4227f8af0b',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 50 FG-50G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 50 FG-50G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-50G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 50 FG-50G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 50 FG-50G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-50G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1363,67 +1118,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
-    id: 'fortinet-fg-601f',
-    sku: 'FG-601F',
-    name: 'Fortinet 600 FG-601F',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet 600 FG-601F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 600 FG-601F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-601F. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FG-601F',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
+{
     id: 'fortinet-fg-70g',
     sku: 'FG-70G',
     name: 'Fortinet 70 FG-70G',
@@ -1437,19 +1139,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70g.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70g.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70g.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-70g.png',
         fetchedAt: '2026-08-11T10:48:28.003797Z',
         checksum: 'ea92c068a9f7b19d27843f82e3d1fef19bab9759aa7ce9594b2d4b3dbb2bf2d6',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 70 FG-70G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 70 FG-70G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-70G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 70 FG-70G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 70 FG-70G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-70G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1462,18 +1160,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-71g',
     sku: 'FG-71G',
     name: 'Fortinet 70 FG-71G',
@@ -1487,19 +1181,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-71g.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-71g.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-71g.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-71g.png',
         fetchedAt: '2026-08-11T10:48:28.610398Z',
         checksum: 'd33841b90a08811b6bae0202750a22e567ef1188289878fd494094ac6e48a4bf',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 70 FG-71G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 70 FG-71G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-71G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 70 FG-71G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 70 FG-71G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-71G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1512,18 +1202,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-90g',
     sku: 'FG-90G',
     name: 'Fortinet 90 FG-90G',
@@ -1537,19 +1223,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-90g.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-90g.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-90g.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-90g.png',
         fetchedAt: '2026-08-11T10:48:28.868405Z',
         checksum: 'c42b959dc27f979d012c0d617cf5379b509f22e1f288ab3bbfbe0084e7eaa03e',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 90 FG-90G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 90 FG-90G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-90G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 90 FG-90G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 90 FG-90G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-90G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1562,18 +1244,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fg-91g',
     sku: 'FG-91G',
     name: 'Fortinet 90 FG-91G',
@@ -1587,19 +1265,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-91g.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-91g.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-91g.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/g/fg-91g.png',
         fetchedAt: '2026-08-11T10:48:28.950432Z',
         checksum: '23ba222966b5a1d73243f59a46c7905bcf5f031830821e3c8b6e2706b59965ab',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet 90 FG-91G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 90 FG-91G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-91G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet 90 FG-91G de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet 90 FG-91G de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FG-91G. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -1612,1150 +1286,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
-    id: 'fortinet-fve-20e4',
-    sku: 'FVE-20E4',
-    name: 'Fortinet FortiVoice FVE-20E4',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiVoice FVE-20E4 de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiVoice FVE-20E4 de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FVE-20E4. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FVE-20E4',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fve-50e6',
-    sku: 'FVE-50E6',
-    name: 'Fortinet FVE-50E6 FortiVoice System with 50 Extensions, 8 VoIP Trunks',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FVE-50E6 FortiVoice System with 50 Extensions, 8 VoIP Trunks de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FVE-50E6 FortiVoice System with 50 Extensions, 8 VoIP Trunks de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FVE-50E6 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FVE-50E6',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fvg-gs16',
-    sku: 'FVG-GS16',
-    name: 'Fortinet FortiVoice FVG-GS16',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiVoice FVG-GS16 de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiVoice FVG-GS16 de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FVG-GS16 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FVG-GS16',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fvg-gt01',
-    sku: 'FVG-GT01',
-    name: 'Fortinet FortiVoice FVG-GT01',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiVoice FVG-GT01 de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiVoice FVG-GT01 de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FVG-GT01 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FVG-GT01',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fwf-30e-e',
-    sku: 'FWF-30E-E',
-    name: 'Fortinet FWF-30E-E Wireless Router with 5 GE RJ45 Ports, EU Region Code E',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FWF-30E-E Wireless Router with 5 GE RJ45 Ports, EU Region Code E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FWF-30E-E Wireless Router with 5 GE RJ45 Ports, EU Region Code E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FWF-30E-E ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FWF-30E-E',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fwf-40f-e',
-    sku: 'FWF-40F-E',
-    name: 'Fortinet 40 FWF-40F-E',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet 40 FWF-40F-E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet 40 FWF-40F-E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FWF-40F-E ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FWF-40F-E',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fc-10-0040f-950-02-36',
-    sku: 'FC-10-0040F-950-02-36',
-    name: 'Fortinet FortiGate 40F - 3 Year Unified Threat Protection (UTP)',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiGate 40F - 3 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiGate 40F - 3 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FC-10-0040F-950-02-36 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FC-10-0040F-950-02-36',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: true,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fc-10-0060f-950-02-36',
-    sku: 'FC-10-0060F-950-02-36',
-    name: 'Fortinet FortiGate 60F - 3 Year Unified Threat Protection (UTP)',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiGate 60F - 3 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiGate 60F - 3 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FC-10-0060F-950-02-36 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FC-10-0060F-950-02-36',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fc-10-0080f-950-02-12',
-    sku: 'FC-10-0080F-950-02-12',
-    name: 'Fortinet FortiGate 80F - 1 Year Unified Threat Protection (UTP)',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiGate 80F - 1 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiGate 80F - 1 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FC-10-0080F-950-02-12 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FC-10-0080F-950-02-12',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fc-10-f100f-950-02-36',
-    sku: 'FC-10-F100F-950-02-36',
-    name: 'Fortinet FortiGate 100F - 3 Year Unified Threat Protection (UTP)',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiGate 100F - 3 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiGate 100F - 3 Year Unified Threat Protection (UTP) de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FC-10-F100F-950-02-36 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FC-10-F100F-950-02-36',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fad-320f',
-    sku: 'FAD-320F',
-    name: 'Fortinet FortiADC FAD-320F',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-320F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-320F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-320F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-320F',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fad-420f',
-    sku: 'FAD-420F',
-    name: 'Fortinet FortiADC FAD-420F',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-420F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-420F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-420F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-420F',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.330Z',
-  },
-  {
-    id: 'fortinet-fad-1200f',
-    sku: 'FAD-1200F',
-    name: 'Fortinet FortiADC FAD-1200F',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-1200F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-1200F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-1200F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-1200F',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
-    id: 'fortinet-fad-1200f-dc',
-    sku: 'FAD-1200F-DC',
-    name: 'Fortinet FortiADC FAD-1200F-DC',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-1200F-DC de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-1200F-DC de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-1200F-DC ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-1200F-DC',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
-    id: 'fortinet-fad-2200f',
-    sku: 'FAD-2200F',
-    name: 'Fortinet FortiADC FAD-2200F',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-2200F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-2200F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-2200F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-2200F',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
-    id: 'fortinet-fad-2200f-dc',
-    sku: 'FAD-2200F-DC',
-    name: 'Fortinet FortiADC FAD-2200F-DC',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-2200F-DC de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-2200F-DC de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-2200F-DC ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-2200F-DC',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
-    id: 'fortinet-fad-4200f',
-    sku: 'FAD-4200F',
-    name: 'Fortinet FortiADC FAD-4200F',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-4200F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-4200F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-4200F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-4200F',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
-    id: 'fortinet-fad-4200f-dc',
-    sku: 'FAD-4200F-DC',
-    name: 'Fortinet FortiADC FAD-4200F-DC',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiADC FAD-4200F-DC de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiADC FAD-4200F-DC de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAD-4200F-DC ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FAD-4200F-DC',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
-    id: 'fortinet-fdd-200f',
-    sku: 'FDD-200F',
-    name: 'Fortinet FortiDDoS FDD-200F',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiDDoS FDD-200F de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiDDoS FDD-200F de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FDD-200F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FDD-200F',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
-    id: 'fortinet-fdd-1500e',
-    sku: 'FDD-1500E',
-    name: 'Fortinet FortiDDoS FDD-1500E',
-    brand: 'FORTINET',
-    category: 'security',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Fortinet FortiDDoS FDD-1500E de Fortinet est une solution de sécurité réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiDDoS FDD-1500E de Fortinet est une solution de sécurité réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FDD-1500E ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'FDD-1500E',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
-      },
-    ],
-    attributes: {
-      formFactor: 'appliance',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
-  },
-  {
+{
     id: 'fortinet-fap-831f',
     sku: 'FAP-831F',
     name: 'Fortinet FortiAP 831F (FAP-831F)',
@@ -2769,19 +1307,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-831f-in-dubai-uae.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-831f-in-dubai-uae.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-831f-in-dubai-uae.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-831f-in-dubai-uae.jpg',
         fetchedAt: '2026-08-11T10:48:35.691511Z',
         checksum: '457769b26e74d59d569aa9a73fec3aa4b00c11d4f4c1055f6f50a006463c7f4f',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 831F (FAP-831F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 831F (FAP-831F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-831F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 831F (FAP-831F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 831F (FAP-831F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-831F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -2802,18 +1336,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fap-431f',
     sku: 'FAP-431F',
     name: 'Fortinet FortiAP 431F (FAP-431F)',
@@ -2827,19 +1357,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_431f.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_431f.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_431f.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_431f.png',
         fetchedAt: '2026-08-11T10:48:36.146355Z',
         checksum: '580cb4b598ffc364e43bbc21b7baecda396537ec675fc2c798d86ca8c832d25d',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 431F (FAP-431F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 431F (FAP-431F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-431F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 431F (FAP-431F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 431F (FAP-431F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-431F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -2860,18 +1386,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fap-433f',
     sku: 'FAP-433F',
     name: 'Fortinet FortiAP 433F (FAP-433F)',
@@ -2885,19 +1407,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_433f_in_dubai_uae.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_433f_in_dubai_uae.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_433f_in_dubai_uae.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_433f_in_dubai_uae.png',
         fetchedAt: '2026-08-11T10:48:36.615163Z',
         checksum: '061b9f4b2a07dd306f79c9146a7d177c4828ab81cd3ce21cfe14c1072a58adc1',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 433F (FAP-433F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 433F (FAP-433F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-433F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 433F (FAP-433F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 433F (FAP-433F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-433F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -2918,18 +1436,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fap-432f',
     sku: 'FAP-432F',
     name: 'Fortinet FortiAP 432F (FAP-432F)',
@@ -2943,19 +1457,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_432f_in_dubai_uae.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_432f_in_dubai_uae.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_432f_in_dubai_uae.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_432f_in_dubai_uae.png',
         fetchedAt: '2026-08-11T10:48:37.406160Z',
         checksum: 'ad549a0f92a93fc00d00ef4efb59983bcb20b693b4e3bd6b17f8c00d1d3ba941',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 432F (FAP-432F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 432F (FAP-432F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-432F ; Pays de fabrication : China ; Marque : Fortinet ; Fréquence : 5 GHz, 2.4 GHz. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 432F (FAP-432F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 432F (FAP-432F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-432F ; Pays de fabrication : China ; Marque : Fortinet ; Fréquence : 5 GHz, 2.4 GHz. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -2980,18 +1490,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fap-231f',
     sku: 'FAP-231F',
     name: 'Fortinet FortiAP 231F (FAP-231F)',
@@ -3005,19 +1511,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_231f_in_dubai_uae.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_231f_in_dubai_uae.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_231f_in_dubai_uae.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_231f_in_dubai_uae.png',
         fetchedAt: '2026-08-11T10:48:37.342826Z',
         checksum: '01a5d4e76bcc038fddd5470ab0ba43c9e9205604a98531ade954df983c619b62',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 231F (FAP-231F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 231F (FAP-231F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-231F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 231F (FAP-231F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 231F (FAP-231F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-231F ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3038,18 +1540,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.909Z',
   },
-  {
+{
     id: 'fortinet-fap-234f',
     sku: 'FAP-234F',
     name: 'Fortinet FortiAP 234F (FAP-234F)',
@@ -3063,19 +1561,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_234f_in_dubai_uae.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_234f_in_dubai_uae.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_234f_in_dubai_uae.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_234f_in_dubai_uae.png',
         fetchedAt: '2026-08-11T10:48:37.939851Z',
         checksum: 'dd733ec8bcc595b9160c4827f48d16188dc826e5a9e3bdfd5bbb4745b90af002',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 234F (FAP-234F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 234F (FAP-234F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-234F ; UPC : 195875010305 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 234F (FAP-234F) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 234F (FAP-234F) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-234F ; UPC : 195875010305 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3100,18 +1594,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fap-23jf',
     sku: 'FAP-23JF',
     name: 'Fortinet FortiAP 23JF (FAP-23JF)',
@@ -3125,19 +1615,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_23jf_in_dubai_uae.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_23jf_in_dubai_uae.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_23jf_in_dubai_uae.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_23jf_in_dubai_uae.png',
         fetchedAt: '2026-08-11T10:48:38.490677Z',
         checksum: 'c7db563ba98df016edb30bc459b95a7498e3a3a7bc2032f52a576ae932e20a93',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 23JF (FAP-23JF) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 23JF (FAP-23JF) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-23JF ; UPC : 195875010145 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 23JF (FAP-23JF) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 23JF (FAP-23JF) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-23JF ; UPC : 195875010145 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3162,18 +1648,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fap-221e',
     sku: 'FAP-221E',
     name: 'Fortinet FortiAP 221E (FAP-221E)',
@@ -3187,19 +1669,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_221e_in_dubai_uae.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_221e_in_dubai_uae.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_221e_in_dubai_uae.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_221e_in_dubai_uae.png',
         fetchedAt: '2026-08-11T10:48:38.326660Z',
         checksum: '36d2bf6253c1f1db5f389af4ae99580df3b14d7fc9e57a8ebfce8a765a2af161',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 221E (FAP-221E) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 221E (FAP-221E) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-221E ; UPC : 842382129265 ; Pays de fabrication : China ; Marque : Fortinet ; Fréquence : 5 GHz, 2.4 GHz. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 221E (FAP-221E) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 221E (FAP-221E) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-221E ; UPC : 842382129265 ; Pays de fabrication : China ; Marque : Fortinet ; Fréquence : 5 GHz, 2.4 GHz. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3228,18 +1706,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.331Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fap-223e',
     sku: 'FAP-223E',
     name: 'Fortinet FortiAP 223E (FAP-223E)',
@@ -3253,19 +1727,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_223e_in_dubai_uae.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_223e_in_dubai_uae.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_223e_in_dubai_uae.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fortiap_223e_in_dubai_uae.jpg',
         fetchedAt: '2026-08-11T10:48:38.885441Z',
         checksum: '5da9bcbf1737c349d32f3c5b37a93cb31c4097e325097da11cc652ca8493a91c',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP 223E (FAP-223E) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP 223E (FAP-223E) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-223E ; UPC : 842382129487 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP 223E (FAP-223E) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP 223E (FAP-223E) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-223E ; UPC : 842382129487 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3290,18 +1760,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fap-c24je',
     sku: 'FAP-C24JE',
     name: 'Fortinet FortiAP C24JE (FAP-C24JE)',
@@ -3315,19 +1781,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-c24je-in-dubai-uae.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-c24je-in-dubai-uae.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-c24je-in-dubai-uae.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fortiap-c24je-in-dubai-uae.png',
         fetchedAt: '2026-08-11T10:48:39.746359Z',
         checksum: 'a87681a1e0c76c96ec5d276af455e146968fdb665750423100581a35361d25da',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiAP C24JE (FAP-C24JE) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiAP C24JE (FAP-C24JE) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-C24JE ; UPC : 842382129876 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiAP C24JE (FAP-C24JE) de Fortinet est un équipement réseau sans fil destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiAP C24JE (FAP-C24JE) de Fortinet est un équipement réseau sans fil conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FAP-C24JE ; UPC : 842382129876 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3352,18 +1814,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fs-108e',
     sku: 'FS-108E',
     name: 'Fortinet FortiSwitch 108E-POE - switch - 8 ports - managed - rack-mountable',
@@ -3377,19 +1835,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e.jpg',
         fetchedAt: '2026-08-11T10:48:39.670367Z',
         checksum: 'ae5e49353145d1d8c7616fef8e5ef0cb5bb8ecb54cd32ccc184a36f82763594a',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch 108E-POE - switch - 8 ports - managed - rack-mountable de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch 108E-POE - switch - 8 ports - managed - rack-mountable de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-108E ; Marque : Fortinet ; Commutateurs : PoE. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch 108E-POE - switch - 8 ports - managed - rack-mountable de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch 108E-POE - switch - 8 ports - managed - rack-mountable de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-108E ; Marque : Fortinet ; Commutateurs : PoE. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3410,18 +1864,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fs-108e-fpoe',
     sku: 'FS-108E-FPOE',
     name: 'Fortinet - FS-108E-FPOE - Fortinet FortiSwitch 108E-FPOE Ethernet Switch - 8 x Gigabit Ethernet Network',
@@ -3435,19 +1885,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e-fpoe_2.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e-fpoe_2.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e-fpoe_2.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-108e-fpoe_2.jpg',
         fetchedAt: '2026-08-11T10:48:39.823010Z',
         checksum: '20c9a9a80d32b27b99c4b9c3784fb79f784c877d552c8ba291ea0693ffb8829e',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet - FS-108E-FPOE - Fortinet FortiSwitch 108E-FPOE Ethernet Switch - 8 x Gigabit Ethernet Network de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet - FS-108E-FPOE - Fortinet FortiSwitch 108E-FPOE Ethernet Switch - 8 x Gigabit Ethernet Network de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-108E-FPOE ; ASIN : B0799QK3FZ ; Longueur (pouces) : 15.59 ; Largeur (pouces) : 12.56 ; Hauteur (pouces) : 3.5. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet - FS-108E-FPOE - Fortinet FortiSwitch 108E-FPOE Ethernet Switch - 8 x Gigabit Ethernet Network de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet - FS-108E-FPOE - Fortinet FortiSwitch 108E-FPOE Ethernet Switch - 8 x Gigabit Ethernet Network de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-108E-FPOE ; ASIN : B0799QK3FZ ; Longueur (pouces) : 15.59 ; Largeur (pouces) : 12.56 ; Hauteur (pouces) : 3.5. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -3484,18 +1930,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fs-124f-fpoe',
     sku: 'FS-124F-FPOE',
     name: 'Fortinet FortiSwitch FS-124F-FPOE',
@@ -3509,10 +1951,8 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-124f-fpoe.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-124f-fpoe.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-124f-fpoe.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-124f-fpoe.jpg',
         fetchedAt: '2026-08-11T10:48:40.656210Z',
         checksum: '8cd9849c9e6e3c4682f4125b8ed6f8710dce2c6be86fe2aebdca3cd195a33603',
       },
@@ -3533,38 +1973,16 @@ export const fortinetProducts: Product[] = [
         },
       },
     ],
-    shortDescription:
-      'Le Fortinet FortiSwitch FS-124F-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch FS-124F-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-124F-FPOE ; ASIN : B08ZNM1DLC ; Longueur (pouces) : 23.62 ; Largeur (pouces) : 19.29 ; Hauteur (pouces) : 11.02. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch FS-124F-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch FS-124F-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24 ; Power over Ethernet : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-124F-FPOE',
+        label: 'Nombre de ports',
+        value: '24',
       },
       {
-        label: 'ASIN',
-        value: 'B08ZNM1DLC',
-      },
-      {
-        label: 'Longueur (pouces)',
-        value: '23.62',
-      },
-      {
-        label: 'Largeur (pouces)',
-        value: '19.29',
-      },
-      {
-        label: 'Hauteur (pouces)',
-        value: '11.02',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
     ],
     attributes: {
@@ -3573,18 +1991,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fs-148f-poe',
     sku: 'FS-148F-POE',
     name: 'Fortinet FortiSwitch FS-148F-POE',
@@ -3598,47 +2012,23 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-148f-poe.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-148f-poe.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-148f-poe.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-148f-poe.jpg',
         fetchedAt: '2026-08-11T10:48:40.685807Z',
         checksum: '8a2fe12ee521fa0872779a723453d9b55d15b14d10433c0d380eaac35cad3061',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch FS-148F-POE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch FS-148F-POE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-148F-POE ; ASIN : B09HRBQHP2 ; Longueur (pouces) : 30.48 ; Largeur (pouces) : 43.18 ; Hauteur (pouces) : 5.08. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch FS-148F-POE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch FS-148F-POE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 48 ; Power over Ethernet : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-148F-POE',
+        label: 'Nombre de ports',
+        value: '48',
       },
       {
-        label: 'ASIN',
-        value: 'B09HRBQHP2',
-      },
-      {
-        label: 'Longueur (pouces)',
-        value: '30.48',
-      },
-      {
-        label: 'Largeur (pouces)',
-        value: '43.18',
-      },
-      {
-        label: 'Hauteur (pouces)',
-        value: '5.08',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
     ],
     attributes: {
@@ -3647,18 +2037,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fs-148f-fpoe',
     sku: 'FS-148F-FPOE',
     name: 'Fortinet FortiSwitch FS-148F-FPOE',
@@ -3672,31 +2058,23 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/1/4/148f-fpoe.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/1/4/148f-fpoe.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/1/4/148f-fpoe.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/1/4/148f-fpoe.png',
         fetchedAt: '2026-08-11T10:48:41.086451Z',
         checksum: '81bedb93afebaeb455d355ec5d2c5a6445522ab4a99be4faf44bf8e88441faec',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch FS-148F-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch FS-148F-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-148F-FPOE ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch FS-148F-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch FS-148F-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 48 ; Power over Ethernet : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-148F-FPOE',
+        label: 'Nombre de ports',
+        value: '48',
       },
       {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
     ],
     attributes: {
@@ -3705,18 +2083,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.910Z',
   },
-  {
+{
     id: 'fortinet-fs-224d-fpoe',
     sku: 'FS-224D-FPOE',
     name: 'Fortinet FortiSwitch FS-224D-FPOE',
@@ -3730,31 +2104,23 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224d-fpoe.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224d-fpoe.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224d-fpoe.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224d-fpoe.png',
         fetchedAt: '2026-08-11T10:48:42.065922Z',
         checksum: '27e30600bb6edbe7bc08ae4e766b90148c99c05b4b63e5afebd8f51b7d7122a1',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch FS-224D-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch FS-224D-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-224D-FPOE ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch FS-224D-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch FS-224D-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24 ; Power over Ethernet : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-224D-FPOE',
+        label: 'Nombre de ports',
+        value: '24',
       },
       {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
     ],
     attributes: {
@@ -3763,18 +2129,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fs-224e-poe',
     sku: 'FS-224E-POE',
     name: 'Fortinet FortiSwitch FS-224E-POE',
@@ -3788,31 +2150,23 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224e-poe.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224e-poe.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224e-poe.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-224e-poe.png',
         fetchedAt: '2026-08-11T10:48:42.679422Z',
         checksum: '9cc794c9f8f78f86531c9ac11cce3d4eefd2b199b0bd0efd05ffec35c468aef2',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch FS-224E-POE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch FS-224E-POE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-224E-POE ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch FS-224E-POE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch FS-224E-POE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24 ; Power over Ethernet : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-224E-POE',
+        label: 'Nombre de ports',
+        value: '24',
       },
       {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
     ],
     attributes: {
@@ -3821,18 +2175,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fs-248e-fpoe',
     sku: 'FS-248E-FPOE',
     name: 'Fortinet FortiSwitch FS-248E-FPOE',
@@ -3846,31 +2196,23 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-248e-fpoe.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-248e-fpoe.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-248e-fpoe.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/s/fs-248e-fpoe.png',
         fetchedAt: '2026-08-11T10:48:43.346126Z',
         checksum: '90e60e5e355fcb96fd20c94f9b6ef0df5fea880ceec28cad932845f2aa209301',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch FS-248E-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch FS-248E-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-248E-FPOE ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch FS-248E-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch FS-248E-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 48 ; Power over Ethernet : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-248E-FPOE',
+        label: 'Nombre de ports',
+        value: '48',
       },
       {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
     ],
     attributes: {
@@ -3879,18 +2221,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fs-108f-fpoe',
     sku: 'FS-108F-FPOE',
     name: 'Fortinet FortiSwitch FS-108F-FPOE',
@@ -3904,51 +2242,23 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortiswitchpic.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortiswitchpic.png',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortiswitchpic.png',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortiswitchpic.png',
         fetchedAt: '2026-08-11T10:48:43.769046Z',
         checksum: '55e8d534cd066a40cc03fbffcb4ad1cf45c85aa527076683902adff85841d714',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch FS-108F-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch FS-108F-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-108F-FPOE ; GTIN/EAN : 0195875035247 ; UPC : 195875035247 ; Longueur (pouces) : 8.23 ; Largeur (pouces) : 9.85. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch FS-108F-FPOE de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch FS-108F-FPOE de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 8 ; Power over Ethernet : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-108F-FPOE',
+        label: 'Nombre de ports',
+        value: '8',
       },
       {
-        label: 'GTIN/EAN',
-        value: '0195875035247',
-      },
-      {
-        label: 'UPC',
-        value: '195875035247',
-      },
-      {
-        label: 'Longueur (pouces)',
-        value: '8.23',
-      },
-      {
-        label: 'Largeur (pouces)',
-        value: '9.85',
-      },
-      {
-        label: 'Hauteur (pouces)',
-        value: '1.73',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
     ],
     attributes: {
@@ -3957,21 +2267,17 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fs-124e-poe',
     sku: 'FS-124E-POE',
-    name: 'Fortinet FortiSwitch 124E-F-POE Ethernet Switch - 24 x Gigabit Ethernet Network',
+    name: 'Fortinet FortiSwitch 124E-F-POE Switch - 24 x Gigabit Ethernet Network',
     brand: 'FORTINET',
     category: 'networking',
     primaryImage: {
@@ -3982,51 +2288,23 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/-/s-l225.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/-/s-l225.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/-/s-l225.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/-/s-l225.jpg',
         fetchedAt: '2026-08-11T10:48:43.625805Z',
         checksum: 'b3f3a8604245a6971171a7683ea62d0710429ce0ec80ed497b9d1a0432ff91b9',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Fortinet FortiSwitch 124E-F-POE Ethernet Switch - 24 x Gigabit Ethernet Network de Fortinet est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Fortinet FortiSwitch 124E-F-POE Ethernet Switch - 24 x Gigabit Ethernet Network de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FS-124E-POE ; GTIN/EAN : 0842382130896 ; UPC : 842382130896 ; ASIN : B07FYWF79F ; Longueur (pouces) : 16. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Fortinet FortiSwitch 124E-F-POE Switch - 24 x Gigabit Ethernet Network de Fortinet est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet FortiSwitch 124E-F-POE Switch - 24 x Gigabit Ethernet Network de Fortinet est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Power over Ethernet : Oui ; Interface : Ethernet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: 'FS-124E-POE',
+        label: 'Power over Ethernet',
+        value: 'Oui',
       },
       {
-        label: 'GTIN/EAN',
-        value: '0842382130896',
-      },
-      {
-        label: 'UPC',
-        value: '842382130896',
-      },
-      {
-        label: 'ASIN',
-        value: 'B07FYWF79F',
-      },
-      {
-        label: 'Longueur (pouces)',
-        value: '16',
-      },
-      {
-        label: 'Largeur (pouces)',
-        value: '12',
-      },
-      {
-        label: 'Hauteur (pouces)',
-        value: '6',
-      },
-      {
-        label: 'Marque',
-        value: 'Fortinet',
+        label: 'Interface',
+        value: 'Ethernet',
       },
     ],
     attributes: {
@@ -4035,18 +2313,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fant-04abgn-0606-o-r',
     sku: 'FANT-04ABGN-0606-O-R',
     name: 'Fortinet Accessories FANT-04ABGN-0606-O-R',
@@ -4060,19 +2334,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-r-in-dubai-uae.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-r-in-dubai-uae.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-r-in-dubai-uae.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-r-in-dubai-uae.jpg',
         fetchedAt: '2026-08-11T11:30:14.373449Z',
         checksum: '6dc4816675df4ba275151d4b667a6436028641d1f3966ac23563f2eb82328a42',
       },
     },
     gallery: [],
-    shortDescription:
-      "Le Fortinet Accessories FANT-04ABGN-0606-O-R de Fortinet est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
-    fullDescription:
-      "Le Fortinet Accessories FANT-04ABGN-0606-O-R de Fortinet est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-04ABGN-0606-O-R ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    shortDescription: 'Le Fortinet Accessories FANT-04ABGN-0606-O-R de Fortinet est un composant d\'infrastructure pour datacenter destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet Accessories FANT-04ABGN-0606-O-R de Fortinet est un composant d\'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-04ABGN-0606-O-R ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -4093,18 +2363,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fant-04abgn-2504-o-r',
     sku: 'FANT-04ABGN-2504-O-R',
     name: 'Fortinet Accessories FANT-04ABGN-2504-O-R',
@@ -4118,19 +2384,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-04abgn-2504-o-r_antenna-in-dubai-uae_11zon_1.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-04abgn-2504-o-r_antenna-in-dubai-uae_11zon_1.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-04abgn-2504-o-r_antenna-in-dubai-uae_11zon_1.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-04abgn-2504-o-r_antenna-in-dubai-uae_11zon_1.jpg',
         fetchedAt: '2026-08-11T11:30:14.769137Z',
         checksum: '4c97e435af7d518decbb79bf07906feed51f8c3b4086eda9a0d460542571e2c3',
       },
     },
     gallery: [],
-    shortDescription:
-      "Le Fortinet Accessories FANT-04ABGN-2504-O-R de Fortinet est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
-    fullDescription:
-      "Le Fortinet Accessories FANT-04ABGN-2504-O-R de Fortinet est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-04ABGN-2504-O-R ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    shortDescription: 'Le Fortinet Accessories FANT-04ABGN-2504-O-R de Fortinet est un composant d\'infrastructure pour datacenter destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet Accessories FANT-04ABGN-2504-O-R de Fortinet est un composant d\'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-04ABGN-2504-O-R ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -4151,18 +2413,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fant-04abgn-0606-o-n',
     sku: 'FANT-04ABGN-0606-O-N',
     name: 'Fortinet Accessories FANT-04ABGN-0606-O-N',
@@ -4176,19 +2434,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-n-in-dubai-uae.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-n-in-dubai-uae.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-n-in-dubai-uae.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet-fant-04abgn-0606-o-n-in-dubai-uae.jpg',
         fetchedAt: '2026-08-11T11:30:16.043197Z',
         checksum: '6dc4816675df4ba275151d4b667a6436028641d1f3966ac23563f2eb82328a42',
       },
     },
     gallery: [],
-    shortDescription:
-      "Le Fortinet Accessories FANT-04ABGN-0606-O-N de Fortinet est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
-    fullDescription:
-      "Le Fortinet Accessories FANT-04ABGN-0606-O-N de Fortinet est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-04ABGN-0606-O-N ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    shortDescription: 'Le Fortinet Accessories FANT-04ABGN-0606-O-N de Fortinet est un composant d\'infrastructure pour datacenter destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet Accessories FANT-04ABGN-0606-O-N de Fortinet est un composant d\'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-04ABGN-0606-O-N ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -4209,18 +2463,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fant-06abgn-0606-o-r',
     sku: 'FANT-06ABGN-0606-O-R',
     name: 'Fortinet Accessories FANT-06ABGN-0606-O-R',
@@ -4234,19 +2484,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-06abgn-0606-o-r_-in-dubai-uae.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-06abgn-0606-o-r_-in-dubai-uae.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-06abgn-0606-o-r_-in-dubai-uae.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/f/o/fortinet_fant-06abgn-0606-o-r_-in-dubai-uae.jpg',
         fetchedAt: '2026-08-11T11:30:16.623032Z',
         checksum: '1b5010d6e517a1a20a910b2b6934c4bbf89f8da1973cffc70541f25e0dce39bb',
       },
     },
     gallery: [],
-    shortDescription:
-      "Le Fortinet Accessories FANT-06ABGN-0606-O-R de Fortinet est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
-    fullDescription:
-      "Le Fortinet Accessories FANT-06ABGN-0606-O-R de Fortinet est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-06ABGN-0606-O-R ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    shortDescription: 'Le Fortinet Accessories FANT-06ABGN-0606-O-R de Fortinet est un composant d\'infrastructure pour datacenter destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet Accessories FANT-06ABGN-0606-O-R de Fortinet est un composant d\'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-06ABGN-0606-O-R ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -4267,18 +2513,14 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
-  {
+{
     id: 'fortinet-fant-06abgn-2504-o-r',
     sku: 'FANT-06ABGN-2504-O-R',
     name: 'Fortinet Accessories FANT-06ABGN-2504-O-R',
@@ -4292,19 +2534,15 @@ export const fortinetProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/b/u/buy-fortinet_fant-06abgn-2504-o-r-in-dubai-uae.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/b/u/buy-fortinet_fant-06abgn-2504-o-r-in-dubai-uae.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/b/u/buy-fortinet_fant-06abgn-2504-o-r-in-dubai-uae.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/b/u/buy-fortinet_fant-06abgn-2504-o-r-in-dubai-uae.jpg',
         fetchedAt: '2026-08-11T11:30:16.798054Z',
         checksum: '26de208efab6f9cc90b67621f4d33c8b19a0b6a7eb4ea735c79b757511b506ff',
       },
     },
     gallery: [],
-    shortDescription:
-      "Le Fortinet Accessories FANT-06ABGN-2504-O-R de Fortinet est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
-    fullDescription:
-      "Le Fortinet Accessories FANT-06ABGN-2504-O-R de Fortinet est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-06ABGN-2504-O-R ; Largeur (pouces) : 7.10 ; Hauteur (pouces) : 5.10 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
+    shortDescription: 'Le Fortinet Accessories FANT-06ABGN-2504-O-R de Fortinet est un composant d\'infrastructure pour datacenter destiné aux environnements professionnels.',
+    fullDescription: 'Le Fortinet Accessories FANT-06ABGN-2504-O-R de Fortinet est un composant d\'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : FANT-06ABGN-2504-O-R ; Largeur (pouces) : 7.10 ; Hauteur (pouces) : 5.10 ; Pays de fabrication : China ; Marque : Fortinet. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Référence',
@@ -4333,15 +2571,11 @@ export const fortinetProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.332Z',
+    publishedAt: '2026-08-11T14:08:33.911Z',
   },
 ];

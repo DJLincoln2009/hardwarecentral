@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { X, Heart, FileText, Search, Server, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
-import { getActiveCategories } from '@/lib/data/categories';
+import { getNavbarCategories } from '@/lib/data/categories';
 import { getActiveBrands } from '@/lib/data/brands';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
@@ -29,7 +29,7 @@ function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
   const router = useRouter();
   const prefersReducedMotion = usePrefersReducedMotion();
   const [searchQuery, setSearchQuery] = useState('');
-  const categories = getActiveCategories();
+  const categories = getNavbarCategories();
   const brands = getActiveBrands();
   const quoteCount = useQuoteStore((s) => s.items.length);
   const favCount = useFavoritesStore((s) => s.productIds.length);

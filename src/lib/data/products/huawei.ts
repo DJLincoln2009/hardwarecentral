@@ -1,7 +1,9 @@
 import type { Product } from '@/types';
 
+
 export const huaweiProducts: Product[] = [
-  {
+
+{
     id: 'huawei-98011343',
     sku: '98011343',
     name: 'Huawei S5735-L48P4X-A1',
@@ -15,27 +17,19 @@ export const huaweiProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l48p4x-a1.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l48p4x-a1.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l48p4x-a1.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l48p4x-a1.jpg',
         fetchedAt: '2026-08-11T10:49:16.650554Z',
         checksum: '48fe1fa8e0cb4aa506deebcb34da348e798214b65d3bf18a0c05e1bfabff6351',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 98011343 ; Marque : Huawei. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 48. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: '98011343',
-      },
-      {
-        label: 'Marque',
-        value: 'Huawei',
+        label: 'Nombre de ports',
+        value: '48',
       },
     ],
     attributes: {
@@ -44,18 +38,14 @@ export const huaweiProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: true,
-    publishedAt: '2026-08-11T11:30:21.339Z',
+    publishedAt: '2026-08-11T14:08:33.921Z',
   },
-  {
+{
     id: 'huawei-98011318',
     sku: '98011318',
     name: 'Huawei S5735-L24P4X-A1',
@@ -69,27 +59,19 @@ export const huaweiProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4x-a1.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4x-a1.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4x-a1.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4x-a1.jpg',
         fetchedAt: '2026-08-11T10:49:16.707331Z',
         checksum: '8d4482d55405d39ab2202f25587de099e3b2a6796955a2f0afde4ac919fbf446',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 98011318 ; Marque : Huawei. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: '98011318',
-      },
-      {
-        label: 'Marque',
-        value: 'Huawei',
+        label: 'Nombre de ports',
+        value: '24',
       },
     ],
     attributes: {
@@ -98,18 +80,14 @@ export const huaweiProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.339Z',
+    publishedAt: '2026-08-11T14:08:33.921Z',
   },
-  {
+{
     id: 'huawei-98011321',
     sku: '98011321',
     name: 'Huawei S5735-L24P4S-A1',
@@ -123,27 +101,19 @@ export const huaweiProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4s-a1.jpg',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4s-a1.jpg',
+        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4s-a1.jpg',
+        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4s-a1.jpg',
         fetchedAt: '2026-08-11T10:49:17.433479Z',
         checksum: 'ead531af36500a94715d5ffeab0e5c2f5ca7e33db6215234609d0bdb8e7bf1e1',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : 98011321 ; Marque : Huawei. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
-        label: 'Référence',
-        value: '98011321',
-      },
-      {
-        label: 'Marque',
-        value: 'Huawei',
+        label: 'Nombre de ports',
+        value: '24',
       },
     ],
     attributes: {
@@ -152,75 +122,14 @@ export const huaweiProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.339Z',
+    publishedAt: '2026-08-11T14:08:33.921Z',
   },
-  {
-    id: 'huawei-s5700-28tp-pwr-li-ac',
-    sku: 'S5700-28TP-PWR-LI-AC',
-    name: 'Huawei S5700-28TP-PWR-LI-AC 24-Port PoE+ Ethernet Switch with SFP Slots',
-    brand: 'HUAWEI',
-    category: 'networking',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      'Le Huawei S5700-28TP-PWR-LI-AC 24-Port PoE+ Ethernet Switch with SFP Slots de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Huawei S5700-28TP-PWR-LI-AC 24-Port PoE+ Ethernet Switch with SFP Slots de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : S5700-28TP-PWR-LI-AC ; Pays de fabrication : China ; Marque : Huawei. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
-    specs: [
-      {
-        label: 'Référence',
-        value: 'S5700-28TP-PWR-LI-AC',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Huawei',
-      },
-    ],
-    attributes: {
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.339Z',
-  },
-  {
+{
     id: 'huawei-huawei-cloudengine-12800-data-center-swi',
     sku: 'Huawei-CloudEngine-12800-Data-Center-Swi',
     name: 'Huawei CloudEngine 12800 Data Center Switches',
@@ -234,19 +143,15 @@ export const huaweiProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.serverbasket.com/wp-content/uploads/2024/08/Huawei-CloudEngine-12800-Data-Center-Switches.com_.jpg',
-        sourceIdentifier:
-          'https://www.serverbasket.com/wp-content/uploads/2024/08/Huawei-CloudEngine-12800-Data-Center-Switches.com_.jpg',
+        sourceUrl: 'https://www.serverbasket.com/wp-content/uploads/2024/08/Huawei-CloudEngine-12800-Data-Center-Switches.com_.jpg',
+        sourceIdentifier: 'https://www.serverbasket.com/wp-content/uploads/2024/08/Huawei-CloudEngine-12800-Data-Center-Switches.com_.jpg',
         fetchedAt: '2026-08-11T10:49:17.666631Z',
         checksum: '44bc6a8037ebf0503d24f40cef32baeeebc9d31e61060f6609a33946f9aa47fe',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Marque : Huawei Form Factor ; Modèles de châssis modulaire : CE12804S, CE12808S, CE12804, CE12808, CE12812, CE12816 Switching Capacity ; Sécurité : Comprehensive security features including ACLs, IPSec, encryption, and DDoS prot. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Marque : Huawei Form Factor ; Modèles de châssis modulaire : CE12804S, CE12808S, CE12804, CE12808, CE12812, CE12816 Switching Capacity ; Sécurité : Comprehensive security features including ACLs, IPSec, encryption, and DDoS prot. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Marque',
@@ -267,18 +172,14 @@ export const huaweiProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.339Z',
+    publishedAt: '2026-08-11T14:08:33.921Z',
   },
-  {
+{
     id: 'huawei-huawei-cloudengine-12804-switch',
     sku: 'Huawei-CloudEngine-12804-Switch',
     name: 'Huawei CloudEngine 12804 Switch',
@@ -292,19 +193,15 @@ export const huaweiProducts: Product[] = [
       imageSource: 'real',
       provenance: {
         sourceProvider: 'retailer-scrape',
-        sourceUrl:
-          'https://www.serverbasket.com/wp-content/uploads/2023/06/huawei-cloudengine-12804-switch.png',
-        sourceIdentifier:
-          'https://www.serverbasket.com/wp-content/uploads/2023/06/huawei-cloudengine-12804-switch.png',
+        sourceUrl: 'https://www.serverbasket.com/wp-content/uploads/2023/06/huawei-cloudengine-12804-switch.png',
+        sourceIdentifier: 'https://www.serverbasket.com/wp-content/uploads/2023/06/huawei-cloudengine-12804-switch.png',
         fetchedAt: '2026-08-11T10:49:19.430395Z',
         checksum: '0bb6a7d5c276e30159001814f1f7a93e24748ba3f9e65140a08d4ae18ef97feb',
       },
     },
     gallery: [],
-    shortDescription:
-      'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription:
-      'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Capacité de commutation : 45/2581 (Tbit/s) Part Number. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+    shortDescription: 'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription: 'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Capacité de commutation : 45/2581 (Tbit/s) Part Number. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Capacité de commutation',
@@ -317,72 +214,11 @@ export const huaweiProducts: Product[] = [
     availability: {
       status: 'on-order',
       stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
     },
     certifications: [],
     compatibility: [],
     datasheets: [],
     isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.339Z',
-  },
-  {
-    id: 'huawei-hw-7224ac14d-b',
-    sku: 'HW-7224AC14D-B',
-    name: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-    brand: 'HUAWEI',
-    category: 'datacenter',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/HW-7224AC14D-B__0.png',
-      alt: 'Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications',
-      width: 350,
-      height: 100,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        sourceIdentifier:
-          'https://www.sysllc.ae/media/catalog/product/placeholder/default/ae-default.png',
-        fetchedAt: '2026-08-11T10:49:18.582760Z',
-        checksum: '90bc98a0981862488bff810410e9ff5f46c604fe1c5384774e7be240b4dad7c2',
-      },
-    },
-    gallery: [],
-    shortDescription:
-      "Le Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications de Huawei est un composant d'infrastructure pour datacenter destiné aux environnements professionnels.",
-    fullDescription:
-      "Le Huawei HW-7224AC14D-B 24VAC 3A Adapter for 40-50°C Applications de Huawei est un composant d'infrastructure pour datacenter conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Référence : HW-7224AC14D-B ; Pays de fabrication : China ; Marque : Huawei. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.",
-    specs: [
-      {
-        label: 'Référence',
-        value: 'HW-7224AC14D-B',
-      },
-      {
-        label: 'Pays de fabrication',
-        value: 'China',
-      },
-      {
-        label: 'Marque',
-        value: 'Huawei',
-      },
-    ],
-    attributes: {
-      formFactor: 'rack',
-    },
-    availability: {
-      status: 'on-order',
-      stockQuantity: 0,
-      leadTimeDays: 21,
-    },
-    warranty: {
-      durationLabel: 'Sans garantie',
-    },
-    certifications: [],
-    compatibility: [],
-    datasheets: [],
-    isFeatured: false,
-    publishedAt: '2026-08-11T11:30:21.339Z',
+    publishedAt: '2026-08-11T14:08:33.921Z',
   },
 ];
