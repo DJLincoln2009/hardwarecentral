@@ -658,7 +658,7 @@ export const hpeProducts: Product[] = [
     certifications: [],
     compatibility: [],
     datasheets: [],
-    isFeatured: true,
+    isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.883Z',
   },
 {
@@ -840,7 +840,7 @@ export const hpeProducts: Product[] = [
     certifications: [],
     compatibility: [],
     datasheets: [],
-    isFeatured: false,
+    isFeatured: true,
     publishedAt: '2026-08-11T14:08:33.883Z',
   },
 {

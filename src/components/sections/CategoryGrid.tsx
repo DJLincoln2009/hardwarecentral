@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Server, Network, Shield, Camera, Monitor, ArrowUpRight, type LucideIcon } from 'lucide-react';
+import { Server, Network, Shield, Camera, Monitor, Building2, Wifi, Printer, ArrowUpRight, type LucideIcon } from 'lucide-react';
 import { getActiveCategories } from '@/lib/data/categories';
 
 const iconMap: Record<string, LucideIcon> = {
@@ -8,6 +8,9 @@ const iconMap: Record<string, LucideIcon> = {
   Shield,
   Camera,
   Monitor,
+  Building2,
+  Wifi,
+  Printer,
 };
 
 function CategoryGrid() {

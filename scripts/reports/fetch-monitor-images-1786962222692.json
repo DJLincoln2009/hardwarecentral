@@ -1,0 +1,44 @@
+[
+  {
+    "sku": "210-AXDG",
+    "status": "ok",
+    "imageKitUrl": "https://ik.imagekit.io/3sihhe4l4/products/dell-210-axdg/images/products_dell-210-axdg_images_210-AXDG__0.jpg",
+    "checksum": "721cdc4ac21ae24207c39f2a599a203c6da67f56fe9b76e7fa1cd9bb98aa2aeb"
+  },
+  {
+    "sku": "210-ASCN",
+    "status": "ok",
+    "imageKitUrl": "https://ik.imagekit.io/3sihhe4l4/products/dell-210-ascn/images/products_dell-210-ascn_images_210-ASCN__0.jpg",
+    "checksum": "6911df69bd5bdcd45042083d88ae98e12dead3425da3c5c7ec0e7998d08553a6"
+  },
+  {
+    "sku": "210-AVVF",
+    "status": "ok",
+    "imageKitUrl": "https://ik.imagekit.io/3sihhe4l4/products/dell-210-avvf/images/products_dell-210-avvf_images_210-AVVF__0.png",
+    "checksum": "805ddce091347446e420771de55c0f3f995776a5d3b64bf57ea815d403303b5c"
+  },
+  {
+    "sku": "210-BNKF",
+    "status": "ok",
+    "imageKitUrl": "https://ik.imagekit.io/3sihhe4l4/products/dell-210-bnkf/images/products_dell-210-bnkf_images_210-BNKF__0.png",
+    "checksum": "8351276fb7cef7d43928c0ee9b215fc546dc5b824672c498967ebbc4487dfa71"
+  },
+  {
+    "sku": "3ML60AA",
+    "status": "ok",
+    "imageKitUrl": "https://ik.imagekit.io/3sihhe4l4/products/hp-3ml60aa/images/products_hp-3ml60aa_images_3ML60AA__0.png",
+    "checksum": "94d317546c9522150e8516380a47bd422a51568103bbbf8f1b8243f39ed190a1"
+  },
+  {
+    "sku": "3ML63AA",
+    "status": "ok",
+    "imageKitUrl": "https://ik.imagekit.io/3sihhe4l4/products/hp-3ml63aa/images/products_hp-3ml63aa_images_3ML63AA__0.png",
+    "checksum": "60483a833be244af7fda8a71cd1f01f64fd3a2a3a87c679774a882882e93da7a"
+  },
+  {
+    "sku": "1AA81A4",
+    "status": "ok",
+    "imageKitUrl": "https://ik.imagekit.io/3sihhe4l4/products/hp-1aa81a4/images/products_hp-1aa81a4_images_1AA81A4__0.png",
+    "checksum": "15eb5768acdc539aa273842b9d9f7182bcd9f8a915ade6bed8e3a59185303701"
+  }
+]

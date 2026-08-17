@@ -10,6 +10,9 @@ import {
   Shield,
   Camera,
   Building2,
+  Wifi,
+  Printer,
+  Monitor,
   Sparkles,
   ArrowRight,
   type LucideIcon,
@@ -29,6 +32,9 @@ const iconMap: Record<string, LucideIcon> = {
   Shield,
   Camera,
   Building2,
+  Wifi,
+  Printer,
+  Monitor,
 };
 
 function MegaMenu({ open, onClose }: MegaMenuProps) {
