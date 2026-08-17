@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-const PRODUCT_SLUG = 'hpe-proliant-dl380-gen12';
-const PRODUCT_SKU = 'HPE-DL380-G12';
+const PRODUCT_SLUG = 'hpe-p24841-b21';
+const PRODUCT_SKU = 'P24841-B21';
 
 test.describe('Flow 17.1 — Découverte → Devis', () => {
   test('axe-core audit on homepage — no critical/serious violations', async ({ page }) => {
@@ -57,7 +57,7 @@ test.describe('Flow 17.1 — Découverte → Devis', () => {
     // 6. Go to quote list
     await page.goto('/devis');
     await page.waitForSelector('h1');
-    await expect(page.getByText(PRODUCT_SKU)).toBeVisible();
+    await expect(page.getByText(PRODUCT_SKU).first()).toBeVisible();
 
     // 7. Submit quote request
     await page.getByRole('button', { name: /Demander un devis pour/ }).click();
