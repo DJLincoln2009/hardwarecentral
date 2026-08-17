@@ -4,15 +4,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { ArrowLeft, Compass, Search } from 'lucide-react';
-import { getActiveCategories } from '@/lib/data/categories';
-
-const categoryRouteMap: Record<string, string> = {
-  'server-storage': '/catalogue?categorie=server-storage',
-  networking: '/catalogue?categorie=networking',
-  security: '/catalogue?categorie=security',
-  cctv: '/catalogue?categorie=cctv',
-  laptop: '/catalogue?categorie=laptop',
-};
+import { getActiveCategories, getCategoryRoute } from '@/lib/data/categories';
 
 export default function NotFound() {
   const router = useRouter();
@@ -94,7 +86,7 @@ export default function NotFound() {
               {categories.map((cat) => (
                 <Link
                   key={cat.id}
-                  href={categoryRouteMap[cat.id] ?? `/catalogue?categorie=${cat.id}`}
+                  href={getCategoryRoute(cat.id)}
                   className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-xs font-medium text-graphite-200 backdrop-blur transition-all duration-200 hover:border-teal-300/40 hover:bg-white/10 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300"
                 >
                   <span className="h-1.5 w-1.5 rounded-full bg-teal-400" aria-hidden="true" />

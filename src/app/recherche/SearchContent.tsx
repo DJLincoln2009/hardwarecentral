@@ -1,9 +1,8 @@
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import ProductCard from '@/components/product/ProductCard';
 import EmptyState from '@/components/ui/EmptyState';
-import { filterProducts, type SortOption } from '@/lib/data/filter-products';
-
-const PAGE_SIZE = 12;
+import CatalogPagination from '@/components/catalog/CatalogPagination';
+import { filterProducts, PAGE_SIZE, type SortOption } from '@/lib/data/filter-products';
 
 interface SearchContentProps {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
@@ -20,9 +19,9 @@ async function SearchContent({ searchParams }: SearchContentProps) {
 
   const q = get('q') || '';
   const tri = (get('tri') as SortOption) || undefined;
-  const page = parseInt(get('page') || '1', 10) || 1;
+  const page = Math.max(1, parseInt(get('page') || '1', 10) || 1);
 
-  const { results, total } = filterProducts({
+  const { results, total, page: currentPage, totalPages } = filterProducts({
     q: q || undefined,
     tri,
     page,
@@ -64,11 +63,16 @@ async function SearchContent({ searchParams }: SearchContentProps) {
       </div>
 
       {results.length > 0 ? (
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
-          {results.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        <>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {results.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+          <div className="mt-10 flex justify-center border-t border-border pt-8">
+            <CatalogPagination currentPage={currentPage} totalPages={totalPages} />
+          </div>
+        </>
       ) : (
         <EmptyState
           variant={q ? 'search' : 'empty'}

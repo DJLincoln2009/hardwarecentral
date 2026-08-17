@@ -1,7 +1,9 @@
 import { products } from './products';
-import type { Product, AvailabilityStatus, ChassisFormat } from '@/types';
+import type { Product, AvailabilityStatus, FormFactor } from '@/types';
 
-export type SortOption = 'newest' | 'name-asc' | 'availability';
+export type SortOption = 'mix' | 'newest' | 'name-asc' | 'availability';
+
+export const PAGE_SIZE = 12;
 
 export interface FilterParams {
   categorie?: string;
@@ -31,6 +33,46 @@ const availabilityOrder: Record<AvailabilityStatus, number> = {
   discontinued: 3,
 };
 
+function hashProductId(id: string): number {
+  let hash = 0;
+  for (let i = 0; i < id.length; i++) {
+    hash = (hash << 5) - hash + id.charCodeAt(i);
+    hash |= 0;
+  }
+  return Math.abs(hash);
+}
+
+/**
+ * Mélange déterministe par marque (round-robin) : intercale les marques pour éviter
+ * les blocs « marque après marque » dans les listings. Ordre stable entre rendus
+ * serveur/client et à travers la pagination (aucune source de hasard, fonction pure
+ * du modèle Product — jamais de `Math.random()`).
+ */
+export function interleaveByBrand(items: Product[]): Product[] {
+  const groups = new Map<string, Product[]>();
+  for (const p of items) {
+    const arr = groups.get(p.brand) ?? [];
+    arr.push(p);
+    groups.set(p.brand, arr);
+  }
+  for (const arr of groups.values()) {
+    arr.sort((a, b) => hashProductId(a.id) - hashProductId(b.id));
+  }
+  const brands = [...groups.keys()];
+  const result: Product[] = [];
+  let remaining = items.length;
+  while (remaining > 0) {
+    for (const brand of brands) {
+      const arr = groups.get(brand);
+      if (arr && arr.length > 0) {
+        result.push(arr.shift() as Product);
+        remaining--;
+      }
+    }
+  }
+  return result;
+}
+
 export function filterProducts(params: FilterParams): {
   results: Product[];
   total: number;
@@ -42,7 +84,7 @@ export function filterProducts(params: FilterParams): {
     marque,
     format,
     q,
-    tri = 'newest',
+    tri = 'mix',
     page = 1,
     pageSize = 12,
   } = params;
@@ -60,8 +102,12 @@ export function filterProducts(params: FilterParams): {
   }
 
   if (format) {
-    const formats = format.split(',') as ChassisFormat[];
-    filtered = filtered.filter((p) => p.attributes.chassisFormat && formats.includes(p.attributes.chassisFormat));
+    const formats = format.split(',').map((f) => f.toLowerCase());
+    filtered = filtered.filter(
+      (p) =>
+        (p.attributes.formFactor && formats.includes(p.attributes.formFactor)) ||
+        (p.attributes.chassisFormat && formats.includes(p.attributes.chassisFormat.toLowerCase())),
+    );
   }
 
   if (q) {
@@ -69,6 +115,10 @@ export function filterProducts(params: FilterParams): {
   }
 
   switch (tri) {
+    case 'mix':
+    default:
+      filtered = interleaveByBrand(filtered);
+      break;
     case 'name-asc':
       filtered.sort((a, b) => a.name.localeCompare(b.name));
       break;
@@ -80,25 +130,31 @@ export function filterProducts(params: FilterParams): {
       });
       break;
     case 'newest':
-    default:
       filtered.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
       break;
   }
 
   const total = filtered.length;
   const totalPages = Math.ceil(total / pageSize);
-  const start = (page - 1) * pageSize;
+  const clampedPage = Math.min(Math.max(1, page), totalPages || 1);
+  const start = (clampedPage - 1) * pageSize;
   const results = filtered.slice(start, start + pageSize);
 
-  return { results, total, page, totalPages };
+  return { results, total, page: clampedPage, totalPages };
 }
 
 export function getUniqueAttributeValues(): {
-  chassisFormats: ChassisFormat[];
+  formFactors: FormFactor[];
+  chassisFormats: string[];
 } {
-  const formats = new Set<ChassisFormat>();
+  const factors = new Set<FormFactor>();
+  const formats = new Set<string>();
   for (const p of products) {
+    if (p.attributes.formFactor) factors.add(p.attributes.formFactor);
     if (p.attributes.chassisFormat) formats.add(p.attributes.chassisFormat);
   }
-  return { chassisFormats: Array.from(formats).sort() };
+  return {
+    formFactors: Array.from(factors).sort(),
+    chassisFormats: Array.from(formats).sort(),
+  };
 }

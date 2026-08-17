@@ -5,9 +5,7 @@ import CatalogPagination from '@/components/catalog/CatalogPagination';
 import CatalogMobileBar from '@/components/catalog/CatalogMobileBar';
 import ProductCard from '@/components/product/ProductCard';
 import EmptyState from '@/components/ui/EmptyState';
-import { filterProducts, type SortOption } from '@/lib/data/filter-products';
-
-const PAGE_SIZE = 12;
+import { filterProducts, PAGE_SIZE, type SortOption } from '@/lib/data/filter-products';
 
 interface CatalogueContentProps {
   searchParams: Promise<Record<string, string | string[] | undefined>>;
@@ -27,7 +25,7 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
   const format = get('format');
   const q = get('q');
   const tri = (get('tri') as SortOption) || undefined;
-  const page = parseInt(get('page') || '1', 10) || 1;
+  const page = Math.max(1, parseInt(get('page') || '1', 10) || 1);
 
   const { results, total, page: currentPage, totalPages } = filterProducts({
     categorie,
@@ -75,7 +73,7 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
                   Résultats pour &laquo;&nbsp;{q}&nbsp;&raquo; ·{' '}
                 </>
               )}
-              {tri && tri !== 'newest' ? 'Tris personnalisés appliqués' : 'Dernières références ajoutées'}
+              {tri && tri !== 'mix' ? 'Tris personnalisés appliqués' : 'Marques mélangées pour varier les références'}
             </p>
             <div className="flex items-center gap-2">
               <CatalogMobileBar resultCount={total} />
@@ -85,7 +83,7 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
 
           {results.length > 0 ? (
             <>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {results.map((product) => (
                   <ProductCard key={product.id} product={product} />
                 ))}

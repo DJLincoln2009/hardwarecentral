@@ -1,31 +1,18 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { newsletterSchema } from '@/lib/validations/forms';
 import { addNewsletterSubscriber } from '@/lib/email';
-import { checkRateLimit } from '@/lib/rate-limit';
-
-const RATE_LIMIT_MAX = 3;
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+import { NEWSLETTER_RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS } from '@/lib/rate-limit';
+import { getClientIp, parseAndValidateBody, checkRouteRateLimit } from '@/lib/api-helpers';
 
 export async function POST(request: NextRequest) {
-  const ip = request.headers.get('x-forwarded-for') ?? request.headers.get('x-real-ip') ?? 'unknown';
+  const ip = getClientIp(request);
+  const rateCheck = await checkRouteRateLimit(`ratelimit:newsletter:${ip}`, NEWSLETTER_RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS);
+  if ('error' in rateCheck) return rateCheck.error;
 
-  if (!(await checkRateLimit(`ratelimit:newsletter:${ip}`, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS))) {
-    return NextResponse.json({ error: 'Trop de demandes. Veuillez réessayer plus tard.' }, { status: 429 });
-  }
+  const body = await parseAndValidateBody(request, newsletterSchema);
+  if ('error' in body) return body.error;
 
-  let body: unknown;
-  try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ error: 'Requête invalide' }, { status: 400 });
-  }
-
-  const parsed = newsletterSchema.safeParse(body);
-  if (!parsed.success) {
-    return NextResponse.json({ error: 'Validation échouée' }, { status: 400 });
-  }
-
-  const { email } = parsed.data;
+  const { email } = body.data;
 
   try {
     const { alreadySubscribed } = await addNewsletterSubscriber(email);

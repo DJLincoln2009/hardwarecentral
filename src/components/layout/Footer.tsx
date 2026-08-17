@@ -1,21 +1,13 @@
 import Link from 'next/link';
 import { Server, MapPin, Phone, Mail, Clock, ArrowRight } from 'lucide-react';
-import { getActiveCategories } from '@/lib/data/categories';
+import { getActiveCategories, getCategoryRoute } from '@/lib/data/categories';
 import { SITE_CONFIG } from '@/lib/site-config';
-
-const categoryRouteMap: Record<string, string> = {
-  'server-storage': '/catalogue?categorie=server-storage',
-  networking: '/catalogue?categorie=networking',
-  security: '/catalogue?categorie=security',
-  cctv: '/catalogue?categorie=cctv',
-  laptop: '/catalogue?categorie=laptop',
-};
 
 function Footer() {
   const categories = getActiveCategories();
 
   const columnLinkClass =
-    'text-sm text-graphite-300 transition-colors duration-150 hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded-sm';
+    'text-sm text-graphite-300 transition-colors duration-150 hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm';
 
   return (
     <footer className="relative overflow-hidden border-t border-graphite-800 bg-graphite-950 text-graphite-300">
@@ -27,7 +19,7 @@ function Footer() {
           <div className="col-span-2">
             <Link
               href="/"
-              className="inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+              className="inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200"
             >
               <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-teal-400 to-teal-700">
                 <Server className="h-4.5 w-4.5 text-white" aria-hidden="true" />
@@ -50,7 +42,7 @@ function Footer() {
               </Link>
               <Link
                 href="/catalogue"
-                className="inline-flex items-center gap-1.5 rounded-full border border-graphite-700 px-4 py-2 text-xs font-semibold text-graphite-200 transition-all duration-200 hover:border-teal-400 hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400"
+                className="inline-flex items-center gap-1.5 rounded-full border border-graphite-700 px-4 py-2 text-xs font-semibold text-graphite-200 transition-all duration-200 hover:border-teal-400 hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200"
               >
                 Voir le catalogue
               </Link>
@@ -63,7 +55,7 @@ function Footer() {
               {categories.map((cat) => (
                 <li key={cat.id}>
                   <Link
-                    href={categoryRouteMap[cat.id] ?? `/catalogue?categorie=${cat.id}`}
+                    href={getCategoryRoute(cat.id)}
                     className={columnLinkClass}
                   >
                     {cat.name}
@@ -121,7 +113,7 @@ function Footer() {
               <li>
                 <a
                   href={`tel:${SITE_CONFIG.phone.e164}`}
-                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded-sm"
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm"
                 >
                   <Phone className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300" aria-hidden="true" />
                   {SITE_CONFIG.phone.display}
@@ -130,7 +122,7 @@ function Footer() {
               <li>
                 <a
                   href={`mailto:${SITE_CONFIG.email.contact}`}
-                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 rounded-sm"
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm"
                 >
                   <Mail className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300" aria-hidden="true" />
                   {SITE_CONFIG.email.contact}

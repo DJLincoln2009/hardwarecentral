@@ -1,5 +1,18 @@
 import type { Category, CategoryId } from '@/types';
 
+/** Map de routage statique — centralise les URLs /catalogue?categorie=… */
+const categoryRouteMap: Record<string, string> = {
+  'server-storage': '/catalogue?categorie=server-storage',
+  networking: '/catalogue?categorie=networking',
+  security: '/catalogue?categorie=security',
+  cctv: '/catalogue?categorie=cctv',
+  laptop: '/catalogue?categorie=laptop',
+};
+
+export function getCategoryRoute(categoryId: CategoryId): string {
+  return categoryRouteMap[categoryId] ?? `/catalogue?categorie=${categoryId}`;
+}
+
 export const categories: Category[] = [
   {
     id: 'server-storage',
@@ -35,25 +48,25 @@ export const categories: Category[] = [
     id: 'datacenter',
     name: 'Datacenter',
     icon: 'Building2',
-    isActive: true,
+    isActive: false,
   },
   {
     id: 'wireless',
     name: 'Wi-Fi & Sans-fil',
     icon: 'Wifi',
-    isActive: true,
+    isActive: false,
   },
   {
     id: 'monitor',
     name: 'Écrans',
     icon: 'Monitor',
-    isActive: true,
+    isActive: false,
   },
   {
     id: 'printers',
     name: 'Imprimantes',
     icon: 'Printer',
-    isActive: true,
+    isActive: false,
   },
 ];
 
@@ -76,6 +89,6 @@ const NAVBAR_CATEGORY_ORDER: CategoryId[] = [
 /** Catégories affichées dans la navbar (Header, MegaMenu, navigation mobile). */
 export function getNavbarCategories(): Category[] {
   return NAVBAR_CATEGORY_ORDER.map((id) => getCategoryById(id)).filter(
-    (c): c is Category => c !== undefined,
+    (c): c is Category => c !== undefined && c.isActive,
   );
 }

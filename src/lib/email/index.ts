@@ -4,6 +4,7 @@ const BREVO_API_KEY = process.env.BREVO_API_KEY;
 const BREVO_API_URL = 'https://api.brevo.com/v3';
 const SENDER_EMAIL = SITE_CONFIG.email.contact;
 const SENDER_NAME = SITE_CONFIG.companyName;
+const NEWSLETTER_LIST_ID = 2;
 
 interface SendEmailParams {
   to: { email: string; name?: string };
@@ -25,7 +26,10 @@ async function brevoFetch(path: string, body: unknown): Promise<Response> {
 
 export async function sendTransactionalEmail({ to, subject, html }: SendEmailParams): Promise<void> {
   if (!BREVO_API_KEY) {
-    console.log('[Brevo mock] sendTransactionalEmail:', { to, subject, html });
+    if (process.env.NODE_ENV === 'production') {
+      throw new Error('BREVO_API_KEY is not configured — emails cannot be sent in production');
+    }
+    console.warn('[Brevo mock] Email non envoyé (mode développement) — to:', to.email, 'subject:', subject);
     return;
   }
 
@@ -37,20 +41,22 @@ export async function sendTransactionalEmail({ to, subject, html }: SendEmailPar
   });
 
   if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Brevo sendEmail failed: ${res.status} ${body}`);
+    throw new Error(`Brevo sendEmail failed: ${res.status}`);
   }
 }
 
 export async function addNewsletterSubscriber(email: string): Promise<{ alreadySubscribed: boolean }> {
   if (!BREVO_API_KEY) {
-    console.log('[Brevo mock] addNewsletterSubscriber:', email);
+    if (process.env.NODE_ENV === 'production') {
+      throw new Error('BREVO_API_KEY is not configured — newsletter cannot be processed in production');
+    }
+    console.warn('[Brevo mock] Newsletter inscription simulée (mode développement)');
     return { alreadySubscribed: false };
   }
 
   const res = await brevoFetch('/contacts', {
     email,
-    listIds: [2],
+    listIds: [NEWSLETTER_LIST_ID],
     updateEnabled: true,
   });
 
@@ -59,8 +65,7 @@ export async function addNewsletterSubscriber(email: string): Promise<{ alreadyS
   }
 
   if (!res.ok) {
-    const body = await res.text();
-    throw new Error(`Brevo addContact failed: ${res.status} ${body}`);
+    throw new Error(`Brevo addContact failed: ${res.status}`);
   }
 
   return { alreadySubscribed: false };

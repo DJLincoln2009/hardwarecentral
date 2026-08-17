@@ -1,3 +1,7 @@
+export const RATE_LIMIT_MAX = 5;
+export const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+export const NEWSLETTER_RATE_LIMIT_MAX = 3;
+
 const UPSTASH_REST_URL = process.env.UPSTASH_REDIS_REST_URL;
 const UPSTASH_REST_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
 
@@ -12,10 +16,8 @@ export async function checkRateLimit(
     return checkRateLimitUpstash(key, max, windowMs);
   }
 
-  // TODO: repli mémoire — non fiable en environnement serverless (Vercel) :
-  // l'état se réinitialise à chaque cold start / changement d'instance.
-  // Configurer UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN (Vercel KV /
-  // Upstash Redis) en production pour un rate limiting réellement effectif.
+  // Repli mémoire locale — non fiable en serverless (Vercel cold start).
+  // Configurer UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN en prod.
   const now = Date.now();
   const entry = memoryStore.get(key);
   if (!entry || now > entry.resetAt) {
@@ -42,15 +44,13 @@ async function checkRateLimitUpstash(key: string, max: number, windowMs: number)
       ]),
       cache: 'no-store',
     });
-    if (!res.ok) return true;
+    if (!res.ok) return false;
     const data: unknown = await res.json();
     const results = Array.isArray(data) ? data : (data as { result?: unknown[] })?.result;
     const first = Array.isArray(results) ? results[0] : undefined;
     const count = (first as { result?: number } | undefined)?.result ?? 0;
     return count <= max;
   } catch {
-    // TODO: en cas d'échec du store distant, on laisse passer la requête
-    // plutôt que de bloquer le parcours de conversion.
-    return true;
+    return false;
   }
 }

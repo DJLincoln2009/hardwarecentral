@@ -2,13 +2,18 @@ import { z } from 'zod';
 
 export const emailField = z.string().email('Adresse e-mail professionnelle invalide');
 
+export const quoteRequestItemSchema = z.object({
+  productId: z.string(),
+  quantity: z.number().int().min(1).max(999),
+});
+
 export const quoteRequestSchema = z.object({
   fullName: z.string().min(2, 'Nom complet requis'),
   companyName: z.string().optional(),
   professionalEmail: emailField,
   phone: z.string().optional(),
   message: z.string().min(10, 'Message trop court (minimum 10 caractères)'),
-  productIds: z.array(z.string()).min(1, 'Au moins un produit requis dans la demande'),
+  items: z.array(quoteRequestItemSchema).min(1, 'Au moins un produit requis dans la demande'),
   honeypot: z.string().max(0, '').optional(),
 });
 

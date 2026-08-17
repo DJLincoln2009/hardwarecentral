@@ -15,21 +15,13 @@ import {
   type LucideIcon,
 } from 'lucide-react';
 import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
-import { getNavbarCategories } from '@/lib/data/categories';
+import { getNavbarCategories, getCategoryRoute } from '@/lib/data/categories';
 import { getActiveBrands } from '@/lib/data/brands';
 
 interface MegaMenuProps {
   open: boolean;
   onClose: () => void;
 }
-
-const categoryRouteMap: Record<string, string> = {
-  'server-storage': '/catalogue?categorie=server-storage',
-  networking: '/catalogue?categorie=networking',
-  security: '/catalogue?categorie=security',
-  cctv: '/catalogue?categorie=cctv',
-  laptop: '/catalogue?categorie=laptop',
-};
 
 const iconMap: Record<string, LucideIcon> = {
   Server,
@@ -82,7 +74,7 @@ function MegaMenu({ open, onClose }: MegaMenuProps) {
                   return (
                     <li key={cat.id}>
                       <Link
-                        href={categoryRouteMap[cat.id] ?? `/catalogue?categorie=${cat.id}`}
+                        href={getCategoryRoute(cat.id)}
                         role="menuitem"
                         className="group flex items-center gap-3 rounded-lg px-2.5 py-2.5 text-sm font-medium text-foreground transition-colors duration-150 hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                         onClick={onClose}

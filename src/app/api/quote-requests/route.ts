@@ -3,52 +3,45 @@ import { quoteRequestSchema } from '@/lib/validations/forms';
 import { sendTransactionalEmail } from '@/lib/email';
 import { getProductById } from '@/lib/data/products';
 import { SITE_CONFIG } from '@/lib/site-config';
-import { checkRateLimit } from '@/lib/rate-limit';
-
-const RATE_LIMIT_MAX = 5;
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+import { escapeHtml } from '@/lib/email/sanitize';
+import { RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS } from '@/lib/rate-limit';
+import { getClientIp, parseAndValidateBody, checkRouteRateLimit } from '@/lib/api-helpers';
 
 export async function POST(request: NextRequest) {
-  const ip = request.headers.get('x-forwarded-for') ?? request.headers.get('x-real-ip') ?? 'unknown';
+  const ip = getClientIp(request);
+  const rateCheck = await checkRouteRateLimit(`ratelimit:quote:${ip}`, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS);
+  if ('error' in rateCheck) return rateCheck.error;
 
-  if (!(await checkRateLimit(`ratelimit:quote:${ip}`, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS))) {
-    return NextResponse.json({ error: 'Trop de demandes. Veuillez réessayer plus tard.' }, { status: 429 });
-  }
+  const body = await parseAndValidateBody(request, quoteRequestSchema);
+  if ('error' in body) return body.error;
 
-  let body: unknown;
-  try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ error: 'Requête invalide' }, { status: 400 });
-  }
+  const { fullName, companyName, professionalEmail, phone, message, items } = body.data;
 
-  const parsed = quoteRequestSchema.safeParse(body);
-  if (!parsed.success) {
-    const fieldErrors = parsed.error.flatten().fieldErrors;
-    return NextResponse.json({ error: 'Validation échouée', fieldErrors }, { status: 400 });
-  }
-
-  const { fullName, companyName, professionalEmail, phone, message, productIds } = parsed.data;
-
-  const validProducts = productIds
-    .map((id) => getProductById(id))
-    .filter((p): p is NonNullable<typeof p> => p !== undefined);
+  const validItems = items
+    .map(({ productId, quantity }) => {
+      const p = getProductById(productId);
+      return p ? { product: p, quantity } : null;
+    })
+    .filter((r): r is NonNullable<typeof r> => r !== null);
 
   try {
-    const productListHtml = validProducts
-      .map((p) => `- ${p.name} (SKU: ${p.sku}) — <a href="${SITE_CONFIG.domain}/produit/${p.id}">${p.id}</a>`)
+    const productListHtml = validItems
+      .map(
+        ({ product: p, quantity }) =>
+          `- ${escapeHtml(p.name)} (SKU: ${escapeHtml(p.sku)}) × ${quantity} — <a href="${SITE_CONFIG.domain}/produit/${escapeHtml(p.id)}">${escapeHtml(p.id)}</a>`,
+      )
       .join('<br>');
 
     await sendTransactionalEmail({
       to: { email: SITE_CONFIG.email.contact },
-      subject: `Nouvelle demande de devis de ${fullName}`,
+      subject: `Nouvelle demande de devis de ${escapeHtml(fullName)}`,
       html: `
-        <p><strong>Nom :</strong> ${fullName}</p>
-        <p><strong>Société :</strong> ${companyName ?? '—'}</p>
-        <p><strong>E-mail :</strong> ${professionalEmail}</p>
-        <p><strong>Téléphone :</strong> ${phone ?? '—'}</p>
+        <p><strong>Nom :</strong> ${escapeHtml(fullName)}</p>
+        <p><strong>Société :</strong> ${escapeHtml(companyName ?? '—')}</p>
+        <p><strong>E-mail :</strong> ${escapeHtml(professionalEmail)}</p>
+        <p><strong>Téléphone :</strong> ${escapeHtml(phone ?? '—')}</p>
         <p><strong>Message :</strong></p>
-        <p>${message}</p>
+        <p>${escapeHtml(message)}</p>
         <p><strong>Produits demandés :</strong></p>
         <p>${productListHtml || 'Aucun produit valide'}</p>
       `,
@@ -58,10 +51,10 @@ export async function POST(request: NextRequest) {
       to: { email: professionalEmail, name: fullName },
       subject: 'Nous avons bien reçu votre demande de devis',
       html: `
-        <p>Bonjour ${fullName},</p>
+        <p>Bonjour ${escapeHtml(fullName)},</p>
         <p>Nous accusons réception de votre demande de devis.</p>
         <p>Notre équipe commerciale vous recontactera sous 48 à 72 heures ouvrées.</p>
-        <p>Cordialement,<br>L'équipe ${SITE_CONFIG.companyName}</p>
+        <p>Cordialement,<br>L&apos;équipe ${escapeHtml(SITE_CONFIG.companyName)}</p>
       `,
     });
 

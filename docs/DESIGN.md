@@ -156,6 +156,10 @@ Base conservée du prototype initial (jugée solide à l'audit), complétée ave
   --color-danger-border: #F7C1C1;
   --color-danger-text:   #791F1F;
 
+  --color-on-order-bg:     #FFF8E7;
+  --color-on-order-border: #F2E3BD;
+  --color-on-order-text:   #B45309;
+
   --radius-sm: 6px;
   --radius-md: 8px;
   --radius-lg: 12px;
@@ -175,6 +179,7 @@ Base conservée du prototype initial (jugée solide à l'audit), complétée ave
 | `success-text` | `success-bg` | Badges de statut positif | conforme |
 | `warning-text` | `warning-bg` | Badges de statut d'alerte | conforme |
 | `danger-text` | `danger-bg` | Badges négatifs, erreurs | conforme |
+| `on-order-text` | `on-order-bg` | Badges « Sur commande » | conforme (~4.7:1) |
 
 **Trois corrections impératives, jamais à réintroduire :**
 - `teal-200` **interdit** comme texte sur fond clair (ratio ≈ 2:1) — réservé au fond sombre.
@@ -249,7 +254,7 @@ Toute combinaison hors de cette table doit être vérifiée manuellement (4.5:1 
 |---|---|---|
 | `available` | Disponible | `success` |
 | `limited` | Stock limité | `warning` |
-| `on-order` | Sur commande | `graphite` (neutre) |
+| `on-order` | Sur commande | `on-order` (ambre doux) |
 | `discontinued` | Fin de commercialisation | `danger` |
 
 Ce mapping vit dans **une fonction unique** `getAvailabilityDisplay(status)` (`lib/utils.ts`), importée à la fois par `ProductCard` et la fiche produit — garantit que le badge est identique partout pour un même produit. Ne jamais recréer ce mapping localement dans un composant.
@@ -266,7 +271,7 @@ Chaque composant listé doit exister avec **tous** ses états applicables — au
 
 **`Input` / `Textarea` / `Select`** — `<label>` toujours associé via `htmlFor`/`id`. États : `default`, `hover`, `focus` (bordure `teal-600`), `disabled`, `error` (bordure `danger-border` + texte lié via `aria-describedby`), `valid` (discret). `Select` : jamais livré avec une seule option réellement sélectionnable — si une seule option existe, ce n'est pas un `Select` mais du texte statique.
 
-**`Badge`** — Variantes `success/warning/danger/neutral` (voir section 10). Toujours dérivé d'une donnée réelle (`availability.status`), jamais une valeur statique câblée dans le parent.
+**`Badge`** — Variantes `success/warning/danger/neutral/on-order` (voir section 10). Toujours dérivé d'une donnée réelle (`availability.status`), jamais une valeur statique câblée dans le parent.
 
 **`Modal`** — Piège de focus, fermeture `Échap` + clic overlay, restitution du focus au déclencheur à la fermeture, `role="dialog"` + `aria-modal="true"` + `aria-labelledby`. États internes : `idle`, `submitting`, `success`, `error`.
 
@@ -288,11 +293,15 @@ Chaque composant listé doit exister avec **tous** ses états applicables — au
 
 ### `components/product/`
 
-**`ProductCard`** — Racine = `<Link href="/produit/[slug]">` englobante (pas de `<div onClick>`), actions secondaires en `<button>` internes avec `preventDefault()`/`stopPropagation()`. Contenu : badge de disponibilité (dérivé), image `next/image` (dimensions réelles), marque, nom, SKU, jusqu'à 4 `specs` (jamais `attributes`), délai de livraison si stock = 0.
+**`ProductCard`** — Racine = `<Link href="/produit/[slug]">` englobante (pas de `<div onClick>`), actions secondaires en `<button>` internes avec `preventDefault()`/`stopPropagation()`. Format **compact** (densité B2B) : padding `p-3`, image `aspect-square` avec `p-3`, grille 4 colonnes en `xl` ; **12 produits par page** sur `/catalogue` et `/recherche` (multiple du nombre de colonnes, pages entièrement remplies). Structure catalogue B2B (réf. style sysllc, adaptée aux tokens) : ligne haute = badge de disponibilité + favori ; image détourée (ratio 1:1, zoom subtil au survol) ; puis marque en surligne capitales espacées + « SKU: » mis en avant sur la même ligne ; titre complet du produit (`name`, marque incluse, `line-clamp-2`) ; spécifications en puces techniques (chips avec icône de catégorie, `specs` jamais `attributes`) ; CTA « Ajouter au devis » pleine largeur en bas de carte (via `QuoteToggleButton`). Fond blanc pur sans boîte intérieure ; liseré `border-border` + ombre douce au repos.
 
-**`QuoteToggleButton`** — États `idle` (« Ajouter au devis ») / `added` (« Ajouté ✓ », clic devient « Retirer »). Déclenche un `Toast` à l'ajout. Partagé entre `ProductCard` et fiche produit.
+**`ProductImage`** — Image `next/image` avec détourage transparent via ImageKit `e-bgremove` (fond supprimé à la volée, padding transparent, `object-contain`) : le produit flotte sur la surface sans encadré de fond. Placeholder de chargement blanc. Transformation IA native ImageKit (coût faible) ; dégradation gracieuse vers l'image source si le quota est épuisé.
 
-**`ProductGallery`** — Image principale + vignettes `<button>` avec `aria-label` (« Voir l'image {n} de {nom} ») et `aria-pressed`/`aria-current` pour l'image active.
+**`QuotePanel`** — Bloc de conversion de la fiche produit (colonne droite) : sélecteur de quantité `[−] n [+]` (logique réelle persistée dans le store devis, borné 1–999) + `QuoteToggleButton` `lg` + ligne de réassurance compacte sous le bouton (`border-t` fin, deux items Livraison / Devis). Si l'article est déjà dans la liste, le sélecteur modifie la quantité enregistrée en temps réel.
+
+**`QuoteToggleButton`** — États `idle` (« Ajouter au devis ») / `added` (« Ajouté ✓ », clic devient « Retirer »). Prop optionnelle `quantity` (défaut 1) enregistrée à l'ajout. Déclenche un `Toast` à l'ajout. Partagé entre `ProductCard`, `QuotePanel` (fiche produit) et les favoris.
+
+**`ProductGallery`** — Image principale détourée en ratio carré occupant l'essentiel du cadre (padding léger `p-3`) + vignettes `<button>` avec `aria-label` (« Voir l'image {n} de {nom} ») et `aria-pressed`/`aria-current` pour l'image active. Bouton zoom / HD (loupe, coin haut droit) : lightbox `Modal` réelle (piège de focus, `Échap`, clic overlay, image pleine résolution) — jamais décoratif.
 
 **`ProductSpecsTable`** — `<table>` sémantique avec `<th scope="row">`, pas une grille de `<div>`.
 
@@ -302,7 +311,7 @@ Chaque composant listé doit exister avec **tous** ses états applicables — au
 
 **`CatalogFilters`** — Cases à cocher (marque), sélection unique (catégorie), filtre « Format châssis » utilisant exclusivement `attributes.chassisFormat` (jamais `specs`). Chaque filtre actif reflété dans l'URL (`searchParams`). Bouton « Effacer tout » visible seulement si un filtre est actif.
 
-**`CatalogSort`** — Options réelles sans référence au prix : `Nouveautés`, `Nom (A→Z)`, `Disponibilité`. Minimum 2 options fonctionnelles — jamais un tri à option unique.
+**`CatalogSort`** — Ordre par défaut **mélange déterministe par marque** (round-robin, pas de blocs « marque après marque », stable SSR/pagination). Options réelles sans référence au prix : `Mélange de marques`, `Nouveautés`, `Nom (A→Z)`, `Disponibilité`. Minimum 2 options fonctionnelles — jamais un tri à option unique.
 
 **`CatalogPagination`** — Calculée dynamiquement (`Math.ceil(totalResults / pageSize)`). Ne **jamais** afficher un numéro de page au-delà du nombre réel. **Non rendue du tout** si `totalResults <= pageSize`. Numéro de page synchronisé avec `?page=`.
 
@@ -310,7 +319,7 @@ Chaque composant listé doit exister avec **tous** ses états applicables — au
 
 ### `components/forms/`
 
-**`QuoteRequestForm`** — Champs : nom complet\*, société, e-mail pro\*, téléphone, message\*, liste de produits pré-remplie (retrait possible). Invocable depuis header, fiche produit, page `/devis`. États `idle/submitting/success/error`. Soumission réelle vers `POST /api/quote-requests` — **interdiction absolue** de simuler avec un `setTimeout` sans appel réseau réel.
+**`QuoteRequestForm`** — Champs : nom complet\*, société, e-mail pro\*, téléphone, message\*, liste de produits pré-remplie (retrait possible, quantité `× n` affichée). Payload réel `items: { productId, quantity }[]`. Invocable depuis header, fiche produit, page `/devis`. États `idle/submitting/success/error`. Soumission réelle vers `POST /api/quote-requests` — **interdiction absolue** de simuler avec un `setTimeout` sans appel réseau réel.
 
 **`ContactForm`** — Mêmes exigences de soumission réelle. Champ « Sujet » avec options réellement différenciées (« Demande de devis » route vers la même logique que `QuoteRequestForm` ou, a minima, le même e-mail `contact@`).
 

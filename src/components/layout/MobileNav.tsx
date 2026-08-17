@@ -1,11 +1,12 @@
 'use client';
 
-import { useEffect, useRef, useCallback, useState } from 'react';
+import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { X, Heart, FileText, Search, Server, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
-import { getNavbarCategories } from '@/lib/data/categories';
+import { useFocusTrap } from '@/lib/hooks/useFocusTrap';
+import { getNavbarCategories, getCategoryRoute } from '@/lib/data/categories';
 import { getActiveBrands } from '@/lib/data/brands';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
@@ -16,16 +17,8 @@ interface MobileNavProps {
   onOpenQuote: () => void;
 }
 
-const categoryRouteMap: Record<string, string> = {
-  'server-storage': '/catalogue?categorie=server-storage',
-  networking: '/catalogue?categorie=networking',
-  security: '/catalogue?categorie=security',
-  cctv: '/catalogue?categorie=cctv',
-  laptop: '/catalogue?categorie=laptop',
-};
-
 function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
-  const drawerRef = useRef<HTMLDivElement>(null);
+  const drawerRef = useFocusTrap<HTMLDivElement>(open, onClose);
   const router = useRouter();
   const prefersReducedMotion = usePrefersReducedMotion();
   const [searchQuery, setSearchQuery] = useState('');
@@ -33,51 +26,6 @@ function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
   const brands = getActiveBrands();
   const quoteCount = useQuoteStore((s) => s.items.length);
   const favCount = useFavoritesStore((s) => s.productIds.length);
-
-  const handleKeyDown = useCallback(
-    (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        onClose();
-        return;
-      }
-      if (e.key === 'Tab' && drawerRef.current) {
-        const focusable = drawerRef.current.querySelectorAll<HTMLElement>(
-          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-        );
-        if (focusable.length === 0) return;
-        const first = focusable[0];
-        const last = focusable[focusable.length - 1];
-        if (e.shiftKey) {
-          if (document.activeElement === first) {
-            e.preventDefault();
-            last.focus();
-          }
-        } else {
-          if (document.activeElement === last) {
-            e.preventDefault();
-            first.focus();
-          }
-        }
-      }
-    },
-    [onClose],
-  );
-
-  useEffect(() => {
-    if (open) {
-      document.addEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = 'hidden';
-      requestAnimationFrame(() => {
-        drawerRef.current?.querySelector<HTMLElement>('button, [href], input')?.focus();
-      });
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.removeEventListener('keydown', handleKeyDown);
-      document.body.style.overflow = '';
-    };
-  }, [open, handleKeyDown]);
 
   const handleNav = (href: string) => {
     onClose();
@@ -166,7 +114,7 @@ function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
                   <button
                     key={cat.id}
                     type="button"
-                    onClick={() => handleNav(categoryRouteMap[cat.id] ?? `/catalogue?categorie=${cat.id}`)}
+                    onClick={() => handleNav(getCategoryRoute(cat.id))}
                     className="flex min-h-11 w-full items-center rounded-lg px-2 py-2 text-left text-sm text-foreground transition-colors hover:bg-surface-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     {cat.name}

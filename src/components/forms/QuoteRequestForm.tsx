@@ -45,7 +45,8 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
             professionalEmail,
             phone: phone || undefined,
             message,
-            productIds: items.map((i) => i.productId),
+            items: items.map((i) => ({ productId: i.productId, quantity: i.quantity })),
+            honeypot: '',
           }),
         });
 
@@ -147,6 +148,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
                       {item.name}
                       <span className="ml-1 font-mono text-xs text-muted">({item.sku})</span>
                     </span>
+                    <span className="shrink-0 font-mono text-xs text-muted">× {item.quantity}</span>
                     <button
                       type="button"
                       onClick={() => removeItem(item.productId)}

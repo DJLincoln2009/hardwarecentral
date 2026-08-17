@@ -1,15 +1,16 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { Truck, Clock, FileText, BadgeCheck } from 'lucide-react';
+import { Check, Download, BadgeCheck } from 'lucide-react';
 import { products, getProductById } from '@/lib/data/products';
 import { getBrandByCode } from '@/lib/data/brands';
 import { getCategoryById } from '@/lib/data/categories';
+import { stripBrandPrefix } from '@/lib/utils';
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import ProductGallery from '@/components/product/ProductGallery';
 import ProductSpecsTable from '@/components/product/ProductSpecsTable';
 import ProductAvailabilityBadge from '@/components/product/ProductAvailabilityBadge';
-import QuoteToggleButton from '@/components/product/QuoteToggleButton';
+import QuotePanel from '@/components/product/QuotePanel';
 import ProductWhatsAppMessage from '@/components/product/ProductWhatsAppMessage';
 
 interface Props {
@@ -73,6 +74,8 @@ export default async function ProductPage({ params }: Props) {
     availability: availabilityMap[product.availability.status] ?? 'https://schema.org/InStock',
   };
 
+  const stockCount = product.availability.stockQuantity;
+
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
       <ProductWhatsAppMessage productName={product.name} sku={product.sku} />
@@ -103,79 +106,74 @@ export default async function ProductPage({ params }: Props) {
               {brand && (
                 <Link
                   href={`/marques/${brand.code.toLowerCase()}`}
-                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-muted shadow-xs transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-xs font-semibold uppercase tracking-wider text-muted shadow-xs transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 >
                   <BadgeCheck className="h-3.5 w-3.5 text-accent" aria-hidden="true" />
                   {brand.name}
                 </Link>
               )}
-              <span className="rounded-full bg-surface-muted px-3 py-1 font-mono text-[11px] text-muted">
-                SKU: {product.sku}
+              <span className="rounded-full bg-surface-muted px-3 py-1 font-mono text-xs text-muted">
+                Réf: {product.sku}
               </span>
             </div>
-            <h1 className="mt-4 font-display text-title font-extrabold leading-tight tracking-tight text-foreground">
-              {product.name}
+            <h1 className="mt-3 font-display text-2xl font-extrabold leading-tight tracking-tight text-foreground lg:text-3xl">
+              {stripBrandPrefix(product.name, product.brand)}
             </h1>
           </div>
 
           <div className="flex flex-wrap items-center gap-3">
             <ProductAvailabilityBadge status={product.availability.status} />
-          </div>
-
-          <p className="max-w-2xl text-sm leading-relaxed text-muted">{product.shortDescription}</p>
-
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
-            <QuoteToggleButton product={product} size="lg" className="flex-1 justify-center" />
-          </div>
-
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Truck
-                className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300"
-                aria-hidden="true"
-              />
-              <span className="text-xs leading-relaxed text-muted">
-                <span className="font-semibold text-foreground">Livraison</span>
-                <br />
-                Transport sécurisé en CEMAC
+            {stockCount > 0 && (
+              <span className="text-xs font-semibold text-success-text">
+                {stockCount} unité{stockCount > 1 ? 's' : ''} en stock
               </span>
-            </div>
-            <div className="flex items-start gap-2.5 rounded-xl border border-border bg-surface p-3.5">
-              <Clock
-                className="mt-0.5 h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300"
-                aria-hidden="true"
-              />
-              <span className="text-xs leading-relaxed text-muted">
-                <span className="font-semibold text-foreground">Devis</span>
-                <br />
-                Réponse sous 48-72h ouvrées
-              </span>
-            </div>
+            )}
+            {stockCount === 0 &&
+              product.availability.leadTimeDays != null &&
+              product.availability.leadTimeDays > 0 && (
+                <span className="text-xs font-medium text-muted">
+                  Délai estimé : {product.availability.leadTimeDays} jour
+                  {product.availability.leadTimeDays > 1 ? 's' : ''}
+                </span>
+              )}
           </div>
 
-          {product.datasheets.length > 0 && (
-            <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs">
-              <p className="flex items-center gap-2 text-sm font-semibold text-foreground">
-                <FileText className="h-4 w-4 text-accent" aria-hidden="true" />
-                Fiches techniques
-              </p>
-              <ul className="mt-3 space-y-1">
-                {product.datasheets.map((ds) => (
-                  <li key={ds.url}>
-                    <a
-                      href={ds.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group inline-flex items-center gap-1.5 text-sm text-accent transition-colors hover:text-accent-hover focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
-                    >
-                      <span className="underline underline-offset-2">{ds.name}</span>
-                      <span className="text-xs text-muted">({ds.fileSizeLabel})</span>
-                    </a>
+          {product.specs.length > 0 && (
+            <div>
+              <p className="eyebrow mb-2.5">Caractéristiques clés</p>
+              <ul className="space-y-2">
+                {product.specs.slice(0, 4).map((s) => (
+                  <li key={s.label} className="flex items-baseline gap-2.5 text-sm leading-snug">
+                    <Check className="h-4 w-4 shrink-0 translate-y-0.5 text-accent" aria-hidden="true" />
+                    <span className="text-muted">
+                      <span className="font-semibold text-foreground">{s.label} :</span>{' '}
+                      {s.value}
+                    </span>
                   </li>
                 ))}
               </ul>
             </div>
           )}
+
+          {product.datasheets.length > 0 && (
+            <div className="flex flex-col gap-2">
+              {product.datasheets.map((ds) => (
+                <a
+                  key={ds.url}
+                  href={ds.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-border-strong bg-surface px-4 py-2.5 text-sm font-medium text-foreground transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                >
+                  <Download className="h-4 w-4 text-accent" aria-hidden="true" />
+                  Télécharger la fiche technique (PDF)
+                  <span className="text-xs text-muted">({ds.fileSizeLabel})</span>
+                </a>
+              ))}
+            </div>
+          )}
+
+          <QuotePanel product={product} />
         </div>
       </div>
 

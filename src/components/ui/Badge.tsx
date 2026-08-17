@@ -1,7 +1,7 @@
 import type { ReactNode } from 'react';
 import { cn } from '@/lib/utils';
 
-type BadgeVariant = 'success' | 'warning' | 'danger' | 'neutral' | 'accent';
+type BadgeVariant = 'success' | 'warning' | 'danger' | 'neutral' | 'accent' | 'on-order';
 type BadgeSize = 'sm' | 'md';
 
 interface BadgeProps {
@@ -19,6 +19,7 @@ const variantStyles: Record<BadgeVariant, string> = {
   danger: 'bg-danger-bg text-danger-text border-danger-border',
   neutral: 'bg-surface-muted text-muted border-border',
   accent: 'bg-teal-50 text-teal-800 border-teal-100 dark:bg-teal-500/15 dark:text-teal-300 dark:border-teal-500/30',
+  'on-order': 'bg-on-order-bg text-on-order-text border-on-order-border',
 };
 
 const dotColor: Record<BadgeVariant, string> = {
@@ -27,10 +28,11 @@ const dotColor: Record<BadgeVariant, string> = {
   danger: 'bg-danger-text',
   neutral: 'bg-faint',
   accent: 'bg-teal-600',
+  'on-order': 'bg-on-order-text',
 };
 
 const sizeStyles: Record<BadgeSize, string> = {
-  sm: 'px-2 py-0.5 text-[11px] gap-1',
+  sm: 'px-2 py-0.5 text-xs gap-1',
   md: 'px-2.5 py-1 text-xs gap-1.5',
 };
 

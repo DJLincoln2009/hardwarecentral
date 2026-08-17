@@ -2,45 +2,32 @@ import { NextRequest, NextResponse } from 'next/server';
 import { contactMessageSchema } from '@/lib/validations/forms';
 import { sendTransactionalEmail } from '@/lib/email';
 import { SITE_CONFIG } from '@/lib/site-config';
-import { checkRateLimit } from '@/lib/rate-limit';
-
-const RATE_LIMIT_MAX = 5;
-const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000;
+import { escapeHtml } from '@/lib/email/sanitize';
+import { RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS } from '@/lib/rate-limit';
+import { getClientIp, parseAndValidateBody, checkRouteRateLimit } from '@/lib/api-helpers';
 
 export async function POST(request: NextRequest) {
-  const ip = request.headers.get('x-forwarded-for') ?? request.headers.get('x-real-ip') ?? 'unknown';
+  const ip = getClientIp(request);
+  const rateCheck = await checkRouteRateLimit(`ratelimit:contact:${ip}`, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS);
+  if ('error' in rateCheck) return rateCheck.error;
 
-  if (!(await checkRateLimit(`ratelimit:contact:${ip}`, RATE_LIMIT_MAX, RATE_LIMIT_WINDOW_MS))) {
-    return NextResponse.json({ error: 'Trop de demandes. Veuillez réessayer plus tard.' }, { status: 429 });
-  }
+  const body = await parseAndValidateBody(request, contactMessageSchema);
+  if ('error' in body) return body.error;
 
-  let body: unknown;
-  try {
-    body = await request.json();
-  } catch {
-    return NextResponse.json({ error: 'Requête invalide' }, { status: 400 });
-  }
-
-  const parsed = contactMessageSchema.safeParse(body);
-  if (!parsed.success) {
-    const fieldErrors = parsed.error.flatten().fieldErrors;
-    return NextResponse.json({ error: 'Validation échouée', fieldErrors }, { status: 400 });
-  }
-
-  const { firstName, lastName, companyName, professionalEmail, subject, message } = parsed.data;
+  const { firstName, lastName, companyName, professionalEmail, subject, message } = body.data;
   const fullName = `${firstName} ${lastName}`;
 
   try {
     await sendTransactionalEmail({
       to: { email: SITE_CONFIG.email.contact },
-      subject: `Nouveau message de ${fullName} — ${subject}`,
+      subject: `Nouveau message de ${escapeHtml(fullName)} — ${escapeHtml(subject)}`,
       html: `
-        <p><strong>Nom :</strong> ${fullName}</p>
-        <p><strong>Société :</strong> ${companyName ?? '—'}</p>
-        <p><strong>E-mail :</strong> ${professionalEmail}</p>
-        <p><strong>Sujet :</strong> ${subject}</p>
+        <p><strong>Nom :</strong> ${escapeHtml(fullName)}</p>
+        <p><strong>Société :</strong> ${escapeHtml(companyName ?? '—')}</p>
+        <p><strong>E-mail :</strong> ${escapeHtml(professionalEmail)}</p>
+        <p><strong>Sujet :</strong> ${escapeHtml(subject)}</p>
         <p><strong>Message :</strong></p>
-        <p>${message}</p>
+        <p>${escapeHtml(message)}</p>
       `,
     });
 
@@ -48,10 +35,10 @@ export async function POST(request: NextRequest) {
       to: { email: professionalEmail, name: fullName },
       subject: 'Accusé de réception — HardwareCentral',
       html: `
-        <p>Bonjour ${fullName},</p>
+        <p>Bonjour ${escapeHtml(fullName)},</p>
         <p>Nous avons bien reçu votre message.</p>
         <p>Notre équipe vous répondra dans les plus brefs délais.</p>
-        <p>Cordialement,<br>L'équipe ${SITE_CONFIG.companyName}</p>
+        <p>Cordialement,<br>L&apos;équipe ${escapeHtml(SITE_CONFIG.companyName)}</p>
       `,
     });
 

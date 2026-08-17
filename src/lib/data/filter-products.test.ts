@@ -1,5 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { filterProducts } from './filter-products';
+import { filterProducts, interleaveByBrand } from './filter-products';
+import { products } from './products';
 
 describe('filterProducts', () => {
   it('returns all products with default params', () => {
@@ -77,5 +78,34 @@ describe('filterProducts', () => {
   it('handles combined filters', () => {
     const result = filterProducts({ categorie: 'server-storage', marque: 'HPE', format: '2U' });
     expect(result.results.every((p) => p.category === 'server-storage' && p.brand === 'HPE' && p.attributes.chassisFormat === '2U')).toBe(true);
+  });
+
+  it('interleaves brands by default (no brand after brand)', () => {
+    const result = filterProducts({ pageSize: 200 });
+    const brands = result.results.map((p) => p.brand);
+    expect(new Set(brands).size).toBeGreaterThan(1);
+    for (let i = 1; i < brands.length; i++) {
+      expect(brands[i]).not.toBe(brands[i - 1]);
+    }
+  });
+
+  it('default order is deterministic across calls', () => {
+    const a = filterProducts({ pageSize: 50 });
+    const b = filterProducts({ pageSize: 50 });
+    expect(a.results.map((p) => p.id)).toEqual(b.results.map((p) => p.id));
+  });
+
+  it('sorts by newest (publishedAt desc) when explicitly selected', () => {
+    const result = filterProducts({ tri: 'newest', pageSize: 200 });
+    const dates = result.results.map((p) => new Date(p.publishedAt).getTime());
+    for (let i = 1; i < dates.length; i++) {
+      expect(dates[i - 1]).toBeGreaterThanOrEqual(dates[i]);
+    }
+  });
+
+  it('interleaveByBrand preserves the full set of products', () => {
+    const result = interleaveByBrand(products);
+    expect(result).toHaveLength(products.length);
+    expect(new Set(result.map((p) => p.id))).toEqual(new Set(products.map((p) => p.id)));
   });
 });

@@ -1,26 +1,20 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { Heart, FileText, Menu, Search, ChevronDown, Phone, X, Server } from 'lucide-react';
-import MegaMenu from './MegaMenu';
 import MobileNav from './MobileNav';
-import QuoteRequestForm from '@/components/forms/QuoteRequestForm';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
-import { getNavbarCategories } from '@/lib/data/categories';
+import { getNavbarCategories, getCategoryRoute } from '@/lib/data/categories';
 import { SITE_CONFIG } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
 
-const categoryRouteMap: Record<string, string> = {
-  'server-storage': '/catalogue?categorie=server-storage',
-  networking: '/catalogue?categorie=networking',
-  security: '/catalogue?categorie=security',
-  cctv: '/catalogue?categorie=cctv',
-  laptop: '/catalogue?categorie=laptop',
-};
+const MegaMenu = dynamic(() => import('./MegaMenu'), { ssr: false });
+const QuoteRequestForm = dynamic(() => import('@/components/forms/QuoteRequestForm'), { ssr: false });
 
 function Header() {
   const router = useRouter();
@@ -94,7 +88,7 @@ function Header() {
       <span
         className={cn(
           'absolute -right-0.5 -top-0.5 flex h-[18px] min-w-[18px] items-center justify-center',
-          'rounded-full bg-teal-600 px-1 text-[10px] font-semibold text-white ring-2 ring-surface',
+          'rounded-full bg-teal-600 px-1 text-xs font-semibold text-white ring-2 ring-surface',
         )}
       >
         {count > 9 ? '9+' : count}
@@ -276,7 +270,7 @@ function Header() {
           {categories.map((cat) => (
             <Link
               key={cat.id}
-              href={categoryRouteMap[cat.id] ?? `/catalogue?categorie=${cat.id}`}
+              href={getCategoryRoute(cat.id)}
               className="text-sm font-medium text-muted transition-colors duration-150 hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
             >
               {cat.name}

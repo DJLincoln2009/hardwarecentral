@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Trash2, FileText, ArrowRight } from 'lucide-react';
+import { Trash2, FileText, ArrowRight, Minus, Plus } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import Breadcrumb from '@/components/layout/Breadcrumb';
@@ -11,10 +11,12 @@ import EmptyState from '@/components/ui/EmptyState';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { getProductById } from '@/lib/data/products';
 import { getProductImageUrl } from '@/lib/product-image';
+import { cn } from '@/lib/utils';
 
 function DevisContent() {
   const items = useQuoteStore((s) => s.items);
   const removeItem = useQuoteStore((s) => s.removeItem);
+  const updateQuantity = useQuoteStore((s) => s.updateQuantity);
   const clearAll = useQuoteStore((s) => s.clearAll);
   const [quoteModalOpen, setQuoteModalOpen] = useState(false);
 
@@ -24,6 +26,8 @@ function DevisContent() {
       return p ? { ...item, product: p } : null;
     })
     .filter((p): p is NonNullable<typeof p> => p !== null);
+
+  const totalUnits = products.reduce((sum, item) => sum + item.quantity, 0);
 
   const breadcrumbItems = [
     { label: 'Accueil', href: '/' },
@@ -65,12 +69,12 @@ function DevisContent() {
       {products.length > 0 ? (
         <>
           <ul className="space-y-3">
-            {products.map(({ productId, name, sku, brand, product }) => (
+            {products.map(({ productId, name, sku, brand, quantity, product }) => (
               <li
                 key={productId}
                 className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-4 shadow-xs transition-all duration-200 hover:border-border-strong hover:shadow-md"
               >
-                <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-muted">
+                <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface">
                   {product.primaryImage.url ? (
                       <Image
                         src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
@@ -94,6 +98,30 @@ function DevisContent() {
                     {brand} &middot; SKU: {sku}
                   </p>
                 </div>
+                <div className="flex items-center rounded-lg border border-border bg-surface">
+                  <button
+                    type="button"
+                    onClick={() => updateQuantity(productId, quantity - 1)}
+                    aria-label={`Diminuer la quantité de ${name}`}
+                    className="flex h-9 w-9 items-center justify-center rounded-l-lg text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
+                  >
+                    <Minus className="h-3.5 w-3.5" aria-hidden="true" />
+                  </button>
+                  <span
+                    aria-live="polite"
+                    className={cn('w-9 border-x border-border text-center font-mono text-sm font-semibold text-foreground')}
+                  >
+                    {quantity}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => updateQuantity(productId, quantity + 1)}
+                    aria-label={`Augmenter la quantité de ${name}`}
+                    className="flex h-9 w-9 items-center justify-center rounded-r-lg text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
+                  >
+                    <Plus className="h-3.5 w-3.5" aria-hidden="true" />
+                  </button>
+                </div>
                 <button
                   type="button"
                   onClick={() => removeItem(productId)}
@@ -114,7 +142,7 @@ function DevisContent() {
             onClick={() => setQuoteModalOpen(true)}
             className="mt-8 w-full justify-center"
           >
-            Demander un devis pour ces {products.length} articles
+            Demander un devis pour {totalUnits} unité{totalUnits > 1 ? 's' : ''} ({products.length} article{products.length > 1 ? 's' : ''})
           </Button>
         </>
       ) : (

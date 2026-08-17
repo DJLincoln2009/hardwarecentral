@@ -101,6 +101,11 @@
   --hc-danger-border: #f7c1c1;
   --hc-danger-text: #791f1f;
 
+  /* Statut "Sur commande" — ambre doux (badge raffiné) */
+  --hc-on-order-bg: #fff8e7;
+  --hc-on-order-border: #f2e3bd;
+  --hc-on-order-text: #b45309;
+
   /* Ombres */
   --hc-shadow-xs: 0 1px 2px rgba(28, 28, 26, 0.04);
   --hc-shadow-sm: 0 1px 2px rgba(28, 28, 26, 0.05), 0 1px 3px rgba(28, 28, 26, 0.05);
@@ -164,6 +169,11 @@
   --hc-danger-border: #6b2424;
   --hc-danger-text: #f0aaaa;
 
+  /* Statut "Sur commande" — ambre doux, distinguable du warning en sombre */
+  --hc-on-order-bg: #251a0a;
+  --hc-on-order-border: #5e4420;
+  --hc-on-order-text: #e9be72;
+
   /* Ombres — plus profondes, moins visibles que les bordures */
   --hc-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.3);
   --hc-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
@@ -220,6 +230,10 @@
   --color-danger-bg: var(--hc-danger-bg);
   --color-danger-border: var(--hc-danger-border);
   --color-danger-text: var(--hc-danger-text);
+
+  --color-on-order-bg: var(--hc-on-order-bg);
+  --color-on-order-border: var(--hc-on-order-border);
+  --color-on-order-text: var(--hc-on-order-text);
 
   --color-backdrop: var(--hc-backdrop);
 

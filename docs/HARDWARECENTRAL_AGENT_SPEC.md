@@ -835,7 +835,7 @@ export interface Brand {
 export interface ProductAvailability {
   status: AvailabilityStatus;
   stockQuantity: number;        // 0 si non disponible immédiatement
-  leadTimeDays: number;         // Délai avant expédition si stock = 0
+  leadTimeDays?: number;        // Délai avant expédition si stock = 0 — optionnel tant que les données réelles par produit ne sont pas renseignées (TODO données : à compléter par l'équipe commerciale, jamais inventé)
 }
 
 export interface ProductWarranty {
@@ -894,6 +894,7 @@ export interface Product {
 /** Article dans la liste de devis — jamais de prix, uniquement une intention */
 export interface QuoteListItem {
   productId: string;
+  quantity: number;      // Nombre d'unités demandées (sélecteur de quantité, par défaut 1)
   addedAt: string; // ISO date
 }
 
@@ -904,7 +905,7 @@ export interface QuoteRequestPayload {
   professionalEmail: string;
   phone?: string;
   message: string;
-  productIds: string[];         // Peut être vide (devis "libre" sans produit pré-sélectionné)
+  items: { productId: string; quantity: number }[]; // Peut être vide (devis "libre" sans produit pré-sélectionné)
   honeypot?: string;            // Champ anti-spam — doit rester vide (voir 21.3)
 }
 
@@ -934,7 +935,7 @@ export interface NewsletterSubscriptionPayload {
 | `professionalEmail` | Requis, format e-mail valide (RFC 5322 simplifié). **Ne pas** rejeter les domaines grand public (gmail, etc.) en V1 — trop restrictif pour le marché cible où de nombreuses PME utilisent des adresses Gmail professionnelles ; simple validation de format. |
 | `message` | Requis, 10–2000 caractères. |
 | `phone` | Optionnel, si renseigné doit correspondre à un format international plausible (regex souple, pas de validation stricte par pays vu la diversité CEMAC). |
-| `productIds` | Tableau de slugs existants dans le catalogue (validation croisée côté serveur contre `lib/data/products.ts`). |
+| `items` | Tableau `{ productId, quantity }` — `productId` validé contre le catalogue réel (`lib/data/products.ts`), `quantity` entier 1–999. Les IDs invalides sont retirés silencieusement côté serveur. |
 | `honeypot` | DOIT être une chaîne vide ; toute valeur non vide entraîne un rejet silencieux (réponse 200 factice, aucun envoi réel — voir 21.3). |
 
 ### 12.4 Statuts de disponibilité — mapping affichage (référentiel figé, à ne jamais dupliquer ailleurs)
@@ -943,7 +944,7 @@ export interface NewsletterSubscriptionPayload {
 |---|---|---|
 | `available` | Disponible | `success` |
 | `limited` | Stock limité | `warning` |
-| `on-order` | Sur commande | `graphite` (neutre) |
+| `on-order` | Sur commande | `on-order` (ambre doux) |
 | `discontinued` | Fin de commercialisation | `danger` |
 
 Ce mapping vit dans une fonction unique `getAvailabilityDisplay(status: AvailabilityStatus)` dans `lib/utils.ts`, importée par `ProductCard` **et** la fiche produit, garantissant que le badge affiché sur la carte produit du catalogue et celui affiché sur la fiche détaillée sont **toujours identiques pour un même produit** (corrige la contradiction du prototype initial où la carte catalogue pouvait afficher « Sur Commande » tandis que la fiche détaillée du même produit affichait « Disponible » en dur).
@@ -1130,7 +1131,7 @@ Pour chaque composant : rôle, props principales, états obligatoires à implém
 - `Select` : si un menu déroulant ne propose qu'une seule option réellement sélectionnable, ce n'est pas un `Select` mais un texte statique — ne jamais livrer un `<select>` à option unique non fonctionnelle (corrige le tri catalogue du prototype initial, voir ADR-016).
 
 #### `Badge`
-- Variantes liées aux tokens de statut (`success`, `warning`, `danger`, `neutral`) — voir 12.4 pour le mapping des statuts produit.
+- Variantes liées aux tokens de statut (`success`, `warning`, `danger`, `neutral`, `on-order`) — voir 12.4 pour le mapping des statuts produit.
 - Toujours dérivé d'une donnée (`availability.status`), jamais une valeur statique câblée dans le composant parent.
 
 #### `Modal`
@@ -1181,16 +1182,23 @@ Pour chaque composant : rôle, props principales, états obligatoires à implém
 
 #### `ProductCard`
 - Élément racine : `<Link href="/produit/[slug]">` englobant la carte (pas de `<div onClick>`), avec les actions secondaires (favoris, ajout au devis) en boutons `<button>` internes utilisant `event.preventDefault()`/`stopPropagation()` pour ne pas déclencher la navigation du lien parent.
-- Contenu : badge de disponibilité (dérivé, voir 12.4), image (toujours `next/image`, dimensions réelles fournies pour éviter tout saut de mise en page), marque, nom, SKU, jusqu'à 4 spécifications clés (`specs`, pas `attributes`), délai de livraison si `stock = 0`.
+- Format compact (densité B2B) : padding réduit (`p-3`), image `aspect-square` avec padding `p-3`, grille catalogue 4 colonnes en `xl`. Pagination : **12 produits par page** sur `/catalogue` et `/recherche` (`PAGE_SIZE = 12`, multiple du nombre de colonnes pour que chaque page soit entièrement remplie).
+- Contenu : badge de disponibilité (dérivé, voir 12.4) + favori dans une ligne haute de carte, image détourée (fond supprimé à la volée via ImageKit `e-bgremove` — transparence, padding transparent, `next/image` avec dimensions réelles pour éviter tout saut de mise en page), ratio 1:1 avec zoom subtil au survol, marque en surligne capitales espacées + « SKU: » mis en avant sur la même ligne, titre complet du produit (`name`, marque incluse, `line-clamp-2`), spécifications clés en puces techniques (chips avec icône de catégorie — `specs`, pas `attributes`). Rendu premium : fond blanc pur sans boîte intérieure, liseré + ombre douce, CTA « Ajouter au devis » pleine largeur en bas de carte.
 - Actions : bouton favoris (icône cœur, `aria-pressed` synchronisé à l'état), bouton « Ajouter au devis » (icône + libellé court, change d'état visuellement — voir `QuoteToggleButton` ci-dessous — une fois l'article ajouté).
 
+#### `QuotePanel` (fiche produit)
+- Bloc de conversion B2B de la colonne droite : sélecteur de quantité `[−] n [+]` (logique réelle, borné 1–999) + `QuoteToggleButton` taille `lg` + ligne de réassurance compacte sous le bouton (bordure fine `border-t`, deux items : Livraison / Devis).
+- Quand l'article est déjà dans la liste de devis, le sélecteur modifie la quantité persistée dans le store (`updateQuantity`) en temps réel ; sinon il alimente une quantité « en attente » appliquée à l'ajout.
+
 #### `QuoteToggleButton`
-- Nouveau composant partagé entre `ProductCard` et la fiche produit.
+- Nouveau composant partagé entre `ProductCard`, la fiche produit (`QuotePanel`) et les favoris.
+- Prop optionnelle `quantity` (défaut 1) enregistrée lors de l'ajout.
 - États : `idle` (« Ajouter au devis »), `added` (« Ajouté ✓ », variante visuelle distincte, action de clic devient « Retirer du devis »).
 - Déclenche un `Toast` de confirmation (15.1) lors de l'ajout.
 
 #### `ProductGallery`
-- Image principale + vignettes cliquables, chaque vignette est un `<button>` avec `aria-label` (« Voir l'image {n} de {nom du produit} ») et état `aria-pressed`/`aria-current` pour l'image active.
+- Image principale détourée en ratio carré, grande dans son cadre (padding léger `p-3`), + vignettes cliquables, chaque vignette est un `<button>` avec `aria-label` (« Voir l'image {n} de {nom du produit} ») et état `aria-pressed`/`aria-current` pour l'image active.
+- Bouton zoom / HD (icône loupe, coin supérieur droit de l'image) : ouvre une vraie lightbox `Modal` (piège de focus, `Échap`, clic overlay) affichant l'image pleine résolution — jamais une fausse affordance décorative.
 
 #### `ProductSpecsTable`
 - Rendu tabulaire sémantique (`<table>` avec `<th scope="row">` pour chaque libellé de spécification) plutôt qu'une simple grille de `<div>` — meilleure sémantique pour les lecteurs d'écran et les extraits enrichis.
@@ -1206,7 +1214,8 @@ Pour chaque composant : rôle, props principales, états obligatoires à implém
 - Bouton « Effacer tout » visible uniquement si au moins un filtre est actif.
 
 #### `CatalogSort`
-- Options réelles et pertinentes en l'absence de prix : `Nouveautés` (tri sur `publishedAt` décroissant), `Nom (A → Z)`, `Disponibilité` (disponible → stock limité → sur commande). Minimum 2 options fonctionnelles ; ne jamais livrer un tri à option unique (voir 15.1 `Select`).
+- Ordre par défaut : **mélange déterministe par marque** (`interleaveByBrand`, round-robin) pour éviter les blocs « marque après marque » dans les listings — ordre stable entre rendus serveur/client et à travers la pagination (fonction pure du modèle, jamais `Math.random()`).
+- Options réelles et pertinentes en l'absence de prix : `Mélange de marques` (par défaut), `Nouveautés` (tri sur `publishedAt` décroissant), `Nom (A → Z)`, `Disponibilité` (disponible → stock limité → sur commande). Minimum 2 options fonctionnelles ; ne jamais livrer un tri à option unique (voir 15.1 `Select`).
 
 #### `CatalogPagination`
 - Doit calculer le nombre réel de pages à partir de `Math.ceil(totalResults / pageSize)`. **Ne jamais afficher un numéro de page au-delà du nombre réel de pages disponibles** (corrige un défaut critique du prototype initial où une pagination « 1 2 … 8 » statique s'affichait même lorsque le catalogue ne contenait que quelques produits, chaque clic ne faisant que rejouer une animation de chargement sans changer le contenu affiché).
@@ -1219,7 +1228,8 @@ Pour chaque composant : rôle, props principales, états obligatoires à implém
 ### 15.5 Formulaires (`components/forms/`)
 
 #### `QuoteRequestForm`
-- Champs : nom complet*, société, e-mail professionnel*, téléphone, message*, liste des produits pré-remplie et modifiable (retrait possible) depuis la liste de devis courante.
+- Champs : nom complet*, société, e-mail professionnel*, téléphone, message*, liste des produits pré-remplie et modifiable (retrait possible, quantité affichée `× n`) depuis la liste de devis courante.
+- Soumission réelle vers `POST /api/quote-requests` avec le payload `items: { productId, quantity }[]` (voir 12.3/22.1).
 - Peut être invoqué (a) depuis le header (liste vide, ajout manuel de contexte), (b) depuis une fiche produit (pré-rempli avec ce produit), (c) depuis la page `/devis` (pré-rempli avec tous les articles de la liste).
 - États : `idle`, `submitting`, `success` (message de confirmation + délai de réponse cohérent avec 10.3), `error` (message explicite, ne jamais faire disparaître les données saisies par l'utilisateur en cas d'échec réseau).
 - Soumission réelle vers `POST /api/quote-requests` (voir 22.1) — **interdiction absolue** de simuler la soumission avec un simple `setTimeout` sans appel réseau réel (corrige le défaut le plus critique identifié dans le prototype initial : ce formulaire existait entièrement dans le code — champs, validation, états de succès/erreur, spinner — mais n'était déclenché par **aucun bouton nulle part dans l'interface**, le rendant totalement inatteignable par un utilisateur, en plus de ne rien transmettre réellement).
@@ -1252,9 +1262,9 @@ Aucun élément d'interface ne doit visuellement suggérer une interactivité (c
 
 ### 16.4 Liste de devis (comportement détaillé)
 
-1. Depuis n'importe quelle `ProductCard` ou fiche produit, l'utilisateur clique sur « Ajouter au devis ».
-2. Le produit est ajouté au store Zustand persistant (`localStorage`), un `Toast` confirme l'action, le compteur du header s'incrémente immédiatement (mise à jour optimiste, sans rechargement de page).
-3. L'utilisateur peut consulter `/devis` à tout moment : liste des produits sélectionnés (miniature, nom, marque, bouton de retrait), CTA « Demander un devis pour ces {n} articles » ouvrant `QuoteRequestForm` pré-rempli.
+1. Depuis n'importe quelle `ProductCard` ou fiche produit, l'utilisateur clique sur « Ajouter au devis » (quantité par défaut 1 ; sur la fiche produit, un sélecteur `[−] n [+]` permet de commander par lots).
+2. Le produit est ajouté au store Zustand persistant (`localStorage`) avec sa quantité, un `Toast` confirme l'action, le compteur du header s'incrémente immédiatement (mise à jour optimiste, sans rechargement de page).
+3. L'utilisateur peut consulter `/devis` à tout moment : liste des produits sélectionnés (miniature, nom, marque, **sélecteur de quantité modifiable par article**, bouton de retrait), CTA « Demander un devis pour {n} unité(s) ({m} articles) » ouvrant `QuoteRequestForm` pré-rempli.
 4. Après soumission réussie, la liste de devis est vidée automatiquement (l'intention a été transmise), avec un message de confirmation explicite affichant le prochain contact attendu (cohérent avec 10.3).
 
 ### 16.5 Favoris (comportement détaillé)
@@ -1491,7 +1501,7 @@ Les trois formulaires publics (`QuoteRequestForm`, `ContactForm`, `NewsletterFor
 - **Payload** : `QuoteRequestPayload` (voir 12.2), validé par le schéma Zod correspondant (12.3).
 - **Traitement** :
   1. Rejet si honeypot rempli (21.3) ou rate limit dépassé.
-  2. Validation des `productIds` contre le catalogue réel (`lib/data/products.ts`) — retirer silencieusement tout ID invalide plutôt que de rejeter toute la requête.
+  2. Validation des `items` (`{ productId, quantity }`) contre le catalogue réel (`lib/data/products.ts`) — retirer silencieusement tout ID invalide plutôt que de rejeter toute la requête ; la quantité est reportée dans l'e-mail (`nom (SKU) × quantité`).
   3. Envoi d'un e-mail transactionnel (via l'API Brevo) de notification à `SITE_CONFIG.email.sales`, contenant l'intégralité des informations du lead et la liste des produits demandés (nom, SKU, lien direct vers la fiche produit).
   4. Envoi d'un e-mail de confirmation automatique (via Brevo) à `professionalEmail` (accusé de réception, cohérent avec le délai annoncé en 10.3).
   5. (Optionnel V1, recommandé) : webhook vers un outil de gestion de leads/CRM si l'entreprise en utilise un — à définir lors de l'implémentation, structure de payload générique JSON déjà compatible de par le typage `QuoteRequestPayload`.

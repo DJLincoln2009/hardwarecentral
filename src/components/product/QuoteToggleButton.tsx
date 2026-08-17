@@ -10,9 +10,11 @@ interface QuoteToggleButtonProps {
   product: Pick<Product, 'id' | 'sku' | 'name' | 'brand'>;
   size?: 'sm' | 'md' | 'lg';
   className?: string;
+  /** Quantité à enregistrer lors de l'ajout (1 par défaut — carte produit, favoris). */
+  quantity?: number;
 }
 
-function QuoteToggleButton({ product, size = 'md', className = '' }: QuoteToggleButtonProps) {
+function QuoteToggleButton({ product, size = 'md', className = '', quantity = 1 }: QuoteToggleButtonProps) {
   const items = useQuoteStore((s) => s.items);
   const toggleItem = useQuoteStore((s) => s.toggleItem);
   const { addToast } = useToast();
@@ -28,11 +30,11 @@ function QuoteToggleButton({ product, size = 'md', className = '' }: QuoteToggle
     <button
       type="button"
       onClick={() => {
-        toggleItem({ productId: product.id, sku: product.sku, name: product.name, brand: product.brand });
+        toggleItem({ productId: product.id, sku: product.sku, name: product.name, brand: product.brand }, quantity);
         addToast(inQuote ? 'Retiré de la liste de devis' : 'Ajouté à la liste de devis');
       }}
       className={cn(
-        'inline-flex items-center justify-center rounded-lg font-semibold transition-all duration-200 active:scale-[0.97]',
+        'inline-flex items-center justify-center rounded-lg font-medium transition-all duration-200 active:scale-[0.97]',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background',
         inQuote
           ? 'border border-border-strong bg-surface text-foreground hover:bg-surface-muted'

@@ -23,7 +23,7 @@ describe('QuoteToggleButton', () => {
 
   it('renders remove from quote when already in quote list', () => {
     useQuoteStore.setState({
-      items: [{ productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE' }],
+      items: [{ productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE', quantity: 1 }],
     });
     renderWithProviders(<QuoteToggleButton product={mockProduct} />);
     expect(screen.getByText('Ajouté ✓')).toBeInTheDocument();
@@ -36,9 +36,17 @@ describe('QuoteToggleButton', () => {
     expect(useQuoteStore.getState().items.some((i) => i.productId === 'test-1')).toBe(true);
   });
 
+  it('stores the provided quantity when added', async () => {
+    renderWithProviders(<QuoteToggleButton product={mockProduct} quantity={4} />);
+    const btn = screen.getByText('Ajouter au devis');
+    await userEvent.click(btn);
+    const item = useQuoteStore.getState().items.find((i) => i.productId === 'test-1');
+    expect(item?.quantity).toBe(4);
+  });
+
   it('removes from quote on second click', async () => {
     useQuoteStore.setState({
-      items: [{ productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE' }],
+      items: [{ productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE', quantity: 1 }],
     });
     renderWithProviders(<QuoteToggleButton product={mockProduct} />);
     const btn = screen.getByText('Ajouté ✓');

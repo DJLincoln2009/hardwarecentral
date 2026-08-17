@@ -55,7 +55,7 @@ function FavorisContent() {
               key={id}
               className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-4 shadow-xs transition-all duration-200 hover:border-border-strong hover:shadow-md"
             >
-              <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface-muted">
+              <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface">
                 {product.primaryImage.url ? (
                   <Image
                     src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}

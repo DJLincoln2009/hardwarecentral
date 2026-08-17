@@ -35,11 +35,20 @@ export type CategoryId =
   | 'printers';
 
 export type BrandCode =
-  'HPE' | 'HP' | 'DELL' | 'LENOVO' | 'CISCO' | 'FORTINET' | 'HUAWEI' | 'HIKVISION';
+  | 'HPE'
+  | 'HP'
+  | 'DELL'
+  | 'LENOVO'
+  | 'CISCO'
+  | 'FORTINET'
+  | 'HUAWEI'
+  | 'HIKVISION';
 
 export type AvailabilityStatus = 'available' | 'limited' | 'on-order' | 'discontinued';
 
 export type ChassisFormat = '1U' | '2U' | '3U' | '4U' | 'Tower' | 'Desktop' | 'Compact';
+
+export type FormFactor = 'rack' | 'tower' | 'desktop' | 'appliance';
 
 export interface Category {
   id: CategoryId;
@@ -59,6 +68,7 @@ export interface Brand {
 export interface ProductAvailability {
   status: AvailabilityStatus;
   stockQuantity: number;
+  leadTimeDays?: number;
 }
 
 export interface ProductDatasheet extends MediaAsset {
@@ -85,7 +95,7 @@ export interface Product {
   attributes: {
     chassisFormat?: ChassisFormat;
     rackUnits?: number;
-    formFactor?: 'rack' | 'tower' | 'desktop' | 'appliance';
+    formFactor?: FormFactor;
   };
 
   availability: ProductAvailability;
@@ -99,34 +109,4 @@ export interface Product {
 
   isFeatured: boolean;
   publishedAt: string;
-}
-
-export interface QuoteListItem {
-  productId: string;
-  addedAt: string;
-}
-
-export interface QuoteRequestPayload {
-  fullName: string;
-  companyName?: string;
-  professionalEmail: string;
-  phone?: string;
-  message: string;
-  productIds: string[];
-  honeypot?: string;
-}
-
-export interface ContactMessagePayload {
-  firstName: string;
-  lastName: string;
-  companyName?: string;
-  professionalEmail: string;
-  subject: 'devis' | 'support-technique' | 'partenariat' | 'autre';
-  message: string;
-  honeypot?: string;
-}
-
-export interface NewsletterSubscriptionPayload {
-  email: string;
-  honeypot?: string;
 }

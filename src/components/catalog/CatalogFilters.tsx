@@ -18,7 +18,8 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
   const searchParams = useSearchParams();
   const categories = getActiveCategories();
   const brands = getActiveBrands();
-  const { chassisFormats } = getUniqueAttributeValues();
+  const { formFactors, chassisFormats } = getUniqueAttributeValues();
+  const allFormats = [...formFactors, ...chassisFormats];
 
   const activeCategorie = searchParams.get('categorie') || '';
   const activeMarque = searchParams.get('marque') || '';
@@ -117,7 +118,7 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
         <div>
           <p className="eyebrow mb-3">Format châssis</p>
           <div className="space-y-0.5">
-            {chassisFormats.map((fmt) => {
+            {allFormats.map((fmt) => {
               const activeFormats = activeFormat ? activeFormat.split(',') : [];
               const isChecked = activeFormats.includes(fmt);
               return (

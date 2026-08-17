@@ -78,7 +78,7 @@ function Hero() {
                 <dd className="font-display text-2xl font-extrabold tracking-tight text-foreground md:text-3xl dark:text-white">
                   {stat.value}
                 </dd>
-                <dt className="mt-1 text-[11px] leading-tight text-muted md:text-xs dark:text-graphite-300">
+                <dt className="mt-1 text-xs leading-tight text-muted dark:text-graphite-300">
                   {stat.label}
                 </dt>
               </div>
@@ -100,12 +100,12 @@ function Hero() {
                 width={1200}
                 height={900}
                 priority
-                className="aspect-[4/3] rounded-3xl bg-surface-muted dark:bg-white/5"
+                className="aspect-[4/3] rounded-3xl bg-surface dark:bg-white/5"
                 imageClassName="p-8"
               />
               <div className="flex items-center justify-between gap-3 px-4 pt-4">
                 <div className="min-w-0">
-                  <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-muted dark:text-graphite-300">
+                  <p className="text-xs font-semibold uppercase tracking-[0.12em] text-muted dark:text-graphite-300">
                     {featured.brand}
                   </p>
                   <p className="mt-0.5 truncate text-sm font-semibold text-foreground dark:text-white">

@@ -5,6 +5,7 @@ import { ChevronDown } from 'lucide-react';
 import type { SortOption } from '@/lib/data/filter-products';
 
 const sortOptions: { value: SortOption; label: string }[] = [
+  { value: 'mix', label: 'Mélange de marques' },
   { value: 'newest', label: 'Nouveautés' },
   { value: 'name-asc', label: 'Nom (A-Z)' },
   { value: 'availability', label: 'Disponibilité' },
@@ -14,7 +15,7 @@ function CatalogSort() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const current = (searchParams.get('tri') as SortOption) || 'newest';
+  const current = (searchParams.get('tri') as SortOption) || 'mix';
 
   return (
     <div className="relative">
@@ -23,7 +24,7 @@ function CatalogSort() {
         onChange={(e) => {
           const params = new URLSearchParams(searchParams.toString());
           const value = e.target.value;
-          if (value && value !== 'newest') params.set('tri', value);
+          if (value !== 'mix') params.set('tri', value);
           else params.delete('tri');
           router.push(`${pathname}?${params.toString()}`);
         }}

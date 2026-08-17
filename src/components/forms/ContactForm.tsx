@@ -47,6 +47,7 @@ function ContactForm() {
             professionalEmail,
             subject,
             message,
+            honeypot: '',
           }),
         });
 
