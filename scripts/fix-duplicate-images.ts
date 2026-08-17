@@ -119,7 +119,7 @@ async function updateProductFile(
   newChecksum: string,
   sourceUrl: string,
 ): Promise<void> {
-  let content = await readFile(filePath, 'utf-8');
+  const content = await readFile(filePath, 'utf-8');
 
   const altText = productId.replace(/-/g, ' ');
   const now = new Date().toISOString();

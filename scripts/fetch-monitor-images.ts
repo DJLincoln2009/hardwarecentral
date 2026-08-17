@@ -139,7 +139,7 @@ async function updateProductFile(
   imageKitUrl: string,
   checksum: string,
 ): Promise<void> {
-  let content = await readFile(filePath, 'utf-8');
+  const content = await readFile(filePath, 'utf-8');
 
   // Find the product block by SKU and replace the placeholder primaryImage
   const skuPattern = new RegExp(
