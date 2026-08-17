@@ -4,7 +4,7 @@ const BREVO_API_KEY = process.env.BREVO_API_KEY;
 const BREVO_API_URL = 'https://api.brevo.com/v3';
 const SENDER_EMAIL = SITE_CONFIG.email.contact;
 const SENDER_NAME = SITE_CONFIG.companyName;
-const NEWSLETTER_LIST_ID = 2;
+const NEWSLETTER_LIST_ID = SITE_CONFIG.brevo.newsletterListId;
 
 interface SendEmailParams {
   to: { email: string; name?: string };

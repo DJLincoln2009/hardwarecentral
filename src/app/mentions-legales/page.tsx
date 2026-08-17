@@ -35,24 +35,23 @@ export default function MentionsLegalesPage() {
             E-mail : {SITE_CONFIG.email.contact}
           </p>
           <p className="mt-2">
-            {/* TODO: Remplacer par les valeurs réelles (forme juridique, RCCM, NIU) */}
-            Forme juridique, RCCM et NIU : informations en cours de finalisation.
+            {/* TODO: RCCM non encore communiqué — ajouter le numéro dès réception */}
+            Forme juridique : SA ; RCCM : en cours de finalisation.
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-graphite-900">Directeur de la publication</h2>
           <p>
-            {/* TODO: Nom du dirigeant */}
-            Informations en cours de finalisation.
+            {SITE_CONFIG.legalName}
           </p>
         </div>
 
         <div>
           <h2 className="text-lg font-semibold text-graphite-900">Hébergement</h2>
           <p>
-            {/* TODO: Remplacer par l'hébergeur réel au moment du déploiement */}
-            Informations en cours de finalisation.
+            Le site {SITE_CONFIG.companyName} est hébergé par{' '}
+            <strong>{SITE_CONFIG.hosting.provider}</strong>.
           </p>
         </div>
 

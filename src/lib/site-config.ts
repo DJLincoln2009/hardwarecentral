@@ -2,6 +2,7 @@ const SITE_DOMAIN = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hardware-centra
 
 export const SITE_CONFIG = {
   companyName: 'HardwareCentral',
+  legalName: 'Hardware-Central SA',
   domain: SITE_DOMAIN,
   address: {
     line1: 'Douala, Bonamoussadi',
@@ -26,4 +27,13 @@ export const SITE_CONFIG = {
   },
   currency: 'XAF',
   locale: 'fr-CM',
+  hosting: {
+    provider: 'Hostinger',
+    // TODO: Ajouter l'adresse complète de l'hébergeur Hostinger une fois confirmée
+  },
+  brevo: {
+    newsletterListId: 2,
+  },
+  // TODO: RCCM non encore communiqué — ajouter le numéro dès réception
+  rccm: null as string | null,
 } as const;
