@@ -70,13 +70,13 @@ function NewsletterForm() {
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Votre adresse e-mail"
           disabled={status === 'submitting'}
-          className="flex-1 rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white backdrop-blur placeholder:text-graphite-400 transition-all duration-200 focus:border-teal-300 focus:bg-white/10 focus:outline-none focus:ring-2 focus:ring-teal-200/40 disabled:opacity-50"
+          className="min-h-[44px] flex-1 rounded-lg border border-white/15 bg-white/5 px-4 py-3 text-sm text-white backdrop-blur placeholder:text-graphite-400 transition-all duration-200 focus:border-teal-300 focus:bg-white/10 focus:outline-none focus:ring-2 focus:ring-teal-200/40 disabled:opacity-50"
         />
         <Button type="submit" loading={status === 'submitting'} size="md" icon={<Send className="h-4 w-4" />}>
           S&rsquo;inscrire
         </Button>
       </div>
-      <div className="flex items-start gap-2">
+      <div className="flex items-start gap-2.5">
         <input
           id="newsletter-consent"
           type="checkbox"
@@ -84,7 +84,7 @@ function NewsletterForm() {
           disabled={status === 'submitting'}
           className="mt-0.5 h-4 w-4 shrink-0 rounded-sm border-graphite-500 text-teal-500 focus:ring-2 focus:ring-teal-200"
         />
-        <label htmlFor="newsletter-consent" className="text-xs leading-relaxed text-graphite-300">
+        <label htmlFor="newsletter-consent" className="min-h-[44px] flex items-center text-xs leading-relaxed text-graphite-300">
           J&apos;accepte de recevoir les actualités et offres de HardwareCentral par e-mail. Consultez notre{' '}
           <Link href="/confidentialite" className="text-teal-300 underline underline-offset-2 transition-colors hover:text-teal-200">
             politique de confidentialité

@@ -62,7 +62,7 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
       className={cn('w-full flex-shrink-0 lg:sticky lg:top-24 lg:w-[240px]', className)}
       aria-label="Filtres du catalogue"
     >
-      <div className="space-y-6 rounded-2xl border border-border bg-surface p-5 shadow-xs">
+      <div className="space-y-7 rounded-2xl border border-border bg-surface p-5 shadow-xs">
         <div>
           <p className="eyebrow mb-3">Catégorie</p>
           <div className="space-y-1">
@@ -75,7 +75,7 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
                   onClick={() => updateParam('categorie', isActive ? '' : cat.id)}
                   aria-pressed={isActive}
                   className={cn(
-                    'flex w-full items-center justify-between gap-2 rounded-lg px-3 py-2.5 text-left text-sm transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
+                    'flex w-full items-center justify-between gap-2 rounded-lg px-3 py-3 text-left text-sm transition-colors duration-150 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent',
                     isActive
                       ? 'bg-teal-50 font-medium text-teal-700 dark:bg-teal-500/15 dark:text-teal-300'
                       : 'text-muted hover:bg-surface-muted hover:text-foreground',
@@ -100,7 +100,7 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
               return (
                 <label
                   key={b.code}
-                  className="flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm text-muted transition-colors duration-150 hover:bg-surface-muted hover:text-foreground"
+                  className="flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-3 text-sm text-muted transition-colors duration-150 hover:bg-surface-muted hover:text-foreground min-h-11"
                 >
                   <input
                     type="checkbox"
@@ -124,7 +124,7 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
               return (
                 <label
                   key={fmt}
-                  className="flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-2.5 text-sm text-muted transition-colors duration-150 hover:bg-surface-muted hover:text-foreground"
+                  className="flex cursor-pointer items-center gap-2.5 rounded-lg px-3 py-3 text-sm text-muted transition-colors duration-150 hover:bg-surface-muted hover:text-foreground min-h-11"
                 >
                   <input
                     type="checkbox"

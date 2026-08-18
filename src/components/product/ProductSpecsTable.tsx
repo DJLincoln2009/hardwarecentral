@@ -13,11 +13,13 @@ function ProductSpecsTable({ specs }: ProductSpecsTableProps) {
             <tr key={spec.label} className={i % 2 === 1 ? 'bg-surface-muted/50' : ''}>
               <th
                 scope="row"
-                className="w-[38%] whitespace-nowrap py-3.5 pr-4 pl-5 text-left font-mono text-xs font-medium text-muted"
+                className="w-[35%] min-w-[100px] py-3.5 pr-4 pl-5 text-left font-mono text-xs font-medium text-muted max-md:whitespace-normal max-md:align-top max-md:pb-1.5 max-md:pl-4 max-md:pr-3 max-md:text-[11px]"
               >
                 {spec.label}
               </th>
-              <td className="py-3.5 pr-5 text-foreground">{spec.value}</td>
+              <td className="py-3.5 pr-5 text-foreground max-md:py-1.5 max-md:pr-4 max-md:pl-3 max-md:text-xs max-md:leading-relaxed">
+                {spec.value}
+              </td>
             </tr>
           ))}
         </tbody>

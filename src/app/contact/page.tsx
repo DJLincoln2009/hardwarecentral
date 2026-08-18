@@ -72,26 +72,26 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-6xl px-4 py-8 lg:px-6">
-      <div className="mb-8">
+    <div className="mx-auto max-w-6xl px-4 py-6 sm:py-8 lg:px-6">
+      <div className="mb-6 sm:mb-8">
         <div className="mb-4">
           <Breadcrumb items={breadcrumbItems} />
         </div>
         <div>
           <p className="eyebrow mb-1.5">Support &amp; commercial</p>
-          <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
+          <h1 className="font-display text-[1.75rem] font-extrabold tracking-tight text-foreground sm:text-display md:text-[2.5rem]">
             Nous contacter
           </h1>
         </div>
       </div>
 
-      <div className="grid gap-8 lg:grid-cols-5">
+      <div className="grid gap-6 sm:gap-8 lg:grid-cols-5">
         <section className="lg:col-span-2" aria-label="Coordonnées">
-          <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+          <div className="grid gap-2.5 sm:grid-cols-2 sm:gap-3 lg:grid-cols-1">
             {contactItems.map((item) => (
               <div
                 key={item.label}
-                className="flex items-start gap-3.5 rounded-2xl border border-border bg-surface p-5 shadow-xs"
+                className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-4 shadow-xs sm:p-5"
               >
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-teal-50 text-teal-700 dark:bg-teal-500/15 dark:text-teal-300">
                   <item.icon className="h-4.5 w-4.5" aria-hidden="true" />
@@ -106,8 +106,8 @@ export default function ContactPage() {
         </section>
 
         <section className="lg:col-span-3" aria-label="Formulaire de contact">
-          <div className="rounded-2xl border border-border bg-surface p-6 shadow-xs md:p-8">
-            <h2 className="font-display text-title font-extrabold tracking-tight text-foreground">
+          <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs sm:p-6 md:p-8">
+            <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground sm:text-title">
               Envoyez-nous un message
             </h2>
             <p className="mt-2 text-sm text-muted">

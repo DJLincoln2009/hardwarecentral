@@ -23,9 +23,9 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
   const prefersReducedMotion = usePrefersReducedMotion();
 
   const sizeMap = {
-    sm: 'max-w-sm',
-    md: 'max-w-md',
-    lg: 'max-w-2xl',
+    sm: 'sm:max-w-sm',
+    md: 'sm:max-w-md',
+    lg: 'sm:max-w-2xl',
   };
 
   const handleKeyDown = useCallback(
@@ -89,7 +89,7 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
     <AnimatePresence>
       {open && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center p-0 sm:p-4"
           role="dialog"
           aria-modal="true"
           aria-labelledby="modal-title"
@@ -122,13 +122,14 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
                 : { duration: 0.35, ease: [0.16, 1, 0.3, 1] }
             }
             className={cn(
-              'relative z-10 flex w-full flex-col rounded-2xl border border-border bg-surface shadow-xl',
-              'max-h-[85vh]',
+              'relative z-10 flex w-full flex-col rounded-none border-0 border-border bg-surface shadow-xl',
+              'max-w-full max-h-[100dvh]',
+              'sm:rounded-2xl sm:border sm:max-h-[85vh]',
               sizeMap[size],
               className,
             )}
           >
-            <div className="flex items-center justify-between gap-4 border-b border-border/60 px-6 pt-5 pb-4">
+            <div className="flex items-center justify-between gap-4 border-b border-border/60 px-4 pt-4 pb-3 sm:px-6 sm:pt-5 sm:pb-4">
               <h2
                 id="modal-title"
                 className="font-display text-lg font-bold tracking-tight text-foreground"
@@ -138,13 +139,13 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
               <button
                 type="button"
                 onClick={onClose}
-                className="group -mr-1.5 -mt-1 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-faint transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="group -mr-1.5 -mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-faint transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 aria-label="Fermer la fenêtre"
               >
                 <X className="h-4.5 w-4.5 transition-transform duration-200 group-hover:rotate-90" aria-hidden="true" />
               </button>
             </div>
-            <div className="overflow-y-auto px-6 py-5">{children}</div>
+            <div className="overflow-y-auto px-4 py-4 sm:px-6 sm:py-5 pb-[max(1rem,env(safe-area-inset-bottom))]">{children}</div>
           </motion.div>
         </div>
       )}

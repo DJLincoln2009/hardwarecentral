@@ -10,7 +10,7 @@ interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
 }
 
 const textareaBase = cn(
-  'w-full min-h-24 resize-y rounded-md border bg-surface px-3.5 py-2.5 text-base text-foreground shadow-xs',
+  'w-full min-h-[120px] sm:min-h-24 resize-y rounded-md border bg-surface px-3.5 py-2.5 text-base text-foreground shadow-xs',
   'placeholder:text-faint transition-all duration-200',
   'border-border hover:border-border-strong',
   'focus:border-accent focus:shadow-focus focus:outline-none',

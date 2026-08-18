@@ -37,10 +37,10 @@ const variantStyles: Record<ButtonVariant, string> = {
 };
 
 const sizeStyles: Record<ButtonSize, string> = {
-  sm: 'h-8 px-3 text-sm gap-1.5',
-  md: 'h-10 px-4 text-sm gap-2',
+  sm: 'h-8 min-h-[44px] sm:min-h-0 px-3 text-sm gap-1.5',
+  md: 'h-10 min-h-[44px] sm:min-h-0 px-4 text-sm gap-2',
   lg: 'h-12 px-6 text-base gap-2.5',
-  icon: 'h-10 w-10 p-0',
+  icon: 'h-10 min-h-[44px] sm:min-h-0 w-10 p-0',
 };
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
@@ -74,7 +74,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         {...props}
       >
         {loading ? (
-          <Loader2 className="h-4 w-4 animate-spin" aria-hidden="true" />
+          <Loader2 className="h-4 w-4 shrink-0 animate-spin" aria-hidden="true" />
         ) : icon ? (
           <span aria-hidden="true">{icon}</span>
         ) : null}

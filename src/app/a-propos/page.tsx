@@ -35,12 +35,12 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-5xl px-4 py-8 lg:px-6">
+    <div className="mx-auto max-w-5xl px-4 py-6 sm:py-8 lg:px-6">
       <div className="mb-4">
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <section className="relative isolate mb-14 overflow-hidden rounded-3xl bg-graphite-950 px-6 py-12 md:px-10 md:py-14">
+      <section className="relative isolate mb-10 overflow-hidden rounded-3xl bg-graphite-950 px-5 py-9 sm:mb-14 sm:px-6 sm:py-12 md:px-10 md:py-14">
         <div className="absolute inset-0 -z-10 bg-grid opacity-50" aria-hidden="true" />
         <div
           className="pointer-events-none absolute -right-20 -top-28 h-72 w-72 rounded-full bg-hero-glow blur-3xl"
@@ -48,10 +48,10 @@ export default function AboutPage() {
         />
         <div className="relative">
           <p className="eyebrow mb-3 text-graphite-400">À propos</p>
-          <h1 className="max-w-2xl font-display text-display font-extrabold tracking-tight text-white">
+          <h1 className="max-w-2xl font-display text-3xl font-extrabold tracking-tight text-white sm:text-display">
             À propos de {SITE_CONFIG.companyName}
           </h1>
-          <div className="mt-6 max-w-3xl space-y-4 text-sm leading-relaxed text-graphite-300 md:text-base">
+          <div className="mt-5 max-w-3xl space-y-3 text-sm leading-relaxed text-graphite-300 sm:mt-6 sm:space-y-4 sm:text-base">
             <p>
               {SITE_CONFIG.companyName} est une plateforme digitale basée à {SITE_CONFIG.address.city},
               Cameroun, dédiée à la distribution d&apos;équipements et d&apos;infrastructures informatiques
@@ -74,18 +74,18 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="mb-14">
-        <h2 className="mb-6 font-display text-title font-extrabold tracking-tight text-foreground">
+      <section className="mb-10 sm:mb-14">
+        <h2 className="mb-4 font-display text-xl font-extrabold tracking-tight text-foreground sm:mb-6 sm:text-title">
           Pourquoi nous choisir
         </h2>
         <TrustBadges />
       </section>
 
-      <section className="mb-14">
-        <h2 className="mb-3 font-display text-title font-extrabold tracking-tight text-foreground">
+      <section className="mb-10 sm:mb-14">
+        <h2 className="mb-2 font-display text-xl font-extrabold tracking-tight text-foreground sm:mb-3 sm:text-title">
           Nos marques
         </h2>
-        <p className="mb-6 text-sm text-muted">
+        <p className="mb-4 text-xs text-muted sm:mb-6 sm:text-sm">
           Nous distribuons les leaders mondiaux de l&apos;infrastructure IT.
         </p>
         <BrandsGrid />
@@ -96,15 +96,15 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="rounded-2xl border border-border bg-surface p-6 shadow-xs md:p-8">
-        <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground">
+      <section className="rounded-2xl border border-border bg-surface p-5 shadow-xs sm:p-6 md:p-8">
+        <h2 className="font-display text-lg font-extrabold tracking-tight text-foreground sm:text-xl">
           Identité légale
         </h2>
-        <dl className="mt-5 grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2">
+        <dl className="mt-4 grid grid-cols-1 gap-x-6 gap-y-4 sm:mt-5 sm:grid-cols-2 sm:gap-x-8 sm:gap-y-5">
           {identityRows.map((row) => (
             <div key={row.label}>
               <dt className="eyebrow">{row.label}</dt>
-              <dd className="mt-1.5 text-sm text-foreground">{row.value}</dd>
+              <dd className="mt-1.5 text-sm break-words text-foreground">{row.value}</dd>
             </div>
           ))}
         </dl>

@@ -34,15 +34,15 @@ async function SearchContent({ searchParams }: SearchContentProps) {
   ];
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 lg:px-6">
-      <div className="mb-8">
-        <div className="mb-4">
+    <div className="mx-auto max-w-7xl px-4 py-6 sm:py-8 lg:px-6">
+      <div className="mb-6 sm:mb-8">
+        <div className="mb-3 sm:mb-4">
           <Breadcrumb items={breadcrumbItems} />
         </div>
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
           <div>
-            <p className="eyebrow mb-1.5">Recherche</p>
-            <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
+            <p className="eyebrow mb-1 sm:mb-1.5">Recherche</p>
+            <h1 className="font-display text-3xl font-extrabold tracking-tight text-foreground sm:text-display">
               {q ? (
                 <>
                   Résultats pour&nbsp;
@@ -54,7 +54,7 @@ async function SearchContent({ searchParams }: SearchContentProps) {
             </h1>
           </div>
           {q && (
-            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-semibold text-muted shadow-xs">
+            <span className="inline-flex shrink-0 items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-muted shadow-xs sm:px-3.5 sm:py-1.5">
               <span className="h-1.5 w-1.5 rounded-full bg-teal-600" aria-hidden="true" />
               {total} résultat{total !== 1 ? 's' : ''}
             </span>
@@ -64,12 +64,12 @@ async function SearchContent({ searchParams }: SearchContentProps) {
 
       {results.length > 0 ? (
         <>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 sm:gap-4 lg:grid-cols-3 xl:grid-cols-4">
             {results.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
-          <div className="mt-10 flex justify-center border-t border-border pt-8">
+          <div className="mt-8 flex justify-center border-t border-border pt-6 sm:mt-10 sm:pt-8">
             <CatalogPagination currentPage={currentPage} totalPages={totalPages} />
           </div>
         </>

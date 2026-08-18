@@ -24,13 +24,13 @@ function FavorisContent() {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8 lg:px-6">
-      <div className="mb-8">
+    <div className="mx-auto max-w-3xl px-4 py-6 lg:px-6 lg:py-8">
+      <div className="mb-6 lg:mb-8">
         <div className="mb-4">
           <Breadcrumb items={breadcrumbItems} />
         </div>
         {products.length > 0 ? (
-          <div className="flex flex-wrap items-end justify-between gap-4">
+          <div className="flex flex-wrap items-end justify-between gap-3 sm:gap-4">
             <div>
               <p className="eyebrow mb-1.5">Favoris</p>
               <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
@@ -49,48 +49,52 @@ function FavorisContent() {
       </div>
 
       {products.length > 0 ? (
-        <ul className="space-y-3">
-          {products.map(({ id, product }) => (
-            <li
-              key={id}
-              className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-4 shadow-xs transition-all duration-200 hover:border-border-strong hover:shadow-md"
-            >
-              <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface">
-                {product.primaryImage.url ? (
-                  <Image
-                    src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
-                    alt={product.primaryImage.alt}
-                    fill
-                    sizes="64px"
-                    className="object-contain p-1.5"
-                  />
-                ) : (
-                  <FileText className="h-6 w-6 text-faint" aria-hidden="true" />
-                )}
-              </div>
-              <div className="min-w-0 flex-1">
-                <Link
-                  href={`/produit/${id}`}
-                  className="text-sm font-semibold text-foreground transition-colors hover:text-accent line-clamp-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
-                >
-                  {product.name}
-                </Link>
-                <p className="mt-0.5 font-mono text-xs text-muted">
-                  {product.brand} &middot; SKU: {product.sku}
-                </p>
-              </div>
-              <QuoteToggleButton product={product} size="sm" />
-              <button
-                type="button"
-                onClick={() => toggle(id)}
-                aria-label={`Retirer ${product.name} des favoris`}
-                className="rounded-lg p-2.5 text-faint transition-colors hover:bg-surface-muted hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          <ul className="space-y-3">
+            {products.map(({ id, product }) => (
+              <li
+                key={id}
+                className="group rounded-2xl border border-border bg-surface p-4 shadow-xs transition-all duration-200 hover:border-border-strong hover:shadow-md max-sm:p-3"
               >
-                <Trash2 className="h-4 w-4" aria-hidden="true" />
-              </button>
-            </li>
-          ))}
-        </ul>
+                <div className="flex items-center gap-4 max-sm:gap-3">
+                  <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface max-sm:h-12 max-sm:w-12">
+                    {product.primaryImage.url ? (
+                      <Image
+                        src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
+                        alt={product.primaryImage.alt}
+                        fill
+                        sizes="64px"
+                        className="object-contain p-1.5"
+                      />
+                    ) : (
+                      <FileText className="h-6 w-6 text-faint" aria-hidden="true" />
+                    )}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <Link
+                      href={`/produit/${id}`}
+                      className="text-sm font-semibold text-foreground transition-colors hover:text-accent line-clamp-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+                    >
+                      {product.name}
+                    </Link>
+                    <p className="mt-0.5 font-mono text-xs text-muted max-sm:text-[11px]">
+                      {product.brand} &middot; SKU: {product.sku}
+                    </p>
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => toggle(id)}
+                    aria-label={`Retirer ${product.name} des favoris`}
+                    className="rounded-lg p-2.5 text-faint transition-colors hover:bg-surface-muted hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-11 min-w-11 sm:min-h-auto sm:min-w-auto flex items-center justify-center"
+                  >
+                    <Trash2 className="h-4 w-4" aria-hidden="true" />
+                  </button>
+                </div>
+                <div className="mt-3 flex items-center justify-end border-t border-border/60 pt-3 max-sm:mt-2 max-sm:pt-2">
+                  <QuoteToggleButton product={product} size="sm" className="min-h-11 min-w-11 sm:min-h-auto sm:min-w-auto" />
+                </div>
+              </li>
+            ))}
+          </ul>
       ) : (
         <EmptyState
           variant="favorites"

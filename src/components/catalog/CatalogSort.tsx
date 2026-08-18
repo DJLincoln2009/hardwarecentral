@@ -29,7 +29,7 @@ function CatalogSort() {
           router.push(`${pathname}?${params.toString()}`);
         }}
         aria-label="Trier par"
-        className="appearance-none rounded-full border border-border bg-surface py-2.5 pl-4 pr-9 text-sm font-medium text-foreground shadow-xs transition-all duration-200 hover:border-border-strong focus:border-accent focus:shadow-focus focus:outline-none"
+        className="appearance-none rounded-full border border-border bg-surface min-h-11 py-2.5 pl-4 pr-9 text-sm font-medium text-foreground shadow-xs transition-all duration-200 hover:border-border-strong focus:border-accent focus:shadow-focus focus:outline-none"
       >
         {sortOptions.map((opt) => (
           <option key={opt.value} value={opt.value}>

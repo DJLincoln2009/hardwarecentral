@@ -9,9 +9,9 @@ function FeaturedProducts() {
   if (products.length === 0) return null;
 
   return (
-    <section className="border-y border-border bg-surface-muted px-4 py-14 md:py-20">
+    <section className="border-y border-border bg-surface-muted px-4 py-10 md:py-20 sm:py-14">
       <div className="mx-auto max-w-7xl">
-        <div className="mb-9 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
+        <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:mb-9 sm:flex-row sm:items-end">
           <div>
             <p className="eyebrow mb-2">Sélection</p>
             <h2 className="font-display text-title font-extrabold tracking-tight text-foreground">
@@ -29,7 +29,7 @@ function FeaturedProducts() {
             />
           </Link>
         </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-3 sm:gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {products.slice(0, 4).map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}

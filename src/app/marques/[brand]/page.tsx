@@ -50,14 +50,14 @@ export default async function BrandPage({ params }: Props) {
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <section className="relative isolate overflow-hidden rounded-3xl bg-graphite-950 px-6 py-10 md:px-10 md:py-12">
+      <section className="relative isolate overflow-hidden rounded-3xl bg-graphite-950 px-6 py-10 md:px-10 md:py-12 max-sm:px-5 max-sm:py-8">
         <div className="absolute inset-0 -z-10 bg-grid opacity-50" aria-hidden="true" />
         <div
           className="pointer-events-none absolute -right-16 -top-24 h-64 w-64 rounded-full bg-hero-glow blur-3xl"
           aria-hidden="true"
         />
-        <div className="relative flex flex-col items-start gap-5 sm:flex-row sm:items-center">
-          <span className="flex h-20 w-48 shrink-0 items-center justify-center rounded-2xl bg-white p-3 shadow-lg">
+        <div className="relative flex flex-col items-start gap-5 sm:flex-row sm:items-center max-sm:gap-4">
+          <span className="flex h-20 w-48 shrink-0 items-center justify-center rounded-2xl bg-white p-3 shadow-lg max-sm:h-16 max-sm:w-36 max-sm:rounded-xl">
             {brand.logoUrl ? (
               <BrandLogo src={brand.logoUrl} alt={`Logo ${brand.name}`} />
             ) : (
@@ -68,10 +68,10 @@ export default async function BrandPage({ params }: Props) {
           </span>
           <div>
             <p className="eyebrow mb-1.5 text-graphite-400">Marque</p>
-            <h1 className="font-display text-title font-extrabold tracking-tight text-white">
+            <h1 className="font-display text-title font-extrabold tracking-tight text-white max-sm:text-xl">
               {brandName}
             </h1>
-            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-graphite-300">
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-graphite-300 max-sm:text-xs">
               {brand.shortDescription}
             </p>
             <p className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3.5 py-1.5 text-xs font-semibold text-graphite-200 backdrop-blur">

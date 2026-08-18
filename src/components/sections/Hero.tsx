@@ -19,7 +19,7 @@ function Hero() {
   ];
 
   return (
-    <section className="relative isolate overflow-hidden bg-background dark:bg-graphite-950">
+    <section className="relative isolate overflow-hidden bg-background pb-[max(4rem,env(safe-area-inset-bottom,0px))] dark:bg-graphite-950">
       <div
         className="absolute inset-0 -z-10 bg-grid opacity-70 dark:opacity-60"
         aria-hidden="true"
@@ -33,9 +33,9 @@ function Hero() {
         aria-hidden="true"
       />
 
-      <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 pb-16 pt-14 md:pb-24 md:pt-20 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-6">
+      <div className="mx-auto grid max-w-7xl items-center gap-10 px-4 pt-10 pb-12 sm:px-6 sm:gap-12 sm:pt-14 sm:pb-16 md:pt-20 md:pb-24 md:gap-14 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12">
         <div className="relative text-center lg:text-left">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-1.5 text-xs font-medium text-muted shadow-xs backdrop-blur dark:border-white/10 dark:bg-white/5 dark:text-graphite-200">
+          <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-muted shadow-xs backdrop-blur sm:gap-2 sm:px-4 sm:py-1.5 dark:border-white/10 dark:bg-white/5 dark:text-graphite-200">
             <ShieldCheck
               className="h-3.5 w-3.5 text-teal-600 dark:text-teal-300"
               aria-hidden="true"
@@ -43,16 +43,16 @@ function Hero() {
             Matériel authentique · Garantie constructeur · Cameroun &amp; zone CEMAC
           </span>
 
-          <h1 className="mt-6 font-display text-hero font-extrabold leading-[1.05] tracking-tight text-foreground dark:text-white">
+          <h1 className="mt-5 font-display text-hero font-extrabold leading-[1.05] tracking-tight text-foreground sm:mt-6 dark:text-white">
             Équipements IT professionnels pour l&apos;Afrique Centrale
           </h1>
 
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted md:text-lg dark:text-graphite-300 lg:mx-0">
+          <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-muted sm:mt-5 sm:text-base md:text-lg dark:text-graphite-300 lg:mx-0">
             Serveurs, stockage, réseau, sécurité et vidéosurveillance pour les entreprises. Une
             plateforme de référence pour bâtir et faire évoluer vos infrastructures.
           </p>
 
-          <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row lg:justify-start">
+          <div className="mt-7 flex flex-col items-stretch gap-2.5 sm:mt-8 sm:w-auto sm:flex-row sm:items-center sm:justify-start sm:gap-3 lg:justify-start">
             <Link
               href="/catalogue"
               className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-teal-600 px-7 py-3.5 text-sm font-semibold text-white shadow-lg shadow-teal-600/20 transition-all duration-200 hover:bg-teal-700 hover:shadow-glow active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-600 focus-visible:ring-offset-2 focus-visible:ring-offset-background sm:w-auto"
@@ -72,10 +72,10 @@ function Hero() {
             </Link>
           </div>
 
-          <dl className="mx-auto mt-12 grid max-w-xl grid-cols-3 divide-x divide-border rounded-2xl border border-border bg-surface/70 shadow-sm backdrop-blur dark:divide-white/10 dark:border-white/10 dark:bg-white/5 lg:mx-0">
+          <dl className="mx-auto mt-8 grid max-w-xl grid-cols-3 divide-x divide-border rounded-2xl border border-border bg-surface/70 shadow-sm backdrop-blur sm:mt-10 sm:max-w-full dark:divide-white/10 dark:border-white/10 dark:bg-white/5 lg:mx-0">
             {stats.map((stat) => (
-              <div key={stat.label} className="px-4 py-5 text-center">
-                <dd className="font-display text-2xl font-extrabold tracking-tight text-foreground md:text-3xl dark:text-white">
+              <div key={stat.label} className="px-3 py-3 text-center sm:px-4 sm:py-5">
+                <dd className="font-display text-xl font-extrabold tracking-tight text-foreground sm:text-2xl md:text-3xl dark:text-white">
                   {stat.value}
                 </dd>
                 <dt className="mt-1 text-xs leading-tight text-muted dark:text-graphite-300">
@@ -87,12 +87,12 @@ function Hero() {
         </div>
 
         {featured && (
-          <div className="relative mx-auto w-full max-w-md lg:max-w-none">
+          <div className="relative mx-auto w-full max-w-sm sm:max-w-md lg:max-w-none">
             <div
-              className="pointer-events-none absolute -inset-8 rounded-[3rem] bg-radial-accent blur-2xl"
+              className="pointer-events-none absolute -inset-6 rounded-[2rem] bg-radial-accent blur-2xl sm:-inset-8 sm:rounded-[3rem]"
               aria-hidden="true"
             />
-            <div className="relative overflow-hidden rounded-[2rem] border border-border bg-surface/80 p-3 shadow-xl backdrop-blur-xl dark:border-white/10 dark:bg-white/5">
+            <div className="relative overflow-hidden rounded-2xl border border-border bg-surface/80 p-2 shadow-xl backdrop-blur-xl sm:rounded-[2rem] sm:p-3 dark:border-white/10 dark:bg-white/5">
               <ProductImage
                 src={featured.primaryImage.url}
                 alt={featured.primaryImage.alt}

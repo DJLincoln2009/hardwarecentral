@@ -18,7 +18,8 @@ interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
 }
 
 const selectBase = cn(
-  'w-full appearance-none rounded-md border border-border bg-surface px-3.5 py-2.5 pr-9 text-base text-foreground shadow-xs',
+  'w-full appearance-none rounded-md border border-border bg-surface px-3.5 pr-9 text-base text-foreground shadow-xs',
+  'min-h-[44px] py-2.5 sm:min-h-[40px]',
   'transition-all duration-200 hover:border-border-strong',
   'focus:border-accent focus:shadow-focus focus:outline-none',
   'disabled:cursor-not-allowed disabled:opacity-50 disabled:bg-surface-muted',

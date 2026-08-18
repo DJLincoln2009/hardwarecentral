@@ -24,14 +24,14 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="px-4 py-12 md:py-16">
+      <section className="px-4 py-10 md:py-16 sm:py-12">
         <div className="mx-auto max-w-7xl">
           <TrustBadges />
         </div>
       </section>
       <CategoryGrid />
       <FeaturedProducts />
-      <section className="px-4 py-14 md:py-20">
+      <section className="px-4 py-10 md:py-20 sm:py-14">
         <div className="mx-auto max-w-7xl">
           <div className="mb-9 text-center">
             <p className="eyebrow mb-2">Constructeurs</p>
@@ -47,13 +47,13 @@ export default function Home() {
           </p>
         </div>
       </section>
-      <section className="relative isolate overflow-hidden bg-graphite-950 px-4 py-16 md:py-20">
+      <section className="relative isolate overflow-hidden bg-graphite-950 px-4 py-12 md:py-20 sm:py-16">
         <div className="absolute inset-0 -z-10 bg-grid opacity-50" aria-hidden="true" />
         <div
           className="pointer-events-none absolute inset-x-0 top-0 mx-auto h-56 max-w-2xl rounded-full bg-hero-glow blur-3xl"
           aria-hidden="true"
         />
-        <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-4 text-center">
+        <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 text-center sm:gap-4">
           <span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-500/15 text-teal-300">
             <Mail className="h-5 w-5" aria-hidden="true" />
           </span>

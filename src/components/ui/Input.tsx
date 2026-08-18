@@ -10,7 +10,8 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 const inputBase = cn(
-  'w-full rounded-md border bg-surface px-3.5 py-2.5 text-base text-foreground shadow-xs',
+  'w-full rounded-md border bg-surface px-3.5 text-base text-foreground shadow-xs',
+  'min-h-[44px] py-2.5 sm:min-h-[40px]',
   'placeholder:text-faint transition-all duration-200',
   'border-border hover:border-border-strong',
   'focus:border-accent focus:shadow-focus focus:outline-none',
@@ -22,7 +23,7 @@ const Input = forwardRef<HTMLInputElement, InputProps>(
     const inputId = id ?? label.toLowerCase().replace(/\s+/g, '-');
 
     return (
-      <div className="flex flex-col gap-1.5">
+      <div className="flex flex-col gap-1.5 sm:gap-1.5">
         <label htmlFor={inputId} className="text-sm font-medium text-foreground">
           {label}
         </label>

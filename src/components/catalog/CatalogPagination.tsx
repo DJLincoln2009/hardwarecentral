@@ -40,7 +40,7 @@ function CatalogPagination({ currentPage, totalPages }: CatalogPaginationProps) 
   );
 
   return (
-    <nav aria-label="Pagination" className="flex items-center justify-center gap-1.5">
+    <nav aria-label="Pagination" className="flex items-center justify-center gap-1.5 overflow-x-auto">
       <button
         type="button"
         onClick={() => goToPage(currentPage - 1)}

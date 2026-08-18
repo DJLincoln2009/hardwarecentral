@@ -23,14 +23,14 @@ function EmptyState({ variant = 'empty', title, description, action }: EmptyStat
   const Icon = icons[variant] ?? icons.empty;
 
   return (
-    <div className="flex flex-col items-center justify-center gap-3 px-6 py-20 text-center">
+    <div className="flex flex-col items-center justify-center gap-3 px-4 py-12 text-center sm:px-6 sm:py-20">
       <div className="relative">
         <div className="absolute -inset-3 rounded-full bg-radial-accent" aria-hidden="true" />
         <div className="relative flex h-16 w-16 items-center justify-center rounded-2xl border border-border bg-surface shadow-sm">
           <Icon className="h-7 w-7 text-accent" aria-hidden="true" />
         </div>
       </div>
-      <p className="mt-2 font-display text-xl font-bold tracking-tight text-foreground">{title}</p>
+      <p className="mt-2 font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">{title}</p>
       {description && <p className="max-w-sm text-sm text-muted">{description}</p>}
       {action && (
         <Link

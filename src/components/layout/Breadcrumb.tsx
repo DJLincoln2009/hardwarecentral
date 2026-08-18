@@ -36,18 +36,18 @@ function Breadcrumb({ items }: BreadcrumbProps) {
             const isLast = i === items.length - 1;
             return (
               <Fragment key={item.label}>
-                <li>
+                <li className="min-w-0">
                   {isLast || !item.href ? (
                     <span
                       aria-current={isLast ? 'page' : undefined}
-                      className={isLast ? 'text-foreground' : ''}
+                      className={`${isLast ? 'text-foreground' : ''} block max-w-[200px] truncate sm:max-w-none sm:truncate-none`}
                     >
                       {item.label}
                     </span>
                   ) : (
                     <Link
                       href={item.href}
-                      className="transition-colors duration-150 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+                      className="block max-w-[160px] truncate transition-colors duration-150 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm sm:max-w-none sm:truncate-none"
                     >
                       {item.label}
                     </Link>

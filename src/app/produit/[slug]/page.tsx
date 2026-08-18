@@ -87,8 +87,8 @@ export default async function ProductPage({ params }: Props) {
         <Breadcrumb items={breadcrumbItems} />
       </div>
 
-      <div className="flex flex-col gap-10 lg:flex-row lg:gap-14">
-        <div className="w-full lg:w-[400px] lg:flex-shrink-0">
+      <div className="flex flex-col gap-8 sm:gap-10 lg:flex-row lg:gap-14">
+        <div className="w-full lg:w-[420px] lg:flex-shrink-0">
           <ProductGallery
             images={[product.primaryImage, ...product.gallery]}
             productName={product.name}
@@ -100,9 +100,9 @@ export default async function ProductPage({ params }: Props) {
           )}
         </div>
 
-        <div className="flex-1 space-y-6">
+        <div className="flex-1 space-y-5 sm:space-y-6">
           <div>
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="flex flex-wrap items-center gap-2 max-sm:gap-1.5">
               {brand && (
                 <Link
                   href={`/marques/${brand.code.toLowerCase()}`}
@@ -112,11 +112,11 @@ export default async function ProductPage({ params }: Props) {
                   {brand.name}
                 </Link>
               )}
-              <span className="rounded-full bg-surface-muted px-3 py-1 font-mono text-xs text-muted">
+              <span className="rounded-full bg-surface-muted px-3 py-1 font-mono text-xs text-muted max-sm:text-[11px]">
                 Réf: {product.sku}
               </span>
             </div>
-            <h1 className="mt-3 font-display text-2xl font-extrabold leading-tight tracking-tight text-foreground lg:text-3xl">
+            <h1 className="mt-3 font-display text-xl font-extrabold leading-tight tracking-tight text-foreground sm:text-2xl lg:text-3xl">
               {stripBrandPrefix(product.name, product.brand)}
             </h1>
           </div>
@@ -141,10 +141,10 @@ export default async function ProductPage({ params }: Props) {
           {product.specs.length > 0 && (
             <div>
               <p className="eyebrow mb-2.5">Caractéristiques clés</p>
-              <ul className="space-y-2">
+              <ul className="space-y-1.5 sm:space-y-2">
                 {product.specs.slice(0, 4).map((s) => (
-                  <li key={s.label} className="flex items-baseline gap-2.5 text-sm leading-snug">
-                    <Check className="h-4 w-4 shrink-0 translate-y-0.5 text-accent" aria-hidden="true" />
+                  <li key={s.label} className="flex items-baseline gap-2 text-xs sm:gap-2.5 sm:text-sm leading-snug">
+                    <Check className="h-3.5 w-3.5 shrink-0 translate-y-0.5 text-accent sm:h-4 sm:w-4" aria-hidden="true" />
                     <span className="text-muted">
                       <span className="font-semibold text-foreground">{s.label} :</span>{' '}
                       {s.value}
@@ -163,7 +163,7 @@ export default async function ProductPage({ params }: Props) {
                   href={ds.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-border-strong bg-surface px-4 py-2.5 text-sm font-medium text-foreground transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                  className="inline-flex items-center justify-center gap-2 rounded-lg border border-border-strong bg-surface px-4 py-2.5 text-sm font-medium text-foreground transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent max-sm:text-xs max-sm:py-2"
                 >
                   <Download className="h-4 w-4 text-accent" aria-hidden="true" />
                   Télécharger la fiche technique (PDF)
@@ -177,10 +177,10 @@ export default async function ProductPage({ params }: Props) {
         </div>
       </div>
 
-      <div className="mt-14 space-y-10">
+      <div className="mt-10 space-y-8 sm:mt-14 sm:space-y-10">
         <section>
-          <div className="mb-5 flex items-center gap-3">
-            <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground">
+          <div className="mb-5 flex items-center gap-3 max-sm:mb-4">
+            <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground max-sm:text-lg">
               Caractéristiques techniques
             </h2>
             <span className="h-px flex-1 bg-border" aria-hidden="true" />
@@ -189,15 +189,15 @@ export default async function ProductPage({ params }: Props) {
         </section>
 
         {(product.certifications.length > 0 || product.compatibility.length > 0) && (
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
             {product.certifications.length > 0 && (
-              <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs">
+              <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs max-sm:p-4">
                 <h3 className="text-sm font-semibold text-foreground">Certifications</h3>
-                <ul className="mt-2.5 flex flex-wrap gap-2">
+                <ul className="mt-2.5 flex flex-wrap gap-2 max-sm:mt-2 max-sm:gap-1.5">
                   {product.certifications.map((cert) => (
                     <li
                       key={cert}
-                      className="rounded-full bg-surface-muted px-3 py-1.5 text-xs font-medium text-muted"
+                      className="rounded-full bg-surface-muted px-3 py-1.5 text-xs font-medium text-muted max-sm:px-2.5 max-sm:py-1 max-sm:text-[11px]"
                     >
                       {cert}
                     </li>
@@ -206,13 +206,13 @@ export default async function ProductPage({ params }: Props) {
               </div>
             )}
             {product.compatibility.length > 0 && (
-              <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs">
+              <div className="rounded-2xl border border-border bg-surface p-5 shadow-xs max-sm:p-4">
                 <h3 className="text-sm font-semibold text-foreground">Compatibilité</h3>
-                <ul className="mt-2.5 flex flex-wrap gap-2">
+                <ul className="mt-2.5 flex flex-wrap gap-2 max-sm:mt-2 max-sm:gap-1.5">
                   {product.compatibility.map((comp) => (
                     <li
                       key={comp}
-                      className="rounded-full bg-surface-muted px-3 py-1.5 text-xs font-medium text-muted"
+                      className="rounded-full bg-surface-muted px-3 py-1.5 text-xs font-medium text-muted max-sm:px-2.5 max-sm:py-1 max-sm:text-[11px]"
                     >
                       {comp}
                     </li>
@@ -225,13 +225,13 @@ export default async function ProductPage({ params }: Props) {
 
         {product.fullDescription && (
           <section>
-            <div className="mb-5 flex items-center gap-3">
-              <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground">
+            <div className="mb-5 flex items-center gap-3 max-sm:mb-4">
+              <h2 className="font-display text-xl font-extrabold tracking-tight text-foreground max-sm:text-lg">
                 Description
               </h2>
               <span className="h-px flex-1 bg-border" aria-hidden="true" />
             </div>
-            <p className="max-w-3xl whitespace-pre-line text-sm leading-relaxed text-muted">
+            <p className="max-w-3xl whitespace-pre-line text-sm leading-relaxed text-muted sm:text-sm max-sm:text-xs max-sm:leading-relaxed">
               {product.fullDescription}
             </p>
           </section>

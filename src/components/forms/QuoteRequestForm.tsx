@@ -96,7 +96,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
           </Button>
         </div>
       ) : (
-        <form onSubmit={handleSubmit} className="space-y-3">
+        <form onSubmit={handleSubmit} className="space-y-3 sm:space-y-3">
           <HoneypotField />
 
           <Input
@@ -141,7 +141,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
               Produits dans la demande ({items.length})
             </p>
             {items.length > 0 ? (
-              <ul className="space-y-1.5">
+              <ul className="max-h-40 space-y-1.5 overflow-y-auto">
                 {items.map((item) => (
                   <li key={item.productId} className="flex items-center gap-2 text-sm text-muted">
                     <span className="flex-1 truncate">
@@ -175,8 +175,8 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
             </p>
           )}
 
-          <div className="flex gap-3">
-            <Button type="submit" loading={status === 'submitting'} className="flex-1 justify-center">
+          <div className="flex flex-col-reverse gap-2 sm:flex-row sm:gap-3">
+            <Button type="submit" loading={status === 'submitting'} className="w-full justify-center sm:flex-1">
               Envoyer la demande
             </Button>
             <Button
@@ -184,6 +184,7 @@ function QuoteRequestForm({ open, onClose }: QuoteRequestFormProps) {
               variant="secondary"
               onClick={handleClose}
               disabled={status === 'submitting'}
+              className="w-full sm:w-auto"
             >
               Annuler
             </Button>

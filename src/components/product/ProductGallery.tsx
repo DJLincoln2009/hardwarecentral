@@ -29,21 +29,21 @@ function ProductGallery({ images, productName }: ProductGalleryProps) {
         width={900}
         height={900}
         priority
-        className="aspect-square rounded-2xl border border-border bg-surface shadow-xs"
+        className="aspect-square w-full rounded-2xl border border-border bg-surface shadow-xs"
         imageClassName="p-3"
       >
         <button
           type="button"
           onClick={() => setLightboxOpen(true)}
           aria-label="Agrandir l'image"
-          className="absolute right-3 top-3 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-surface/90 text-muted shadow-sm backdrop-blur-sm transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          className="absolute right-2.5 top-2.5 flex h-10 w-10 items-center justify-center rounded-full border border-border bg-surface/90 text-muted shadow-sm backdrop-blur-sm transition-all duration-150 hover:border-accent hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent sm:right-3 sm:top-3 sm:h-11 sm:w-11"
         >
           <ZoomIn className="h-4.5 w-4.5" aria-hidden="true" />
         </button>
       </ProductImage>
       {images.length > 1 && (
         <div
-          className="flex gap-2.5 overflow-x-auto no-scrollbar"
+          className="flex gap-2 overflow-x-auto no-scrollbar sm:gap-2.5"
           role="tablist"
           aria-label="Sélectionner une image"
         >

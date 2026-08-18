@@ -35,20 +35,20 @@ function DevisContent() {
   ];
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-8 lg:px-6">
-      <div className="mb-8">
+    <div className="mx-auto max-w-3xl px-4 py-6 lg:px-6 lg:py-8">
+      <div className="mb-6 lg:mb-8">
         <div className="mb-4">
           <Breadcrumb items={breadcrumbItems} />
         </div>
         {products.length > 0 ? (
-          <div className="flex flex-wrap items-end justify-between gap-4">
+          <div className="flex flex-wrap items-end justify-between gap-3 sm:gap-4">
             <div>
               <p className="eyebrow mb-1.5">Devis</p>
               <h1 className="font-display text-display font-extrabold tracking-tight text-foreground">
                 Ma liste de devis
               </h1>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="flex items-center gap-2 sm:gap-3">
               <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface px-3.5 py-1.5 text-xs font-semibold text-muted shadow-xs">
                 <span className="h-1.5 w-1.5 rounded-full bg-teal-600" aria-hidden="true" />
                 {products.length} article{products.length !== 1 ? 's' : ''}
@@ -56,7 +56,7 @@ function DevisContent() {
               <button
                 type="button"
                 onClick={clearAll}
-                className="inline-flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm font-medium text-muted transition-colors hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="inline-flex items-center gap-1 rounded-lg px-2 py-1.5 text-sm font-medium text-muted transition-colors hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-11 min-w-11 justify-center sm:min-h-auto sm:min-w-auto sm:justify-start"
               >
                 <Trash2 className="h-3.5 w-3.5" aria-hidden="true" />
                 Tout vider
@@ -72,64 +72,68 @@ function DevisContent() {
             {products.map(({ productId, name, sku, brand, quantity, product }) => (
               <li
                 key={productId}
-                className="group flex items-center gap-4 rounded-2xl border border-border bg-surface p-4 shadow-xs transition-all duration-200 hover:border-border-strong hover:shadow-md"
+                className="group rounded-2xl border border-border bg-surface p-4 shadow-xs transition-all duration-200 hover:border-border-strong hover:shadow-md max-sm:p-3"
               >
-                <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface">
-                  {product.primaryImage.url ? (
-                      <Image
-                        src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
-                        alt={product.primaryImage.alt}
-                        fill
-                        sizes="64px"
-                        className="object-contain p-1.5"
-                      />
-                  ) : (
-                    <FileText className="h-6 w-6 text-faint" aria-hidden="true" />
-                  )}
-                </div>
-                <div className="min-w-0 flex-1">
-                  <Link
-                    href={`/produit/${productId}`}
-                    className="text-sm font-semibold text-foreground transition-colors hover:text-accent line-clamp-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
-                  >
-                    {name}
-                  </Link>
-                  <p className="mt-0.5 font-mono text-xs text-muted">
-                    {brand} &middot; SKU: {sku}
-                  </p>
-                </div>
-                <div className="flex items-center rounded-lg border border-border bg-surface">
+                <div className="flex items-center gap-4 max-sm:gap-3">
+                  <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface max-sm:h-12 max-sm:w-12">
+                    {product.primaryImage.url ? (
+                        <Image
+                          src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
+                          alt={product.primaryImage.alt}
+                          fill
+                          sizes="64px"
+                          className="object-contain p-1.5"
+                        />
+                    ) : (
+                      <FileText className="h-6 w-6 text-faint" aria-hidden="true" />
+                    )}
+                  </div>
+                  <div className="min-w-0 flex-1">
+                    <Link
+                      href={`/produit/${productId}`}
+                      className="text-sm font-semibold text-foreground transition-colors hover:text-accent line-clamp-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-sm"
+                    >
+                      {name}
+                    </Link>
+                    <p className="mt-0.5 font-mono text-xs text-muted max-sm:text-[11px]">
+                      {brand} &middot; SKU: {sku}
+                    </p>
+                  </div>
                   <button
                     type="button"
-                    onClick={() => updateQuantity(productId, quantity - 1)}
-                    aria-label={`Diminuer la quantité de ${name}`}
-                    className="flex h-9 w-9 items-center justify-center rounded-l-lg text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
+                    onClick={() => removeItem(productId)}
+                    aria-label={`Retirer ${name}`}
+                    className="rounded-lg p-2.5 text-faint transition-colors hover:bg-surface-muted hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent min-h-11 min-w-11 sm:min-h-auto sm:min-w-auto flex items-center justify-center"
                   >
-                    <Minus className="h-3.5 w-3.5" aria-hidden="true" />
-                  </button>
-                  <span
-                    aria-live="polite"
-                    className={cn('w-9 border-x border-border text-center font-mono text-sm font-semibold text-foreground')}
-                  >
-                    {quantity}
-                  </span>
-                  <button
-                    type="button"
-                    onClick={() => updateQuantity(productId, quantity + 1)}
-                    aria-label={`Augmenter la quantité de ${name}`}
-                    className="flex h-9 w-9 items-center justify-center rounded-r-lg text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset"
-                  >
-                    <Plus className="h-3.5 w-3.5" aria-hidden="true" />
+                    <Trash2 className="h-4 w-4" aria-hidden="true" />
                   </button>
                 </div>
-                <button
-                  type="button"
-                  onClick={() => removeItem(productId)}
-                  aria-label={`Retirer ${name}`}
-                  className="rounded-lg p-2.5 text-faint transition-colors hover:bg-surface-muted hover:text-danger-text focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
-                >
-                  <Trash2 className="h-4 w-4" aria-hidden="true" />
-                </button>
+                <div className="mt-3 flex items-center justify-end border-t border-border/60 pt-3 max-sm:mt-2 max-sm:pt-2">
+                  <div className="flex items-center rounded-lg border border-border bg-surface">
+                    <button
+                      type="button"
+                      onClick={() => updateQuantity(productId, quantity - 1)}
+                      aria-label={`Diminuer la quantité de ${name}`}
+                      className="flex min-h-11 min-w-11 items-center justify-center rounded-l-lg text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset sm:h-10 sm:w-10"
+                    >
+                      <Minus className="h-4 w-4" aria-hidden="true" />
+                    </button>
+                    <span
+                      aria-live="polite"
+                      className={cn('w-11 border-x border-border text-center font-mono text-sm font-semibold text-foreground sm:w-10')}
+                    >
+                      {quantity}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => updateQuantity(productId, quantity + 1)}
+                      aria-label={`Augmenter la quantité de ${name}`}
+                      className="flex min-h-11 min-w-11 items-center justify-center rounded-r-lg text-muted transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-inset sm:h-10 sm:w-10"
+                    >
+                      <Plus className="h-4 w-4" aria-hidden="true" />
+                    </button>
+                  </div>
+                </div>
               </li>
             ))}
           </ul>
@@ -140,7 +144,7 @@ function DevisContent() {
             glow
             icon={<ArrowRight className="h-4 w-4" />}
             onClick={() => setQuoteModalOpen(true)}
-            className="mt-8 w-full justify-center"
+            className="mt-6 w-full justify-center sm:mt-8 pb-[env(safe-area-inset-bottom)]"
           >
             Demander un devis pour {totalUnits} unité{totalUnits > 1 ? 's' : ''} ({products.length} article{products.length > 1 ? 's' : ''})
           </Button>
