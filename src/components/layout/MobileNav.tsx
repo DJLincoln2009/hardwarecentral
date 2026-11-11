@@ -2,8 +2,9 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { X, Heart, FileText, Search, Server, ArrowRight, ChevronRight } from 'lucide-react';
+import { X, Heart, FileText, Search, ArrowRight, ChevronRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import SiteLogo from './SiteLogo';
 import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
 import { useFocusTrap } from '@/lib/hooks/useFocusTrap';
 import { getNavbarCategories, getCategoryRoute } from '@/lib/data/categories';
@@ -77,14 +78,7 @@ function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
           >
             {/* Header */}
             <div className="flex items-center justify-between border-b border-border px-5 py-4">
-              <span className="flex items-center gap-2.5">
-                <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-teal-500 to-teal-800">
-                  <Server className="h-4 w-4 text-white" aria-hidden="true" />
-                </span>
-                <span className="font-display text-base font-extrabold tracking-tight text-foreground">
-                  Menu
-                </span>
-              </span>
+              <SiteLogo className="h-9" />
               <button
                 type="button"
                 onClick={onClose}
@@ -129,7 +123,10 @@ function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
                         className="flex min-h-12 w-full items-center justify-between rounded-xl px-3 py-2.5 text-left text-sm text-foreground transition-colors hover:bg-surface-muted active:bg-surface-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                       >
                         <span>{cat.name}</span>
-                        <ChevronRight className="h-4 w-4 shrink-0 text-faint/60" aria-hidden="true" />
+                        <ChevronRight
+                          className="h-4 w-4 shrink-0 text-faint/60"
+                          aria-hidden="true"
+                        />
                       </button>
                     ))}
                     <button
@@ -241,7 +238,10 @@ function MobileNav({ open, onClose, onOpenQuote }: MobileNavProps) {
                     className="flex min-h-12 w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-foreground transition-colors hover:bg-surface-muted active:bg-surface-strong focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                   >
                     <span className="flex h-5 w-5 shrink-0 items-center justify-center">
-                      <span className="h-1.5 w-1.5 rounded-full bg-graphite-400" aria-hidden="true" />
+                      <span
+                        className="h-1.5 w-1.5 rounded-full bg-graphite-400"
+                        aria-hidden="true"
+                      />
                     </span>
                     À propos
                   </button>

@@ -13,7 +13,7 @@ import {
   Wifi,
   type LucideIcon,
 } from 'lucide-react';
-import ProductImage from './ProductImage';
+import ProductVisual from './ProductVisual';
 import ProductAvailabilityBadge from './ProductAvailabilityBadge';
 import QuoteToggleButton from './QuoteToggleButton';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
@@ -68,16 +68,19 @@ function ProductCard({ product }: ProductCardProps) {
                 : 'border-border text-faint hover:border-border-strong hover:bg-surface-muted hover:text-foreground',
             )}
           >
-            <Heart className={cn('h-3.5 w-3.5 max-sm:h-4 max-sm:w-4', isFav && 'fill-danger-text')} aria-hidden="true" />
+            <Heart
+              className={cn('h-3.5 w-3.5 max-sm:h-4 max-sm:w-4', isFav && 'fill-danger-text')}
+              aria-hidden="true"
+            />
           </button>
         </div>
 
-        <ProductImage
-          src={product.primaryImage.url}
-          alt={product.primaryImage.alt}
-          sizes="(max-width: 640px) 50vw, (max-width: 1280px) 33vw, 25vw"
-          className="mt-3 aspect-square w-full bg-surface max-sm:mt-2"
-          imageClassName="p-3 max-sm:p-2 transition-transform duration-300 ease-[var(--ease-out-expo)] group-hover:scale-105"
+        <ProductVisual
+          brand={product.brand}
+          productName={product.name}
+          category={product.category}
+          compact
+          className="mt-3 aspect-square w-full max-sm:mt-2"
         />
 
         <div className="mt-3 flex flex-col gap-1 max-sm:mt-2 max-sm:gap-0.5">

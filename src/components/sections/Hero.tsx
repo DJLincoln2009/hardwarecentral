@@ -4,7 +4,7 @@ import { products } from '@/lib/data/products';
 import { getActiveBrands } from '@/lib/data/brands';
 import { getActiveCategories } from '@/lib/data/categories';
 import { getFeaturedProducts } from '@/lib/data/products';
-import ProductImage from '@/components/product/ProductImage';
+import ProductVisual from '@/components/product/ProductVisual';
 import ProductAvailabilityBadge from '@/components/product/ProductAvailabilityBadge';
 
 function Hero() {
@@ -93,15 +93,12 @@ function Hero() {
               aria-hidden="true"
             />
             <div className="relative overflow-hidden rounded-2xl border border-border bg-surface/80 p-2 shadow-xl backdrop-blur-xl sm:rounded-[2rem] sm:p-3 dark:border-white/10 dark:bg-white/5">
-              <ProductImage
-                src={featured.primaryImage.url}
-                alt={featured.primaryImage.alt}
-                sizes="(max-width: 1024px) 90vw, 40vw"
-                width={1200}
-                height={900}
-                priority
-                className="aspect-[4/3] rounded-3xl bg-surface dark:bg-white/5"
-                imageClassName="p-8"
+              <ProductVisual
+                brand={featured.brand}
+                productName={featured.name}
+                category={featured.category}
+                iconSize="lg"
+                className="aspect-[4/3] rounded-3xl"
               />
               <div className="flex items-center justify-between gap-3 px-4 pt-4">
                 <div className="min-w-0">

@@ -8,11 +8,13 @@ interface LegalPageTemplateProps {
   children: ReactNode;
 }
 
-function LegalPageTemplate({ title, lastUpdated, breadcrumbLabel, children }: LegalPageTemplateProps) {
-  const breadcrumbItems = [
-    { label: 'Accueil', href: '/' },
-    { label: breadcrumbLabel },
-  ];
+function LegalPageTemplate({
+  title,
+  lastUpdated,
+  breadcrumbLabel,
+  children,
+}: LegalPageTemplateProps) {
+  const breadcrumbItems = [{ label: 'Accueil', href: '/' }, { label: breadcrumbLabel }];
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-8 lg:px-6">

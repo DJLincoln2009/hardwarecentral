@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* === MODE SOMBRE PAR CLASSE ===
    La bascule light/dark se fait en posant la classe `.dark` sur <html>.
@@ -11,9 +11,9 @@
    PRIMITIFS — valeurs brutes de marque (spec §14.2, invariables)
    ============================================================ */
 @theme {
-  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  --font-sans: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-display: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
 
   /* Graphite — neutres chauds, échelle complète 50 → 950 */
   --color-graphite-50: #f1efe8;
@@ -371,7 +371,7 @@
     color: var(--color-foreground);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    font-feature-settings: "ss01" on;
+    font-feature-settings: 'ss01' on;
     text-wrap: pretty;
   }
 
@@ -426,7 +426,8 @@
 
 /* Fond quadrillé discret (hero, sections d'emphase) */
 @utility bg-grid {
-  background-image: linear-gradient(to right, var(--hc-grid-line) 1px, transparent 1px),
+  background-image:
+    linear-gradient(to right, var(--hc-grid-line) 1px, transparent 1px),
     linear-gradient(to bottom, var(--hc-grid-line) 1px, transparent 1px);
   background-size: 32px 32px;
 }
@@ -466,12 +467,17 @@
 
 /* Halo radial accent — fonds d'ambiance discrets (hero, marque) */
 @utility bg-radial-accent {
-  background-image: radial-gradient(ellipse 80% 55% at 50% -12%, var(--hc-radial-accent), transparent 65%);
+  background-image: radial-gradient(
+    ellipse 80% 55% at 50% -12%,
+    var(--hc-radial-accent),
+    transparent 65%
+  );
 }
 
 /* Halo bicolore pour les grands fonds sombres (hero, footer) */
 @utility bg-hero-glow {
-  background-image: radial-gradient(ellipse 120% 75% at 50% -12%, var(--hc-hero-glow), transparent 62%),
+  background-image:
+    radial-gradient(ellipse 120% 75% at 50% -12%, var(--hc-hero-glow), transparent 62%),
     radial-gradient(ellipse 55% 45% at 88% 108%, var(--hc-hero-glow-2), transparent 62%);
 }
 
@@ -529,16 +535,11 @@
   overflow: hidden;
   background-color: var(--hc-surface-strong);
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: 0;
     transform: translateX(-100%);
-    background: linear-gradient(
-      90deg,
-      transparent,
-      var(--hc-surface) 45%,
-      transparent
-    );
+    background: linear-gradient(90deg, transparent, var(--hc-surface) 45%, transparent);
     animation: shimmer 1.6s ease-in-out infinite;
   }
 }
@@ -551,7 +552,7 @@
   height: 0.5rem;
   border-radius: 9999px;
   &::after {
-    content: "";
+    content: '';
     position: absolute;
     inset: -4px;
     border-radius: 9999px;

@@ -7,17 +7,19 @@ import { SITE_CONFIG } from '@/lib/site-config';
 export const metadata: Metadata = {
   title: 'À propos',
   description:
-    'Découvrez HardwareCentral, plateforme de référence pour l\'acquisition d\'équipements informatiques professionnels au Cameroun et dans la zone CEMAC.',
+    "Découvrez HardwareCentral, plateforme de référence pour l'acquisition d'équipements informatiques professionnels au Cameroun et dans la zone CEMAC.",
   alternates: { canonical: '/a-propos' },
   openGraph: {
     title: 'À propos | HardwareCentral',
     description:
-      'Découvrez HardwareCentral, plateforme de référence pour l\'acquisition d\'équipements informatiques professionnels au Cameroun et dans la zone CEMAC.',
+      "Découvrez HardwareCentral, plateforme de référence pour l'acquisition d'équipements informatiques professionnels au Cameroun et dans la zone CEMAC.",
   },
 };
 
 const identityRows = [
   { label: 'Raison sociale', value: SITE_CONFIG.companyName },
+  { label: 'Forme juridique', value: 'Établissement (ETS)' },
+  { label: 'RCCM', value: 'En cours de finalisation' },
   {
     label: 'Siège social',
     value: `${SITE_CONFIG.address.line1}, ${SITE_CONFIG.address.city}, ${SITE_CONFIG.address.country}`,
@@ -29,10 +31,7 @@ const identityRows = [
 ];
 
 export default function AboutPage() {
-  const breadcrumbItems = [
-    { label: 'Accueil', href: '/' },
-    { label: 'À propos' },
-  ];
+  const breadcrumbItems = [{ label: 'Accueil', href: '/' }, { label: 'À propos' }];
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-6 sm:py-8 lg:px-6">
@@ -53,22 +52,20 @@ export default function AboutPage() {
           </h1>
           <div className="mt-5 max-w-3xl space-y-3 text-sm leading-relaxed text-graphite-300 sm:mt-6 sm:space-y-4 sm:text-base">
             <p>
-              {SITE_CONFIG.companyName} est une plateforme digitale basée à {SITE_CONFIG.address.city},
-              Cameroun, dédiée à la distribution d&apos;équipements et d&apos;infrastructures informatiques
-              professionnelles pour les entreprises de la zone CEMAC.
+              {SITE_CONFIG.companyName} est une plateforme digitale basée à{' '}
+              {SITE_CONFIG.address.city}, Cameroun, dédiée à la distribution d&apos;équipements et
+              d&apos;infrastructures informatiques professionnelles pour les entreprises de la zone
+              CEMAC.
             </p>
             <p>
               Nous accompagnons les DSI, intégrateurs et acheteurs IT dans la sélection et
               l&apos;acquisition de serveurs, solutions de stockage, équipements réseau, sécurité
-              informatique, vidéosurveillance et stations de travail — auprès des plus grandes marques du
-              marché.
+              informatique, vidéosurveillance et stations de travail — auprès des plus grandes
+              marques du marché.
             </p>
-            {/* TODO: Confirmer la raison sociale exacte et le rôle de BTS vis-à-vis de
-                HardwareCentral avant publication définitive (cf. mentions légales). */}
             <p>
-              Le site est exploité par la société BTS, qui opère sous le nom commercial{' '}
-              {` `}
-              HardwareCentral.
+              Le site est édité par {SITE_CONFIG.legalName}, établissement camerounais spécialisé
+              dans la distribution d&apos;équipements informatiques professionnels.
             </p>
           </div>
         </div>
@@ -91,8 +88,8 @@ export default function AboutPage() {
         <BrandsGrid />
         <p className="mx-auto mt-6 max-w-2xl text-center text-xs leading-relaxed text-muted">
           Les logos et marques cités restent la propriété de leurs titulaires respectifs. Leur
-          présence n&apos;implique aucun parrainage, aucune affiliation ni aucun partenariat officiel
-          avec {SITE_CONFIG.companyName}.
+          présence n&apos;implique aucun parrainage, aucune affiliation ni aucun partenariat
+          officiel avec {SITE_CONFIG.companyName}.
         </p>
       </section>
 

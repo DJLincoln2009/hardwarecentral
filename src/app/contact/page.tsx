@@ -66,10 +66,7 @@ const contactItems = [
 ];
 
 export default function ContactPage() {
-  const breadcrumbItems = [
-    { label: 'Accueil', href: '/' },
-    { label: 'Contact' },
-  ];
+  const breadcrumbItems = [{ label: 'Accueil', href: '/' }, { label: 'Contact' }];
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-6 sm:py-8 lg:px-6">

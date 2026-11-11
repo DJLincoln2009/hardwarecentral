@@ -27,11 +27,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const applyTheme = () => {
       const resolved =
-        themePreference === 'system'
-          ? systemMatchesDark()
-            ? 'dark'
-            : 'light'
-          : themePreference;
+        themePreference === 'system' ? (systemMatchesDark() ? 'dark' : 'light') : themePreference;
       setResolvedTheme(resolved);
       document.documentElement.classList.toggle('dark', resolved === 'dark');
     };

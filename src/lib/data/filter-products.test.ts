@@ -77,7 +77,14 @@ describe('filterProducts', () => {
 
   it('handles combined filters', () => {
     const result = filterProducts({ categorie: 'server-storage', marque: 'HPE', format: '2U' });
-    expect(result.results.every((p) => p.category === 'server-storage' && p.brand === 'HPE' && p.attributes.chassisFormat === '2U')).toBe(true);
+    expect(
+      result.results.every(
+        (p) =>
+          p.category === 'server-storage' &&
+          p.brand === 'HPE' &&
+          p.attributes.chassisFormat === '2U',
+      ),
+    ).toBe(true);
   });
 
   it('interleaves brands by default (no brand after brand)', () => {

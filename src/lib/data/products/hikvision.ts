@@ -1,74 +1,17 @@
 import type { Product } from '@/types';
 
-
 export const hikvisionProducts: Product[] = [
-
-{
+  {
     id: 'hikvision-ids-2cd7a26g0-p-izhs-y',
     sku: 'iDS-2CD7A26G0/P-IZHS(Y)',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS(Y)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___0.jpg',
-      alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_1__1.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_1__1.jpg',
-        fetchedAt: '2026-08-11T10:49:18.646488Z',
-        checksum: '359b10dd1b521628acd4ee1c6cad27b809415903b959eb33b68d407b35c72cfc',
-      },
-    },
-    gallery: [
-      {
-        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___1.jpg',
-        alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
-        width: 600,
-        height: 600,
-        imageSource: 'real',
-        provenance: {
-          sourceProvider: 'retailer-scrape',
-          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_1.jpg',
-          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_1.jpg',
-          fetchedAt: '2026-08-11T10:49:19.608241Z',
-          checksum: '69eb3c6027e76b77f5f743db41004d2560d9ab0b3b7a4665fd8d1e398fecbeed',
-        },
-      },
-      {
-        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___2.jpg',
-        alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
-        width: 600,
-        height: 600,
-        imageSource: 'real',
-        provenance: {
-          sourceProvider: 'retailer-scrape',
-          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_2__1.jpg',
-          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_2__1.jpg',
-          fetchedAt: '2026-08-11T10:49:20.630847Z',
-          checksum: '9c4838141d51ecd3ad141138650d497dbc14e696ef9118148cdccd78eb0deba1',
-        },
-      },
-      {
-        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0_P-IZHS_Y___3.jpg',
-        alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD7A26G0/P-IZHS(Y)',
-        width: 600,
-        height: 600,
-        imageSource: 'real',
-        provenance: {
-          sourceProvider: 'retailer-scrape',
-          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_3__1.jpg',
-          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_3__1.jpg',
-          fetchedAt: '2026-08-11T10:49:21.574207Z',
-          checksum: '2920645f4f48f8d1b8366a442a0fc4d5224f5ed7a7b64381bc3032ad359cef59',
-        },
-      },
-    ],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -100,29 +43,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.923Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7026g0-ap',
     sku: 'DS-2CD7026G0-(AP)',
     name: 'HIKVISION DeepinView Camera DS-2CD7026G0-(AP)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7026G0-_AP___0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Moto Varifocal Box Camera DS-2CD7026G0-(AP)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_4_.jpg',
-        fetchedAt: '2026-08-11T10:49:19.603010Z',
-        checksum: 'e5c9a84462c56b267d6a41d623aea966a5290ca47bf563a67b7ad432ece8c9f4',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7026G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7026G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7026G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7026G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -154,29 +85,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.923Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7026g0-p-ap',
     sku: 'DS-2CD7026G0/P-(AP)',
     name: 'HIKVISION Network Camera DS-2CD7026G0/P-(AP)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7026g0-p-ap/images/products_hikvision-ds-2cd7026g0-p-ap_images_DS-2CD7026G0_P-_AP___0.png',
-      alt: 'hikvision ds 2cd7026g0 p ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:15.293Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera DS-2CD7026G0/P-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera DS-2CD7026G0/P-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera DS-2CD7026G0/P-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera DS-2CD7026G0/P-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -200,29 +119,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7085g0-ap',
     sku: 'DS-2CD7085G0-(AP)',
     name: 'HIKVISION DeepinView Camera DS-2CD7085G0-(AP)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7085g0-ap/images/products_hikvision-ds-2cd7085g0-ap_images_DS-2CD7085G0-_AP___0.png',
-      alt: 'hikvision ds 2cd7085g0 ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:19.258Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7085G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7085G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7085G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7085G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -254,44 +161,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7126g0-l-izs',
     sku: 'DS-2CD7126G0/L-IZS',
     name: 'HIKVISION DeepinView Camera DS-2CD7126G0/L-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0_L-IZS__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Flow Analysis Indoor Moto Varifocal Dome Camera DS-2CD7126G0/L-IZS',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_5_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_5_.jpg',
-        fetchedAt: '2026-08-11T10:49:21.390479Z',
-        checksum: 'c8d76a528566eab3d85956f7bf005ddd16b40a9264a3526163ed4ed5603ca62e',
-      },
-    },
-    gallery: [
-      {
-        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0_L-IZS__1.jpg',
-        alt: 'HIKVISION 2 MP DeepinView Flow Analysis Indoor Moto Varifocal Dome Camera DS-2CD7126G0/L-IZS',
-        width: 600,
-        height: 600,
-        imageSource: 'real',
-        provenance: {
-          sourceProvider: 'retailer-scrape',
-          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_6_.jpg',
-          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_6_.jpg',
-          fetchedAt: '2026-08-11T10:49:22.342890Z',
-          checksum: '90c33dacf968d6ef1a1767052203abf65692940f9c5797f55741167e8a3331a6',
-        },
-      },
-    ],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7126G0/L-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7126G0/L-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Analyse de flux. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7126G0/L-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7126G0/L-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Analyse de flux. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -327,29 +207,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd8146g0-izs',
     sku: 'iDS-2CD8146G0-IZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD8146G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8146G0-IZS__0.jpg',
-      alt: 'HIKVISION 4 MP DeepinView Face Recognition Indoor Moto Varifocal Dome Camera iDS-2CD8146G0-IZS',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_7_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_7_.jpg',
-        fetchedAt: '2026-08-11T10:49:21.624020Z',
-        checksum: '1bbeac528660bde5befaf2215726f235c964e27a7b2b392345b31ea948d5ba94',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Reconnaissance faciale. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Reconnaissance faciale. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -385,29 +253,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7026g0-ep-i-h',
     sku: 'DS-2CD7026G0/EP-I(H)',
     name: 'HIKVISION Smart Network Camera DS-2CD7026G0/EP-I(H)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7026G0_EP-I_H___0.jpg',
-      alt: 'HIKVISION 2 MP Smart Network Box Camera DS-2CD7026G0/EP-I(H)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_8_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_8_.jpg',
-        fetchedAt: '2026-08-11T10:49:22.581953Z',
-        checksum: '85b6d3b3e67ac5ac37d645ab178146472320ef12c12d4948f6b20041049d4976',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Smart Network Camera DS-2CD7026G0/EP-I(H) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Smart Network Camera DS-2CD7026G0/EP-I(H) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Smart Network Camera DS-2CD7026G0/EP-I(H) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Smart Network Camera DS-2CD7026G0/EP-I(H) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -431,29 +287,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7046g0-ap',
     sku: 'DS-2CD7046G0-(AP)',
     name: 'HIKVISION Network Camera DS-2CD7046G0-(AP)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7046g0-ap/images/products_hikvision-ds-2cd7046g0-ap_images_DS-2CD7046G0-_AP___0.png',
-      alt: 'hikvision ds 2cd7046g0 ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:21.640Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera DS-2CD7046G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera DS-2CD7046G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera DS-2CD7046G0-(AP) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera DS-2CD7046G0-(AP) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -477,44 +321,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7126g0-izs',
     sku: 'DS-2CD7126G0-IZS',
     name: 'HIKVISION DeepinView Camera DS-2CD7126G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0-IZS__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7126G0-IZS',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_9_.jpg',
-        fetchedAt: '2026-08-11T10:49:23.350923Z',
-        checksum: '222730226d104232e3d51b422dcfdba65d35d75ea609e2b0d797f23a2bc42f01',
-      },
-    },
-    gallery: [
-      {
-        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7126G0-IZS__1.jpg',
-        alt: 'HIKVISION 2 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7126G0-IZS',
-        width: 600,
-        height: 600,
-        imageSource: 'real',
-        provenance: {
-          sourceProvider: 'retailer-scrape',
-          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10_.jpg',
-          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10_.jpg',
-          fetchedAt: '2026-08-11T10:49:24.316040Z',
-          checksum: '7dd9d30808098e7415f5d8d7047ed5986f53dd93a0fd56c84aaa22472405e638',
-        },
-      },
-    ],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -550,44 +367,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7146g0-izs',
     sku: 'DS-2CD7146G0-IZS',
     name: 'HIKVISION DeepinView Camera DS-2CD7146G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7146g0-izs/images/products_hikvision-ds-2cd7146g0-izs_images_DS-2CD7146G0-IZS__0.png',
-      alt: 'hikvision ds 2cd7146g0 izs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000000439/71XX-Dome-01.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000000439/71XX-Dome-01.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T12:00:02.813Z',
-        checksum: '12b529073e5e53c6f83a8b32b1196e02f175a7790cd847c32dfe8121104fb983',
-      },
-    },
-    gallery: [
-      {
-        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7146G0-IZS__1.jpg',
-        alt: 'HIKVISION 4 MP DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7146G0-IZS',
-        width: 600,
-        height: 600,
-        imageSource: 'real',
-        provenance: {
-          sourceProvider: 'retailer-scrape',
-          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1.jpg',
-          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1.jpg',
-          fetchedAt: '2026-08-11T10:49:24.542673Z',
-          checksum: '7dd9d30808098e7415f5d8d7047ed5986f53dd93a0fd56c84aaa22472405e638',
-        },
-      },
-    ],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -623,44 +413,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.924Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7185g0-izs',
     sku: 'DS-2CD7185G0-IZS',
     name: 'HIKVISION DeepinView Camera DS-2CD7185G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7185g0-izs/images/products_hikvision-ds-2cd7185g0-izs_images_DS-2CD7185G0-IZS__0.png',
-      alt: 'hikvision ds 2cd7185g0 izs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000000439/71XX-Dome-01.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000000439/71XX-Dome-01.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T12:00:05.987Z',
-        checksum: '12b529073e5e53c6f83a8b32b1196e02f175a7790cd847c32dfe8121104fb983',
-      },
-    },
-    gallery: [
-      {
-        url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7185G0-IZS__1.jpg',
-        alt: 'HIKVISION 4K DeepinView Indoor Moto Varifocal Dome Camera DS-2CD7185G0-IZS',
-        width: 600,
-        height: 600,
-        imageSource: 'real',
-        provenance: {
-          sourceProvider: 'retailer-scrape',
-          sourceUrl: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1_1.jpg',
-          sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/h/i/hikvision_10__1_1.jpg',
-          fetchedAt: '2026-08-11T10:49:24.654216Z',
-          checksum: '7dd9d30808098e7415f5d8d7047ed5986f53dd93a0fd56c84aaa22472405e638',
-        },
-      },
-    ],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7185G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7185G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7185G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7185G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -696,29 +459,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7526g0-iz-h-sy',
     sku: 'DS-2CD7526G0-IZ(H)SY',
     name: 'HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)SY',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7526G0-IZ_H_SY__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)SY',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_11_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_11_.jpg',
-        fetchedAt: '2026-08-11T10:49:25.293940Z',
-        checksum: '905ae2e563c03182a733740e88e744b70308f9feecff70ef3a60a6e02f2a4b0f',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -754,29 +505,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7546g0-iz-h-sy',
     sku: 'DS-2CD7546G0-IZ(H)SY',
     name: 'HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)SY',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7546g0-iz-h-sy/images/products_hikvision-ds-2cd7546g0-iz-h-sy_images_DS-2CD7546G0-IZ_H_SY__0.png',
-      alt: 'hikvision ds 2cd7546g0 iz h sy',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019598/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019598/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T12:00:17.785Z',
-        checksum: 'c9786c260e4b3947eeb73f4cd92aaaa2b3ca00eeecf1562d849c2492deaf1d3c',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -812,29 +551,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7a26g0-iz-h-s',
     sku: 'DS-2CD7A26G0-IZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0-IZ_H_S__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)S',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new_project_-_2021-04-17t121928.084.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/n/e/new_project_-_2021-04-17t121928.084.jpg',
-        fetchedAt: '2026-08-11T10:49:25.609931Z',
-        checksum: 'f1800b9def8100c831c095a0fae908d2b903e1245d8f6edd31692cf118cb1638',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -866,29 +593,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7a26g0-p-iz-h-s',
     sku: 'DS-2CD7A26G0/P-IZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7A26G0/P-IZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0_P-IZ_H_S__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-IZ(H)S',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_13_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_13_.jpg',
-        fetchedAt: '2026-08-11T10:49:26.218396Z',
-        checksum: '9ed4cc75a7adc070f86786a44666caccc07660c3e8720a7bfbb398d38a7fa452',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -920,29 +635,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7526g0-iz-h-s',
     sku: 'DS-2CD7526G0-IZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7526G0-IZ_H_S__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7526G0-IZ(H)S',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_14_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_14_.jpg',
-        fetchedAt: '2026-08-11T10:49:26.425652Z',
-        checksum: '6ba43d039cbefb4764d2792fddbbe9f84a6503d80caffc2cc56606d60ce8f4f3',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7526G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -978,29 +681,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7546g0-iz-h-s',
     sku: 'DS-2CD7546G0-IZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7546g0-iz-h-s/images/products_hikvision-ds-2cd7546g0-iz-h-s_images_DS-2CD7546G0-IZ_H_S__0.png',
-      alt: 'hikvision ds 2cd7546g0 iz h s',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019598/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019598/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T12:00:20.019Z',
-        checksum: 'c9786c260e4b3947eeb73f4cd92aaaa2b3ca00eeecf1562d849c2492deaf1d3c',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7546G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1036,29 +727,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7585g0-iz-h-s',
     sku: 'DS-2CD7585G0-IZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7585G0-IZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7585G0-IZ_H_S__0.jpg',
-      alt: 'HIKVISION 4K DeepinView Outdoor Moto Varifocal Dome Camera DS-2CD7585G0-IZ(H)S',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_15_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_15_.jpg',
-        fetchedAt: '2026-08-11T10:49:27.173793Z',
-        checksum: '84ff45a84cc416fb3f5aa67b9dcedbc3162e880a2865a148ad721c78483ca1ff',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7585G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7585G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7585G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7585G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1094,29 +773,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.925Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7a26g0-iz-h-sy',
     sku: 'DS-2CD7A26G0-IZ(H)SY',
     name: 'HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)SY',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0-IZ_H_SY__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A26G0-IZ(H)SY',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_16_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_16_.jpg',
-        fetchedAt: '2026-08-11T10:49:27.390424Z',
-        checksum: '4b6dbab2954c7ce6d590af9440b0c408aeaeb50a9332aee68ef4d739d471bf00',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1148,29 +815,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7a26g0-p-lz-h-s',
     sku: 'DS-2CD7A26G0/P-LZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7A26G0/P-LZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A26G0_P-LZ_H_S__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera DS-2CD7A26G0/P-LZ(H)S',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_17_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_17_.jpg',
-        fetchedAt: '2026-08-11T10:49:27.509609Z',
-        checksum: 'dc36d35bb733e919c280e9d602ee683543560b739c5f22de3f90acea67f181c3',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-LZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-LZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-LZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A26G0/P-LZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1202,29 +857,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7a46g0-iz-h-s',
     sku: 'DS-2CD7A46G0-IZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A46G0-IZ_H_S__0.jpg',
-      alt: 'HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)S',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_18_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_18_.jpg',
-        fetchedAt: '2026-08-11T10:49:28.234491Z',
-        checksum: '3a515da73423b628d7d4c58cb0e587968fe067cc466bf594c3cf624c159789cd',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1256,29 +899,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7a85g0-iz-h-s',
     sku: 'DS-2CD7A85G0-IZ(H)S',
     name: 'HIKVISION DeepinView Camera DS-2CD7A85G0-IZ(H)S',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd7a85g0-iz-h-s/images/products_hikvision-ds-2cd7a85g0-iz-h-s_images_DS-2CD7A85G0-IZ_H_S__0.png',
-      alt: 'hikvision ds 2cd7a85g0 iz h s',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T12:00:21.789Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A85G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A85G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A85G0-IZ(H)S de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A85G0-IZ(H)S de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1310,29 +941,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: true,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7046g0-ap-f11',
     sku: 'iDS-2CD7046G0(-AP)(/F11)',
     name: 'HIKVISION DeepinView Camera iDS-2CD7046G0(-AP)(/F11)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7046G0_-AP___F11___0.jpg',
-      alt: 'HIKVISION 4MP DeepinView Moto Varifocal Box Camera iDS-2CD7046G0(-AP)(/F11)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19_.jpg',
-        fetchedAt: '2026-08-11T10:49:28.475581Z',
-        checksum: '9177e974950c2e5da249e7e08280c312e3e92d06e74c5dfdce51704c7e22e849',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7046G0(-AP)(/F11) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7046G0(-AP)(/F11) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7046G0(-AP)(/F11) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7046G0(-AP)(/F11) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1364,29 +983,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7026g0-p-ap',
     sku: 'iDS-2CD7026G0/P-AP',
     name: 'HIKVISION DeepinView Camera iDS-2CD7026G0/P-AP',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7026G0_P-AP__0.jpg',
-      alt: 'HIKVISION 2MP DeepinView ANPR Moto Varifocal Box Camera iDS-2CD7026G0/P-AP',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__1_1_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_19__1_1_.jpg',
-        fetchedAt: '2026-08-11T10:49:29.199172Z',
-        checksum: 'f07f6a5955cf617e029bcbec2db58f2d6e65d7daf203ee02c86bc469584985b1',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7026G0/P-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7026G0/P-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7026G0/P-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7026G0/P-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1418,29 +1025,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7046g0-p-ap',
     sku: 'iDS-2CD7046G0/P-AP',
     name: 'HIKVISION DeepinView Camera iDS-2CD7046G0/P-AP',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7046g0-p-ap/images/products_hikvision-ids-2cd7046g0-p-ap_images_iDS-2CD7046G0_P-AP__0.png',
-      alt: 'hikvision ids 2cd7046g0 p ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:37.662Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7046G0/P-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7046G0/P-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7046G0/P-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7046G0/P-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1472,29 +1067,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd7a46g0-iz-h-sy',
     sku: 'DS-2CD7A46G0-IZ(H)SY',
     name: 'HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)SY',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD7A46G0-IZ_H_SY__0.jpg',
-      alt: 'HIKVISION 4 MP DeepinView Moto Varifocal Bullet Camera DS-2CD7A46G0-IZ(H)SY',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_20__1_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_20__1_.jpg',
-        fetchedAt: '2026-08-11T10:49:29.443725Z',
-        checksum: '6af2ee9d671a3b993e6f70b72d84c274960c89e759f94b8d9ad1420f07c245c0',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera DS-2CD7A46G0-IZ(H)SY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1526,29 +1109,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7026g0-ap',
     sku: 'iDS-2CD7026G0-AP',
     name: 'HIKVISION DeepinView Camera iDS-2CD7026G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7026g0-ap/images/products_hikvision-ids-2cd7026g0-ap_images_iDS-2CD7026G0-AP__0.png',
-      alt: 'hikvision ids 2cd7026g0 ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:39.218Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7026G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7026G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7026G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7026G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1580,29 +1151,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7026g0-s-ap',
     sku: 'iDS-2CD7026G0/S-AP',
     name: 'HIKVISION DeepinView Camera iDS-2CD7026G0/S-AP',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7026g0-s-ap/images/products_hikvision-ids-2cd7026g0-s-ap_images_iDS-2CD7026G0_S-AP__0.png',
-      alt: 'hikvision ids 2cd7026g0 s ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:40.798Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7026G0/S-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7026G0/S-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7026G0/S-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7026G0/S-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1634,29 +1193,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.926Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7046g0-ap',
     sku: 'iDS-2CD7046G0-AP',
     name: 'HIKVISION DeepinView Camera iDS-2CD7046G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7046g0-ap/images/products_hikvision-ids-2cd7046g0-ap_images_iDS-2CD7046G0-AP__0.png',
-      alt: 'hikvision ids 2cd7046g0 ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:42.347Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7046G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7046G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7046G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7046G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1688,29 +1235,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7086g0-ap',
     sku: 'iDS-2CD7086G0-AP',
     name: 'HIKVISION DeepinView Camera iDS-2CD7086G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7086g0-ap/images/products_hikvision-ids-2cd7086g0-ap_images_iDS-2CD7086G0-AP__0.png',
-      alt: 'hikvision ids 2cd7086g0 ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:43.914Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7086G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7086G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7086G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7086G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1742,29 +1277,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd70c5g0-ap',
     sku: 'iDS-2CD70C5G0-AP',
     name: 'HIKVISION DeepinView Camera iDS-2CD70C5G0-AP',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd70c5g0-ap/images/products_hikvision-ids-2cd70c5g0-ap_images_iDS-2CD70C5G0-AP__0.png',
-      alt: 'hikvision ids 2cd70c5g0 ap',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000031897/%E6%9E%AA%E6%9C%BA14-%E5%9F%BA%E7%BA%BF-%E6%B5%B7%E5%BA%B7%E7%99%BD-%E6%97%A0%E9%95%9C%E5%A4%B4-%E5%B7%A6%E4%BE%A7.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:45.582Z',
-        checksum: 'ea310ec059502199c6d6154072b86cc20fefa8adbb9e95a7e0e5d1268ff761aa',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD70C5G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD70C5G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD70C5G0-AP de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD70C5G0-AP de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Box ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1796,29 +1319,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7146g0-izs',
     sku: 'iDS-2CD7146G0-IZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7146G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7146G0-IZS__0.jpg',
-      alt: 'HIKVISION 4MP DeepinView Indoor Moto Varifocal Dome Camera iDS-2CD7146G0-IZS',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_21_.jpg',
-        fetchedAt: '2026-08-11T10:49:31.343698Z',
-        checksum: '0690e656c58313c0605d12a4c4a678a12dae381b50a176fa25564a31da6659dc',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7146G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1854,29 +1365,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7186g0-izs',
     sku: 'iDS-2CD7186G0-IZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7186G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7186g0-izs/images/products_hikvision-ids-2cd7186g0-izs_images_iDS-2CD7186G0-IZS__0.png',
-      alt: 'hikvision ids 2cd7186g0 izs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:47.454Z',
-        checksum: '496b9fabd387e6d264c31bb7bea8953b4246a0ae869250536e79e1f672f0ab4b',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7186G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7186G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7186G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7186G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1912,29 +1411,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd71c5g0-izs',
     sku: 'iDS-2CD71C5G0-IZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD71C5G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd71c5g0-izs/images/products_hikvision-ids-2cd71c5g0-izs_images_iDS-2CD71C5G0-IZS__0.png',
-      alt: 'hikvision ids 2cd71c5g0 izs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:48.889Z',
-        checksum: '496b9fabd387e6d264c31bb7bea8953b4246a0ae869250536e79e1f672f0ab4b',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD71C5G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD71C5G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD71C5G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD71C5G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -1970,29 +1457,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7546g0-izhs-y-r',
     sku: 'iDS-2CD7546G0-IZHS(Y)(R)',
     name: 'HIKVISION DeepinView Camera iDS-2CD7546G0-IZHS(Y)(R)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7546G0-IZHS_Y__R___0.jpg',
-      alt: 'HIKVISION 4MP DeepinView Outdoor Moto Varifocal Dome Camera iDS-2CD7546G0-IZHS(Y)(R)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_22_.jpg',
-        fetchedAt: '2026-08-11T10:49:32.309443Z',
-        checksum: '8f3aa522455a556469460121062c6db0d454bfb4b02e5bd476ac9255879470c0',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7546G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7546G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7546G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7546G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2028,29 +1503,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7126g0-izs',
     sku: 'iDS-2CD7126G0-IZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7126G0-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7126g0-izs/images/products_hikvision-ids-2cd7126g0-izs_images_iDS-2CD7126G0-IZS__0.png',
-      alt: 'hikvision ids 2cd7126g0 izs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000000439/71XX-Dome-01.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000000439/71XX-Dome-01.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:51.409Z',
-        checksum: '12b529073e5e53c6f83a8b32b1196e02f175a7790cd847c32dfe8121104fb983',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7126G0-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2086,29 +1549,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7146g0-s-izs',
     sku: 'iDS-2CD7146G0/S-IZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7146G0/S-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7146g0-s-izs/images/products_hikvision-ids-2cd7146g0-s-izs_images_iDS-2CD7146G0_S-IZS__0.png',
-      alt: 'hikvision ids 2cd7146g0 s izs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:53.277Z',
-        checksum: '496b9fabd387e6d264c31bb7bea8953b4246a0ae869250536e79e1f672f0ab4b',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7146G0/S-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7146G0/S-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7146G0/S-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7146G0/S-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2144,29 +1595,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7186g0-s-izs',
     sku: 'iDS-2CD7186G0/S-IZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7186G0/S-IZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7186g0-s-izs/images/products_hikvision-ids-2cd7186g0-s-izs_images_iDS-2CD7186G0_S-IZS__0.png',
-      alt: 'hikvision ids 2cd7186g0 s izs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000019600/%E5%A4%96%E8%A7%82%E6%B8%B2%E6%9F%93%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:54.915Z',
-        checksum: '496b9fabd387e6d264c31bb7bea8953b4246a0ae869250536e79e1f672f0ab4b',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7186G0/S-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7186G0/S-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7186G0/S-IZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7186G0/S-IZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Intérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2202,29 +1641,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7526g0-izhs-y-r',
     sku: 'iDS-2CD7526G0-IZHS(Y)(R)',
     name: 'HIKVISION DeepinView Camera iDS-2CD7526G0-IZHS(Y)(R)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7526g0-izhs-y-r/images/products_hikvision-ids-2cd7526g0-izhs-y-r_images_iDS-2CD7526G0-IZHS_Y__R___0.png',
-      alt: 'hikvision ids 2cd7526g0 izhs y r',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019598/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019598/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:56.833Z',
-        checksum: 'c9786c260e4b3947eeb73f4cd92aaaa2b3ca00eeecf1562d849c2492deaf1d3c',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7526G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7526G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7526G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7526G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2260,29 +1687,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7586g0-izhs-y-r',
     sku: 'iDS-2CD7586G0-IZHS(Y)(R)',
     name: 'HIKVISION DeepinView Camera iDS-2CD7586G0-IZHS(Y)(R)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7586g0-izhs-y-r/images/products_hikvision-ids-2cd7586g0-izhs-y-r_images_iDS-2CD7586G0-IZHS_Y__R___0.png',
-      alt: 'hikvision ids 2cd7586g0 izhs y r',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019595/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019595/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:58.511Z',
-        checksum: 'c9786c260e4b3947eeb73f4cd92aaaa2b3ca00eeecf1562d849c2492deaf1d3c',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7586G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7586G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7586G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7586G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2318,29 +1733,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7586g0-s-izhsy',
     sku: 'iDS-2CD7586G0/S-IZHSY',
     name: 'HIKVISION DeepinView Camera iDS-2CD7586G0/S-IZHSY',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7586g0-s-izhsy/images/products_hikvision-ids-2cd7586g0-s-izhsy_images_iDS-2CD7586G0_S-IZHSY__0.png',
-      alt: 'hikvision ids 2cd7586g0 s izhsy',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019595/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019595/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:02.213Z',
-        checksum: 'c9786c260e4b3947eeb73f4cd92aaaa2b3ca00eeecf1562d849c2492deaf1d3c',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7586G0/S-IZHSY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7586G0/S-IZHSY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7586G0/S-IZHSY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7586G0/S-IZHSY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2376,29 +1779,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.927Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd75c5g0-izhs-y-r',
     sku: 'iDS-2CD75C5G0-IZHS(Y)(R)',
     name: 'HIKVISION DeepinView Camera iDS-2CD75C5G0-IZHS(Y)(R)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd75c5g0-izhs-y-r/images/products_hikvision-ids-2cd75c5g0-izhs-y-r_images_iDS-2CD75C5G0-IZHS_Y__R___0.png',
-      alt: 'hikvision ids 2cd75c5g0 izhs y r',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019595/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019595/2CD75x6G0-%E5%8D%8A%E7%90%8352-%E5%9F%BA%E7%BA%BF-%E5%86%85%E8%97%8F%E7%BA%BF-%E6%AD%A3%E9%9D%A2.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:07.060Z',
-        checksum: 'c9786c260e4b3947eeb73f4cd92aaaa2b3ca00eeecf1562d849c2492deaf1d3c',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD75C5G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD75C5G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD75C5G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD75C5G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Dôme ; Objectif : Varifocal ; Usage : Extérieur ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2434,29 +1825,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.928Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a26g0-izhs',
     sku: 'iDS-2CD7A26G0-IZHS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD7A26G0-IZHS__0.jpg',
-      alt: 'HIKVISION 2MP DeepinView Moto Varifocal Bullet Camera iDS-2CD7A26G0-IZHS',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_3__1_1.jpg',
-        fetchedAt: '2026-08-11T10:49:35.067782Z',
-        checksum: '72a9996383a64669632d81910a2fb4124da503a8d4dc3830f774be1e1101d6ea',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2488,29 +1867,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.928Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a46g0-izhsyr',
     sku: 'iDS-2CD7A46G0-IZHSYR',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHSYR',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7a46g0-izhsyr/images/products_hikvision-ids-2cd7a46g0-izhsyr_images_iDS-2CD7A46G0-IZHSYR__0.png',
-      alt: 'hikvision ids 2cd7a46g0 izhsyr',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:22.284Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHSYR de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHSYR de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHSYR de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHSYR de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2542,29 +1909,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.928Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a46g0-p-izhs-y',
     sku: 'iDS-2CD7A46G0/P-IZHS(Y)',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS(Y)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7a46g0-p-izhs-y/images/products_hikvision-ids-2cd7a46g0-p-izhs-y_images_iDS-2CD7A46G0_P-IZHS_Y___0.png',
-      alt: 'hikvision ids 2cd7a46g0 p izhs y',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:23.918Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS(Y) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2596,29 +1951,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.928Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a26g0-izhs-y-r',
     sku: 'iDS-2CD7A26G0-IZHS(Y)(R)',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS(Y)(R)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7a26g0-izhs-y-r/images/products_hikvision-ids-2cd7a26g0-izhs-y-r_images_iDS-2CD7A26G0-IZHS_Y__R___0.png',
-      alt: 'hikvision ids 2cd7a26g0 izhs y r',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:26.360Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0-IZHS(Y)(R) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2650,29 +1993,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.928Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a46g0-izhs',
     sku: 'iDS-2CD7A46G0-IZHS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7a46g0-izhs/images/products_hikvision-ids-2cd7a46g0-izhs_images_iDS-2CD7A46G0-IZHS__0.png',
-      alt: 'hikvision ids 2cd7a46g0 izhs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:27.897Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2704,29 +2035,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.928Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a46g0-p-izhs',
     sku: 'iDS-2CD7A46G0/P-IZHS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7a46g0-p-izhs/images/products_hikvision-ids-2cd7a46g0-p-izhs_images_iDS-2CD7A46G0_P-IZHS__0.png',
-      alt: 'hikvision ids 2cd7a46g0 p izhs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:29.727Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A46G0/P-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2758,29 +2077,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a86g0-izhsy',
     sku: 'iDS-2CD7A86G0-IZHSY',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A86G0-IZHSY',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7a86g0-izhsy/images/products_hikvision-ids-2cd7a86g0-izhsy_images_iDS-2CD7A86G0-IZHSY__0.png',
-      alt: 'hikvision ids 2cd7a86g0 izhsy',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:31.761Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A86G0-IZHSY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A86G0-IZHSY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A86G0-IZHSY de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A86G0-IZHSY de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4K ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2812,29 +2119,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7a26g0-p-izhs',
     sku: 'iDS-2CD7A26G0/P-IZHS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7a26g0-p-izhs/images/products_hikvision-ids-2cd7a26g0-p-izhs_images_iDS-2CD7A26G0_P-IZHS__0.png',
-      alt: 'hikvision ids 2cd7a26g0 p izhs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:33.254Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7A26G0/P-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2866,29 +2161,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd7ac5g0-izhs',
     sku: 'iDS-2CD7AC5G0-IZHS',
     name: 'HIKVISION DeepinView Camera iDS-2CD7AC5G0-IZHS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd7ac5g0-izhs/images/products_hikvision-ids-2cd7ac5g0-izhs_images_iDS-2CD7AC5G0-IZHS__0.png',
-      alt: 'hikvision ids 2cd7ac5g0 izhs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/public/all/image/m000019593/%E5%8F%B3%E4%BE%A745%C2%B0%E5%9B%BE.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:34.742Z',
-        checksum: '193bdb82daeab940d0a9a6e0a2bd6cdd8debfc6ff5106dd39a67d6f6ed679590',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7AC5G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD7AC5G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7AC5G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD7AC5G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : Détection de motos (Moto). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2920,29 +2203,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd8a46g0-izhs',
     sku: 'iDS-2CD8A46G0-IZHS',
     name: 'HIKVISION Network Camera iDS-2CD8A46G0-IZHS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd8a46g0-izhs/images/products_hikvision-ids-2cd8a46g0-izhs_images_iDS-2CD8A46G0-IZHS__0.png',
-      alt: 'hikvision ids 2cd8a46g0 izhs',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000000451/iDS-2CD8426G0-Wall-Mount.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000000451/iDS-2CD8426G0-Wall-Mount.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:58:36.073Z',
-        checksum: '071b4399c924a5986123baa4fc3f3254ac0bd26bb8d04128e1843d0a240139ad',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera iDS-2CD8A46G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera iDS-2CD8A46G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Éclairage infrarouge : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera iDS-2CD8A46G0-IZHS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera iDS-2CD8A46G0-IZHS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 4 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Éclairage infrarouge : Oui. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -2974,29 +2245,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd8626g0-p-lzs',
     sku: 'iDS-2CD8626G0/P-LZS',
     name: 'HIKVISION DeepinView Camera iDS-2CD8626G0/P-LZS',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8626G0_P-LZS__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView ANPR Moto Varifocal Bullet Camera iDS-2CD8626G0/P-LZS',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_23_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_23_.jpg',
-        fetchedAt: '2026-08-11T10:49:37.968131Z',
-        checksum: '110c79062551dde3efe1ded1fcc3b8aa980f083e169c2de0be6fd0a590242fc2',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8626G0/P-LZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8626G0/P-LZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8626G0/P-LZS de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8626G0/P-LZS de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Type de caméra : Caméra Bullet ; Objectif : Varifocal ; Application : ANPR (reconnaissance de plaques). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3028,29 +2287,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd8426g0-f-i',
     sku: 'iDS-2CD8426G0/F-I',
     name: 'HIKVISION DeepinView Camera iDS-2CD8426G0/F-I',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/iDS-2CD8426G0_F-I__0.jpg',
-      alt: 'HIKVISION 2 MP DeepinView Face Recognition Indoor Camera iDS-2CD8426G0/F-I',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_24__1_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_24__1_.jpg',
-        fetchedAt: '2026-08-11T10:49:38.776281Z',
-        checksum: '50be806832d0da4a41b694bfd9838cc0e630012da47ec24602e7a0775c911ab4',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8426G0/F-I de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8426G0/F-I de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Usage : Intérieur ; Application : Reconnaissance faciale. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8426G0/F-I de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8426G0/F-I de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Usage : Intérieur ; Application : Reconnaissance faciale. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3078,29 +2325,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ids-2cd8426g0-b-i',
     sku: 'iDS-2CD8426G0/B-I',
     name: 'HIKVISION DeepinView Camera iDS-2CD8426G0/B-I',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ids-2cd8426g0-b-i/images/products_hikvision-ids-2cd8426g0-b-i_images_iDS-2CD8426G0_B-I__0.png',
-      alt: 'hikvision ids 2cd8426g0 b i',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000000451/iDS-2CD8426G0-Wall-Mount.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000000451/iDS-2CD8426G0-Wall-Mount.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T12:56:44.974Z',
-        checksum: '071b4399c924a5986123baa4fc3f3254ac0bd26bb8d04128e1843d0a240139ad',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8426G0/B-I de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Camera iDS-2CD8426G0/B-I de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Usage : Intérieur ; Application : Analyse de comportement. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8426G0/B-I de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Camera iDS-2CD8426G0/B-I de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 2 MP ; Usage : Intérieur ; Application : Analyse de comportement. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3128,29 +2363,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6365g0-i-v-s',
     sku: 'DS-2CD6365G0-I(V)(S)',
     name: 'HIKVISION DeepinView Network Camera DS-2CD6365G0-I(V)(S)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6365G0-I_V__S___0.jpg',
-      alt: 'HIKVISION 6 MP DeepinView Fisheye Network Camera DS-2CD6365G0-I(V)(S)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_25_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_25_.jpg',
-        fetchedAt: '2026-08-11T10:49:38.943162Z',
-        checksum: 'cc34c2c324e4060fc9924d1d9abfbe178c8827069368a3a0d62615c81af5e3ac',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Network Camera DS-2CD6365G0-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Network Camera DS-2CD6365G0-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Network Camera DS-2CD6365G0-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Network Camera DS-2CD6365G0-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3174,29 +2397,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6365g0e-i-v-s',
     sku: 'DS-2CD6365G0E-I(V)(S)',
     name: 'HIKVISION Network Camera DS-2CD6365G0E-I(V)(S)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6365G0E-I_V__S___0.jpg',
-      alt: 'HIKVISION 6 MP Fisheye Network Camera DS-2CD6365G0E-I(V)(S)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26_.jpg',
-        fetchedAt: '2026-08-11T10:49:39.725934Z',
-        checksum: '33ff30dcb295cbbbaa3f28c74a8ac65608d31075cc5753ffeab7ac86285d9096',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera DS-2CD6365G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera DS-2CD6365G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera DS-2CD6365G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera DS-2CD6365G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3220,29 +2431,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd63c5g0e-i-v-s',
     sku: 'DS-2CD63C5G0E-I(V)(S)',
     name: 'HIKVISION Network Camera DS-2CD63C5G0E-I(V)(S)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD63C5G0E-I_V__S___0.jpg',
-      alt: 'HIKVISION 12 MP Fisheye Network Camera DS-2CD63C5G0E-I(V)(S)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26__1.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_26__1.jpg',
-        fetchedAt: '2026-08-11T10:49:39.799638Z',
-        checksum: '7071ba3c70ad7e12b48a77711651dd89a8a70def0cba94e7b1686a130579ea7f',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera DS-2CD63C5G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera DS-2CD63C5G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera DS-2CD63C5G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera DS-2CD63C5G0E-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3266,29 +2465,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.929Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6d24fwd-i-z-h-s-nfc',
     sku: 'DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC)',
     name: 'HIKVISION 4-Directional Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6D24FWD-_I__Z__H__S___NFC___0.jpg',
-      alt: 'HIKVISION 4-Directional Multisensor Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_27_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_27_.jpg',
-        fetchedAt: '2026-08-11T10:49:39.881076Z',
-        checksum: '8876a94949dac545a034b20180d821207e030a1e0e27ba842bce0f2fad440b2b',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION 4-Directional Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION 4-Directional Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Type de caméra : Caméra multisensorielle. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION 4-Directional Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4-Directional Network Camera DS-2CD6D24FWD-(I)(Z)(H)(S)(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Type de caméra : Caméra multisensorielle. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Type de caméra',
@@ -3308,29 +2495,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.930Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6332fwd-i-v-s',
     sku: 'DS-2CD6332FWD-I(V)(S)',
     name: 'HIKVISION Network Camera DS-2CD6332FWD-I(V)(S)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6332FWD-I_V__S___0.jpg',
-      alt: 'HIKVISION 3 MP Fisheye Network Camera DS-2CD6332FWD-I(V)(S)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_28_.jpg',
-        fetchedAt: '2026-08-11T10:49:40.675768Z',
-        checksum: 'a109b5630598cbb81679b5b28d7ee053a335e3d2da14ffca0d93a93c9f6d5e5c',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera DS-2CD6332FWD-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera DS-2CD6332FWD-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 3 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera DS-2CD6332FWD-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera DS-2CD6332FWD-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 3 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3354,29 +2529,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.930Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6365g0e-s-rc',
     sku: 'DS-2CD6365G0E(-S)/RC',
     name: 'HIKVISION In-Ceiling Network Camera DS-2CD6365G0E(-S)/RC',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6365G0E_-S__RC__0.jpg',
-      alt: 'HIKVISION 6 MP In-Ceiling Fisheye Network Camera DS-2CD6365G0E(-S)/RC',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_29_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_29_.jpg',
-        fetchedAt: '2026-08-11T10:49:40.728157Z',
-        checksum: 'f3a47aae1e8d16042e911774b0a5bb2d086b33e24581aa6c0f267248ab14cb6a',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION In-Ceiling Network Camera DS-2CD6365G0E(-S)/RC de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION In-Ceiling Network Camera DS-2CD6365G0E(-S)/RC de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION In-Ceiling Network Camera DS-2CD6365G0E(-S)/RC de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION In-Ceiling Network Camera DS-2CD6365G0E(-S)/RC de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3400,29 +2563,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.930Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd63c5g0e-s-rc',
     sku: 'DS-2CD63C5G0E(-S)/RC',
     name: 'HIKVISION In-Ceiling Network Camera DS-2CD63C5G0E(-S)/RC',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd63c5g0e-s-rc/images/products_hikvision-ds-2cd63c5g0e-s-rc_images_DS-2CD63C5G0E_-S__RC__0.png',
-      alt: 'hikvision ds 2cd63c5g0e s rc',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000054679/CgFBIl1Sd1KAKEdkARvRijCGVAI226.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000054679/CgFBIl1Sd1KAKEdkARvRijCGVAI226.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T12:00:24.592Z',
-        checksum: '03033540c7fd39ee1247dd58da276ecfb8b5573b737905d7e7c1a6be139d759a',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION In-Ceiling Network Camera DS-2CD63C5G0E(-S)/RC de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION In-Ceiling Network Camera DS-2CD63C5G0E(-S)/RC de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION In-Ceiling Network Camera DS-2CD63C5G0E(-S)/RC de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION In-Ceiling Network Camera DS-2CD63C5G0E(-S)/RC de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3446,29 +2597,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.933Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6944g0-ihs-nfc',
     sku: 'DS-2CD6944G0-IHS(/NFC)',
     name: 'HIKVISION 180° Network Camera DS-2CD6944G0-IHS(/NFC)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6944G0-IHS__NFC___0.jpg',
-      alt: 'HIKVISION 16 MP 180° PanoVu Network Camera DS-2CD6944G0-IHS(/NFC)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_30_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_30_.jpg',
-        fetchedAt: '2026-08-11T10:49:41.623728Z',
-        checksum: 'ec8fc29053dec8f8dbe2c0e4a46f622330da62e6c3d4b109309f12bcbf006123',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION 180° Network Camera DS-2CD6944G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION 180° Network Camera DS-2CD6944G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 16 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6944G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6944G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 16 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3492,29 +2631,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.933Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6d54g1-i-z-s-rc',
     sku: 'DS-2CD6D54G1-(I)(Z)(S)(/RC)',
     name: 'HIKVISION 4-Directional Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6D54G1-_I__Z__S___RC___0.jpg',
-      alt: 'HIKVISION 4-Directional Multisensor Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_31_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_31_.jpg',
-        fetchedAt: '2026-08-11T10:49:41.695567Z',
-        checksum: '6ac6956c4afb9540d0e4e713b1a9197d8ab668e4d6f38f9346210844b472b4e3',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION 4-Directional Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION 4-Directional Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Type de caméra : Caméra multisensorielle. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION 4-Directional Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 4-Directional Network Camera New DS-2CD6D54G1-(I)(Z)(S)(/RC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Type de caméra : Caméra multisensorielle. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Type de caméra',
@@ -3534,29 +2661,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.933Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6362f-i-v-s',
     sku: 'DS-2CD6362F-I(V)(S)',
     name: 'HIKVISION Network Camera DS-2CD6362F-I(V)(S)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd6362f-i-v-s/images/products_hikvision-ds-2cd6362f-i-v-s_images_DS-2CD6362F-I_V__S___0.png',
-      alt: 'hikvision ds 2cd6362f i v s',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000000405/63XX-Fisheye-01.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000000405/63XX-Fisheye-01.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:23.110Z',
-        checksum: '434dde9edbf4453bfa6f5519e4c97ce28bc9036ff6bf4fbac881033b61b74e6b',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera DS-2CD6362F-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera DS-2CD6362F-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera DS-2CD6362F-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera DS-2CD6362F-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 6 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3580,29 +2695,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.933Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd63c2f-i-v-s',
     sku: 'DS-2CD63C2F-I(V)(S)',
     name: 'HIKVISION Network Camera DS-2CD63C2F-I(V)(S)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd63c2f-i-v-s/images/products_hikvision-ds-2cd63c2f-i-v-s_images_DS-2CD63C2F-I_V__S___0.png',
-      alt: 'hikvision ds 2cd63c2f i v s',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000000407/63XX-Fisheye-01.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000000407/63XX-Fisheye-01.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:24.763Z',
-        checksum: '434dde9edbf4453bfa6f5519e4c97ce28bc9036ff6bf4fbac881033b61b74e6b',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION Network Camera DS-2CD63C2F-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION Network Camera DS-2CD63C2F-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION Network Camera DS-2CD63C2F-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION Network Camera DS-2CD63C2F-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3626,29 +2729,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.933Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd63c5g0-i-v-s',
     sku: 'DS-2CD63C5G0-I(V)(S)',
     name: 'HIKVISION DeepinView Immervision Lens Network Camera DS-2CD63C5G0-I(V)(S)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision-ds-2cd63c5g0-i-v-s/images/products_hikvision-ds-2cd63c5g0-i-v-s_images_DS-2CD63C5G0-I_V__S___0.png',
-      alt: 'hikvision ds 2cd63c5g0 i v s',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://assets.hikvision.com/prd/normal/all/image/m000054679/CgFBIl1Sd1KAKEdkARvRijCGVAI226.png.thumb.1280.1280.png',
-        sourceIdentifier: 'https://assets.hikvision.com/prd/normal/all/image/m000054679/CgFBIl1Sd1KAKEdkARvRijCGVAI226.png.thumb.1280.1280.png',
-        fetchedAt: '2026-08-17T11:59:27.102Z',
-        checksum: '03033540c7fd39ee1247dd58da276ecfb8b5573b737905d7e7c1a6be139d759a',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION DeepinView Immervision Lens Network Camera DS-2CD63C5G0-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION DeepinView Immervision Lens Network Camera DS-2CD63C5G0-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION DeepinView Immervision Lens Network Camera DS-2CD63C5G0-I(V)(S) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION DeepinView Immervision Lens Network Camera DS-2CD63C5G0-I(V)(S) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 12 MP ; Type de caméra : Caméra Fisheye. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3672,29 +2763,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.933Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6924f-i-s-nfc',
     sku: 'DS-2CD6924F-I(S)(/NFC)',
     name: 'HIKVISION 180° Network Camera DS-2CD6924F-I(S)(/NFC)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6924F-I_S___NFC___0.jpg',
-      alt: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924F-I(S)(/NFC)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_34_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_34_.jpg',
-        fetchedAt: '2026-08-11T10:49:42.727485Z',
-        checksum: '3a2a8e675110927bb6d3e70409aadd1c4f5dde3fd432f237e14b0708c367b64a',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION 180° Network Camera DS-2CD6924F-I(S)(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION 180° Network Camera DS-2CD6924F-I(S)(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 8 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6924F-I(S)(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6924F-I(S)(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 8 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3718,29 +2797,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.934Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6924g0-ihs-nfc',
     sku: 'DS-2CD6924G0-IHS(/NFC)',
     name: 'HIKVISION 180° Network Camera DS-2CD6924G0-IHS(/NFC)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6924G0-IHS__NFC___0.jpg',
-      alt: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6924G0-IHS(/NFC)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_35_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_35_.jpg',
-        fetchedAt: '2026-08-11T10:49:43.536594Z',
-        checksum: '482f109e43b84ef948b03da77f76573384c3b016ec203f49022be3d7f4ea5454',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION 180° Network Camera DS-2CD6924G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION 180° Network Camera DS-2CD6924G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 8 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6924G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6924G0-IHS(/NFC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 8 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',
@@ -3764,29 +2831,17 @@ export const hikvisionProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.934Z',
   },
-{
+  {
     id: 'hikvision-ds-2cd6986f-h-24vac',
     sku: 'DS-2CD6986F-(H)(24VAC)',
     name: 'HIKVISION 180° Network Camera DS-2CD6986F-(H)(24VAC)',
     brand: 'HIKVISION',
     category: 'cctv',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/hikvision/DS-2CD6986F-_H__24VAC___0.jpg',
-      alt: 'HIKVISION 8 MP 180° PanoVu Network Camera DS-2CD6986F-(H)(24VAC)',
-      width: 600,
-      height: 600,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_38_.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/h/i/hikvision_38_.jpg',
-        fetchedAt: '2026-08-11T10:49:43.589662Z',
-        checksum: '7610e940327b033a755654d098c6f3c48e71c73ce4ba3a1e3c49c11ea111e8e9',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le HIKVISION 180° Network Camera DS-2CD6986F-(H)(24VAC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
-    fullDescription: 'Le HIKVISION 180° Network Camera DS-2CD6986F-(H)(24VAC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 8 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6986F-(H)(24VAC) de Hikvision est une solution de vidéosurveillance destiné aux environnements professionnels.',
+    fullDescription:
+      'Le HIKVISION 180° Network Camera DS-2CD6986F-(H)(24VAC) de Hikvision est une solution de vidéosurveillance conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Résolution : 8 MP ; Type de caméra : Caméra panoramique (PanoVu). Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Résolution',

@@ -67,9 +67,11 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
       document.body.style.overflow = 'hidden';
 
       requestAnimationFrame(() => {
-        dialogRef.current?.querySelector<HTMLElement>(
-          'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
-        )?.focus();
+        dialogRef.current
+          ?.querySelector<HTMLElement>(
+            'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])',
+          )
+          ?.focus();
       });
     } else {
       document.removeEventListener('keydown', handleKeyDown);
@@ -111,15 +113,9 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
                 : { opacity: 0, scale: 0.96, y: 16, translateZ: 0 }
             }
             animate={prefersReducedMotion ? { opacity: 1 } : { opacity: 1, scale: 1, y: 0 }}
-            exit={
-              prefersReducedMotion
-                ? { opacity: 0 }
-                : { opacity: 0, scale: 0.96, y: 16 }
-            }
+            exit={prefersReducedMotion ? { opacity: 0 } : { opacity: 0, scale: 0.96, y: 16 }}
             transition={
-              prefersReducedMotion
-                ? { duration: 0 }
-                : { duration: 0.35, ease: [0.16, 1, 0.3, 1] }
+              prefersReducedMotion ? { duration: 0 } : { duration: 0.35, ease: [0.16, 1, 0.3, 1] }
             }
             className={cn(
               'relative z-10 flex w-full flex-col rounded-none border-0 border-border bg-surface shadow-xl',
@@ -142,10 +138,15 @@ function Modal({ open, onClose, title, children, className = '', size = 'md' }: 
                 className="group -mr-1.5 -mt-1 flex h-11 w-11 shrink-0 items-center justify-center rounded-full text-faint transition-colors hover:bg-surface-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 aria-label="Fermer la fenêtre"
               >
-                <X className="h-4.5 w-4.5 transition-transform duration-200 group-hover:rotate-90" aria-hidden="true" />
+                <X
+                  className="h-4.5 w-4.5 transition-transform duration-200 group-hover:rotate-90"
+                  aria-hidden="true"
+                />
               </button>
             </div>
-            <div className="overflow-y-auto px-4 py-4 sm:px-6 sm:py-5 pb-[max(1rem,env(safe-area-inset-bottom))]">{children}</div>
+            <div className="overflow-y-auto px-4 py-4 sm:px-6 sm:py-5 pb-[max(1rem,env(safe-area-inset-bottom))]">
+              {children}
+            </div>
           </motion.div>
         </div>
       )}

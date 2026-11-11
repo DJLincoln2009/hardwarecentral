@@ -1,13 +1,15 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { AlertCircle } from 'lucide-react';
+import { MailCheck } from 'lucide-react';
 import Input from '@/components/ui/Input';
 import Textarea from '@/components/ui/Textarea';
 import Select from '@/components/ui/Select';
 import Button from '@/components/ui/Button';
 import HoneypotField from '@/components/forms/HoneypotField';
+import { buildMailtoUrl } from '@/lib/mailto';
 import { useToast } from '@/components/ui/Toast';
+import { SITE_CONFIG } from '@/lib/site-config';
 
 const subjectOptions = [
   { value: '', label: 'Sélectionnez un sujet' },
@@ -26,45 +28,40 @@ function ContactForm() {
   const [professionalEmail, setProfessionalEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
-  const [status, setStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [status, setStatus] = useState<'idle' | 'success'>('idle');
 
   const handleSubmit = useCallback(
-    async (e: React.FormEvent) => {
+    (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault();
       if (!subject) return;
-      setStatus('submitting');
-      setErrorMessage('');
 
-      try {
-        const res = await fetch('/api/contact-messages', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            companyName: companyName || undefined,
-            professionalEmail,
-            subject,
-            message,
-            honeypot: '',
-          }),
-        });
-
-        const data = await res.json();
-
-        if (!res.ok) {
-          setStatus('error');
-          setErrorMessage(data.error ?? 'Une erreur est survenue.');
-          return;
-        }
-
+      const honeypot = new FormData(e.currentTarget).get('honeypot');
+      if (typeof honeypot === 'string' && honeypot !== '') {
         setStatus('success');
-        addToast('Votre message a été envoyé avec succès !');
-      } catch {
-        setStatus('error');
-        setErrorMessage('Erreur réseau. Vos données sont conservées. Veuillez réessayer.');
+        return;
       }
+
+      const subjectLabel =
+        subjectOptions.find((option) => option.value === subject)?.label ?? 'Contact';
+
+      const body = [
+        `Prénom : ${firstName}`,
+        `Nom : ${lastName}`,
+        `Société : ${companyName || '—'}`,
+        `E-mail : ${professionalEmail}`,
+        '',
+        'Message :',
+        message,
+      ];
+
+      window.location.href = buildMailtoUrl(
+        SITE_CONFIG.email.contact,
+        `${subjectLabel} — ${firstName} ${lastName}`,
+        body,
+      );
+
+      setStatus('success');
+      addToast('Votre message a été transmis avec succès !');
     },
     [firstName, lastName, companyName, professionalEmail, subject, message, addToast],
   );
@@ -72,9 +69,11 @@ function ContactForm() {
   if (status === 'success') {
     return (
       <div className="text-center py-8 space-y-3">
-        <p className="text-success-text font-semibold">Message envoyé avec succès !</p>
+        <MailCheck className="mx-auto h-10 w-10 text-success-text" aria-hidden="true" />
+        <p className="text-success-text font-semibold">Message transmis !</p>
         <p className="text-sm text-muted">
-          Notre équipe vous répondra dans les plus brefs délais.
+          Votre logiciel de messagerie s&apos;est ouvert avec un e-mail pré-rempli à destination de
+          notre équipe ({SITE_CONFIG.email.contact}). Il ne vous reste qu&apos;à l&apos;envoyer.
         </p>
         <Button
           variant="secondary"
@@ -105,7 +104,6 @@ function ContactForm() {
           onChange={(e) => setFirstName(e.target.value)}
           required
           aria-required="true"
-          disabled={status === 'submitting'}
         />
         <Input
           label="Nom *"
@@ -113,16 +111,10 @@ function ContactForm() {
           onChange={(e) => setLastName(e.target.value)}
           required
           aria-required="true"
-          disabled={status === 'submitting'}
         />
       </div>
 
-      <Input
-        label="Société"
-        value={companyName}
-        onChange={(e) => setCompanyName(e.target.value)}
-        disabled={status === 'submitting'}
-      />
+      <Input label="Société" value={companyName} onChange={(e) => setCompanyName(e.target.value)} />
 
       <Input
         label="E-mail professionnel *"
@@ -131,7 +123,6 @@ function ContactForm() {
         onChange={(e) => setProfessionalEmail(e.target.value)}
         required
         aria-required="true"
-        disabled={status === 'submitting'}
       />
 
       <Select
@@ -141,7 +132,6 @@ function ContactForm() {
         onChange={(e) => setSubject(e.target.value)}
         required
         aria-required="true"
-        disabled={status === 'submitting'}
       />
 
       <Textarea
@@ -150,17 +140,9 @@ function ContactForm() {
         onChange={(e) => setMessage(e.target.value)}
         required
         aria-required="true"
-        disabled={status === 'submitting'}
       />
 
-      {status === 'error' && (
-        <p role="alert" className="flex items-center gap-1.5 text-sm text-danger-text">
-          <AlertCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
-          {errorMessage}
-        </p>
-      )}
-
-      <Button type="submit" loading={status === 'submitting'} className="w-full sm:w-auto">
+      <Button type="submit" className="w-full sm:w-auto">
         Envoyer le message
       </Button>
     </form>

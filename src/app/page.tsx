@@ -14,9 +14,9 @@ export const metadata: Metadata = {
     'HardwareCentral — Équipements et infrastructures informatiques professionnels pour les entreprises au Cameroun et dans la zone CEMAC.',
   alternates: { canonical: '/' },
   openGraph: {
-    title: 'HardwareCentral — Équipements IT professionnels pour l\'Afrique Centrale',
+    title: "HardwareCentral — Équipements IT professionnels pour l'Afrique Centrale",
     description:
-      'Plateforme de référence pour l\'acquisition d\'équipements informatiques professionnels : serveurs, stockage, réseau, sécurité, vidéosurveillance.',
+      "Plateforme de référence pour l'acquisition d'équipements informatiques professionnels : serveurs, stockage, réseau, sécurité, vidéosurveillance.",
   },
 };
 
@@ -42,8 +42,8 @@ export default function Home() {
           <BrandsGrid />
           <p className="mx-auto mt-6 max-w-2xl text-center text-xs leading-relaxed text-muted">
             Les logos et marques cités restent la propriété de leurs titulaires respectifs. Leur
-            présence n&apos;implique aucun parrainage, aucune affiliation ni aucun partenariat officiel
-            avec {SITE_CONFIG.companyName}.
+            présence n&apos;implique aucun parrainage, aucune affiliation ni aucun partenariat
+            officiel avec {SITE_CONFIG.companyName}.
           </p>
         </div>
       </section>

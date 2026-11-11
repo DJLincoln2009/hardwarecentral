@@ -79,15 +79,7 @@ export function filterProducts(params: FilterParams): {
   page: number;
   totalPages: number;
 } {
-  const {
-    categorie,
-    marque,
-    format,
-    q,
-    tri = 'mix',
-    page = 1,
-    pageSize = 12,
-  } = params;
+  const { categorie, marque, format, q, tri = 'mix', page = 1, pageSize = 12 } = params;
 
   let filtered = [...products];
 
@@ -130,7 +122,9 @@ export function filterProducts(params: FilterParams): {
       });
       break;
     case 'newest':
-      filtered.sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
+      filtered.sort(
+        (a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime(),
+      );
       break;
   }
 

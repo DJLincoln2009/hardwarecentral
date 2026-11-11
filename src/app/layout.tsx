@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_CONFIG.companyName}`,
   },
   description:
-    'HardwareCentral est votre plateforme de référence pour l\'acquisition d\'équipements informatiques professionnels au Cameroun et dans la zone CEMAC.',
+    "HardwareCentral est votre plateforme de référence pour l'acquisition d'équipements informatiques professionnels au Cameroun et dans la zone CEMAC.",
 };
 
 export default function RootLayout({
@@ -48,7 +48,7 @@ export default function RootLayout({
     '@type': 'Organization',
     name: SITE_CONFIG.companyName,
     url: SITE_CONFIG.domain,
-    logo: `${SITE_CONFIG.domain}/logo.png`,
+    logo: `${SITE_CONFIG.domain}/logo/hardwarecentral-logo-512.png`,
     address: {
       '@type': 'PostalAddress',
       streetAddress: SITE_CONFIG.address.line1,

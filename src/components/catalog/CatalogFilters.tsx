@@ -83,7 +83,10 @@ function CatalogFilters({ className = '' }: CatalogFiltersProps) {
                 >
                   <span>{cat.name}</span>
                   {isActive && (
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600" aria-hidden="true" />
+                    <span
+                      className="h-1.5 w-1.5 shrink-0 rounded-full bg-teal-600"
+                      aria-hidden="true"
+                    />
                   )}
                 </button>
               );

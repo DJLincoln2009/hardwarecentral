@@ -7,10 +7,22 @@ interface TrustBadge {
 }
 
 const badges: TrustBadge[] = [
-  { icon: Shield, title: 'Équipements authentiques', description: 'Matériel neuf, sous garantie constructeur' },
-  { icon: Truck, title: 'Livraison en CEMAC', description: 'Transport sécurisé, suivi de colis inclus' },
+  {
+    icon: Shield,
+    title: 'Équipements authentiques',
+    description: 'Matériel neuf, sous garantie constructeur',
+  },
+  {
+    icon: Truck,
+    title: 'Livraison en CEMAC',
+    description: 'Transport sécurisé, suivi de colis inclus',
+  },
   { icon: Clock, title: 'Devis sous 48-72h ouvrées', description: 'Engagement de réponse rapide' },
-  { icon: Headphones, title: 'Support technique dédié', description: 'Assistance pour nos clients sous contrat' },
+  {
+    icon: Headphones,
+    title: 'Support technique dédié',
+    description: 'Assistance pour nos clients sous contrat',
+  },
 ];
 
 function TrustBadges() {
@@ -26,7 +38,9 @@ function TrustBadges() {
           </span>
           <span>
             <p className="text-sm font-semibold text-foreground max-sm:text-xs">{badge.title}</p>
-            <p className="mt-1 text-xs leading-relaxed text-muted max-sm:text-[11px] max-sm:mt-0.5">{badge.description}</p>
+            <p className="mt-1 text-xs leading-relaxed text-muted max-sm:text-[11px] max-sm:mt-0.5">
+              {badge.description}
+            </p>
           </span>
         </div>
       ))}

@@ -4,9 +4,10 @@ import { useState, useRef, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
-import { Heart, FileText, Menu, Search, ChevronDown, Phone, X, Server } from 'lucide-react';
+import { Heart, FileText, Menu, Search, ChevronDown, Phone, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import MobileNav from './MobileNav';
+import SiteLogo from './SiteLogo';
 import { ThemeToggle } from '@/components/ui/ThemeToggle';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { useFavoritesStore } from '@/lib/stores/favorites-store';
@@ -16,7 +17,9 @@ import { usePrefersReducedMotion } from '@/lib/hooks/usePrefersReducedMotion';
 import { cn } from '@/lib/utils';
 
 const MegaMenu = dynamic(() => import('./MegaMenu'), { ssr: false });
-const QuoteRequestForm = dynamic(() => import('@/components/forms/QuoteRequestForm'), { ssr: false });
+const QuoteRequestForm = dynamic(() => import('@/components/forms/QuoteRequestForm'), {
+  ssr: false,
+});
 
 function Header() {
   const router = useRouter();
@@ -120,19 +123,18 @@ function Header() {
           {/* Logo */}
           <Link
             href="/"
-            className="group flex shrink-0 items-center gap-2 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent rounded-lg"
+            className="flex shrink-0 items-center rounded-lg transition-opacity duration-200 hover:opacity-90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-gradient-to-br from-teal-500 to-teal-800 shadow-sm transition-shadow duration-200 group-hover:shadow-glow sm:h-9 sm:w-9">
-              <Server className="h-4 w-4 text-white sm:h-[18px] sm:w-[18px]" aria-hidden="true" />
-            </span>
-            <span className="font-display text-base font-extrabold tracking-tight text-foreground sm:text-lg">
-              Hardware<span className="text-accent">Central</span>
-            </span>
+            <SiteLogo className="h-14 sm:h-16" alt="HardwareCentral — Accueil" />
           </Link>
 
           {/* Desktop search */}
           <div className="hidden flex-1 justify-center md:flex">
-            <form role="search" onSubmit={handleSearch} className="flex w-full max-w-lg items-center gap-2">
+            <form
+              role="search"
+              onSubmit={handleSearch}
+              className="flex w-full max-w-lg items-center gap-2"
+            >
               <label htmlFor="header-search" className="sr-only">
                 Rechercher un produit, une marque, un SKU…
               </label>
@@ -292,10 +294,7 @@ function Header() {
         </AnimatePresence>
 
         {/* === DESKTOP CATEGORY NAV === */}
-        <nav
-          className="hidden items-center gap-5 pb-3 lg:flex"
-          aria-label="Catégories principales"
-        >
+        <nav className="hidden items-center gap-5 pb-3 lg:flex" aria-label="Catégories principales">
           <button
             ref={megaMenuTriggerRef}
             type="button"

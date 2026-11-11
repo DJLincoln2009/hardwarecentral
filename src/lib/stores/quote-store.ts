@@ -40,7 +40,9 @@ export const useQuoteStore = create<QuoteStore>()(
       updateQuantity: (productId, quantity) =>
         set((state) => ({
           items: state.items.map((i) =>
-            i.productId === productId ? { ...i, quantity: Math.min(999, Math.max(1, Math.floor(quantity))) } : i,
+            i.productId === productId
+              ? { ...i, quantity: Math.min(999, Math.max(1, Math.floor(quantity))) }
+              : i,
           ),
         })),
       clearAll: () => set({ items: [] }),

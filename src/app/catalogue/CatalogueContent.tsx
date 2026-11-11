@@ -27,7 +27,12 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
   const tri = (get('tri') as SortOption) || undefined;
   const page = Math.max(1, parseInt(get('page') || '1', 10) || 1);
 
-  const { results, total, page: currentPage, totalPages } = filterProducts({
+  const {
+    results,
+    total,
+    page: currentPage,
+    totalPages,
+  } = filterProducts({
     categorie,
     marque,
     format,
@@ -37,10 +42,7 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
     pageSize: PAGE_SIZE,
   });
 
-  const breadcrumbItems = [
-    { label: 'Accueil', href: '/' },
-    { label: 'Catalogue complet' },
-  ];
+  const breadcrumbItems = [{ label: 'Accueil', href: '/' }, { label: 'Catalogue complet' }];
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:py-8 lg:px-6">
@@ -68,12 +70,10 @@ async function CatalogueContent({ searchParams }: CatalogueContentProps) {
         <div className="flex-1 min-w-0">
           <div className="mb-5 flex flex-wrap items-center justify-between gap-3">
             <p className="min-w-0 shrink text-sm text-muted">
-              {q && (
-                <>
-                  Résultats pour &laquo;&nbsp;{q}&nbsp;&raquo; ·{' '}
-                </>
-              )}
-              {tri && tri !== 'mix' ? 'Tris personnalisés appliqués' : 'Marques mélangées pour varier les références'}
+              {q && <>Résultats pour &laquo;&nbsp;{q}&nbsp;&raquo; · </>}
+              {tri && tri !== 'mix'
+                ? 'Tris personnalisés appliqués'
+                : 'Marques mélangées pour varier les références'}
             </p>
             <div className="flex items-center gap-2">
               <CatalogMobileBar resultCount={total} />

@@ -1,28 +1,3 @@
-export type ImageSource = 'real' | 'ai-render' | 'placeholder';
-export type ImageProvider =
-  | 'amazon-scraper'
-  | 'icecat'
-  | 'manufacturer-portal'
-  | 'manual-capture'
-  | 'branded-placeholder'
-  | 'ai-3d-render'
-  | 'retailer-scrape';
-
-export interface MediaAsset {
-  url: string;
-  alt: string;
-  width: number;
-  height: number;
-  imageSource: ImageSource;
-  provenance: {
-    sourceProvider: ImageProvider;
-    sourceUrl: string | null;
-    sourceIdentifier: string | null;
-    fetchedAt: string;
-    checksum: string;
-  };
-}
-
 export type CategoryId =
   | 'server-storage'
   | 'networking'
@@ -35,14 +10,7 @@ export type CategoryId =
   | 'printers';
 
 export type BrandCode =
-  | 'HPE'
-  | 'HP'
-  | 'DELL'
-  | 'LENOVO'
-  | 'CISCO'
-  | 'FORTINET'
-  | 'HUAWEI'
-  | 'HIKVISION';
+  'HPE' | 'HP' | 'DELL' | 'LENOVO' | 'CISCO' | 'FORTINET' | 'HUAWEI' | 'HIKVISION';
 
 export type AvailabilityStatus = 'available' | 'limited' | 'on-order' | 'discontinued';
 
@@ -71,8 +39,9 @@ export interface ProductAvailability {
   leadTimeDays?: number;
 }
 
-export interface ProductDatasheet extends MediaAsset {
+export interface ProductDatasheet {
   name: string;
+  url: string;
   fileSizeLabel: string;
 }
 
@@ -82,10 +51,6 @@ export interface Product {
   name: string;
   brand: BrandCode;
   category: CategoryId;
-  asin?: string;
-
-  primaryImage: MediaAsset;
-  gallery: MediaAsset[];
 
   shortDescription: string;
   fullDescription: string;

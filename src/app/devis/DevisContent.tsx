@@ -1,16 +1,15 @@
 'use client';
 
 import { useState } from 'react';
-import { Trash2, FileText, ArrowRight, Minus, Plus } from 'lucide-react';
-import Image from 'next/image';
+import { Trash2, ArrowRight, Minus, Plus } from 'lucide-react';
 import Link from 'next/link';
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import Button from '@/components/ui/Button';
 import QuoteRequestForm from '@/components/forms/QuoteRequestForm';
 import EmptyState from '@/components/ui/EmptyState';
+import ProductVisual from '@/components/product/ProductVisual';
 import { useQuoteStore } from '@/lib/stores/quote-store';
 import { getProductById } from '@/lib/data/products';
-import { getProductImageUrl } from '@/lib/product-image';
 import { cn } from '@/lib/utils';
 
 function DevisContent() {
@@ -29,10 +28,7 @@ function DevisContent() {
 
   const totalUnits = products.reduce((sum, item) => sum + item.quantity, 0);
 
-  const breadcrumbItems = [
-    { label: 'Accueil', href: '/' },
-    { label: 'Liste de devis' },
-  ];
+  const breadcrumbItems = [{ label: 'Accueil', href: '/' }, { label: 'Liste de devis' }];
 
   return (
     <div className="mx-auto max-w-3xl px-4 py-6 lg:px-6 lg:py-8">
@@ -76,17 +72,14 @@ function DevisContent() {
               >
                 <div className="flex items-center gap-4 max-sm:gap-3">
                   <div className="relative flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl border border-border bg-surface max-sm:h-12 max-sm:w-12">
-                    {product.primaryImage.url ? (
-                        <Image
-                          src={getProductImageUrl(product.primaryImage.url, { width: 128, height: 128 })}
-                          alt={product.primaryImage.alt}
-                          fill
-                          sizes="64px"
-                          className="object-contain p-1.5"
-                        />
-                    ) : (
-                      <FileText className="h-6 w-6 text-faint" aria-hidden="true" />
-                    )}
+                    <ProductVisual
+                      brand={product.brand}
+                      productName={name}
+                      category={product.category}
+                      iconSize="sm"
+                      compact
+                      className="rounded-none border-0 p-1"
+                    />
                   </div>
                   <div className="min-w-0 flex-1">
                     <Link
@@ -120,7 +113,9 @@ function DevisContent() {
                     </button>
                     <span
                       aria-live="polite"
-                      className={cn('w-11 border-x border-border text-center font-mono text-sm font-semibold text-foreground sm:w-10')}
+                      className={cn(
+                        'w-11 border-x border-border text-center font-mono text-sm font-semibold text-foreground sm:w-10',
+                      )}
                     >
                       {quantity}
                     </span>
@@ -146,7 +141,8 @@ function DevisContent() {
             onClick={() => setQuoteModalOpen(true)}
             className="mt-6 w-full justify-center sm:mt-8 pb-[env(safe-area-inset-bottom)]"
           >
-            Demander un devis pour {totalUnits} unité{totalUnits > 1 ? 's' : ''} ({products.length} article{products.length > 1 ? 's' : ''})
+            Demander un devis pour {totalUnits} unité{totalUnits > 1 ? 's' : ''} ({products.length}{' '}
+            article{products.length > 1 ? 's' : ''})
           </Button>
         </>
       ) : (

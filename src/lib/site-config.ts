@@ -1,9 +1,7 @@
-const SITE_DOMAIN = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://hardware-central.com';
-
 export const SITE_CONFIG = {
-  companyName: 'HardwareCentral',
-  legalName: 'Hardware-Central SA',
-  domain: SITE_DOMAIN,
+  companyName: 'ETS HARDWARE CENTRAL',
+  legalName: 'ETS HARDWARE CENTRAL',
+  domain: 'https://hardware-central.com',
   address: {
     line1: 'Douala, Bonamoussadi',
     city: 'Douala',
@@ -29,11 +27,8 @@ export const SITE_CONFIG = {
   locale: 'fr-CM',
   hosting: {
     provider: 'Hostinger',
-    // TODO: Ajouter l'adresse complète de l'hébergeur Hostinger une fois confirmée
+    legalName: 'Hostinger International Ltd.',
+    address: '61 Lordou Vironos Street, 6023 Larnaca, Chypre',
   },
-  brevo: {
-    newsletterListId: 2,
-  },
-  // TODO: RCCM non encore communiqué — ajouter le numéro dès réception
   rccm: null as string | null,
 } as const;

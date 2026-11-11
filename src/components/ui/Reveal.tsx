@@ -12,13 +12,7 @@ interface RevealProps {
   once?: boolean;
 }
 
-export function Reveal({
-  children,
-  className,
-  delay = 0,
-  y = 24,
-  once = true,
-}: RevealProps) {
+export function Reveal({ children, className, delay = 0, y = 24, once = true }: RevealProps) {
   const prefersReducedMotion = usePrefersReducedMotion();
 
   if (prefersReducedMotion) {

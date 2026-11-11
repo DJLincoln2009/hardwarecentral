@@ -1,4 +1,0 @@
-gradio-client>=1.7
-requests>=2.31
-Pillow>=10.0
-PyYAML>=6.0

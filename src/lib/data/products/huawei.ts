@@ -1,31 +1,17 @@
 import type { Product } from '@/types';
 
-
 export const huaweiProducts: Product[] = [
-
-{
+  {
     id: 'huawei-98011343',
     sku: '98011343',
     name: 'Huawei S5735-L48P4X-A1',
     brand: 'HUAWEI',
     category: 'networking',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/98011343__0.jpg',
-      alt: 'Huawei S5735-L48P4X-A1',
-      width: 400,
-      height: 300,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l48p4x-a1.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l48p4x-a1.jpg',
-        fetchedAt: '2026-08-11T10:49:16.650554Z',
-        checksum: '48fe1fa8e0cb4aa506deebcb34da348e798214b65d3bf18a0c05e1bfabff6351',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription: 'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 48. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Huawei S5735-L48P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 48. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Nombre de ports',
@@ -45,29 +31,17 @@ export const huaweiProducts: Product[] = [
     isFeatured: true,
     publishedAt: '2026-08-11T14:08:33.921Z',
   },
-{
+  {
     id: 'huawei-98011318',
     sku: '98011318',
     name: 'Huawei S5735-L24P4X-A1',
     brand: 'HUAWEI',
     category: 'networking',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/98011318__0.jpg',
-      alt: 'Huawei S5735-L24P4X-A1',
-      width: 400,
-      height: 300,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4x-a1.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4x-a1.jpg',
-        fetchedAt: '2026-08-11T10:49:16.707331Z',
-        checksum: '8d4482d55405d39ab2202f25587de099e3b2a6796955a2f0afde4ac919fbf446',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription: 'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Huawei S5735-L24P4X-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Nombre de ports',
@@ -87,29 +61,17 @@ export const huaweiProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.921Z',
   },
-{
+  {
     id: 'huawei-98011321',
     sku: '98011321',
     name: 'Huawei S5735-L24P4S-A1',
     brand: 'HUAWEI',
     category: 'networking',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/98011321__0.jpg',
-      alt: 'Huawei S5735-L24P4S-A1',
-      width: 400,
-      height: 300,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4s-a1.jpg',
-        sourceIdentifier: 'https://www.sysllc.ae/media/catalog/product/cache/cff6a3ebc5fc6419422aea07d8a8cd24/s/5/s5735-l24p4s-a1.jpg',
-        fetchedAt: '2026-08-11T10:49:17.433479Z',
-        checksum: 'ead531af36500a94715d5ffeab0e5c2f5ca7e33db6215234609d0bdb8e7bf1e1',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription: 'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Huawei S5735-L24P4S-A1 de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Nombre de ports : 24. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Nombre de ports',
@@ -129,29 +91,17 @@ export const huaweiProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.921Z',
   },
-{
+  {
     id: 'huawei-huawei-cloudengine-12800-data-center-swi',
     sku: 'Huawei-CloudEngine-12800-Data-Center-Swi',
     name: 'Huawei CloudEngine 12800 Data Center Switches',
     brand: 'HUAWEI',
     category: 'networking',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/Huawei-CloudEngine-12800-Data-Center-Swi__0.jpg',
-      alt: 'Huawei CloudEngine 12800 Data Center Switches',
-      width: 500,
-      height: 500,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.serverbasket.com/wp-content/uploads/2024/08/Huawei-CloudEngine-12800-Data-Center-Switches.com_.jpg',
-        sourceIdentifier: 'https://www.serverbasket.com/wp-content/uploads/2024/08/Huawei-CloudEngine-12800-Data-Center-Switches.com_.jpg',
-        fetchedAt: '2026-08-11T10:49:17.666631Z',
-        checksum: '44bc6a8037ebf0503d24f40cef32baeeebc9d31e61060f6609a33946f9aa47fe',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription: 'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Marque : Huawei Form Factor ; Modèles de châssis modulaire : CE12804S, CE12808S, CE12804, CE12808, CE12812, CE12816 Switching Capacity ; Sécurité : Comprehensive security features including ACLs, IPSec, encryption, and DDoS prot. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Huawei CloudEngine 12800 Data Center Switches de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Marque : Huawei Form Factor ; Modèles de châssis modulaire : CE12804S, CE12808S, CE12804, CE12808, CE12812, CE12816 Switching Capacity ; Sécurité : Comprehensive security features including ACLs, IPSec, encryption, and DDoS prot. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Marque',
@@ -179,29 +129,17 @@ export const huaweiProducts: Product[] = [
     isFeatured: false,
     publishedAt: '2026-08-11T14:08:33.921Z',
   },
-{
+  {
     id: 'huawei-huawei-cloudengine-12804-switch',
     sku: 'Huawei-CloudEngine-12804-Switch',
     name: 'Huawei CloudEngine 12804 Switch',
     brand: 'HUAWEI',
     category: 'networking',
-    primaryImage: {
-      url: 'https://ik.imagekit.io/3sihhe4l4/products/huawei/Huawei-CloudEngine-12804-Switch__0.png',
-      alt: 'Huawei CloudEngine 12804 Switch',
-      width: 380,
-      height: 380,
-      imageSource: 'real',
-      provenance: {
-        sourceProvider: 'retailer-scrape',
-        sourceUrl: 'https://www.serverbasket.com/wp-content/uploads/2023/06/huawei-cloudengine-12804-switch.png',
-        sourceIdentifier: 'https://www.serverbasket.com/wp-content/uploads/2023/06/huawei-cloudengine-12804-switch.png',
-        fetchedAt: '2026-08-11T10:49:19.430395Z',
-        checksum: '0bb6a7d5c276e30159001814f1f7a93e24748ba3f9e65140a08d4ae18ef97feb',
-      },
-    },
-    gallery: [],
-    shortDescription: 'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau destiné aux environnements professionnels.',
-    fullDescription: 'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Capacité de commutation : 45/2581 (Tbit/s) Part Number. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
+
+    shortDescription:
+      'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau destiné aux environnements professionnels.',
+    fullDescription:
+      'Le Huawei CloudEngine 12804 Switch de Huawei est un équipement réseau conçu pour répondre aux besoins des entreprises. Principales caractéristiques : Capacité de commutation : 45/2581 (Tbit/s) Part Number. Ce produit est disponible sur commande ; contactez notre équipe commerciale pour un devis personnalisé.',
     specs: [
       {
         label: 'Capacité de commutation',

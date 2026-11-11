@@ -4,12 +4,12 @@ import CatalogueContent from './CatalogueContent';
 export const metadata: Metadata = {
   title: 'Catalogue complet',
   description:
-    'Découvrez l\'ensemble de notre catalogue d\'équipements informatiques professionnels : serveurs, stockage, réseau, sécurité, vidéosurveillance.',
+    "Découvrez l'ensemble de notre catalogue d'équipements informatiques professionnels : serveurs, stockage, réseau, sécurité, vidéosurveillance.",
   alternates: { canonical: '/catalogue' },
   openGraph: {
     title: 'Catalogue complet | HardwareCentral',
     description:
-      'Découvrez l\'ensemble de notre catalogue d\'équipements informatiques professionnels : serveurs, stockage, réseau, sécurité, vidéosurveillance.',
+      "Découvrez l'ensemble de notre catalogue d'équipements informatiques professionnels : serveurs, stockage, réseau, sécurité, vidéosurveillance.",
   },
 };
 

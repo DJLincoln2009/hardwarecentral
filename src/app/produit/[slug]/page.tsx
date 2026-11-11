@@ -7,7 +7,7 @@ import { getBrandByCode } from '@/lib/data/brands';
 import { getCategoryById } from '@/lib/data/categories';
 import { stripBrandPrefix } from '@/lib/utils';
 import Breadcrumb from '@/components/layout/Breadcrumb';
-import ProductGallery from '@/components/product/ProductGallery';
+import ProductVisual from '@/components/product/ProductVisual';
 import ProductSpecsTable from '@/components/product/ProductSpecsTable';
 import ProductAvailabilityBadge from '@/components/product/ProductAvailabilityBadge';
 import QuotePanel from '@/components/product/QuotePanel';
@@ -69,7 +69,6 @@ export default async function ProductPage({ params }: Props) {
       '@type': 'Brand',
       name: brand?.name ?? product.brand,
     },
-    image: product.primaryImage.url || undefined,
     category: category?.name ?? product.category,
     availability: availabilityMap[product.availability.status] ?? 'https://schema.org/InStock',
   };
@@ -89,15 +88,13 @@ export default async function ProductPage({ params }: Props) {
 
       <div className="flex flex-col gap-8 sm:gap-10 lg:flex-row lg:gap-14">
         <div className="w-full lg:w-[420px] lg:flex-shrink-0">
-          <ProductGallery
-            images={[product.primaryImage, ...product.gallery]}
+          <ProductVisual
+            brand={product.brand}
             productName={product.name}
+            category={product.category}
+            iconSize="lg"
+            className="aspect-square w-full rounded-2xl border border-border shadow-xs"
           />
-          {product.primaryImage.imageSource === 'ai-render' && (
-            <p className="mt-3 text-xs italic text-muted">
-              Visuel généré, produit réel non contractuel sur cette image.
-            </p>
-          )}
         </div>
 
         <div className="flex-1 space-y-5 sm:space-y-6">
@@ -143,11 +140,16 @@ export default async function ProductPage({ params }: Props) {
               <p className="eyebrow mb-2.5">Caractéristiques clés</p>
               <ul className="space-y-1.5 sm:space-y-2">
                 {product.specs.slice(0, 4).map((s) => (
-                  <li key={s.label} className="flex items-baseline gap-2 text-xs sm:gap-2.5 sm:text-sm leading-snug">
-                    <Check className="h-3.5 w-3.5 shrink-0 translate-y-0.5 text-accent sm:h-4 sm:w-4" aria-hidden="true" />
+                  <li
+                    key={s.label}
+                    className="flex items-baseline gap-2 text-xs sm:gap-2.5 sm:text-sm leading-snug"
+                  >
+                    <Check
+                      className="h-3.5 w-3.5 shrink-0 translate-y-0.5 text-accent sm:h-4 sm:w-4"
+                      aria-hidden="true"
+                    />
                     <span className="text-muted">
-                      <span className="font-semibold text-foreground">{s.label} :</span>{' '}
-                      {s.value}
+                      <span className="font-semibold text-foreground">{s.label} :</span> {s.value}
                     </span>
                   </li>
                 ))}

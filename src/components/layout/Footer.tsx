@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { Server, MapPin, Phone, Mail, Clock, ArrowRight, ChevronDown } from 'lucide-react';
+import SiteLogo from './SiteLogo';
+import { MapPin, Phone, Mail, Clock, ArrowRight, ChevronDown } from 'lucide-react';
 import { getActiveCategories, getCategoryRoute } from '@/lib/data/categories';
 import { SITE_CONFIG } from '@/lib/site-config';
 import { cn } from '@/lib/utils';
@@ -55,8 +56,14 @@ function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-graphite-800 bg-graphite-950 text-graphite-300">
-      <div className="pointer-events-none absolute left-1/2 top-0 h-px w-full max-w-4xl -translate-x-1/2 bg-gradient-to-r from-transparent via-teal-400/50 to-transparent" aria-hidden="true" />
-      <div className="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-teal-500/10 blur-3xl" aria-hidden="true" />
+      <div
+        className="pointer-events-none absolute left-1/2 top-0 h-px w-full max-w-4xl -translate-x-1/2 bg-gradient-to-r from-transparent via-teal-400/50 to-transparent"
+        aria-hidden="true"
+      />
+      <div
+        className="pointer-events-none absolute -top-32 right-0 h-72 w-72 rounded-full bg-teal-500/10 blur-3xl"
+        aria-hidden="true"
+      />
 
       <div className="relative mx-auto max-w-7xl px-4 py-14 lg:px-6 max-sm:py-10">
         {/* Desktop grid */}
@@ -64,14 +71,9 @@ function Footer() {
           <div className="col-span-2">
             <Link
               href="/"
-              className="inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200"
+              className="inline-flex items-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200"
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-teal-400 to-teal-700">
-                <Server className="h-4.5 w-4.5 text-white" aria-hidden="true" />
-              </span>
-              <span className="font-display text-lg font-extrabold tracking-tight text-white">
-                Hardware<span className="text-teal-300">Central</span>
-              </span>
+              <SiteLogo variant="white" className="h-14 lg:h-16" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-graphite-300">
               Plateforme de référence pour l&apos;acquisition d&apos;équipements informatiques
@@ -83,7 +85,10 @@ function Footer() {
                 className="group inline-flex items-center gap-1.5 rounded-full bg-teal-300 px-4 py-2 text-xs font-semibold text-graphite-950 transition-all duration-200 hover:bg-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300"
               >
                 Constituer ma liste
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-150 group-hover:translate-x-0.5" aria-hidden="true" />
+                <ArrowRight
+                  className="h-3.5 w-3.5 transition-transform duration-150 group-hover:translate-x-0.5"
+                  aria-hidden="true"
+                />
               </Link>
               <Link
                 href="/catalogue"
@@ -111,13 +116,19 @@ function Footer() {
             <p className="eyebrow mb-4 text-graphite-400">Entreprise</p>
             <ul className="space-y-2.5">
               <li>
-                <Link href="/a-propos" className={columnLinkClass}>À propos</Link>
+                <Link href="/a-propos" className={columnLinkClass}>
+                  À propos
+                </Link>
               </li>
               <li>
-                <Link href="/marques" className={columnLinkClass}>Marques</Link>
+                <Link href="/marques" className={columnLinkClass}>
+                  Marques
+                </Link>
               </li>
               <li>
-                <Link href="/contact" className={columnLinkClass}>Contact</Link>
+                <Link href="/contact" className={columnLinkClass}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </div>
@@ -126,13 +137,19 @@ function Footer() {
             <p className="eyebrow mb-4 text-graphite-400">Légal</p>
             <ul className="space-y-2.5">
               <li>
-                <Link href="/mentions-legales" className={columnLinkClass}>Mentions légales</Link>
+                <Link href="/mentions-legales" className={columnLinkClass}>
+                  Mentions légales
+                </Link>
               </li>
               <li>
-                <Link href="/cgv" className={columnLinkClass}>Conditions générales de vente</Link>
+                <Link href="/cgv" className={columnLinkClass}>
+                  Conditions générales de vente
+                </Link>
               </li>
               <li>
-                <Link href="/confidentialite" className={columnLinkClass}>Politique de confidentialité</Link>
+                <Link href="/confidentialite" className={columnLinkClass}>
+                  Politique de confidentialité
+                </Link>
               </li>
             </ul>
           </div>
@@ -141,14 +158,26 @@ function Footer() {
             <p className="eyebrow mb-4 text-graphite-400">Contact</p>
             <ul className="space-y-3 text-sm text-graphite-300">
               <li>
-                <a href={`tel:${SITE_CONFIG.phone.e164}`} className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm">
-                  <Phone className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300" aria-hidden="true" />
+                <a
+                  href={`tel:${SITE_CONFIG.phone.e164}`}
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm"
+                >
+                  <Phone
+                    className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300"
+                    aria-hidden="true"
+                  />
                   {SITE_CONFIG.phone.display}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${SITE_CONFIG.email.contact}`} className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm">
-                  <Mail className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300" aria-hidden="true" />
+                <a
+                  href={`mailto:${SITE_CONFIG.email.contact}`}
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm"
+                >
+                  <Mail
+                    className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300"
+                    aria-hidden="true"
+                  />
                   {SITE_CONFIG.email.contact}
                 </a>
               </li>
@@ -174,14 +203,9 @@ function Footer() {
           <div className="pb-6">
             <Link
               href="/"
-              className="inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200"
+              className="inline-flex items-center rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200"
             >
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-gradient-to-br from-teal-400 to-teal-700">
-                <Server className="h-4.5 w-4.5 text-white" aria-hidden="true" />
-              </span>
-              <span className="font-display text-lg font-extrabold tracking-tight text-white">
-                Hardware<span className="text-teal-300">Central</span>
-              </span>
+              <SiteLogo variant="white" className="h-14" />
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-graphite-300">
               Plateforme de référence pour l&apos;acquisition d&apos;équipements informatiques
@@ -193,7 +217,10 @@ function Footer() {
                 className="group inline-flex items-center gap-1.5 rounded-full bg-teal-300 px-4 py-2 text-xs font-semibold text-graphite-950 transition-all duration-200 hover:bg-teal-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-300"
               >
                 Constituer ma liste
-                <ArrowRight className="h-3.5 w-3.5 transition-transform duration-150 group-hover:translate-x-0.5" aria-hidden="true" />
+                <ArrowRight
+                  className="h-3.5 w-3.5 transition-transform duration-150 group-hover:translate-x-0.5"
+                  aria-hidden="true"
+                />
               </Link>
               <Link
                 href="/catalogue"
@@ -219,13 +246,19 @@ function Footer() {
           <FooterAccordion title="Entreprise" defaultOpen={false}>
             <ul className="space-y-2.5 pb-5">
               <li>
-                <Link href="/a-propos" className={columnLinkClass}>À propos</Link>
+                <Link href="/a-propos" className={columnLinkClass}>
+                  À propos
+                </Link>
               </li>
               <li>
-                <Link href="/marques" className={columnLinkClass}>Marques</Link>
+                <Link href="/marques" className={columnLinkClass}>
+                  Marques
+                </Link>
               </li>
               <li>
-                <Link href="/contact" className={columnLinkClass}>Contact</Link>
+                <Link href="/contact" className={columnLinkClass}>
+                  Contact
+                </Link>
               </li>
             </ul>
           </FooterAccordion>
@@ -233,13 +266,19 @@ function Footer() {
           <FooterAccordion title="Légal" defaultOpen={false}>
             <ul className="space-y-2.5 pb-5">
               <li>
-                <Link href="/mentions-legales" className={columnLinkClass}>Mentions légales</Link>
+                <Link href="/mentions-legales" className={columnLinkClass}>
+                  Mentions légales
+                </Link>
               </li>
               <li>
-                <Link href="/cgv" className={columnLinkClass}>Conditions générales de vente</Link>
+                <Link href="/cgv" className={columnLinkClass}>
+                  Conditions générales de vente
+                </Link>
               </li>
               <li>
-                <Link href="/confidentialite" className={columnLinkClass}>Politique de confidentialité</Link>
+                <Link href="/confidentialite" className={columnLinkClass}>
+                  Politique de confidentialité
+                </Link>
               </li>
             </ul>
           </FooterAccordion>
@@ -247,14 +286,26 @@ function Footer() {
           <FooterAccordion title="Contact" defaultOpen>
             <ul className="space-y-3 pb-5 text-sm text-graphite-300">
               <li>
-                <a href={`tel:${SITE_CONFIG.phone.e164}`} className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm">
-                  <Phone className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300" aria-hidden="true" />
+                <a
+                  href={`tel:${SITE_CONFIG.phone.e164}`}
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm"
+                >
+                  <Phone
+                    className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300"
+                    aria-hidden="true"
+                  />
                   {SITE_CONFIG.phone.display}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${SITE_CONFIG.email.contact}`} className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm">
-                  <Mail className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300" aria-hidden="true" />
+                <a
+                  href={`mailto:${SITE_CONFIG.email.contact}`}
+                  className="group inline-flex items-center gap-2 transition-colors hover:text-teal-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-teal-200 rounded-sm"
+                >
+                  <Mail
+                    className="h-4 w-4 shrink-0 text-graphite-500 transition-colors group-hover:text-teal-300"
+                    aria-hidden="true"
+                  />
                   {SITE_CONFIG.email.contact}
                 </a>
               </li>
@@ -280,7 +331,7 @@ function Footer() {
           <p>
             &copy; {new Date().getFullYear()} {SITE_CONFIG.companyName} — Tous droits réservés.
           </p>
-          <p className="font-mono">BTS · ZONE CEMAC</p>
+          <p className="font-mono">Douala · Zone CEMAC</p>
         </div>
       </div>
     </footer>

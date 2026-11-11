@@ -23,7 +23,9 @@ describe('QuoteToggleButton', () => {
 
   it('renders remove from quote when already in quote list', () => {
     useQuoteStore.setState({
-      items: [{ productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE', quantity: 1 }],
+      items: [
+        { productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE', quantity: 1 },
+      ],
     });
     renderWithProviders(<QuoteToggleButton product={mockProduct} />);
     expect(screen.getByText('Ajouté ✓')).toBeInTheDocument();
@@ -46,7 +48,9 @@ describe('QuoteToggleButton', () => {
 
   it('removes from quote on second click', async () => {
     useQuoteStore.setState({
-      items: [{ productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE', quantity: 1 }],
+      items: [
+        { productId: 'test-1', sku: 'SKU001', name: 'Test Product', brand: 'HPE', quantity: 1 },
+      ],
     });
     renderWithProviders(<QuoteToggleButton product={mockProduct} />);
     const btn = screen.getByText('Ajouté ✓');

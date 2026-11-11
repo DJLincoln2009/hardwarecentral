@@ -18,7 +18,8 @@ const variantStyles: Record<BadgeVariant, string> = {
   warning: 'bg-warning-bg text-warning-text border-warning-border',
   danger: 'bg-danger-bg text-danger-text border-danger-border',
   neutral: 'bg-surface-muted text-muted border-border',
-  accent: 'bg-teal-50 text-teal-800 border-teal-100 dark:bg-teal-500/15 dark:text-teal-300 dark:border-teal-500/30',
+  accent:
+    'bg-teal-50 text-teal-800 border-teal-100 dark:bg-teal-500/15 dark:text-teal-300 dark:border-teal-500/30',
   'on-order': 'bg-on-order-bg text-on-order-text border-on-order-border',
 };
 
@@ -36,13 +37,7 @@ const sizeStyles: Record<BadgeSize, string> = {
   md: 'px-2.5 py-1 text-xs gap-1.5',
 };
 
-function Badge({
-  variant = 'neutral',
-  size = 'md',
-  dot = false,
-  children,
-  className,
-}: BadgeProps) {
+function Badge({ variant = 'neutral', size = 'md', dot = false, children, className }: BadgeProps) {
   return (
     <span
       className={cn(

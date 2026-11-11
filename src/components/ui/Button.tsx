@@ -25,15 +25,12 @@ const baseStyles = cn(
 );
 
 const variantStyles: Record<ButtonVariant, string> = {
-  primary:
-    'bg-teal-600 text-white shadow-sm hover:bg-teal-700 hover:shadow-md active:bg-teal-800',
-  secondary:
-    'bg-surface-muted text-foreground hover:bg-surface-strong active:bg-surface-strong',
+  primary: 'bg-teal-600 text-white shadow-sm hover:bg-teal-700 hover:shadow-md active:bg-teal-800',
+  secondary: 'bg-surface-muted text-foreground hover:bg-surface-strong active:bg-surface-strong',
   outline:
     'border border-border-strong bg-transparent text-foreground hover:border-accent hover:text-accent active:bg-surface-muted',
   ghost: 'bg-transparent text-foreground hover:bg-surface-muted active:bg-surface-strong',
-  destructive:
-    'bg-danger-text text-white hover:opacity-90 shadow-sm hover:shadow-md',
+  destructive: 'bg-danger-text text-white hover:opacity-90 shadow-sm hover:shadow-md',
 };
 
 const sizeStyles: Record<ButtonSize, string> = {

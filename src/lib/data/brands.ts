@@ -13,7 +13,7 @@ export const brands: Brand[] = [
     code: 'HP',
     name: 'HP Inc.',
     shortDescription:
-      "HP Inc. est le spécialiste des PC professionnels et des stations de travail : portables EliteBook/ProBook, workstations Z et ZBook pour les usages exigeants.",
+      'HP Inc. est le spécialiste des PC professionnels et des stations de travail : portables EliteBook/ProBook, workstations Z et ZBook pour les usages exigeants.',
     logoUrl: '/brands/hp.svg',
     isActive: true,
   },
@@ -29,7 +29,7 @@ export const brands: Brand[] = [
     code: 'CISCO',
     name: 'Cisco',
     shortDescription:
-      'Cisco est le leader mondial du réseau, de la sécurité et de la collaboration (Webex, Room Kit, Board Pro) pour les infrastructures d\'entreprise.',
+      "Cisco est le leader mondial du réseau, de la sécurité et de la collaboration (Webex, Room Kit, Board Pro) pour les infrastructures d'entreprise.",
     logoUrl: '/brands/cisco.svg',
     isActive: true,
   },
@@ -37,7 +37,7 @@ export const brands: Brand[] = [
     code: 'FORTINET',
     name: 'Fortinet',
     shortDescription:
-      'Fortinet est un acteur majeur de la cybersécurité, spécialisé dans les pare-feux, solutions de sécurité réseau, switches FortiSwitch, points d\'accès FortiAP et appliances de gestion FortiManager/FortiAnalyzer.',
+      "Fortinet est un acteur majeur de la cybersécurité, spécialisé dans les pare-feux, solutions de sécurité réseau, switches FortiSwitch, points d'accès FortiAP et appliances de gestion FortiManager/FortiAnalyzer.",
     logoUrl: '/brands/fortinet.svg',
     isActive: true,
   },
@@ -45,7 +45,7 @@ export const brands: Brand[] = [
     code: 'HUAWEI',
     name: 'Huawei',
     shortDescription:
-      'Huawei Enterprise propose des solutions de stockage, d\'infrastructure IT, PC portables MateBook/Qingyun et stations de travail MateStation pour les entreprises.',
+      "Huawei Enterprise propose des solutions de stockage, d'infrastructure IT, PC portables MateBook/Qingyun et stations de travail MateStation pour les entreprises.",
     logoUrl: '/brands/huawei.svg',
     isActive: true,
   },
@@ -53,7 +53,7 @@ export const brands: Brand[] = [
     code: 'HIKVISION',
     name: 'Hikvision',
     shortDescription:
-      'Hikvision est le leader mondial de la vidéosurveillance, des systèmes de sécurité électronique et des stations de travail dédiées à la gestion vidéo et à l\'analyse IA.',
+      "Hikvision est le leader mondial de la vidéosurveillance, des systèmes de sécurité électronique et des stations de travail dédiées à la gestion vidéo et à l'analyse IA.",
     logoUrl: '/brands/hikvision.svg',
     isActive: true,
   },

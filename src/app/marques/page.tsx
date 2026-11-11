@@ -19,10 +19,7 @@ export const metadata: Metadata = {
 export default function BrandsPage() {
   const brands = getActiveBrands();
 
-  const breadcrumbItems = [
-    { label: 'Accueil', href: '/' },
-    { label: 'Marques' },
-  ];
+  const breadcrumbItems = [{ label: 'Accueil', href: '/' }, { label: 'Marques' }];
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-6 sm:py-8 lg:px-6">
@@ -37,8 +34,8 @@ export default function BrandsPage() {
               Nos marques
             </h1>
             <p className="mt-2 max-w-xl text-xs leading-relaxed text-muted sm:mt-3 sm:text-sm">
-              Nous distribuons les plus grandes marques d&apos;infrastructure IT — serveurs,
-              réseau, sécurité et vidéosurveillance.
+              Nous distribuons les plus grandes marques d&apos;infrastructure IT — serveurs, réseau,
+              sécurité et vidéosurveillance.
             </p>
           </div>
           <span className="inline-flex shrink-0 items-center gap-2 rounded-full border border-border bg-surface px-3 py-1.5 text-xs font-semibold text-muted shadow-xs sm:px-3.5 sm:py-1.5">

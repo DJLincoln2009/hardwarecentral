@@ -30,7 +30,9 @@ function EmptyState({ variant = 'empty', title, description, action }: EmptyStat
           <Icon className="h-7 w-7 text-accent" aria-hidden="true" />
         </div>
       </div>
-      <p className="mt-2 font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">{title}</p>
+      <p className="mt-2 font-display text-lg font-bold tracking-tight text-foreground sm:text-xl">
+        {title}
+      </p>
       {description && <p className="max-w-sm text-sm text-muted">{description}</p>}
       {action && (
         <Link

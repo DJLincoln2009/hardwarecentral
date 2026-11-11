@@ -14,7 +14,12 @@ interface QuoteToggleButtonProps {
   quantity?: number;
 }
 
-function QuoteToggleButton({ product, size = 'md', className = '', quantity = 1 }: QuoteToggleButtonProps) {
+function QuoteToggleButton({
+  product,
+  size = 'md',
+  className = '',
+  quantity = 1,
+}: QuoteToggleButtonProps) {
   const items = useQuoteStore((s) => s.items);
   const toggleItem = useQuoteStore((s) => s.toggleItem);
   const { addToast } = useToast();
@@ -30,7 +35,10 @@ function QuoteToggleButton({ product, size = 'md', className = '', quantity = 1 
     <button
       type="button"
       onClick={() => {
-        toggleItem({ productId: product.id, sku: product.sku, name: product.name, brand: product.brand }, quantity);
+        toggleItem(
+          { productId: product.id, sku: product.sku, name: product.name, brand: product.brand },
+          quantity,
+        );
         addToast(inQuote ? 'Retiré de la liste de devis' : 'Ajouté à la liste de devis');
       }}
       className={cn(

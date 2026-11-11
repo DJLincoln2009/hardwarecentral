@@ -67,14 +67,20 @@ function QuotePanel({ product }: QuotePanelProps) {
 
       <div className="grid grid-cols-2 gap-2.5 border-t border-border pt-3.5 mt-4 sm:gap-3 sm:pt-4">
         <div className="flex items-center gap-2.5">
-          <Truck className="h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300 sm:h-5 sm:w-5" aria-hidden="true" />
+          <Truck
+            className="h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300 sm:h-5 sm:w-5"
+            aria-hidden="true"
+          />
           <span className="text-xs leading-snug text-muted max-sm:text-[11px]">
             <span className="block font-semibold text-foreground">Livraison</span>
             Transport sécurisé en CEMAC
           </span>
         </div>
         <div className="flex items-center gap-2.5">
-          <Clock className="h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300 sm:h-5 sm:w-5" aria-hidden="true" />
+          <Clock
+            className="h-4 w-4 shrink-0 text-teal-600 dark:text-teal-300 sm:h-5 sm:w-5"
+            aria-hidden="true"
+          />
           <span className="text-xs leading-snug text-muted max-sm:text-[11px]">
             <span className="block font-semibold text-foreground">Devis</span>
             Réponse sous 48-72h ouvrées

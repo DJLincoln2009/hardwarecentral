@@ -21,7 +21,12 @@ async function SearchContent({ searchParams }: SearchContentProps) {
   const tri = (get('tri') as SortOption) || undefined;
   const page = Math.max(1, parseInt(get('page') || '1', 10) || 1);
 
-  const { results, total, page: currentPage, totalPages } = filterProducts({
+  const {
+    results,
+    total,
+    page: currentPage,
+    totalPages,
+  } = filterProducts({
     q: q || undefined,
     tri,
     page,
